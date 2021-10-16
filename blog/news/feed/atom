@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+	xmlns="http://www.w3.org/2005/Atom"
+	xmlns:thr="http://purl.org/syndication/thread/1.0"
+	xml:lang="en-US"
+	xml:base="https://www.w3.org/blog/news/wp-atom.php"
+	>
+	<title type="text">W3C News</title>
+	<subtitle type="text">Leading the Web to its Full Potential</subtitle>
+
+	<updated>2021-10-15T13:24:14Z</updated>
+
+	<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news" />
+	<id>https://www.w3.org/blog/news/feed/atom</id>
+	<link rel="self" type="application/atom+xml" href="https://www.w3.org/blog/news/feed/atom" />
+
+	<generator uri="https://wordpress.org/" version="5.7.3">WordPress</generator>
+	<entry>
+		<author>
+			<name>Coralie Mercier</name>
+							<uri>https://koalie.blog/</uri>
+						</author>
+
+		<title type="html"><![CDATA[W3C TPAC 2021 Exhibition Space opens for registration]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9288" />
+
+		<id>https://www.w3.org/blog/news/?p=9288</id>
+		<updated>2021-10-15T13:24:14Z</updated>
+		<published>2021-10-15T13:24:14Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Uncategorized" />
+		<summary type="html"><![CDATA[W3C&#8217;s annual technical meeting, TPAC, has a unique feature this year &#8211; an Exhibition Space that is open to the public! If you&#8217;re interested in learning about solutions that you can leverage, then register to come visit us. The W3C TPAC Exhibition Hall is open from 18 &#8211; 24 October so please stop by and [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9288"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/2021/10/TPAC/"><img src="https://www.w3.org/2021/10/TPAC/images/TPAC-2021-cover.svg" alt="TPAC 2021" width="150" /></a>W3C&#8217;s annual technical meeting, <abbr title="Technical Plenary and Advisory Committee meetings"><a href="https://www.w3.org/2021/10/TPAC/">TPAC</a></abbr>, has a unique feature this year &#8211; an <strong>Exhibition Space</strong> that is open to the public! If you&#8217;re interested in learning about solutions that you can leverage, then <a href="https://ti.to/w3c/tpac-expo">register</a> to come visit us. The <a href="https://www.w3.org/2021/10/TPAC/format.html#expo">W3C TPAC Exhibition Hall</a> is open from 18 &#8211; 24 October so please stop by and visit our great Sponsors &#8211; Coil, Legible, Igalia and Movement for an Open Web. </p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Coralie Mercier</name>
+							<uri>https://koalie.blog/</uri>
+						</author>
+
+		<title type="html"><![CDATA[W3C and Yubico offer first online Web Authentication course for developers]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9282" />
+
+		<id>https://www.w3.org/blog/news/?p=9282</id>
+		<updated>2021-10-14T13:13:20Z</updated>
+		<published>2021-10-14T13:13:20Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Top Story" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Services" />
+		<summary type="html"><![CDATA[W3C and Yubico announced today the opening of registration for a W3Cx online education course that teaches developers how to build and incorporate modern authentication techniques into their web-based applications using W3C’s Web Authentication (WebAuthn). Both organizations collaborated to design the Massive Open Online Course (MOOC) titled “Introduction to Web Authentication” to equip learners with [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9282"><![CDATA[<p><a class="imageLink" href="/2021/10/pressrelease-webauthn-mooc.html.en"><img loading="lazy" src="/Icons/WWW/w3c_home_nb.png" alt="W3C" height="48" width="72" /><img src="/2021/10/yubico-logo-small.png" alt="Yubico" height="48" /></a>W3C and Yubico announced today the opening of registration for a W3Cx online education course that teaches developers how to build and incorporate modern authentication techniques into their web-based applications using W3C’s Web Authentication (WebAuthn). Both organizations collaborated to design the Massive Open Online Course (MOOC) titled “Introduction to Web Authentication” to equip learners with the knowledge to replace aging password-based credentials with a secure model that incorporates strong authentication. The course to begin 30 November 2021 is free to learners who can opt-into a paid course and earn a certificate of completion. Please, read more in our <a href="/2021/10/pressrelease-webauthn-mooc.html.en">joint press release</a>.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: Accessibility of Remote Meetings]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9286" />
+
+		<id>https://www.w3.org/blog/news/?p=9286</id>
+		<updated>2021-10-14T07:46:24Z</updated>
+		<published>2021-10-14T07:46:24Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" />
+		<summary type="html"><![CDATA[The Accessible Platform Architectures Working Group has published a First Public Working Draft of Accessibility of Remote Meetings. Remote meeting is an umbrella term used to describe real-time discussions or presentations held between two or more parties online. The issues faced by people with disabilities will vary depending on the implementation of accessibility requirements and [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9286"><![CDATA[<p>The <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-remote-meetings-20211014/">Accessibility of Remote Meetings</a>. Remote meeting is an umbrella term used to describe real-time discussions or presentations held between two or more parties online. The issues faced by people with disabilities will vary depending on the implementation of accessibility requirements and current limitations of remote meeting software. While W3C has applicable guidance across several standards and Notes relating to real-time communication and XR, it is this level of complexity that this document endeavours to address.</p>
+<p>Comments are welcome through <strong>19th November 2021</strong>.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[Updated Candidate Recommendation: Media Capture and Streams]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9280" />
+
+		<id>https://www.w3.org/blog/news/?p=9280</id>
+		<updated>2021-10-13T11:37:43Z</updated>
+		<published>2021-10-13T11:37:43Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The WebRTC Working Group invites implementation of an updated Candidate Recommendation Snapshot of Media Capture and Streams. This document defines a set of JavaScript APIs that allow local media, including audio and video, to be requested from a platform. Comments are welcome via the GitHub issues by 13 November 2021.]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9280"><![CDATA[<p>The <a href="https://www.w3.org/groups/wg/webrtc">WebRTC Working Group</a> invites implementation of an updated Candidate Recommendation Snapshot of <a href="https://www.w3.org/TR/2021/CR-mediacapture-streams-20211013/">Media Capture and Streams</a>. This document defines a set of JavaScript APIs that allow local media, including audio and video, to be requested from a platform.</p>
+<p>Comments are welcome via the <a href="https://github.com/w3c/mediacapture-main/issues/">GitHub issues</a> by <strong>13 November 2021</strong>.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: Natural Language Interface Accessibility User Requirements]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9275" />
+
+		<id>https://www.w3.org/blog/news/?p=9275</id>
+		<updated>2021-10-12T08:36:29Z</updated>
+		<published>2021-10-12T08:36:29Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Accessible Platform Architectures Working Group has published a First Public Working Draft of Natural Language Interface Accessibility User Requirements. This document outlines various accessibility-related user needs, requirements and scenarios for natural language interfaces. These user needs should influence accessibility requirements in various related specifications, as well as the design of applications that include natural [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9275"><![CDATA[<p>The <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-naur-20211012/">Natural Language Interface Accessibility User Requirements</a>. This document outlines various accessibility-related user needs, requirements and scenarios for natural language interfaces. These user needs should influence accessibility requirements in various related specifications, as well as the design of applications that include natural language interfaces including speech and voice input. The document discusses where work is needed in behind the scenes services, to support accessibility and user needs and associated requirements are then described.</p>
+<p>Comments are welcome through <strong>12th November 2021</strong>.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[W3C Invites Implementations of CSS Multi-column Layout Module Level 1]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9277" />
+
+		<id>https://www.w3.org/blog/news/?p=9277</id>
+		<updated>2021-10-12T08:34:04Z</updated>
+		<published>2021-10-12T08:34:04Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The CSS Working Group has published the CSS Multi-column Layout Module Level 1 as a W3C Candidate Recommendation Snapshot. This specification describes multi-column layouts in CSS, a style sheet language for the web. Using functionality described in the specification, content can be flowed into multiple columns with a gap and a rule between them. The [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9277"><![CDATA[<p>The <a href="https://www.w3.org/Style/CSS/">CSS Working Group</a> has published the <a href="https://www.w3.org/TR/2021/CR-css-multicol-1-20211012/">CSS Multi-column Layout Module Level 1</a> as a W3C Candidate Recommendation Snapshot. This specification describes multi-column layouts in CSS, a style sheet language for the web. Using functionality described in the specification, content can be flowed into multiple columns with a gap and a rule between them.</p>
+<p>The Working Group welcomes comments via the <a href="https://github.com/w3c/csswg-drafts/issues">GitHub repository issues</a> by <strong>12 December 2021</strong>.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: Media Source Extensions™]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9265" />
+
+		<id>https://www.w3.org/blog/news/?p=9265</id>
+		<updated>2021-10-14T13:14:53Z</updated>
+		<published>2021-09-30T07:12:40Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Media Working Group has published a First Public Working Draft of Media Source Extensions™. This specification extends HTMLMediaElement [HTML] to allow JavaScript to generate media streams for playback. Allowing JavaScript to generate streams facilitates a variety of use cases like adaptive streaming and time shifting live streams.]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9265"><![CDATA[<p>The <a href="https://www.w3.org/media-wg/">Media Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-media-source-2-20210930/">Media Source Extensions<img src="https://s.w.org/images/core/emoji/13.0.1/72x72/2122.png" alt="™" class="wp-smiley" style="height: 1em; max-height: 1em;" /></a>. This specification extends <a href="https://html.spec.whatwg.org/multipage/media.html#htmlmediaelement"><code>HTMLMediaElement</code></a> [<cite><a href="https://www.w3.org/TR/2021/WD-media-source-2-20210930/#bib-html">HTML</a></cite>] to allow JavaScript to generate media streams for playback. Allowing JavaScript to generate streams facilitates a variety of use cases like adaptive streaming and time shifting live streams.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[Call for Review: Payment Request API and Payment Method Identifiers are W3C Proposed Recommendations]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9269" />
+
+		<id>https://www.w3.org/blog/news/?p=9269</id>
+		<updated>2021-10-14T13:14:45Z</updated>
+		<published>2021-09-30T07:10:58Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Web Payments Working Group has just published Proposed Recommendations of Payment Request API and Payment Method Identifiers. Payment Request standardizes an API to allow merchants (i.e., web sites selling physical or digital goods) to utilize one or more payment methods with minimal integration. Browsers facilitate the payment flow between merchant and user. Payment Method [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9269"><![CDATA[<p>The <a href="https://www.w3.org/groups/wg/payments">Web Payments Working Group</a> has just published Proposed Recommendations of <a href="https://www.w3.org/TR/2021/PR-payment-request-20210930/">Payment Request API</a> and <a href="https://www.w3.org/TR/2021/PR-payment-method-id-20210930/">Payment Method Identifiers</a>.</p>
+<p>Payment Request standardizes an API to allow merchants (i.e., web sites selling physical or digital goods) to utilize one or more payment methods with minimal integration. Browsers facilitate the payment flow between merchant and user. Payment Method Identifiers defines payment method identifiers and how they are validated, and, where applicable, minted and formally registered with the W3C.</p>
+<p>Comments are welcome through <strong>28 October 2021</strong>.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[Call for Review: ARIA in HTML is a W3C Proposed Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9272" />
+
+		<id>https://www.w3.org/blog/news/?p=9272</id>
+		<updated>2021-10-14T13:14:30Z</updated>
+		<published>2021-09-30T07:09:55Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Web Applications Working Group has just published a Proposed Recommendation of ARIA in HTML. This specification defines the authoring rules (author conformance requirements) for the use of Accessible Rich Internet Applications (WAI-ARIA) 1.1 and Digital Publishing WAI-ARIA Module 1.0 attributes on [HTML] elements. This specification&#8217;s primary objective is to define requirements for use with conformance checking tools used [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9272"><![CDATA[<p>The <a href="https://www.w3.org/2019/webapps/">Web Applications Working Group</a> has just published a Proposed Recommendation of <a href="https://www.w3.org/TR/2021/PR-html-aria-20210930/">ARIA in HTML</a>. This specification defines the authoring rules (author conformance requirements) for the use of <cite><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1 </a></cite>and <cite><a href="https://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0 </a></cite>attributes on [<cite><a href="https://www.w3.org/TR/2021/PR-html-aria-20210930/#bib-html">HTML</a></cite>] elements. This specification&#8217;s primary objective is to define requirements for use with conformance checking tools used by authors (i.e., web developers). These requirements will aid authors in their development of web content, including custom interfaces/widgets, that makes use of ARIA to complement or extend the features of the host language [<cite><a href="https://www.w3.org/TR/2021/PR-html-aria-20210930/#bib-html">HTML</a></cite>].</p>
+<p>Comments are welcome through <strong>28 October 2021</strong>.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[DOM Review Draft Published 15 June 2020 is a W3C Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9262" />
+
+		<id>https://www.w3.org/blog/news/?p=9262</id>
+		<updated>2021-10-14T07:47:34Z</updated>
+		<published>2021-09-28T09:48:00Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[As part of working with the WHATWG together on HTML and DOM, W3C selected today to endorse the DOM Review Draft — Published 15 June 2020 as a W3C Recommendation. DOM defines a platform-neutral model for events, aborting activities, and node trees. For more information, see the blog post WHATWG Review Drafts of HTML and [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9262"><![CDATA[<p>As part of working with the WHATWG <a href="https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/">together on HTML and DOM</a>, W3C selected today to endorse the <a href="https://www.w3.org/TR/2021/REC-DOM-20210928/">DOM Review Draft — Published 15 June 2020</a> as a W3C Recommendation. DOM defines a platform-neutral model for events, aborting activities, and node trees. For more information, see the blog post <a href="https://www.w3.org/blog/2021/01/whatwg-review-drafts-of-html-and-dom-endorsed-as-w3c-recommendations/">WHATWG Review Drafts of HTML and DOM endorsed as W3C Recommendations</a>.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: Synchronization Accessibility User Requirements]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9260" />
+
+		<id>https://www.w3.org/blog/news/?p=9260</id>
+		<updated>2021-10-13T11:33:46Z</updated>
+		<published>2021-09-28T08:47:11Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Accessible Platform Architectures Working Group has published a First Public Working Draft of Synchronization Accessibility User Requirements. This document outlines accessibility-related user needs and associated requirements for the synchronization of multimedia. The successful synchronization of multimedia content, especially audio and video, is essential to accessible web-based communication and cooperation. Understandable media is therefore media [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9260"><![CDATA[<p>The <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-saur-20210928/">Synchronization Accessibility User Requirements</a>. This document outlines accessibility-related user needs and associated requirements for the synchronization of multimedia. The successful synchronization of multimedia content, especially audio and video, is essential to accessible web-based communication and cooperation. Understandable media is therefore media synchronized to very specific limits, according to multiple research studies. By clarifying the parameters of adequate synchronization, we can influence the development of future technologies, specifications, and accessibility guidelines. Comments are welcome through <strong>5th November 2021</strong>.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Coralie Mercier</name>
+							<uri>https://koalie.blog/</uri>
+						</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: WebRTC Encoded Transform]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9258" />
+
+		<id>https://www.w3.org/blog/news/?p=9258</id>
+		<updated>2021-10-12T08:13:44Z</updated>
+		<published>2021-09-21T11:19:48Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Browsers and Authoring Tools" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Devices" />
+		<summary type="html"><![CDATA[The Web Real-Time Communications Working Group has published a First Public Working Draft of WebRTC Encoded Transform. The goal of this work is to define an API for processing encoded media in WebRTC, for example for voice processing, background removal, dynamic control of codec parameters, etc. This document specifies an API surface for manipulating the [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9258"><![CDATA[<p>The <a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-webrtc-encoded-transform-20210921/">WebRTC Encoded Transform</a>. The goal of this work is to define an API for processing encoded media in WebRTC, for example for voice processing, background removal, dynamic control of codec parameters, etc. This document specifies an API surface for manipulating the bits on MediaStreamTracks being sent via an RTCPeerConnection.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: WebXR Lighting Estimation API Level 1]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9256" />
+
+		<id>https://www.w3.org/blog/news/?p=9256</id>
+		<updated>2021-10-12T08:12:20Z</updated>
+		<published>2021-09-09T09:00:30Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Immersive Web Working Group has published a First Public Working Draft of WebXR Lighting Estimation API Level 1. This specification describes support for exposing estimates of environmental lighting conditions to WebXR sessions.]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9256"><![CDATA[<p>The <a href="https://www.w3.org/groups/wg/immersive-web">Immersive Web Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-webxr-lighting-estimation-1-20210909/">WebXR Lighting Estimation API Level 1</a>. This specification describes support for exposing estimates of environmental lighting conditions to WebXR sessions.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: Incremental Font Transfer]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9254" />
+
+		<id>https://www.w3.org/blog/news/?p=9254</id>
+		<updated>2021-09-30T06:37:02Z</updated>
+		<published>2021-09-07T08:25:39Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Web Fonts Working Group has published a First Public Working Draft of Incremental Font Transfer. This specification defines two methods to incrementally transfer fonts from server to client. Incremental transfer allows clients to load only the portions of the font they actually need which speeds up font loads and reduces data transfer needed to [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9254"><![CDATA[<p>The <a href="https://www.w3.org/Fonts/WG/">Web Fonts Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-IFT-20210907/">Incremental Font Transfer</a>. This specification defines two methods to incrementally transfer fonts from server to client. Incremental transfer allows clients to load only the portions of the font they actually need which speeds up font loads and reduces data transfer needed to load the fonts. A font can be loaded over multiple requests where each request incrementally adds additional data.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[Working Group Note: XR Accessibility User Requirements]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9250" />
+
+		<id>https://www.w3.org/blog/news/?p=9250</id>
+		<updated>2021-09-30T06:36:29Z</updated>
+		<published>2021-09-01T06:49:30Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Accessible Platform Architectures (APA) Working Group has published XR Accessibility User Requirements (XAUR) as a Working Group Note. XR refers to hardware, applications, and techniques used for virtual reality or immersive environments (VR), augmented or mixed reality (AR), and other related technologies. XAUR introduces technical accessibility challenges, such as the need for multi-modal support, [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9250"><![CDATA[<p>The Accessible Platform Architectures (<a href="https://www.w3.org/WAI/APA/">APA</a>) Working Group has published <a href="https://www.w3.org/TR/xaur/">XR Accessibility User Requirements (XAUR)</a> as a Working Group Note. XR refers to hardware, applications, and techniques used for virtual reality or immersive environments (VR), augmented or mixed reality (AR), and other related technologies. XAUR introduces technical accessibility challenges, such as the need for multi-modal support, synchronization of input and output devices, and customization. It describes accessibility user needs and suggests requirements. XAUR is for designers and developers involved in creating immersive and augmented experiences. It’s also useful for anyone who wants to better understand accessibility in a range of immersive or augmented environments.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: Secure Payment Confirmation (SPC)]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9243" />
+
+		<id>https://www.w3.org/blog/news/?p=9243</id>
+		<updated>2021-09-30T06:36:04Z</updated>
+		<published>2021-08-31T08:40:32Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Web Payments Working Group has published a First Public Working Draft of Secure Payment Confirmation (SPC). SPC helps to streamline authentication during a payment transaction. Leveraging Web Authentication, it is designed to scale authentication across merchants, to be used within a wide range of authentication protocols, and to produce cryptographic evidence that the user [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9243"><![CDATA[<p>The <a href="https://www.w3.org/groups/wg/payments">Web Payments Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-secure-payment-confirmation-20210831/">Secure Payment Confirmation</a> (<abbr title="“Secure">SPC</abbr>). SPC helps to streamline authentication during a payment transaction. Leveraging <a href="https://w3c.github.io/webauthn/">Web Authentication</a>, it is designed to scale authentication across merchants, to be used within a wide range of authentication protocols, and to produce cryptographic evidence that the user has confirmed transaction details.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Drafts: WebXR Depth Sensing, Hit Test, DOM Overlays Modules]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9238" />
+
+		<id>https://www.w3.org/blog/news/?p=9238</id>
+		<updated>2021-09-28T08:44:19Z</updated>
+		<published>2021-08-31T08:37:45Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Devices" />
+		<summary type="html"><![CDATA[The Immersive Web Working Group has published the following three First Public Working Drafts: WebXR Depth Sensing Module is a module extending the capabilities of WebXR Device API. It enables apps to obtain depth information computed by supported XR devices in order to provide more immersive experiences. The example use cases of depth sensing API [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9238"><![CDATA[<p>The <a href="https://www.w3.org/groups/wg/immersive-web">Immersive Web Working Group</a> has published the following three First Public Working Drafts:</p>
+<ul class="show_items">
+<li><a href="https://www.w3.org/TR/2021/WD-webxr-depth-sensing-1-20210831/">WebXR Depth Sensing Module</a> is a module extending the capabilities of WebXR Device API. It enables apps to obtain depth information computed by supported XR devices in order to provide more immersive experiences. The example use cases of depth sensing API include (but are not limited to) simulating physical interactions of virtual objects with the real world, occlusion, and non-visual applications that can make use of increased awareness of users&#8217; environment.</li>
+<li><a href="https://www.w3.org/TR/2021/WD-webxr-hit-test-1-20210831/">WebXR Hit Test Module</a> describes a method for performing hit tests against real world geometry to be used with the WebXR Device API.</li>
+<li><a href="https://www.w3.org/TR/2021/WD-webxr-dom-overlays-1-20210831/">WebXR DOM Overlays Module</a> expands the <a href="https://www.w3.org/TR/webxr/">WebXR Device API</a> with a mechanism for showing interactive 2D web content during an immersive WebXR session. When the feature is enabled, the user agent will display the content of a single DOM element as a transparent-background 2D rectangle.</li>
+</ul>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: CSS Nesting Module]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9236" />
+
+		<id>https://www.w3.org/blog/news/?p=9236</id>
+		<updated>2021-09-28T08:43:58Z</updated>
+		<published>2021-08-31T08:34:53Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The CSS Working Group has published a First Public Working Draft of CSS Nesting Module. This module introduces the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule. This increases the modularity and maintainability of CSS stylesheets.]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9236"><![CDATA[<p>The <a href="https://www.w3.org/groups/wg/css">CSS Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-css-nesting-1-20210831/">CSS Nesting Module</a>. This module introduces the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule. This increases the modularity and maintainability of CSS stylesheets.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: Digital Publishing WAI-ARIA Module 1.1]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9231" />
+
+		<id>https://www.w3.org/blog/news/?p=9231</id>
+		<updated>2021-09-09T08:16:01Z</updated>
+		<published>2021-08-26T08:49:00Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Accessible Rich Internet Applications Working Group has published a First Public Working Draft of Digital Publishing WAI-ARIA Module 1.1. Enabling users of assistive technologies to find their way through web content requires embedding semantic metadata about web document structural divisions. This is particularly important for structural divisions of long-form documents and goes along with [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9231"><![CDATA[<p>The <a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-dpub-aria-1.1-20210826/">Digital Publishing WAI-ARIA Module 1.1</a>. Enabling users of assistive technologies to find their way through web content requires embedding semantic metadata about web document structural divisions. This is particularly important for structural divisions of long-form documents and goes along with embedding semantic metadata about web-application widgets and behaviors for assistive technologies. This specification defines a set of WAI-ARIA roles specific to helping users of assistive technologies navigate through such long-form documents.</p>
+<p>This document is part of the WAI-ARIA suite described in the <a href="https://www.w3.org/WAI/standards-guidelines/aria/">WAI-ARIA Overview</a>.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[Working Group Notes: DID Rubric and DID Implementation Guide]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9233" />
+
+		<id>https://www.w3.org/blog/news/?p=9233</id>
+		<updated>2021-09-07T08:09:10Z</updated>
+		<published>2021-08-26T08:42:55Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Decentralized Identifier Working Group has just published two Working Group Notes: DID Method Rubric v1.0: The communities behind Decentralized Identifiers (DIDs) bring together a diverse group of contributors who have decidedly different notions of exactly what &#8220;decentralization&#8221; means. Rather than attempting to resolve this potentially unresolvable question, we propose a rubric — a scoring [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9233"><![CDATA[<p>The <a href="https://www.w3.org/2019/did-wg/">Decentralized Identifier Working Group</a> has just published two Working Group Notes:</p>
+<ul class="show_items">
+<li><a href="https://www.w3.org/TR/2021/NOTE-did-rubric-20210826/">DID Method Rubric v1.0</a>: The communities behind Decentralized Identifiers (DIDs) bring together a diverse group of contributors who have decidedly different notions of exactly what &#8220;decentralization&#8221; means. Rather than attempting to resolve this potentially unresolvable question, we propose a rubric — a scoring guide used to evaluate performance, a product, or a project — that teaches how to evaluate a given DID Method according to one&#8217;s own requirements.
+</li>
+<li><a href="https://www.w3.org/TR/2021/NOTE-did-imp-guide-20210826/">DID Implementation Guide v1.0</a>: This document provides guidance to <a href="https://www.w3.org/TR/did-core/#dfn-did-methods">DID method</a> developers, related to serialization, cryptographic primitive selection, governance, and interoperability.
+</li>
+</ul>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: VirtualKeyboard API]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9229" />
+
+		<id>https://www.w3.org/blog/news/?p=9229</id>
+		<updated>2021-09-07T08:10:06Z</updated>
+		<published>2021-08-24T09:25:04Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Web Editing Working Group has published a First Public Working Draft of VirtualKeyboard API. The VirtualKeyboard API provides authors with greater control over the visibility of the virtual keyboard (VK), and greater ability to adapt the layout of web pages when VK visibility changes.]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9229"><![CDATA[<p>The <a href="https://www.w3.org/groups/wg/webediting">Web Editing Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-virtual-keyboard-20210824/">VirtualKeyboard API</a>. The <code>VirtualKeyboard</code> API provides authors with greater control over the visibility of the virtual keyboard (VK), and greater ability to adapt the layout of web pages when VK visibility changes.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[First Public Working Draft: Developing Localizable Manifests]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9227" />
+
+		<id>https://www.w3.org/blog/news/?p=9227</id>
+		<updated>2021-08-31T08:17:26Z</updated>
+		<published>2021-08-24T09:21:17Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />
+		<summary type="html"><![CDATA[The Internationalization Working Group has published a First Public Working Draft of Developing Localizable Manifests. This document provides definitions and best practices related to the specification of manifest files and similar document formats on the Web.]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9227"><![CDATA[<p>The <a href="https://www.w3.org/International/core/Overview">Internationalization Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2021/WD-localizable-manifests-20210824/">Developing Localizable Manifests</a>. This document provides definitions and best practices related to the specification of manifest files and similar document formats on the Web.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Coralie Mercier</name>
+							<uri>https://koalie.blog/</uri>
+						</author>
+
+		<title type="html"><![CDATA[Speakers announced for the W3C Workshop on Wide Color Gamut and High Dynamic Range for the Web]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9203" />
+
+		<id>https://www.w3.org/blog/news/?p=9203</id>
+		<updated>2021-09-28T08:43:11Z</updated>
+		<published>2021-08-23T15:05:23Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Browsers and Authoring Tools" /><category scheme="https://www.w3.org/blog/news" term="Uncategorized" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Devices" />
+		<summary type="html"><![CDATA[W3C announced today the speakers and live sessions of the virtual W3C Workshop on Wide Color Gamut (WCG) and High Dynamic Range (HDR) for the Web. HDR Introduction &#8211; Monday 13 September WCG: CSS Color 4 &#8211; Tuesday 14 September HDR: Compositing and tone mapping &#8211; Friday 17 September WCG &#38; HDR: Color creation and [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9203"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/Graphics/Color/Workshop/talks.html"><img src="https://www.w3.org/Graphics/Color/Workshop/media/UCS-rec2020-ws.svg" alt="chromaticity diagram of wide color gamut" width="100" /></a>
+    W3C announced today the speakers and live sessions of the virtual 
+    <a href="https://www.w3.org/Graphics/Color/Workshop/talks.html">W3C Workshop
+    on Wide Color Gamut (WCG) and High Dynamic Range (HDR)
+    for the Web</a>.
+</p>
+<ul class="show_items">
+<li>HDR Introduction &#8211; Monday 13 September </li>
+<li>WCG: CSS Color 4 &#8211; Tuesday 14 September</li>
+<li>HDR: Compositing and tone mapping &#8211; Friday 17 September</li>
+<li>WCG &amp; HDR: Color creation and manipulation &#8211; Monday 20 September</li>
+<li>WCG &amp; HDR: Canvas, WebGL, WebGPU &#8211; Friday 24 September</li>
+</ul>
+<p>The <a href="https://www.w3.org/Graphics/Color/Workshop/talks.html">presentations are online</a>, so they can be watched in your own time. Each talk has full closed-captions, and a transcript is also available. Live Q&amp;A events for each session will be live-captioned, and you will be able to discuss with the speakers and other participants.</p>
+<p>The event is free. Please <a href="https://ti.to/wcg-hdr-ws/w3c-workshop-on-wcg-hdr">register</a> by 24 September.</p>
+<p>The primary goal of the workshop is to bring together browser vendors,
+content creators, color scientists, and experts in other relevant areas
+(e.g. accessibility, scripting, security, web) to converge on technologies
+for enabling WCG and HDR on the Open Web Platform.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[Upcoming: W3C/SMPTE Workshop on Professional Media Production on the Web]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9212" />
+
+		<id>https://www.w3.org/blog/news/?p=9212</id>
+		<updated>2021-10-14T13:13:45Z</updated>
+		<published>2021-08-23T08:11:52Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Uncategorized" />
+		<summary type="html"><![CDATA[W3C announced today the joint W3C/SMPTE Workshop on Professional Media Production on the Web, which is being organized as a virtual event during SMPTE&#8217;s annual ATC event, 9-18 November 2021. Professional media assets, including audio-visual masters for television and motion pictures, are increasingly being stored in the cloud. The workshop will connect the web platform [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9212"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/2021/03/media-production-workshop/"><img src="https://www.w3.org/2021/03/media-production-workshop/media/timeline-thin-sm.jpg" alt="Timeline photo by Jacob Miller on Unsplash" height="80" /></a>W3C announced today the <a href="https://www.w3.org/2021/03/media-production-workshop">joint W3C/SMPTE Workshop on Professional Media Production on the Web</a>, which is being organized as a virtual event during SMPTE&#8217;s annual ATC event, 9-18 November 2021.</p>
+<p>Professional media assets, including audio-visual masters for television and motion pictures, are increasingly being stored in the cloud. The workshop will connect the web platform and the professional media production communities and explore evolutions of the Web platform to address professional media production requirements, including:</p>
+<ul class="show_items">
+<li>Using Web technologies, like WebCodecs, WebGPU, and Web Audio for professional media production</li>
+<li>Understand the unique performance and format requirements of professional media production workflows</li>
+<li>Identify gaps in the web platform and standardization opportunities</li>
+</ul>
+<p>This joint W3C/SMPTE event will be organized as a combination of pre-recorded talks followed by online discussions on GitHub, and culminating in a series of live sessions in November 2021. </p>
+<p>Interested parties are encouraged to <a href="https://www.w3.org/2021/03/media-production-workshop/speakers.html">submit a proposal for a talk</a> as soon as possible. Deadline for selected speakers to provide their recorded talks is <strong>15 October 2021</strong>.</p>
+<p>Workshop organizers are also interested in expanding diversity of the program committee to cover other perspectives and regional specificities. Please reach out to François Daoust &lt;<a href="mailto:fd@w3.org">fd@w3.org</a>&gt; if you are interested.</p>
+<p>The event is free and open to anyone with relevant perspectives on the topic, whether or not W3C/SMPTE members. Please <a href="https://www.w3.org/2002/09/wbs/1/media-production-ws-2021/">register</a> by <strong>5 November 2021</strong> to be notified of talks availability, of the forum set up to facilitate discussion among registered participants, and of the live sessions logistics. To make sure that live interactions can take place during live sessions, the Program Committee may restrict participation to live sessions based on information provided during registration.</p>
+]]></content>
+		
+			</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+
+		<title type="html"><![CDATA[Patent Advisory Group for Second Screen Working Group Launched]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/9201" />
+
+		<id>https://www.w3.org/blog/news/?p=9201</id>
+		<updated>2021-08-26T08:45:52Z</updated>
+		<published>2021-08-19T13:25:57Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Uncategorized" />
+		<summary type="html"><![CDATA[In accordance with the W3C Patent Policy, W3C has launched a Second Screen Working Group Patent Advisory Group (PAG) in response to disclosures related to a specification of the Second Screen Working Group; see the PAG charter. W3C launches a PAG to resolve issues in the event a patent has been disclosed that may be [&#8230;]]]></summary>
+
+					<content type="html" xml:base="https://www.w3.org/blog/news/archives/9201"><![CDATA[<p>In accordance with the <a href="/Consortium/Patent-Policy-20200915/">W3C Patent Policy</a>, W3C
+ has launched a <a href="/2021/08/secondscreen-pag/">Second Screen Working
+ Group Patent Advisory Group (PAG)</a> in response to <a href="/2021/08/secondscreen-pag/#disclosures">disclosures</a>
+ related to a specification of the Second Screen Working Group; see
+ the <a href="/2021/08/secondscreen-pag/charter.html">PAG charter</a>. W3C <a href="/Consortium/Patent-Policy-20200915/#sec-Exception">launches a
+ PAG</a> to resolve issues in the event a patent has been disclosed
+ that may be essential, but is not available under the <a href="/Consortium/Patent-Policy-20200915/#def-RF">W3C Royalty-Free
+ licensing requirements</a>. Public comments regarding these
+ disclosures may be sent to public-secondscreen-pag@w3.org (<a href="https://lists.w3.org/Archives/Public/public-secondscreen-pag/">public
+ archive</a>). Learn more about <a href="/Consortium/Patent-Policy-20200915/#sec-Exception">Patent
+ Advisory Groups</a>.</p>
+]]></content>
+		
+			</entry>
+	</feed>

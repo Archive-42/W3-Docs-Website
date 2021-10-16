@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+								Understanding Success Criterion 1.3.1  | Understanding WCAG 2.0
+              </title><style type="text/css">
+body {max-width: 75em;}
+
+code           { font-family: monospace; }
+
+div.constraint,
+div.issue,
+div.note,
+div.notice,
+div.example    { margin-left: 1.5em; margin-bottom: .5em; }
+
+ol.enumar      { list-style-type: decimal; margin-top: 0; margin-bottom: .25em;}
+ol.enumla      { list-style-type: lower-alpha; }
+ol.enumlr      { list-style-type: lower-roman; }
+ol.enumua      { list-style-type: upper-alpha; }
+ol.enumur      { list-style-type: upper-roman; }
+
+.screenreader {position: absolute; left: -1000em}
+
+h2.section, h3.section {font-weight: normal; font-size: 1.25em; margin-top: 1.5em; color: #000000; background:inherit;}
+h4 {font-weight: bold; font-size: 0.8125em; padding: 0; margin-bottom: 0; color: #333; background:inherit;}
+.boxed h3, .boxed h4 {font-weight: bold; font-size: 0.8125em; padding: 0.5em 1em; color: #000000; background: #f0f0f0; margin: 0 0 1em}
+.boxed {border: solid #ccc 1px; padding: 0 0 1em; margin: 1em 2em 0 2em}
+.boxed p, .boxed div {margin-left: 1em; margin-right: 1em}
+div.boxed h3, div.boxed h4, div.div2 h2, div.div2 h3, h2.terms, h3.terms .div3 h3, .div3 h4, .benefits h3, .benefits h4 .resources h3, .resources h4 .intent h3, .intent h4 {color:#000000;}
+.div3head, .div2head {color:#000000; background: inherit; font-size: 1.1em;}
+div.div2 dl, dl.keyterms {margin-left: 1.5em;}
+p.prefix {margin-bottom: 0.5em}
+.benefits h3, .resources h3, .intent h3 {font-size: 1.1em;}
+
+blockquote.scquote, blockquote.glquote {margin: 0 1em 0 1em; border: solid #ccc 1px; background: #f0f0f0; color: #000000; clear: left; padding: 0.9em 0.5em 0.5em 0.5em;}
+blockquote.scquote p, blockquote.glquote p {font-size: 0.8125em}
+
+	li p {
+		margin-top: 0;                  
+		margin-bottom: 0; 
+	}
+
+p {
+		margin-top: 0;                  
+		margin-bottom: .5em; 
+	}
+	
+p.prefix, p.sctxt {
+    margin-top: .25em;  
+    margin-bottom: 0;
+}
+
+strong.sc-handle {
+  font-size: 1em;
+}
+
+dd.prefix p {
+		margin-bottom: 0;                  
+}
+      	dd {
+		margin-bottom: .5em;                  
+	}
+	dt.label {padding-top: .5em;}
+ul {
+		margin-top: 0;   
+		margin-bottom: .25em;               
+}
+
+h4, h5 {margin-bottom: .5em;}
+
+    .revnote {
+        border-style : solid;
+        border-width : thin;
+        border-color : #A7ABBF;
+        background-color: #F0F8F8 ;
+        color : black;
+        page-break-inside: avoid ;
+      }
+    p.revnote , div.revnote {
+        padding : 0.5em; 
+        margin : .25em 0 .25em 0; /* top, right, bottom, left */
+      }
+    .informative {
+        color : #000000;
+        background : #ffffff;
+        padding-bottom : 0.5em;
+        padding-left : 1em;
+        margin-top : 0.5em;
+        margin-left : 2em;
+        padding-right : 0.5em;
+        border-style : solid;
+        border-width : thin;
+        border-color : #f1f1f1;
+      }
+      
+    .principle { 	
+		padding: .5em; 	
+		border: thin solid #666666; 	
+		background-color: #FFFFFF; 	
+		color: #000000; 	
+		font-weight: bold; 
+	}
+       
+    .guideline {
+        border: thin solid #000066; 	
+        background-color: #CFE8EF ! important; 	
+        padding: .5em .5em .5em .5em; 	
+        margin-bottom: 0; 	
+        color: #000000;   
+      }
+      
+    .req, .bp, .additional, .terms, .section {      	    
+		  display: block; 
+		  border-bottom: thin solid #666666;
+		  margin-left: 1em;
+		  padding-bottom: .25em;
+		 } 
+		 
+		 .terms, .section {      	    
+		  display: block; 
+		  border-bottom: thin solid #666666;
+		  margin-left: 0;
+		 } 
+		 
+	div.sc {
+		 margin-left: 1em;
+	}	
+  
+    .bigger {
+        font-weight : bold;
+      }
+    .smaller {
+        font-size : 75%;
+      }
+    .termref {
+        color : #006400;
+        background : white;
+      }
+    a.termref:link {
+        color : #006400;
+        background : inherit;
+      }
+    a.termref:hover, a.termref:focus {
+        background-color : #fafad2;
+        color : #006400;
+      }
+	table.checklist {
+		empty-cells: show;
+		width: 94%;
+		margin-bottom: 1em;   
+	}
+					 	
+	.termref { 	
+		color: #006400; 	
+		background: white;
+	} 
+	
+	 a:link.termref { 	
+		 color: #006400; 	
+		 background: inherit; 	
+	}   
+	
+	a:hover.termref, a:focus.termref { 	
+		background-color: #FAFAD2; 	
+		color: #006400;
+	}
+      .sorethumb {color: red; background: inherit;}
+	table.checklist {
+		empty-cells: show;
+		width: 94%;
+		margin-bottom: 1em;
+	}
+					 
+p.sc {font-size: 100%; font-weight: bold; display: inline;}
+
+p.i, p.v {display: inline;}
+
+hr.divider {
+	background-color: #000066;
+	color: #000000;
+	height: 30px;
+}
+
+ ul.nobullet {
+  list-style-type: none;
+ }
+a.HTMlink, a.HTMlink:visited { 
+	display: inline;
+	font: .9em Arial, Helvetica, sans-serif;
+	padding: 0px 0px 2px 15px;
+	}
+a.HTMlink:hover, a.HTMlink:focus { 
+	display: inline;
+	font: .9em Arial, Helvetica, sans-serif;
+	padding: 0px 0px 2px 15px;
+	background-color: transparent;
+	}
+	
+li.conformance {
+  margin-top: 1em;
+}
+
+li.intro ul {
+margin-bottom: 1em;
+}
+
+p.indented {
+ margin-left: 2.5em;
+}
+
+</style><link media="print" type="text/css" rel="stylesheet" href="print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WD.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/">Understanding WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents" title="Table of Contents">Contents</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Understanding Guideline  1.3 [Adaptable]" href="content-structure-separation.html"><strong>Previous: </strong>Guideline  1.3 [Adaptable]</a></li><li><a title="Understanding SC  1.3.2 [Meaningful Sequence]" href="content-structure-separation-sequence.html"><strong>Next: </strong>SC  1.3.2 [Meaningful Sequence]</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#content-structure-separation-programmatic-intent-head">Intent</a></li><li><a href="#content-structure-separation-programmatic-examples-head">Examples</a></li><li><a href="#content-structure-separation-programmatic-resources-head">Related Resources</a></li><li><a href="#content-structure-separation-programmatic-techniques-head">Techniques &amp; Failures</a></li><li><a href="#key-terms">Key terms</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="content-structure-separation-programmatic" id="content-structure-separation-programmatic"> </a><strong>Info and Relationships</strong><span class="screenreader">:</span><br/>Understanding <abbr title="Success Criterion">SC</abbr> 1.3.1</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#content-structure-separation-programmatic">1.3.1</a> Info and Relationships:</strong> Information, <a href="#structuredef" class="termref">structure</a>, 
+                 and <a href="#relationshipsdef" class="termref">relationships</a> conveyed through <a href="#presentationdef" class="termref">presentation</a> can be <a href="#programmaticallydetermineddef" class="termref">programmatically determined</a> or are available in text. 
+					(Level A)
+				</p></div></blockquote><div class="intent"><h2 id="content-structure-separation-programmatic-intent-head" class="section">
+				Intent of this Success Criterion
+			</h2><p>The intent of this Success Criterion is to ensure that information and relationships that are implied by visual or auditory formatting are preserved when the presentation format changes. For example, the presentation format changes when the content is read by a screen reader or when a user style sheet is substituted for the style sheet provided by the author.</p><p>
+Sighted users perceive structure through various visual cues — headings are often in a larger, bold font separated from paragraphs by blank lines; list items are preceded by a bullet and perhaps indented; paragraphs are separated by a blank line; items that share a common characteristic are organized into tabular rows and columns; form fields may be positioned as groups that share text labels; a different background color may be used to indicate that several items are related to each other; words that have special status are indicated by changing the font family and /or bolding, italicizing, or underlining them and so on.
+</p><p>Auditory cues may be used as well. For example, a chime might indicate the beginning of a new section; a change in voice pitch or speech rate may be used to emphasize important information or to indicate quoted text; etc.</p><p>
+When such relationships are perceivable to one set of users, those relationships can be made to be perceivable to all. One method of determining whether or not information has been properly provided to all users is to access the information serially in different modalities.
+          </p><p>If links to glossary items are implemented using anchor elements (or the proper link element for the technology in use) and identified using a different font face, a screen reader user will hear that the item is a link when the glossary term is encountered even though they may not receive information about the change in font face. An on-line catalog may indicate prices using a larger font colored red. A screen reader or person who cannot perceive red, still has the information about the price as long as it is preceded by the currency symbol.</p><p>Some technologies do not provide a means to programmatically determine some types of information and relationships. In that case then there should be a text description of the information and relationships. For instance, "all required fields are marked with an asterisk (*)". The text description should be near the information it is describing (when the page is linearized), such as in the parent element or in the adjacent element.</p><p>There may also be cases where it may be a judgment call about what information should appear in text and what would need to be directly associated, and it may be most appropriate to duplicate some information (for instance, in an HTML table, providing the summary both in the paragraph before the table and in the summary attribute of the table itself). However, wherever possible it is necessary for the information to be programmatically determined rather than providing a text description before encountering the table.</p><div class="note"><p class="prefix">Note: It is not required that color values be programmatically determined. The information conveyed by color cannot be adequately presented simply by exposing the value. Therefore, <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#visual-audio-contrast-without-color">Success Criterion 1.4.1
+              </a> addresses the specific case of color, rather than Success Criterion 1.3.1.
+            </p></div><div class="benefits"><h3 id="content-structure-separation-programmatic-48-head" class="div3head">
+				Specific Benefits of Success Criterion 1.3.1:
+			</h3><ul><li><p>This Success Criterion helps people with different disabilities by allowing user agents to adapt content according to the needs of individual users.
+              </p></li><li><p>Users who are blind (using a screen reader) benefit when information conveyed through color is also available in text (including text alternatives for images that use color to convey information).</p></li><li><p>Users who are deaf-blind using braille (text) refreshable displays may be unable to access color-dependent information.</p></li></ul></div></div><div class="div3"><h2 id="content-structure-separation-programmatic-examples-head" class="section">
+				Examples of Success Criterion 1.3.1</h2><ul><li><p>
+                <strong>
+                  A form with required fields
+                </strong>
+              </p><p>
+                A form contains several required fields. The labels for the required fields are displayed in red. In addition, at the end of each label is an asterisk character, *. The instructions for completing the form indicate that "all required fields are displayed in red and marked with an asterisk *", followed by an example.
+                
+              </p></li><li><p>
+                <strong>A form that uses color and text to indicate required fields</strong>
+              </p><p>A form contains both required and optional fields. Instructions at the top of the form explain that required fields are labeled with red text and also with an icon whose text alternative says, "Required." Both the red text and the icon are programmatically associated with the appropriate form fields so that assistive technology users can determine the required fields. 
+              </p></li><li><p>
+                <strong>A bus schedule table where the headers for each cell can be programmatically determined</strong>
+              </p><p>A bus schedule consists of a table with the bus stops listed vertically in the first column and the different buses listed horizontally across the first row. Each cell contains the time when the bus will be at that bus stop. The bus stop and bus cells are identified as headers for their corresponding row or column so that assistive technology can programmatically determine which bus and which bus stop are associated with the time in each cell.
+              </p></li><li><p>
+                <strong>A form where the labels for the checkboxes can be programmatically determined</strong>
+              </p><p>In a form, the labels for each checkbox can be programmatically determined by assistive technology.
+              </p></li><li><p>
+                <strong>A text document</strong>
+              </p><p>A simple text document is formatted with double blank lines before titles, asterisks to indicate list items and other standard formatting conventions so that its structure can be programmatically determined.
+              </p></li></ul></div><div class="resources"><h2 id="content-structure-separation-programmatic-resources-head" class="section">
+				Related Resources
+			</h2><p>Resources are for information purposes only, no endorsement implied.</p><ul><li><p><a href="http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">Quick tips for accessible headings</a></p></li></ul></div><div class="div3"><h2 id="content-structure-separation-programmatic-techniques-head" class="section">
+				Techniques and Failures for Success Criterion 1.3.1 - Info and Relationships</h2><p>Each numbered item in this section represents a technique or combination of techniques that the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group deems sufficient for meeting this Success Criterion. The techniques listed only satisfy the Success Criterion if all of the <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#conformance-reqs">WCAG 2.0 conformance requirements</a> have been met. </p><div class="boxed"><h3 id="content-structure-separation-programmatic-49-head" class="div3head">
+				Sufficient Techniques  
+			</h3><p class="instructions"><strong>Instructions:</strong> Select the situation below that matches your content. Each situation includes techniques or combinations of techniques that are known and documented to be sufficient for that situation. 
+</p><div><h4><a name="d0e2465" id="d0e2465"> </a>Situation A: The technology provides semantic structure to make information and relationships conveyed through presentation programmatically determinable:</h4>
+<ol class="enumar"><li><p>
+                    <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G115">G115: Using semantic elements to mark up structure</a>
+                    <strong>AND</strong>
+                    <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H49">H49: Using semantic markup to mark emphasized or special text</a>  (HTML)
+			
+                  </p></li><li><p>
+                    <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G117">G117: Using text to convey information that is conveyed by variations in presentation of text</a>
+                  </p></li><li><p><a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G140">G140: Separating information and structure from presentation to enable different presentations</a> 
+                  </p></li><li><p>Making information and relationships conveyed through presentation programmatically determinable using the following techniques:</p><ul><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G138">G138: Using semantic markup whenever color cues are used 
+            
+          
+        </a>
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H51">H51: Using table markup to present tabular information</a>  (HTML)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H39">H39: Using caption elements to associate data table captions with data tables</a>  (HTML)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H73">H73: Using the summary attribute of the table element to give an overview of data
+          tables</a>  (HTML)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H63">H63: Using the scope attribute to associate header cells and data cells in data
+          tables</a>  (HTML)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H43">H43: Using id and headers attributes to associate data cells with header cells in
+          data tables</a>  (HTML)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H44">H44: Using label elements to associate text labels with form controls</a>  (HTML)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H65">H65: Using the title attribute to identify form controls when the label element
+          cannot be used</a>  (HTML)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H71">H71:  Providing a description for groups of form controls using fieldset and legend
+          elements </a>  (HTML)
+			
+                      </p></li><li><p><a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H85">H85: Using OPTGROUP to group OPTION elements inside a SELECT</a>  (HTML)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H48">H48: Using ol, ul and dl for lists</a>  (HTML)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H42">H42: Using h1-h6 to identify headings</a>  (HTML)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/SCR21">SCR21: Using functions of the Document Object Model (DOM) to add content to a page</a>  (Scripting)
+			
+                      </p></li></ul></li></ol></div><div><h4><a name="d0e2577" id="d0e2577"> </a> Situation B: The technology in use does NOT provide the semantic structure to make the information and relationships conveyed through presentation programmatically determinable:</h4>
+<ol class="enumar"><li><p>
+                    <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G117">G117: Using text to convey information that is conveyed by variations in presentation of text</a>
+                  </p></li><li><p>Making information and relationships conveyed through presentation programmatically determinable or available in text using the following techniques:</p><ul><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/T1">T1: Using standard text formatting conventions for paragraphs</a>  (TXT)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/T2">T2: Using standard text formatting conventions for lists</a>  (TXT)
+			
+                      </p></li><li><p>
+                        <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/T3">T3: Using standard text formatting conventions for headings</a>  (TXT)
+			
+                      </p></li></ul></li></ol></div></div><div class="boxed"><h3 id="content-structure-separation-programmatic-50-head" class="div3head">
+				 Additional Techniques (Advisory) for 1.3.1</h3><p>Although not required for conformance, the following additional techniques should be considered in order to make content more accessible. Not all techniques can be used or would be effective in all situations.</p><ul><li><p><a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C22">C22: Using CSS to control visual presentation of text</a>  (CSS)
+			</p></li><li><p>Using CSS rather than tables for page layout (future link)</p></li><li><p><a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G162">G162: Positioning labels to maximize predictability of relationships</a></p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/ARIA1">ARIA1: Using Accessible Rich Internet Application describedby property to provide a descriptive, programmatically determined label
+        </a>  (ARIA)
+			
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/ARIA4">ARIA4: Using Accessible Rich Internet Applications to programmatically identify form fields as required</a>  (ARIA)
+			
+                </p></li><li><p>Providing
+labels for all form controls that do not have implicit labels (future link)
+                </p></li><li><p><a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G141">G141: Organizing a page using headings
+        </a></p></li></ul></div><div class="boxed"><h3 id="content-structure-separation-programmatic-51-head" class="div3head">
+				 Common Failures for <abbr title="Success Criterion">SC</abbr> 1.3.1</h3><p>The following are common mistakes that are considered failures of Success Criterion 1.3.1 by the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group.</p><ul><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F2">F2: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text</a>
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F17">F17: Failure of Success Criterion 1.3.1 and 4.1.1 due to insufficient information in DOM to determine
+                    one-to-one relationships (e.g., between labels with same id) in HTML</a>
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F33">F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to
+                    create multiple columns in plain text content</a>
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F34">F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to
+                    format tables in plain text content</a>
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F42">F42: Failure of Success Criterion 1.3.1 and 2.1.1 due to using scripting events to emulate links in a way that is not programmatically determinable
+            </a>
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F43">F43: Failure of Success Criterion 1.3.1 due to using structural markup in a way that does
+                    not represent relationships in the content</a>
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F46">F46: Failure of Success Criterion 1.3.1 due to using th elements,
+                    caption elements, or non-empty summary attributes in
+                    layout tables</a>
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F48">F48: Failure of Success Criterion 1.3.1 due to using the pre element to markup
+                    tabular information</a>
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F62">F62: Failure of Success Criterion 1.3.1 and 4.1.1 due to insufficient information in DOM to determine
+                    specific relationships in XML</a>
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F2">F2: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text</a>
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F68">F68: Failure of Success Criterion 1.3.1 and 4.1.2 due to the association of label and user interface controls not being programmatically determinable</a>
+                </p></li><li><p><a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F87">F87: Failure of 1.3.1 due to inserting non-decorative content by using :before and :after pseudo-elements and the 'content' property in CSS</a></p></li></ul></div></div><div class="div3"><h2 id="key-terms" class="terms">Key Terms</h2><dl class="keyterms"><dt class="label"><a name="presentationdef" id="presentationdef"> </a>presentation</dt><dd><p>
+              
+              rendering of the <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#contentdef" class="termref">content</a> in a form to be perceived by users
+            </p></dd><dt class="label"><a name="programmaticallydetermineddef" id="programmaticallydetermineddef"> </a>programmatically determined (programmatically determinable)</dt><dd><p>determined by software from author-supplied data provided in a  
+              way that different
+              <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#useragentdef" class="termref">user agents</a>, including <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#atdef" class="termref">assistive technologies</a>, can extract and present this information to users in different modalities 
+            </p><div class="example"><p class="prefix">Example 1:
+					Determined in a markup language from elements and attributes that are accessed directly by commonly available assistive technology.</p><p class="prefix">Example 2:
+					Determined from technology-specific data structures in a non-markup language and exposed to assistive technology via an accessibility <acronym title="Application Programming Interface">API</acronym> that is supported by commonly available assistive technology. </p></div></dd><dt class="label"><a name="relationshipsdef" id="relationshipsdef"> </a>relationships</dt><dd><p>
+              meaningful associations between distinct pieces of content 
+              
+            </p></dd><dt class="label"><a name="structuredef" id="structuredef"> </a>structure</dt><dd><ol class="enumar"><li><p>The way the parts of a <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#webpagedef" class="termref">Web page</a>
+                   are organized in relation to each other; and 
+                </p></li><li><p>The way a collection of <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#webpagedef" class="termref">Web pages</a> is organized</p></li></ol></dd></dl></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Top</a></strong></li><li><strong><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents" title="Table of Contents">Contents</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Understanding Guideline  1.3 [Adaptable]" href="content-structure-separation.html"><strong>Previous: </strong>Guideline  1.3 [Adaptable]</a></li><li><a title="Understanding SC  1.3.2 [Meaningful Sequence]" href="content-structure-separation-sequence.html"><strong>Next: </strong>SC  1.3.2 [Meaningful Sequence]</a></li></ul></div><div class="footer"><p class="copyright">This Web page is part of <a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/">Understanding WCAG 2.0: A guide to understanding and implementing WCAG 2.0</a>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">Overview of WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents.
+ </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2008 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

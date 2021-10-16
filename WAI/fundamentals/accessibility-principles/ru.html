@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+
+<title> Принципы доступности | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Принципы доступности" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Обзор основных требований веб-доступности для вебсайтов, веб приложений, браузеров и других инструментов." />
+<meta property="og:description" content="Обзор основных требований веб-доступности для вебсайтов, веб приложений, браузеров и других инструментов." />
+<link rel="canonical" href="https://www.w3.org/WAI/fundamentals/accessibility-principles/ru" />
+<meta property="og:url" content="https://www.w3.org/WAI/fundamentals/accessibility-principles/ru" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png" />
+<meta property="twitter:title" content="Принципы доступности" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"description":"Обзор основных требований веб-доступности для вебсайтов, веб приложений, браузеров и других инструментов.","@type":"WebPage","image":"https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png","headline":"Принципы доступности","url":"https://www.w3.org/WAI/fundamentals/accessibility-principles/ru","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-принципы-доступности ">
+    <nav aria-label="Пропустить ссылку и выбор языка" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">Перейти к контенту</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">Изменить размер или цвет текста</a></li>
+      <li class="opt languagelist">
+          <strong>Эта&nbsp;страница&nbsp;на:</strong>
+          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/" lang="en"  dir="auto" translate="no">English</a></li><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ar" lang="ar"  dir="auto" translate="no">العربية</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/cs" lang="cs"  dir="auto" translate="no">čeština</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/es" lang="es"  dir="auto" translate="no">español</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ko" lang="ko"  dir="auto" translate="no">한국어</a></li>
+          <li><strong style="text-transform: capitalize;">русский язык</strong></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/zh-hans" lang="zh-hans"  dir="auto" translate="no">简体汉语</a></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">Все&nbsp;переводы <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Показать настройки, языки, переводы' data-hidetext='Скрыть параметры'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Показать настройки, языки, переводы</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Стратегии, стандарты, ресурсы по веб-доступности для инвалидов</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Меню</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Поиск:</span>
+              <input id="header-search" type="search" name="q" placeholder="Поиск" aria-label="Поиск">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Послать запрос" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Главная" lang="ru"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Хлебные крошки" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="ru" href="/WAI/fundamentals/accessibility-principles/ru" aria-current="page"><span>Accessibility Principles</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/fundamentals/" class="page-link"><span>Accessibility Fundamentals</span></a></li><li>
+  <a lang="ru" href="/WAI/fundamentals/accessibility-intro/ru" class="page-link"><span>ВВЕДЕНИЕ В ВЕБ-ДОСТУПНОСТЬ</span></a><ul><li>
+  <a lang="ru" href="/WAI/videos/standards-and-benefits/ru" class="page-link"><span>Введение</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/fundamentals/foundations-course/" class="page-link"><span>Foundations Online Course</span></a></li><li>
+  <a lang="en" href="/WAI/fundamentals/components/" class="page-link"><span>Components of Web Accessibility</span></a></li><li>
+  <a lang="ru" href="/WAI/fundamentals/accessibility-principles/ru" aria-current="page" class="page-link"><span>Accessibility Principles</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/" class="page-link"><span>Perspectives Videos</span></a><ul><li>
+  <a lang="en" href="/WAI/perspective-videos/keyboard/" class="page-link"><span>Keyboard Compatibility</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/contrast/" class="page-link"><span>Colors with Good Contrast</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/layout/" class="page-link"><span>Clear Layout and Design</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/speech/" class="page-link"><span>Text to Speech</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/controls/" class="page-link"><span>Large Links, Buttons, and Controls</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/captions/" class="page-link"><span>Video Captions</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/customizable/" class="page-link"><span>Customizable Text</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/voice/" class="page-link"><span>Speech Recognition</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/understandable/" class="page-link"><span>Understandable Content</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/notifications/" class="page-link"><span>Notifications and Feedback</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/" class="page-link"><span>How People with Disabilities Use the Web</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/" class="page-link"><span>Stories of Web Users</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/" class="page-link"><span>Diverse Abilities and Barriers</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/" class="page-link"><span>Tools and Techniques</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/older-users/" class="page-link"><span>Older Users and Accessibility</span></a><ul><li>
+  <a lang="en" href="/WAI/older-users/developing/" class="page-link"><span>How WCAG 2 Applies</span></a></li><li>
+  <a lang="en" href="/WAI/older-users/literature/" class="page-link"><span>Literature Review</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/fundamentals/accessibility-usability-inclusion/" class="page-link"><span>Accessibility, Usability, Inclusion</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">Языки/переводы</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><a href="/WAI/fundamentals/accessibility-principles/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ar" dir="auto" translate="no" lang="ar">العربية</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/cs" dir="auto" translate="no" lang="cs">čeština</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/fr" dir="auto" translate="no" lang="fr">français</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ko" dir="auto" translate="no" lang="ko">한국어</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">русский язык</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/zh-hans" dir="auto" translate="no" lang="zh-hans">简体汉语</a></li></ul><p><a href="/WAI/translations/#ru">Другие ресурсы в русский язык</a></p>
+        
+        <p><a href="/WAI/translations/">Все&nbsp;переводы</a></p>
+        <p><a href="/WAI/about/translating/">Перевод ресурсов WAI</a></p>
+      </nav>
+</div>
+  
+
+  <main id="main" lang="ru">
+
+      
+
+    
+    <header>
+      <h1>
+      
+      
+      
+        Принципы доступности
+      
+      </h1></header>
+    <section id="translation-info" class="doc-note-box doc-note-translation">
+  <h2 class="visuallyhidden">Об этом переводе</h2>
+  <p>Этот волонтерский перевод может быть неточным и отличаться от<a href="/WAI/fundamentals/accessibility-principles/"> английского оригинала</a>.</p>
+  
+  
+  <p><svg focusable="false" aria-hidden="true" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> Перевод соответствует английской версиии.
+    <br>Перевод обновлен: <span dir="auto">2020-11-24</span>. Английская версия обновлена: <span dir="auto">2019-05-10</span>.
+   </p>
+  
+  
+  <p>
+    <strong>Переводчик:</strong> Daniel Novichkov. 
+    <br>WAI благодарит переводчиков и приглашает к участию волонтеров<a href="/WAI/about/translating/"> переводы </a>.</p>
+</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
+
+<p>На этой странице представлены некоторые требования доступности для веб-сайтов, веб-приложений, браузеров и других инструментов. В ней приведены ссылки на международные стандарты W3C Web Accessibility Initiative (WAI) и <a href="/WAI/people-use-web/user-stories/" hreflang="en">истории интернет пользователей (на английском)</a>.</p>
+
+<p><strong>Примечание:</strong> Этот текст не является полным списком требований доступности.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-full"> Содержание страницы</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#standards" id="markdown-toc-standards">Стандарты веб-доступности</a></li>
+  <li><a href="#perceivable" id="markdown-toc-perceivable">Воспринимаемость информации и пользовательского интерфейса</a>    <ul>
+      <li><a href="#alternatives" id="markdown-toc-alternatives">Текстовые версии для нетекстового контента</a></li>
+      <li><a href="#captions" id="markdown-toc-captions">Субтитры и другие альтернативы для мультимедиа</a></li>
+      <li><a href="#adaptable" id="markdown-toc-adaptable">Контент может быть представлен разными способами</a></li>
+      <li><a href="#distinguishable" id="markdown-toc-distinguishable">Контент легче видеть и слышать</a></li>
+    </ul>
+  </li>
+  <li><a href="#operable" id="markdown-toc-operable">Управляемость пользовательского интерфейса и навигации</a>    <ul>
+      <li><a href="#keyboard" id="markdown-toc-keyboard">Вся функциональность доступна с клавиатуры</a></li>
+      <li><a href="#time" id="markdown-toc-time">Пользователям даётся достаточно времени, для ознакомления и использования контента</a></li>
+      <li><a href="#safe" id="markdown-toc-safe">Контент не вызывает судорог и иных физических реакций</a></li>
+      <li><a href="#navigable" id="markdown-toc-navigable">Пользователи могут легко перемещаться, находить нужный контент и определять, где они находятся</a></li>
+      <li><a href="#modalities" id="markdown-toc-modalities">Пользователи могут использовать различные способы ввода кроме клавиатуры</a></li>
+    </ul>
+  </li>
+  <li><a href="#understandable" id="markdown-toc-understandable">Понятные информация и пользовательский интерфейс</a>    <ul>
+      <li><a href="#readable" id="markdown-toc-readable">Текст легко читать и понимать</a></li>
+      <li><a href="#predictable" id="markdown-toc-predictable">Контент загружается и работает предсказуемым образом</a></li>
+      <li><a href="#tolerant" id="markdown-toc-tolerant">Пользовательские ошибки предупреждаются и исправляются</a></li>
+    </ul>
+  </li>
+  <li><a href="#robust" id="markdown-toc-robust">Надёжный контент и надёжная интерпретация</a>    <ul>
+      <li><a href="#compatible" id="markdown-toc-compatible">Контент совместим с имеющимися и будущими пользовательскими инструментами</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<div class="excol-all"></div>
+
+<h2 id="standards">Стандарты веб-доступности</h2>
+
+<p>Веб-доступность состоит  из нескольких компонентов, которые взаимодействуют друг с другом, включая:</p>
+
+<ul>
+  <li><strong id="webcontent">Веб контент</strong> - относится к любой части веб-сайта, включая текст, изображения, формы, мультимедиа, а также любой код разметки, скрипты, приложения и тому подобное.</li>
+  <li><strong id="useragents">Пользовательские агенты</strong> - программное обеспечение, которое используют пользователи для доступа к веб-контенту, включая графические десктопные браузеры, голосовые браузеры, браузеры мобильных телефонов, проигрыватели мультимедиа, плагины и некоторые <a href="/WAI/people-use-web/tools-techniques/#at" title="definition" hreflang="en">вспомогательные технологии (на английском)</a>.</li>
+  <li><strong id="authoringtools">Инструменты разработки</strong> - программное обеспечение или сервисы, которые используются для создания веб-контента, включая редакторы кода, инструменты преобразования документов, системы управления контентом, блоги, сценарии баз данных и другие инструменты.</li>
+</ul>
+
+<details><summary>
+
+    <h3 class="no_toc" id="section">Подробнее о стандартах веб-доступности</h3>
+
+  </summary>
+  <div>
+
+    <p>Эти компоненты взаимосвязаны и поддерживают друг друга. Например, <strong>веб-контент</strong> должен включать текстовые версии изображений. Эта информация должна обрабатываться <strong>веб-браузерами</strong> и затем передаваться <strong>вспомогательным технологиям</strong>, например программам экранного чтения. Для создания текстовых версий, авторам нужны <strong>инструменты разработки</strong>, которые их поддерживают. Более подробная информация представлена в <a href="/WAI/fundamentals/components/" hreflang="en">Основные компоненты веб-доступности (на английском)</a>.</p>
+
+    <p>Стандарты играют жизненно важную роль в определении требований доступности для каждого из этих компонентов. Некоторые требования доступности легко выполнить, но понимание основ того, как люди с ограниченными возможностями используют Интернет, помогает реализовать их более эффективно и действенно. Некоторые аспекты доступности требуют дополнительных технических навыков или глубоких знаний о том, как люди используют Интернет. В любом случае <a href="/WAI/test-evaluate/involving-users/" hreflang="en">вовлечение пользователей на раннем этапе и во всех ваших веб-проектах (на английском)</a> сделает вашу работу лучше и проще.
+Инициатива W3C по веб-доступности (WAI) предоставляет набор руководящих принципов, которые признаны во всем мире в качестве стандарта веб-доступности. Они включают:</p>
+
+    <ul>
+      <li><strong><a href="/WAI/standards-guidelines/wcag/" hreflang="en">Web Content Accessibility Guidelines (WCAG) (на английском)</a></strong></li>
+      <li><strong><a href="/WAI/standards-guidelines/uaag/" hreflang="en">User Agent Accessibility Guidelines (UAAG) (на английском)</a></strong></li>
+      <li><strong><a href="/WAI/standards-guidelines/atag/" hreflang="en">Authoring Tool Accessibility Guidelines (ATAG) (на английском)</a></strong></li>
+    </ul>
+
+    <p>Также имеется спецификация WAI для <strong><a href="https://www.w3.org/WAI/intro/aria.php">Accessible Rich Internet Applications (WAI-ARIA)</a></strong>, которые описывают динамический контент и расширенные элементы управления пользовательским интерфейсом, разработанные с помощью Ajax, JavaScript и похожими веб-технологиями. и затем передаваться вспомогательным технологиям, например программам экранного чтения.</p>
+
+  </div>
+</details>
+
+<h2 id="perceivable">Воспринимаемость информации и пользовательского интерфейса</h2>
+
+<h3 id="alternatives">Текстовые версии для нетекстового контента</h3>
+
+<p>Текстовые версии являются эквивалентами нетекстового контента. Примеры:</p>
+
+<ul>
+  <li>Короткие эквиваленты изображений, включая значки, кнопки и графику</li>
+  <li>Описание данных, представленных на графиках, диаграммах и иллюстрациях</li>
+  <li>Краткие описания нетекстового контента, такого как аудио и видео файлы</li>
+  <li>Ярлыки для элементов управления, ввода и других компонентов пользовательского интерфейса</li>
+</ul>
+
+<p>Текстовые версии описывают цель изображения или функции для обеспечения эквивалентного пользовательского взаимодействия. Например, подходящей текстовой альтернативой для кнопки поиска будет “<em>поиск</em>”, а не “<em>увеличительная линза</em>”.</p>
+
+<p>Текстовые версии могут быть представлены различными способами. 
+Например, они могут зачитываться вслух пользователям, которые не могут видеть экран или испытывают трудности при чтении, при значительном увеличении размеров текста или отображении его на устройствах Брайля. 
+Текстовые версии служат метками элементов управления и функций, помогая  управлять контентом с клавиатуры или голосом (голосовой ввод). 
+Они служат метками аудио, видео и других файлов, а также приложений, встроенных в веб-сайты.</p>
+
+<details><summary>
+
+    <h4 class="no_toc" id="section-1">Требования доступности текстовых версий (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#text-alternatives">Guideline 1.1 - Text Alternatives</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content">Guideline 1.1 - Alternative content</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a21">Guideline A.2.1: (For the authoring tool user interface) Make alternative content available to authors</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">Guideline A.2.2: (For the authoring tool user interface) Ensure that editing-view presentation can be programmatically determined</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">Guideline A.3.7: (For the authoring tool user interface) Ensure that previews are at least as accessible as in-market user agents</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<details><summary>
+
+    <h4 id="stories-related-to-text-alternatives" class="no_toc">Истории про текстовые версии</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reporter with repetitive stress injury (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, online student who is hard of hearing (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, senior staff member who is blind (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, retiree with low vision, hand tremor, and mild short-term memory loss (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenager who is deaf and blind (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h3 id="captions">Субтитры и другие альтернативы для мультимедиа</h3>
+
+<p>Альтернативные версии нужны людям, которые не могут слышать аудио или видеть видео контент. Например:</p>
+
+<ul>
+  <li>Текстовые расшифровки и субтитры для аудиоконтента, например, для записей радиоинтервью</li>
+  <li>Аудиоописание, которое описывает важные визуальные детали видеоконтента</li>
+  <li>Перевод аудиоконтента и звуков на жестовый язык для передачи звукового сопровождения</li>
+</ul>
+
+<p>Хорошо написанные расшифровки текста, содержащие корректную последовательность любой звуковой или визуальной информации, обеспечивают базовый уровень доступности и облегчают создание субтитров и аудиоописаний.</p>
+<details><summary>
+
+    <h4 class="no_toc" id="section-2">Требования доступности к мультимедиа (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#time-based-media">Guideline 1.2 - Time-based Media</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content">Guideline 1.1 - Alternative content</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a21">Guideline A.2.1: (For the authoring tool user interface) Make alternative content available to authors</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">Guideline A.3.7: (For the authoring tool user interface) Ensure that previews are at least as accessible as in-market user agents</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 id="stories-related-to-multimedia" class="no_toc">Истории про мультимедиа</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, online student who is hard of hearing (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, senior staff member who is blind (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenager who is deaf and blind (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h3 id="adaptable">Контент может быть представлен разными способами</h3>
+
+<p>Пользователи могут менять способы представления контента, для этого необходимо чтобы:</p>
+<ul>
+  <li>Заголовки, списки, таблицы, поля ввода и структура контента были корректно размечены</li>
+  <li>Последовательность информации или инструкций не зависела от способа представления</li>
+  <li>Браузеры и вспомогательные технологии давали возможность настройки изменения представления.</li>
+</ul>
+
+<p>Выполнение этого требования позволит корректно зачитывать контент вслух, увеличивать или  адаптировать контент иным способом в соответствии с потребностями и предпочтениями разных людей. Например, контент может быть представлен с использованием пользовательских цветовых комбинаций, размера текста или других стилей для облегчения чтения. Это требование также облегчает другие формы изменения представления контента, включая автоматическое создание контуров страниц и создание резюме страниц, для упрощения ознакомления с контентом и фокусировкой на его конкретных частях.</p>
+
+<details><summary>
+
+    <h4 class="no_toc" id="section-3">Требования доступности к адаптивности (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#adaptable">Guideline 1.3 - Adaptable</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-text-config">Guideline 1.4 - Text configuration</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-volume-config">Guideline 1.5 - Volume configuration</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-speech-config">Guideline 1.6 - Synthesized speech configuration</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config">Guideline 1.7 - User style sheet configuration</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views">Guideline 1.9 - Alternative views</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-info-link">Guideline 1.10 - Element information</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">Guideline A.2.2: (For the authoring tool user interface) Ensure that editing-view presentation can be programmatically determined</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">Guideline A.3.7: (For the authoring tool user interface) Ensure that previews are at least as accessible as in-market user agents</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 class="no_toc" id="section-4">Истории про адаптивность</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, online shopper with color blindness (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reporter with repetitive stress injury (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, senior staff member who is blind (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, retiree with low vision, hand tremor, and mild short-term memory loss (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, supermarket assistant with Down syndrome (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenager who is deaf and blind (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h3 id="distinguishable">Контент легче видеть и слышать</h3>
+
+<p>Контрастный контент легче видеть и слышать. В таком контенте:</p>
+
+<ul>
+  <li>Цвет не используется как единственный способ передачи информации или идентификации контента</li>
+  <li>Комбинации цветов переднего плана и фона по умолчанию обеспечивают достаточный контраст</li>
+  <li>Никакая информация не теряется, если пользователь увеличивает размер текста до 400% или меняет межстрочный интервал</li>
+  <li>Текст адаптируется для корректного отображения на уменьшенных экранах («области просмотра») и при его увеличении</li>
+  <li>При изображении текста в графическом виде размер можно изменить, заменить его текстовой версией или по возможности не использовать изображение текста</li>
+  <li>Пользователи могут поставить на паузу, выключить или регулировать громкость аудио, воспроизводимого на веб-сайте</li>
+  <li>Фоновый звук тихий или его можно отключить, чтобы избежать помех или отвлечения пользователя</li>
+</ul>
+
+<p>Выполнение этого требования помогает отделить передний план от фона, чтобы выделить важную информацию. Это поможет как использующим, так и не использующим вспомогательные технологии пользователям избегать помех аудио или визуального контента, проигрываемого в фоновом режиме. 
+Например, многие пользователи с дальтонизмом не используют какие-либо специальные инструменты, полагаясь на дизайн с достаточным цветовым контрастом между текстом и окружающим его фоном. Автоматически воспроизводимый аудиоконтент может мешать пользователям функции речевого воспроизведения текста или <a href="http://www.w3.org/WAI/training/accessible#ald" title="definition">вспомогательных устройств прослушивания (ALD)</a>.</p>
+
+<details><summary>
+
+    <h4 class="no_toc" id="section-5">Требования доступности к контрастности (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#distinguishable">Guideline 1.4 - Distinguishable</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-interaction-highlight">Guideline 1.3 - Highlighting</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-text-config">Guideline 1.4 - Text configuration</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-volume-config">Guideline 1.5 - Volume configuration</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-speech-config">Guideline 1.6 - Synthesized speech configuration</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config">Guideline 1.7 - User style sheet configuration</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-viewport-orient">Guideline 1.8 - Orientation in viewports</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views">Guideline 1.9 - Alternative views</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-info-link">Guideline 1.10 - Element information</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">Guideline A.3.7: (For the authoring tool user interface) Ensure that previews are at least as accessible as in-market user agents</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 class="no_toc" id="section-6">Истории про контрастность</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, online shopper with color blindness (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, online student who is hard of hearing (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, senior staff member who is blind (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, retiree with low vision, hand tremor, and mild short-term memory loss (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenager who is deaf and blind (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h2 id="operable">Управляемость пользовательского интерфейса и навигации</h2>
+
+<h3 id="keyboard">Вся функциональность доступна с клавиатуры</h3>
+
+<p>Многие люди используют клавиатуру, а не мышь для взаимодействия с интернетом. Для этого им необходим доступ с клавиатуры ко всем функциям, включая элементы управления форм, ввода и других компонентов пользовательского интерфейса.
+Доступность с клавиатуры подразумевает:</p>
+
+<ul>
+  <li>Все функции, доступные с помощью мыши, равно доступны и с клавиатуры</li>
+  <li>Фокус клавиатуры не блокируется какой-либо частью контента</li>
+  <li>Веб-браузеры, инструменты разработки и другие инструменты предоставляют поддержку управления с клавиатуры.</li>
+</ul>
+
+<p>Выполнение этого требования помогает пользователям клавиатуры, включая людей, использующих альтернативные клавиатуры, например, эргономические, экранные клавиатуры или переключающие устройства. 
+Это также поможет пользователям функции распознавания голоса (голосового ввода) управлять веб-сайтами и наговаривать текст через интерфейс клавиатуры.</p>
+
+<details><summary>
+
+    <h4 class="no_toc" id="section-7">Требования к доступности управления с клавиатуры (ссылки на технические характеристики)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-accessible">Guideline 2.1 - Keyboard accessible</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-keyboard-access">Guideline 2.1 - Keyboard access</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation">Guideline 2.2 - Sequential navigation</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation">Guideline 2.3 - Direct navigation and activation</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-other-devices">Guideline 2.11 - Other Input Devices</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a31">Guideline A.3.1: (For the authoring tool user interface) Provide keyboard access to authoring features</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 class="no_toc" id="section-8">Истории про доступность управления с клавиатуры</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reporter with repetitive stress injury (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, senior staff member who is blind (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h3 id="time">Пользователям даётся достаточно времени, для ознакомления и использования контента</h3>
+
+<p>Некоторым людям нужно больше времени, чтобы ознакомиться с контентом и  использовать его. Например, кому-то требуется больше времени для набора текста, понимания инструкций, использования элементов управления или  выполнения иных своих задач на веб-сайте.</p>
+
+<p>Примеры предоставления достаточного времени подразумевают возможности:</p>
+
+<ul>
+  <li>Остановить, продлить или изменить временные ограничения, за исключением случаев, когда такое ограничение необходимо</li>
+  <li>Приостановить, остановить или скрыть перемещение, мерцание или прокрутку содержимого</li>
+  <li>Отложить или подавить прерывания за исключением случаев, когда они  необходимы</li>
+  <li>Повторно войти по истечении сеанса без потери ранее введённых данных</li>
+</ul>
+<details><summary>
+
+    <h4 class="no_toc" id="section-9">Требования к доступности, связанные с временными ограничениями (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#enough-time">Guideline 2.2 - Enough time</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-time-independent">Guideline 2.8 - Time-independent interaction</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-control-inaccessible-content">Guideline 2.10 - Time-based media</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a32">Guideline A.3.2: (For the authoring tool user interface) Provide authors with enough time</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 class="no_toc" id="section-10">Истории про ограничения времени</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reporter with repetitive stress injury (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, retiree with low vision, hand tremor, and mild short-term memory loss (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, supermarket assistant with Down syndrome (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenager who is deaf and blind (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h3 id="safe">Контент не вызывает судорог и иных физических реакций</h3>
+
+<p>Контент, мерцающий с определённой частотой или в определённом ритме, может вызвать фоточувствительные реакции, включая судороги. В идеале следует избегать мерцания контента или использовать его только так, чтобы не создавать таких рисков. Анимация и движущийся контент могут также вызывать дискомфорт и физические реакции.</p>
+
+<p>Примеры как избегать судорог и физических реакций:</p>
+
+<ul>
+  <li>Не используйте контент, который мерцает с определённой частотой и в определённом ритме</li>
+  <li>Предупреждайте пользователей перед отображением мерцающего контента и предлагайте альтернативы</li>
+  <li>Предоставьте возможность отключения анимации, если она не является необходимой</li>
+</ul>
+
+<details><summary>
+
+    <h4 class="no_toc" id="section-11">Требования доступности, относящиеся к приступам (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#seizures-and-physical-reactions">Guideline 2.3 - Seizures</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-prevent-flash">Guideline 2.9 - Flashing</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a33">Guideline A.3.3: (For the authoring tool user interface) Help authors avoid flashing that could cause seizures</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h3 id="navigable">Пользователи могут легко перемещаться, находить нужный контент и определять, где они находятся</h3>
+
+<p>Хорошо организованный контент помогает пользователям ориентироваться и эффективно перемещаться по нему. Такой контент подразумевает:</p>
+
+<ul>
+  <li>На страницах есть чёткие заголовки, и они организованы с использованием описательных заголовков разделов</li>
+  <li>Пользователям доступно несколько способов найти нужные страницы среди других веб-страниц</li>
+  <li>Пользователям доступна информация об их текущем местоположении в наборе связанных страниц</li>
+  <li>Пользователям доступна возможность обойти блоки повторяющегося на нескольких страницах контента</li>
+  <li>Фокус клавиатуры очевиден, порядок его перемещения понятен и последователен</li>
+  <li>Цель ссылки очевидна, в идеале, даже если она просматривается пользователем в отрыве от контекста</li>
+</ul>
+
+<p>Выполнение этого требования помогает пользователям перемещаться по веб-страницам различными способами в зависимости от их потребностей и предпочтений. 
+Например, одни пользователи для поиска нужных им веб-страниц перемещаются по структуре элементов навигации, таких как строки меню, тогда как другие используют функцию поиска на веб-сайте. 
+Одни пользователи могут видеть контент, другие могут его слышать, или слышать и видеть  одновременно. 
+Некоторые пользователи могут работать с контентом при помощи только мыши или только клавиатуры, другие могут использовать и то, и другое.</p>
+
+<details><summary>
+
+    <h4 class="no_toc" id="section-12">Требования доступности к навигации (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#navigable">Guideline 2.4 - Navigable</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation">Guideline 2.2 - Sequential navigation</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation">Guideline 2.3 - Direct navigation and activation</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-search-text">Guideline 2.4 - Text search</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-nav-structure">Guideline 2.5 - Structural navigation</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-configure-controls">Guideline 2.7 - Graphical controls</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">Guideline A.2.2: (For the authoring tool user interface) Ensure that editing-view presentation can be programmatically determined</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a34">Guideline A.3.4: (For the authoring tool user interface) Enhance navigation and editing via content structure</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a35">Guideline A.3.5: (For the authoring tool user interface) Provide text search of the content</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 class="no_toc" id="section-13">Истории про доступность навигации</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reporter with repetitive stress injury (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, senior staff member who is blind (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, retiree with low vision, hand tremor, and mild short-term memory loss (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, supermarket assistant with Down syndrome (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenager who is deaf and blind (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h3 id="modalities">Пользователи могут использовать различные способы ввода кроме клавиатуры</h3>
+
+<p>Способы ввода отличные от клавиатуры, такие как активация касанием, распознавание голоса (речевой ввод) и жесты, упрощают работу с контентом для многих людей. Не все могут использовать каждый из этих способов в равной степени хорошо, а для некоторых они вообще недоступны. Учёт особенных требований к дизайну облегчит использование этих способов ввода. Это включает в себя:</p>
+
+<ul>
+  <li>Жесты, требующие высокой ловкости или точности движения, могут быть заменены на менее точные</li>
+  <li>Компоненты разработаны так, чтобы можно было избегать их случайной активации, например, доступна функция отмены последнего действия</li>
+  <li>Ярлыки, отображаемые пользователям, соответствуют названиям объектов в коде для поддержки активации голосом</li>
+  <li>Функциональность, активируемая движением, может быть активирована и  компонентами пользовательского интерфейса</li>
+  <li>Кнопки, ссылки и другие активные компоненты имеют достаточный  размер для их активации касанием. Выполнение этого требования упрощает использование контента для многих людей с различными особенностями, использующих разные устройства. Это и поддержка контента, используемого на мобильных телефонах, планшетных компьютерах и терминалах самообслуживания, таких как билетные автоматы.</li>
+</ul>
+
+<details><summary>
+
+    <h4 class="no_toc" id="section-14">Требования доступности способов ввода (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#input-modalities">Guideline 2.5 - Input Modalities</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 class="no_toc" id="section-15">Истории про доступность ввода</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reporter with repetitive stress injury (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, retiree with low vision, hand tremor, and mild short-term memory loss (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, supermarket assistant with Down syndrome (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h2 id="understandable">Понятные информация и пользовательский интерфейс</h2>
+
+<h3 id="readable">Текст легко читать и понимать</h3>
+
+<p>Авторы контента должны позаботиться о том, чтобы их текст было легко читать и понимать максимально широкой аудитории, в том числе, когда он зачитывается вслух с помощью преобразования текста в речь. Это включает в себя:</p>
+
+<ul>
+  <li>Определение основного языка веб-страницы, например арабского, голландского или корейского</li>
+  <li>Определение языка параграфов, фраз или других частей веб-страницы</li>
+  <li>Предоставление определений для любых необычных слов, фраз, идиом и сокращений</li>
+  <li>Использование самого ясного и простого языка или создание упрощённых версий текста</li>
+</ul>
+
+<p>Выполнение этого требования поможет программному обеспечению, включая вспомогательные технологии, правильно обработать текстовый контент. 
+Это требование поможет программному обеспечению зачитывать контент вслух, создавать резюме страниц и давать определения для редко употребляемых слов, таких как технический жаргон. 
+Это также поможет людям, которым трудно понимать сложные предложения, фразы и слова. 
+В частности, это поможет людям с различными типами когнитивных нарушений.</p>
+<details><summary>
+
+    <h4 class="no_toc" id="section-16">Требования доступности лёгкости чтения (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#readable">Guideline 3.1 - Readable</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b42">Guideline A.4.2: (For the authoring tool user interface) Document the user interface, including all accessibility features</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 class="no_toc" id="section-17">Истории про лёгкость прочтения</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, online student who is hard of hearing (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, senior staff member who is blind (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, retiree with low vision, hand tremor, and mild short-term memory loss (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, supermarket assistant with Down syndrome (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h3 id="predictable">Контент загружается и работает предсказуемым образом</h3>
+
+<p>Пользователи ожидают определённого поведения пользовательских интерфейсов; нестандартный вид или поведение интерфейса их отвлекает или даже дезориентирует. Примеры повышения предсказуемости контента:</p>
+
+<ul>
+  <li>Механизмы навигации, повторяющиеся на нескольких страницах, всегда расположены на одном и том же месте</li>
+  <li>Компоненты пользовательского интерфейса, повторяющиеся на веб-страницах, всегда имеют одинаковые ярлыки.</li>
+  <li>Важные изменения на веб-странице происходят только с согласия пользователя</li>
+</ul>
+
+<p>Выполнение этого требования помогает людям быстро изучить функциональные возможности и механизмы навигации, представленные на веб-сайте, и управлять ими в соответствии со своими конкретными потребностями и предпочтениями. Например, некоторые пользователи назначают свои сочетания клавиш для функций, которыми они часто пользуются, чтобы упростить навигацию с помощью клавиатуры. 
+Другие запоминают шаги для перехода на определённые страницы или завершения процессов на веб-сайте. И те и другие рассчитывают на предсказуемое и последовательное поведение контента.</p>
+
+<details><summary>
+
+    <h4 class="no_toc" id="section-18">Требования доступности к предсказуемости (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#predictable">Guideline 3.2 - Predictable</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-predictable-operation">Guideline 3.3 - Predictable</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">Guideline A.2.2: (For the authoring tool user interface) Ensure that editing-view presentation can be programmatically determined</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b42">Guideline A.4.2: (For the authoring tool user interface) Document the user interface, including all accessibility features</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 class="no_toc" id="section-19">Истории про предсказуемость</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reporter with repetitive stress injury (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, senior staff member who is blind (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, retiree with low vision, hand tremor, and mild short-term memory loss (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, supermarket assistant with Down syndrome (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenager who is deaf and blind (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h3 id="tolerant">Пользовательские ошибки предупреждаются и исправляются</h3>
+
+<p>Формы и другие элементы пользовательского взаимодействия могут сбивать с толку или затруднять работу многих людей, и в результате чего они с большей вероятностью могут совершать ошибки. Примерами того, как помочь пользователям избегать и исправлять ошибки, могут служить:</p>
+
+<ul>
+  <li>Информативные инструкции, сообщения об ошибках и предложения по исправлению</li>
+  <li>Контекстно-зависимая справка для сложных функций и взаимодействия</li>
+  <li>Возможность просмотреть, исправить или отменить введённую информацию при необходимости</li>
+</ul>
+
+<p>Выполнение этого требования поможет людям, которые не видят и не слышат контент, а потому могут не распознавать неявные связи, последовательности и другие указания. Это также поможет людям, которые не понимают функциональность, дезориентированы или сбиты с толку, забывают или делают ошибки по любой другой причине при использовании форм и иных элементов взаимодействия.</p>
+
+<details><summary>
+
+    <h4 class="no_toc" id="section-20">Требования доступности помощи при вводе (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#input-assistance">Guideline 3.3 - Input assistance</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-avoid-mistakes">Guideline 3.1 - Mistakes</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">Guideline A.2.2: (For the authoring tool user interface) Ensure that editing-view presentation can be programmatically determined</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b41">Guideline A.4.1: (For the authoring tool user interface) Help authors avoid and correct mistakes</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 class="no_toc" id="section-21">Истории про доступность помощи при вводе</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, online shopper with color blindness (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reporter with repetitive stress injury (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, retiree with low vision, hand tremor, and mild short-term memory loss (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, supermarket assistant with Down syndrome (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h2 id="robust">Надёжный контент и надёжная интерпретация</h2>
+
+<h3 id="compatible">Контент совместим с имеющимися и будущими пользовательскими инструментами</h3>
+
+<p>Надёжный контент совместим с различными браузерами, вспомогательными технологиями и другими пользовательскими агентами. Примеры, как можно этого достичь, включают:</p>
+
+<ul>
+  <li>Обеспечение надёжной интерпретации разметки, например, через проверку её валидности</li>
+  <li>Обозначение названия, роли и значения для нестандартных компонентов пользовательского интерфейса</li>
+</ul>
+
+<p>Выполнение этого требования помогает улучшить совместимость с существующими и будущими пользовательскими агентами, включая вспомогательные технологии. В частности, оно позволяет вспомогательным технологиям корректно обрабатывать контент и представлять или управлять им различными способами. Сюда входят нестандартные (скриптовые) кнопки, поля ввода и другие элементы управления.</p>
+
+<details><summary>
+
+    <h4 class="no_toc" id="section-22">Требования доступности к совместимости (ссылки на техническую спецификацию)</h4>
+
+  </summary>
+  <div>
+
+    <p><strong>WCAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#compatible">Guideline 4.1 - Compatible</a></li>
+    </ul>
+
+    <p><strong>UAAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-store-prefs">Guideline 2.6 - Preference settings</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-AT-access">Guideline 4.1 - Assistive technology</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-obs-env-conventions">Guideline 5.1 - Follow specifications</a></li>
+    </ul>
+
+    <p><strong>ATAG</strong></p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines</a></li>
+      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Part B. Support the production of accessible content</a></li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h4 class="no_toc" id="section-23">Истории  про совместимость</h4>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, online shopper with color blindness (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reporter with repetitive stress injury (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, senior staff member who is blind (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, supermarket assistant with Down syndrome (на английском)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenager who is deaf and blind (на английском)</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<div class="excol-all"></div>
+
+
+
+    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Помогите улучшить эту страницу </h2></header><div class="box-i"><p>Пожалуйста, поделитесь своими идеями, предложениями или комментариями в публичной электронной рассылке <a href="mailto:wai-eo-editors@w3.org?subject=[ru]%20%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B%20%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D0%B8">wai-eo-editors@w3.org</a> или через GitHub.</p>
+<div class="button-group">
+    <a href="mailto:wai-eo-editors@w3.org?subject=[ru]%20%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B%20%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D0%B8&body=[%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D1%8C%D1%82%D0%B5%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%20%D0%B7%D0%B4%D0%B5%D1%81%D1%8C%20...]" class="button"><span>E-mail</span></a>
+    <a href="https://github.com/w3c/wai-accessibility-principles/edit/master/content/index.ru.md"  class="button"><span>Отделить ветку &amp; Редактировать на GitHub</span></a><a href="https://github.com/w3c/wai-accessibility-principles/issues/new?title=[ru]%20" class="button"><span>Новая задача на GitHub</span></a>
+</div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Вернуться к началу</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Дата:</strong> Обновлено 10 Мая 2019. <a href="/WAI/fundamentals/accessibility-principles/changelog/">Перечень изменений</a></p> <p><strong>Редакторы:</strong> <a href="https://www.w3.org/People/shadi/">Shadi Abou Zahra</a>. <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments">Благодарности</a>.</p> <p>Разработано Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Ранее разработано <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf">WAI-AGE Task Force</a>, при поддержке <a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE Project</a>.</p>
+</div>
+  </footer>
+  
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Стратегии, стандарты, и дополнительные ресурсы по мерам обеспечения Интернет доступности для людей с ограниченными возможностями.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+<script>
+  svg4everybody();
+</script>
+<script src="/WAI/assets/scripts/lang/ru.js?1633578570351143841"></script><!-- Matomo -->
+<script>
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.w3.org/analytics/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '328']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+
+  </body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+
+<title> Tools and Techniques | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Tools and Techniques" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Introduces some of the techniques and tools that people with disabilities use to interact with the web — web browser settings, text-to-speech, voice recognition, and many more." />
+<meta property="og:description" content="Introduces some of the techniques and tools that people with disabilities use to interact with the web — web browser settings, text-to-speech, voice recognition, and many more." />
+<link rel="canonical" href="https://www.w3.org/WAI/people-use-web/tools-techniques/" />
+<meta property="og:url" content="https://www.w3.org/WAI/people-use-web/tools-techniques/" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-people-use-web/social.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-10-07T03:49:30+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-people-use-web/social.png" />
+<meta property="twitter:title" content="Tools and Techniques" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"description":"Introduces some of the techniques and tools that people with disabilities use to interact with the web — web browser settings, text-to-speech, voice recognition, and many more.","@type":"BlogPosting","image":"https://www.w3.org/WAI/content-images/wai-people-use-web/social.png","headline":"Tools and Techniques","dateModified":"2021-10-07T03:49:30+00:00","datePublished":"2021-10-07T03:49:30+00:00","url":"https://www.w3.org/WAI/people-use-web/tools-techniques/","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/people-use-web/tools-techniques/"},"author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-tools-and-techniques resource-people-use-web">
+    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">Skip to Content</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">Change Text Size or Colors</a></li>
+      <li class="opt languagelist">
+          <strong>This&nbsp;page&nbsp;in:</strong>
+          <ul class="languagelistul"><li><strong style="text-transform: capitalize;">English</strong></li><li><a style="text-transform: capitalize;" href="/WAI/people-use-web/tools-techniques/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">All&nbsp;Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations' data-hidetext='Hide Options'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Search:</span>
+              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Main" lang="en"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/people-use-web/"><span>How People with Disabilities Use the Web</span></a></li><li><a lang="en" href="/WAI/people-use-web/tools-techniques/" aria-current="page"><span>Tools and Techniques</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/fundamentals/" class="page-link"><span>Accessibility Fundamentals</span></a></li><li>
+  <a lang="en" href="/WAI/fundamentals/accessibility-intro/" class="page-link"><span>Introduction to Accessibility</span></a><ul><li>
+  <a lang="en" href="/WAI/videos/standards-and-benefits/" class="page-link"><span>Video Introduction</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/fundamentals/foundations-course/" class="page-link"><span>Foundations Online Course</span></a></li><li>
+  <a lang="en" href="/WAI/fundamentals/components/" class="page-link"><span>Components of Web Accessibility</span></a></li><li>
+  <a lang="en" href="/WAI/fundamentals/accessibility-principles/" class="page-link"><span>Accessibility Principles</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/" class="page-link"><span>Perspectives Videos</span></a><ul><li>
+  <a lang="en" href="/WAI/perspective-videos/keyboard/" class="page-link"><span>Keyboard Compatibility</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/contrast/" class="page-link"><span>Colors with Good Contrast</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/layout/" class="page-link"><span>Clear Layout and Design</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/speech/" class="page-link"><span>Text to Speech</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/controls/" class="page-link"><span>Large Links, Buttons, and Controls</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/captions/" class="page-link"><span>Video Captions</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/customizable/" class="page-link"><span>Customizable Text</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/voice/" class="page-link"><span>Speech Recognition</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/understandable/" class="page-link"><span>Understandable Content</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/notifications/" class="page-link"><span>Notifications and Feedback</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/" aria-current="location" class="page-link"><span>How People with Disabilities Use the Web</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/" class="page-link"><span>Stories of Web Users</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/" class="page-link"><span>Diverse Abilities and Barriers</span></a></li>
+          <li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/" aria-current="page" class="page-link"><span>Tools and Techniques</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/older-users/" class="page-link"><span>Older Users and Accessibility</span></a><ul><li>
+  <a lang="en" href="/WAI/older-users/developing/" class="page-link"><span>How WCAG 2 Applies</span></a></li><li>
+  <a lang="en" href="/WAI/older-users/literature/" class="page-link"><span>Literature Review</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/fundamentals/accessibility-usability-inclusion/" class="page-link"><span>Accessibility, Usability, Inclusion</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">Languages/Translations</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">English (original)</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/people-use-web/tools-techniques/fr" dir="auto" translate="no" lang="fr">français</a></li></ul>
+        <p><a href="/WAI/translations/">All&nbsp;Translations</a></p>
+        <p><a href="/WAI/about/translating/">Translating WAI Resources</a></p>
+      </nav>
+</div>
+  
+
+  <main id="main" lang="en">
+
+      
+
+    
+    <header class="in-resource">
+      <h1>
+        
+        
+        
+          Tools and Techniques
+        </h1><p>in <a lang="en" href="/WAI/people-use-web/"><span>How People with Disabilities Use the Web</span></a></p></header>
+    <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
+
+<p>This page introduces some of the techniques and tools that people with disabilities use to interact with the web — web browser settings, text-to-speech, voice recognition, and many more.</p>
+
+<p><strong>Note:</strong> This page is illustrative and is not a complete list of all the ways that people interact with the web.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-full"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#tools" id="markdown-toc-tools">Tools and preferences</a></li>
+  <li><a href="#perception" id="markdown-toc-perception">Perception - hearing, feeling, and seeing</a></li>
+  <li><a href="#presentation" id="markdown-toc-presentation">Presentation  distinguishing and understanding</a></li>
+  <li><a href="#input" id="markdown-toc-input">Input  typing, writing, and clicking</a></li>
+  <li><a href="#interaction" id="markdown-toc-interaction">Interaction  navigating and finding</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<div class="excol-all"></div>
+
+<h2 id="tools">Tools and preferences</h2>
+
+<p>People with disabilities access and navigate the Web in different ways, depending on their individual needs and preferences. Sometimes people configure standard software and hardware according to their needs, and sometimes people use specialized software and hardware that help them perform certain tasks.</p>
+
+<details><summary>
+
+    <h3 id="more-about-tools-and-preferences">More about tools and preferences</h3>
+
+  </summary>
+  <div>
+
+    <p>Some common approaches for interacting with the Web include:</p>
+
+    <ul>
+      <li><strong id="at">Assistive Technologies</strong> – software and hardware that people with disabilities use to improve interaction with the web. These include screen readers that read aloud web pages for people who cannot read the text, screen magnifiers for people with some types of low vision, and voice recognition software and selection switches for people who cannot use a keyboard or mouse.</li>
+      <li><strong id="as">Adaptive Strategies</strong> – techniques that people with disabilities use to improve interaction with the Web, such as increasing text size, reducing mouse speed, and turning on captions. Adaptive strategies include techniques with standard software, with mainstream web browsers, and with assistive technologies.</li>
+    </ul>
+
+    <p>Accessibility benefits people with and without disabilities. Features that support accessibility are becoming increasingly available in standard computer hardware, mobile devices, operating systems, web browsers, and other tools. <a href="http://www.w3.org/WAI/users/browsing">Better Web Browsing: Tips for Customizing Your Computer</a> provides information about customizing your computer to take advantage of such accessibility features and solutions.</p>
+
+    <p>Sometimes hardware and software with specific accessibility features, including web browsers, media players, or assistive technologies, may not be available to an individual. For example, tools may not be affordable, not installed or not compatible with the computer, not available in some languages, or not available for other reasons. In other cases, people are unaware of accessibility solutions or how to configure and use them.</p>
+
+  </div>
+</details>
+
+<h2 id="perception">Perception - hearing, feeling, and seeing</h2>
+
+<p>People perceive content through different senses depending on their needs and preferences. For example, some people are not seeing the screen or hearing the audio. Examples of perception include:</p>
+
+<ul>
+  <li><strong>Auditory</strong> - such as speech, music, and sound that can be <em>heard</em>.</li>
+  <li><strong>Tactile</strong> - such as dots, bars, and vibration that can be <em>felt</em>.</li>
+  <li><strong>Visual</strong> - such as images, text, and video that can be <em>seen</em>.</li>
+</ul>
+
+<details><summary>
+
+    <h3 id="more-about-perception">More about perception</h3>
+
+  </summary>
+  <div>
+
+    <p>Some people need to convert content from one form to another to perceive it. For example, someone who is deaf-blind requires audio and visual content in a tactile form (such as <a href="#braille" class="termref">Braille</a>). Other people need to perceive content through multiple senses, such as someone with dyslexia who may need to hear and see the text to understand it better.</p>
+
+    <p>Content in textual form can be more easily converted into other forms and is therefore particularly useful. However, text-only content poses barriers for many people who have difficulty with written language. Graphics and illustrations can be made accessible and often improve understandability, ease-of-use, and satisfaction with websites and applications for everyone.</p>
+
+    <p>In some cases, content can be converted into different forms using software or hardware. For example, a text-to-speech software can convert text into speech. In other cases, content authors need to provide alternative forms of the content. For example, at least some level of human intervention is necessary to create textual descriptions for images and captions for audio content. Sometimes software tools, such as voice and picture recognition, can assist authors in providing such alternatives but the conversion is usually not fully automatable.</p>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="examples-of-accessibility-features">Examples of accessibility features</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><strong id="audio">Audio descriptions</strong> – (also referred to as “video descriptions” and “described video”) narrations that describe important visual details in a video. These narrations can be during natural pauses in the audio, or in separate audio files or audio tracks in multimedia.</li>
+      <li><strong id="notifications">Auditory, tactile, and visual notifications</strong> - prompting or alerting the user in different ways such as by blinking or displaying visual dialogs, by using sound, or by vibration.</li>
+      <li><strong id="braille">Braille</strong> – a system using six to eight raised dots in various patterns, to represent letters and numbers. These characters are read by scanning over the raised dots using the fingertips. Braille is used by people who are blind but not all individuals who are blind know braille.</li>
+      <li><strong id="captions">Captions</strong> – text with a verbatim recording of any speech and with descriptions of relevant auditory information that appears simultaneously with the audio (including audio that accompanies video in multimedia). For real-time captioning typically professional CART writers are necessary.</li>
+      <li><strong id="tts">Text-to-speech</strong> (sometimes called “speech synthesis” or “speech output”) - automatic conversion of text into a synthesized voice reading the text aloud.</li>
+      <li><strong id="transcripts">Transcripts</strong> – text manuscripts containing the correct sequence of verbatim recording of any speech, and descriptions of important auditory or visual information.</li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="examples-of-assistive-technologies-and-adaptive-strategies">Examples of assistive technologies and adaptive strategies</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><strong id="braille_display">Refreshable Braille display</strong> – a mechanical terminal that displays a line of <a href="#braille" class="termref">Braille</a> characters (usually 40-80) by raising and lowering the dots (pins) dynamically. Braille devices with capabilities of small computers incorporate Braille displays. These devices can be used to take notes, calculate numbers, or to interface with other devices such as public information kiosks.</li>
+      <li><strong id="sr">Screen reader</strong> – software that processes content on the desktop and in web browsers, and converts it to others forms such as <a href="#tts" class="termref">text-to-speech</a> and <a href="#braille" class="termref">Braille</a>. Screen readers typically provide other functions such as shortcut keys, different modes for processing content and interacting with it, and the ability to highlight the text that is being read aloud.</li>
+      <li><strong id="vb">Voice browser</strong> – similar to <a href="#sr" class="termref">screen reader</a> but usually only processes web content. Voice browsers are typically not developed as assistive tools but as alternative web browsers for mobile devices or similar.</li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="stories-related-to-perception">Stories related to perception</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent">Martine, online student who is hard of hearing</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant">Ilya, senior staff member who is blind</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager">Kaseem, teenager who is deaf and blind</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h2 id="presentation">Presentation  distinguishing and understanding</h2>
+
+<p>People adjust the presentation of content to make it easier to distinguish and understand. These adjustments include:</p>
+
+<ul>
+  <li>Making audio content easier to hear and visual content easier to see;</li>
+  <li>Combining audio and visual content to make information easier to understand;</li>
+  <li>Providing alternative presentations of the content, such as sign-language.</li>
+</ul>
+
+<details><summary>
+
+    <h3 id="more-about-presentation">More about presentation</h3>
+
+  </summary>
+  <div>
+
+    <p>Some people need larger text and image sizes or higher contrast between text and background colors to see the content better, and some people need louder audio with lower background noise to better hear the content. Some people need to turn off pop-up windows and animations that disorient or distract them. A sound that is automatically played, such as background music on a website, can also distract people or interfere with text-to-speech software. Web content, browsers, and tools need to support adjusting the presentation according to peoples’ needs and preferences.</p>
+
+    <p>Making text more readable is of particular importance. This involves changing its visual appearance, using additional text-to-speech, and adapting the content. For example, changing the font type, colors, spacing, and line width makes texts more readable for many people. Sometimes text-to-speech is used to assist reading further. Adapting the content involves rearranging sections of web pages, adding functionality such as dictionaries and glossaries, and hiding less used functionality. While these changes are often managed using specialized web browsers and tools, website authors need to provide adequate coding to support such adjustments and adaptations.</p>
+
+    <p>Also, people process information differently. This aspect is particularly relevant for learning environments but also applies to many other situations. In some cases, authors can provide different representations of the same information to address the widest audience possible, such as graphical and tabular representations of data for people with different learning styles, or <a href="#sign" class="termref">sign language</a> videos for sign language users.</p>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="examples-of-accessibility-features-1">Examples of accessibility features</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><strong id="style">Customized fonts and colors</strong> – changing the font types, sizes, colors, and spacing to make text easier to read. Customization involves browser settings and, for more advanced users, cascading style sheets (CSS) to override the default appearance of web content.</li>
+      <li><strong id="outline">Document outline</strong> – representation of the content that only shows the headings and relevant structures (such as headings nesting and hierarchy) to help provide orientation and an overview of the contents.</li>
+      <li><strong id="etr">Easy-to-read text</strong> – simplified summaries for passages of text to help make it easier to understand.</li>
+      <li><strong id="progressive">Progressive disclosure</strong> – design technique that involves showing only the least amount of information or functions necessary for a given task or purpose, to avoid overloading the user with information.</li>
+      <li><strong id="reduced">Reduced interface</strong> – representation of the content that only shows most relevant information or more frequently used functions; for example, by hiding other parts of the content that can distract users.</li>
+      <li><strong id="display">Screen magnification</strong> – changing the settings of the web browser, operating system, or screen to enlarge or reduce text size and images. Some people use magnification lenses, binoculars, or other visual aids, and software such as <a href="#magnifiers" class="termref">screen magnifiers</a> to better see the content.</li>
+      <li><strong id="sign">Sign language</strong> – a visual form of communication that is primarily used by people who are deaf. It involves hand, body, and facial expressions to transmit words, phrase, and tone. For instance, the intensity of a gesture could indicate the mood or emphasis of particular information. As in written languages, there are many sign languages and dialects, some of which are recognized as official languages in some countries. Not all people who have auditory disabilities or who are deaf know sign language.</li>
+      <li><strong id="symbols">Symbols</strong> – icons that represent words or concepts used instead of text by some people with impaired communication, including people with difficulties to read or write.</li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="examples-of-assistive-technologies-and-adaptive-strategies-1">Examples of assistive technologies and adaptive strategies</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><strong id="blockers">Pop-up and animations blockers</strong> – web browser plug-ins or other software tools that stop automatic pop-up windows and redirection, and options to stop, pause, and hide animations.</li>
+      <li><strong id="reading">Reading assistants</strong> – software that changes the presentation of content and provides other functionality to make it more readable. Examples include:
+        <ul>
+          <li>Customizing the font type, size, spacing, or foreground and background colors;</li>
+          <li>Scanning the text for complex words and phrases, and linking them to glossaries;</li>
+          <li>Hiding less relevant parts of the content, such as sidebars and header areas;</li>
+          <li>Providing outlines of the page headings and summaries of the text passages;</li>
+          <li>Reading the content aloud and highlight the text as it is being read out loud.</li>
+        </ul>
+      </li>
+      <li><strong id="magnifiers">Screen magnifier</strong> – software used primarily by people with partial sight to enlarge the content to make it easier to see. Some screen magnifiers provide <a href="#tts" class="termref">text-to-speech</a> and other functionality.</li>
+      <li><strong id="volume">Volume control</strong> – options to adjust the volume of audio content being played, including options to turn off the sound altogether, that are separate from the overall system settings.</li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="stories-related-to-presentation">Stories related to presentation</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#shopper">Lee, online shopper with color blindness</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent">Martine, online student who is hard of hearing</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree">Yun, retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant">Luis, supermarket assistant with Down syndrome</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager">Kaseem, teenager who is deaf and blind</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h2 id="input">Input  typing, writing, and clicking</h2>
+
+<p>People use different approaches to enter text and activate commands. For instance, some people do not use a mouse, keyboard, or both, while others use specific configurations for keyboard and mouse, or use alternative hardware and software altogether. Examples of input include using:</p>
+
+<ul>
+  <li>Keyboard only by people with cognitive, physical, and visual disabilities;</li>
+  <li>Touch screen only by people with cognitive and physical disabilities;</li>
+  <li>Mouse and keyboard with software that compensates for hand tremor;</li>
+  <li>Voice recognition (speech input) and other hands-free interaction.</li>
+</ul>
+
+<details><summary>
+
+    <h3 id="more-about-input">More about input</h3>
+
+  </summary>
+  <div>
+
+    <p>Some people use software and customized settings to enhance the efficiency of typing, writing, and clicking. For example, some people assign personalized shortcut keys to functions they frequently use. Some people use word prediction software to help complete words and sentences with minimal typing, grammar and spelling tools to help correct text, and tools to help click, select text, and scroll with minimal movement.</p>
+
+    <p>Web content needs to be designed to support these different types of approaches. For example, forms, links, and other functionality need to be usable by keyboard. In particular, web applications (“client-side scripting”), embedded media players, and other programmatic objects need to provide full keyboard support that does not trap the keyboard focus within the program and larger clickable areas for buttons and links.</p>
+
+    <p>Accessible web content supports people who need more time typing, writing, and clicking, or are more likely to make mistakes. For instance, some people forget to select options and fill out form entries, misspell words and mistype data (such as dates), or unintentionally activate buttons and links. Accessible web content also provides enough time to complete tasks, clear and helpful error messages and options for correcting input.</p>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="examples-of-assistive-technologies-and-adaptive-strategies-2">Examples of assistive technologies and adaptive strategies</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><strong id="accelerators">Accelerators</strong> – software and functionality that help reduce the effort needed to type or click. For example, by providing options to create shortcuts for commands or sequences of commands, by highlighting selection choices such as menu items, links, or options, and by helping to steer the mouse.</li>
+      <li><strong id="input">Alternative keyboard and mouse</strong> – hardware and software primarily used by people with cognitive and physical disabilities to help interact with the computer. Examples include:
+        <ul>
+          <li>Keyboards with larger keys, key labels, key spacing, illuminated keys, or custom layouts;</li>
+          <li>On-screen keyboards, touch-screens, sip-and-puff switches, and single-key switches;</li>
+          <li>Trackballs, joysticks, touchpads, specially designed mice, and other pointing devices;</li>
+          <li><a href="#voice" class="termref">Voice recognition</a>, <a href="#gaze" class="termref">eye tracking</a>, and other approaches for hands-free interaction.</li>
+        </ul>
+      </li>
+      <li><strong id="gaze">Eye tracking</strong> (sometimes called “eye-gaze”) - a system that monitors eye movement to control the mouse pointer and detects blinking to initiate mouse clicks.</li>
+      <li><strong id="kbd">Keyboard customization</strong> – includes changing the mapping of keys, assigning shortcut keys to functions, setting <a href="#filters" class="termref">filters</a>, and setting “sticky keys” to support single-handed typing.</li>
+      <li><strong id="filters">Keyboard and mouse filters</strong> – functions of the operating system or software tools that recognize and compensate for involuntary movements such as tremor and spasms.</li>
+      <li><strong id="mouse">Mouse customization</strong> – includes changing the mapping of buttons, changing the sensitivity of the mouse towards movement, setting <a href="#filters" class="termref">filters</a>, and changing the size and appearance of the mouse pointer.</li>
+      <li><strong id="screenkbd">On-screen keyboard</strong> – virtual keyboard displayed on a screen so that it can be used with a touchscreen, mouse, trackball, joystick, or other pointing devices.</li>
+      <li><strong id="lexical">Spelling and grammar tools</strong> – web browser functions, plug-ins, or other software tools to help users write.</li>
+      <li><strong id="voice">Voice recognition</strong> (sometimes called “speech input” or “voice command”) - software that recognizes the human voice and can be used to dictate text or to issue commands to operate the computer.</li>
+      <li><strong id="prediction">Word prediction</strong> – software that presents selections of matching words, phrases, or sentences based on the current input (and sometimes context) to save typing.</li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="stories-related-to-input">Stories related to input</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter">Alex, reporter with repetitive stress injury</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree">Yun, retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant">Luis, supermarket assistant with Down syndrome</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<h2 id="interaction">Interaction  navigating and finding</h2>
+
+<p>People navigate and find content using different strategies and approaches depending on their preferences, skills, and abilities. For instance, someone using a website for the first time may need clearer guidance than someone who has more experience with the particular site, and someone using the Web on a mobile device with a small screen may require more orientational cues than someone using a desktop computer. While these are typically usability aspects that affect people with and without disabilities, some situations affect people with disabilities to a greater extent.</p>
+
+<details><summary>
+
+    <h3 id="more-about-interaction">More about interaction</h3>
+
+  </summary>
+  <div>
+
+    <p>Examples of such situations include:</p>
+
+    <ul>
+      <li>A person is not seeing the screen and needing to get an overview and orient themselves by scanning the headings on a web page; the headings need to be also designed to support such purposes.</li>
+      <li>A person who is only seeing small portions of the screen at a time due to screen magnification, and need to orient themselves using visual cues; the visual design needs to also support such purposes.</li>
+      <li>A person using only the keyboard (or keyboard alternatives) to navigate through the web content; the structure of web pages need to be designed to also support and efficient use of the keyboard.</li>
+      <li>A person who has difficulty remembering the addresses, names, or particular functionality of websites; web browsers need to provide supporting functionality that is easy to use and remember.</li>
+      <li>A person who may have difficulty with hierarchical menu navigation, as how most navigation menus are designed to be; websites need to provide alternative mechanisms for navigation.</li>
+    </ul>
+
+    <p>Many functions to support different styles of navigation are built directly into web browsers and assistive technologies. For example, most commonly available browsers provide bookmark functionality, and screen readers provide functions to list headings, links, and other structures on a web page. However, the design of the content is also an essential factor to support different styles of navigation.</p>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="examples-of-accessibility-features-2">Examples of accessibility features</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><strong id="consistency">Consistency and predictability</strong> – labeling of functions such as links, buttons, and controls should be consistent, and the expected function should be predictable from the label.</li>
+      <li><strong id="labels">Descriptive titles, headings, and labels</strong> – page titles, section headings, and labels for forms, links, and controls are sometimes read on their own or out of context and need to be descriptive.</li>
+      <li><strong id="messages">Helpful error and success messages</strong> – dialogs and other messages, such as after submitting forms, need to help users complete their tasks and avoid disorientation, distraction, confusion, or discomfort.</li>
+      <li><strong id="navigating">Multiple navigation mechanisms</strong> – websites need to provide multiple ways to locate web pages, for example by providing sitemaps and search functionality in addition to hierarchical navigation menus.</li>
+      <li><strong id="skip">Skip links</strong> – mechanisms to allow keyboard users to skip over repetitive blocks of content such as page headings, navigation bars, or menus. Note: too many skip links are counterproductive to this purpose.</li>
+      <li><strong id="cues">Visual orientation cues</strong> – examples include using background colors to indicate different parts of the content, using unique headings, and placing relevant information in prominent areas of a web page.</li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="examples-of-assistive-technologies-and-adaptive-strategies-3">Examples of assistive technologies and adaptive strategies</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><strong id="bookmarks">Bookmarks and history</strong> – using web browser functions to help remember pages, find previously visited pages, or quickly go to pages without needing to type a web address.</li>
+      <li><strong id="search">Keyword search</strong> – using web browser functions to find text within a web page, and website functionality to search for web pages by keyword. Search engines that are maintained and optimized for a particular website can provide more precise search results.</li>
+      <li><strong id="keyboard">Keyboard navigation</strong> – moving through the content using the keyboard, typically by using the tab key to jump from one structural item such as link, header, or list item, to the next. Keyboard navigation largely depends on web browser support but also on website design features such as <a href="#skip" class="termref">skip links</a>.</li>
+      <li><strong id="maps">Page maps</strong> – displaying a small image of the entire web page with an indicator highlighting the portion within the web page that is being currently viewed.</li>
+      <li><strong id="pictorial">Pictorial links</strong> – some web browsers, plug-ins, and websites show small images of the link targets (sometimes called “screen shots”) rather than the addresses or names; for example in combination with <a href="#bookmarks" class="termref">bookmarks and history</a> listings, back and forward buttons in web browsers, or links on web pages.</li>
+    </ul>
+
+  </div>
+</details>
+<details><summary>
+
+    <h3 id="stories-related-to-interaction">Stories related to interaction</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/#reporter">Alex, reporter with repetitive stress injury</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#accountant">Ilya, senior staff member who is blind</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent">Preety, middle school student with Attention Deficit Hyperactivity Disorder and Dyslexia</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#retiree">Yun, retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant">Luis, supermarket assistant with Down syndrome</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/#teenager">Kaseem, teenager who is deaf and blind</a></li>
+    </ul>
+
+  </div>
+</details>
+
+<div class="excol-all"></div>
+
+
+    <nav class="pager" aria-label="Previous/Next Page">
+  <ul><li class="pager--item previous">
+      <a href="/WAI/people-use-web/abilities-barriers/">
+        <svg focusable="false" aria-hidden="true" class="icon-arrow-left pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-left"></use></svg>
+        <span class="pager--item-text">
+          <span class="pager--item-text-direction">Previous:</span>
+          <span class="pager--item-text-target">Diverse Abilities and Barriers</span>
+        </span>
+      </a>
+    </li></nav><aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Tools%20and%20Techniques">wai-eo-editors@w3.org</a> or via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Tools%20and%20Techniques&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
+    <a href="https://github.com/w3c/wai-people-use-web/edit/master/_people-use-web/tools-techniques.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-people-use-web/issues/new" class="button"><span>New GitHub Issue</span></a>
+</div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated 15 May 2017.</p> <p><strong>Editors:</strong> <a href="https://www.w3.org/People/shadi/">Shadi Abou_Zahra</a>. Previous editor: <a href="https://www.w3.org/People/Brewer/">Judy Brewer</a>. <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments">Acknowledgments</a>.</p> <p>Developed by the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Previously developed with the <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf">WAI-AGE Task Force</a>, with support of the <a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE Project</a>.</p>
+</div>
+  </footer>
+  
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+<script>
+  svg4everybody();
+</script><script>
+  var translationStrings = {};
+</script>
+<!-- Matomo -->
+<script>
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.w3.org/analytics/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '328']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+
+  </body>
+</html>

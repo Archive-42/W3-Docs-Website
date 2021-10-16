@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+
+<title> Evaluating Web Accessibility Overview | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Evaluating Web Accessibility Overview" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative." />
+<meta property="og:description" content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative." />
+<link rel="canonical" href="https://www.w3.org/WAI/test-evaluate/" />
+<meta property="og:url" content="https://www.w3.org/WAI/test-evaluate/" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Evaluating Web Accessibility Overview" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","headline":"Evaluating Web Accessibility Overview","url":"https://www.w3.org/WAI/test-evaluate/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-evaluating-web-accessibility-overview  tight-page">
+    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">Skip to Content</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">Change Text Size or Colors</a></li>
+      <li class="opt languagelist">
+          <strong>This&nbsp;page&nbsp;in:</strong>
+          <ul class="languagelistul"><li><strong style="text-transform: capitalize;">English</strong></li><li><a style="text-transform: capitalize;" href="/WAI/test-evaluate/es" lang="es"  dir="auto" translate="no">español</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/test-evaluate/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">All&nbsp;Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations' data-hidetext='Hide Options'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Search:</span>
+              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Main" lang="en"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/test-evaluate/" aria-current="page"><span>Test &amp; Evaluate</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/test-evaluate/" aria-current="page" class="page-link"><span>Test &amp; Evaluate</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/preliminary/" class="page-link"><span>Easy Checks – A First Review</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/tools/" class="page-link"><span>Evaluation Tools</span></a><ul><li>
+  <a lang="en" href="/WAI/test-evaluate/tools/selecting/" class="page-link"><span>Selecting Evaluation Tools</span></a></li><li>
+  <a lang="en" href="https://www.w3.org/WAI/ER/tools/" class="page-link"><span>List of Evaluation Tools</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/test-evaluate/conformance/" class="page-link"><span>Conformance Evaluation, Reports</span></a><ul><li>
+  <a lang="en" href="/WAI/test-evaluate/conformance/wcag-em/" class="page-link"><span>WCAG-EM Conformance Methodology</span></a></li><li>
+  <a lang="en" href="https://www.w3.org/WAI/eval/report-tool/#/" class="page-link"><span>WCAG-EM Report Tool</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/report-template/" class="page-link"><span>Report Template</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/test-evaluate/combined-expertise/" class="page-link"><span>Using Combined Expertise</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/involving-users/" class="page-link"><span>Involving Users</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">Languages/Translations</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">English (original)</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/test-evaluate/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/test-evaluate/fr" dir="auto" translate="no" lang="fr">français</a></li></ul>
+        <p><a href="/WAI/translations/">All&nbsp;Translations</a></p>
+        <p><a href="/WAI/about/translating/">Translating WAI Resources</a></p>
+      </nav>
+</div>
+  
+
+  <main id="main" lang="en">
+
+      
+
+    
+    <header>
+      <h1>
+      
+      
+      
+        Evaluating Web Accessibility Overview
+      
+      </h1></header>
+    <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
+
+<p>This page links to resources to help evaluate web accessibility. Accessibility evaluation is also called “assessment”, “audit”, and “testing”.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-full"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#intro" id="markdown-toc-intro">Introduction</a></li>
+  <li><a href="#initial" id="markdown-toc-initial">Initial Checks</a></li>
+  <li><a href="#tools" id="markdown-toc-tools">Tools</a></li>
+  <li><a href="#conformance" id="markdown-toc-conformance">Conformance Evaluation and Reports</a></li>
+  <li><a href="#people" id="markdown-toc-people">People</a></li>
+  <li><a href="#standards" id="markdown-toc-standards">Standards</a></li>
+  <li><a href="#alternatives" id="markdown-toc-alternatives">Alternatives for Video Introduction - Resources Overview</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="intro">Introduction</h2>
+
+<div class="video-card">
+  <div class="video-container" data-video-type="" dir="ltr">
+  <video preload="metadata" data-youtube-id="C4GIqWeywiI" data-youtube-nocookie="true" data-description-audible="false" width="450"><track src="/WAI/content-images/wai-eval-overview/evaluating-resources-overview-cc.vtt" label="English" kind="captions" srclang="en" default="" /></video>
+</div>
+
+
+<script src="/WAI/assets/ableplayer/thirdparty/modernizr.custom.js"></script>
+<script src="/WAI/assets/scripts/jquery.min.js"></script>
+<script src="/WAI/assets/ableplayer/thirdparty/js.cookie.js"></script>
+<script src="/WAI/assets/ableplayer/build/ableplayer.min.js"></script>
+<script>
+  var youTubeDataAPIKey = "AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI";
+  var googleApiReady = false;
+  function initGoogleClientApi() {
+    googleApiReady = true;
+  }
+</script>
+<script src="//apis.google.com/js/client.js?onload=initGoogleClientApi"></script>
+
+<script>
+(function () {
+  'use strict';
+
+  var player1 = new AblePlayer($('[data-video-type=""] video'));
+  var player2 = new AblePlayer($('[data-video-type="audio-described"] video'));
+
+  function addclass(el, className) {
+    if (el.classList) {
+      el.classList.add(className);
+    } else {
+      if(! hasclass(el, className)){
+        el.className += ' ' + className;
+      }
+    }
+  }
+
+  function removeclass(el, className) {
+    if (el.classList) {
+      el.classList.remove(className);
+    } else {
+      el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+    }
+  }
+
+  function hasclass(el, className) {
+    if (el.classList) {
+      return el.classList.contains(className);
+    } else {
+      return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
+    }
+  }
+
+  var audiodescribed = document.querySelectorAll('[data-video-type="audio-described"]');
+
+  if (audiodescribed) {
+
+  Array.prototype.forEach.call(audiodescribed, function(el, i){
+    el.setAttribute('hidden', true);
+  });
+
+  var adbutton = document.querySelector('#audio_description_button');
+  adbutton.addEventListener('click', function(e){
+    player1.pauseMedia();
+    player2.pauseMedia();
+    if (e.target.getAttribute('data-status') == "audio-described") {
+      var videos = document.querySelectorAll('.video-container');
+      Array.prototype.forEach.call(videos, function(el, i){
+        el.removeAttribute("hidden");
+      });
+      var nonaudiodescribed = document.querySelectorAll('[data-video-type="audio-described"]');
+      Array.prototype.forEach.call(nonaudiodescribed, function(el, i){
+        el.setAttribute('hidden', true);
+      });
+      e.target.setAttribute('data-status', 'non-audio-described');
+      e.target.querySelector('span').innerHTML = 'Enable Audio Description';
+    } else {
+      var videos = document.querySelectorAll('.video-container');
+      Array.prototype.forEach.call(videos, function(el, i){
+        el.setAttribute('hidden', true);
+      });
+      var nonaudiodescribed = document.querySelectorAll('[data-video-type="audio-described"]');
+      Array.prototype.forEach.call(nonaudiodescribed, function(el, i){
+        el.removeAttribute("hidden");
+      });
+      e.target.setAttribute('data-status', 'audio-described');
+      e.target.querySelector('span').innerHTML = 'Disable Audio Description';
+    }
+  });
+
+  }
+
+}());
+</script>
+
+  <p><a href="#alternatives">Alternatives for Video Introduction - Resources Overview</a></p>
+</div>
+
+<p>When developing or redesigning a website or web application, evaluate accessibility early and throughout the development process to identify accessibility problems early, when it is easier to address them.</p>
+
+<p>There are evaluation tools that help with evaluation. However, no tool alone can determine if a site meets accessibility standards. Knowledgeable human evaluation is required to determine if a site is accessible.</p>
+
+<h2 id="initial">Initial Checks</h2>
+
+<div class="video-card">
+  
+  <video controls="" poster="/WAI/content-images/wai-eval-overview/video-thumb-easy-checks.png">
+  
+    <source src="//media.w3.org/wai/evaluation-intros/easy-checks-accessibility.mp4" type="video/mp4" /><track src="/WAI/content-images/wai-eval-overview/easy-checks-accessibility-cc.vtt" label="English" kind="captions" srclang="en" default="" /></video>
+  
+   <p>This video is available with more accessibility features: <a href="https://www.w3.org/WAI/test-evaluate/preliminary/#video-intro">Video: Easy Checks Overview</a>.</p>
+  
+</div>
+
+<p>Even if you don’t know anything about accessibility and you don’t have a robust accessibility tool, you can check some aspects of accessibility.</p>
+
+<dl>
+  <dt><a href="/WAI/test-evaluate/preliminary/">Easy Checks — A First Review of Web Accessibility</a></dt>
+  <dd>Provides step-by-step guidance and brief explanations for checking some aspects of accessibility.</dd>
+</dl>
+
+<h2 id="tools">Tools</h2>
+
+<div class="video-card">
+  
+  <video controls="" poster="/WAI/content-images/wai-eval-overview/video-thumb-tools.png">
+  
+    <source src="//media.w3.org/wai/evaluation-intros/tools-for-evaluating.mp4" type="video/mp4" /><track src="/WAI/content-images/wai-eval-overview/tools-for-evaluating-cc.vtt" label="English" kind="captions" srclang="en" default="" /></video>
+  
+   <p>This video is available with more accessibility features: <a href="https://www.w3.org/WAI/test-evaluate/tools/#video-intro">Video: Evaluation Tools Overview</a>.</p>
+  
+</div>
+
+<p>Web accessibility evaluation tools are software programs or online services that help determine if web content meets accessibility standards.</p>
+
+<dl>
+  <dt><a href="https://www.w3.org/WAI/ER/tools/">Web Accessibility Evaluation Tools List</a></dt>
+  <dd>Includes information on more than 100 tools. You can use the filters to narrow down the list to the types of tools you are interested in.</dd>
+  <dt><a href="/WAI/test-evaluate/tools/selecting/">Selecting Web Accessibility Evaluation Tools</a></dt>
+  <dd>Provides guidance on choosing tools. It describes the features and functionality of different types of evaluation tools, and discusses things to consider for your situation.</dd>
+</dl>
+
+<h2 id="conformance">Conformance Evaluation and Reports</h2>
+
+<div class="video-card">
+  
+  <video controls="" poster="/WAI/content-images/wai-eval-overview/video-thumb-conformance.png">
+  
+    <source src="//media.w3.org/wai/evaluation-intros/conformance-evaluation.mp4" type="video/mp4" /><track src="/WAI/content-images/wai-eval-overview/conformance-evaluation-cc.vtt" label="English" kind="captions" srclang="en" default="" /></video>
+  
+   <p>This video is available with more accessibility features: <a href="https://www.w3.org/WAI/test-evaluate/conformance/#video-intro">Video: Conformance Evaluation Overview</a>.</p>
+  
+</div>
+
+<p>Conformance evaluation determines how well web pages or applications meet accessibility standards. W3C’s Website Accessibility Conformance Evaluation Methodology (WCAG-EM) is an approach for determining conformance to Web Content Accessibility Guidelines (WCAG).</p>
+
+<dl>
+  <dt><a href="/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM Overview: Website Accessibility Conformance Evaluation Methodology</a></dt>
+  <dd>A short page with basic information to get you started. We suggest you read it before going to the <a href="https://www.w3.org/TR/WCAG-EM/">full WCAG-EM document</a>.</dd>
+  <dt><a href="https://www.w3.org/WAI/eval/report-tool/#/">WCAG-EM Report Tool: Website Accessibility Evaluation Report Generator</a></dt>
+  <dd>Helps you generate evaluation reports according to WCAG-EM. It does not do the checking for you. It helps you follow the steps of WCAG-EM and it generates a report from the input you provide.</dd>
+  <dt><a href="/WAI/test-evaluate/report-template/">Template for Web Accessibility Evaluation Reports</a></dt>
+  <dd>Suggests information to include in a report.</dd>
+  <dt><a href="https://www.w3.org/WAI/atag/report-tool/">ATAG Report Tool</a></dt>
+  <dd>Helps you generate a report on how a tool meets Authoring Tool Accessibility Guidelines (<a href="https://www.w3.org/WAI/standards-guidelines/atag/">ATAG</a>). Authoring tools are software and services used to create web content – such as content management systems (CMS) and what-you-see-is-what-you-get (WYSIWYG) HTML editors.</dd>
+</dl>
+
+<p>Communicate the results of evaluation clearly, including the scope of the evaluation.</p>
+
+<h2 id="people">People</h2>
+
+<div class="video-card">
+  
+  <video controls="" poster="/WAI/content-images/wai-eval-overview/video-thumb-involving-users.png">
+  
+    <source src="//media.w3.org/wai/evaluation-intros/involving-users.mp4" type="video/mp4" /><track src="/WAI/content-images/wai-eval-overview/involving-users-cc.vtt" label="English" kind="captions" srclang="en" default="" /></video>
+  
+   <p>This video is available with more accessibility features: <a href="https://www.w3.org/WAI/test-evaluate/involving-users/#video-intro">Video: Involving Users in Web Accessibility Overview</a>.</p>
+  
+</div>
+
+<p>Getting the right people and skills involved makes your accessibility evaluations more effective.</p>
+
+<dl>
+  <dt><a href="/WAI/test-evaluate/involving-users/">Involving Users in Evaluating Web Accessibility</a></dt>
+  <dd>Provides guidance on including people with disabilities (“users”) in evaluation throughout project development.</dd>
+  <dt><a href="/WAI/test-evaluate/combined-expertise/">Using Combined Expertise to Evaluate Web Accessibility</a></dt>
+  <dd>Discusses skill sets and considerations for collaborative review.</dd>
+</dl>
+
+<h2 id="standards">Standards</h2>
+
+<p>Specifications for writing accessibility test rules (ACT Rules Format) and expressing test results (EARL) are introduced in <a href="/WAI/standards-guidelines/evaluation/">Evaluation Standards Overview</a>.</p>
+
+<hr />
+
+<details id="video-intro-transcript"><summary>
+
+    <h2 id="alternatives">Alternatives for Video Introduction - Resources Overview</h2>
+
+  </summary>
+  <div>
+
+    <p><em>This video is also available on a W3C server: <a href="http://media.w3.org/wai/evaluation-intros/evaluating-resources-overview.mp4">Video: Evaluating Web Accessibility - Resources Overview (file format: MP4, file size: 45MB)</a>.</em></p>
+
+    <h3 id="transcript">Text Transcript with Description of Visuals for Video Introduction - Resources Overview</h3>
+
+    <table aria-labelledby="transcript">
+  <tbody>
+    <tr>
+      <th>Audio</th>
+      <th>Visual</th>
+    </tr>
+    <tr>
+      <td>Evaluating web accessibility: resources overview </td>
+      <td>Evaluating web accessibility: resources overview.</td>
+    </tr>
+    <tr>
+       <td>Evaluation helps you ensure that your websites and applications meet accessibility requirements. </td>
+      <td>A magnifying glass with the word evaluation on a computer screen with a website on it.</td>
+    </tr>
+    <tr>
+      <td>Ideally you evaluate regularly throughout the design and development process. This way you find errors early and avoid costly repairs later in the process. </td>
+      <td>The web page components rearrange on the page until following a good design.</td>
+    </tr>
+    <tr>
+      <td>The W3C Web Accessibility Initiative, W-A-I, or WAI, provides free resources to help you with your evaluation. </td>
+      <td>W3C and Web Accessibility Initiative (WAI) logos.</td>
+    </tr>
+    <tr>
+      <td>"Easy Checks - A First Review of Web Accessibility" explains how you can do some checks yourself. </td>
+      <td>"Easy Checks - A First Review of Web Accessibility". A person in front of the computer. A light bulb appears.</td>
+    </tr>
+    <tr>
+      <td>Even if you are new to web accessibility and not technical, these checks give you a rough idea of the accessibility of any web page. </td>
+      <td>A document of checks. Each check is highlighted to show fails or passes.</td>
+    </tr>
+    <tr>
+      <td>WAI also maintains a "Web Accessibility Evaluation Tools List" that you can filter. </td>
+      <td>Web Accessibility Evaluation Tools List. A list of tools displayed as icons..</td>
+    </tr>
+    <tr>
+      <td>"Selecting Web Accessibility Evaluation Tools" explains what tools can and cannot do. </td>
+      <td>Selecting Web Accessibility Evaluation Tools. The tools icons displayed in a computer.</td>
+    </tr>
+    <tr>
+      <td>For more experienced evaluators, WAI provides "WCAG-EM", the "Website Accessibility Conformance Evaluation Methodology". </td>
+      <td>WCAG-EM. Website Accessibility Conformance Evaluation Methodology. A person in front of a computer. A simplified report is displayed.</td>
+    </tr>
+    <tr>
+      <td>The "WCAG-EM Report Tool" helps you record the findings as you follow the methodology. </td>
+      <td>WCAG-EM Report Tool. A progress bar shows the various stages of the evaluation methodology.</td>
+    </tr>
+    <tr>
+      <td>To help you better understand how different users experience your website and applications, WAI provides guidance in "Involving Users in Web Projects for Better, Easier Accessibility" and "Involving users in Evaluating Web Accessibility."</td>
+      <td>The screen splits into 12 fields each with a different user in front of a computer. Involving Users in Web Projects for Better, Easier Accessibility and Involving users in Evaluating Web Accessibility</td>
+    </tr>
+    <tr>
+      <td>With all these resources, you can learn how to check your website for accessibility and prioritize the issues you need to address first. </td>
+      <td>A magnifying glass with the words check for accessibility is replaced with a list of issues.</td>
+    </tr>
+    <tr>
+      <td>Web accessibility: essential for some, useful for all. </td>
+      <td>Icons around a computer: hand; eye; brain; ear; and mouth with sound waves.</td>
+    </tr>
+    <tr>
+      <td>For resources on evaluating web accessibility, visit w3.o-r-g/W-A-I/evaluation. </td>
+      <td>Evaluation resources, W3C and Web Accessibility Initiative (WAI) logos.</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</details>
+
+
+    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20Evaluating%20Web%20Accessibility%20Overview">wai@w3.org</a> or via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=[en]%20Evaluating%20Web%20Accessibility%20Overview&body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D" class="button"><span>E-mail</span></a>
+    <a href="https://github.com/w3c/wai-eval-overview/edit/master/content/index.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-eval-overview/issues/new" class="button"><span>New GitHub Issue</span></a>
+</div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p>Note about video description: The videos on this page do not include synchronized audio description because the visuals only illustrate the audio and do not provide additional information. In this case, audio description would be more distracting than useful to most people, including people who cannot see the visuals. Description of visual information is integrated in the Text Transcript with Description of Visuals (“descriptive transcript”).</p> <p><strong>Date:</strong> Updated 7 May 2021. <a href="/WAI/test-evaluate/changelog/">Changelog</a>.</p> <p><strong>Editor:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>.</p> <p>Videos developed by the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>) with support from the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project funded by the European Commission (EC) under the Horizon 2020 program (Grant Agreement 822245). <a href="./acknowledgements/">Acknowledgements</a>.</p> <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a> The videos are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+</div>
+  </footer>
+  
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+<script>
+  svg4everybody();
+</script><script>
+  var translationStrings = {};
+</script>
+<!-- Matomo -->
+<script>
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.w3.org/analytics/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '328']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+
+  </body>
+</html>

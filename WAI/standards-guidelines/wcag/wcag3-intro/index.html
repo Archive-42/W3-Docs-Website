@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+
+<title> WCAG 3 Introduction | Web Accessibility Initiative (WAI) | W3C</title><style>#toc li {
+  padding-top:0; padding-bottom:0;
+  margin-top:0; margin-bottom:0;  }
+.smalltext {
+  font-size: .875rem;
+}
+</style><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="WCAG 3 Introduction" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Introduces the W3C Accessibility Guidelines (WCAG) 3.0 Working Draft. WCAG documents explain how to make the web more accessible to people with disabilities." />
+<meta property="og:description" content="Introduces the W3C Accessibility Guidelines (WCAG) 3.0 Working Draft. WCAG documents explain how to make the web more accessible to people with disabilities." />
+<link rel="canonical" href="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/" />
+<meta property="og:url" content="https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-intro-wcag/wcag3_social.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-intro-wcag/wcag3_social.png" />
+<meta property="twitter:title" content="WCAG 3 Introduction" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"description":"Introduces the W3C Accessibility Guidelines (WCAG) 3.0 Working Draft. WCAG documents explain how to make the web more accessible to people with disabilities.","@type":"WebPage","image":"https://www.w3.org/WAI/content-images/wai-intro-wcag/wcag3_social.png","headline":"WCAG 3 Introduction","url":"https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-wcag-3-introduction ">
+    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
+  <ul>
+        <li><a href="#main">Skip to Content</a></li>
+        <li class="opt">
+          <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
+        </li>
+        <li class="opt">
+            <a href="/WAI/translations/">All Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+      </ul></nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Search:</span>
+              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Main" lang="en"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/wcag/wcag3-intro/" aria-current="page"><span>WCAG 3 Draft</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/standards-guidelines/" class="page-link"><span>Standards/<wbr>Guidelines</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/" class="page-link"><span>Web Content – WCAG</span></a><ul><li>
+  <a lang="en" href="https://www.w3.org/WAI/WCAG21/quickref/" class="page-link"><span>How to Meet WCAG 2 (Quick Reference)</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/glance/" class="page-link"><span>At a Glance</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/docs/" class="page-link"><span>The Documents</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/non-web-ict/" class="page-link"><span>Applying to Non-Web ICT</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/new-in-22/" class="page-link"><span>New in 2.2 Draft</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/new-in-21/" class="page-link"><span>New in 2.1</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/translations/" class="page-link"><span>Translations</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/commenting/" class="page-link"><span>Commenting</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/conformance-logos/" class="page-link"><span>Conformance Logos</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/faq/" class="page-link"><span>FAQ</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/atag/" class="page-link"><span>Authoring Tools – ATAG</span></a><ul><li>
+  <a lang="en" href="/WAI/standards-guidelines/atag/glance/" class="page-link"><span>At a Glance</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/uaag/" class="page-link"><span>User Agents – UAAG</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/wcag3-intro/" aria-current="page" class="page-link"><span>WCAG 3 Draft</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/aria/" class="page-link"><span>WAI-ARIA</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/evaluation/" class="page-link"><span>Evaluation – ACT &amp; EARL</span></a><ul><li>
+  <a lang="en" href="/WAI/standards-guidelines/act/" class="page-link"><span>Accessibility Conformance Testing – ACT</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/earl/" class="page-link"><span>Evaluation and Report Language – EARL</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/personalization/" class="page-link"><span>Personalization</span></a></li><li>
+  <a lang="en" href="/WAI/pronunciation/" class="page-link"><span>Pronunciation</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/harmonization/" class="page-link"><span>Standards Harmonization is Essential</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/w3c-process/" class="page-link"><span>W3C Process for Developing Standards</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/linking/" class="page-link"><span>Referencing and Linking to Standards</span></a></li><li>
+  <a lang="en" href="/WAI/cognitive/" class="page-link"><span>Cognitive Accessibility at W3C</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/mobile/" class="page-link"><span>Mobile Accessibility at W3C</span></a></li></ul></nav>
+</div>
+  
+
+  <main id="main" lang="en">
+
+      
+
+    
+    <header>
+      <h1>
+      
+      
+      
+        WCAG 3 Introduction
+      
+      </h1></header>
+    <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
+
+<p>This page introduces the in-progress <a href="https://www.w3.org/TR/wcag-3.0/">W3C Accessibility Guidelines (WCAG) 3.0 Working <strong>Draft</strong></a>. It explains how WCAG 3 is related to WCAG 2.<br />This page is the starting point for information about WCAG 3 now and in the future.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-simple"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#status-draft-for-review" id="markdown-toc-status-draft-for-review">Status: Draft for Review</a></li>
+  <li><a href="#wcag-3-draft-approach" id="markdown-toc-wcag-3-draft-approach">WCAG 3 Draft Approach</a>    <ul>
+      <li><a href="#compare" id="markdown-toc-compare">Some Similar, Some Different</a></li>
+      <li><a href="#structure" id="markdown-toc-structure">Structure</a></li>
+      <li><a href="#model" id="markdown-toc-model">Draft Conformance Model</a></li>
+    </ul>
+  </li>
+  <li><a href="#development" id="markdown-toc-development">Development</a>    <ul>
+      <li><a href="#timeline-updated-8-june-2021" id="markdown-toc-timeline-updated-8-june-2021">Timeline (<em>updated 8 June 2021</em>)</a></li>
+      <li><a href="#wcag-3-name-formerly-silver-project" id="markdown-toc-wcag-3-name-formerly-silver-project">WCAG 3 Name (formerly “Silver” project)</a></li>
+      <li><a href="#who-develops-wcag-3" id="markdown-toc-who-develops-wcag-3">Who Develops WCAG 3</a></li>
+      <li><a href="#background" id="markdown-toc-background">Background: How we got from Silver to the WCAG 3 First Public Working Draft</a></li>
+      <li><a href="#comments" id="markdown-toc-comments">Review Questions and Your Comments</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 class="no_toc" id="introduction">Introduction</h2>
+
+<p>WCAG 3 is currently an incomplete draft. It is intended to develop into a W3C Standard <strong>in a few years</strong>. The current standard, WCAG 2, is introduced in the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a>.</p>
+
+<p>The WCAG 3 documents explain how to make the web more accessible to people with disabilities. WCAG 3 applies to web content, apps, tools, publishing, and emerging technologies on the web. <em>(The rest of this page uses “website” for simplicity, yet WCAG applies more broadly than websites.)</em></p>
+
+<p>This page will be updated regularly as work on the WCAG 3 Draft progresses.</p>
+
+<h2 id="status-draft-for-review">Status: Draft for Review</h2>
+
+<p><a href="https://www.w3.org/TR/wcag-3.0/">W3C Accessibility Guidelines (WCAG) 3.0 Working Draft</a> is currently an <strong>incomplete, unpolished Draft</strong>. It includes:</p>
+<ul>
+  <li>proposed structure</li>
+  <li>draft <a href="#model">conformance model</a></li>
+  <li>5 <a href="#eg-guidelines">draft example guidelines</a></li>
+</ul>
+
+<p><img src="/WAI/content-images/wai-intro-wcag/dialogs2.svg" alt="" style="float: right; margin-left: 2rem; width: 30%; max-width: 220px" /></p>
+
+<p>We are seeking input from evaluators, developers, designers, project managers, policy makers, people with disabilities, and others — particularly on:</p>
+<ul>
+  <li>Is this structure clear and useful?</li>
+  <li>How well does this draft conformance model work across different situations?</li>
+  <li>Other specific questions throughout the draft.</li>
+</ul>
+
+<p>We also welcome comments on the goals and parameters in <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3.0</a>.</p>
+
+<p>Additionally, we welcome comments on ways that the Accessibility Guidelines Working Group can better support your review, feedback, or inclusion in the process of creating WCAG 3.</p>
+
+<p>It will take you some time to understand the proposed new structure and conformance model in this WCAG 3 draft.</p>
+<ul>
+  <li>If you are interested in helping shape WCAG 3, we encourage you spend time reviewing this draft and submit comments. Before you review and comment on the Working Draft, please read through this page, including the <a href="#background">background</a> and <a href="#comments">review and commenting</a> sections near the end.</li>
+  <li>If you want to wait until WCAG 3 is more polished and stable to start learning it, you can read later drafts in 2021 or 2022.</li>
+</ul>
+
+<p>Later drafts of WCAG 3 will have most of the accessibility requirements (“success criteria”) from WCAG 2 and will have additional accessibility requirements, including some from <abbr title="Authoring Tool Accessibility Guidelines"><a href="https://www.w3.org/WAI/standards-guidelines/atag/">ATAG</a></abbr> and <abbr title="User Agent Accessibility Guidelines"><a href="https://www.w3.org/WAI/standards-guidelines/uaag/">UAAG</a></abbr>.</p>
+
+<h2 id="wcag-3-draft-approach">WCAG 3 Draft Approach</h2>
+
+<p><em>Reminder that WCAG 3 applies to web content, apps, tools, publishing, and emerging technologies on the web. Most of this page uses “website” for simplicity.</em></p>
+
+<p><img src="/WAI/content-images/wai-intro-wcag/brain-icon.svg" alt="" style="float: right; margin-left: 2rem; width: 30%; max-width: 220px" /></p>
+
+<h3 id="compare">Some Similar, Some Different</h3>
+
+<p><strong>Goals</strong> for WCAG 3 include:</p>
+<ul>
+  <li>be easier to understand</li>
+  <li>cover more user needs, including more needs of people with cognitive disabilities</li>
+  <li>be flexible to address different types of web content, apps, tools, and organizations</li>
+</ul>
+
+<p><span style="font-style:italic; margin-left:22px;">(More goals are later on this page, in the <a href="#background">Background section</a>.)</span></p>
+
+<p>WCAG 3 is <strong>similar</strong> to previous versions in some ways. It has similar:</p>
+<ul>
+  <li>goal of providing guidance on making web content and apps accessible to people with disabilities</li>
+  <li>fundamental and specific accessibility requirements</li>
+</ul>
+
+<p>WCAG 3 is very <strong>different</strong> from previous versions in some ways. It has:</p>
+<ul>
+  <li>different structure</li>
+  <li>different conformance model</li>
+  <li>broader scope, beyond just web content</li>
+</ul>
+
+<h3 id="structure">Structure</h3>
+
+<div style="float: right; margin-left: 2rem; width: 40%; max-width: 444px">
+
+<aside class="box box-simple box-aside"><div class="box-i">
+
+<p><em>Draft example:</em></p>
+<p style="padding-bottom:0; margin-bottom:0;"><em>Guideline</em>: Structured content</p>
+<ul style="padding-top:0; margin-top:0;">
+  <li><em>Outcome</em>: Headings organize content</li>
+  <li><em>Outcome</em>: Uses visually distinct headings</li>
+  <li><em>Outcome</em>: Conveys hierarchy with semantic structure</li>
+  <li><em>Outcome</em>: … </li>
+</ul>
+
+</div></aside>
+
+</div>
+
+<p>This WCAG 3 draft has:</p>
+<ul>
+  <li><strong>Guidelines</strong>
+    <ul>
+      <li>Solutions to accessibility problems</li>
+      <li>More <strong>granular</strong> than the guidelines in WCAG 2</li>
+      <li>Each guideline has outcomes</li>
+    </ul>
+  </li>
+  <li><strong>Outcomes</strong>
+    <ul>
+      <li>Testable statements</li>
+      <li>Similar to <strong>success criteria</strong> in WCAG 2, more granular</li>
+      <li>Outcomes include:
+        <ul>
+          <li>Critical errors</li>
+          <li>Rating scale</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>More <em>granular</em> means they are more specific, instead of broad. That generally makes them simpler. And it means there will be more of them.</p>
+
+<p>WCAG 3 supporting material includes:</p>
+<ul>
+  <li><strong>Methods</strong>
+    <ul>
+      <li>Technology-specific ways to achieve an outcome</li>
+      <li>Tests for the outcome</li>
+      <li>Similar to <strong>Techniques</strong> for WCAG 2</li>
+    </ul>
+  </li>
+  <li><strong>How-To documents</strong>
+    <ul>
+      <li>Explain more about each guideline, such as how it addresses accessibility needs <!-- @@ each outcome or each guideline ? --></li>
+      <li>Similar to the <strong>Understanding</strong> documents for WCAG 2</li>
+    </ul>
+  </li>
+  <li><strong>Functional categories</strong> of <strong>functional needs</strong>
+    <ul>
+      <li>Categorized list of needs of people with disabilities</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="model">Draft Conformance Model</h3>
+
+<p>The <em>conformance model</em> is the way to determine and communicate how well a website (or app, tool, etc.) meets WCAG. The conformance model in this draft of WCAG 3 is very different from WCAG 2. It is intended to:</p>
+<ul>
+  <li>be more flexible for organizations (that is, owners and developers of websites, apps, tools, etc.)</li>
+  <li>encourage more accessible user experiences</li>
+</ul>
+
+<p>The conformance model in the WCAG 3 First Public Working Draft is a starting point for feedback.</p>
+
+<p>There are several different aspects of this draft WCAG 3 conformance model:</p>
+<ul>
+  <li>Conformance is more focused on <strong><a href="https://www.w3.org/TR/wcag-3.0/#processes">processes</a></strong> (tasks such as ordering an item or registering for a class), rather than web pages.</li>
+  <li>Outcomes can be <strong>rated</strong>, beyond just pass or fail. Rating scale is 0-4.</li>
+  <li>The ratings are averaged for a total score. There is also a <strong>score for each functional category</strong> (e.g., vision, hearing, memory, etc.).</li>
+</ul>
+
+<p>The levels are different, too:</p>
+<ul>
+  <li>Conformance levels are Bronze, Silver, Gold.
+    <ul>
+      <li>In WCAG 2, they are Level A, Level AA, Level AAA.</li>
+      <li>Bronze is similar to WCAG 2 Level AA, although not fully equivalent.</li>
+    </ul>
+  </li>
+  <li>Bronze conformance requires:
+    <ul>
+      <li>No critical errors</li>
+      <li>Total score of 3.5 or higher</li>
+      <li>Score of 3.5 or higher in each functional category</li>
+    </ul>
+  </li>
+  <li>Silver and Gold levels require “holistic tests” such as assistive technology testing and usability testing with participants with disabilities.</li>
+</ul>
+
+<p><span class="smalltext" style="padding-bottom:0; margin-bottom:0;"><em>Draft example: </em>Ratings for the outcome “Text alternative available”:
+</span></p>
+<table class="dense quiet smalltext rating-table">
+  <thead>
+    <tr>
+      <th scope="col">Rating</th>
+      <th scope="col">Criteria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">0</th>
+      <td>Less than 60% of all images have appropriate text alternatives <em><strong>or</strong></em> there is a critical error in the process</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>60% - 69% of all images have appropriate text alternatives <em><strong>and</strong></em> no critical errors in the process</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>70%-79% of all images have appropriate text alternatives <em><strong>and</strong></em> no critical errors in the process</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>80%-94% of all images have appropriate text alternatives <em><strong>and</strong></em> no critical errors in the process</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>95% to 100% of all images have appropriate text alternatives <em><strong>and</strong></em> no critical errors in the process</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The conformance model in the 2021 Working Drafts will likely change in future iterations and drafts. It may change a little or may change substantively.</p>
+
+<h2 id="development">Development</h2>
+
+<h3 id="timeline-updated-8-june-2021">Timeline (<em>updated 8 June 2021</em>)</h3>
+
+<p><img src="/WAI/content-images/wai-intro-wcag/calandara.svg" alt="" style="float: right; margin-left: 2rem; width: 20%; max-width: 111px" /></p>
+
+<p>The First Public Working Draft of WCAG 3.0 was published on 21 January 2021. It is the first of many drafts.</p>
+
+<p>The Working Draft published on 8 June 2021 has minor changes: editorial fixes, extended Acknowledgements section, and information moved from the introduction to a separate informative document: <a href="https://w3c.github.io/silver/explainer/">Explainer for W3C Accessibility Guidelines (WCAG) 3.0</a>. <strong>Many <a href="https://github.com/w3c/silver/issues">issues are still open</a>, including testing and conformance.</strong></p>
+
+<p>The Working Group will focus on refining the structure and conformance model, and will provide updated drafts for review. Once that is more stable, the Group will focus on developing the accessibility requirements (guidelines, outcomes, and support material). After WCAG 3 is more stable, we will provide material to help those wanting to transition to WCAG 3; for example, mapping between WCAG 2 and 3 requirements.</p>
+
+<p><strong>WCAG 3 is not expected to be a completed W3C standard for a few more years.</strong> WCAG 3 will not supersede WCAG 2, and WCAG 2 will not be deprecated, for at least several years after WCAG 3 is finalized.</p>
+
+<p>We will update this section with more specific timeline information as it is available.</p>
+
+<h3 id="wcag-3-name-formerly-silver-project">WCAG 3 Name (formerly “Silver” project)</h3>
+
+<p>The name of WCAG 3 is different from WCAG 2:</p>
+<ul>
+  <li>WCAG <strong>3</strong> is W3C Accessibility Guidelines</li>
+  <li>WCAG <strong>2</strong> is Web Content Accessibility Guidelines</li>
+</ul>
+
+<p>“W3C Accessibility Guidelines (WCAG) 3.0” was chosen:</p>
+<ul>
+  <li>because of wide-spread familiarity with the “WCAG” acronym</li>
+  <li>to encompass the broader scope beyond “content”</li>
+</ul>
+
+<h3 id="who-develops-wcag-3">Who Develops WCAG 3</h3>
+
+<p>The WCAG technical documents are developed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/WAI/GL/">AG WG</a>) with the AG WG Silver Task Force and the Silver Community Group. These Groups are part of the World Wide Web Consortium (<a href="http://www.w3.org">W3C</a>) Web Accessibility Initiative (<a href="https://www.w3.org/WAI/">WAI</a>). You can learn about the development process from <a href="/WAI/standards-guidelines/w3c-process/">How WAI Develops Accessibility Standards through the W3C Process: Milestones and Opportunities to Contribute</a>.</p>
+
+<p>We welcome your <a href="#comments">comments on the WCAG 3 Working Drafts</a>.</p>
+
+<p>Opportunities for contributing more directly to WCAG and other WAI work are introduced in <a href="/WAI/about/participating/">Participating in WAI</a>.</p>
+
+<details id="background"><summary>
+
+    <h3 id="background">Background: How we got from Silver to the WCAG 3 First Public Working Draft</h3>
+
+    <div style="float: right; margin-left: 2rem; width: 10%; max-width: 111px">
+<img src="https://www.w3.org/WAI/GL/WCAG3/2020/img/silver-sticker" alt="logo: ag w3c a11y silver" style="height: 10ex;" />
+</div>
+
+    <p>This expandable section provides more about the goals, user research, development process, and draft example guidelines. It introduces the motivations for the changes from WCAG 2 to WCAG 3. <strong>Before you review and comment on the Draft, please read this section for context.</strong></p>
+
+  </summary>
+  <div>
+
+    <h4 id="research-with-people-who-use-wcag">Research with People Who Use WCAG</h4>
+
+    <p>In 2016, project “Silver” was launched to explore a new approach to accessibility guidelines, through the AG WG Silver Task Force and the Silver Community Group. The groups conducted 18 months of research to identify stakeholders and understand their needs for accessibility guidance. The results where that generally WCAG users felt the guidance in WCAG 2 is important and useful, yet many thought that WCAG 2:</p>
+    <ul>
+      <li>is difficult to understand</li>
+      <li>is too restrictive to include some requirements that address the needs of some people with disabilities, particularly cognitive disabilities</li>
+      <li>conformance model doesn’t meet their organization’s specific needs</li>
+    </ul>
+
+    <p>Silver held a Design Sprint in 2018 with 27 industry leaders across a variety of accessibility stakeholders. The two-day workshop took the problem statements identified by the research, and challenged participants to come up with innovative solutions. Silver made many prototypes of possible solutions and iterated through options with input from AG WG participants.</p>
+
+    <p>The results form the basis of the WCAG 3.0 Working Draft.</p>
+
+    <h4 id="goalsmore">Goals</h4>
+
+    <p>From the WCAG-user research, Silver defined goals for next generation of accessibility guidelines from W3C WAI. They include:</p>
+    <ul>
+      <li>Able to address more needs of people with disabilities</li>
+      <li>Account for the different impacts of specific accessibility issues on the real-world user experiences of people with disabilities</li>
+      <li>Easier to understand and easier to use, especially by people who are not technical</li>
+      <li>Flexible conformance model to work well for very different types of web content, apps, tools, — as well as organizations and people with disabilities</li>
+      <li>Enable minor bugs and oversight by content authors that do not significantly impact the accessible user experience to not invalidate conformance to WCAG</li>
+      <li>Encourage organizations to continue to improve accessibility (rather than stopping with WCAG 2 Level AA)</li>
+    </ul>
+
+    <p>More about goals is in <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3.0</a>. We welcome comments on this document, too.</p>
+
+    <h4 id="development-process">Development Process</h4>
+
+    <p>In defining the accessibility requirements in WCAG 3.0, Silver started fresh with a list of accessibility needs of people with disabilities. Development goes through this process:</p>
+    <ol>
+      <li>From a specific user need, write an outcome to meet that user need.</li>
+      <li>Define tests to determine if the outcome is met.</li>
+      <li>Write the method to meet the outcome.</li>
+      <li>Group the outcomes under guidelines. <!-- [@@correct?] --></li>
+      <li>Write the How-To support information.</li>
+    </ol>
+
+    <h4 id="eg-guidelines"><em><strong>Draft Examples</strong></em></h4>
+
+    <p>The draft guidelines included in the First Public Working Draft were selected to illustrate specific aspects of the proposed structure of WCAG 3 and relationship with WCAG 2.</p>
+    <ul>
+      <li><a href="https://w3c.github.io/silver/guidelines/#text-alternatives">Text alternatives</a> — Migrating a WCAG 2 success criterion as is into a WCAG 3 outcome</li>
+      <li><a href="https://w3c.github.io/silver/guidelines/#clear-words">Clear words</a> — Adding a new accessibility requirement that was considered insufficiently testable for WCAG 2, and can be tested using the WCAG 3 rating scale</li>
+      <li><a href="https://w3c.github.io/silver/guidelines/#captions">Captions</a> — Adapting WCAG 2 success criteria to emerging technologies, such as virtual reality, and demonstrating how scoring varies by context</li>
+      <li><a href="https://w3c.github.io/silver/guidelines/#structured-content">Structured content</a> — Combining guidance from multiple WCAG 2 success criteria into a new WCAG 3 guideline with multiple outcomes</li>
+      <li><a href="https://w3c.github.io/silver/guidelines/#visual-contrast-of-text">Visual contrast of text</a> — Combining guidance from multiple WCAG 2 success criteria, and a new algorithm with support for different situations</li>
+    </ul>
+
+    <p>These guidelines and outcomes are rough draft examples that will be refined and edited in future Working Drafts.</p>
+
+  </div>
+</details>
+
+<div class="excol-all"></div>
+
+<h3 id="comments">Review Questions and Your Comments</h3>
+
+<p>For specific questions that we would like feedback on, see:</p>
+<ul>
+  <li>Questions in the blog post <a href="https://www.w3.org/blog/2021/01/wcag-3-fpwd/#feedback">WCAG 3 FPWD Published, Feedback section</a>.</li>
+  <li>Questions in Editor’s Notes throughout the draft.</li>
+</ul>
+
+<p><strong>To comment on the WCAG 3 draft:</strong></p>
+<ul>
+  <li>Please open a <a href="https://github.com/w3c/silver/issues/new">new GitHub issue in the WCAG 3 (Silver) repository</a>. Create separate GitHub issues for each topic, rather than commenting on multiple topics in a single issue.</li>
+  <li>If it’s not feasible for you to use GitHub, send comments in e-mail to: public-silver@w3.org</li>
+</ul>
+
+<p><em>We will update this section when we have new questions on new substantive draft content for review.</em></p>
+
+
+    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20WCAG%203%20Introduction">wai@w3.org</a> or via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=[en]%20WCAG%203%20Introduction&body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D" class="button"><span>E-mail</span></a>
+    <a href="https://github.com/w3c/wai-intro-wcag/edit/master/content/wcag3-intro.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-intro-wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+</div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date: </strong>Updated 8 June 2021.</p> <p><strong>Editor:</strong> <a href="http://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>. Contributors: Jeanne Spellman.</p> <p>Developed with input from the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>), Accessibility Guidelines Working Group (<a href="https://www.w3.org/WAI/about/groups/agwg/">AG WG</a>), Silver Task Force, and Silver Community Group.</p>
+</div>
+  </footer>
+  
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+<script>
+  svg4everybody();
+</script><script>
+  var translationStrings = {};
+</script>
+<!-- Matomo -->
+<script>
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.w3.org/analytics/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '328']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+
+  </body>
+</html>

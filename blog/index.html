@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>W3C Blog | Leading the Web to its Full Potential</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.w3.org/blog/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://www.w3.org/blog/wp-content/themes/w3cblog/js/html5.js"></script>
+	<![endif]-->
+        <link rel="Help" href="/Help/" />
+        <link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" />
+        <style type="text/css"  media="print, screen and (min-width: 481px)">@import url("/2008/site/css/advanced");</style>
+        <link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" />
+        <link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" />
+
+	<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//www.w3.org' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="W3C Blog &raquo; Feed" href="https://www.w3.org/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="W3C Blog &raquo; Comments Feed" href="https://www.w3.org/blog/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.w3.org\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.3"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.w3.org/blog/wp-includes/css/dist/block-library/style.min.css?ver=5.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='w3cblog-fonts-css'  href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://www.w3.org/blog/wp-content/themes/w3cblog/fonts/genericons.css?ver=2.09' type='text/css' media='all' />
+<link rel='stylesheet' id='w3cblog-style-css'  href='https://www.w3.org/blog/wp-content/themes/w3cblog/style.css?ver=2013-07-18' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='w3cblog-ie-css'  href='https://www.w3.org/blog/wp-content/themes/w3cblog/css/ie.css?ver=2013-07-18' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='https://www.w3.org/blog/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.w3.org/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://www.w3.org/blog/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.w3.org/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.w3.org/blog/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7.3" />
+<style type='text/css'></style>
+<style type='text/css'>
+</style>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>	<style type="text/css" id="twentythirteen-header-css">
+			.site-header {
+			background: url(https://www.w3.org/blog/wp-content/themes/w3cblog/images/headers/circle.png) no-repeat scroll top;
+			background-size: 1600px auto;
+		}
+		</style>
+	</head>
+
+<body id="www-w3-org" class="home blog sidebar">
+    <div id="w3c_container">
+        <div id="w3c_mast"> <!-- #w3c_mast / Page top header -->
+            <h1 class="logo"><a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a>
+                <span class="alt-logo">W3C</span>
+            </h1>
+            <div id="w3c_nav">
+                <form action="/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+                    <!-- w3c_sec_nav is populated through js -->
+                    <div class="w3c_sec_nav"><!-- --></div>
+                    <ul class="main_nav"><!-- Main navigation menu -->
+                        <li class="first-item"><a href="/standards/">Standards</a></li>
+                        <li><a href="/participate/">Participate</a></li>
+                        <li><a href="/Consortium/membership">Membership</a></li>
+                        <li class="last-item"><a href="/Consortium/">About W3C</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div> <!-- /end #w3c_mast -->
+
+        <div id="w3c_main">
+            <div id="w3c_logo_shadow" class="w3c_leftCol">
+                <img height="32" alt="" src="/2008/site/images/logo-shadow" />
+            </div>
+
+        <div class="w3c_leftCol"><h2 class="offscreen">Site Navigation</h2>
+            	<div id="secondary" class="sidebar-container" role="complementary">
+		<div class="widget-area">
+			<aside id="text-9" class="widget widget_text">			<div class="textwidget">            <h3 class="category"><span class="ribbon"><a href="/participate/discussion.html" title="Up to Mail, News, Blogs, Podcasts, and Tutorials">Mail, News, Blogs, Podcasts, and Tutorials <img src="/2008/site/images/header-link" alt="Header link" width="13" height="13" class="header-link" /></a></span></h3>
+            <ul class="theme">
+                <li><a href="/News/">News</a></li>
+                <li><a href="/News/Public/">Weekly Newsletter</a></li>
+                <li><a class="current">W3C Blog</a></li>
+                <li><a href="/Mail/">Mailing Lists</a></li>
+                <li><a href="/participate/podcastsvideo.html">Podcasts and Video</a></li>
+                <li><a href="/2002/03/tutorials.html">Tutorials and Courses</a></li>
+                <li><a href="/TeamSubmission/">Team Submissions</a></li>
+            </ul></div>
+		</aside>		</div><!-- .widget-area -->
+	</div><!-- #secondary -->
+        </div>
+        <div class="w3c_mainCol">
+            <div id="w3c_crumbs">
+                <div id="w3c_crumbs_frame">
+                    <ul class="bct"> <!-- .bct / Breadcrumbs -->
+                        <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+                        <li><a href="/">W3C</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+                        <li><a href="/participate/">Participate</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+                        <li><a href="/participate/discussion.html">Mail,&#xA0;News,&#xA0;Blogs,&#xA0;Podcasts,&#xA0;and&#x2026;</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+                        <li class="current">W3C Blog</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1 class="title">
+                                W3C Blog                             </h1>
+             
+            <div id="w3c_content_body">
+                <div class="line">
+                    <div class="unit size2on3">
+                        
+                                                                                        
+
+<article id="post-20205" class="post-20205 post type-post status-publish format-standard has-post-thumbnail hentry category-corporate tag-anniversary tag-web-standards">
+	<header class="entry-header">
+				<div class="entry-thumbnail">
+			<img width="604" height="270" src="https://www.w3.org/blog/wp-content/uploads/2021/10/balloons1-604x270.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="[Photo of colorful balloons]" loading="lazy" />		</div>
+		
+				<h2 class="entry-title">
+			<a href="https://www.w3.org/blog/2021/10/the-world-wide-web-consortium-a-guiding-vision-for-the-future-of-the-web/" rel="bookmark">The World Wide Web Consortium at 27: a guiding star for the future of the web</a>
+		</h2>
+		
+		<div class="entry-meta">
+                       <p>
+			<span class="date"><time class="entry-date" datetime="2021-10-01T09:00:25+00:00">1 October 2021</time></span> by <span class="author vcard"><a class="url fn n" href="https://www.w3.org/blog/author/amy/" title="View all posts by Amy van der Hiel" rel="author">Amy van der Hiel</a></span> | Posted in: <span class="categories-links"><a href="https://www.w3.org/blog/category/corporate/" rel="category tag">Corporate</a></span><span class="tags-links">, <a href="https://www.w3.org/blog/tags/anniversary/" rel="tag">anniversary</a>, <a href="https://www.w3.org/blog/tags/web-standards/" rel="tag">Web standards</a></span>						</p>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-summary">
+            <p>
+	        Twenty-seven years ago, on 1 October 1994, Tim Berners-Lee launched the World Wide Web Consortium as the next step in the evolution and support of the Web. Quoting from the proposal: “The web allows human communication and cooperation by sharing knowledge, and opens this to ordinary people who need no technical skill. […] At the [&hellip;]<br/>
+		<a class="read-more" href="https://www.w3.org/blog/2021/10/the-world-wide-web-consortium-a-guiding-vision-for-the-future-of-the-web/">More&hellip;</a>
+            </p>
+	</div><!-- .entry-summary -->
+	
+	<footer class="entry-meta">
+					<div class="comments-link">
+			<p>
+				<a href="https://www.w3.org/blog/2021/10/the-world-wide-web-consortium-a-guiding-vision-for-the-future-of-the-web/#respond"><span class="leave-reply">Leave a comment</span></a>				</p>
+			</div><!-- .comments-link -->
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+                                                            
+
+<article id="post-20199" class="post-20199 post type-post status-publish format-standard has-post-thumbnail hentry category-accessibility category-developers">
+	<header class="entry-header">
+				<div class="entry-thumbnail">
+			<img width="604" height="270" src="https://www.w3.org/blog/wp-content/uploads/2021/09/sync_spectrum-604x270.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="SYNCHRONIZATION ACCESSIBILITY USER REQUIREMENTS – First Public Working Draft published" loading="lazy" />		</div>
+		
+				<h2 class="entry-title">
+			<a href="https://www.w3.org/blog/2021/09/synchronization-accessibility-user-requirements-call-for-review/" rel="bookmark">Synchronization Accessibility User Requirements – call for review</a>
+		</h2>
+		
+		<div class="entry-meta">
+                       <p>
+			<span class="date"><time class="entry-date" datetime="2021-09-28T17:58:01+00:00">28 September 2021</time></span> by <span class="author vcard"><a class="url fn n" href="https://www.w3.org/blog/author/joconnor/" title="View all posts by Joshue O Connor" rel="author">Joshue O Connor</a></span> | Posted in: <span class="categories-links"><a href="https://www.w3.org/blog/category/accessibility/" rel="category tag">Accessibility</a>, <a href="https://www.w3.org/blog/category/developers/" rel="category tag">Developers</a></span>						</p>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-summary">
+            <p>
+	        The successful synchronization of multimedia content, especially audio and video, is essential to accessible web-based communication and cooperation. Understandable media is therefore media synchronized to very specific limits, according to multiple research studies. By clarifying the parameters of adequate synchronization we can influence the development of future technologies, specifications, and accessibility guidelines. Providing an accessible [&hellip;]<br/>
+		<a class="read-more" href="https://www.w3.org/blog/2021/09/synchronization-accessibility-user-requirements-call-for-review/">More&hellip;</a>
+            </p>
+	</div><!-- .entry-summary -->
+	
+	<footer class="entry-meta">
+					<div class="comments-link">
+			<p>
+				<a href="https://www.w3.org/blog/2021/09/synchronization-accessibility-user-requirements-call-for-review/#respond"><span class="leave-reply">Leave a comment</span></a>				</p>
+			</div><!-- .comments-link -->
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+                                                            
+
+<article id="post-19304" class="post-19304 post type-post status-publish format-standard hentry category-events tag-tpac">
+	<header class="entry-header">
+		
+				<h2 class="entry-title">
+			<a href="https://www.w3.org/blog/2021/08/w3cs-tpac-new-public-virtual-exhibition-creates-exciting-opportunity/" rel="bookmark">W3C&#8217;s TPAC new public virtual exhibition creates exciting opportunity</a>
+		</h2>
+		
+		<div class="entry-meta">
+                       <p>
+			<span class="date"><time class="entry-date" datetime="2021-08-26T13:50:37+00:00">26 August 2021</time></span> by <span class="author vcard"><a class="url fn n" href="https://www.w3.org/blog/author/abird/" title="View all posts by J. Alan Bird" rel="author">J. Alan Bird</a></span> | Posted in: <span class="categories-links"><a href="https://www.w3.org/blog/category/events/" rel="category tag">Events</a></span><span class="tags-links">, <a href="https://www.w3.org/blog/tags/tpac/" rel="tag">TPAC</a></span>						</p>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-summary">
+            <p>
+	        If you&#8217;re a W3C Member, or someone who is familiar with our work, you&#8217;ve undoubtedly heard of our annual Technical Plenary and Advisory Committee Meeting also known as TPAC. If you have not, watch the short video introduction of TPAC, the W3C annual conference. This well-attended and popular event is an important means for W3C to [&hellip;]<br/>
+		<a class="read-more" href="https://www.w3.org/blog/2021/08/w3cs-tpac-new-public-virtual-exhibition-creates-exciting-opportunity/">More&hellip;</a>
+            </p>
+	</div><!-- .entry-summary -->
+	
+	<footer class="entry-meta">
+					<div class="comments-link">
+			<p>
+				<a href="https://www.w3.org/blog/2021/08/w3cs-tpac-new-public-virtual-exhibition-creates-exciting-opportunity/#respond"><span class="leave-reply">Leave a comment</span></a>				</p>
+			</div><!-- .comments-link -->
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+                                                            
+
+<article id="post-19292" class="post-19292 post type-post status-publish format-standard hentry category-accessibility tag-auto tag-imsc tag-performance tag-ttml tag-ttwg tag-w3c ecosystem-media">
+	<header class="entry-header">
+		
+				<h2 class="entry-title">
+			<a href="https://www.w3.org/blog/2021/08/keeping-the-complexity-of-imsc-documents-under-control/" rel="bookmark">Keeping the complexity of IMSC documents under control</a>
+		</h2>
+		
+		<div class="entry-meta">
+                       <p>
+			<span class="date"><time class="entry-date" datetime="2021-08-06T14:44:58+00:00">6 August 2021</time></span> by <span class="author vcard"><a class="url fn n" href="https://www.w3.org/blog/author/nigelmegitt/" title="View all posts by Nigel Megitt" rel="author">Nigel Megitt</a></span> | Posted in: <span class="categories-links"><a href="https://www.w3.org/blog/category/accessibility/" rel="category tag">Accessibility</a></span><span class="tags-links">, <a href="https://www.w3.org/blog/tags/auto/" rel="tag">auto</a>, <a href="https://www.w3.org/blog/tags/imsc/" rel="tag">IMSC</a>, <a href="https://www.w3.org/blog/tags/performance/" rel="tag">Performance</a>, <a href="https://www.w3.org/blog/tags/ttml/" rel="tag">TTML</a>, <a href="https://www.w3.org/blog/tags/ttwg/" rel="tag">TTWG</a>, <a href="https://www.w3.org/blog/tags/w3c/" rel="tag">W3C</a></span>						</p>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-summary">
+            <p>
+	        The IMSC Recommendation includes an Hypothetical Render Model (HRM) that constrains document complexity, allowing authors of subtitles and captions to know that they are not generating subtitles that will overload the players. An open source implementation of the HRM for IMSC Text Profile documents has been made available. IMSC users and implementers are invited to [&hellip;]<br/>
+		<a class="read-more" href="https://www.w3.org/blog/2021/08/keeping-the-complexity-of-imsc-documents-under-control/">More&hellip;</a>
+            </p>
+	</div><!-- .entry-summary -->
+	
+	<footer class="entry-meta">
+					<div class="comments-link">
+			<p>
+				<a href="https://www.w3.org/blog/2021/08/keeping-the-complexity-of-imsc-documents-under-control/#respond"><span class="leave-reply">Leave a comment</span></a>				</p>
+			</div><!-- .comments-link -->
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+                                                            
+
+<article id="post-19255" class="post-19255 post type-post status-publish format-standard hentry category-corporate">
+	<header class="entry-header">
+		
+				<h2 class="entry-title">
+			<a href="https://www.w3.org/blog/2021/08/30-years-on-from-introducing-the-web-to-the-world/" rel="bookmark">30 years on from introducing the Web to the World</a>
+		</h2>
+		
+		<div class="entry-meta">
+                       <p>
+			<span class="date"><time class="entry-date" datetime="2021-08-06T10:54:44+00:00">6 August 2021</time></span> by <span class="author vcard"><a class="url fn n" href="https://www.w3.org/blog/author/amy/" title="View all posts by Amy van der Hiel" rel="author">Amy van der Hiel</a></span> | Posted in: <span class="categories-links"><a href="https://www.w3.org/blog/category/corporate/" rel="category tag">Corporate</a></span>						</p>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-summary">
+            <p>
+	        On 6 August 1991, Tim Berners-Lee posted information about his WorldWideWeb project to the public and introduced the Web to the world. “Try it“, Tim noted in his message &#8211; and since then, billions of people have. Think about how often you use the Web. Aren’t you surprised at how essential the Web is to [&hellip;]<br/>
+		<a class="read-more" href="https://www.w3.org/blog/2021/08/30-years-on-from-introducing-the-web-to-the-world/">More&hellip;</a>
+            </p>
+	</div><!-- .entry-summary -->
+	
+	<footer class="entry-meta">
+					<div class="comments-link">
+			<p>
+				<a href="https://www.w3.org/blog/2021/08/30-years-on-from-introducing-the-web-to-the-world/#comments">View all 2 comments</a>				</p>
+			</div><!-- .comments-link -->
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+                                                            
+
+<article id="post-19199" class="post-19199 post type-post status-publish format-standard hentry category-corporate category-events tag-ceo tag-diversity tag-inclusion">
+	<header class="entry-header">
+		
+				<h2 class="entry-title">
+			<a href="https://www.w3.org/blog/2021/06/diversity-and-inclusion-at-w3c-inclusion-fund-and-fellowships-for-tpac-2021/" rel="bookmark">Diversity and Inclusion at W3C: Inclusion Fund and Fellowships for TPAC 2021</a>
+		</h2>
+		
+		<div class="entry-meta">
+                       <p>
+			<span class="date"><time class="entry-date" datetime="2021-06-29T11:01:04+00:00">29 June 2021</time></span> by <span class="author vcard"><a class="url fn n" href="https://www.w3.org/blog/author/jeff/" title="View all posts by Jeff Jaffe" rel="author">Jeff Jaffe</a></span> | Posted in: <span class="categories-links"><a href="https://www.w3.org/blog/category/corporate/" rel="category tag">Corporate</a>, <a href="https://www.w3.org/blog/category/events/" rel="category tag">Events</a></span><span class="tags-links">, <a href="https://www.w3.org/blog/tags/ceo/" rel="tag">CEO</a>, <a href="https://www.w3.org/blog/tags/diversity/" rel="tag">diversity</a>, <a href="https://www.w3.org/blog/tags/inclusion/" rel="tag">inclusion</a></span>						</p>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-summary">
+            <p>
+	        60% of the world is online and we want and need to reflect the diversity of the whole world as more people continue to access, use and create the web. We believe that more diversity means better representation, which leads to better and more inclusive design. Indeed, more background, more use cases, more edge cases, [&hellip;]<br/>
+		<a class="read-more" href="https://www.w3.org/blog/2021/06/diversity-and-inclusion-at-w3c-inclusion-fund-and-fellowships-for-tpac-2021/">More&hellip;</a>
+            </p>
+	</div><!-- .entry-summary -->
+	
+	<footer class="entry-meta">
+					<div class="comments-link">
+			<p>
+				<a href="https://www.w3.org/blog/2021/06/diversity-and-inclusion-at-w3c-inclusion-fund-and-fellowships-for-tpac-2021/#comments">View all 12 comments</a>				</p>
+			</div><!-- .comments-link -->
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+                                                            
+
+<article id="post-19207" class="post-19207 post type-post status-publish format-standard hentry category-accessibility category-corporate">
+	<header class="entry-header">
+		
+				<h2 class="entry-title">
+			<a href="https://www.w3.org/blog/2021/06/loving-and-leaving-w3c/" rel="bookmark">Loving and Leaving W3C</a>
+		</h2>
+		
+		<div class="entry-meta">
+                       <p>
+			<span class="date"><time class="entry-date" datetime="2021-06-23T16:23:44+00:00">23 June 2021</time></span> by <span class="author vcard"><a class="url fn n" href="https://www.w3.org/blog/author/shadi/" title="View all posts by Shadi Abou-Zahra" rel="author">Shadi Abou-Zahra</a></span> | Posted in: <span class="categories-links"><a href="https://www.w3.org/blog/category/accessibility/" rel="category tag">Accessibility</a>, <a href="https://www.w3.org/blog/category/corporate/" rel="category tag">Corporate</a></span>						</p>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-summary">
+            <p>
+	        I love my work at W3C. Being part of the team striving to lead the Web to its full potential and to make it more accessible to millions of people with disabilities around the world is my passion. This August will mark my 18-year anniversary working for this unique organization, of which I cherish every [&hellip;]<br/>
+		<a class="read-more" href="https://www.w3.org/blog/2021/06/loving-and-leaving-w3c/">More&hellip;</a>
+            </p>
+	</div><!-- .entry-summary -->
+	
+	<footer class="entry-meta">
+					<div class="comments-link">
+			<p>
+				<a href="https://www.w3.org/blog/2021/06/loving-and-leaving-w3c/#comments">View all 8 comments</a>				</p>
+			</div><!-- .comments-link -->
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+                                                            
+
+<article id="post-19194" class="post-19194 post type-post status-publish format-standard hentry category-data group-wg-dx">
+	<header class="entry-header">
+		
+				<h2 class="entry-title">
+			<a href="https://www.w3.org/blog/2021/05/dcat3-pwd2/" rel="bookmark">Data Catalog Vocabulary (DCAT)  v3:  2nd  Public Working Draft</a>
+		</h2>
+		
+		<div class="entry-meta">
+                       <p>
+			<span class="date"><time class="entry-date" datetime="2021-05-18T21:00:22+00:00">18 May 2021</time></span> by <span class="author vcard"><a class="url fn n" href="https://www.w3.org/blog/author/pwin/" title="View all posts by Peter Winstanley" rel="author">Peter Winstanley</a></span> | Posted in: <span class="categories-links"><a href="https://www.w3.org/blog/category/data/" rel="category tag">Data</a></span>						</p>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-summary">
+            <p>
+	        This message is to update you on the work of the W3C Data Exchange Working Group [1] and to ask for your help in reviewing progress on the third revision of the RDF vocabulary for data catalogs, DCAT, that was published on 04 May 2021. The Second Public Working Draft of the revision is available [&hellip;]<br/>
+		<a class="read-more" href="https://www.w3.org/blog/2021/05/dcat3-pwd2/">More&hellip;</a>
+            </p>
+	</div><!-- .entry-summary -->
+	
+	<footer class="entry-meta">
+					<div class="comments-link">
+			<p>
+				<a href="https://www.w3.org/blog/2021/05/dcat3-pwd2/#respond"><span class="leave-reply">Leave a comment</span></a>				</p>
+			</div><!-- .comments-link -->
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+                                                            
+
+<article id="post-19177" class="post-19177 post type-post status-publish format-standard hentry category-corporate tag-anniversary tag-ceo">
+	<header class="entry-header">
+		
+				<h2 class="entry-title">
+			<a href="https://www.w3.org/blog/2021/04/centrality-of-w3c-as-the-web-accelerates-to-meet-societys-growing-needs/" rel="bookmark">Centrality of W3C as the Web accelerates to meet society&#8217;s growing needs</a>
+		</h2>
+		
+		<div class="entry-meta">
+                       <p>
+			<span class="date"><time class="entry-date" datetime="2021-04-30T08:20:33+00:00">30 April 2021</time></span> by <span class="author vcard"><a class="url fn n" href="https://www.w3.org/blog/author/jeff/" title="View all posts by Jeff Jaffe" rel="author">Jeff Jaffe</a></span> | Posted in: <span class="categories-links"><a href="https://www.w3.org/blog/category/corporate/" rel="category tag">Corporate</a></span><span class="tags-links">, <a href="https://www.w3.org/blog/tags/anniversary/" rel="tag">anniversary</a>, <a href="https://www.w3.org/blog/tags/ceo/" rel="tag">CEO</a></span>						</p>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-summary">
+            <p>
+	        Today we are releasing to the public the April 2021 edition of the W3C Strategic Highlights, our semi-annual report about the tremendous work to enhance, grow and strengthen the Web platform. This document focuses on progress in key areas of the web, how the Web Consortium meets the needs of industry and society as a [&hellip;]<br/>
+		<a class="read-more" href="https://www.w3.org/blog/2021/04/centrality-of-w3c-as-the-web-accelerates-to-meet-societys-growing-needs/">More&hellip;</a>
+            </p>
+	</div><!-- .entry-summary -->
+	
+	<footer class="entry-meta">
+					<div class="comments-link">
+			<p>
+				<a href="https://www.w3.org/blog/2021/04/centrality-of-w3c-as-the-web-accelerates-to-meet-societys-growing-needs/#comments">One comment so far</a>				</p>
+			</div><!-- .comments-link -->
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+                                                            
+
+<article id="post-19152" class="post-19152 post type-post status-publish format-standard hentry category-developers tag-iot tag-wot ecosystem-web-of-things">
+	<header class="entry-header">
+		
+				<h2 class="entry-title">
+			<a href="https://www.w3.org/blog/2021/04/wot-explainer-video-and-web-site/" rel="bookmark">Web of Things (WoT) Explainer Video and New Web Site</a>
+		</h2>
+		
+		<div class="entry-meta">
+                       <p>
+			<span class="date"><time class="entry-date" datetime="2021-04-20T15:42:12+00:00">20 April 2021</time></span> by <span class="author vcard"><a class="url fn n" href="https://www.w3.org/blog/author/mmccool/" title="View all posts by Michael McCool" rel="author">Michael McCool</a></span> | Posted in: <span class="categories-links"><a href="https://www.w3.org/blog/category/developers/" rel="category tag">Developers</a></span><span class="tags-links">, <a href="https://www.w3.org/blog/tags/iot/" rel="tag">Internet of Things</a>, <a href="https://www.w3.org/blog/tags/wot/" rel="tag">Web of Things</a></span>						</p>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-summary">
+            <p>
+	        The Web of Things (WoT) standardization activities are now illustrated through a new animation! This animation shows how a web developer can implement interoperable Internet of Things solutions that are not locked into vendor specific frameworks. Additionally, the W3C WoT allows developer experience and skills to be transferred to different application domains such as agriculture, [&hellip;]<br/>
+		<a class="read-more" href="https://www.w3.org/blog/2021/04/wot-explainer-video-and-web-site/">More&hellip;</a>
+            </p>
+	</div><!-- .entry-summary -->
+	
+	<footer class="entry-meta">
+					<div class="comments-link">
+			<p>
+				<a href="https://www.w3.org/blog/2021/04/wot-explainer-video-and-web-site/#respond"><span class="leave-reply">Leave a comment</span></a>				</p>
+			</div><!-- .comments-link -->
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+                            
+                                <nav class="navigation paging-navigation" role="navigation">
+        <h1 class="screen-reader-text">Posts navigation</h1>
+        <div class="nav-links">
+        <p>
+                <a href="https://www.w3.org/blog/page/2/" ><span class="meta-nav">&larr;</span> Older posts</a>    
+                                                </p>
+
+        </div><!-- .nav-links -->
+    </nav><!-- .navigation -->
+    
+                                                </div>
+                    <div class="unit size1on3 lastUnit w3c_rhs">
+                        	<div id="tertiary" class="sidebar-container" role="complementary">
+		<div class="sidebar-inner">
+			<div class="widget-area">
+				<aside id="text-2" class="widget widget_text">			<div class="textwidget"><p>The W3C blog is for discussions within W3C and the Web community at large. Announcements, issues on Web standards and educational materials among other topics are posted here; see the <a href="/">W3C home page</a> for official announcements from W3C.</p>
+</div>
+		</aside><aside id="search-2" class="widget widget_search"><h2 class="widget-title h4 wp_category">Search W3C Blog</h2><form role="search" method="get" class="search-form" action="https://www.w3.org/blog/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title h4 wp_category">Recent Comments</h2><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='http://sidar.org' rel='external nofollow ugc' class='url'>Emmanuelle Gutiérrez y Restrepo</a></span> on <a href="https://www.w3.org/blog/2021/06/loving-and-leaving-w3c/#comment-117047">Loving and Leaving W3C</a></li><li class="recentcomments"><span class="comment-author-link">Rabab Gomaa</span> on <a href="https://www.w3.org/blog/2021/06/loving-and-leaving-w3c/#comment-116710">Loving and Leaving W3C</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://www.w3.org/blog/SVG/2010/06/07/ie9_suport/' rel='external nofollow ugc' class='url'>Followup on Internet Explorer Interview | SVG Working Group Blog</a></span> on <a href="https://www.w3.org/blog/2010/06/interview_ie/#comment-114554">Interview with Internet Explorer&#8217;s Patrick Dengler</a></li><li class="recentcomments"><span class="comment-author-link">Ikari</span> on <a href="https://www.w3.org/blog/2021/06/diversity-and-inclusion-at-w3c-inclusion-fund-and-fellowships-for-tpac-2021/#comment-110029">Diversity and Inclusion at W3C: Inclusion Fund and Fellowships for TPAC 2021</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://koalie.blog/' rel='external nofollow ugc' class='url'>Coralie Mercier</a></span> on <a href="https://www.w3.org/blog/2021/06/diversity-and-inclusion-at-w3c-inclusion-fund-and-fellowships-for-tpac-2021/#comment-109786">Diversity and Inclusion at W3C: Inclusion Fund and Fellowships for TPAC 2021</a></li></ul></aside><aside id="text-3" class="widget widget_text"><h2 class="widget-title h4 wp_category">Policies</h2>			<div class="textwidget"><p>All comments on the W3C Blog are moderated. In the spirit of openness with regards to Web communities, please try to stay as open as possible in your comments. We may reject comments without a given name and e-mail address. We usually reject comments that are aggressive, insulting, or off-topic.</p>
+<p>Please abide by our <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+<p>Individual blog entries, posted by W3C Staff or Working-Group participants, generally do not represent the consensus of the W3C, but express individual opinions of the respective author.</p>
+</div>
+		</aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title h4 wp_category">Archives  </h2>		<label class="screen-reader-text" for="archives-dropdown-2">Archives  </label>
+		<select id="archives-dropdown-2" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value='https://www.w3.org/blog/2021/10/'> October 2021 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2021/09/'> September 2021 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2021/08/'> August 2021 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2021/06/'> June 2021 &nbsp;(2)</option>
+	<option value='https://www.w3.org/blog/2021/05/'> May 2021 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2021/04/'> April 2021 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2021/03/'> March 2021 &nbsp;(2)</option>
+	<option value='https://www.w3.org/blog/2021/02/'> February 2021 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2021/01/'> January 2021 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2020/12/'> December 2020 &nbsp;(2)</option>
+	<option value='https://www.w3.org/blog/2020/11/'> November 2020 &nbsp;(2)</option>
+	<option value='https://www.w3.org/blog/2020/10/'> October 2020 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2020/09/'> September 2020 &nbsp;(2)</option>
+	<option value='https://www.w3.org/blog/2020/08/'> August 2020 &nbsp;(2)</option>
+	<option value='https://www.w3.org/blog/2020/07/'> July 2020 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2020/06/'> June 2020 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2020/05/'> May 2020 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2020/04/'> April 2020 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2020/03/'> March 2020 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2020/02/'> February 2020 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2019/12/'> December 2019 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2019/11/'> November 2019 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2019/10/'> October 2019 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2019/09/'> September 2019 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2019/08/'> August 2019 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2019/07/'> July 2019 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2019/06/'> June 2019 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2019/05/'> May 2019 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2019/04/'> April 2019 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2019/03/'> March 2019 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2019/02/'> February 2019 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2019/01/'> January 2019 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2018/12/'> December 2018 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2018/11/'> November 2018 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2018/10/'> October 2018 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2018/09/'> September 2018 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2018/08/'> August 2018 &nbsp;(4)</option>
+	<option value='https://www.w3.org/blog/2018/07/'> July 2018 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2018/06/'> June 2018 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2018/05/'> May 2018 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2018/04/'> April 2018 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2018/03/'> March 2018 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2018/02/'> February 2018 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2018/01/'> January 2018 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2017/12/'> December 2017 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2017/11/'> November 2017 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2017/10/'> October 2017 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2017/09/'> September 2017 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2017/08/'> August 2017 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2017/07/'> July 2017 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2017/06/'> June 2017 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2017/05/'> May 2017 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2017/04/'> April 2017 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2017/03/'> March 2017 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2017/02/'> February 2017 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2017/01/'> January 2017 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2016/12/'> December 2016 &nbsp;(2)</option>
+	<option value='https://www.w3.org/blog/2016/11/'> November 2016 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2016/10/'> October 2016 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2016/09/'> September 2016 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2016/08/'> August 2016 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2016/07/'> July 2016 &nbsp;(4)</option>
+	<option value='https://www.w3.org/blog/2016/06/'> June 2016 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2016/05/'> May 2016 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2016/04/'> April 2016 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2016/03/'> March 2016 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2016/02/'> February 2016 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2016/01/'> January 2016 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2015/12/'> December 2015 &nbsp;(15)</option>
+	<option value='https://www.w3.org/blog/2015/11/'> November 2015 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2015/10/'> October 2015 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2015/09/'> September 2015 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2015/08/'> August 2015 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2015/07/'> July 2015 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2015/06/'> June 2015 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2015/05/'> May 2015 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2015/04/'> April 2015 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2015/03/'> March 2015 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2015/02/'> February 2015 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2015/01/'> January 2015 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2014/12/'> December 2014 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2014/11/'> November 2014 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2014/10/'> October 2014 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2014/09/'> September 2014 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2014/08/'> August 2014 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2014/07/'> July 2014 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2014/06/'> June 2014 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2014/05/'> May 2014 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2014/04/'> April 2014 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2014/03/'> March 2014 &nbsp;(23)</option>
+	<option value='https://www.w3.org/blog/2014/02/'> February 2014 &nbsp;(14)</option>
+	<option value='https://www.w3.org/blog/2014/01/'> January 2014 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2013/12/'> December 2013 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2013/11/'> November 2013 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2013/10/'> October 2013 &nbsp;(26)</option>
+	<option value='https://www.w3.org/blog/2013/09/'> September 2013 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2013/08/'> August 2013 &nbsp;(12)</option>
+	<option value='https://www.w3.org/blog/2013/07/'> July 2013 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2013/06/'> June 2013 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2013/05/'> May 2013 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2013/04/'> April 2013 &nbsp;(14)</option>
+	<option value='https://www.w3.org/blog/2013/03/'> March 2013 &nbsp;(18)</option>
+	<option value='https://www.w3.org/blog/2013/02/'> February 2013 &nbsp;(19)</option>
+	<option value='https://www.w3.org/blog/2013/01/'> January 2013 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2012/12/'> December 2012 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2012/11/'> November 2012 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2012/10/'> October 2012 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2012/09/'> September 2012 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2012/08/'> August 2012 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2012/07/'> July 2012 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2012/06/'> June 2012 &nbsp;(18)</option>
+	<option value='https://www.w3.org/blog/2012/05/'> May 2012 &nbsp;(14)</option>
+	<option value='https://www.w3.org/blog/2012/04/'> April 2012 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2012/03/'> March 2012 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2012/02/'> February 2012 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2012/01/'> January 2012 &nbsp;(17)</option>
+	<option value='https://www.w3.org/blog/2011/12/'> December 2011 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2011/11/'> November 2011 &nbsp;(15)</option>
+	<option value='https://www.w3.org/blog/2011/10/'> October 2011 &nbsp;(14)</option>
+	<option value='https://www.w3.org/blog/2011/09/'> September 2011 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2011/08/'> August 2011 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2011/07/'> July 2011 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2011/06/'> June 2011 &nbsp;(12)</option>
+	<option value='https://www.w3.org/blog/2011/05/'> May 2011 &nbsp;(17)</option>
+	<option value='https://www.w3.org/blog/2011/04/'> April 2011 &nbsp;(12)</option>
+	<option value='https://www.w3.org/blog/2011/03/'> March 2011 &nbsp;(13)</option>
+	<option value='https://www.w3.org/blog/2011/02/'> February 2011 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2011/01/'> January 2011 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2010/12/'> December 2010 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2010/11/'> November 2010 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2010/10/'> October 2010 &nbsp;(12)</option>
+	<option value='https://www.w3.org/blog/2010/09/'> September 2010 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2010/08/'> August 2010 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2010/07/'> July 2010 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2010/06/'> June 2010 &nbsp;(19)</option>
+	<option value='https://www.w3.org/blog/2010/05/'> May 2010 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2010/04/'> April 2010 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2010/03/'> March 2010 &nbsp;(14)</option>
+	<option value='https://www.w3.org/blog/2010/02/'> February 2010 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2010/01/'> January 2010 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2009/12/'> December 2009 &nbsp;(4)</option>
+	<option value='https://www.w3.org/blog/2009/11/'> November 2009 &nbsp;(6)</option>
+	<option value='https://www.w3.org/blog/2009/10/'> October 2009 &nbsp;(10)</option>
+	<option value='https://www.w3.org/blog/2009/09/'> September 2009 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2009/08/'> August 2009 &nbsp;(4)</option>
+	<option value='https://www.w3.org/blog/2009/07/'> July 2009 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2009/06/'> June 2009 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2009/05/'> May 2009 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2009/04/'> April 2009 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2009/03/'> March 2009 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2009/02/'> February 2009 &nbsp;(7)</option>
+	<option value='https://www.w3.org/blog/2009/01/'> January 2009 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2008/12/'> December 2008 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2008/11/'> November 2008 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2008/10/'> October 2008 &nbsp;(12)</option>
+	<option value='https://www.w3.org/blog/2008/09/'> September 2008 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2008/08/'> August 2008 &nbsp;(14)</option>
+	<option value='https://www.w3.org/blog/2008/07/'> July 2008 &nbsp;(17)</option>
+	<option value='https://www.w3.org/blog/2008/06/'> June 2008 &nbsp;(22)</option>
+	<option value='https://www.w3.org/blog/2008/05/'> May 2008 &nbsp;(12)</option>
+	<option value='https://www.w3.org/blog/2008/04/'> April 2008 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2008/03/'> March 2008 &nbsp;(17)</option>
+	<option value='https://www.w3.org/blog/2008/02/'> February 2008 &nbsp;(11)</option>
+	<option value='https://www.w3.org/blog/2008/01/'> January 2008 &nbsp;(21)</option>
+	<option value='https://www.w3.org/blog/2007/12/'> December 2007 &nbsp;(20)</option>
+	<option value='https://www.w3.org/blog/2007/11/'> November 2007 &nbsp;(25)</option>
+	<option value='https://www.w3.org/blog/2007/10/'> October 2007 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2007/09/'> September 2007 &nbsp;(12)</option>
+	<option value='https://www.w3.org/blog/2007/08/'> August 2007 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2007/07/'> July 2007 &nbsp;(12)</option>
+	<option value='https://www.w3.org/blog/2007/06/'> June 2007 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2007/05/'> May 2007 &nbsp;(15)</option>
+	<option value='https://www.w3.org/blog/2007/04/'> April 2007 &nbsp;(4)</option>
+	<option value='https://www.w3.org/blog/2007/03/'> March 2007 &nbsp;(16)</option>
+	<option value='https://www.w3.org/blog/2007/02/'> February 2007 &nbsp;(8)</option>
+	<option value='https://www.w3.org/blog/2007/01/'> January 2007 &nbsp;(5)</option>
+	<option value='https://www.w3.org/blog/2006/12/'> December 2006 &nbsp;(4)</option>
+	<option value='https://www.w3.org/blog/2006/11/'> November 2006 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2006/10/'> October 2006 &nbsp;(12)</option>
+	<option value='https://www.w3.org/blog/2006/09/'> September 2006 &nbsp;(9)</option>
+	<option value='https://www.w3.org/blog/2006/08/'> August 2006 &nbsp;(2)</option>
+	<option value='https://www.w3.org/blog/2006/07/'> July 2006 &nbsp;(4)</option>
+	<option value='https://www.w3.org/blog/2006/04/'> April 2006 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2006/03/'> March 2006 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2006/02/'> February 2006 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2006/01/'> January 2006 &nbsp;(2)</option>
+	<option value='https://www.w3.org/blog/2005/11/'> November 2005 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2005/10/'> October 2005 &nbsp;(1)</option>
+	<option value='https://www.w3.org/blog/2005/09/'> September 2005 &nbsp;(4)</option>
+	<option value='https://www.w3.org/blog/2005/08/'> August 2005 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2005/05/'> May 2005 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2005/04/'> April 2005 &nbsp;(3)</option>
+	<option value='https://www.w3.org/blog/2005/02/'> February 2005 &nbsp;(2)</option>
+
+		</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-2" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+			</aside><aside id="categories-3" class="widget widget_categories"><h2 class="widget-title h4 wp_category">Categories</h2><form action="https://www.w3.org/blog" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="1773">Accessibility</option>
+	<option class="level-0" value="2380">Corporate</option>
+	<option class="level-0" value="2319">Data</option>
+	<option class="level-0" value="2410">Developers</option>
+	<option class="level-0" value="1779">Events</option>
+	<option class="level-0" value="2382">Immersive Web</option>
+	<option class="level-0" value="1785">Internationalization</option>
+	<option class="level-0" value="1792">Privacy and Security</option>
+	<option class="level-0" value="2507">Systems</option>
+	<option class="level-0" value="1802">Testing</option>
+	<option class="level-0" value="1803">Tools</option>
+	<option class="level-0" value="1804">Training</option>
+	<option class="level-0" value="1805">Tutorials</option>
+	<option class="level-0" value="1">Uncategorized</option>
+	<option class="level-0" value="1812">Web Architecture</option>
+</select>
+</form>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+			</aside><aside id="text-4" class="widget widget_text"><h2 class="widget-title h4 wp_category">Feeds</h2>			<div class="textwidget"><ul>
+<li><a href="/blog/feed/" class="feedlink"><img src="/QA/2007/04/feed_icon" width="12" height="12" alt="Atom feed" /> Recent posts  </a></li>
+<li><a href="/blog/comments/feed/" class="feedlink"><img src="/QA/2007/04/feed_icon" width="12" height="12" alt="Atom feed" /> Recent comments  </a></li>
+</ul></div>
+		</aside><aside id="text-6" class="widget widget_text"><h2 class="widget-title h4 wp_category">Create a Post</h2>			<div class="textwidget"><p class="post-link"><a href="/blog/wp-login.php?redirect_to=/blog/wp-admin/post-new.php">Post</a></p>
+<p class="login-link">Or <a href="/blog/wp-login.php">log in to dashboard</a></p></div>
+		</aside><aside id="text-7" class="widget widget_text"><h2 class="widget-title h4 wp_category">Other W3C Blogs</h2>			<div class="textwidget"><p>See also <a href="http://www.w3.org/blog/list-of-w3c-blogs/">other W3C blogs</a> for news from individual groups.</p></div>
+		</aside><aside id="text-5" class="widget widget_text"><h2 class="widget-title h4 wp_category">Historical</h2>			<div class="textwidget"><p>This page used to be the home page for the Quality Assurance activity at W3C, and has since been broadened in scope and audience to become the W3C Blog. Historical documents:</p>
+<ul>
+<li><a href="http://www.w3.org/QA/Library/">QA Library</a></li>
+<li><a href="http://www.w3.org/QA/Tools/">QA Tools</a></li>
+<li>Posts from <a href="http://www.w3.org/QA/2005/01/News2004.html">2004</a>, <a href="http://www.w3.org/QA/2004/01/News2003.html">2003</a>, <a href="http://www.w3.org/QA/2002/01/News2002.html">2002</a>, <a href="http://www.w3.org/QA/2002/01/News2001.html">2001</a></li>
+</ul>
+</div>
+		</aside>			</div><!-- .widget-area -->
+		</div><!-- .sidebar-inner -->
+	</div><!-- #tertiary -->
+                    </div>
+                </div> <!-- /end .line -->
+            </div> <!-- /end #w3c_content_body -->
+
+
+        </div> <!-- /end #w3c_mainCol -->
+    </div> <!-- end #w3c_main -->
+</div> <!-- /end #w3c_container -->
+
+      <div id="w3c_footer">
+        <div id="w3c_footer-inner">
+            <h2 class="offscreen">Footer Navigation</h2>
+            <div class="w3c_footer-nav">
+               <h3>Navigation</h3>
+               <ul class="footer_top_nav"><li>
+                     <a href="/">Home</a>
+                  </li><li>
+                     <a href="/standards/">Standards</a>
+                  </li><li>
+                     <a href="/participate/">Participate</a>
+                  </li><li>
+                     <a href="/Consortium/membership">Membership</a>
+                  </li><li class="last-item">
+                     <a href="/Consortium/">About W3C</a>
+                  </li></ul>
+            </div>
+            <div class="w3c_footer-nav">
+               <h3>Contact W3C</h3>
+               <ul class="footer_bottom_nav"><li>
+                     <a href="/Consortium/contact">Contact</a>
+                  </li><li>
+                     <a accesskey="0" href="/Help/">Help and FAQ</a>
+                  </li><li>
+                     <a href="/Consortium/sponsor/">Sponsor / Donate</a>
+                  </li><li>
+                     <a href="/Consortium/siteindex">Site Map</a>
+                  </li><li>
+                     <address id="w3c_signature">
+                        <a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address>
+                  </li></ul>
+            </div>
+            <div class="w3c_footer-nav">
+               <h3>W3C Updates</h3>
+               <ul class="footer_follow_nav"><li>
+                     <a href="http://twitter.com/W3C" title="Follow W3C on Twitter">
+                        <img src="/2008/site/images/Twitter_bird_logo_2012.svg" alt="Twitter" height="40" class="social-icon" />
+                     </a>
+                  </li></ul>
+            </div>
+            <p class="copyright">Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/">
+                  <abbr title="Massachusetts Institute of Technology">MIT</abbr>
+               </a>, <a href="http://www.ercim.eu/">
+                  <abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr>
+               </a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+         </div>
+      </div>
+
+	<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['setVisitorCookieTimeout', '33696000']);
+_paq.push(['setSessionCookieTimeout', '1800']);
+_paq.push(['setReferralCookieTimeout', '15778463']);
+_paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://www.w3.org/analytics/piwik/";
+    _paq.push(['setTrackerUrl', u+'js/index.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'js/index.php'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<noscript><p><img src="https://www.w3.org/analytics/piwik/js/index.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
+<script type='text/javascript' src='https://www.w3.org/blog/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://www.w3.org/blog/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript' src='https://www.w3.org/blog/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b' id='jquery-masonry-js'></script>
+<script type='text/javascript' src='https://www.w3.org/blog/wp-includes/js/wp-embed.min.js?ver=5.7.3' id='wp-embed-js'></script>
+	
+	<div id="w3c_scripts">
+         <script type="text/javascript" src="/2008/site/js/main"></script>
+      </div>
+</body>
+</html>
