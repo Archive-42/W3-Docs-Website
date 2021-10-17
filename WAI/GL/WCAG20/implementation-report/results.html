@@ -1,470 +1,1344 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Implementation Summary</title>
-<link rel="stylesheet" href="report.css" type="text/css" />
-<link rel="stylesheet" href="/WAI/wai-main.css" type="text/css" />
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Implementation Summary</title>
+    <link rel="stylesheet" href="report.css" type="text/css" />
+    <link rel="stylesheet" href="/WAI/wai-main.css" type="text/css" />
+  </head>
 
-<body>
-<div id="controls">
-	<ul>
-		<li><a href="#main" shape="rect"><img src="/Icons/downinpage.png" alt="" /> Skip to content </a></li>
+  <body>
+    <div id="controls">
+      <ul>
+        <li>
+          <a href="#main" shape="rect"
+            ><img src="/Icons/downinpage.png" alt="" /> Skip to content
+          </a>
+        </li>
 
-		<li><a href="/WAI/changedesign.html" shape="rect">| Change 
-			text size or colors </a> </li>
-	</ul>
-</div>
-<div id="masthead">
-	<p id="logos"><a href="http://www.w3.org/" title="W3C Home" shape="rect"><img alt="W3C logo" height="48" src="/Icons/w3c_home" width="72" /></a><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"><img alt="Web Accessibility Initiative (WAI)         logo" height="48" src="/WAI/images/wai-temp" /></a></p>
-</div>
-<div id="tagline">
-	<p>WAI: Strategies, guidelines, resources to make the
-		Web accessible to people with disabilities</p>
-</div>
-<p id="breadcrumbs"><strong>Site Navigation: <a href="http://www.w3.org/">W3C Home</a> &gt; <a href="http://www.w3.org/WAI/">WAI Home</a> &gt; <a href="/WAI/GL/WCAG20/implementation-report/">WCAG 2.0 Implementation Report </a></strong></p>
+        <li>
+          <a href="/WAI/changedesign.html" shape="rect"
+            >| Change text size or colors
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="masthead">
+      <p id="logos">
+        <a href="http://www.w3.org/" title="W3C Home" shape="rect"
+          ><img
+            alt="W3C logo"
+            height="48"
+            src="/Icons/w3c_home"
+            width="72" /></a
+        ><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"
+          ><img
+            alt="Web Accessibility Initiative (WAI)         logo"
+            height="48"
+            src="/WAI/images/wai-temp"
+        /></a>
+      </p>
+    </div>
+    <div id="tagline">
+      <p>
+        WAI: Strategies, guidelines, resources to make the Web accessible to
+        people with disabilities
+      </p>
+    </div>
+    <p id="breadcrumbs">
+      <strong
+        >Site Navigation: <a href="http://www.w3.org/">W3C Home</a> &gt;
+        <a href="http://www.w3.org/WAI/">WAI Home</a> &gt;
+        <a href="/WAI/GL/WCAG20/implementation-report/"
+          >WCAG 2.0 Implementation Report
+        </a></strong
+      >
+    </p>
 
-<div>
-<h1>Implementation Summary  </h1>
-<div id="contents">
-<h2>On this page</h2>
-<ul>
-<li><a href="#conf">Conformance Levels</a></li>
-<li><a href="#sc">Success Criteria</a></li>
-</ul>
-</div>
-<h2><a name="conf" id="conf"></a>Conformance Levels</h2>
-<p>The following table lists information about the three conformance levels in WCAG 2.0: A, AA, and AAA. To meet a given conformance level, a site must satisfy all the success criteria at that level. A success criterion is satisfied by being actively implemented with sufficient techniques, or by virtue of being not applicable to the content of the site. The converse is also true, that there must be no failures of the success criterion requirements on the site. </p>
-<p>To exit Candidate Recommendation, there must be documentation of four implementations that conform to A, four that conform to AA, and two that conform to AAA. Additionally, there must be at least one site that demonstrates the concept of Partial Conformance (at any level). Based on implementation experience, the WCAG Working Group also introduced the concept of Partial Conformance due to Language Support, and similarly sought to document at least one implementation of this concept.</p>
-<table border="0" cellspacing="0">
-	<thead>
-		<tr>
-			<th scope="col">Conformance Level</th>
-			<th scope="col" title="Number of implementations the WCAG WG has accepted as an implementation of this conformance level">Sites that meet level </th>
-			</tr>
-	</thead>
-	<tbody>
-				<tr>
-			<td>A</td>
-			<td><a href="implementation_list?category=level&amp;unit=A">4</a></td>
-		</tr>
-				<tr>
-			<td>AA</td>
-			<td><a href="implementation_list?category=level&amp;unit=AA">7</a></td>
-		</tr>
-				<tr>
-			<td>AAA</td>
-			<td><a href="implementation_list?category=level&amp;unit=AAA">2</a></td>
-		</tr>
-				<tr>
-			<td>Partial Conformance </td>
-			<td><a href="implementation_list?category=partial&amp;unit=A">1 (A) </a>			</td>
-		</tr>
-		<tr>
-			<td>Partial due to Language </td>
-			<td><a href="implementation_list?category=language&amp;unit=A">1 (A) </a>			</td>
-		</tr>
-	</tbody>
-</table>
-<h2><a name="sc" id="sc"></a>Success Criteria</h2>
-<p>The following table lists each success criterion in WCAG 2.0. The data is taken from the set of sites that were chosen to be included in this report. &quot;Implementations&quot; is the number of sites that actively implemented the success criterion.  &quot;Techniques&quot; is the number of documented techniques that were observed being used to satisfy the success criterion. Each number links to a page providing the data behind that number. </p>
-<p>Only documentation that there are at least two active implementations of each success criterion is required to exit Candidate Recommendation. The information in the other columns is informative. It records relevant observations made during the implementation evaluation process. Conclusions from this data may inform future work. </p>
-<table border="0" cellspacing="0">
-<thead>
-	<tr>
-		<th scope="col">Success Criterion</th>
-		<th scope="col">Level</th>
-		<th scope="col" title="Number of sites that actively implemented the success criterion">Implementations  </th>
-		<th scope="col" title="Number of documented techniques that were observed being used to satisfy the success criterion">Techniques</th>
-		</tr>
-</thead>
-<tbody>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/text-equiv-all">1.1.1: Non-text Content</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=text-equiv-all&amp;category=sc">16</a></td>
-		<td><a href="technique_list?sc_id=text-equiv-all">21</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-av-only-alt">1.2.1: Audio-only and Video-only (Prerecorded)</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=media-equiv-av-only-alt&amp;category=sc">2</a></td>
-		<td><a href="technique_list?sc_id=media-equiv-av-only-alt">3</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-captions">1.2.2: Captions (Prerecorded)</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=media-equiv-captions&amp;category=sc">6</a></td>
-		<td><a href="technique_list?sc_id=media-equiv-captions">2</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-audio-desc">1.2.3: Audio Description or Full Text Alternative</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=media-equiv-audio-desc&amp;category=sc">7</a></td>
-		<td><a href="technique_list?sc_id=media-equiv-audio-desc">3</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-real-time-captions">1.2.4: Captions (Live)</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=media-equiv-real-time-captions&amp;category=sc">3</a></td>
-		<td><a href="technique_list?sc_id=media-equiv-real-time-captions">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-audio-desc-only">1.2.5: Audio Description</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=media-equiv-audio-desc-only&amp;category=sc">5</a></td>
-		<td><a href="technique_list?sc_id=media-equiv-audio-desc-only">2</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-sign">1.2.6: Sign Language</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=media-equiv-sign&amp;category=sc">2</a></td>
-		<td><a href="technique_list?sc_id=media-equiv-sign">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-extended-ad">1.2.7: Audio Description (Extended)</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=media-equiv-extended-ad&amp;category=sc">3</a></td>
-		<td><a href="technique_list?sc_id=media-equiv-extended-ad">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-text-doc">1.2.8: Full Text Alternative</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=media-equiv-text-doc&amp;category=sc">2</a></td>
-		<td><a href="technique_list?sc_id=media-equiv-text-doc">4</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-live-audio-only">1.2.9: Live Audio-only</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=media-equiv-live-audio-only&amp;category=sc">2</a></td>
-		<td>0</td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/content-structure-separation-programmatic">1.3.1: Info and Relationships</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=content-structure-separation-programmatic&amp;category=sc">16</a></td>
-		<td><a href="technique_list?sc_id=content-structure-separation-programmatic">17</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/content-structure-separation-sequence">1.3.2: Meaningful Sequence</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=content-structure-separation-sequence&amp;category=sc">17</a></td>
-		<td><a href="technique_list?sc_id=content-structure-separation-sequence">4</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/content-structure-separation-understanding">1.3.3: Sensory Characteristics</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=content-structure-separation-understanding&amp;category=sc">8</a></td>
-		<td><a href="technique_list?sc_id=content-structure-separation-understanding">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-without-color">1.4.1: Use of Color</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=visual-audio-contrast-without-color&amp;category=sc">15</a></td>
-		<td><a href="technique_list?sc_id=visual-audio-contrast-without-color">3</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio">1.4.2: Audio Control</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=visual-audio-contrast-dis-audio&amp;category=sc">4</a></td>
-		<td><a href="technique_list?sc_id=visual-audio-contrast-dis-audio">2</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-contrast">1.4.3: Contrast (Minimum)</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=visual-audio-contrast-contrast&amp;category=sc">10</a></td>
-		<td><a href="technique_list?sc_id=visual-audio-contrast-contrast">4</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-scale">1.4.4: Resize text</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=visual-audio-contrast-scale&amp;category=sc">10</a></td>
-		<td><a href="technique_list?sc_id=visual-audio-contrast-scale">8</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation">1.4.5: Images of Text</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=visual-audio-contrast-text-presentation&amp;category=sc">6</a></td>
-		<td><a href="technique_list?sc_id=visual-audio-contrast-text-presentation">2</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast7">1.4.6: Contrast (Enhanced)</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=visual-audio-contrast7&amp;category=sc">6</a></td>
-		<td><a href="technique_list?sc_id=visual-audio-contrast7">4</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio">1.4.7: Low or No Background Audio</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=visual-audio-contrast-noaudio&amp;category=sc">2</a></td>
-		<td>0</td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation">1.4.8: Visual Presentation</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=visual-audio-contrast-visual-presentation&amp;category=sc">4</a></td>
-		<td><a href="technique_list?sc_id=visual-audio-contrast-visual-presentation">11</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-text-images">1.4.9: Images of Text (No Exception)</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=visual-audio-contrast-text-images&amp;category=sc">4</a></td>
-		<td><a href="technique_list?sc_id=visual-audio-contrast-text-images">2</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable">2.1.1: Keyboard</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=keyboard-operation-keyboard-operable&amp;category=sc">16</a></td>
-		<td><a href="technique_list?sc_id=keyboard-operation-keyboard-operable">3</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/keyboard-operation-trapping">2.1.2: No Keyboard Trap</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=keyboard-operation-trapping&amp;category=sc">15</a></td>
-		<td><a href="technique_list?sc_id=keyboard-operation-trapping">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/keyboard-operation-all-funcs">2.1.3: Keyboard (No Exception)</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=keyboard-operation-all-funcs&amp;category=sc">5</a></td>
-		<td><a href="technique_list?sc_id=keyboard-operation-all-funcs">3</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/time-limits-required-behaviors">2.2.1: Timing Adjustable</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=time-limits-required-behaviors&amp;category=sc">2</a></td>
-		<td>0</td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/time-limits-pause">2.2.2: Pause, Stop, Hide</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=time-limits-pause&amp;category=sc">5</a></td>
-		<td><a href="technique_list?sc_id=time-limits-pause">3</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/time-limits-no-exceptions">2.2.3: No Timing</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=time-limits-no-exceptions&amp;category=sc">3</a></td>
-		<td><a href="technique_list?sc_id=time-limits-no-exceptions">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/time-limits-postponed">2.2.4: Interruptions</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=time-limits-postponed&amp;category=sc">2</a></td>
-		<td><a href="technique_list?sc_id=time-limits-postponed">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/time-limits-server-timeout">2.2.5: Re-authenticating</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=time-limits-server-timeout&amp;category=sc">2</a></td>
-		<td>0</td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/seizure-does-not-violate">2.3.1: Three Flashes or Below Threshold</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=seizure-does-not-violate&amp;category=sc">6</a></td>
-		<td><a href="technique_list?sc_id=seizure-does-not-violate">3</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/seizure-three-times">2.3.2: Three Flashes</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=seizure-three-times&amp;category=sc">4</a></td>
-		<td><a href="technique_list?sc_id=seizure-three-times">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-skip">2.4.1: Bypass Blocks</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=navigation-mechanisms-skip&amp;category=sc">14</a></td>
-		<td><a href="technique_list?sc_id=navigation-mechanisms-skip">7</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-title">2.4.2: Page Titled</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=navigation-mechanisms-title&amp;category=sc">17</a></td>
-		<td><a href="technique_list?sc_id=navigation-mechanisms-title">2</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order">2.4.3: Focus Order</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=navigation-mechanisms-focus-order&amp;category=sc">16</a></td>
-		<td><a href="technique_list?sc_id=navigation-mechanisms-focus-order">4</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-refs">2.4.4: Link Purpose (In Context)</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=navigation-mechanisms-refs&amp;category=sc">14</a></td>
-		<td><a href="technique_list?sc_id=navigation-mechanisms-refs">12</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc">2.4.5: Multiple Ways</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=navigation-mechanisms-mult-loc&amp;category=sc">9</a></td>
-		<td><a href="technique_list?sc_id=navigation-mechanisms-mult-loc">5</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive">2.4.6: Headings and Labels</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=navigation-mechanisms-descriptive&amp;category=sc">10</a></td>
-		<td><a href="technique_list?sc_id=navigation-mechanisms-descriptive">2</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible">2.4.7: Focus Visible</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=navigation-mechanisms-focus-visible&amp;category=sc">10</a></td>
-		<td><a href="technique_list?sc_id=navigation-mechanisms-focus-visible">5</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-location">2.4.8: Location</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=navigation-mechanisms-location&amp;category=sc">5</a></td>
-		<td><a href="technique_list?sc_id=navigation-mechanisms-location">5</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-link">2.4.9: Link Purpose (Link Only)</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=navigation-mechanisms-link&amp;category=sc">6</a></td>
-		<td><a href="technique_list?sc_id=navigation-mechanisms-link">5</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-headings">2.4.10: Section Headings</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=navigation-mechanisms-headings&amp;category=sc">6</a></td>
-		<td><a href="technique_list?sc_id=navigation-mechanisms-headings">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-doc-lang-id">3.1.1: Language of Page</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=meaning-doc-lang-id&amp;category=sc">16</a></td>
-		<td><a href="technique_list?sc_id=meaning-doc-lang-id">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-other-lang-id">3.1.2: Language of Parts</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=meaning-other-lang-id&amp;category=sc">2</a></td>
-		<td><a href="technique_list?sc_id=meaning-other-lang-id">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-idioms">3.1.3: Unusual Words</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=meaning-idioms&amp;category=sc">4</a></td>
-		<td><a href="technique_list?sc_id=meaning-idioms">7</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-located">3.1.4: Abbreviations</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=meaning-located&amp;category=sc">4</a></td>
-		<td><a href="technique_list?sc_id=meaning-located">7</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-supplements">3.1.5: Reading Level</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=meaning-supplements&amp;category=sc">4</a></td>
-		<td><a href="technique_list?sc_id=meaning-supplements">5</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-pronunciation">3.1.6: Pronunciation</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=meaning-pronunciation&amp;category=sc">3</a></td>
-		<td><a href="technique_list?sc_id=meaning-pronunciation">3</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/consistent-behavior-receive-focus">3.2.1: On Focus</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=consistent-behavior-receive-focus&amp;category=sc">13</a></td>
-		<td><a href="technique_list?sc_id=consistent-behavior-receive-focus">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change">3.2.2: On Input</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=consistent-behavior-unpredictable-change&amp;category=sc">11</a></td>
-		<td><a href="technique_list?sc_id=consistent-behavior-unpredictable-change">4</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations">3.2.3: Consistent Navigation</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=consistent-behavior-consistent-locations&amp;category=sc">9</a></td>
-		<td><a href="technique_list?sc_id=consistent-behavior-consistent-locations">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality">3.2.4: Consistent Identification</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=consistent-behavior-consistent-functionality&amp;category=sc">10</a></td>
-		<td><a href="technique_list?sc_id=consistent-behavior-consistent-functionality">1</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context">3.2.5: Change on Request</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=consistent-behavior-no-extreme-changes-context&amp;category=sc">4</a></td>
-		<td><a href="technique_list?sc_id=consistent-behavior-no-extreme-changes-context">2</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-identified">3.3.1: Error Identification</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=minimize-error-identified&amp;category=sc">9</a></td>
-		<td><a href="technique_list?sc_id=minimize-error-identified">5</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-cues">3.3.2: Labels or Instructions</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=minimize-error-cues&amp;category=sc">11</a></td>
-		<td><a href="technique_list?sc_id=minimize-error-cues">8</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-suggestions">3.3.3: Error Suggestion</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=minimize-error-suggestions&amp;category=sc">6</a></td>
-		<td><a href="technique_list?sc_id=minimize-error-suggestions">6</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-reversible">3.3.4: Error Prevention (Legal, Financial, Data)</a></th>
-		<td>AA</td>
-		<td><a href="implementation_list?unit=minimize-error-reversible&amp;category=sc">4</a></td>
-		<td><a href="technique_list?sc_id=minimize-error-reversible">5</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-context-help">3.3.5: Help</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=minimize-error-context-help&amp;category=sc">5</a></td>
-		<td><a href="technique_list?sc_id=minimize-error-context-help">2</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-reversible-all">3.3.6: Error Prevention (All)</a></th>
-		<td>AAA</td>
-		<td><a href="implementation_list?unit=minimize-error-reversible-all&amp;category=sc">2</a></td>
-		<td><a href="technique_list?sc_id=minimize-error-reversible-all">5</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/ensure-compat-parses">4.1.1: Parsing</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=ensure-compat-parses&amp;category=sc">14</a></td>
-		<td><a href="technique_list?sc_id=ensure-compat-parses">4</a></td>
-		</tr>
-	<tr>
-		<th scope="row"><a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/ensure-compat-rsv">4.1.2: Name, Role, Value</a></th>
-		<td>A</td>
-		<td><a href="implementation_list?unit=ensure-compat-rsv&amp;category=sc">12</a></td>
-		<td><a href="technique_list?sc_id=ensure-compat-rsv">7</a></td>
-		</tr>
-</tbody>
-</table>
-<h2>
-	<!-- end main -->
-</h2>
-</div>
-<div id="footer">
-	<h2>Document Information</h2>
-	<p><strong>Content last updated:</strong> 28 Oct 2008</p>
+    <div>
+      <h1>Implementation Summary</h1>
+      <div id="contents">
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#conf">Conformance Levels</a></li>
+          <li><a href="#sc">Success Criteria</a></li>
+        </ul>
+      </div>
+      <h2><a name="conf" id="conf"></a>Conformance Levels</h2>
+      <p>
+        The following table lists information about the three conformance levels
+        in WCAG 2.0: A, AA, and AAA. To meet a given conformance level, a site
+        must satisfy all the success criteria at that level. A success criterion
+        is satisfied by being actively implemented with sufficient techniques,
+        or by virtue of being not applicable to the content of the site. The
+        converse is also true, that there must be no failures of the success
+        criterion requirements on the site.
+      </p>
+      <p>
+        To exit Candidate Recommendation, there must be documentation of four
+        implementations that conform to A, four that conform to AA, and two that
+        conform to AAA. Additionally, there must be at least one site that
+        demonstrates the concept of Partial Conformance (at any level). Based on
+        implementation experience, the WCAG Working Group also introduced the
+        concept of Partial Conformance due to Language Support, and similarly
+        sought to document at least one implementation of this concept.
+      </p>
+      <table border="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th scope="col">Conformance Level</th>
+            <th
+              scope="col"
+              title="Number of implementations the WCAG WG has accepted as an implementation of this conformance level"
+            >
+              Sites that meet level
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A</td>
+            <td>
+              <a href="implementation_list?category=level&amp;unit=A">4</a>
+            </td>
+          </tr>
+          <tr>
+            <td>AA</td>
+            <td>
+              <a href="implementation_list?category=level&amp;unit=AA">7</a>
+            </td>
+          </tr>
+          <tr>
+            <td>AAA</td>
+            <td>
+              <a href="implementation_list?category=level&amp;unit=AAA">2</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Partial Conformance</td>
+            <td>
+              <a href="implementation_list?category=partial&amp;unit=A"
+                >1 (A)
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Partial due to Language</td>
+            <td>
+              <a href="implementation_list?category=language&amp;unit=A"
+                >1 (A)
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2><a name="sc" id="sc"></a>Success Criteria</h2>
+      <p>
+        The following table lists each success criterion in WCAG 2.0. The data
+        is taken from the set of sites that were chosen to be included in this
+        report. &quot;Implementations&quot; is the number of sites that actively
+        implemented the success criterion. &quot;Techniques&quot; is the number
+        of documented techniques that were observed being used to satisfy the
+        success criterion. Each number links to a page providing the data behind
+        that number.
+      </p>
+      <p>
+        Only documentation that there are at least two active implementations of
+        each success criterion is required to exit Candidate Recommendation. The
+        information in the other columns is informative. It records relevant
+        observations made during the implementation evaluation process.
+        Conclusions from this data may inform future work.
+      </p>
+      <table border="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th scope="col">Success Criterion</th>
+            <th scope="col">Level</th>
+            <th
+              scope="col"
+              title="Number of sites that actively implemented the success criterion"
+            >
+              Implementations
+            </th>
+            <th
+              scope="col"
+              title="Number of documented techniques that were observed being used to satisfy the success criterion"
+            >
+              Techniques
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/text-equiv-all"
+                >1.1.1: Non-text Content</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a href="implementation_list?unit=text-equiv-all&amp;category=sc"
+                >16</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=text-equiv-all">21</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-av-only-alt"
+                >1.2.1: Audio-only and Video-only (Prerecorded)</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=media-equiv-av-only-alt&amp;category=sc"
+                >2</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=media-equiv-av-only-alt">3</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-captions"
+                >1.2.2: Captions (Prerecorded)</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=media-equiv-captions&amp;category=sc"
+                >6</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=media-equiv-captions">2</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-audio-desc"
+                >1.2.3: Audio Description or Full Text Alternative</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=media-equiv-audio-desc&amp;category=sc"
+                >7</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=media-equiv-audio-desc">3</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-real-time-captions"
+                >1.2.4: Captions (Live)</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=media-equiv-real-time-captions&amp;category=sc"
+                >3</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=media-equiv-real-time-captions"
+                >1</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-audio-desc-only"
+                >1.2.5: Audio Description</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=media-equiv-audio-desc-only&amp;category=sc"
+                >5</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=media-equiv-audio-desc-only">2</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-sign"
+                >1.2.6: Sign Language</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=media-equiv-sign&amp;category=sc"
+                >2</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=media-equiv-sign">1</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-extended-ad"
+                >1.2.7: Audio Description (Extended)</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=media-equiv-extended-ad&amp;category=sc"
+                >3</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=media-equiv-extended-ad">1</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-text-doc"
+                >1.2.8: Full Text Alternative</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=media-equiv-text-doc&amp;category=sc"
+                >2</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=media-equiv-text-doc">4</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/media-equiv-live-audio-only"
+                >1.2.9: Live Audio-only</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=media-equiv-live-audio-only&amp;category=sc"
+                >2</a
+              >
+            </td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/content-structure-separation-programmatic"
+                >1.3.1: Info and Relationships</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=content-structure-separation-programmatic&amp;category=sc"
+                >16</a
+              >
+            </td>
+            <td>
+              <a
+                href="technique_list?sc_id=content-structure-separation-programmatic"
+                >17</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/content-structure-separation-sequence"
+                >1.3.2: Meaningful Sequence</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=content-structure-separation-sequence&amp;category=sc"
+                >17</a
+              >
+            </td>
+            <td>
+              <a
+                href="technique_list?sc_id=content-structure-separation-sequence"
+                >4</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/content-structure-separation-understanding"
+                >1.3.3: Sensory Characteristics</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=content-structure-separation-understanding&amp;category=sc"
+                >8</a
+              >
+            </td>
+            <td>
+              <a
+                href="technique_list?sc_id=content-structure-separation-understanding"
+                >1</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-without-color"
+                >1.4.1: Use of Color</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=visual-audio-contrast-without-color&amp;category=sc"
+                >15</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=visual-audio-contrast-without-color"
+                >3</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio"
+                >1.4.2: Audio Control</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=visual-audio-contrast-dis-audio&amp;category=sc"
+                >4</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=visual-audio-contrast-dis-audio"
+                >2</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-contrast"
+                >1.4.3: Contrast (Minimum)</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=visual-audio-contrast-contrast&amp;category=sc"
+                >10</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=visual-audio-contrast-contrast"
+                >4</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-scale"
+                >1.4.4: Resize text</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=visual-audio-contrast-scale&amp;category=sc"
+                >10</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=visual-audio-contrast-scale">8</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation"
+                >1.4.5: Images of Text</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=visual-audio-contrast-text-presentation&amp;category=sc"
+                >6</a
+              >
+            </td>
+            <td>
+              <a
+                href="technique_list?sc_id=visual-audio-contrast-text-presentation"
+                >2</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast7"
+                >1.4.6: Contrast (Enhanced)</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=visual-audio-contrast7&amp;category=sc"
+                >6</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=visual-audio-contrast7">4</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio"
+                >1.4.7: Low or No Background Audio</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=visual-audio-contrast-noaudio&amp;category=sc"
+                >2</a
+              >
+            </td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation"
+                >1.4.8: Visual Presentation</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=visual-audio-contrast-visual-presentation&amp;category=sc"
+                >4</a
+              >
+            </td>
+            <td>
+              <a
+                href="technique_list?sc_id=visual-audio-contrast-visual-presentation"
+                >11</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/visual-audio-contrast-text-images"
+                >1.4.9: Images of Text (No Exception)</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=visual-audio-contrast-text-images&amp;category=sc"
+                >4</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=visual-audio-contrast-text-images"
+                >2</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable"
+                >2.1.1: Keyboard</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=keyboard-operation-keyboard-operable&amp;category=sc"
+                >16</a
+              >
+            </td>
+            <td>
+              <a
+                href="technique_list?sc_id=keyboard-operation-keyboard-operable"
+                >3</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/keyboard-operation-trapping"
+                >2.1.2: No Keyboard Trap</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=keyboard-operation-trapping&amp;category=sc"
+                >15</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=keyboard-operation-trapping">1</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/keyboard-operation-all-funcs"
+                >2.1.3: Keyboard (No Exception)</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=keyboard-operation-all-funcs&amp;category=sc"
+                >5</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=keyboard-operation-all-funcs">3</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/time-limits-required-behaviors"
+                >2.2.1: Timing Adjustable</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=time-limits-required-behaviors&amp;category=sc"
+                >2</a
+              >
+            </td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/time-limits-pause"
+                >2.2.2: Pause, Stop, Hide</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=time-limits-pause&amp;category=sc"
+                >5</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=time-limits-pause">3</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/time-limits-no-exceptions"
+                >2.2.3: No Timing</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=time-limits-no-exceptions&amp;category=sc"
+                >3</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=time-limits-no-exceptions">1</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/time-limits-postponed"
+                >2.2.4: Interruptions</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=time-limits-postponed&amp;category=sc"
+                >2</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=time-limits-postponed">1</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/time-limits-server-timeout"
+                >2.2.5: Re-authenticating</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=time-limits-server-timeout&amp;category=sc"
+                >2</a
+              >
+            </td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/seizure-does-not-violate"
+                >2.3.1: Three Flashes or Below Threshold</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=seizure-does-not-violate&amp;category=sc"
+                >6</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=seizure-does-not-violate">3</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/seizure-three-times"
+                >2.3.2: Three Flashes</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=seizure-three-times&amp;category=sc"
+                >4</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=seizure-three-times">1</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-skip"
+                >2.4.1: Bypass Blocks</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=navigation-mechanisms-skip&amp;category=sc"
+                >14</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=navigation-mechanisms-skip">7</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-title"
+                >2.4.2: Page Titled</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=navigation-mechanisms-title&amp;category=sc"
+                >17</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=navigation-mechanisms-title">2</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order"
+                >2.4.3: Focus Order</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=navigation-mechanisms-focus-order&amp;category=sc"
+                >16</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=navigation-mechanisms-focus-order"
+                >4</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-refs"
+                >2.4.4: Link Purpose (In Context)</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=navigation-mechanisms-refs&amp;category=sc"
+                >14</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=navigation-mechanisms-refs">12</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc"
+                >2.4.5: Multiple Ways</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=navigation-mechanisms-mult-loc&amp;category=sc"
+                >9</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=navigation-mechanisms-mult-loc"
+                >5</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive"
+                >2.4.6: Headings and Labels</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=navigation-mechanisms-descriptive&amp;category=sc"
+                >10</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=navigation-mechanisms-descriptive"
+                >2</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible"
+                >2.4.7: Focus Visible</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=navigation-mechanisms-focus-visible&amp;category=sc"
+                >10</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=navigation-mechanisms-focus-visible"
+                >5</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-location"
+                >2.4.8: Location</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=navigation-mechanisms-location&amp;category=sc"
+                >5</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=navigation-mechanisms-location"
+                >5</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-link"
+                >2.4.9: Link Purpose (Link Only)</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=navigation-mechanisms-link&amp;category=sc"
+                >6</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=navigation-mechanisms-link">5</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/navigation-mechanisms-headings"
+                >2.4.10: Section Headings</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=navigation-mechanisms-headings&amp;category=sc"
+                >6</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=navigation-mechanisms-headings"
+                >1</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-doc-lang-id"
+                >3.1.1: Language of Page</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=meaning-doc-lang-id&amp;category=sc"
+                >16</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=meaning-doc-lang-id">1</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-other-lang-id"
+                >3.1.2: Language of Parts</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=meaning-other-lang-id&amp;category=sc"
+                >2</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=meaning-other-lang-id">1</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-idioms"
+                >3.1.3: Unusual Words</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a href="implementation_list?unit=meaning-idioms&amp;category=sc"
+                >4</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=meaning-idioms">7</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-located"
+                >3.1.4: Abbreviations</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a href="implementation_list?unit=meaning-located&amp;category=sc"
+                >4</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=meaning-located">7</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-supplements"
+                >3.1.5: Reading Level</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=meaning-supplements&amp;category=sc"
+                >4</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=meaning-supplements">5</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/meaning-pronunciation"
+                >3.1.6: Pronunciation</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=meaning-pronunciation&amp;category=sc"
+                >3</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=meaning-pronunciation">3</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/consistent-behavior-receive-focus"
+                >3.2.1: On Focus</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=consistent-behavior-receive-focus&amp;category=sc"
+                >13</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=consistent-behavior-receive-focus"
+                >1</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change"
+                >3.2.2: On Input</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=consistent-behavior-unpredictable-change&amp;category=sc"
+                >11</a
+              >
+            </td>
+            <td>
+              <a
+                href="technique_list?sc_id=consistent-behavior-unpredictable-change"
+                >4</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations"
+                >3.2.3: Consistent Navigation</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=consistent-behavior-consistent-locations&amp;category=sc"
+                >9</a
+              >
+            </td>
+            <td>
+              <a
+                href="technique_list?sc_id=consistent-behavior-consistent-locations"
+                >1</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality"
+                >3.2.4: Consistent Identification</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=consistent-behavior-consistent-functionality&amp;category=sc"
+                >10</a
+              >
+            </td>
+            <td>
+              <a
+                href="technique_list?sc_id=consistent-behavior-consistent-functionality"
+                >1</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context"
+                >3.2.5: Change on Request</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=consistent-behavior-no-extreme-changes-context&amp;category=sc"
+                >4</a
+              >
+            </td>
+            <td>
+              <a
+                href="technique_list?sc_id=consistent-behavior-no-extreme-changes-context"
+                >2</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-identified"
+                >3.3.1: Error Identification</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=minimize-error-identified&amp;category=sc"
+                >9</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=minimize-error-identified">5</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-cues"
+                >3.3.2: Labels or Instructions</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=minimize-error-cues&amp;category=sc"
+                >11</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=minimize-error-cues">8</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-suggestions"
+                >3.3.3: Error Suggestion</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=minimize-error-suggestions&amp;category=sc"
+                >6</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=minimize-error-suggestions">6</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-reversible"
+                >3.3.4: Error Prevention (Legal, Financial, Data)</a
+              >
+            </th>
+            <td>AA</td>
+            <td>
+              <a
+                href="implementation_list?unit=minimize-error-reversible&amp;category=sc"
+                >4</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=minimize-error-reversible">5</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-context-help"
+                >3.3.5: Help</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=minimize-error-context-help&amp;category=sc"
+                >5</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=minimize-error-context-help">2</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/minimize-error-reversible-all"
+                >3.3.6: Error Prevention (All)</a
+              >
+            </th>
+            <td>AAA</td>
+            <td>
+              <a
+                href="implementation_list?unit=minimize-error-reversible-all&amp;category=sc"
+                >2</a
+              >
+            </td>
+            <td>
+              <a href="technique_list?sc_id=minimize-error-reversible-all">5</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/ensure-compat-parses"
+                >4.1.1: Parsing</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=ensure-compat-parses&amp;category=sc"
+                >14</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=ensure-compat-parses">4</a></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <a
+                href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/ensure-compat-rsv"
+                >4.1.2: Name, Role, Value</a
+              >
+            </th>
+            <td>A</td>
+            <td>
+              <a
+                href="implementation_list?unit=ensure-compat-rsv&amp;category=sc"
+                >12</a
+              >
+            </td>
+            <td><a href="technique_list?sc_id=ensure-compat-rsv">7</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>
+        <!-- end main -->
+      </h2>
+    </div>
+    <div id="footer">
+      <h2>Document Information</h2>
+      <p><strong>Content last updated:</strong> 28 Oct 2008</p>
 
-	<p>[<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]</p>
-	<div class="copyright">
-		<p><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright" shape="rect">Copyright</a> © 1994-2008 <a href="/" shape="rect"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>), All Rights Reserved. W3C <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer" shape="rect">liability</a>, <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks" shape="rect">trademark</a>, <a rel="Copyright" href="/Consortium/Legal/copyright-documents" shape="rect">document use</a> and <a rel="Copyright" href="/Consortium/Legal/copyright-software" shape="rect">software
-			licensing</a> rules apply. Your interactions with this site are in
-			accordance with our <a href="/Consortium/Legal/privacy-statement#Public" shape="rect">public</a> and <a href="/Consortium/Legal/privacy-statement#Members" shape="rect">Member</a> privacy
-			statements.</p>
-
-	</div>
-</div>
-
-</body>
+      <p>[<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]</p>
+      <div class="copyright">
+        <p>
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/ipr-notice#Copyright"
+            shape="rect"
+            >Copyright</a
+          >
+          © 1994-2008
+          <a href="/" shape="rect"
+            ><acronym title="World Wide Web Consortium">W3C</acronym></a
+          ><sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"
+            ><acronym title="Massachusetts Institute of Technology"
+              >MIT</acronym
+            ></a
+          >,
+          <a href="http://www.ercim.org/" shape="rect"
+            ><acronym
+              title="European Research Consortium for Informatics and Mathematics"
+              >ERCIM</acronym
+            ></a
+          >, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>), All Rights
+          Reserved. W3C
+          <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer" shape="rect"
+            >liability</a
+          >,
+          <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks" shape="rect"
+            >trademark</a
+          >,
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/copyright-documents"
+            shape="rect"
+            >document use</a
+          >
+          and
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/copyright-software"
+            shape="rect"
+            >software licensing</a
+          >
+          rules apply. Your interactions with this site are in accordance with
+          our
+          <a href="/Consortium/Legal/privacy-statement#Public" shape="rect"
+            >public</a
+          >
+          and
+          <a href="/Consortium/Legal/privacy-statement#Members" shape="rect"
+            >Member</a
+          >
+          privacy statements.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>

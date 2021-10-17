@@ -1,713 +1,2073 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1633578570351143841"
+    />
 
-<title> Stories of Web Users | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Stories of Web Users" />
-<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
-<meta property="og:locale" content="en" />
-<meta name="description" content="Personas of people with disabilities using the Web that highlight the effect of accessibility barriers and the broader benefits of accessible websites and web tools." />
-<meta property="og:description" content="Personas of people with disabilities using the Web that highlight the effect of accessibility barriers and the broader benefits of accessible websites and web tools." />
-<link rel="canonical" href="https://www.w3.org/WAI/people-use-web/user-stories/" />
-<meta property="og:url" content="https://www.w3.org/WAI/people-use-web/user-stories/" />
-<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-people-use-web/social.png" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-10-07T03:49:30+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-people-use-web/social.png" />
-<meta property="twitter:title" content="Stories of Web Users" />
-<meta name="twitter:site" content="@w3c_wai" />
-<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
-<script type="application/ld+json">
-{"description":"Personas of people with disabilities using the Web that highlight the effect of accessibility barriers and the broader benefits of accessible websites and web tools.","@type":"BlogPosting","image":"https://www.w3.org/WAI/content-images/wai-people-use-web/social.png","headline":"Stories of Web Users","dateModified":"2021-10-07T03:49:30+00:00","datePublished":"2021-10-07T03:49:30+00:00","url":"https://www.w3.org/WAI/people-use-web/user-stories/","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/people-use-web/user-stories/"},"author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+    <title>
+      Stories of Web Users | Web Accessibility Initiative (WAI) | W3C
+    </title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <meta name="generator" content="Jekyll v4.2.0" />
+    <meta property="og:title" content="Stories of Web Users" />
+    <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+    <meta property="og:locale" content="en" />
+    <meta
+      name="description"
+      content="Personas of people with disabilities using the Web that highlight the effect of accessibility barriers and the broader benefits of accessible websites and web tools."
+    />
+    <meta
+      property="og:description"
+      content="Personas of people with disabilities using the Web that highlight the effect of accessibility barriers and the broader benefits of accessible websites and web tools."
+    />
+    <link
+      rel="canonical"
+      href="https://www.w3.org/WAI/people-use-web/user-stories/"
+    />
+    <meta
+      property="og:url"
+      content="https://www.w3.org/WAI/people-use-web/user-stories/"
+    />
+    <meta
+      property="og:site_name"
+      content="Web Accessibility Initiative (WAI)"
+    />
+    <meta
+      property="og:image"
+      content="https://www.w3.org/WAI/content-images/wai-people-use-web/social.png"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="article:published_time"
+      content="2021-10-07T03:49:30+00:00"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image"
+      content="https://www.w3.org/WAI/content-images/wai-people-use-web/social.png"
+    />
+    <meta property="twitter:title" content="Stories of Web Users" />
+    <meta name="twitter:site" content="@w3c_wai" />
+    <meta
+      name="twitter:creator"
+      content="@W3C Web Accessibility Initiative (WAI)"
+    />
+    <script type="application/ld+json">
+      {
+        "description": "Personas of people with disabilities using the Web that highlight the effect of accessibility barriers and the broader benefits of accessible websites and web tools.",
+        "@type": "BlogPosting",
+        "image": "https://www.w3.org/WAI/content-images/wai-people-use-web/social.png",
+        "headline": "Stories of Web Users",
+        "dateModified": "2021-10-07T03:49:30+00:00",
+        "datePublished": "2021-10-07T03:49:30+00:00",
+        "url": "https://www.w3.org/WAI/people-use-web/user-stories/",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.w3.org/WAI/people-use-web/user-stories/"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "W3C Web Accessibility Initiative (WAI)"
+        },
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
 
-
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
-</head>
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+  </head>
 
   <body id="top" class="page-stories-of-web-users resource-people-use-web">
-    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
-  <ul>
-      <li><a href="#main">Skip to Content</a></li>
-      <li class="opt"><a href="/WAI/meta/customize/">Change Text Size or Colors</a></li>
-      <li class="opt languagelist">
+    <nav
+      aria-label="Skip Link and Language Selector"
+      id="controls"
+      class="default-grid"
+    >
+      <ul>
+        <li><a href="#main">Skip to Content</a></li>
+        <li class="opt">
+          <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
+        </li>
+        <li class="opt languagelist">
           <strong>This&nbsp;page&nbsp;in:</strong>
-          <ul class="languagelistul"><li><strong style="text-transform: capitalize;">English</strong></li><li><a style="text-transform: capitalize;" href="/WAI/people-use-web/user-stories/es" lang="es"  dir="auto" translate="no">español</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/people-use-web/user-stories/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          <ul class="languagelistul">
+            <li><strong style="text-transform: capitalize">English</strong></li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/people-use-web/user-stories/es"
+                lang="es"
+                dir="auto"
+                translate="no"
+                >español</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/people-use-web/user-stories/fr"
+                lang="fr"
+                dir="auto"
+                translate="no"
+                >français</a
+              >
+            </li>
           </ul>
         </li>
         <li class="opt">
-          <a href="/WAI/translations/">All&nbsp;Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/"
+            >All&nbsp;Translations
+            <svg focusable="false" aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
         </li>
-        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations' data-hidetext='Hide Options'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations</button></li>
+        <li>
+          <button
+            id="showoptions"
+            data-showhidebuttonid="header-showoptions"
+            class="showhidebutton button-inline"
+            data-target="#controls .opt"
+            aria-expanded="false"
+            data-large-aria-expanded="true"
+            data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations'
+            data-hidetext="Hide Options"
+          >
+            <svg focusable="false" aria-hidden="true" class="icon-languages">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-languages"
+              ></use>
+            </svg>
+            Show Customization, Languages, Translations
+          </button>
+        </li>
       </ul>
     </nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
- 
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
-  </div>
-
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">Search:</span>
-              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
-            </label>
-            
-            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
-          </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="Main" lang="en"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
-  <ul style="align-self: center;">
-    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/people-use-web/"><span>How People with Disabilities Use the Web</span></a></li><li><a lang="en" href="/WAI/people-use-web/user-stories/" aria-current="page"><span>Stories of Web Users</span></a></li></ul>
-</nav>
-    <div class="default-grid with-gap leftcol">
-
-  
-    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
-      <ul class="sidenav--list">
-  <li>
-  <a lang="en" href="/WAI/fundamentals/" class="page-link"><span>Accessibility Fundamentals</span></a></li><li>
-  <a lang="en" href="/WAI/fundamentals/accessibility-intro/" class="page-link"><span>Introduction to Accessibility</span></a><ul><li>
-  <a lang="en" href="/WAI/videos/standards-and-benefits/" class="page-link"><span>Video Introduction</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/fundamentals/foundations-course/" class="page-link"><span>Foundations Online Course</span></a></li><li>
-  <a lang="en" href="/WAI/fundamentals/components/" class="page-link"><span>Components of Web Accessibility</span></a></li><li>
-  <a lang="en" href="/WAI/fundamentals/accessibility-principles/" class="page-link"><span>Accessibility Principles</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/" class="page-link"><span>Perspectives Videos</span></a><ul><li>
-  <a lang="en" href="/WAI/perspective-videos/keyboard/" class="page-link"><span>Keyboard Compatibility</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/contrast/" class="page-link"><span>Colors with Good Contrast</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/layout/" class="page-link"><span>Clear Layout and Design</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/speech/" class="page-link"><span>Text to Speech</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/controls/" class="page-link"><span>Large Links, Buttons, and Controls</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/captions/" class="page-link"><span>Video Captions</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/customizable/" class="page-link"><span>Customizable Text</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/voice/" class="page-link"><span>Speech Recognition</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/understandable/" class="page-link"><span>Understandable Content</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/notifications/" class="page-link"><span>Notifications and Feedback</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/people-use-web/" aria-current="location" class="page-link"><span>How People with Disabilities Use the Web</span></a><ul>
-          <li>
-  <a lang="en" href="/WAI/people-use-web/user-stories/" aria-current="page" class="page-link"><span>Stories of Web Users</span></a></li><li>
-  <a lang="en" href="/WAI/people-use-web/abilities-barriers/" class="page-link"><span>Diverse Abilities and Barriers</span></a></li><li>
-  <a lang="en" href="/WAI/people-use-web/tools-techniques/" class="page-link"><span>Tools and Techniques</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/older-users/" class="page-link"><span>Older Users and Accessibility</span></a><ul><li>
-  <a lang="en" href="/WAI/older-users/developing/" class="page-link"><span>How WCAG 2 Applies</span></a></li><li>
-  <a lang="en" href="/WAI/older-users/literature/" class="page-link"><span>Literature Review</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/fundamentals/accessibility-usability-inclusion/" class="page-link"><span>Accessibility, Usability, Inclusion</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
-        <header id="languagehead">Languages/Translations</header>
-        <ul class="langlist">
-          <li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">English (original)</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/people-use-web/user-stories/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/people-use-web/user-stories/fr" dir="auto" translate="no" lang="fr">français</a></li></ul>
-        <p><a href="/WAI/translations/">All&nbsp;Translations</a></p>
-        <p><a href="/WAI/about/translating/">Translating WAI Resources</a></p>
-      </nav>
-</div>
-  
-
-  <main id="main" lang="en">
-
-      
-
-    
-    <header class="in-resource">
-      <h1>
-        
-        
-        
-          Stories of Web Users
-        </h1><p>in <a lang="en" href="/WAI/people-use-web/"><span>How People with Disabilities Use the Web</span></a></p></header>
-    <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
-
-<p>The following stories of people with disabilities using the Web highlight the effect of accessibility barriers and the broader benefits of accessible websites and web tools.</p>
-
-<p><strong>Note:</strong> The following scenarios are not real people. They do not address every kind of disability.</p>
-
-</div></aside>
-
-
-
-<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple box-h-full"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#shopper" id="markdown-toc-shopper">Lee, online shopper with color blindness</a></li>
-  <li><a href="#reporter" id="markdown-toc-reporter">Alex, reporter with repetitive stress injury</a></li>
-  <li><a href="#onlinestudent" id="markdown-toc-onlinestudent">Martine, online student who is hard of hearing</a></li>
-  <li><a href="#accountant" id="markdown-toc-accountant">Ilya, senior staff member who is blind</a></li>
-  <li><a href="#classroomstudent" id="markdown-toc-classroomstudent">Preety, middle school student with attention deficit hyperactivity disorder and dyslexia</a></li>
-  <li><a href="#retiree" id="markdown-toc-retiree">Yun, retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
-  <li><a href="#supermarketassistant" id="markdown-toc-supermarketassistant">Luis, supermarket assistant with Down syndrome</a></li>
-  <li><a href="#teenager" id="markdown-toc-teenager">Kaseem, teenager who is deaf and blind</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<div class="excol-all"></div>
-
-<h2 id="shopper">Lee, online shopper with color blindness</h2>
-
-<p>Lee is colorblind and encounters barriers when shopping online. He has one of the most common visual disabilities that affect men: red and green color blindness. Lee frequently shops online and sometimes encounters problems on websites and with apps where the color contrast of text and images is not adequate and where color alone is used to indicate required fields and sale prices. When red and green color combinations are used, Lee cannot distinguish between the two, since both look brown to him. It is also very difficult for him to make product choices when color swatches are not labeled with the name of the color.</p>
-
-<p>Lee has better experiences with online content and apps that use adequate contrast and allow him to adjust contrast settings in his browser. He is also better able to recognize when information is required when asterisks are used. Lee can more easily identify the products he would like to purchase, especially clothing, when the color label names are included in the selection options rather than color swatches alone.</p>
-
-<p>For more information on implementing techniques that remove barriers for Lee, see the following resources:</p>
-
-<details id="lee-sections"><summary>
-
-    <h3 id="sections-related-to-lee">Sections related to Lee</h3>
-
-  </summary>
-  <div>
-
-    <p><strong>Diverse Abilities and Barriers</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#visual">Color blindness (Visual disabilities)</a></li>
-    </ul>
-
-    <p><strong>Tools and Techniques</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Customized fonts and colors (Presentation)</a></li>
-    </ul>
-
-    <p><strong>Accessibility principles:</strong></p>
-
-    <ul>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#adaptable">Content can be presented in different ways (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#distinguishable">Content is easier to see and hear (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#compatible">Content is compatible with current and future user tools (Robust)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="reporter">Alex, reporter with repetitive stress injury</h2>
-
-<p>Alex has worked as a reporter for more than 20 years and has developed a repetitive strain injury that makes it painful to use a mouse and to type for extended periods of time.</p>
-
-<p>Though it took considerable research, time, and commitment to learn, he is able to work with less pain using the following modifications to his work environment:</p>
-
-<ul>
-  <li>use of an ergonomic keyboard</li>
-  <li>use of keyboard commands without a mouse</li>
-  <li>voice recognition software on his computer and mobile phone</li>
-  <li>assistive touch on his mobile phone</li>
-</ul>
-
-<p>Alex encounters problems when websites and other online content cannot be navigated by keyboard commands alone. He frequently encounters web forms that do not have keyboard equivalents. Sometimes it is also difficult to skip content and navigate to sections on a webpage without using many keyboard commands, which is very tiring and limits the time he can spend working comfortably. He also recently began to explore the use of assistive touch on his mobile phone which also helps him use fewer gestures and work for longer periods of time. As a temporary fix, Alex’s employer has built several custom work arounds that provide keyboard support for his use of the company’s internal Content Management System with the intention to implement improved keyboard support to benefit all users on the next release of the software.</p>
-
-<p>For more information on implementing techniques that remove barriers for Alex, see the following resources:</p>
-
-<details id="alex-sections"><summary>
-
-    <h3 id="sections-related-to-alex">Sections related to Alex</h3>
-
-  </summary>
-  <div>
-
-    <p><strong>Diverse Abilities and Barriers</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#physical">Repetitive stress injury (Physical disabilities)</a></li>
-    </ul>
-
-    <p><strong>Tools and Techniques</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/tools-techniques/#input">Accelerators (Input)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#input">Alternative keyboard and mouse (Input)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#input">Voice recognition (Input)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#input">Word prediction (Input)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Keyboard navigation (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Skip links (Interation)</a></li>
-    </ul>
-
-    <p><strong>Accessibility principles:</strong></p>
-
-    <ul>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#alternatives">Text alternatives for non-text content (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#adaptable">Content can be presented in different ways (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#keyboard">Functionality is available from a keyboard (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#time">Users have enough time to read and use the content (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#navigable">Users can easily navigate, find content, and determine where they are (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#predictable">Content appears and operates in predictable ways (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#tolerant">Users are helped to avoid and correct mistakes (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#compatible">Content is compatible with current and future user tools (Robust)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="onlinestudent">Martine, online student who is hard of hearing</h2>
-
-<p>Martine is 62 years old and has been hard of hearing since birth. She can hear some sounds, but not enough to understand speech. As a child she learned sign language and during her early school years learned written language. She is currently a student again, taking online college courses.</p>
-
-<p>The university she attends provides sign language interpreters and Communication Access Realtime Translation (CART) writers who provide written verbatim text interpreting of spoken language for her courses. However, Martine has encountered barriers when video and other media content are not captioned. The university became aware of the need and requirement to provide captioned media and transcripts for audio content and is now working with a captioning provider to caption all content posted on university websites, including all course content in learning management systems. In addition to providing access to the content for students who are deaf or hard of hearing, the university has found that the use of captions and transcripts has added benefits. Transcripts facilitate easier production of subtitles in a number of languages and also improve the indexing of online content. Improved indexing provides improved search engine optimization and improved discoverability of the university’s online content. The university follows WCAG guidelines in providing the captioned content.</p>
-
-<p>For more information on implementing techniques that remove barriers for Martine, see the following resources:</p>
-
-<details id="martine-sections"><summary>
-
-    <h3 id="sections-related-to-martine">Sections related to Martine</h3>
-
-  </summary>
-  <div>
-
-    <p><strong>Diverse Abilities and Barriers</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#auditory">Hard of hearing (Auditory disabilities)</a></li>
-    </ul>
-
-    <p><strong>Tools and Techniques</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Captions (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Transcripts (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Sign language (Presentation)</a></li>
-    </ul>
-
-    <p><strong>Accessibility principles:</strong></p>
-
-    <ul>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#alternatives">Text alternatives for non-text content (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#captions">Captions and other alternatives for multimedia (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#distinguishable">Content is easier to see and hear (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#readable">Content is readable and understandable (Understandable)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="accountant">Ilya, senior staff member who is blind</h2>
-
-<p>Ilya is blind. She is the chief accountant at an insurance company that uses web-based documents and forms over a corporate intranet and like many other blind computer users, she does not read Braille.</p>
-
-<p>Ilya uses a screen reader and mobile phone to access the web. Both her screen reader and her mobile phone accessibility features provide her with information regarding the device’s operating system, applications, and text content in a speech output form.</p>
-
-<p>When accessing web content, the screen reader indicates aloud the structural information on a webpage such as headings, column and row headers in tables, list items, links, form controls, and more that enable her to better navigate the page, complete and submit forms, and access information in an effective manner. She is able to listen to and understand speech output at a very high speed. Ilya encounters problems when websites are not properly coded and do not include alt text descriptions on images. These sites are unnavigable and require large amounts of time to read text from the top of the page to the bottom without navigation cues. Occasionally she finds herself trapped in areas on a webpage unable to move to another area and must abandon the page altogether.</p>
-
-<p>As a senior member of her organization, Ilya provides training to employees in online environments through the use of video conferencing applications, document and slide sharing applications as well as chat rooms. Ilya and her staff evaluated a number of training tools before finding an effective application with accessibility features that meet the needs of a diverse staff with diverse abilities.</p>
-
-<p>For more information on implementing techniques that remove barriers for Ilya, see the following resources:</p>
-
-<details id="ilya-sections"><summary>
-
-    <h3 id="sections-related-to-ilya">Sections related to Ilya</h3>
-
-  </summary>
-  <div>
-
-    <p><strong>Diverse Abilities and Barriers</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#visual">Blindness (Visual disabilities)</a></li>
-    </ul>
-
-    <p><strong>Tools and Techniques</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Screen reader (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Text-to-speech (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Transcripts (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Consistency and predictability (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Descriptive titles, headings, and labels (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Helpful error and success messages (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Keyboard navigation (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Skip links (Interaction)</a></li>
-    </ul>
-
-    <p><strong>Accessibility principles:</strong></p>
-
-    <ul>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#alternatives">Text alternatives for non-text content (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#captions">Captions and other alternatives for multimedia (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#adaptable">Content can be presented in different ways (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#distinguishable">Content is easier to see and hear (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#keyboard">Functionality is available from a keyboard (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#navigable">Users can easily navigate, find content, and determine where they are (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#readable">Content is readable and understandable (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#predictable">Content appears and operates in predictable ways (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#compatible">Content is compatible with current and future user tools (Robust)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="classroomstudent">Preety, middle school student with attention deficit hyperactivity disorder and dyslexia</h2>
-
-<p>Preety is a middle school student with attention deficit hyperactivity disorder with dyslexia. Although she has substantial difficulty reading, she particularly enjoys her literature class.</p>
-
-<p>Preety’s school recently started using online digital textbooks. Preety was initially worried about using this new format, but with the use of text-to-speech software that highlights the text on the screen as it reads it aloud, she has found that she can focus on the content more easily instead of struggling over every word. The text-to-speech software is also helpful with other online text; however, Preety’s experience with websites varies greatly from one site to another. Some sites use graphics and illustrations in a way that helps her to focus on the sections and content that she would like to read, while other sites have a lot of advertisements and moving content that is very distracting. She also experiences problems with online content when the navigation is not clearly evident. She finds websites and apps that provide multiple means of navigation such as a navigation bar, search box, bread-crumb trails, and a sitemap to be much easier to use.</p>
-
-<p>Preety’s school is also using a new online library catalog with improved accessibility. Before the new catalog was implemented Preety had to physically visit the library to receive assistance in searching and locating material. Now she can search the catalog on her own using her mobile phone, tablet, or laptop. Preety still struggles with spelling but has found that search functionality that suggest alternative spellings and provide error corrections are very helpful and greatly improve her experience.</p>
-
-<p>For more information on implementing techniques that remove barriers for Preety, see the following resources:</p>
-
-<details id="preety-sections"><summary>
-
-    <h3 id="sections-related-to-preety">Sections related to Preety</h3>
-
-  </summary>
-  <div>
-
-    <p><strong>Diverse Abilities and Barriers</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#cognitive">Attention deficit hyperactivity disorder, ADHD (Cognitive disabilities)</a></li>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#cognitive">Dyslexia (Cognitive disabilities)</a></li>
-    </ul>
-
-    <p><strong>Tools and Techniques</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Captions (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Screen reader (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Text-to-speech (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Pop-up and animations blockers (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Reading assistants (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#input">Spelling and grammar tools (input)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Consistency and predictability (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Helpful error and success messages (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Keyword search (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Multiple navigation mechanisms (Interaction)</a></li>
-    </ul>
-
-    <p><strong>Accessibility principles:</strong></p>
-
-    <ul>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#alternatives">Text alternatives for non-text content (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#adaptable">Content can be presented in different ways (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#time">Users have enough time to read and use the content (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#navigable">Users can easily navigate, find content, and determine where they are (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#readable">Content is readable and understandable (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#predictable">Content appears and operates in predictable ways (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#tolerant">Users are helped to avoid and correct mistakes (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#compatible">Content is compatible with current and future user tools (Robust)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="retiree">Yun, retiree with low vision, hand tremor, and mild short-term memory loss</h2>
-
-<p>Yun is an 85 year-old with reduced vision, hand-tremor, and mild memory loss; common age-related impairments for someone his age. Yun regularly browses the web reading news sites. In recent years he also started using social media to stay in touch with his family and friends. He maintains his own blog where he posts articles on art history and other topics he enjoys.</p>
-
-<p>Like many older individuals, Yun has difficulty reading small text and clicking on small links and form elements. His daughter showed him how to enlarge text in the web browser, which works well on many websites. He encounters problems when text does not reflow when it is enlarged and he is forced to scroll back and forth to read the enlarged content, which means he easily loses track of his place. He also has problems with CAPTCHA images found on many social media sites. The text is so distorted, even when he enlarges it, that he often cannot accurately enter the text. He has a better experience on sites that use alternative CAPTCHA options, unfortunately only a small number currently do.</p>
-
-<p>Yun’s daughter gave him a special mouse that is easier to control with his hand tremors. He also uses a web browser that saves thumbnail images of his frequently visited sites, which makes it easier for him to keep track of the sites he goes to most often.</p>
-
-<p>For more information on implementing techniques that remove barriers for Yun, see the following resources:</p>
-
-<details id="yun-sections"><summary>
-
-    <h3 id="sections-related-to-yun">Sections related to Yun</h3>
-
-  </summary>
-  <div>
-
-    <p><strong>Diverse Abilities and Barriers</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#visual">Low vision (Visual disabilities)</a></li>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#physical">Hand tremor (Physical disabilities)</a></li>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#cognitive">Mild short-term memory loss (Cognitive
-disabilities)</a></li>
-    </ul>
-
-    <p><strong>Tools and Techniques</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Screen magnification (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#input">Alternative keyboard and mouse (Input)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#input">Keyboard and mouse filters (Input)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#input">Mouse customization (Input)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Bookmarks and history (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Consistency and predictability (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Descriptive titles, headings, and labels (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Helpful error and success messages (Interaction)</a></li>
-    </ul>
-
-    <p><strong>Accessibility principles:</strong></p>
-
-    <ul>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#alternatives">Text alternatives for non-text content (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#adaptable">Content can be presented in different ways (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#distinguishable">Content is easier to see and hear (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#time">Users have enough time to read and use the content (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#navigable">Users can easily navigate, find content, and determine where they are (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#readable">Content is readable and understandable (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#predictable">Content appears and operates in predictable ways (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#tolerant">Users are helped to avoid and correct mistakes (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#compatible">Content is compatible with current and future user tools (Robust)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="supermarketassistant">Luis, supermarket assistant with Down syndrome</h2>
-
-<p>Luis has Down syndrome and has difficulty with abstract concepts, reading, and math calculations.</p>
-
-<p>Luis works at a market, bagging groceries for customers. Typically he buys his groceries at the same market where he works, but he is sometimes confused by the large number of product choices and sometimes has problems finding his favorite items when the store layout is changed.</p>
-
-<p>Recently, a friend showed him an app for online grocery purchases that has consistent, easy-to-use navigation with clear and direct instructions. Luis is able to add the list of his most frequently purchased items into the app and save it for additional purchases. He also likes the search functionality that makes suggestions for mistyped or misspelled words. The app also keeps a running total of the items in his virtual shopping cart which helps him keep up with how much he is spending.</p>
-
-<p>His friend also showed him several accessibility features in his mobile phone that he finds very helpful including word prediction which provides a selection of possible word choices based on the first characters he enters and the text-to-speech functionality which allows him to listen to reviews posted by other users on the grocery app. With the use of these tools, Luis has begun posting his own reviews of items he has purchased.</p>
-
-<p>Luis now uses the shopping app a couple of times a month for frequently purchased items and buys a few fresh items regularly from the store where he works.</p>
-
-<p>For more information on implementing techniques that remove barriers for Luis, see the following resources:</p>
-
-<details id="luis-sections"><summary>
-
-    <h3 id="sections-related-to-luis">Sections related to Luis</h3>
-
-  </summary>
-  <div>
-
-    <p><strong>Diverse Abilities and Barriers</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#cognitive">Down syndrome (Cognitive disabilities)</a></li>
-    </ul>
-
-    <p><strong>Tools and Techniques</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Easy-to-read text (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Pop-up and animations blockers (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Progressive disclosure (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Reading assistants (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Reduced interface (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#input">Accelerators (Input)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#input">Spelling and grammar tools (Input)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Consistency and predictability (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Descriptive titles, headings, and labels (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Helpful error and success messages (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Multiple navigation mechanisms (Interaction)</a></li>
-    </ul>
-
-    <p><strong>Accessibility principles:</strong></p>
-
-    <ul>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#adaptable">Content can be presented in different ways (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#time">Users have enough time to read and use the content (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#navigable">Users can easily navigate, find content, and determine where they are (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#readable">Content is readable and understandable (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#predictable">Content appears and operates in predictable ways (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#tolerant">Users are helped to avoid and correct mistakes (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#compatible">Content is compatible with current and future user tools (Robust)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="teenager">Kaseem, teenager who is deaf and blind</h2>
-
-<p>Kaseem is a teenager who is deaf and recently became legally blind too, which means she can see only small portions of a screen and read text when it is significantly enlarged.</p>
-
-<p>Kaseem uses:</p>
-
-<ul>
-  <li>screen magnification software to enlarge the text on websites to a suitable font size;</li>
-  <li>screen reader software that displays text on a refreshable Braille device;</li>
-  <li>large computer screen with high resolution and high luminosity (brightness).</li>
-</ul>
-
-<p>Kaseem’s portable electronic Braille notetaker includes a calendar, e-mail, web browsing, and note-taking functionality. Her mobile device includes GPS which helps her orient herself and navigate around the city. Kaseem uses the public transportation online site to plan her trips and view bus schedules, but encounters problems when she enlarges the text and it does not reflow or wrap properly, making the maps very difficult to use. She has a better experience viewing the train schedules that are properly marked up and allow text reflow. Kaseem found the web team contact information listed at the public transportation website and sent a message to the team informing them of the problems she encountered using their site. She also sent them the link to the train website and described how that site works better for her. She recently received an email message thanking her for her information and informing her that the public transportation web team plans to implement accessibility improvements in the launch of their new website.</p>
-
-<p>For more information on implementing techniques that remove barriers for Kaseem, see the following resources:</p>
-
-<details id="kaseem-sections"><summary>
-
-    <h3 id="sections-related-to-kaseem">Sections related to Kaseem</h3>
-
-  </summary>
-  <div>
-
-    <p><strong>Diverse Abilities and Barriers</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#auditory">Deaf-blindness (Auditory disabilities)</a></li>
-      <li><a href="/WAI/people-use-web/abilities-barriers/#visual">Deaf-blindness (Visual disabilities)</a></li>
-    </ul>
-
-    <p><strong>Tools and Techniques</strong></p>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Braille (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Refreshable Braille display (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Screen reader (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Text-to-speech (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#perception">Transcripts (Perception)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Customized fonts and colors (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Screen magnification (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#presentation">Screen magnifier (Presentation)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Descriptive titles, headings, and labels (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Helpful error and success messages (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Keyboard navigation (Interaction)</a></li>
-      <li><a href="/WAI/people-use-web/tools-techniques/#interaction">Skip links (Interaction)</a></li>
-    </ul>
-
-    <p><strong>Accessibility principles:</strong></p>
-
-    <ul>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#alternatives">Text alternatives for non-text content (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#captions">Alternatives for audio and video content (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#adaptable">Content can be presented in different ways (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#distinguishable">Content is easier to see and hear (Perceivable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#time">Users have enough time to read and use the content (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#navigable">Users can easily navigate, find content, and determine where they are (Operable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#predictable">Content appears and operates in predictable ways (Understandable)</a></li>
-      <li><a href="/WAI/fundamentals/accessibility-principles/#compatible">Content is compatible with current and future user tools (Robust)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<div class="excol-all"></div>
-
-
-    <nav class="pager" aria-label="Previous/Next Page">
-  <ul><li class="pager--item previous">
-      <a href="/WAI/people-use-web/">
-        <svg focusable="false" aria-hidden="true" class="icon-arrow-left pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-left"></use></svg>
-        <span class="pager--item-text">
-          <span class="pager--item-text-direction">Previous:</span>
-          <span class="pager--item-text-target">Overview</span>
-        </span>
-      </a>
-    </li><li class="pager--item next">
-      <a href="/WAI/people-use-web/abilities-barriers/">
-        <svg focusable="false" aria-hidden="true" class="icon-arrow-right pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-right"></use></svg>
-        <span class="pager--item-text">
-          <span class="pager--item-text-direction">Next:</span>
-          <span class="pager--item-text-target">Diverse Abilities and Barriers</span>
-        </span>
-      </a>
-    </li>
-  </ul></nav><aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Stories%20of%20Web%20Users">wai-eo-editors@w3.org</a> or via GitHub.</p>
-<div class="button-group">
-    <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Stories%20of%20Web%20Users&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/wai-people-use-web/edit/master/_people-use-web/user-stories.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-people-use-web/issues/new" class="button"><span>New GitHub Issue</span></a>
-</div></div></aside>
-
-
-    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
-  </main>
-</div>
-
-
-  
-  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-    <div class="inner" 
-      >
-      <p><strong>Date:</strong> Updated 15 May 2017.</p> <p><strong>Editors:</strong> <a href="https://www.w3.org/People/shadi/">Shadi Abou_Zahra</a> and Norah Sinclair. Previous editor: <a href="https://www.w3.org/People/Brewer/">Judy Brewer</a>. <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments">Acknowledgments</a>.</p> <p>Developed by the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Previously developed with the <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf">WAI-AGE Task Force</a>, with support of the <a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE Project</a>.</p>
-</div>
-  </footer>
-  
-
-
-<footer class="site-footer grid-4q" aria-label="Site">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
-    </div>
-    <div class="social" lang="en" dir="auto" translate="no">
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span
+            >Strategies, standards, resources to make the Web accessible to
+            people with disabilities</span
+          >
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg focusable="false" aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            Menu</span
+          >
+        </button>
+      </div>
+
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">Search:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </label>
+
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg
+                        focusable="false"
+                        aria-label="Submit Search"
+                        class="icon-search"
+                      >
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="Main" lang="en">
       <ul>
-        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
-        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
-        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
-        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/planning/"
+            ><span>Planning &amp; Policies</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/design-develop/"
+            ><span>Design &amp; Develop</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/test-evaluate/"
+            ><span>Test &amp; Evaluate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/teach-advocate/"
+            ><span>Teach &amp; Advocate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
       </ul>
-    </div>
-    <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
-    </div>
-  </div>
-  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
-    <ul style="margin-bottom:0">
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-      <li><a href="/WAI/translations/"> Translations</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
-<script>
-  svg4everybody();
-</script><script>
-  var translationStrings = {};
-</script>
-<!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    </nav>
+    <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+      <ul style="align-self: center">
+        <li><a href="/WAI/" lang="en">Home</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/people-use-web/"
+            ><span>How People with Disabilities Use the Web</span></a
+          >
+        </li>
+        <li>
+          <a
+            lang="en"
+            href="/WAI/people-use-web/user-stories/"
+            aria-current="page"
+            ><span>Stories of Web Users</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="default-grid with-gap leftcol">
+      <div class="sidenav">
+        <nav class="sn-contents" aria-label="Secondary">
+          <ul class="sidenav--list">
+            <li>
+              <a lang="en" href="/WAI/fundamentals/" class="page-link"
+                ><span>Accessibility Fundamentals</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/accessibility-intro/"
+                class="page-link"
+                ><span>Introduction to Accessibility</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/videos/standards-and-benefits/"
+                    class="page-link"
+                    ><span>Video Introduction</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/foundations-course/"
+                class="page-link"
+                ><span>Foundations Online Course</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/components/"
+                class="page-link"
+                ><span>Components of Web Accessibility</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/accessibility-principles/"
+                class="page-link"
+                ><span>Accessibility Principles</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/perspective-videos/" class="page-link"
+                ><span>Perspectives Videos</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/keyboard/"
+                    class="page-link"
+                    ><span>Keyboard Compatibility</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/contrast/"
+                    class="page-link"
+                    ><span>Colors with Good Contrast</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/layout/"
+                    class="page-link"
+                    ><span>Clear Layout and Design</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/speech/"
+                    class="page-link"
+                    ><span>Text to Speech</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/controls/"
+                    class="page-link"
+                    ><span>Large Links, Buttons, and Controls</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/captions/"
+                    class="page-link"
+                    ><span>Video Captions</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/customizable/"
+                    class="page-link"
+                    ><span>Customizable Text</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/voice/"
+                    class="page-link"
+                    ><span>Speech Recognition</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/understandable/"
+                    class="page-link"
+                    ><span>Understandable Content</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/notifications/"
+                    class="page-link"
+                    ><span>Notifications and Feedback</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/people-use-web/"
+                aria-current="location"
+                class="page-link"
+                ><span>How People with Disabilities Use the Web</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/user-stories/"
+                    aria-current="page"
+                    class="page-link"
+                    ><span>Stories of Web Users</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/abilities-barriers/"
+                    class="page-link"
+                    ><span>Diverse Abilities and Barriers</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/tools-techniques/"
+                    class="page-link"
+                    ><span>Tools and Techniques</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/older-users/" class="page-link"
+                ><span>Older Users and Accessibility</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/older-users/developing/"
+                    class="page-link"
+                    ><span>How WCAG 2 Applies</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/older-users/literature/"
+                    class="page-link"
+                    ><span>Literature Review</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/accessibility-usability-inclusion/"
+                class="page-link"
+                ><span>Accessibility, Usability, Inclusion</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="sidenav-languages" aria-labelledby="languagehead">
+          <header id="languagehead">Languages/Translations</header>
+          <ul class="langlist">
+            <li style="margin-bottom: 2px">
+              <strong style="text-transform: capitalize"
+                >English (original)</strong
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/people-use-web/user-stories/es"
+                dir="auto"
+                translate="no"
+                lang="es"
+                >español</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/people-use-web/user-stories/fr"
+                dir="auto"
+                translate="no"
+                lang="fr"
+                >français</a
+              >
+            </li>
+          </ul>
+          <p><a href="/WAI/translations/">All&nbsp;Translations</a></p>
+          <p><a href="/WAI/about/translating/">Translating WAI Resources</a></p>
+        </nav>
+      </div>
 
+      <main id="main" lang="en">
+        <header class="in-resource">
+          <h1>Stories of Web Users</h1>
+          <p>
+            in
+            <a lang="en" href="/WAI/people-use-web/"
+              ><span>How People with Disabilities Use the Web</span></a
+            >
+          </p>
+        </header>
+        <aside class="box box-full">
+          <header class="box-h box-h-full"><h2>Summary</h2></header>
+          <div class="box-i">
+            <p>
+              The following stories of people with disabilities using the Web
+              highlight the effect of accessibility barriers and the broader
+              benefits of accessible websites and web tools.
+            </p>
 
+            <p>
+              <strong>Note:</strong> The following scenarios are not real
+              people. They do not address every kind of disability.
+            </p>
+          </div>
+        </aside>
+
+        <nav
+          class="box box-simple box-full"
+          aria-labelledby="tocheading"
+          id="toc"
+        >
+          <header id="tocheading" class="box-h box-h-simple box-h-full">
+            Page Contents
+          </header>
+          <div class="box-i">
+            <ul id="markdown-toc">
+              <li>
+                <a href="#shopper" id="markdown-toc-shopper"
+                  >Lee, online shopper with color blindness</a
+                >
+              </li>
+              <li>
+                <a href="#reporter" id="markdown-toc-reporter"
+                  >Alex, reporter with repetitive stress injury</a
+                >
+              </li>
+              <li>
+                <a href="#onlinestudent" id="markdown-toc-onlinestudent"
+                  >Martine, online student who is hard of hearing</a
+                >
+              </li>
+              <li>
+                <a href="#accountant" id="markdown-toc-accountant"
+                  >Ilya, senior staff member who is blind</a
+                >
+              </li>
+              <li>
+                <a href="#classroomstudent" id="markdown-toc-classroomstudent"
+                  >Preety, middle school student with attention deficit
+                  hyperactivity disorder and dyslexia</a
+                >
+              </li>
+              <li>
+                <a href="#retiree" id="markdown-toc-retiree"
+                  >Yun, retiree with low vision, hand tremor, and mild
+                  short-term memory loss</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#supermarketassistant"
+                  id="markdown-toc-supermarketassistant"
+                  >Luis, supermarket assistant with Down syndrome</a
+                >
+              </li>
+              <li>
+                <a href="#teenager" id="markdown-toc-teenager"
+                  >Kaseem, teenager who is deaf and blind</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="excol-all"></div>
+
+        <h2 id="shopper">Lee, online shopper with color blindness</h2>
+
+        <p>
+          Lee is colorblind and encounters barriers when shopping online. He has
+          one of the most common visual disabilities that affect men: red and
+          green color blindness. Lee frequently shops online and sometimes
+          encounters problems on websites and with apps where the color contrast
+          of text and images is not adequate and where color alone is used to
+          indicate required fields and sale prices. When red and green color
+          combinations are used, Lee cannot distinguish between the two, since
+          both look brown to him. It is also very difficult for him to make
+          product choices when color swatches are not labeled with the name of
+          the color.
+        </p>
+
+        <p>
+          Lee has better experiences with online content and apps that use
+          adequate contrast and allow him to adjust contrast settings in his
+          browser. He is also better able to recognize when information is
+          required when asterisks are used. Lee can more easily identify the
+          products he would like to purchase, especially clothing, when the
+          color label names are included in the selection options rather than
+          color swatches alone.
+        </p>
+
+        <p>
+          For more information on implementing techniques that remove barriers
+          for Lee, see the following resources:
+        </p>
+
+        <details id="lee-sections">
+          <summary>
+            <h3 id="sections-related-to-lee">Sections related to Lee</h3>
+          </summary>
+          <div>
+            <p><strong>Diverse Abilities and Barriers</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#visual"
+                  >Color blindness (Visual disabilities)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Tools and Techniques</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Customized fonts and colors (Presentation)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Accessibility principles:</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#adaptable"
+                  >Content can be presented in different ways (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#distinguishable"
+                  >Content is easier to see and hear (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#compatible"
+                  >Content is compatible with current and future user tools
+                  (Robust)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="reporter">Alex, reporter with repetitive stress injury</h2>
+
+        <p>
+          Alex has worked as a reporter for more than 20 years and has developed
+          a repetitive strain injury that makes it painful to use a mouse and to
+          type for extended periods of time.
+        </p>
+
+        <p>
+          Though it took considerable research, time, and commitment to learn,
+          he is able to work with less pain using the following modifications to
+          his work environment:
+        </p>
+
+        <ul>
+          <li>use of an ergonomic keyboard</li>
+          <li>use of keyboard commands without a mouse</li>
+          <li>voice recognition software on his computer and mobile phone</li>
+          <li>assistive touch on his mobile phone</li>
+        </ul>
+
+        <p>
+          Alex encounters problems when websites and other online content cannot
+          be navigated by keyboard commands alone. He frequently encounters web
+          forms that do not have keyboard equivalents. Sometimes it is also
+          difficult to skip content and navigate to sections on a webpage
+          without using many keyboard commands, which is very tiring and limits
+          the time he can spend working comfortably. He also recently began to
+          explore the use of assistive touch on his mobile phone which also
+          helps him use fewer gestures and work for longer periods of time. As a
+          temporary fix, Alex’s employer has built several custom work arounds
+          that provide keyboard support for his use of the company’s internal
+          Content Management System with the intention to implement improved
+          keyboard support to benefit all users on the next release of the
+          software.
+        </p>
+
+        <p>
+          For more information on implementing techniques that remove barriers
+          for Alex, see the following resources:
+        </p>
+
+        <details id="alex-sections">
+          <summary>
+            <h3 id="sections-related-to-alex">Sections related to Alex</h3>
+          </summary>
+          <div>
+            <p><strong>Diverse Abilities and Barriers</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#physical"
+                  >Repetitive stress injury (Physical disabilities)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Tools and Techniques</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#input"
+                  >Accelerators (Input)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#input"
+                  >Alternative keyboard and mouse (Input)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#input"
+                  >Voice recognition (Input)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#input"
+                  >Word prediction (Input)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Keyboard navigation (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Skip links (Interation)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Accessibility principles:</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#alternatives"
+                  >Text alternatives for non-text content (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#adaptable"
+                  >Content can be presented in different ways (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#keyboard"
+                  >Functionality is available from a keyboard (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#time"
+                  >Users have enough time to read and use the content
+                  (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#navigable"
+                  >Users can easily navigate, find content, and determine where
+                  they are (Operable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#predictable"
+                  >Content appears and operates in predictable ways
+                  (Understandable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#tolerant"
+                  >Users are helped to avoid and correct mistakes
+                  (Understandable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#compatible"
+                  >Content is compatible with current and future user tools
+                  (Robust)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="onlinestudent">
+          Martine, online student who is hard of hearing
+        </h2>
+
+        <p>
+          Martine is 62 years old and has been hard of hearing since birth. She
+          can hear some sounds, but not enough to understand speech. As a child
+          she learned sign language and during her early school years learned
+          written language. She is currently a student again, taking online
+          college courses.
+        </p>
+
+        <p>
+          The university she attends provides sign language interpreters and
+          Communication Access Realtime Translation (CART) writers who provide
+          written verbatim text interpreting of spoken language for her courses.
+          However, Martine has encountered barriers when video and other media
+          content are not captioned. The university became aware of the need and
+          requirement to provide captioned media and transcripts for audio
+          content and is now working with a captioning provider to caption all
+          content posted on university websites, including all course content in
+          learning management systems. In addition to providing access to the
+          content for students who are deaf or hard of hearing, the university
+          has found that the use of captions and transcripts has added benefits.
+          Transcripts facilitate easier production of subtitles in a number of
+          languages and also improve the indexing of online content. Improved
+          indexing provides improved search engine optimization and improved
+          discoverability of the university’s online content. The university
+          follows WCAG guidelines in providing the captioned content.
+        </p>
+
+        <p>
+          For more information on implementing techniques that remove barriers
+          for Martine, see the following resources:
+        </p>
+
+        <details id="martine-sections">
+          <summary>
+            <h3 id="sections-related-to-martine">
+              Sections related to Martine
+            </h3>
+          </summary>
+          <div>
+            <p><strong>Diverse Abilities and Barriers</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#auditory"
+                  >Hard of hearing (Auditory disabilities)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Tools and Techniques</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Captions (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Transcripts (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Sign language (Presentation)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Accessibility principles:</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#alternatives"
+                  >Text alternatives for non-text content (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#captions"
+                  >Captions and other alternatives for multimedia
+                  (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#distinguishable"
+                  >Content is easier to see and hear (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#readable"
+                  >Content is readable and understandable (Understandable)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="accountant">Ilya, senior staff member who is blind</h2>
+
+        <p>
+          Ilya is blind. She is the chief accountant at an insurance company
+          that uses web-based documents and forms over a corporate intranet and
+          like many other blind computer users, she does not read Braille.
+        </p>
+
+        <p>
+          Ilya uses a screen reader and mobile phone to access the web. Both her
+          screen reader and her mobile phone accessibility features provide her
+          with information regarding the device’s operating system,
+          applications, and text content in a speech output form.
+        </p>
+
+        <p>
+          When accessing web content, the screen reader indicates aloud the
+          structural information on a webpage such as headings, column and row
+          headers in tables, list items, links, form controls, and more that
+          enable her to better navigate the page, complete and submit forms, and
+          access information in an effective manner. She is able to listen to
+          and understand speech output at a very high speed. Ilya encounters
+          problems when websites are not properly coded and do not include alt
+          text descriptions on images. These sites are unnavigable and require
+          large amounts of time to read text from the top of the page to the
+          bottom without navigation cues. Occasionally she finds herself trapped
+          in areas on a webpage unable to move to another area and must abandon
+          the page altogether.
+        </p>
+
+        <p>
+          As a senior member of her organization, Ilya provides training to
+          employees in online environments through the use of video conferencing
+          applications, document and slide sharing applications as well as chat
+          rooms. Ilya and her staff evaluated a number of training tools before
+          finding an effective application with accessibility features that meet
+          the needs of a diverse staff with diverse abilities.
+        </p>
+
+        <p>
+          For more information on implementing techniques that remove barriers
+          for Ilya, see the following resources:
+        </p>
+
+        <details id="ilya-sections">
+          <summary>
+            <h3 id="sections-related-to-ilya">Sections related to Ilya</h3>
+          </summary>
+          <div>
+            <p><strong>Diverse Abilities and Barriers</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#visual"
+                  >Blindness (Visual disabilities)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Tools and Techniques</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Screen reader (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Text-to-speech (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Transcripts (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Consistency and predictability (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Descriptive titles, headings, and labels (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Helpful error and success messages (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Keyboard navigation (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Skip links (Interaction)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Accessibility principles:</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#alternatives"
+                  >Text alternatives for non-text content (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#captions"
+                  >Captions and other alternatives for multimedia
+                  (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#adaptable"
+                  >Content can be presented in different ways (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#distinguishable"
+                  >Content is easier to see and hear (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#keyboard"
+                  >Functionality is available from a keyboard (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#navigable"
+                  >Users can easily navigate, find content, and determine where
+                  they are (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#readable"
+                  >Content is readable and understandable (Understandable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#predictable"
+                  >Content appears and operates in predictable ways
+                  (Understandable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#compatible"
+                  >Content is compatible with current and future user tools
+                  (Robust)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="classroomstudent">
+          Preety, middle school student with attention deficit hyperactivity
+          disorder and dyslexia
+        </h2>
+
+        <p>
+          Preety is a middle school student with attention deficit hyperactivity
+          disorder with dyslexia. Although she has substantial difficulty
+          reading, she particularly enjoys her literature class.
+        </p>
+
+        <p>
+          Preety’s school recently started using online digital textbooks.
+          Preety was initially worried about using this new format, but with the
+          use of text-to-speech software that highlights the text on the screen
+          as it reads it aloud, she has found that she can focus on the content
+          more easily instead of struggling over every word. The text-to-speech
+          software is also helpful with other online text; however, Preety’s
+          experience with websites varies greatly from one site to another. Some
+          sites use graphics and illustrations in a way that helps her to focus
+          on the sections and content that she would like to read, while other
+          sites have a lot of advertisements and moving content that is very
+          distracting. She also experiences problems with online content when
+          the navigation is not clearly evident. She finds websites and apps
+          that provide multiple means of navigation such as a navigation bar,
+          search box, bread-crumb trails, and a sitemap to be much easier to
+          use.
+        </p>
+
+        <p>
+          Preety’s school is also using a new online library catalog with
+          improved accessibility. Before the new catalog was implemented Preety
+          had to physically visit the library to receive assistance in searching
+          and locating material. Now she can search the catalog on her own using
+          her mobile phone, tablet, or laptop. Preety still struggles with
+          spelling but has found that search functionality that suggest
+          alternative spellings and provide error corrections are very helpful
+          and greatly improve her experience.
+        </p>
+
+        <p>
+          For more information on implementing techniques that remove barriers
+          for Preety, see the following resources:
+        </p>
+
+        <details id="preety-sections">
+          <summary>
+            <h3 id="sections-related-to-preety">Sections related to Preety</h3>
+          </summary>
+          <div>
+            <p><strong>Diverse Abilities and Barriers</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#cognitive"
+                  >Attention deficit hyperactivity disorder, ADHD (Cognitive
+                  disabilities)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#cognitive"
+                  >Dyslexia (Cognitive disabilities)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Tools and Techniques</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Captions (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Screen reader (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Text-to-speech (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Pop-up and animations blockers (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Reading assistants (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#input"
+                  >Spelling and grammar tools (input)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Consistency and predictability (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Helpful error and success messages (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Keyword search (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Multiple navigation mechanisms (Interaction)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Accessibility principles:</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#alternatives"
+                  >Text alternatives for non-text content (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#adaptable"
+                  >Content can be presented in different ways (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#time"
+                  >Users have enough time to read and use the content
+                  (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#navigable"
+                  >Users can easily navigate, find content, and determine where
+                  they are (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#readable"
+                  >Content is readable and understandable (Understandable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#predictable"
+                  >Content appears and operates in predictable ways
+                  (Understandable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#tolerant"
+                  >Users are helped to avoid and correct mistakes
+                  (Understandable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#compatible"
+                  >Content is compatible with current and future user tools
+                  (Robust)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="retiree">
+          Yun, retiree with low vision, hand tremor, and mild short-term memory
+          loss
+        </h2>
+
+        <p>
+          Yun is an 85 year-old with reduced vision, hand-tremor, and mild
+          memory loss; common age-related impairments for someone his age. Yun
+          regularly browses the web reading news sites. In recent years he also
+          started using social media to stay in touch with his family and
+          friends. He maintains his own blog where he posts articles on art
+          history and other topics he enjoys.
+        </p>
+
+        <p>
+          Like many older individuals, Yun has difficulty reading small text and
+          clicking on small links and form elements. His daughter showed him how
+          to enlarge text in the web browser, which works well on many websites.
+          He encounters problems when text does not reflow when it is enlarged
+          and he is forced to scroll back and forth to read the enlarged
+          content, which means he easily loses track of his place. He also has
+          problems with CAPTCHA images found on many social media sites. The
+          text is so distorted, even when he enlarges it, that he often cannot
+          accurately enter the text. He has a better experience on sites that
+          use alternative CAPTCHA options, unfortunately only a small number
+          currently do.
+        </p>
+
+        <p>
+          Yun’s daughter gave him a special mouse that is easier to control with
+          his hand tremors. He also uses a web browser that saves thumbnail
+          images of his frequently visited sites, which makes it easier for him
+          to keep track of the sites he goes to most often.
+        </p>
+
+        <p>
+          For more information on implementing techniques that remove barriers
+          for Yun, see the following resources:
+        </p>
+
+        <details id="yun-sections">
+          <summary>
+            <h3 id="sections-related-to-yun">Sections related to Yun</h3>
+          </summary>
+          <div>
+            <p><strong>Diverse Abilities and Barriers</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#visual"
+                  >Low vision (Visual disabilities)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#physical"
+                  >Hand tremor (Physical disabilities)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#cognitive"
+                  >Mild short-term memory loss (Cognitive disabilities)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Tools and Techniques</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Screen magnification (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#input"
+                  >Alternative keyboard and mouse (Input)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#input"
+                  >Keyboard and mouse filters (Input)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#input"
+                  >Mouse customization (Input)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Bookmarks and history (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Consistency and predictability (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Descriptive titles, headings, and labels (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Helpful error and success messages (Interaction)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Accessibility principles:</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#alternatives"
+                  >Text alternatives for non-text content (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#adaptable"
+                  >Content can be presented in different ways (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#distinguishable"
+                  >Content is easier to see and hear (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#time"
+                  >Users have enough time to read and use the content
+                  (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#navigable"
+                  >Users can easily navigate, find content, and determine where
+                  they are (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#readable"
+                  >Content is readable and understandable (Understandable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#predictable"
+                  >Content appears and operates in predictable ways
+                  (Understandable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#tolerant"
+                  >Users are helped to avoid and correct mistakes
+                  (Understandable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#compatible"
+                  >Content is compatible with current and future user tools
+                  (Robust)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="supermarketassistant">
+          Luis, supermarket assistant with Down syndrome
+        </h2>
+
+        <p>
+          Luis has Down syndrome and has difficulty with abstract concepts,
+          reading, and math calculations.
+        </p>
+
+        <p>
+          Luis works at a market, bagging groceries for customers. Typically he
+          buys his groceries at the same market where he works, but he is
+          sometimes confused by the large number of product choices and
+          sometimes has problems finding his favorite items when the store
+          layout is changed.
+        </p>
+
+        <p>
+          Recently, a friend showed him an app for online grocery purchases that
+          has consistent, easy-to-use navigation with clear and direct
+          instructions. Luis is able to add the list of his most frequently
+          purchased items into the app and save it for additional purchases. He
+          also likes the search functionality that makes suggestions for
+          mistyped or misspelled words. The app also keeps a running total of
+          the items in his virtual shopping cart which helps him keep up with
+          how much he is spending.
+        </p>
+
+        <p>
+          His friend also showed him several accessibility features in his
+          mobile phone that he finds very helpful including word prediction
+          which provides a selection of possible word choices based on the first
+          characters he enters and the text-to-speech functionality which allows
+          him to listen to reviews posted by other users on the grocery app.
+          With the use of these tools, Luis has begun posting his own reviews of
+          items he has purchased.
+        </p>
+
+        <p>
+          Luis now uses the shopping app a couple of times a month for
+          frequently purchased items and buys a few fresh items regularly from
+          the store where he works.
+        </p>
+
+        <p>
+          For more information on implementing techniques that remove barriers
+          for Luis, see the following resources:
+        </p>
+
+        <details id="luis-sections">
+          <summary>
+            <h3 id="sections-related-to-luis">Sections related to Luis</h3>
+          </summary>
+          <div>
+            <p><strong>Diverse Abilities and Barriers</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#cognitive"
+                  >Down syndrome (Cognitive disabilities)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Tools and Techniques</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Easy-to-read text (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Pop-up and animations blockers (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Progressive disclosure (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Reading assistants (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Reduced interface (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#input"
+                  >Accelerators (Input)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#input"
+                  >Spelling and grammar tools (Input)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Consistency and predictability (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Descriptive titles, headings, and labels (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Helpful error and success messages (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Multiple navigation mechanisms (Interaction)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Accessibility principles:</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#adaptable"
+                  >Content can be presented in different ways (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#time"
+                  >Users have enough time to read and use the content
+                  (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#navigable"
+                  >Users can easily navigate, find content, and determine where
+                  they are (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#readable"
+                  >Content is readable and understandable (Understandable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#predictable"
+                  >Content appears and operates in predictable ways
+                  (Understandable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#tolerant"
+                  >Users are helped to avoid and correct mistakes
+                  (Understandable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#compatible"
+                  >Content is compatible with current and future user tools
+                  (Robust)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="teenager">Kaseem, teenager who is deaf and blind</h2>
+
+        <p>
+          Kaseem is a teenager who is deaf and recently became legally blind
+          too, which means she can see only small portions of a screen and read
+          text when it is significantly enlarged.
+        </p>
+
+        <p>Kaseem uses:</p>
+
+        <ul>
+          <li>
+            screen magnification software to enlarge the text on websites to a
+            suitable font size;
+          </li>
+          <li>
+            screen reader software that displays text on a refreshable Braille
+            device;
+          </li>
+          <li>
+            large computer screen with high resolution and high luminosity
+            (brightness).
+          </li>
+        </ul>
+
+        <p>
+          Kaseem’s portable electronic Braille notetaker includes a calendar,
+          e-mail, web browsing, and note-taking functionality. Her mobile device
+          includes GPS which helps her orient herself and navigate around the
+          city. Kaseem uses the public transportation online site to plan her
+          trips and view bus schedules, but encounters problems when she
+          enlarges the text and it does not reflow or wrap properly, making the
+          maps very difficult to use. She has a better experience viewing the
+          train schedules that are properly marked up and allow text reflow.
+          Kaseem found the web team contact information listed at the public
+          transportation website and sent a message to the team informing them
+          of the problems she encountered using their site. She also sent them
+          the link to the train website and described how that site works better
+          for her. She recently received an email message thanking her for her
+          information and informing her that the public transportation web team
+          plans to implement accessibility improvements in the launch of their
+          new website.
+        </p>
+
+        <p>
+          For more information on implementing techniques that remove barriers
+          for Kaseem, see the following resources:
+        </p>
+
+        <details id="kaseem-sections">
+          <summary>
+            <h3 id="sections-related-to-kaseem">Sections related to Kaseem</h3>
+          </summary>
+          <div>
+            <p><strong>Diverse Abilities and Barriers</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#auditory"
+                  >Deaf-blindness (Auditory disabilities)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/abilities-barriers/#visual"
+                  >Deaf-blindness (Visual disabilities)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Tools and Techniques</strong></p>
+
+            <ul>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Braille (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Refreshable Braille display (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Screen reader (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Text-to-speech (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#perception"
+                  >Transcripts (Perception)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Customized fonts and colors (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Screen magnification (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#presentation"
+                  >Screen magnifier (Presentation)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Descriptive titles, headings, and labels (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Helpful error and success messages (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Keyboard navigation (Interaction)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/people-use-web/tools-techniques/#interaction"
+                  >Skip links (Interaction)</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>Accessibility principles:</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#alternatives"
+                  >Text alternatives for non-text content (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#captions"
+                  >Alternatives for audio and video content (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#adaptable"
+                  >Content can be presented in different ways (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#distinguishable"
+                  >Content is easier to see and hear (Perceivable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#time"
+                  >Users have enough time to read and use the content
+                  (Operable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#navigable"
+                  >Users can easily navigate, find content, and determine where
+                  they are (Operable)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/fundamentals/accessibility-principles/#predictable"
+                  >Content appears and operates in predictable ways
+                  (Understandable)</a
+                >
+              </li>
+              <li>
+                <a href="/WAI/fundamentals/accessibility-principles/#compatible"
+                  >Content is compatible with current and future user tools
+                  (Robust)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="excol-all"></div>
+
+        <nav class="pager" aria-label="Previous/Next Page">
+          <ul>
+            <li class="pager--item previous">
+              <a href="/WAI/people-use-web/">
+                <svg
+                  focusable="false"
+                  aria-hidden="true"
+                  class="icon-arrow-left pager--item-icon"
+                >
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-arrow-left"
+                  ></use>
+                </svg>
+                <span class="pager--item-text">
+                  <span class="pager--item-text-direction">Previous:</span>
+                  <span class="pager--item-text-target">Overview</span>
+                </span>
+              </a>
+            </li>
+            <li class="pager--item next">
+              <a href="/WAI/people-use-web/abilities-barriers/">
+                <svg
+                  focusable="false"
+                  aria-hidden="true"
+                  class="icon-arrow-right pager--item-icon"
+                >
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-arrow-right"
+                  ></use>
+                </svg>
+                <span class="pager--item-text">
+                  <span class="pager--item-text-direction">Next:</span>
+                  <span class="pager--item-text-target"
+                    >Diverse Abilities and Barriers</span
+                  >
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <aside class="box box-icon box-space-above" id="helpimprove">
+          <header class="box-h box-h-icon box-h-space-above box-h-icon">
+            <svg focusable="false" aria-hidden="true" class="icon-comments">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-comments"
+              ></use>
+            </svg>
+            <h2>Help improve this page</h2>
+          </header>
+          <div class="box-i">
+            <p>
+              Please share your ideas, suggestions, or comments via e-mail to
+              the publicly-archived list
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=[en]%20Stories%20of%20Web%20Users"
+                >wai-eo-editors@w3.org</a
+              >
+              or via GitHub.
+            </p>
+            <div class="button-group">
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=[en]%20Stories%20of%20Web%20Users&body=[put%20comment%20here...]"
+                class="button"
+                ><span>E-mail</span></a
+              >
+              <a
+                href="https://github.com/w3c/wai-people-use-web/edit/master/_people-use-web/user-stories.md"
+                class="button"
+                ><span>Fork &amp; Edit on GitHub</span></a
+              ><a
+                href="https://github.com/w3c/wai-people-use-web/issues/new"
+                class="button"
+                ><span>New GitHub Issue</span></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg focusable="false" aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            Back to Top</span
+          ></a
+        >
+      </main>
+    </div>
+
+    <footer
+      id="wai-site-footer"
+      class="page-footer default-grid"
+      aria-label="Page"
+    >
+      <div class="inner">
+        <p><strong>Date:</strong> Updated 15 May 2017.</p>
+        <p>
+          <strong>Editors:</strong>
+          <a href="https://www.w3.org/People/shadi/">Shadi Abou_Zahra</a> and
+          Norah Sinclair. Previous editor:
+          <a href="https://www.w3.org/People/Brewer/">Judy Brewer</a>.
+          <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments"
+            >Acknowledgments</a
+          >.
+        </p>
+        <p>
+          Developed by the Education and Outreach Working Group (<a
+            href="http://www.w3.org/WAI/EO/"
+            >EOWG</a
+          >). Previously developed with the
+          <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf"
+            >WAI-AGE Task Force</a
+          >, with support of the
+          <a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE Project</a>.
+        </p>
+      </div>
+    </footer>
+
+    <footer class="site-footer grid-4q" aria-label="Site">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a
+              class="largelink"
+              href="https://www.w3.org/WAI/"
+              lang="en"
+              dir="auto"
+              translate="no"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>
+            Strategies, standards, and supporting resources to make the Web
+            accessible to people with disabilities.
+          </p>
+        </div>
+        <div class="social" lang="en" dir="auto" translate="no">
+          <ul>
+            <li>
+              <a href="https://twitter.com/w3c_wai"
+                ><svg focusable="false" aria-hidden="true" class="icon-twitter">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/feed.xml"
+                ><svg focusable="false" aria-hidden="true" class="icon-rss">
+                  <use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use>
+                </svg>
+                Feed</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"
+                ><svg focusable="false" aria-hidden="true" class="icon-youtube">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/news/subscribe/" class="button"
+                >Get News in Email</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div lang="en" dir="auto" translate="no">
+          <p>
+            Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn">Beihang</a>)
+            <a href="/WAI/about/using-wai-material/"
+              >Permission to Use WAI Material</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div lang="en" dir="auto" translate="no" class="q4-start q4-end">
+        <ul style="margin-bottom: 0">
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li>
+            <a href="/WAI/about/accessibility-statement/"
+              >Accessibility Statement</a
+            >
+          </li>
+          <li><a href="/WAI/translations/"> Translations</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script>
+      var translationStrings = {};
+    </script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </body>
 </html>

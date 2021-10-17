@@ -1,189 +1,457 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1633578570351143841"
+    />
 
-<title> Inaccessibility of CAPTCHA - W3C Note Update Published | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Inaccessibility of CAPTCHA - W3C Note Update Published" />
-<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
-<meta property="og:locale" content="en" />
-<meta name="description" content="Inaccessibility of CAPTCHA - Alternatives to Visual Turing Tests on the Web is published as an updated W3C Working Group Note. (CAPTCHA stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.) The Note examines potential solutions to test that users are human, not software robots, in a way that is accessible to people with disabilities. A summary, some background, and thanks to contributors is in a 23 August e-mail." />
-<meta property="og:description" content="Inaccessibility of CAPTCHA - Alternatives to Visual Turing Tests on the Web is published as an updated W3C Working Group Note. (CAPTCHA stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.) The Note examines potential solutions to test that users are human, not software robots, in a way that is accessible to people with disabilities. A summary, some background, and thanks to contributors is in a 23 August e-mail." />
-<link rel="canonical" href="https://www.w3.org/WAI/news/2019-08-23/inaccessibility-of-captcha/" />
-<meta property="og:url" content="https://www.w3.org/WAI/news/2019-08-23/inaccessibility-of-captcha/" />
-<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-08-23T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Inaccessibility of CAPTCHA - W3C Note Update Published" />
-<meta name="twitter:site" content="@w3c_wai" />
-<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
-<script type="application/ld+json">
-{"description":"Inaccessibility of CAPTCHA - Alternatives to Visual Turing Tests on the Web is published as an updated W3C Working Group Note. (CAPTCHA stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.) The Note examines potential solutions to test that users are human, not software robots, in a way that is accessible to people with disabilities. A summary, some background, and thanks to contributors is in a 23 August e-mail.","@type":"BlogPosting","headline":"Inaccessibility of CAPTCHA - W3C Note Update Published","dateModified":"2019-08-23T00:00:00+00:00","datePublished":"2019-08-23T00:00:00+00:00","url":"https://www.w3.org/WAI/news/2019-08-23/inaccessibility-of-captcha/","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/news/2019-08-23/inaccessibility-of-captcha/"},"author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+    <title>
+      Inaccessibility of CAPTCHA - W3C Note Update Published | Web Accessibility
+      Initiative (WAI) | W3C
+    </title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <meta name="generator" content="Jekyll v4.2.0" />
+    <meta
+      property="og:title"
+      content="Inaccessibility of CAPTCHA - W3C Note Update Published"
+    />
+    <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+    <meta property="og:locale" content="en" />
+    <meta
+      name="description"
+      content="Inaccessibility of CAPTCHA - Alternatives to Visual Turing Tests on the Web is published as an updated W3C Working Group Note. (CAPTCHA stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.) The Note examines potential solutions to test that users are human, not software robots, in a way that is accessible to people with disabilities. A summary, some background, and thanks to contributors is in a 23 August e-mail."
+    />
+    <meta
+      property="og:description"
+      content="Inaccessibility of CAPTCHA - Alternatives to Visual Turing Tests on the Web is published as an updated W3C Working Group Note. (CAPTCHA stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.) The Note examines potential solutions to test that users are human, not software robots, in a way that is accessible to people with disabilities. A summary, some background, and thanks to contributors is in a 23 August e-mail."
+    />
+    <link
+      rel="canonical"
+      href="https://www.w3.org/WAI/news/2019-08-23/inaccessibility-of-captcha/"
+    />
+    <meta
+      property="og:url"
+      content="https://www.w3.org/WAI/news/2019-08-23/inaccessibility-of-captcha/"
+    />
+    <meta
+      property="og:site_name"
+      content="Web Accessibility Initiative (WAI)"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="article:published_time"
+      content="2019-08-23T00:00:00+00:00"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Inaccessibility of CAPTCHA - W3C Note Update Published"
+    />
+    <meta name="twitter:site" content="@w3c_wai" />
+    <meta
+      name="twitter:creator"
+      content="@W3C Web Accessibility Initiative (WAI)"
+    />
+    <script type="application/ld+json">
+      {
+        "description": "Inaccessibility of CAPTCHA - Alternatives to Visual Turing Tests on the Web is published as an updated W3C Working Group Note. (CAPTCHA stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.) The Note examines potential solutions to test that users are human, not software robots, in a way that is accessible to people with disabilities. A summary, some background, and thanks to contributors is in a 23 August e-mail.",
+        "@type": "BlogPosting",
+        "headline": "Inaccessibility of CAPTCHA - W3C Note Update Published",
+        "dateModified": "2019-08-23T00:00:00+00:00",
+        "datePublished": "2019-08-23T00:00:00+00:00",
+        "url": "https://www.w3.org/WAI/news/2019-08-23/inaccessibility-of-captcha/",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.w3.org/WAI/news/2019-08-23/inaccessibility-of-captcha/"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "W3C Web Accessibility Initiative (WAI)"
+        },
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
+    <meta
+      name="twitter:image"
+      property="og:image"
+      content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg"
+    />
 
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
-</head>
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+  </head>
 
-  <body id="top" class="page-inaccessibility-of-captcha-w3c-note-update-published resource-posts">
-    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
-  <ul>
+  <body
+    id="top"
+    class="
+      page-inaccessibility-of-captcha-w3c-note-update-published
+      resource-posts
+    "
+  >
+    <nav
+      aria-label="Skip Link and Language Selector"
+      id="controls"
+      class="default-grid"
+    >
+      <ul>
         <li><a href="#main">Skip to Content</a></li>
         <li class="opt">
           <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
         </li>
         <li class="opt">
-            <a href="/WAI/translations/">All Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/"
+            >All Translations
+            <svg focusable="false" aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
         </li>
-      </ul></nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
- 
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
-  </div>
-
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">Search:</span>
-              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
-            </label>
-            
-            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
-          </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="Main" lang="en"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
-  <ul style="align-self: center;">
-    <li><a href="/WAI/" lang="en">Home</a></li><li><a href="/WAI/news/">News</a></li><li>
-                    <a aria-current="page" href="/WAI/news/2019-08-23/inaccessibility-of-captcha/">Inaccessibility of CAPTCHA - W3C Note Update Published</a>
-                </li></ul>
-</nav>
-    <div class="default-grid with-gap leftcol">
-
-  
-    <div class="sidenav">
-</div>
-  
-
-  <main id="main" lang="en">
-
-      
-
-    
-    <header>
-      <h1>
-      
-      
-      
-        Inaccessibility of CAPTCHA - W3C Note Update Published
-      
-      </h1></header>
-    <p><a href="https://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA - Alternatives to Visual Turing Tests on the Web</a> is published as an updated W3C Working Group Note. (CAPTCHA stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.) The Note examines potential solutions to test that users are human, not software robots, in a way that is accessible to people with disabilities.  A summary, some background, and thanks to contributors is in a <a href="https://lists.w3.org/Archives/Public/public-wai-announce/2019JulSep/0003.html">23 August e-mail</a>.</p>
-
-
-    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Inaccessibility%20of%20CAPTCHA%20-%20W3C%20Note%20Update%20Published">wai-eo-editors@w3.org</a> or via GitHub.</p>
-<div class="button-group">
-    <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Inaccessibility%20of%20CAPTCHA%20-%20W3C%20Note%20Update%20Published&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/wai-news/edit/master/_posts/2019-08-23-inaccessibility-of-captcha.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-news/issues/new" class="button"><span>New GitHub Issue</span></a>
-</div></div></aside>
-
-
-    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
-  </main>
-</div>
-
-
-  
-
-
-<footer class="site-footer grid-4q" aria-label="Site">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
-    </div>
-    <div class="social" lang="en" dir="auto" translate="no">
-      <ul>
-        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
-        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
-        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
-        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
-    <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
-    </div>
-  </div>
-  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
-    <ul style="margin-bottom:0">
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-      <li><a href="/WAI/translations/"> Translations</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
-<script>
-  svg4everybody();
-</script><script>
-  var translationStrings = {};
-</script>
-<!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    </nav>
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span
+            >Strategies, standards, resources to make the Web accessible to
+            people with disabilities</span
+          >
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg focusable="false" aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            Menu</span
+          >
+        </button>
+      </div>
 
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">Search:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </label>
 
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg
+                        focusable="false"
+                        aria-label="Submit Search"
+                        class="icon-search"
+                      >
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="Main" lang="en">
+      <ul>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/planning/"
+            ><span>Planning &amp; Policies</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/design-develop/"
+            ><span>Design &amp; Develop</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/test-evaluate/"
+            ><span>Test &amp; Evaluate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/teach-advocate/"
+            ><span>Teach &amp; Advocate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+      <ul style="align-self: center">
+        <li><a href="/WAI/" lang="en">Home</a></li>
+        <li><a href="/WAI/news/">News</a></li>
+        <li>
+          <a
+            aria-current="page"
+            href="/WAI/news/2019-08-23/inaccessibility-of-captcha/"
+            >Inaccessibility of CAPTCHA - W3C Note Update Published</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="default-grid with-gap leftcol">
+      <div class="sidenav"></div>
+
+      <main id="main" lang="en">
+        <header>
+          <h1>Inaccessibility of CAPTCHA - W3C Note Update Published</h1>
+        </header>
+        <p>
+          <a href="https://www.w3.org/TR/turingtest/"
+            >Inaccessibility of CAPTCHA - Alternatives to Visual Turing Tests on
+            the Web</a
+          >
+          is published as an updated W3C Working Group Note. (CAPTCHA stands for
+          Completely Automated Public Turing Test to Tell Computers and Humans
+          Apart.) The Note examines potential solutions to test that users are
+          human, not software robots, in a way that is accessible to people with
+          disabilities. A summary, some background, and thanks to contributors
+          is in a
+          <a
+            href="https://lists.w3.org/Archives/Public/public-wai-announce/2019JulSep/0003.html"
+            >23 August e-mail</a
+          >.
+        </p>
+
+        <aside class="box box-icon box-space-above" id="helpimprove">
+          <header class="box-h box-h-icon box-h-space-above box-h-icon">
+            <svg focusable="false" aria-hidden="true" class="icon-comments">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-comments"
+              ></use>
+            </svg>
+            <h2>Help improve this page</h2>
+          </header>
+          <div class="box-i">
+            <p>
+              Please share your ideas, suggestions, or comments via e-mail to
+              the publicly-archived list
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=[en]%20Inaccessibility%20of%20CAPTCHA%20-%20W3C%20Note%20Update%20Published"
+                >wai-eo-editors@w3.org</a
+              >
+              or via GitHub.
+            </p>
+            <div class="button-group">
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=[en]%20Inaccessibility%20of%20CAPTCHA%20-%20W3C%20Note%20Update%20Published&body=[put%20comment%20here...]"
+                class="button"
+                ><span>E-mail</span></a
+              >
+              <a
+                href="https://github.com/w3c/wai-news/edit/master/_posts/2019-08-23-inaccessibility-of-captcha.md"
+                class="button"
+                ><span>Fork &amp; Edit on GitHub</span></a
+              ><a
+                href="https://github.com/w3c/wai-news/issues/new"
+                class="button"
+                ><span>New GitHub Issue</span></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg focusable="false" aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            Back to Top</span
+          ></a
+        >
+      </main>
+    </div>
+
+    <footer class="site-footer grid-4q" aria-label="Site">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a
+              class="largelink"
+              href="https://www.w3.org/WAI/"
+              lang="en"
+              dir="auto"
+              translate="no"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>
+            Strategies, standards, and supporting resources to make the Web
+            accessible to people with disabilities.
+          </p>
+        </div>
+        <div class="social" lang="en" dir="auto" translate="no">
+          <ul>
+            <li>
+              <a href="https://twitter.com/w3c_wai"
+                ><svg focusable="false" aria-hidden="true" class="icon-twitter">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/feed.xml"
+                ><svg focusable="false" aria-hidden="true" class="icon-rss">
+                  <use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use>
+                </svg>
+                Feed</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"
+                ><svg focusable="false" aria-hidden="true" class="icon-youtube">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/news/subscribe/" class="button"
+                >Get News in Email</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div lang="en" dir="auto" translate="no">
+          <p>
+            Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn">Beihang</a>)
+            <a href="/WAI/about/using-wai-material/"
+              >Permission to Use WAI Material</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div lang="en" dir="auto" translate="no" class="q4-start q4-end">
+        <ul style="margin-bottom: 0">
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li>
+            <a href="/WAI/about/accessibility-statement/"
+              >Accessibility Statement</a
+            >
+          </li>
+          <li><a href="/WAI/translations/"> Translations</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script>
+      var translationStrings = {};
+    </script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </body>
 </html>

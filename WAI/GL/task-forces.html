@@ -1,190 +1,407 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
-	<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!--<title>$TITLE$ | Web Accessibility Initiative (WAI) | W3C</title>-->
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<title>$TITLE$ | Web Accessibility Initiative (WAI) | W3C</title>-->
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1529058420027996000";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1529058420027996000";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
 
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1529058420027996000" />
-  <meta name="author" content="w3c_wai" />
-  <meta property="og:locale" content="en_US" />
-  <meta name="description" content="The Website of the World Wide Web Consortium�s Web Accessibility Initiative." />
-  <meta property="og:description" content="The Website of the World Wide Web Consortium�s Web Accessibility Initiative." />
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
-		<title>AG Task Forces</title>
-	</head>
-	<body>
-<nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
-  <ul>
-    <li><a href="#main">Skip to Content</a></li>
-    <li class="opt">
-      <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
-    </li>
-    <li class="opt">
-        <a href="/WAI/translations/">All Translations <svg aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
-    </li>
-  </ul>
-</nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
-  
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
-  </div>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1529058420027996000"
+    />
+    <meta name="author" content="w3c_wai" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      name="description"
+      content="The Website of the World Wide Web Consortium�s Web Accessibility Initiative."
+    />
+    <meta
+      property="og:description"
+      content="The Website of the World Wide Web Consortium�s Web Accessibility Initiative."
+    />
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+    <title>AG Task Forces</title>
+  </head>
+  <body>
+    <nav
+      aria-label="Skip Link and Language Selector"
+      id="controls"
+      class="default-grid"
+    >
+      <ul>
+        <li><a href="#main">Skip to Content</a></li>
+        <li class="opt">
+          <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/"
+            >All Translations
+            <svg aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span
+            >Strategies, standards, resources to make the Web accessible to
+            people with disabilities</span
+          >
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            Menu</span
+          >
+        </button>
+      </div>
 
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">Search:</span>
-              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="search">
-            </label>
-            <button class="button button-icon button-nobg button-noborder"><span><svg aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">Search:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="Search"
+                      aria-label="search"
+                    />
+                  </label>
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg aria-label="Submit Search" class="icon-search">
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="Main">
+      <ul>
+        <li>
+          <a href="/WAI/fundamentals/accessibility-intro/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a href="/WAI/planning/"><span>Planning &amp; Policies</span></a>
+        </li>
+        <li>
+          <a href="/WAI/design-develop/"><span>Design &amp; Develop</span></a>
+        </li>
+        <li>
+          <a href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a>
+        </li>
+        <li>
+          <a href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a>
+        </li>
+        <li>
+          <a href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <nav class="breadcrumb default-grid" aria-label="Breadcrumb">
+      <ul class="default-container">
+        <li><a href="/WAI/">Home</a></li>
+        <li>
+          <a href="/WAI/about/">About W3C WAI</a>
+        </li>
+        <li>
+          <a href="/WAI/about/groups/"
+            >WAI Working Groups and Interest Groups</a
+          >
+        </li>
+        <li>
+          <a aria-current="page" href="/WAI/GL/"
+            >Accessibility Guidelines (AG) WG</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="default-grid with-gap leftcol">
+      <nav
+        class="sidenav sn-contents"
+        aria-label="Other Pages in this Resource"
+      >
+        <div class="sidenav--head">
+          <div class="sidenav--head-title">
+            <div class="sidenav--head-subsection">AG WG</div>
           </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="Main"><ul><li>
-    <a href="/WAI/fundamentals/accessibility-intro/"><span>Accessibility Fundamentals</span></a>
-  </li><li>
-    <a href="/WAI/planning/"><span>Planning &amp; Policies</span></a>
-  </li><li>
-    <a href="/WAI/design-develop/"><span>Design &amp; Develop</span></a>
-  </li><li>
-    <a href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a>
-  </li><li>
-    <a href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a>
-  </li><li>
-    <a href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a>
-  </li></ul></nav><nav class="breadcrumb default-grid" aria-label="Breadcrumb">
-  <ul class="default-container">
-    <li><a href="/WAI/">Home</a></li>
-    <li>
-        <a href="/WAI/about/">About W3C WAI</a>
-    </li><li>
-        <a href="/WAI/about/groups/">WAI Working Groups and Interest Groups</a>
-    </li><li>
-        <a aria-current="page" href="/WAI/GL/">Accessibility Guidelines (AG) WG</a>
-    </li></ul>
-</nav>
+        </div>
+        <ul class="sidenav--list">
+          <li><a class="page-link" href="/WAI/GL/charter">Charter</a></li>
+          <li>
+            <a class="page-link" href="/WAI/GL/task-forces/" aria-current="page"
+              >Task Forces</a
+            >
+          </li>
+          <li>
+            <a class="page-link" href="/WAI/GL/decision-policy"
+              >Decision Policy</a
+            >
+          </li>
+          <li>
+            <a class="page-link" href="/WAI/GL/project"
+              >Deliverables and Status</a
+            >
+          </li>
+          <li>
+            <a class="page-link" href="/WAI/GL/communication">Communication</a>
+          </li>
+          <li>
+            <a class="page-link" href="/WAI/GL/participation"
+              >How to Participate (Join)</a
+            >
+          </li>
+          <li>
+            <a
+              class="page-link"
+              href="https://www.w3.org/2000/09/dbwg/details?group=35422&public=1"
+              >Current Participants</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-<div class="default-grid with-gap leftcol">
+      <main id="main" class="tight-page">
+        <h1>AG Task Forces</h1>
 
-  <nav class="sidenav sn-contents" aria-label="Other Pages in this Resource">
-  <div class="sidenav--head"><div class="sidenav--head-title"><div class="sidenav--head-subsection">AG WG</div>
+        <p>
+          The Accessibility Guidelines Working Group conducts some of its work
+          via the following task forces. See each task force page for details
+          about specific work and how to join.
+        </p>
+        <p>
+          Task force facilitators
+          <a href="https://www.w3.org/2017/08/telecon-info_ag-facilitators"
+            >meet the first Wednesday of the month</a
+          >
+          for coordination. Task force coordination is maintained in the
+          <a
+            href="https://docs.google.com/document/d/1JF29AuO-Dv8MVR6cqnh4aGMgUztiM9ZnCPI0nn79uNk/edit?usp=sharing"
+            >AG Facilitators Google doc</a
+          >.
+        </p>
+
+        <section id="act">
+          <h2>Accessibility Conformance Testing (ACT) Task Force</h2>
+          <p>
+            The
+            <a href="conformance-testing/"
+              >Accessibility Conformance Testing Task Force</a
+            >
+            will develop a framework and repository of test rules, to promote a
+            unified interpretation of WCAG 2.0 among different web accessibility
+            test tools. The framework will also allow the development of custom
+            test rules to meet company requirements and best practices. While
+            this framework will add a layer of implemention for tool developers,
+            it provides more consistency and comparability of the resulting test
+            rules.
+          </p>
+        </section>
+
+        <section id="coga">
+          <h2>Cognitive and Learning Disabilities Accessibility Task Force</h2>
+          <p>
+            The
+            <a href="coga/"
+              >Cognitive and Learning Disabilities Accessibility Task Force</a
+            >
+            will develop draft proposed guidance and techniques to make web
+            content, content authoring, and user agent implementation accessible
+            and more useable by people with cognitive and learning disabilities.
+          </p>
+        </section>
+
+        <section id="lvtf">
+          <h2>Low Vision Accessibility Task Force</h2>
+          <p>
+            The
+            <a href="low-vision-a11y-tf/"
+              >Low Vision Accessibility Task Force</a
+            >
+            will identify issues and specify solutions to web accessibility
+            issues specific to users with low vision via WCAG 2.0 techniques,
+            understanding and guidance documents, and as needed to produce
+            extensions to WCAG 2.0.
+          </p>
+        </section>
+
+        <section id="mobile">
+          <h2>Mobile Accessibility Task Force</h2>
+          <p>
+            The
+            <a href="/WAI/GL/mobile-a11y-tf/"
+              >Mobile Accessibility Task Force</a
+            >
+            produce techniques, understanding and guidance documents as well as
+            updates to existing related W3C / WAI material that addresses the
+            mobile space.
+          </p>
+        </section>
+
+        <section id="silver">
+          <h2>Silver Task Force</h2>
+          <p>
+            The <a href="silver/">Silver Task Force</a> will perform preliminary
+            development of a new version of Accessibility Guidelines following a
+            research-focused, user-centered design methodology to produce the
+            most effective and flexible outcome. These guidelines will address
+            the process of making content and functionality accessible to people
+            with disabilities, including the roles of content authoring, user
+            agent support, and authoring tool support. These guidelines will
+            address current technological and cultural web accessibility
+            requirements and provide a base for continued evolution of the
+            guidelines. Also see the related
+            <a href="https://www.w3.org/community/silver/"
+              >Silver Community Group</a
+            >.
+          </p>
+        </section>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            Back to Top</span
+          ></a
+        >
+      </main>
     </div>
-  </div>
-  <ul class="sidenav--list">
-  <li><a class="page-link" href="/WAI/GL/charter">Charter</a></li><li><a class="page-link" href="/WAI/GL/task-forces/" aria-current="page">Task Forces</a></li><li><a class="page-link" href="/WAI/GL/decision-policy">Decision Policy</a></li><li><a class="page-link" href="/WAI/GL/project">Deliverables and Status</a></li><li><a class="page-link" href="/WAI/GL/communication">Communication</a></li><li><a class="page-link" href="/WAI/GL/participation">How to Participate (Join)</a></li><li><a class="page-link" href="https://www.w3.org/2000/09/dbwg/details?group=35422&public=1">Current Participants</a></li>  </ul>
-</nav>
 
-  <main id="main" class="tight-page">
-
-		<h1>AG Task Forces</h1>
-
-		<p>The Accessibility Guidelines Working Group conducts some of its work via the following task forces. See each task force page for details about specific work and how to join.</p>
-		<p>Task force facilitators <a href="https://www.w3.org/2017/08/telecon-info_ag-facilitators">meet the first Wednesday of the month</a> for coordination. Task force coordination is maintained in the <a href="https://docs.google.com/document/d/1JF29AuO-Dv8MVR6cqnh4aGMgUztiM9ZnCPI0nn79uNk/edit?usp=sharing">AG Facilitators Google doc</a>.</p>
-
-		<section id="act">
-			<h2>Accessibility Conformance Testing (ACT) Task Force</h2>
-			<p>The <a href="conformance-testing/">Accessibility Conformance Testing Task Force</a> will develop a framework and repository of test rules, to promote a unified interpretation of WCAG 2.0 among different web accessibility test tools. The framework will also allow the development of custom test rules to meet company requirements and best practices. While this framework will add a layer of implemention for tool developers, it provides more consistency and comparability of the resulting test rules.</p>
-		</section>
-
-		<section id="coga">
-		<h2>Cognitive and Learning Disabilities Accessibility Task Force</h2>
-		<p>The <a href="coga/">Cognitive and Learning Disabilities Accessibility Task Force</a> will develop draft proposed guidance and techniques to make web content, content authoring, and user agent implementation accessible and more useable by people with cognitive and learning disabilities. </p>
-		</section>
-
-		<section id="lvtf">
-		<h2>Low Vision Accessibility Task Force</h2>
-		<p>The <a href="low-vision-a11y-tf/">Low Vision Accessibility Task Force</a> will  identify issues and specify solutions to web accessibility issues specific to users with low vision via WCAG 2.0 techniques, understanding and guidance documents, and as needed to produce extensions to WCAG 2.0.</p>
-		</section>
-
-		<section id="mobile">
-		<h2>Mobile Accessibility Task Force</h2>
-		<p>The <a href="/WAI/GL/mobile-a11y-tf/">Mobile Accessibility Task Force</a> produce techniques, understanding and guidance documents as well as updates to existing related W3C / WAI material that addresses the mobile space.</p>
-		</section>
-
-		<section id="silver">
-		<h2>Silver Task Force</h2>
-			<p>The <a href="silver/">Silver Task Force</a> will perform preliminary development of a new version of Accessibility Guidelines following a research-focused, user-centered design methodology to produce the most effective and flexible outcome. These guidelines will address the process of making content and functionality accessible to people with disabilities, including the roles of content authoring, user agent support, and authoring tool support. These guidelines will address current technological and cultural web accessibility requirements and provide a base for continued evolution of the guidelines. Also see the related <a href="https://www.w3.org/community/silver/">Silver Community Group</a>.</p>
-		</section>
-
-    <a class="button button-backtotop" href="#top"><span><svg aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
-  </main>
-</div>
-
-
-
-
-
-<footer class="site-footer grid-4q">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
-    </div>
-    <div>
-      <p>Copyright &#xA9; 2018 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
-    </div>
-  </div>
-  <div class="q4-start q4-end">
-    <ul>
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1529058420027996000"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1529058420027996000"></script>
-<script>
-  svg4everybody();
-</script>
-<!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
-
-	</body>
+    <footer class="site-footer grid-4q">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a class="largelink" href="https://w3.org/WAI/"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>
+            Strategies, standards, and supporting resources to make the Web
+            accessible to people with disabilities.
+          </p>
+        </div>
+        <div>
+          <p>
+            Copyright &#xA9; 2018 W3C <sup>&#xAE;</sup> (<a
+              href="http://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="http://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="http://www.keio.ac.jp/">Keio</a>,
+            <a href="http://ev.buaa.edu.cn/">Beihang</a>)
+            <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.
+          </p>
+        </div>
+      </div>
+      <div class="q4-start q4-end">
+        <ul>
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1529058420027996000"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1529058420027996000"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
+  </body>
 </html>

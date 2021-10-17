@@ -1,265 +1,865 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1633578570351143841"
+    />
 
-<title> How People with Disabilities Use the Web | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="How People with Disabilities Use the Web" />
-<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
-<meta property="og:locale" content="en" />
-<meta name="description" content="Introduces how people with disabilities, including people with age-related impairments, use the Web." />
-<meta property="og:description" content="Introduces how people with disabilities, including people with age-related impairments, use the Web." />
-<link rel="canonical" href="https://www.w3.org/WAI/people-use-web/" />
-<meta property="og:url" content="https://www.w3.org/WAI/people-use-web/" />
-<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-people-use-web/social.png" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-10-07T03:49:30+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-people-use-web/social.png" />
-<meta property="twitter:title" content="How People with Disabilities Use the Web" />
-<meta name="twitter:site" content="@w3c_wai" />
-<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
-<script type="application/ld+json">
-{"description":"Introduces how people with disabilities, including people with age-related impairments, use the Web.","@type":"BlogPosting","image":"https://www.w3.org/WAI/content-images/wai-people-use-web/social.png","headline":"How People with Disabilities Use the Web","dateModified":"2021-10-07T03:49:30+00:00","datePublished":"2021-10-07T03:49:30+00:00","url":"https://www.w3.org/WAI/people-use-web/","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/people-use-web/"},"author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+    <title>
+      How People with Disabilities Use the Web | Web Accessibility Initiative
+      (WAI) | W3C
+    </title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <meta name="generator" content="Jekyll v4.2.0" />
+    <meta
+      property="og:title"
+      content="How People with Disabilities Use the Web"
+    />
+    <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+    <meta property="og:locale" content="en" />
+    <meta
+      name="description"
+      content="Introduces how people with disabilities, including people with age-related impairments, use the Web."
+    />
+    <meta
+      property="og:description"
+      content="Introduces how people with disabilities, including people with age-related impairments, use the Web."
+    />
+    <link rel="canonical" href="https://www.w3.org/WAI/people-use-web/" />
+    <meta property="og:url" content="https://www.w3.org/WAI/people-use-web/" />
+    <meta
+      property="og:site_name"
+      content="Web Accessibility Initiative (WAI)"
+    />
+    <meta
+      property="og:image"
+      content="https://www.w3.org/WAI/content-images/wai-people-use-web/social.png"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="article:published_time"
+      content="2021-10-07T03:49:30+00:00"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image"
+      content="https://www.w3.org/WAI/content-images/wai-people-use-web/social.png"
+    />
+    <meta
+      property="twitter:title"
+      content="How People with Disabilities Use the Web"
+    />
+    <meta name="twitter:site" content="@w3c_wai" />
+    <meta
+      name="twitter:creator"
+      content="@W3C Web Accessibility Initiative (WAI)"
+    />
+    <script type="application/ld+json">
+      {
+        "description": "Introduces how people with disabilities, including people with age-related impairments, use the Web.",
+        "@type": "BlogPosting",
+        "image": "https://www.w3.org/WAI/content-images/wai-people-use-web/social.png",
+        "headline": "How People with Disabilities Use the Web",
+        "dateModified": "2021-10-07T03:49:30+00:00",
+        "datePublished": "2021-10-07T03:49:30+00:00",
+        "url": "https://www.w3.org/WAI/people-use-web/",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.w3.org/WAI/people-use-web/"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "W3C Web Accessibility Initiative (WAI)"
+        },
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
 
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+  </head>
 
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
-</head>
-
-  <body id="top" class="page-how-people-with-disabilities-use-the-web resource-people-use-web">
-    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
-  <ul>
-      <li><a href="#main">Skip to Content</a></li>
-      <li class="opt"><a href="/WAI/meta/customize/">Change Text Size or Colors</a></li>
-      <li class="opt languagelist">
+  <body
+    id="top"
+    class="
+      page-how-people-with-disabilities-use-the-web
+      resource-people-use-web
+    "
+  >
+    <nav
+      aria-label="Skip Link and Language Selector"
+      id="controls"
+      class="default-grid"
+    >
+      <ul>
+        <li><a href="#main">Skip to Content</a></li>
+        <li class="opt">
+          <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
+        </li>
+        <li class="opt languagelist">
           <strong>This&nbsp;page&nbsp;in:</strong>
-          <ul class="languagelistul"><li><strong style="text-transform: capitalize;">English</strong></li><li><a style="text-transform: capitalize;" href="/WAI/people-use-web/es" lang="es"  dir="auto" translate="no">español</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/people-use-web/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          <ul class="languagelistul">
+            <li><strong style="text-transform: capitalize">English</strong></li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/people-use-web/es"
+                lang="es"
+                dir="auto"
+                translate="no"
+                >español</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/people-use-web/fr"
+                lang="fr"
+                dir="auto"
+                translate="no"
+                >français</a
+              >
+            </li>
           </ul>
         </li>
         <li class="opt">
-          <a href="/WAI/translations/">All&nbsp;Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/"
+            >All&nbsp;Translations
+            <svg focusable="false" aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
         </li>
-        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations' data-hidetext='Hide Options'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations</button></li>
+        <li>
+          <button
+            id="showoptions"
+            data-showhidebuttonid="header-showoptions"
+            class="showhidebutton button-inline"
+            data-target="#controls .opt"
+            aria-expanded="false"
+            data-large-aria-expanded="true"
+            data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations'
+            data-hidetext="Hide Options"
+          >
+            <svg focusable="false" aria-hidden="true" class="icon-languages">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-languages"
+              ></use>
+            </svg>
+            Show Customization, Languages, Translations
+          </button>
+        </li>
       </ul>
     </nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
- 
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
-  </div>
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span
+            >Strategies, standards, resources to make the Web accessible to
+            people with disabilities</span
+          >
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg focusable="false" aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            Menu</span
+          >
+        </button>
+      </div>
 
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">Search:</span>
-              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
-            </label>
-            
-            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
-          </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="Main" lang="en"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
-  <ul style="align-self: center;">
-    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/people-use-web/" aria-current="page"><span>How People with Disabilities Use the Web</span></a></li></ul>
-</nav>
-    <div class="default-grid with-gap leftcol">
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">Search:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </label>
 
-  
-    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
-      <ul class="sidenav--list">
-  <li>
-  <a lang="en" href="/WAI/fundamentals/" class="page-link"><span>Accessibility Fundamentals</span></a></li><li>
-  <a lang="en" href="/WAI/fundamentals/accessibility-intro/" class="page-link"><span>Introduction to Accessibility</span></a><ul><li>
-  <a lang="en" href="/WAI/videos/standards-and-benefits/" class="page-link"><span>Video Introduction</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/fundamentals/foundations-course/" class="page-link"><span>Foundations Online Course</span></a></li><li>
-  <a lang="en" href="/WAI/fundamentals/components/" class="page-link"><span>Components of Web Accessibility</span></a></li><li>
-  <a lang="en" href="/WAI/fundamentals/accessibility-principles/" class="page-link"><span>Accessibility Principles</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/" class="page-link"><span>Perspectives Videos</span></a><ul><li>
-  <a lang="en" href="/WAI/perspective-videos/keyboard/" class="page-link"><span>Keyboard Compatibility</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/contrast/" class="page-link"><span>Colors with Good Contrast</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/layout/" class="page-link"><span>Clear Layout and Design</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/speech/" class="page-link"><span>Text to Speech</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/controls/" class="page-link"><span>Large Links, Buttons, and Controls</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/captions/" class="page-link"><span>Video Captions</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/customizable/" class="page-link"><span>Customizable Text</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/voice/" class="page-link"><span>Speech Recognition</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/understandable/" class="page-link"><span>Understandable Content</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/notifications/" class="page-link"><span>Notifications and Feedback</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/people-use-web/" aria-current="page" class="page-link"><span>How People with Disabilities Use the Web</span></a><ul><li>
-  <a lang="en" href="/WAI/people-use-web/user-stories/" class="page-link"><span>Stories of Web Users</span></a></li><li>
-  <a lang="en" href="/WAI/people-use-web/abilities-barriers/" class="page-link"><span>Diverse Abilities and Barriers</span></a></li><li>
-  <a lang="en" href="/WAI/people-use-web/tools-techniques/" class="page-link"><span>Tools and Techniques</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/older-users/" class="page-link"><span>Older Users and Accessibility</span></a><ul><li>
-  <a lang="en" href="/WAI/older-users/developing/" class="page-link"><span>How WCAG 2 Applies</span></a></li><li>
-  <a lang="en" href="/WAI/older-users/literature/" class="page-link"><span>Literature Review</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/fundamentals/accessibility-usability-inclusion/" class="page-link"><span>Accessibility, Usability, Inclusion</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
-        <header id="languagehead">Languages/Translations</header>
-        <ul class="langlist">
-          <li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">English (original)</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/people-use-web/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/people-use-web/fr" dir="auto" translate="no" lang="fr">français</a></li></ul>
-        <p><a href="/WAI/translations/">All&nbsp;Translations</a></p>
-        <p><a href="/WAI/about/translating/">Translating WAI Resources</a></p>
-      </nav>
-</div>
-  
-
-  <main id="main" lang="en">
-
-      
-
-    
-    <header class="in-resource">
-      <h1>
-        
-        
-        
-          How People with Disabilities Use the Web
-        </h1></header>
-    <h2 id="introduction" class="no-display">Introduction</h2>
-
-<p><em>How do people who cannot move their arms use your website? What about people who cannot see well or at all? Or people who have difficulty hearing or understanding, or have other disabilities?</em></p>
-
-<p>This resource introduces how people with disabilities, including people with age-related impairments, use the Web. It describes tools and approaches that people with different kinds of disabilities use to browse the Web and the barriers they encounter due to poor design. It helps developers, designers, and others to understand the principles for creating accessible websites, web applications, browsers, and other web tools.</p>
-
-<h2 id="this-resource-includes-the-following-pages">This resource includes the following pages</h2>
-
-<ul>
-  <li><strong><a href="/WAI/people-use-web/user-stories/">Stories of Web Users</a></strong> – stories of selected scenarios of people with disabilities using the Web, to highlight the effect of barriers and the broader benefits of accessible websites and web tools.</li>
-  <li><strong><a href="/WAI/people-use-web/abilities-barriers/">Diverse Abilities and Barriers</a></strong> – explores the wide range of diversity of people and abilities, and highlights some     of the types of barriers that people commonly encounter due to inaccessible design.</li>
-  <li><strong><a href="/WAI/people-use-web/tools-techniques/">Tools and Techniques</a></strong> – introduces some of the techniques and tools that people with disabilities use to interact with the Web, such as browser settings, text-to-speech, voice recognition, and many more.</li>
-</ul>
-
-<h2 id="related-resources">Related resources</h2>
-
-<ul>
-  <li><strong><a href="/WAI/fundamentals/accessibility-principles/">Accessibility Principles</a></strong> - introduces some of the web accessibility requirements and provides references to the international accessibility standards from the W3C Web Accessibility Initiative (WAI).</li>
-  <li><strong><a href="/WAI/perspective-videos/">Web Accessibility Perspectives Videos: Explore the Impact and Benefits for Everyone</a></strong> – short videos highlighting accessibility features that are essential to people with disabilities and useful for all.</li>
-  <li><strong><a href="http://www.w3.org/WAI/users/browsing">Better Web Browsing</a></strong> - tips on how to customize your particular web browser and computer setup to benefit from accessibility features.</li>
-</ul>
-
-
-
-    <nav class="pager" aria-label="Previous/Next Page">
-  <ul><li class="pager--item next">
-      <a href="/WAI/people-use-web/user-stories/">
-        <svg focusable="false" aria-hidden="true" class="icon-arrow-right pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-right"></use></svg>
-        <span class="pager--item-text">
-          <span class="pager--item-text-direction">Next:</span>
-          <span class="pager--item-text-target">Stories of Web Users</span>
-        </span>
-      </a>
-    </li>
-  </ul></nav><aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20How%20People%20with%20Disabilities%20Use%20the%20Web">wai-eo-editors@w3.org</a> or via GitHub.</p>
-<div class="button-group">
-    <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20How%20People%20with%20Disabilities%20Use%20the%20Web&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/wai-people-use-web/edit/master/_people-use-web/index.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-people-use-web/issues/new" class="button"><span>New GitHub Issue</span></a>
-</div></div></aside>
-
-
-    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
-  </main>
-</div>
-
-
-  
-  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-    <div class="inner" 
-      >
-      <p><strong>Date:</strong> Updated 15 May 2017.</p> <p><strong>Editors:</strong> <a href="https://www.w3.org/People/shadi/">Shadi Abou_Zahra</a>. Previous editor: <a href="https://www.w3.org/People/Brewer/">Judy Brewer</a>. <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments">Acknowledgments</a>.</p> <p>Developed by the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Previously developed with the <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf">WAI-AGE Task Force</a>, with support of the <a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE Project</a>.</p>
-</div>
-  </footer>
-  
-
-
-<footer class="site-footer grid-4q" aria-label="Site">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
-    </div>
-    <div class="social" lang="en" dir="auto" translate="no">
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg
+                        focusable="false"
+                        aria-label="Submit Search"
+                        class="icon-search"
+                      >
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="Main" lang="en">
       <ul>
-        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
-        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
-        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
-        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/planning/"
+            ><span>Planning &amp; Policies</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/design-develop/"
+            ><span>Design &amp; Develop</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/test-evaluate/"
+            ><span>Test &amp; Evaluate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/teach-advocate/"
+            ><span>Teach &amp; Advocate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
       </ul>
-    </div>
-    <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
-    </div>
-  </div>
-  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
-    <ul style="margin-bottom:0">
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-      <li><a href="/WAI/translations/"> Translations</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
-<script>
-  svg4everybody();
-</script><script>
-  var translationStrings = {};
-</script>
-<!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    </nav>
+    <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+      <ul style="align-self: center">
+        <li><a href="/WAI/" lang="en">Home</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/people-use-web/" aria-current="page"
+            ><span>How People with Disabilities Use the Web</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="default-grid with-gap leftcol">
+      <div class="sidenav">
+        <nav class="sn-contents" aria-label="Secondary">
+          <ul class="sidenav--list">
+            <li>
+              <a lang="en" href="/WAI/fundamentals/" class="page-link"
+                ><span>Accessibility Fundamentals</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/accessibility-intro/"
+                class="page-link"
+                ><span>Introduction to Accessibility</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/videos/standards-and-benefits/"
+                    class="page-link"
+                    ><span>Video Introduction</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/foundations-course/"
+                class="page-link"
+                ><span>Foundations Online Course</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/components/"
+                class="page-link"
+                ><span>Components of Web Accessibility</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/accessibility-principles/"
+                class="page-link"
+                ><span>Accessibility Principles</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/perspective-videos/" class="page-link"
+                ><span>Perspectives Videos</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/keyboard/"
+                    class="page-link"
+                    ><span>Keyboard Compatibility</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/contrast/"
+                    class="page-link"
+                    ><span>Colors with Good Contrast</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/layout/"
+                    class="page-link"
+                    ><span>Clear Layout and Design</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/speech/"
+                    class="page-link"
+                    ><span>Text to Speech</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/controls/"
+                    class="page-link"
+                    ><span>Large Links, Buttons, and Controls</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/captions/"
+                    class="page-link"
+                    ><span>Video Captions</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/customizable/"
+                    class="page-link"
+                    ><span>Customizable Text</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/voice/"
+                    class="page-link"
+                    ><span>Speech Recognition</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/understandable/"
+                    class="page-link"
+                    ><span>Understandable Content</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/notifications/"
+                    class="page-link"
+                    ><span>Notifications and Feedback</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/people-use-web/"
+                aria-current="page"
+                class="page-link"
+                ><span>How People with Disabilities Use the Web</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/user-stories/"
+                    class="page-link"
+                    ><span>Stories of Web Users</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/abilities-barriers/"
+                    class="page-link"
+                    ><span>Diverse Abilities and Barriers</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/tools-techniques/"
+                    class="page-link"
+                    ><span>Tools and Techniques</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/older-users/" class="page-link"
+                ><span>Older Users and Accessibility</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/older-users/developing/"
+                    class="page-link"
+                    ><span>How WCAG 2 Applies</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/older-users/literature/"
+                    class="page-link"
+                    ><span>Literature Review</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/accessibility-usability-inclusion/"
+                class="page-link"
+                ><span>Accessibility, Usability, Inclusion</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="sidenav-languages" aria-labelledby="languagehead">
+          <header id="languagehead">Languages/Translations</header>
+          <ul class="langlist">
+            <li style="margin-bottom: 2px">
+              <strong style="text-transform: capitalize"
+                >English (original)</strong
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/people-use-web/es"
+                dir="auto"
+                translate="no"
+                lang="es"
+                >español</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/people-use-web/fr"
+                dir="auto"
+                translate="no"
+                lang="fr"
+                >français</a
+              >
+            </li>
+          </ul>
+          <p><a href="/WAI/translations/">All&nbsp;Translations</a></p>
+          <p><a href="/WAI/about/translating/">Translating WAI Resources</a></p>
+        </nav>
+      </div>
 
+      <main id="main" lang="en">
+        <header class="in-resource">
+          <h1>How People with Disabilities Use the Web</h1>
+        </header>
+        <h2 id="introduction" class="no-display">Introduction</h2>
 
+        <p>
+          <em
+            >How do people who cannot move their arms use your website? What
+            about people who cannot see well or at all? Or people who have
+            difficulty hearing or understanding, or have other disabilities?</em
+          >
+        </p>
+
+        <p>
+          This resource introduces how people with disabilities, including
+          people with age-related impairments, use the Web. It describes tools
+          and approaches that people with different kinds of disabilities use to
+          browse the Web and the barriers they encounter due to poor design. It
+          helps developers, designers, and others to understand the principles
+          for creating accessible websites, web applications, browsers, and
+          other web tools.
+        </p>
+
+        <h2 id="this-resource-includes-the-following-pages">
+          This resource includes the following pages
+        </h2>
+
+        <ul>
+          <li>
+            <strong
+              ><a href="/WAI/people-use-web/user-stories/"
+                >Stories of Web Users</a
+              ></strong
+            >
+            – stories of selected scenarios of people with disabilities using
+            the Web, to highlight the effect of barriers and the broader
+            benefits of accessible websites and web tools.
+          </li>
+          <li>
+            <strong
+              ><a href="/WAI/people-use-web/abilities-barriers/"
+                >Diverse Abilities and Barriers</a
+              ></strong
+            >
+            – explores the wide range of diversity of people and abilities, and
+            highlights some of the types of barriers that people commonly
+            encounter due to inaccessible design.
+          </li>
+          <li>
+            <strong
+              ><a href="/WAI/people-use-web/tools-techniques/"
+                >Tools and Techniques</a
+              ></strong
+            >
+            – introduces some of the techniques and tools that people with
+            disabilities use to interact with the Web, such as browser settings,
+            text-to-speech, voice recognition, and many more.
+          </li>
+        </ul>
+
+        <h2 id="related-resources">Related resources</h2>
+
+        <ul>
+          <li>
+            <strong
+              ><a href="/WAI/fundamentals/accessibility-principles/"
+                >Accessibility Principles</a
+              ></strong
+            >
+            - introduces some of the web accessibility requirements and provides
+            references to the international accessibility standards from the W3C
+            Web Accessibility Initiative (WAI).
+          </li>
+          <li>
+            <strong
+              ><a href="/WAI/perspective-videos/"
+                >Web Accessibility Perspectives Videos: Explore the Impact and
+                Benefits for Everyone</a
+              ></strong
+            >
+            – short videos highlighting accessibility features that are
+            essential to people with disabilities and useful for all.
+          </li>
+          <li>
+            <strong
+              ><a href="http://www.w3.org/WAI/users/browsing"
+                >Better Web Browsing</a
+              ></strong
+            >
+            - tips on how to customize your particular web browser and computer
+            setup to benefit from accessibility features.
+          </li>
+        </ul>
+
+        <nav class="pager" aria-label="Previous/Next Page">
+          <ul>
+            <li class="pager--item next">
+              <a href="/WAI/people-use-web/user-stories/">
+                <svg
+                  focusable="false"
+                  aria-hidden="true"
+                  class="icon-arrow-right pager--item-icon"
+                >
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-arrow-right"
+                  ></use>
+                </svg>
+                <span class="pager--item-text">
+                  <span class="pager--item-text-direction">Next:</span>
+                  <span class="pager--item-text-target"
+                    >Stories of Web Users</span
+                  >
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <aside class="box box-icon box-space-above" id="helpimprove">
+          <header class="box-h box-h-icon box-h-space-above box-h-icon">
+            <svg focusable="false" aria-hidden="true" class="icon-comments">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-comments"
+              ></use>
+            </svg>
+            <h2>Help improve this page</h2>
+          </header>
+          <div class="box-i">
+            <p>
+              Please share your ideas, suggestions, or comments via e-mail to
+              the publicly-archived list
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=[en]%20How%20People%20with%20Disabilities%20Use%20the%20Web"
+                >wai-eo-editors@w3.org</a
+              >
+              or via GitHub.
+            </p>
+            <div class="button-group">
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=[en]%20How%20People%20with%20Disabilities%20Use%20the%20Web&body=[put%20comment%20here...]"
+                class="button"
+                ><span>E-mail</span></a
+              >
+              <a
+                href="https://github.com/w3c/wai-people-use-web/edit/master/_people-use-web/index.md"
+                class="button"
+                ><span>Fork &amp; Edit on GitHub</span></a
+              ><a
+                href="https://github.com/w3c/wai-people-use-web/issues/new"
+                class="button"
+                ><span>New GitHub Issue</span></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg focusable="false" aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            Back to Top</span
+          ></a
+        >
+      </main>
+    </div>
+
+    <footer
+      id="wai-site-footer"
+      class="page-footer default-grid"
+      aria-label="Page"
+    >
+      <div class="inner">
+        <p><strong>Date:</strong> Updated 15 May 2017.</p>
+        <p>
+          <strong>Editors:</strong>
+          <a href="https://www.w3.org/People/shadi/">Shadi Abou_Zahra</a>.
+          Previous editor:
+          <a href="https://www.w3.org/People/Brewer/">Judy Brewer</a>.
+          <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments"
+            >Acknowledgments</a
+          >.
+        </p>
+        <p>
+          Developed by the Education and Outreach Working Group (<a
+            href="http://www.w3.org/WAI/EO/"
+            >EOWG</a
+          >). Previously developed with the
+          <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf"
+            >WAI-AGE Task Force</a
+          >, with support of the
+          <a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE Project</a>.
+        </p>
+      </div>
+    </footer>
+
+    <footer class="site-footer grid-4q" aria-label="Site">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a
+              class="largelink"
+              href="https://www.w3.org/WAI/"
+              lang="en"
+              dir="auto"
+              translate="no"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>
+            Strategies, standards, and supporting resources to make the Web
+            accessible to people with disabilities.
+          </p>
+        </div>
+        <div class="social" lang="en" dir="auto" translate="no">
+          <ul>
+            <li>
+              <a href="https://twitter.com/w3c_wai"
+                ><svg focusable="false" aria-hidden="true" class="icon-twitter">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/feed.xml"
+                ><svg focusable="false" aria-hidden="true" class="icon-rss">
+                  <use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use>
+                </svg>
+                Feed</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"
+                ><svg focusable="false" aria-hidden="true" class="icon-youtube">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/news/subscribe/" class="button"
+                >Get News in Email</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div lang="en" dir="auto" translate="no">
+          <p>
+            Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn">Beihang</a>)
+            <a href="/WAI/about/using-wai-material/"
+              >Permission to Use WAI Material</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div lang="en" dir="auto" translate="no" class="q4-start q4-end">
+        <ul style="margin-bottom: 0">
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li>
+            <a href="/WAI/about/accessibility-statement/"
+              >Accessibility Statement</a
+            >
+          </li>
+          <li><a href="/WAI/translations/"> Translations</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script>
+      var translationStrings = {};
+    </script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </body>
 </html>

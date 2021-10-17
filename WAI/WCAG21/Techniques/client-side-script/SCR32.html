@@ -1,92 +1,140 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-   <head>
-      <meta charset="UTF-8" />
-      <title>SCR32: Providing client-side validation and adding error text via the DOM</title>
-      <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
-      <link rel="stylesheet" type="text/css" href="base.css" />
-      <link rel="stylesheet" type="text/css" href="../techniques.css" />
-      <link rel="stylesheet" type="text/css" href="../slicenav.css" />
-   </head>
-   <body>
-      <nav>
-         <ul id="navigation">
-            <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/#techniques" title="Table of Contents">Contents</a></li>
-            <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/#introduction" title="Introduction to Techniques">Intro</a></li>
-            <li><a href="SCR31">Previous Technique: SCR31</a></li>
-            <li><a href="SCR33">Next Technique: SCR33</a></li>
-         </ul>
-      </nav>
-      <nav class="navtoc">
-         <p>On this page:</p>
-         <ul id="navbar">
-            <li><a href="#important-information">Important Information about Techniques</a></li>
-            <li><a href="#applicability">Applicability</a></li>
-            <li><a href="#description">Description</a></li>
-            <li><a href="#examples">Examples</a></li>
-            <li><a href="#related">Related Techniques</a></li>
-            <li><a href="#tests">Tests</a></li>
-         </ul>
-      </nav>
-      <h1>Providing client-side validation and adding error text via the DOM</h1>
-      <section id="important-information">
-         <h2>Important Information about Techniques</h2>
-         <p>See <a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-techniques">Understanding Techniques for WCAG Success Criteria</a> for important information about the usage of these informative techniques and how
-            they relate to the normative WCAG 2.1 success criteria. The Applicability section
-            explains the scope of the technique, and the presence of techniques for a specific
-            technology does not imply that the technology can be used in all situations to create
-            content that meets WCAG 2.1.
-         </p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      SCR32: Providing client-side validation and adding error text via the DOM
+    </title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.w3.org/StyleSheets/TR/2016/base"
+    />
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <link rel="stylesheet" type="text/css" href="../techniques.css" />
+    <link rel="stylesheet" type="text/css" href="../slicenav.css" />
+  </head>
+  <body>
+    <nav>
+      <ul id="navigation">
+        <li>
+          <a
+            href="https://www.w3.org/WAI/WCAG21/Techniques/#techniques"
+            title="Table of Contents"
+            >Contents</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.w3.org/WAI/WCAG21/Techniques/#introduction"
+            title="Introduction to Techniques"
+            >Intro</a
+          >
+        </li>
+        <li><a href="SCR31">Previous Technique: SCR31</a></li>
+        <li><a href="SCR33">Next Technique: SCR33</a></li>
+      </ul>
+    </nav>
+    <nav class="navtoc">
+      <p>On this page:</p>
+      <ul id="navbar">
+        <li>
+          <a href="#important-information"
+            >Important Information about Techniques</a
+          >
+        </li>
+        <li><a href="#applicability">Applicability</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#related">Related Techniques</a></li>
+        <li><a href="#tests">Tests</a></li>
+      </ul>
+    </nav>
+    <h1>Providing client-side validation and adding error text via the DOM</h1>
+    <section id="important-information">
+      <h2>Important Information about Techniques</h2>
+      <p>
+        See
+        <a
+          href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-techniques"
+          >Understanding Techniques for WCAG Success Criteria</a
+        >
+        for important information about the usage of these informative
+        techniques and how they relate to the normative WCAG 2.1 success
+        criteria. The Applicability section explains the scope of the technique,
+        and the presence of techniques for a specific technology does not imply
+        that the technology can be used in all situations to create content that
+        meets WCAG 2.1.
+      </p>
+    </section>
+    <main>
+      <section id="applicability">
+        <h2>Applicability</h2>
+        <p>Script used with HTML or XHTML.</p>
+        <p>This technique relates to:</p>
+        <ul>
+          <li>
+            <a
+              href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification"
+              >Success Criterion 3.3.1: Error Identification</a
+            >
+            (Sufficient)
+          </li>
+          <li>
+            <a
+              href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion"
+              >Success Criterion 3.3.3: Error Suggestion</a
+            >
+            (Sufficient)
+          </li>
+        </ul>
       </section>
-      <main>
-         <section id="applicability">
-            <h2>Applicability</h2>
-            <p>Script used with HTML or XHTML.</p>
-            <p>This technique relates to:</p>
-            <ul>
-               <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification">Success Criterion 3.3.1: Error Identification</a> (Sufficient)
-               </li>
-               <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion">Success Criterion 3.3.3: Error Suggestion</a> (Sufficient)
-               </li>
-            </ul>
-         </section>
-         <section id="description">
-            <h2>Description</h2>
-            <p>The objective of this technique is to demonstrate the display of an error message
-               when client side validation of a form field has failed. Anchor elements are used to
-               display the error messages in a list and are inserted above the fields to be validated.
-               Anchor elements are used in the error messages so that focus can be placed on the
-               error message(s), drawing the user's attention to it. The <code class="att">href</code> of the anchor elements contain an in-page link which references the fields where
-               error(s) have been found. 
-            </p>
-            <p>In a deployed application, if Javascript is turned off, client side validation will
-               not occur. Therefore, this technique would only be sufficient in situations where
-               scripting is relied upon for conformance or when server side validation techniques
-               are also used to catch any errors and return the page with information about the fields
-               with errors. 
-            </p>
-         </section>
-         <section id="examples">
-            <h2>Examples</h2>
-            <section class="example" id="example-1">
-               <h3>Example 1</h3>
-               <p>This example validates required fields as well as fields where a specific format is
-                  required. When an error is identified, the script inserts a list of error messages
-                  into the DOM and moves focus to them.
-               </p>
-               <figure id="figure-form-errors">
-                  		<img src="img/form2.jpg" />
-                  		
-                  <figcaption>Figure 1 Screenshot showing the error messages for several fields that were not filled out
-                     correctly. Error messages appear as a list of links near the top of the form.
-                  </figcaption>
-                  	
-               </figure>
-               <p>
-                  <em>HTML and Javascript code </em>
-                  
-               </p>
-               <p>Here is the HTML for the example form: </p><pre xml:space="preserve">
+      <section id="description">
+        <h2>Description</h2>
+        <p>
+          The objective of this technique is to demonstrate the display of an
+          error message when client side validation of a form field has failed.
+          Anchor elements are used to display the error messages in a list and
+          are inserted above the fields to be validated. Anchor elements are
+          used in the error messages so that focus can be placed on the error
+          message(s), drawing the user's attention to it. The
+          <code class="att">href</code> of the anchor elements contain an
+          in-page link which references the fields where error(s) have been
+          found.
+        </p>
+        <p>
+          In a deployed application, if Javascript is turned off, client side
+          validation will not occur. Therefore, this technique would only be
+          sufficient in situations where scripting is relied upon for
+          conformance or when server side validation techniques are also used to
+          catch any errors and return the page with information about the fields
+          with errors.
+        </p>
+      </section>
+      <section id="examples">
+        <h2>Examples</h2>
+        <section class="example" id="example-1">
+          <h3>Example 1</h3>
+          <p>
+            This example validates required fields as well as fields where a
+            specific format is required. When an error is identified, the script
+            inserts a list of error messages into the DOM and moves focus to
+            them.
+          </p>
+          <figure id="figure-form-errors">
+            <img src="img/form2.jpg" />
+
+            <figcaption>
+              Figure 1 Screenshot showing the error messages for several fields
+              that were not filled out correctly. Error messages appear as a
+              list of links near the top of the form.
+            </figcaption>
+          </figure>
+          <p>
+            <em>HTML and Javascript code </em>
+          </p>
+          <p>Here is the HTML for the example form:</p>
+          <pre xml:space="preserve">
 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd"&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -161,9 +209,13 @@
             &lt;/p&gt;
         &lt;/form&gt;
     &lt;/body&gt;
-&lt;/html&gt;                      </pre><p>Here is the Javascript which performs the validation and inserts the error messages:
-                  
-               </p><pre xml:space="preserve">
+&lt;/html&gt;                      </pre
+          >
+          <p>
+            Here is the Javascript which performs the validation and inserts the
+            error messages:
+          </p>
+          <pre xml:space="preserve">
 window.onload = initialise;
 
 function initialise()
@@ -440,78 +492,99 @@ function checkOptional(bValid, strValue, arClass)
 
    return bValid;
    }
-   </pre><p class="working-example">Working example of this technique implemented using PHP, Javascript, CSS and XHTML:
-                  <a href="../../working-examples/script-form-validation-2/index.php">Form Validation Example</a>.
-               </p>
-            </section>
-         </section>
-         <section id="related">
-            <h2>Related Techniques</h2>
-            <ul>
-               
-               <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G83">G83: Providing text descriptions to identify required fields that were not completed</a></li>
-               
-               <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G85">G85: Providing a text description when user input falls outside the required format or
-                     values</a></li>
-               
-               <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR18">SCR18: Providing client-side validation and alert</a></li>
-               
-            </ul>
-         </section>
-         <section id="tests">
-            <h2>Tests</h2>
-            <section class="procedure" id="procedure">
-               <h3>Procedure</h3>
-               
-               <p>Create error messages using anchor tags and appropriate scripting via the technique
-                  above. 
-               </p>
-               
-               <ol>
-                  
-                  <li>Load the page.</li>
-                  
-                  <li>Enter a valid value in the field(s) associated with an error message and verify that
-                     no error messages are displayed. 
-                  </li>
-                  
-                  <li>Enter an invalid value in the field(s) associated with an error message and verify
-                     that the correct error message for the field is displayed. 
-                  </li>
-                  
-                  <li>Verify that the error messages receive focus.</li>
-                  
-                  <li>Enter a valid value in the field(s) associated with the displayed error message and
-                     verify that the error message is removed. 
-                  </li>
-                  
-                  <li>Repeat for all fields with associated error messages created via anchor tags. </li>
-                  
-               </ol>
-               
-               <div class="note">
-                  <div role="heading" class="note-title marker" aria-level="4">Note</div>
-                  <div>
-                     
-                     <p>It is recommended that you also run the above procedure using an assistive technology.
-                        
-                     </p>
-                     
-                  </div>
-               </div>
-               
-            </section>
-            <section class="results" id="expected-results">
-               <h3>Expected Results</h3>
-               
-               <ul>
-                  
-                  <li>Checks #2, #3, #4, and #5 are all true.</li>
-                  
-               </ul>
-               
-            </section>
-         </section>
-      </main>
-   </body>
+   </pre
+          >
+          <p class="working-example">
+            Working example of this technique implemented using PHP, Javascript,
+            CSS and XHTML:
+            <a href="../../working-examples/script-form-validation-2/index.php"
+              >Form Validation Example</a
+            >.
+          </p>
+        </section>
+      </section>
+      <section id="related">
+        <h2>Related Techniques</h2>
+        <ul>
+          <li>
+            <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G83"
+              >G83: Providing text descriptions to identify required fields that
+              were not completed</a
+            >
+          </li>
+
+          <li>
+            <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G85"
+              >G85: Providing a text description when user input falls outside
+              the required format or values</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR18"
+              >SCR18: Providing client-side validation and alert</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="tests">
+        <h2>Tests</h2>
+        <section class="procedure" id="procedure">
+          <h3>Procedure</h3>
+
+          <p>
+            Create error messages using anchor tags and appropriate scripting
+            via the technique above.
+          </p>
+
+          <ol>
+            <li>Load the page.</li>
+
+            <li>
+              Enter a valid value in the field(s) associated with an error
+              message and verify that no error messages are displayed.
+            </li>
+
+            <li>
+              Enter an invalid value in the field(s) associated with an error
+              message and verify that the correct error message for the field is
+              displayed.
+            </li>
+
+            <li>Verify that the error messages receive focus.</li>
+
+            <li>
+              Enter a valid value in the field(s) associated with the displayed
+              error message and verify that the error message is removed.
+            </li>
+
+            <li>
+              Repeat for all fields with associated error messages created via
+              anchor tags.
+            </li>
+          </ol>
+
+          <div class="note">
+            <div role="heading" class="note-title marker" aria-level="4">
+              Note
+            </div>
+            <div>
+              <p>
+                It is recommended that you also run the above procedure using an
+                assistive technology.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="results" id="expected-results">
+          <h3>Expected Results</h3>
+
+          <ul>
+            <li>Checks #2, #3, #4, and #5 are all true.</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>

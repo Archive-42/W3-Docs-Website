@@ -1,289 +1,550 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
-  <meta name="Keywords" content="Web Accessibility Initiative, web accessibility, WAI, W3C, World Wide Web, Web, WWW, Consortium, computer, access, accessibility, disability, disabilities, worldwide, international, W3, standard, technology, free, open source, software" />
-  <title>How to Change Text Size or Colors</title>
-  <link href="wai-main.css" rel="stylesheet" type="text/css" media="screen" />
-  <style type="text/css" xml:space="preserve">
-<!--
-.current-page {
-    color: #c60;
-    font-weight: bold;
-	font-size: 133%;
-}
--->
-  </style>
-<!--[if IE 7]><link rel="stylesheet" href="/WAI/ie-old.css" type="text/css" media="all" /><![endif]--></head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<body>
+    <meta
+      name="Keywords"
+      content="Web Accessibility Initiative, web accessibility, WAI, W3C, World Wide Web, Web, WWW, Consortium, computer, access, accessibility, disability, disabilities, worldwide, international, W3, standard, technology, free, open source, software"
+    />
+    <title>How to Change Text Size or Colors</title>
+    <link href="wai-main.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css" xml:space="preserve">
+      <!--
+      .current-page {
+          color: #c60;
+          font-weight: bold;
+      	font-size: 133%;
+      }
+      -->
+    </style>
+    <!--[if IE 7
+      ]><link
+        rel="stylesheet"
+        href="/WAI/ie-old.css"
+        type="text/css"
+        media="all"
+    /><![endif]-->
+  </head>
 
-<div id="controls"><ul>
-      <li><a href="#skip" shape="rect"><img src="/Icons/downinpage.png" alt="" /> Skip to Content </a></li>
-      <li><a href="/WAI/changedesign.html" shape="rect"> | Change 
-         text size or colors </a> </li>
-   </ul></div>
+  <body>
+    <div id="controls">
+      <ul>
+        <li>
+          <a href="#skip" shape="rect"
+            ><img src="/Icons/downinpage.png" alt="" /> Skip to Content
+          </a>
+        </li>
+        <li>
+          <a href="/WAI/changedesign.html" shape="rect">
+            | Change text size or colors
+          </a>
+        </li>
+      </ul>
+    </div>
 
-<div id="masthead"><p id="logos"><a href="http://www.w3.org/" title="W3C Home" shape="rect"><img alt="W3C logo" src="/Icons/w3c_home" /></a><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"><img alt="Web Accessibility initiative" src="/WAI/images/wai-temp" /></a></p></div>
+    <div id="masthead">
+      <p id="logos">
+        <a href="http://www.w3.org/" title="W3C Home" shape="rect"
+          ><img alt="W3C logo" src="/Icons/w3c_home" /></a
+        ><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"
+          ><img alt="Web Accessibility initiative" src="/WAI/images/wai-temp"
+        /></a>
+      </p>
+    </div>
 
-<div id="tagline"><p>WAI: Strategies, guidelines, resources to make the
-      Web accessible to people with disabilities</p></div>
-      <p>Navigation: <a href="http://www.w3.org/" shape="rect">W3C Home</a> &gt; <a href="http://www.w3.org/WAI/" shape="rect">WAI Home</a></p>
-      <div id="main"><div id="skipwrapper"><a id="skip" shape="rect">-</a></div></div>
-<h1>How to Change Text Size or Colors</h1>
+    <div id="tagline">
+      <p>
+        WAI: Strategies, guidelines, resources to make the Web accessible to
+        people with disabilities
+      </p>
+    </div>
+    <p>
+      Navigation: <a href="http://www.w3.org/" shape="rect">W3C Home</a> &gt;
+      <a href="http://www.w3.org/WAI/" shape="rect">WAI Home</a>
+    </p>
+    <div id="main">
+      <div id="skipwrapper"><a id="skip" shape="rect">-</a></div>
+    </div>
+    <h1>How to Change Text Size or Colors</h1>
 
-<div id="contents">
-<h2>Page Contents</h2>
-<ul>
-  <li><a href="#text" shape="rect">To Change Text Size</a></li>
-  <li><a href="#nocss" shape="rect">For a Plain Layout View</a></li>
-  <li><a href="#disable" shape="rect">Other Text and Color Changes</a></li>
-  <li><a href="#alldoit" shape="rect">Should all sites include this?</a></li>
-  <li><a href="#disclaimer" shape="rect">Note: No Browser Endorsement</a></li>
-  <li><a href="#related" shape="rect">Related Pages</a></li>
-</ul>
-</div>
+    <div id="contents">
+      <h2>Page Contents</h2>
+      <ul>
+        <li><a href="#text" shape="rect">To Change Text Size</a></li>
+        <li><a href="#nocss" shape="rect">For a Plain Layout View</a></li>
+        <li>
+          <a href="#disable" shape="rect">Other Text and Color Changes</a>
+        </li>
+        <li>
+          <a href="#alldoit" shape="rect">Should all sites include this?</a>
+        </li>
+        <li>
+          <a href="#disclaimer" shape="rect">Note: No Browser Endorsement</a>
+        </li>
+        <li><a href="#related" shape="rect">Related Pages</a></li>
+      </ul>
+    </div>
 
-<p>The WAI website is designed to let you change the text size, text and
-background colors, and other display settings <strong>through standard
-browser settings</strong>.</p>
+    <p>
+      The WAI website is designed to let you change the text size, text and
+      background colors, and other display settings
+      <strong>through standard browser settings</strong>.
+    </p>
 
-<p>This page shows you how to use some of these browser display settings.</p>
-<ul>
-  <li>"<a href="#notworky" shape="rect">Why doesn't this work with some other Web
-    sites?</a>" explains that these settings may not work on browsers and Web
-    sites that do not meet <a href="guid-tech" shape="rect">accessibility
-  guidelines</a>.</li>
-  <li>"<a href="#alldoit" shape="rect">Should all sites include this?</a>" explains that
-    including these instructions is not an accessibility requirement.</li>
-</ul>
+    <p>
+      This page shows you how to use some of these browser display settings.
+    </p>
+    <ul>
+      <li>
+        "<a href="#notworky" shape="rect"
+          >Why doesn't this work with some other Web sites?</a
+        >" explains that these settings may not work on browsers and Web sites
+        that do not meet
+        <a href="guid-tech" shape="rect">accessibility guidelines</a>.
+      </li>
+      <li>
+        "<a href="#alldoit" shape="rect">Should all sites include this?</a>"
+        explains that including these instructions is not an accessibility
+        requirement.
+      </li>
+    </ul>
 
+    <h2><a name="text" id="text" shape="rect">To Change Text Size</a></h2>
 
-<h2><a name="text" id="text" shape="rect">To Change Text Size</a></h2>
+    <p>
+      Most Web browsers include functionality to let you increase or decrease
+      the text in a Web page. For example, to increase text size:
+    </p>
 
-<p>Most Web browsers include functionality to let you increase or decrease
-the text in a Web page. For example, to increase text size:</p>
+    <table
+      border="1"
+      summary="instructiions for changing text size in browser"
+      cellpadding="10"
+    >
+      <tbody>
+        <tr>
+          <th scope="col" rowspan="1" colspan="1">Browser</th>
+          <th scope="col" rowspan="1" colspan="1">Example</th>
+          <th scope="col" rowspan="1" colspan="1">Menu Items</th>
+          <th scope="col" rowspan="1" colspan="1">
+            <strong>Macintosh Shortcut</strong>
+          </th>
+          <th scope="col" rowspan="1" colspan="1">
+            <strong>Windows Shortcut</strong>
+          </th>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="1" colspan="1">Internet Explorer</th>
+          <td rowspan="1" colspan="1">
+            <p>
+              <img
+                class="border1c60"
+                src="about/textsize-ie.png"
+                alt="Internet Explorer screen capture as described in the page"
+              /><br clear="none" />
+            </p>
+          </td>
+          <td rowspan="1" colspan="1">
+            View &gt;<br clear="none" />
+            Text Size &gt;<br clear="none" />
+            Largest
+          </td>
+          <td rowspan="1" colspan="1">.</td>
+          <td rowspan="1" colspan="1">.</td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="1" colspan="1">
+            Firefox,<br clear="none" />
+            Netscape
+          </th>
+          <td rowspan="1" colspan="1">
+            <img
+              class="border1c60"
+              src="about/textsize-mozilla.png"
+              alt="Firefox/Netscape screen capture as described in the page"
+            /><br clear="none" />
+          </td>
+          <td rowspan="1" colspan="1">
+            View &gt;<br clear="none" />
+            Text Size &gt;<br clear="none" />
+            Increase
+          </td>
+          <td rowspan="1" colspan="1"><strong>Command+</strong></td>
+          <td rowspan="1" colspan="1"><strong>Ctrl++</strong></td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="1" colspan="1">Opera</th>
+          <td rowspan="1" colspan="1">
+            <img
+              class="border1c60"
+              src="about/textsize-opera.png"
+              alt="Opera screen capture as described in the page"
+            /><br clear="none" />
+          </td>
+          <td rowspan="1" colspan="1">
+            View &gt;<br clear="none" />
+            Zoom &gt;<br clear="none" />
+            %
+          </td>
+          <td rowspan="1" colspan="1">
+            <p><strong>Command+</strong></p>
+          </td>
+          <td rowspan="1" colspan="1">
+            <p><strong>+</strong></p>
 
-<table border="1" summary="instructiions for changing text size in browser" cellpadding="10">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="1" colspan="1">Browser</th>
-      <th scope="col" rowspan="1" colspan="1">Example</th>
-      <th scope="col" rowspan="1" colspan="1">Menu Items</th>
-      <th scope="col" rowspan="1" colspan="1"><strong>Macintosh Shortcut</strong></th>
-      <th scope="col" rowspan="1" colspan="1"><strong>Windows Shortcut</strong></th>
-    </tr>
-    <tr>
-      <th scope="row" rowspan="1" colspan="1">Internet Explorer</th>
-      <td rowspan="1" colspan="1"><p><img class="border1c60 " src="about/textsize-ie.png" alt="Internet Explorer screen capture as described in the page" /><br clear="none" />
+            <p><em>or</em></p>
+
+            <p><strong>0</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="1" colspan="1">Safari</th>
+          <td rowspan="1" colspan="1">
+            <img
+              class="border1c60"
+              src="about/textsize-safari.png"
+              alt="Safari screen capture as described in the page"
+            />
+          </td>
+          <td rowspan="1" colspan="1">
+            View &gt;<br clear="none" />
+            Make Text Bigger
+          </td>
+          <td rowspan="1" colspan="1"><strong>Command+</strong></td>
+          <td rowspan="1" colspan="1">.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>
+      <a name="not-worky" id="notworky" shape="rect"></a>Why doesn't this work
+      with some other websites?
+    </h3>
+
+    <p>
+      The browser settings on this page should work when browsers and websites
+      meet <a href="guid-tech" shape="rect">WAI guidelines</a> and are designed
+      for accessibility, flexibility, and user control. However, some browsers
+      do not provide as much user control, and some websites are designed to
+      defeat browser settings. Text resizing does not work well in browsers and
+      websites that do not meet accessibility guidelines.
+    </p>
+    <ul>
+      <li>
+        In <strong>Internet Explorer</strong> Version 6 and earlier, the text
+        may not resize because the Web site is designed with "hard-coded" or
+        "absolute" text sizes. To override Web site setting:
+        <ol>
+          <li><em>Menu items:</em> Tools &gt; Internet Options</li>
+          <li>
+            <em>In Internet Options dialog box:</em> Accessibility button
+            (bottom right)
+          </li>
+          <li>
+            <em>In Accessibility dialog box:</em><br clear="none" />
+            [/] Ignore colors specified on Web pages<br clear="none" />
+            [/] Ignore font styles specified on Web pages<br clear="none" />
+            [/] Ignore font sizes specified on Web pages
+          </li>
+        </ol>
+      </li>
+      <li>
+        In <strong>Firefox</strong> early versions, the text should resize even
+        if the Web site text is not "coded" for flexibility. However the
+        sections of the Web site may not resize, making it difficult to use the
+        site with large text. This is because the Web site was designed with
+        "hard-coded" or "absolute" sizes. Firefox does not resize images.
+      </li>
+      <li>
+        <strong>Opera</strong> resizes all aspects of a Web site, including
+        font, images, and sections.
+        <strong>Resizing should work fairly well in Opera</strong>, even if the
+        Web site is not "coded" for flexibility.
+      </li>
+    </ul>
+
+    <h2><a name="nocss" id="nocss" shape="rect">For a Plain Layout View</a></h2>
+
+    <p>Turning off the style sheet gives a plain layout view, which:</p>
+    <ul>
+      <li>
+        makes text black on a white background (or however your browser is set)
+      </li>
+      <li>puts all the information in one column (called "linearized")</li>
+      <li>leaves content images</li>
+      <li>removes background images</li>
+    </ul>
+
+    <table
+      border="1"
+      summary="instructiions for changing text size in browser"
+      cellpadding="10"
+    >
+      <tbody>
+        <tr>
+          <th scope="col" rowspan="1" colspan="1">Browser</th>
+          <th scope="col" rowspan="1" colspan="1">Example</th>
+          <th scope="col" rowspan="1" colspan="1">Menu Items</th>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="1" colspan="1">Firefox</th>
+          <td rowspan="1" colspan="1">
+            <img
+              class="border1c60"
+              src="about/plainlayout-firefox-mac.png"
+              alt="Firefox screen capture as described in the page"
+            />
+          </td>
+          <td rowspan="1" colspan="1">
+            View &gt;<br clear="none" />
+            Page Style &gt;<br clear="none" />
+            No Style
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="1" colspan="1">Opera</th>
+          <td rowspan="1" colspan="1">
+            <img
+              class="border1c60"
+              src="about/plainlayout-opera-mac.png"
+              alt="Opera screen capture as described in the page"
+            />
+          </td>
+          <td rowspan="1" colspan="1">
+            View &gt;<br clear="none" />
+            Style &gt;<br clear="none" />
+            User Mode
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>
+      <a name="disable" id="disable" shape="rect"
+        >Other Text and Color Changes</a
+      >
+    </h2>
+
+    <p>
+      Many browsers provide functionality to set different aspects of font and
+      color. Below are examples of how to access this functionality.
+    </p>
+
+    <table
+      border="1"
+      summary="instructiions for changing text size in browser"
+      cellpadding="10"
+    >
+      <tbody>
+        <tr>
+          <th scope="col" rowspan="1" colspan="1">Browser</th>
+          <th scope="col" rowspan="1" colspan="1">Example</th>
+          <th scope="col" rowspan="1" colspan="1">To access functionality:</th>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="1" colspan="1">Firefox</th>
+          <td rowspan="1" colspan="1">
+            <img
+              class="border1c60"
+              src="about/other-firefox-mac.png"
+              alt="Firefox screen capture as described in the page"
+            />
+          </td>
+          <td rowspan="1" colspan="1">
+            <p>
+              <em>Windows Menu items:</em>Tools &gt; Options<br clear="none" />
+              <em>Macintosh Menu items:</em> Firefox &gt; Preferences
+            </p>
+
+            <p>
+              <em>In dialog box:</em> General (in the left pane), Fonts &amp;
+              Colors (button)
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="1" colspan="1">Opera</th>
+          <td rowspan="1" colspan="1">
+            .
+            <!--@@-->
+          </td>
+          <td rowspan="1" colspan="1">
+            <p>
+              <em>Windows Menu items:</em> Tools &gt; Preferences<br
+                clear="none"
+              />
+              <em>Macintosh Menu items:</em> Opera &gt; Preferences
+            </p>
+
+            <p>
+              <em>In dialog box:</em> Fonts and Page Style (in the left pane)
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>
+      <a name="alldoit" id="alldoit" shape="rect"
+        >Should all websites include instructions like this?</a
+      >
+    </h2>
+
+    <p>
+      It is not an accessibility requirement that websites include information
+      on changing text sizes and colors like this page. WAI chose to include
+      this information to help people who want to know how to change their
+      browser settings and may not know how.
+    </p>
+
+    <p>
+      Web browsers and websites <strong>should</strong> be designed following
+      <a href="guid-tech" shape="rect">WAI guidelines</a> so that people can
+      easily change text sizes and colors.
+    </p>
+
+    <h2>
+      <a name="disclaimer" id="disclaimer" shape="rect"
+        >Note: No Browser Endorsement</a
+      >
+    </h2>
+
+    <p>
+      W3C WAI does not endorse specific Web browsers and does not recommend one
+      browser over another. While some common browsers are included in this
+      page, mention of a specific browser does not imply endorsement or
+      recommendation.
+    </p>
+
+    <h2><a name="related" id="related" shape="rect">Related Pages</a></h2>
+    <ul>
+      <li>
+        <a href="sitehelp" shape="rect"
+          >Help with the
+          <acronym title="Web Accessibility Initiatve">WAI</acronym> Web Site</a
+        >
+        includes instructions on navigating the WAI Web site and other topics
+      </li>
+    </ul>
+    <!-- end main -->
+
+    <div id="footer">
+      <h2>Document Information</h2>
+
+      <p>
+        <strong>Status: Draft updated 2005</strong><br clear="none" />
+        Editor: Shawn Lawton Henry. Developed with input from the Education and
+        Outreach Working Group (<a href="/WAI/EO/" shape="rect">EOWG</a>).
+      </p>
+
+      <div class="footer-nav">
+        <p>
+          [<a href="http://www.w3.org/WAI/sitemap.html" shape="rect"
+            >WAI Site Map</a
+          >] [<a href="http://www.w3.org/WAI/sitehelp.html" shape="rect"
+            >Help with WAI Website</a
+          >] [<a href="http://www.w3.org/WAI/search.php" shape="rect">Search</a
+          >] [<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]<br
+            clear="none"
+          />
+          <strong
+            >Feedback welcome to
+            <a href="mailto:wai-eo-editors@w3.org" shape="rect"
+              >wai-eo-editors@w3.org</a
+            ></strong
+          >
+          (a publicly archived list) or
+          <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI
+          staff-only list).
         </p>
-      </td>
-      <td rowspan="1" colspan="1">View &gt;<br clear="none" />
-        Text Size &gt;<br clear="none" />
-        Largest</td>
-      <td rowspan="1" colspan="1">.</td>
-      <td rowspan="1" colspan="1">.</td>
-    </tr>
-    <tr>
-      <th scope="row" rowspan="1" colspan="1">Firefox,<br clear="none" />
-        Netscape</th>
-      <td rowspan="1" colspan="1"><img class="border1c60 " src="about/textsize-mozilla.png" alt="Firefox/Netscape screen capture as described in the page" /><br clear="none" />
-      </td>
-      <td rowspan="1" colspan="1">View &gt;<br clear="none" />
-        Text Size &gt;<br clear="none" />
-        Increase</td>
-      <td rowspan="1" colspan="1"><strong>Command+</strong></td>
-      <td rowspan="1" colspan="1"><strong>Ctrl++</strong></td>
-    </tr>
-    <tr>
-      <th scope="row" rowspan="1" colspan="1">Opera</th>
-      <td rowspan="1" colspan="1"><img class="border1c60 " src="about/textsize-opera.png" alt="Opera screen capture as described in the page" /><br clear="none" />
-      </td>
-      <td rowspan="1" colspan="1">View &gt;<br clear="none" />
-        Zoom &gt;<br clear="none" />
-        %</td>
-      <td rowspan="1" colspan="1"><p><strong>Command+</strong></p>
-      </td>
-      <td rowspan="1" colspan="1"><p><strong>+</strong></p>
-
-        <p><em>or</em></p>
-
-        <p><strong>0</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row" rowspan="1" colspan="1">Safari</th>
-      <td rowspan="1" colspan="1"><img class="border1c60 " src="about/textsize-safari.png" alt="Safari screen capture as described in the page" /></td>
-      <td rowspan="1" colspan="1">View &gt;<br clear="none" />
-        Make Text Bigger</td>
-      <td rowspan="1" colspan="1"><strong>Command+</strong></td>
-      <td rowspan="1" colspan="1">.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3><a name="not-worky" id="notworky" shape="rect"></a>Why doesn't this work with some
-other websites?</h3>
-
-<p>The browser settings on this page should work when browsers and websites
-meet <a href="guid-tech" shape="rect">WAI guidelines</a> and are designed for
-accessibility, flexibility, and user control. However, some browsers do not
-provide as much user control, and some websites are designed to defeat
-browser settings. Text resizing does not work well in browsers and websites
-that do not meet accessibility guidelines.</p>
-<ul>
-  <li>In <strong>Internet Explorer</strong> Version 6 and earlier, the text may not resize because
-    the Web site is designed with "hard-coded" or "absolute" text sizes. To
-    override Web site setting:
-    <ol>
-      <li><em>Menu items:</em> Tools &gt; Internet Options</li>
-      <li><em>In Internet Options dialog box:</em> Accessibility button
-        (bottom right)</li>
-      <li><em>In Accessibility dialog box:</em><br clear="none" />
-        [/] Ignore colors specified on Web pages<br clear="none" />
-        [/] Ignore font styles specified on Web pages<br clear="none" />
-        [/] Ignore font sizes specified on Web pages</li>
-    </ol>
-  </li>
-  <li>In <strong>Firefox</strong> early versions, the text should resize even if the Web
-    site text is not "coded" for flexibility. However the sections of the Web
-    site may not resize, making it difficult to use the site with large text.
-    This is because the Web site was designed with "hard-coded" or "absolute"
-    sizes. Firefox does not resize images.</li>
-  <li><strong>Opera</strong> resizes all aspects of a Web site, including
-    font, images, and sections. <strong>Resizing should work fairly well in
-    Opera</strong>, even if the Web site is not "coded" for flexibility.</li>
-</ul>
-
-<h2><a name="nocss" id="nocss" shape="rect">For a Plain Layout View</a></h2>
-
-<p>Turning off the style sheet gives a plain layout view, which:</p>
-<ul>
-  <li>makes text black on a white background (or however your browser is
-  set)</li>
-  <li>puts all the information in one column (called "linearized")</li>
-  <li>leaves content images</li>
-  <li>removes background images</li>
-</ul>
-
-<table border="1" summary="instructiions for changing text size in browser" cellpadding="10">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="1" colspan="1">Browser</th>
-      <th scope="col" rowspan="1" colspan="1">Example</th>
-      <th scope="col" rowspan="1" colspan="1">Menu Items</th>
-    </tr>
-    <tr>
-      <th scope="row" rowspan="1" colspan="1">Firefox</th>
-      <td rowspan="1" colspan="1"><img class="border1c60 " src="about/plainlayout-firefox-mac.png" alt="Firefox screen capture as described in the page" /></td>
-      <td rowspan="1" colspan="1">View &gt;<br clear="none" />
-        Page Style &gt;<br clear="none" />
-        No Style</td>
-    </tr>
-    <tr>
-      <th scope="row" rowspan="1" colspan="1">Opera</th>
-      <td rowspan="1" colspan="1"><img class="border1c60 " src="about/plainlayout-opera-mac.png" alt="Opera screen capture as described in the page" /></td>
-      <td rowspan="1" colspan="1">View &gt;<br clear="none" />
-        Style &gt;<br clear="none" />
-        User Mode</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2><a name="disable" id="disable" shape="rect">Other Text and Color Changes</a></h2>
-
-<p>Many browsers provide functionality to set different aspects of font and
-color. Below are examples of how to access this functionality.</p>
-
-<table border="1" summary="instructiions for changing text size in browser" cellpadding="10">
-  <tbody>
-    <tr>
-      <th scope="col" rowspan="1" colspan="1">Browser</th>
-      <th scope="col" rowspan="1" colspan="1">Example</th>
-      <th scope="col" rowspan="1" colspan="1">To access functionality:</th>
-    </tr>
-    <tr>
-      <th scope="row" rowspan="1" colspan="1">Firefox</th>
-      <td rowspan="1" colspan="1"><img class="border1c60 " src="about/other-firefox-mac.png" alt="Firefox screen capture as described in the page" /></td>
-      <td rowspan="1" colspan="1"><p><em>Windows Menu items:</em>Tools &gt; Options<br clear="none" />
-        <em>Macintosh Menu items:</em> Firefox &gt; Preferences</p>
-
-        <p><em>In dialog box:</em> General (in the left pane), Fonts &amp;
-        Colors (button)</p>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row" rowspan="1" colspan="1">Opera</th>
-      <td rowspan="1" colspan="1">. <!--@@-->
-      </td>
-      <td rowspan="1" colspan="1"><p><em>Windows Menu items:</em> Tools &gt; Preferences<br clear="none" />
-        <em>Macintosh Menu items:</em> Opera &gt; Preferences</p>
-
-        <p><em>In dialog box:</em> Fonts and Page Style (in the left pane)</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<h2><a name="alldoit" id="alldoit" shape="rect">Should all websites include instructions like this?</a></h2>
-
-<p>It is not an accessibility requirement that websites include information
-on changing text sizes and colors like this page. WAI chose to include this
-information to help people who want to know how to change their browser
-settings and may not know how.</p>
-
-<p>Web browsers and websites <strong>should</strong> be designed following
-<a href="guid-tech" shape="rect">WAI guidelines</a> so that people can easily change text
-sizes and colors.</p>
-
-<h2><a name="disclaimer" id="disclaimer" shape="rect">Note: No Browser Endorsement</a></h2>
-
-<p>W3C WAI does not endorse specific Web browsers and does not recommend one
-browser over another. While some common browsers are included in this page,
-mention of a specific browser does not imply endorsement or
-recommendation.</p>
-
-<h2><a name="related" id="related" shape="rect">Related Pages</a></h2>
-<ul>
-  <li><a href="sitehelp" shape="rect">Help with the <acronym title="Web Accessibility Initiatve">WAI</acronym> Web Site</a> includes
-    instructions on navigating the WAI Web site and other topics</li>
-</ul>
-<!-- end main -->
-
-<div id="footer">
-<h2>Document Information</h2>
-
-<p><strong>Status: Draft updated 2005</strong><br clear="none" />
-Editor: Shawn Lawton Henry. Developed with input from the Education and Outreach Working Group (<a href="/WAI/EO/" shape="rect">EOWG</a>).</p>
-
-<div class="footer-nav"><p>[<a href="http://www.w3.org/WAI/sitemap.html" shape="rect">WAI Site Map</a>] [<a href="http://www.w3.org/WAI/sitehelp.html" shape="rect">Help with WAI Website</a>] [<a href="http://www.w3.org/WAI/search.php" shape="rect">Search</a>] [<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]<br clear="none" />
-         <strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org" shape="rect">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI staff-only list).</p></div><div class="copyright"><p><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright" shape="rect">Copyright</a> © 1994-2012 <a href="/" shape="rect"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>), All Rights Reserved. W3C <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer" shape="rect">liability</a>, <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks" shape="rect">trademark</a>, <a rel="Copyright" href="/Consortium/Legal/copyright-documents" shape="rect">document use</a> and <a rel="Copyright" href="/Consortium/Legal/copyright-software" shape="rect">software
-         licensing</a> rules apply. Your interactions with this site are in
-         accordance with our <a href="/Consortium/Legal/privacy-statement#Public" shape="rect">public</a> and <a href="/Consortium/Legal/privacy-statement#Members" shape="rect">Member</a> privacy
-         statements.</p></div>
-<!-- end footer -->
-</div>
-  <!-- Piwik --> 
-  <script type="text/javascript">
-var _paq = _paq || [];
-_paq.push(["setDomains", ["*.www.w3.org/WAI"]]);
-_paq.push(['trackPageView']);
-_paq.push(['enableLinkTracking']);
-(function() {
-var u="//www.w3.org/analytics/piwik/";
-_paq.push(['setTrackerUrl', u+'piwik.php']);
-_paq.push(['setSiteId', 328]);
-var d=document, g=d.createElement('script'),
-s=d.getElementsByTagName('script')[0];
-g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js';
-s.parentNode.insertBefore(g,s);
-})();
-</script>
-  <noscript>
-  <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328"
-style="border:0;" alt="" /></p>
-  </noscript>
-  <!-- End Piwik Code --> 
-</body>
+      </div>
+      <div class="copyright">
+        <p>
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/ipr-notice#Copyright"
+            shape="rect"
+            >Copyright</a
+          >
+          © 1994-2012
+          <a href="/" shape="rect"
+            ><acronym title="World Wide Web Consortium">W3C</acronym></a
+          ><sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"
+            ><acronym title="Massachusetts Institute of Technology"
+              >MIT</acronym
+            ></a
+          >,
+          <a href="http://www.ercim.org/" shape="rect"
+            ><acronym
+              title="European Research Consortium for Informatics and Mathematics"
+              >ERCIM</acronym
+            ></a
+          >, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>), All Rights
+          Reserved. W3C
+          <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer" shape="rect"
+            >liability</a
+          >,
+          <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks" shape="rect"
+            >trademark</a
+          >,
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/copyright-documents"
+            shape="rect"
+            >document use</a
+          >
+          and
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/copyright-software"
+            shape="rect"
+            >software licensing</a
+          >
+          rules apply. Your interactions with this site are in accordance with
+          our
+          <a href="/Consortium/Legal/privacy-statement#Public" shape="rect"
+            >public</a
+          >
+          and
+          <a href="/Consortium/Legal/privacy-statement#Members" shape="rect"
+            >Member</a
+          >
+          privacy statements.
+        </p>
+      </div>
+      <!-- end footer -->
+    </div>
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["setDomains", ["*.www.w3.org/WAI"]]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", 328]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript>
+      <p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328"
+          style="border: 0"
+          alt=""
+        />
+      </p>
+    </noscript>
+    <!-- End Piwik Code -->
+  </body>
 </html>

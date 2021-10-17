@@ -1,139 +1,471 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<title>W3C Workshop on Referencing and Applying WCAG 2.0 in Different Contexts</title>
-<link rel="stylesheet" href="http://www.w3.org/WAI/wai-main.css"
-  type="text/css" />
-<!--[if IE 7]><link rel="stylesheet" href="http://www.w3.org/WAI/ie-old.css" type="text/css" media="all" /><![endif]-->
-<style type="text/css" xml:space="preserve">
-<!--
-#eclogos {
-  float: right;
-  clear: right;
-  width: 28%;
-  margin: 0.1em 0.1em 0.3em 0.3em;
-}
-#announce {
-  line-height: 150%;
-  color: #000;
-}
-*>#announce {
-  width: 25%;
-}
-#announce h2 {
-  font-size: 1em;
-  border-bottom: none;
-  color: #000;
-}
-#announce li {
-  display: inline;
-}
-.subhead {
-  line-height: 1.5em;
-}
-#symposiumblock {
-  font-size: 111%;
-  margin-top: 55px;
-  margin-bottom: 55px;
-  padding: 0.5em;
-  background: #ffc;
-  border: solid #999 1px;
-  border-radius: 2px;
-  box-shadow: 2px 1px 5px #112;
-  position: relative;
-  clear: left;
-}
--->
-</style>
-</head>
-<body>
-<div id="controls">
-   <ul>
-      <li><a href="#skip" shape="rect"><img src="/Icons/downinpage.png" alt="" /> Skip to Content </a></li>
-      <li><a href="/WAI/changedesign.html" shape="rect">| Change text size or colors </a></li>
-   </ul>
-</div>
-<div id="masthead">
-   <p id="logos"><a href="http://www.w3.org/" title="W3C Home" shape="rect"><img alt="W3C logo" src="/Icons/w3c_home" /></a><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"><img alt="Web Accessibility initiative" src="/WAI/images/wai-temp" /></a></p>
-</div>
-<div id="tagline">
-   <p>WAI: Strategies, guidelines, resources to make the Web accessible to people with disabilities</p>
-</div>
-<div id="nav"><h2>Site Navigation</h2><p id="w3cnav"><a href="http://www.w3.org/">W3C Home</a></p><p id="subhomenav"><a href="/WAI/">Web Accessibility Initiative (WAI) Home</a></p><ol id="nav1" type="A"><li><a href="../gettingstarted/Overview.html" shape="rect">Getting Started</a></li><li><a href="../users/Overview.html" shape="rect">Designing for Inclusion</a></li><li><a href="../guid-tech.html" shape="rect">Guidelines &amp; Techniques</a></li><li><a href="../managing.html" shape="rect">Planning &amp; Implementing</a></li><li><a href="../eval/Overview.html" shape="rect">Evaluating Accessibility</a></li><li><a href="../train.html" shape="rect">Presentations &amp; Tutorials</a></li><li class="current-nav "><a href="../about-links.html" shape="rect">Getting Involved with WAI</a><ol type="1"><li><a href="../participation.html" shape="rect">Participating</a></li><li class="current-nav "><a href="../about.html" shape="rect">About WAI</a><ol type="i"><li><a href="../translation.html" shape="rect">Translating</a></li><li><a href="../contacts.html" shape="rect">Contacting</a></li><li><a href="../Sponsor.html" shape="rect">Sponsoring</a></li><li class="current-nav "><a href="../about/projects.html" shape="rect">Projects</a><ol type="a"><li class="current-nav"><a href="./Overview.html">WAI-ACT</a><ol type="I"><li><a href="deliverables" shape="rect">Project Deliverables</a></li><li id="current-node" class="current-nav "><span class="label"><span id="current-icon">&raquo;</span>WCAG 2 Workshop</span><ol type="A"><li><a href="workshop-report">Synthesized Report</a></li><li><a href="workshop-synopsis">Discussion Synopsis</a></li></ol></li><li><a href="meeting1">First Open Meeting</a></li><li><a href="meeting2">Second Open Meeting</a></li><li><a href="meeting3">Third Open Meeting</a></li></ol></li><li><a href="../WAI-AGE/Overview.html" shape="rect">WAI-AGE</a></li><li><a href="../TIES/Overview.html" shape="rect">WAI-TIES</a></li><li class="external"><a href="/WAI/WAIDA/" shape="rect">WAI-DA <img src="/Icons/tr.png" alt="different format" /></a></li><li class="external"><a href="/WAI/TIDE/FR2.htm" shape="rect">WAI-DE <img src="/Icons/tr.png" alt="different format" /></a></li></ol></li></ol></li><li><a href="../about/usingWAImaterial.html" shape="rect">Using WAI Material</a></li><li><a href="../about/announcements.php" shape="rect">Getting WAI Announcements</a></li><li><a href="../groups.html" shape="rect">WAI Groups</a></li></ol></li></ol><div id="nav-static"><div class="nav-discover"><p><a href="http://www.w3.org/WAI/yourWAI" shape="rect"><strong><u>Discover new resources</u></strong> for people with disabilities, policy makers, managers, and you!</a></p></div><p class="translations"><a href="http://www.w3.org/WAI/wai-translations" shape="rect"><img src="http://www.w3.org/WAI/images/translations-med-1" alt="characters from different languages" /> Translations</a></p></div></div>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>
+      W3C Workshop on Referencing and Applying WCAG 2.0 in Different Contexts
+    </title>
+    <link
+      rel="stylesheet"
+      href="http://www.w3.org/WAI/wai-main.css"
+      type="text/css"
+    />
+    <!--[if IE 7
+      ]><link
+        rel="stylesheet"
+        href="http://www.w3.org/WAI/ie-old.css"
+        type="text/css"
+        media="all"
+    /><![endif]-->
+    <style type="text/css" xml:space="preserve">
+      <!--
+      #eclogos {
+        float: right;
+        clear: right;
+        width: 28%;
+        margin: 0.1em 0.1em 0.3em 0.3em;
+      }
+      #announce {
+        line-height: 150%;
+        color: #000;
+      }
+      *>#announce {
+        width: 25%;
+      }
+      #announce h2 {
+        font-size: 1em;
+        border-bottom: none;
+        color: #000;
+      }
+      #announce li {
+        display: inline;
+      }
+      .subhead {
+        line-height: 1.5em;
+      }
+      #symposiumblock {
+        font-size: 111%;
+        margin-top: 55px;
+        margin-bottom: 55px;
+        padding: 0.5em;
+        background: #ffc;
+        border: solid #999 1px;
+        border-radius: 2px;
+        box-shadow: 2px 1px 5px #112;
+        position: relative;
+        clear: left;
+      }
+      -->
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      <ul>
+        <li>
+          <a href="#skip" shape="rect"
+            ><img src="/Icons/downinpage.png" alt="" /> Skip to Content
+          </a>
+        </li>
+        <li>
+          <a href="/WAI/changedesign.html" shape="rect"
+            >| Change text size or colors
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="masthead">
+      <p id="logos">
+        <a href="http://www.w3.org/" title="W3C Home" shape="rect"
+          ><img alt="W3C logo" src="/Icons/w3c_home" /></a
+        ><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"
+          ><img alt="Web Accessibility initiative" src="/WAI/images/wai-temp"
+        /></a>
+      </p>
+    </div>
+    <div id="tagline">
+      <p>
+        WAI: Strategies, guidelines, resources to make the Web accessible to
+        people with disabilities
+      </p>
+    </div>
+    <div id="nav">
+      <h2>Site Navigation</h2>
+      <p id="w3cnav"><a href="http://www.w3.org/">W3C Home</a></p>
+      <p id="subhomenav">
+        <a href="/WAI/">Web Accessibility Initiative (WAI) Home</a>
+      </p>
+      <ol id="nav1" type="A">
+        <li>
+          <a href="../gettingstarted/Overview.html" shape="rect"
+            >Getting Started</a
+          >
+        </li>
+        <li>
+          <a href="../users/Overview.html" shape="rect"
+            >Designing for Inclusion</a
+          >
+        </li>
+        <li>
+          <a href="../guid-tech.html" shape="rect"
+            >Guidelines &amp; Techniques</a
+          >
+        </li>
+        <li>
+          <a href="../managing.html" shape="rect"
+            >Planning &amp; Implementing</a
+          >
+        </li>
+        <li>
+          <a href="../eval/Overview.html" shape="rect"
+            >Evaluating Accessibility</a
+          >
+        </li>
+        <li>
+          <a href="../train.html" shape="rect">Presentations &amp; Tutorials</a>
+        </li>
+        <li class="current-nav">
+          <a href="../about-links.html" shape="rect"
+            >Getting Involved with WAI</a
+          >
+          <ol type="1">
+            <li>
+              <a href="../participation.html" shape="rect">Participating</a>
+            </li>
+            <li class="current-nav">
+              <a href="../about.html" shape="rect">About WAI</a>
+              <ol type="i">
+                <li>
+                  <a href="../translation.html" shape="rect">Translating</a>
+                </li>
+                <li><a href="../contacts.html" shape="rect">Contacting</a></li>
+                <li><a href="../Sponsor.html" shape="rect">Sponsoring</a></li>
+                <li class="current-nav">
+                  <a href="../about/projects.html" shape="rect">Projects</a>
+                  <ol type="a">
+                    <li class="current-nav">
+                      <a href="./Overview.html">WAI-ACT</a>
+                      <ol type="I">
+                        <li>
+                          <a href="deliverables" shape="rect"
+                            >Project Deliverables</a
+                          >
+                        </li>
+                        <li id="current-node" class="current-nav">
+                          <span class="label"
+                            ><span id="current-icon">&raquo;</span>WCAG 2
+                            Workshop</span
+                          >
+                          <ol type="A">
+                            <li>
+                              <a href="workshop-report">Synthesized Report</a>
+                            </li>
+                            <li>
+                              <a href="workshop-synopsis"
+                                >Discussion Synopsis</a
+                              >
+                            </li>
+                          </ol>
+                        </li>
+                        <li><a href="meeting1">First Open Meeting</a></li>
+                        <li><a href="meeting2">Second Open Meeting</a></li>
+                        <li><a href="meeting3">Third Open Meeting</a></li>
+                      </ol>
+                    </li>
+                    <li>
+                      <a href="../WAI-AGE/Overview.html" shape="rect"
+                        >WAI-AGE</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../TIES/Overview.html" shape="rect">WAI-TIES</a>
+                    </li>
+                    <li class="external">
+                      <a href="/WAI/WAIDA/" shape="rect"
+                        >WAI-DA <img src="/Icons/tr.png" alt="different format"
+                      /></a>
+                    </li>
+                    <li class="external">
+                      <a href="/WAI/TIDE/FR2.htm" shape="rect"
+                        >WAI-DE <img src="/Icons/tr.png" alt="different format"
+                      /></a>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <a href="../about/usingWAImaterial.html" shape="rect"
+                >Using WAI Material</a
+              >
+            </li>
+            <li>
+              <a href="../about/announcements.php" shape="rect"
+                >Getting WAI Announcements</a
+              >
+            </li>
+            <li><a href="../groups.html" shape="rect">WAI Groups</a></li>
+          </ol>
+        </li>
+      </ol>
+      <div id="nav-static">
+        <div class="nav-discover">
+          <p>
+            <a href="http://www.w3.org/WAI/yourWAI" shape="rect"
+              ><strong><u>Discover new resources</u></strong> for people with
+              disabilities, policy makers, managers, and you!</a
+            >
+          </p>
+        </div>
+        <p class="translations">
+          <a href="http://www.w3.org/WAI/wai-translations" shape="rect"
+            ><img
+              src="http://www.w3.org/WAI/images/translations-med-1"
+              alt="characters from different languages"
+            />
+            Translations</a
+          >
+        </p>
+      </div>
+    </div>
 
-<div id="main"><div id="skipwrapper"><a id="skip" shape="rect">-</a></div>
+    <div id="main">
+      <div id="skipwrapper"><a id="skip" shape="rect">-</a></div>
 
-<h1>Referencing and Applying <acronym>WCAG</acronym> 2.0 in Different Contexts <br /><span class="subhead"><img src="http://www.w3.org/WAI/images/bullet-c60.png" alt="-" /> International Standard <img src="http://www.w3.org/WAI/images/bullet-c60.png" alt="-" /> Accessibility Policies <img src="http://www.w3.org/WAI/images/bullet-c60.png" alt="-" /> Web Applications <img src="http://www.w3.org/WAI/images/bullet-c60.png" alt="-" /> Mobile Web <img src="http://www.w3.org/WAI/images/bullet-c60.png" alt="-" /> <br />W3C Workshop on 23 May 2013 in Brussels, Belgium</span></h1>
+      <h1>
+        Referencing and Applying <acronym>WCAG</acronym> 2.0 in Different
+        Contexts <br /><span class="subhead"
+          ><img src="http://www.w3.org/WAI/images/bullet-c60.png" alt="-" />
+          International Standard
+          <img src="http://www.w3.org/WAI/images/bullet-c60.png" alt="-" />
+          Accessibility Policies
+          <img src="http://www.w3.org/WAI/images/bullet-c60.png" alt="-" /> Web
+          Applications
+          <img src="http://www.w3.org/WAI/images/bullet-c60.png" alt="-" />
+          Mobile Web
+          <img src="http://www.w3.org/WAI/images/bullet-c60.png" alt="-" />
+          <br />W3C Workshop on 23 May 2013 in Brussels, Belgium</span
+        >
+      </h1>
 
-<div id="contents">
-  <h2 id="pagenav">On This Page</h2>
-  <ul>
-    <li class="no-display"><a href="#sponsors">Workshop Sponsors</a></li>
-    <li class="no-display"><a href="#introduction">Introduction</a></li>
-    <li><a href="#invitation">Invitation</a></li>
-    <li><a href="#results">Workshop Results</a></li>
-    <li><a href="#background">Background</a></li><!--
+      <div id="contents">
+        <h2 id="pagenav">On This Page</h2>
+        <ul>
+          <li class="no-display"><a href="#sponsors">Workshop Sponsors</a></li>
+          <li class="no-display"><a href="#introduction">Introduction</a></li>
+          <li><a href="#invitation">Invitation</a></li>
+          <li><a href="#results">Workshop Results</a></li>
+          <li><a href="#background">Background</a></li>
+          <!--
     <li><a href="#participation">Registration</a></li>
     <li><a href="#deadlines">Important Dates</a></li>-->
-    <li><a href="#agenda">Workshop Agenda</a></li>
-    <li><a href="#venue">Workshop Venue</a></li>
-    <li><a href="#accommodation">Accommodation</a></li>
-    <li><a href="#contact">Contact Information</a></li>
-  </ul>
-</div>
+          <li><a href="#agenda">Workshop Agenda</a></li>
+          <li><a href="#venue">Workshop Venue</a></li>
+          <li><a href="#accommodation">Accommodation</a></li>
+          <li><a href="#contact">Contact Information</a></li>
+        </ul>
+      </div>
 
-<div id="announce">
-  <h2 id="sponsors">Workshop Sponsors</h2>
-  <p>This Workshop is organized through the EC-funded <a href="http://www.w3.org/WAI/ACT/"><acronym>WAI-ACT</acronym> Project <br /><img src="eu.png" alt="EU Flag" height="70" width="105" /><img src="fp7.png" alt="Seventh Framework Programme logo" height="70" width="83" /></a></p>
-  <p>Additional sponsors include:</p>
-  <ul>
-    <li><a href="http://www.adobe.com/"><img src="WSsponsors/adobe_logo.png" alt="Adobe" height="68" width="54" /></a></li>
-    <li><a href="http://www.google.com/"><img src="WSsponsors/google_logo.png" alt="Google" height="62" width="189" /></a></li>
-  </ul>
-</div> 
+      <div id="announce">
+        <h2 id="sponsors">Workshop Sponsors</h2>
+        <p>
+          This Workshop is organized through the EC-funded
+          <a href="http://www.w3.org/WAI/ACT/"
+            ><acronym>WAI-ACT</acronym> Project <br /><img
+              src="eu.png"
+              alt="EU Flag"
+              height="70"
+              width="105" /><img
+              src="fp7.png"
+              alt="Seventh Framework Programme logo"
+              height="70"
+              width="83"
+          /></a>
+        </p>
+        <p>Additional sponsors include:</p>
+        <ul>
+          <li>
+            <a href="http://www.adobe.com/"
+              ><img
+                src="WSsponsors/adobe_logo.png"
+                alt="Adobe"
+                height="68"
+                width="54"
+            /></a>
+          </li>
+          <li>
+            <a href="http://www.google.com/"
+              ><img
+                src="WSsponsors/google_logo.png"
+                alt="Google"
+                height="62"
+                width="189"
+            /></a>
+          </li>
+        </ul>
+      </div>
 
-<h2 class="no-display"><a name="introduction" id="introduction">Introduction</a></h2>
-<p><a href="http://www.w3.org/WAI/"><acronym>W3C</acronym> Web Accessibility Initiative (<acronym>WAI</acronym>)</a> invited participants to share their experiences using <a href="http://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (<acronym>WCAG</acronym>) 2.0</a> and its supporting resources in different policy settings and contexts. In this <acronym>W3C</acronym> Workshop we explored approaches for:</p>
-<ul>
-   <li>Developing and updating policies for harmonized uptake of the <acronym>WCAG</acronym> 2.0 international standard</li>
-   <li>Applicability of <acronym>WCAG</acronym> 2.0 to dynamic content, web applications, mobile web, and other areas</li>
-   <li>Addressing <acronym>HTML5</acronym> and other emerging technologies in web accessibility policies</li>
-</ul>
-<!-- <p><strong class="changed" style="font-size: larger; padding: 0.2em; line-height: 2em;"><a href="#participation">Registration open until 10 May 2013</a></strong> - <strong class="changed" style="font-size: larger; padding: 0.2em; line-height: 2em;"><a href="#accommodation">Accommodation now with reduced rates</a>.</strong></p> -->
+      <h2 class="no-display">
+        <a name="introduction" id="introduction">Introduction</a>
+      </h2>
+      <p>
+        <a href="http://www.w3.org/WAI/"
+          ><acronym>W3C</acronym> Web Accessibility Initiative
+          (<acronym>WAI</acronym>)</a
+        >
+        invited participants to share their experiences using
+        <a href="http://www.w3.org/WAI/intro/wcag"
+          >Web Content Accessibility Guidelines (<acronym>WCAG</acronym>) 2.0</a
+        >
+        and its supporting resources in different policy settings and contexts.
+        In this <acronym>W3C</acronym> Workshop we explored approaches for:
+      </p>
+      <ul>
+        <li>
+          Developing and updating policies for harmonized uptake of the
+          <acronym>WCAG</acronym> 2.0 international standard
+        </li>
+        <li>
+          Applicability of <acronym>WCAG</acronym> 2.0 to dynamic content, web
+          applications, mobile web, and other areas
+        </li>
+        <li>
+          Addressing <acronym>HTML5</acronym> and other emerging technologies in
+          web accessibility policies
+        </li>
+      </ul>
+      <!-- <p><strong class="changed" style="font-size: larger; padding: 0.2em; line-height: 2em;"><a href="#participation">Registration open until 10 May 2013</a></strong> - <strong class="changed" style="font-size: larger; padding: 0.2em; line-height: 2em;"><a href="#accommodation">Accommodation now with reduced rates</a>.</strong></p> -->
 
-<h2><a name="invitation" id="invitation">Invitation</a></h2>
-<p>This <a href="http://www.w3.org/Consortium/Process/events.html"><acronym>W3C</acronym> Workshop</a> was open to policy-makers, users, developers, accessibility experts, researchers, and others interested in adopting, referencing, and applying <acronym>WCAG</acronym> 2.0. We invited participants to:</p>
-<ul>
-   <li><strong>Discuss</strong> approaches for referencing and adopting <acronym>WCAG</acronym> 2.0</li>
-   <li><strong>Exchange</strong> experiences with implementing policies that reference <acronym>WCAG</acronym> 2.0</li>
-   <li><strong>Share</strong> resources that support the implementation of <acronym>WCAG</acronym> 2.0</li>
-   <li><strong>Identify</strong> priorities for further developing resources and support material</li>
-</ul>
+      <h2><a name="invitation" id="invitation">Invitation</a></h2>
+      <p>
+        This
+        <a href="http://www.w3.org/Consortium/Process/events.html"
+          ><acronym>W3C</acronym> Workshop</a
+        >
+        was open to policy-makers, users, developers, accessibility experts,
+        researchers, and others interested in adopting, referencing, and
+        applying <acronym>WCAG</acronym> 2.0. We invited participants to:
+      </p>
+      <ul>
+        <li>
+          <strong>Discuss</strong> approaches for referencing and adopting
+          <acronym>WCAG</acronym> 2.0
+        </li>
+        <li>
+          <strong>Exchange</strong> experiences with implementing policies that
+          reference <acronym>WCAG</acronym> 2.0
+        </li>
+        <li>
+          <strong>Share</strong> resources that support the implementation of
+          <acronym>WCAG</acronym> 2.0
+        </li>
+        <li>
+          <strong>Identify</strong> priorities for further developing resources
+          and support material
+        </li>
+      </ul>
 
-<h2><a name="results" id="results">Workshop Results</a></h2>
-<p>This <acronym>W3C</acronym> Workshop brought together over 40 participants from Europe and around the world.</p>
-<ul>
-  <li><a href="workshop-report"><strong>Synthesized report</strong></a> summarizing the discussion.</li>
-  <li><a href="workshop-synopsis"><strong>Synopsis of the discussion</strong></a> from the entire day.</li>
-</ul>
+      <h2><a name="results" id="results">Workshop Results</a></h2>
+      <p>
+        This <acronym>W3C</acronym> Workshop brought together over 40
+        participants from Europe and around the world.
+      </p>
+      <ul>
+        <li>
+          <a href="workshop-report"><strong>Synthesized report</strong></a>
+          summarizing the discussion.
+        </li>
+        <li>
+          <a href="workshop-synopsis"
+            ><strong>Synopsis of the discussion</strong></a
+          >
+          from the entire day.
+        </li>
+      </ul>
 
-<h2><a name="background" id="background">Background</a></h2>
-<p>The <a href="http://www.un.org/disabilities/default.asp?id=150"><acronym title="United Nations">UN</acronym> Convention on Rights of Persons with Disabilities (<acronym>CRPD</acronym>)</a> and many regional and national policies on accessibility of information technologies have increased people's interest in accessibility of the Web. In turn, many organizations and governments are adopting the <acronym>W3C</acronym>/<acronym>WAI</acronym> guidelines in accessibility policies for the Web, in order to ensure that people can access the Web regardless of disability. This includes the <a href="http://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (<acronym>WCAG</acronym>)</a>, accessibility guidelines for <a href="http://www.w3.org/WAI/intro/uaag">web browsers and media players (<acronym>UAAG</acronym>)</a>, and for <a href="http://www.w3.org/WAI/intro/atag">web authoring tools (<acronym>ATAG</acronym>)</a>.</p>
-<p>As organizations and governments migrate to <acronym>WCAG</acronym> 2.0, questions arise on how to best implement the guidelines in practice. This includes questions on how to best take advantage of the framework provided in <acronym>WCAG</acronym> 2.0 to address the continual evolution of web technologies such as <a href="http://www.w3.org/WAI/intro/aria">WAI-ARIA</a> and HTML5, the convergence of the Web with mobile and digital television, and how to utilize current and planned supporting resources such as <a href="http://www.w3.org/TR/WCAG20-TECHS/">Techniques for <acronym>WCAG</acronym> 2.0</a>, and <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">Understanding <acronym>WCAG</acronym> 2.0</a> documents. Some of these questions include:</p>
-<ul>
-   <li>How can <acronym>WCAG</acronym> 2.0, which is also <a href="http://www.w3.org/QA/2012/10/wcag_20_is_now_also_isoiec_405.html"><acronym title="International Organization for Standardization">ISO</acronym>/<acronym title="International Engineering Consortium">IEC</acronym> 40500</a>, be freely adopted and referenced in policies on web accessibility?</li>
-   <li>How applicable is <acronym>WCAG</acronym> 2.0 to web applications, mobile web, social media, digital publishing, and other contexts?</li>
-   <li>What is the role of <acronym>WCAG</acronym> 2.0 Techniques, how are they developed, and when will techniques for <acronym>HTML5</acronym> be ready?</li>
-   <li>What is the role of <acronym>WAI-ARIA</acronym>, <acronym>IndieUI</acronym>, and other accessibility specifications, and how do they relate to <acronym>HTML5</acronym>?</li>
-   <li>How does one determine accessibility support in web technologies, dynamic content, or mobile web applications?</li>
-   <li>What are the supporting resources, guidance, and tools around <acronym>WCAG</acronym> 2.0, and what translations exist for these?</li>
-</ul>
-<p>This workshop provides an opportunity to exchange best practices on these and other questions, and to share strategies on promoting harmonized uptake of <acronym>WCAG</acronym> 2.0 internationally.</p>
+      <h2><a name="background" id="background">Background</a></h2>
+      <p>
+        The
+        <a href="http://www.un.org/disabilities/default.asp?id=150"
+          ><acronym title="United Nations">UN</acronym> Convention on Rights of
+          Persons with Disabilities (<acronym>CRPD</acronym>)</a
+        >
+        and many regional and national policies on accessibility of information
+        technologies have increased people's interest in accessibility of the
+        Web. In turn, many organizations and governments are adopting the
+        <acronym>W3C</acronym>/<acronym>WAI</acronym> guidelines in
+        accessibility policies for the Web, in order to ensure that people can
+        access the Web regardless of disability. This includes the
+        <a href="http://www.w3.org/WAI/intro/wcag"
+          >Web Content Accessibility Guidelines (<acronym>WCAG</acronym>)</a
+        >, accessibility guidelines for
+        <a href="http://www.w3.org/WAI/intro/uaag"
+          >web browsers and media players (<acronym>UAAG</acronym>)</a
+        >, and for
+        <a href="http://www.w3.org/WAI/intro/atag"
+          >web authoring tools (<acronym>ATAG</acronym>)</a
+        >.
+      </p>
+      <p>
+        As organizations and governments migrate to <acronym>WCAG</acronym> 2.0,
+        questions arise on how to best implement the guidelines in practice.
+        This includes questions on how to best take advantage of the framework
+        provided in <acronym>WCAG</acronym> 2.0 to address the continual
+        evolution of web technologies such as
+        <a href="http://www.w3.org/WAI/intro/aria">WAI-ARIA</a> and HTML5, the
+        convergence of the Web with mobile and digital television, and how to
+        utilize current and planned supporting resources such as
+        <a href="http://www.w3.org/TR/WCAG20-TECHS/"
+          >Techniques for <acronym>WCAG</acronym> 2.0</a
+        >, and
+        <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/"
+          >Understanding <acronym>WCAG</acronym> 2.0</a
+        >
+        documents. Some of these questions include:
+      </p>
+      <ul>
+        <li>
+          How can <acronym>WCAG</acronym> 2.0, which is also
+          <a
+            href="http://www.w3.org/QA/2012/10/wcag_20_is_now_also_isoiec_405.html"
+            ><acronym title="International Organization for Standardization"
+              >ISO</acronym
+            >/<acronym title="International Engineering Consortium"
+              >IEC</acronym
+            >
+            40500</a
+          >, be freely adopted and referenced in policies on web accessibility?
+        </li>
+        <li>
+          How applicable is <acronym>WCAG</acronym> 2.0 to web applications,
+          mobile web, social media, digital publishing, and other contexts?
+        </li>
+        <li>
+          What is the role of <acronym>WCAG</acronym> 2.0 Techniques, how are
+          they developed, and when will techniques for
+          <acronym>HTML5</acronym> be ready?
+        </li>
+        <li>
+          What is the role of <acronym>WAI-ARIA</acronym>,
+          <acronym>IndieUI</acronym>, and other accessibility specifications,
+          and how do they relate to <acronym>HTML5</acronym>?
+        </li>
+        <li>
+          How does one determine accessibility support in web technologies,
+          dynamic content, or mobile web applications?
+        </li>
+        <li>
+          What are the supporting resources, guidance, and tools around
+          <acronym>WCAG</acronym> 2.0, and what translations exist for these?
+        </li>
+      </ul>
+      <p>
+        This workshop provides an opportunity to exchange best practices on
+        these and other questions, and to share strategies on promoting
+        harmonized uptake of <acronym>WCAG</acronym> 2.0 internationally.
+      </p>
 
-<!--
+      <!--
 <h2><a name="participation" id="participation">Registration</a></h2>
 <p>Participation in this Workshop is free; spaces are limited. Registration will close on 10 May, or when spaces are filled. To register, complete the registration form linked below:</p>
 <p class="spaceabove"><span id="symposiumblock"><strong><a href="https://www.w3.org/2002/09/wbs/34257/wcag2workshop_reg/" shape="rect">Registration Form <img src="http://www.w3.org/Icons/tr.png" alt="different page" /></a></strong></span></p>
@@ -153,7 +485,7 @@
 <p>Statements of interest may, with permission, be published online and linked from this public Workshop page. Statements of interest will be selected based on diversity of perspectives and relevance to the Workshop goals. The organizers reserve the right to decline submissions that are deemed less relevant to the composition of the Workshop agenda.</p>
 <p>To submit a statement of interest, include it in the <a href="https://www.w3.org/2002/09/wbs/34257/wcag2workshop_reg/"><strong>Registration Form <img src="http://www.w3.org/Icons/tr.png" alt="different page" /></strong></a>.</p>
 -->
-<!--<p>Spaces have been filled. Submission may re-open should more spaces become available.</p>
+      <!--<p>Spaces have been filled. Submission may re-open should more spaces become available.</p>
 
 <h2><a name="deadlines" id="deadlines">Important Dates</a></h2>
 <ul>
@@ -162,46 +494,178 @@
    <li><strong>23 May 2013</strong> Workshop day</li>
 </ul>-->
 
-<h2><a name="agenda" id="agenda">Workshop Agenda</a></h2>
-<p><em>This is the agenda overview. A <a href="workshop-agenda"><strong>full agenda</strong></a> is available.</em></p>
-<ul>
-   <li><strong>09:00 - 10:00</strong> <em>Registration</em> (with continental breakfast)</li>
-   <li><strong>10:00 - 10:10</strong> Welcome and logistics - Shadi Abou-Zahra, W3C/WAI</li>
-   <li><strong>10:10 - 10:30</strong> Opening words and overview - Judy Brewer, W3C/WAI</li>
-   <li><strong>10:30 - 12:00</strong> <a href="workshop-agenda#session1">Session I: Implementation Challenges</a></li>
-   <li><strong>12:00 - 13:00</strong> <em>Lunch Break</em></li>
-   <li><strong>13:00 - 14:30</strong> <a href="workshop-agenda#session2">Session II: International Harmonization</a></li>
-   <li><strong>14:30 - 15:00</strong> <em>Coffee Break</em></li>
-   <li><strong>15:00 - 16:30</strong> <a href="workshop-agenda#session3">Session III: Application of WCAG 2.0</a></li>
-   <li><strong>16:30 - 17:00</strong> Summary of the day and closing - Judy Brewer, W3C/WAI</li>
-   <li><strong>17:00 - 17:30</strong> <em>Afternoon Coffee</em> (optional networking)</li>
-</ul>
+      <h2><a name="agenda" id="agenda">Workshop Agenda</a></h2>
+      <p>
+        <em
+          >This is the agenda overview. A
+          <a href="workshop-agenda"><strong>full agenda</strong></a> is
+          available.</em
+        >
+      </p>
+      <ul>
+        <li>
+          <strong>09:00 - 10:00</strong> <em>Registration</em> (with continental
+          breakfast)
+        </li>
+        <li>
+          <strong>10:00 - 10:10</strong> Welcome and logistics - Shadi
+          Abou-Zahra, W3C/WAI
+        </li>
+        <li>
+          <strong>10:10 - 10:30</strong> Opening words and overview - Judy
+          Brewer, W3C/WAI
+        </li>
+        <li>
+          <strong>10:30 - 12:00</strong>
+          <a href="workshop-agenda#session1"
+            >Session I: Implementation Challenges</a
+          >
+        </li>
+        <li><strong>12:00 - 13:00</strong> <em>Lunch Break</em></li>
+        <li>
+          <strong>13:00 - 14:30</strong>
+          <a href="workshop-agenda#session2"
+            >Session II: International Harmonization</a
+          >
+        </li>
+        <li><strong>14:30 - 15:00</strong> <em>Coffee Break</em></li>
+        <li>
+          <strong>15:00 - 16:30</strong>
+          <a href="workshop-agenda#session3"
+            >Session III: Application of WCAG 2.0</a
+          >
+        </li>
+        <li>
+          <strong>16:30 - 17:00</strong> Summary of the day and closing - Judy
+          Brewer, W3C/WAI
+        </li>
+        <li>
+          <strong>17:00 - 17:30</strong> <em>Afternoon Coffee</em> (optional
+          networking)
+        </li>
+      </ul>
 
-<h2><a name="venue" id="venue">Workshop Venue</a></h2>
-<p>The workshop took place on 23 May 2013 in Brussels, Belgium at the <a href="http://www.diamant.be/">Diamant Conference and Business Center</a>:</p>
-<address>Diamant Conference &amp; Business Centre <br />Bd. A Reyerslaan 80 <br />B-1030 Brussels, Belgium <br />Tel: +32 (0)2 706 88 00
-</address>
+      <h2><a name="venue" id="venue">Workshop Venue</a></h2>
+      <p>
+        The workshop took place on 23 May 2013 in Brussels, Belgium at the
+        <a href="http://www.diamant.be/"
+          >Diamant Conference and Business Center</a
+        >:
+      </p>
+      <address>
+        Diamant Conference &amp; Business Centre <br />Bd. A Reyerslaan 80
+        <br />B-1030 Brussels, Belgium <br />Tel: +32 (0)2 706 88 00
+      </address>
 
-<h2><a name="accommodation" id="accommodation">Accommodation</a></h2>
-<p>Reduced room rates were available until 7 May 2013 at the <a href="http://www.thonhotels.com/hotels/countrys/belgium/brussels/thon-hotel-eu/">Thon Hotel EU</a>:</p>
-<address>Rue de la Loi <br />B-1040 Brussels, Belgium <br />Tel: +32 (0)2 204 39 11
-</address>
-<!--<p>Please use this <a href="THON.doc"><strong>booking form</strong></a> to make your reservation.</p>-->
+      <h2><a name="accommodation" id="accommodation">Accommodation</a></h2>
+      <p>
+        Reduced room rates were available until 7 May 2013 at the
+        <a
+          href="http://www.thonhotels.com/hotels/countrys/belgium/brussels/thon-hotel-eu/"
+          >Thon Hotel EU</a
+        >:
+      </p>
+      <address>
+        Rue de la Loi <br />B-1040 Brussels, Belgium <br />Tel: +32 (0)2 204 39
+        11
+      </address>
+      <!--<p>Please use this <a href="THON.doc"><strong>booking form</strong></a> to make your reservation.</p>-->
 
-<h2><a name="contact" id="contact">Contact Information</a></h2>
-<p>This <a href="http://www.w3.org/Consortium/Process/events.html"><acronym>W3C</acronym> Workshop</a> is organized and carried out through the European Commission funded <a href="http://www.w3.org/WAI/ACT/">WAI-ACT Project</a>. Contact <a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> if you have questions.</p>
-<p><strong>Workshop organizers:</strong> <a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> and <a href="http://www.w3.org/People/Brewer/">Judy Brewer</a>.</p>
-</div>
+      <h2><a name="contact" id="contact">Contact Information</a></h2>
+      <p>
+        This
+        <a href="http://www.w3.org/Consortium/Process/events.html"
+          ><acronym>W3C</acronym> Workshop</a
+        >
+        is organized and carried out through the European Commission funded
+        <a href="http://www.w3.org/WAI/ACT/">WAI-ACT Project</a>. Contact
+        <a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> if you
+        have questions.
+      </p>
+      <p>
+        <strong>Workshop organizers:</strong>
+        <a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> and
+        <a href="http://www.w3.org/People/Brewer/">Judy Brewer</a>.
+      </p>
+    </div>
 
-<div id="footer">
-   <p class="status">Status: Updated $Date: 2014-08-31 15:06:13 $</p>
-   <div class="footer-nav">
-      <p>[<a href="http://www.w3.org/WAI/sitemap.html" shape="rect">WAI Site Map</a>] [<a href="http://www.w3.org/WAI/sitehelp.html" shape="rect">Help with WAI Website</a>] [<a href="http://www.w3.org/WAI/search.php" shape="rect">Search</a>] [<a href="/WAI/contacts" shape="rect">Contacting WAI</a>] <br clear="none" />
-      <strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org" shape="rect">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI staff-only list).</p>
-   </div>
-   <div class="copyright">
-      <p><a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2013 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> and <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-software">software licensing</a> rules apply. Your interactions with this site are in accordance with our <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Public">public</a> and <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Members" shape="rect">Member</a> privacy statements.</p>
-   </div>
-</div>
-</body>
+    <div id="footer">
+      <p class="status">Status: Updated $Date: 2014-08-31 15:06:13 $</p>
+      <div class="footer-nav">
+        <p>
+          [<a href="http://www.w3.org/WAI/sitemap.html" shape="rect"
+            >WAI Site Map</a
+          >] [<a href="http://www.w3.org/WAI/sitehelp.html" shape="rect"
+            >Help with WAI Website</a
+          >] [<a href="http://www.w3.org/WAI/search.php" shape="rect">Search</a
+          >] [<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]
+          <br clear="none" />
+          <strong
+            >Feedback welcome to
+            <a href="mailto:wai-eo-editors@w3.org" shape="rect"
+              >wai-eo-editors@w3.org</a
+            ></strong
+          >
+          (a publicly archived list) or
+          <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI
+          staff-only list).
+        </p>
+      </div>
+      <div class="copyright">
+        <p>
+          <a
+            rel="Copyright"
+            href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
+            >Copyright</a
+          >
+          © 2013
+          <a href="http://www.w3.org/"
+            ><acronym title="World Wide Web Consortium">W3C</acronym></a
+          ><sup>®</sup> (<a href="http://www.csail.mit.edu/"
+            ><acronym title="Massachusetts Institute of Technology"
+              >MIT</acronym
+            ></a
+          >,
+          <a href="http://www.ercim.org/"
+            ><acronym
+              title="European Research Consortium for Informatics and Mathematics"
+              >ERCIM</acronym
+            ></a
+          >, <a href="http://www.keio.ac.jp/">Keio</a>,
+          <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved.
+          W3C
+          <a
+            href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer"
+            >liability</a
+          >,
+          <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks"
+            >trademark</a
+          >,
+          <a
+            rel="Copyright"
+            href="http://www.w3.org/Consortium/Legal/copyright-documents"
+            >document use</a
+          >
+          and
+          <a
+            rel="Copyright"
+            href="http://www.w3.org/Consortium/Legal/copyright-software"
+            >software licensing</a
+          >
+          rules apply. Your interactions with this site are in accordance with
+          our
+          <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Public"
+            >public</a
+          >
+          and
+          <a
+            href="http://www.w3.org/Consortium/Legal/privacy-statement#Members"
+            shape="rect"
+            >Member</a
+          >
+          privacy statements.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>

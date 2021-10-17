@@ -1,592 +1,1238 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1633578570351143841"
+    />
 
-<title> Why Standards Harmonization is Essential to Web Accessibility | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Why Standards Harmonization is Essential to Web Accessibility" />
-<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative." />
-<meta property="og:description" content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative." />
-<link rel="canonical" href="https://www.w3.org/WAI/standards-guidelines/harmonization/" />
-<meta property="og:url" content="https://www.w3.org/WAI/standards-guidelines/harmonization/" />
-<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Why Standards Harmonization is Essential to Web Accessibility" />
-<meta name="twitter:site" content="@w3c_wai" />
-<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
-<script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","headline":"Why Standards Harmonization is Essential to Web Accessibility","url":"https://www.w3.org/WAI/standards-guidelines/harmonization/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+    <title>
+      Why Standards Harmonization is Essential to Web Accessibility | Web
+      Accessibility Initiative (WAI) | W3C
+    </title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <meta name="generator" content="Jekyll v4.2.0" />
+    <meta
+      property="og:title"
+      content="Why Standards Harmonization is Essential to Web Accessibility"
+    />
+    <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      name="description"
+      content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative."
+    />
+    <meta
+      property="og:description"
+      content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative."
+    />
+    <link
+      rel="canonical"
+      href="https://www.w3.org/WAI/standards-guidelines/harmonization/"
+    />
+    <meta
+      property="og:url"
+      content="https://www.w3.org/WAI/standards-guidelines/harmonization/"
+    />
+    <meta
+      property="og:site_name"
+      content="Web Accessibility Initiative (WAI)"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Why Standards Harmonization is Essential to Web Accessibility"
+    />
+    <meta name="twitter:site" content="@w3c_wai" />
+    <meta
+      name="twitter:creator"
+      content="@W3C Web Accessibility Initiative (WAI)"
+    />
+    <script type="application/ld+json">
+      {
+        "description": "The Website of the World Wide Web Consortium’s Web Accessibility Initiative.",
+        "@type": "WebPage",
+        "headline": "Why Standards Harmonization is Essential to Web Accessibility",
+        "url": "https://www.w3.org/WAI/standards-guidelines/harmonization/",
+        "author": {
+          "@type": "Person",
+          "name": "W3C Web Accessibility Initiative (WAI)"
+        },
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
+    <meta
+      name="twitter:image"
+      property="og:image"
+      content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg"
+    />
 
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
-</head>
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+  </head>
 
-  <body id="top" class="page-why-standards-harmonization-is-essential-to-web-accessibility ">
-    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
-  <ul>
+  <body
+    id="top"
+    class="page-why-standards-harmonization-is-essential-to-web-accessibility"
+  >
+    <nav
+      aria-label="Skip Link and Language Selector"
+      id="controls"
+      class="default-grid"
+    >
+      <ul>
         <li><a href="#main">Skip to Content</a></li>
         <li class="opt">
           <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
         </li>
         <li class="opt">
-            <a href="/WAI/translations/">All Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/"
+            >All Translations
+            <svg focusable="false" aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
         </li>
-      </ul></nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
- 
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
-  </div>
-
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">Search:</span>
-              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
-            </label>
-            
-            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
-          </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="Main" lang=""><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
-  <ul style="align-self: center;">
-    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/harmonization/" aria-current="page"><span>Standards Harmonization is Essential</span></a></li></ul>
-</nav>
-    <div class="default-grid with-gap leftcol">
-
-  
-    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
-      <ul class="sidenav--list">
-  <li>
-  <a lang="en" href="/WAI/standards-guidelines/" class="page-link"><span>Standards/<wbr>Guidelines</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/" class="page-link"><span>Web Content – WCAG</span></a><ul><li>
-  <a lang="en" href="https://www.w3.org/WAI/WCAG21/quickref/" class="page-link"><span>How to Meet WCAG 2 (Quick Reference)</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/glance/" class="page-link"><span>At a Glance</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/docs/" class="page-link"><span>The Documents</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/non-web-ict/" class="page-link"><span>Applying to Non-Web ICT</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/new-in-22/" class="page-link"><span>New in 2.2 Draft</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/new-in-21/" class="page-link"><span>New in 2.1</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/translations/" class="page-link"><span>Translations</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/commenting/" class="page-link"><span>Commenting</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/conformance-logos/" class="page-link"><span>Conformance Logos</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/faq/" class="page-link"><span>FAQ</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/atag/" class="page-link"><span>Authoring Tools – ATAG</span></a><ul><li>
-  <a lang="en" href="/WAI/standards-guidelines/atag/glance/" class="page-link"><span>At a Glance</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/uaag/" class="page-link"><span>User Agents – UAAG</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/wcag3-intro/" class="page-link"><span>WCAG 3 Draft</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/aria/" class="page-link"><span>WAI-ARIA</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/evaluation/" class="page-link"><span>Evaluation – ACT &amp; EARL</span></a><ul><li>
-  <a lang="en" href="/WAI/standards-guidelines/act/" class="page-link"><span>Accessibility Conformance Testing – ACT</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/earl/" class="page-link"><span>Evaluation and Report Language – EARL</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/personalization/" class="page-link"><span>Personalization</span></a></li><li>
-  <a lang="en" href="/WAI/pronunciation/" class="page-link"><span>Pronunciation</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/harmonization/" aria-current="page" class="page-link"><span>Standards Harmonization is Essential</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/w3c-process/" class="page-link"><span>W3C Process for Developing Standards</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/linking/" class="page-link"><span>Referencing and Linking to Standards</span></a></li><li>
-  <a lang="en" href="/WAI/cognitive/" class="page-link"><span>Cognitive Accessibility at W3C</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/mobile/" class="page-link"><span>Mobile Accessibility at W3C</span></a></li></ul></nav>
-</div>
-  
-
-  <main id="main">
-
-      
-
-    
-    <header>
-      <h1>
-      
-      
-      
-        Why Standards Harmonization is Essential to Web Accessibility
-      
-      </h1></header>
-    <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Abstract </h2></header><div class="box-i">
-
-<p>This document explains the key role that harmonization of standards
-plays in increasing the accessibility of the Web for people with
-disabilities. It examines how adoption of a consistent set of
-international technical standards, the World Wide Web Consortium’s (W3C)
-Web Accessibility Initiative (WAI) guidelines for Web content, authoring
-tools, browsers and media players can drive more rapid progress on Web
-accessibility, and make the design and development of accessible Web
-sites more efficient.</p>
-
-<p>Common standards for Web content accessibility and for authoring tools
-encourages the development of tools that support production of
-accessible Web content. Likewise, the adoption of a consistent standard
-for browser and media player accessibility would improve access to and
-reinforce the accessibility of Web content, and would help ensure that
-accessible content will be more available through assistive technologies
-used by some people with disabilities.</p>
-
-<p>This document introduces the concept of harmonization and causes of
-fragmentation in the area of Web accessibility standards, and examines
-the impact of harmonization and fragmentation on Web developers, tool
-developers, and organizations. It also suggests action steps for
-promoting Web accessibility standards harmonization.</p>
-
-</div></aside>
-
-
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-  <li><a href="#current-situation" id="markdown-toc-current-situation">Current Situation</a></li>
-  <li><a href="#consequences" id="markdown-toc-consequences">Consequences</a></li>
-  <li><a href="#action-steps" id="markdown-toc-action-steps">Action Steps</a></li>
-  <li><a href="#related-resources" id="markdown-toc-related-resources">Related Resources</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="overview">Overview</h2>
-
-<p>In this document <strong>“standards harmonization”</strong> refers to <strong>the adoption
-of a consistent  set of</strong> <strong>international</strong> <strong>technical standards
-for accessibility of:</strong></p>
-
-<ul>
-  <li>Web content</li>
-  <li>browsers and media players</li>
-  <li>authoring tools</li>
-</ul>
-
-<p>Around the world there is currently <strong>fragmentation</strong> – <strong>conflicting</strong>, divergent technical
-standards** – rather than harmonization of Web accessibility standards.
-While W3C’s Web Content Accessibility Guidelines (WCAG) is the most
-broadly adopted Web accessibility standard internationally, many
-countries have developed or are in the process of developing their own
-versions of technical guidelines or standards.</p>
-
-<p>Furthermore, there is sometimes one version of a guideline or standard
-at the national level, different versions at the provincial or state
-level, and yet different versions adopted by commercial, educational,
-and non-governmental organizations within the same country. For
-organizations with audiences spanning different regions or economic
-sectors, simply keeping track of the different requirements can be a
-challenge.</p>
-
-<p>Harmonization of Web accessibility standards is key to making an
-accessible Web, because it creates a unified market for authoring tools
-that produce conformant content. This unified market in turn drives more
-rapid development of improved authoring tools. Improved authoring tools
-make it easier to create accessible Web sites, and to repair previously
-inaccessible sites; for instance, by prompting for accessibility
-information such as alternative text for graphics, captions for audio,
-or summaries for data tables. Widespread availability of improved
-authoring tools can enable accessible design to become the prevailing
-design mode even for Web developers only minimally aware of the
-rationale for Web accessibility, or disinclined to learn guidelines and
-techniques for accessibility.</p>
-
-<p>Standards harmonization also creates a more compelling market for
-developers of tools used to evaluate Web content accessibility. It
-enables re-use of training and technical assistance resources for Web
-accessibility across different regions and economic sectors. Standards
-harmonization enables better access to information through browsers and
-media players, and better interoperability with specialized technologies
-that some people with disabilities must rely on. It enables development
-of information repositories containing accessible, compatible, and
-re-usable content.</p>
-
-<p>The <a href="http://www.w3.org/">World Wide Web Consortium</a> (W3C) <a href="http://www.w3.org/WAI/">Web
-Accessibility Initiative</a> (WAI) has developed:</p>
-
-<ul>
-  <li><a href="/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines
-(WCAG)</a>, which describe how to
-make Web content and Web sites accessible;</li>
-  <li><a href="/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines
-(ATAG)</a>, which describe how to
-make Web authoring tools that produce content conforming to WCAG and
-that are accessible for people with disabilities;</li>
-  <li><a href="/WAI/standards-guidelines/uaag/">User Agent Accessibility Guidelines
-(UAAG)</a>, which describe how to
-make browsers and media players accessible, and how to ensure their
-interoperability with assistive technologies.</li>
-</ul>
-
-<p>Together these three WAI guidelines provide mutually reinforcing
-solutions which result in more comprehensive and effective
-accessibility. W3C/WAI continues to advance these three guidelines by
-updating and refining them as Web technologies evolve, and is currently
-developing updated versions of the guidelines.</p>
-
-<h2 id="current-situation">Current Situation</h2>
-
-<p>Fragmentation of Web accessibility guidelines can impact progress on Web
-accessibility in various ways:</p>
-
-<ul>
-  <li><strong>Changing the wording of individual provisions</strong> in accessibility
-guidelines often changes the technical meaning of the provisions.
-This in turn changes what is required to meet a given level of
-conformance in those guidelines. This can make it more difficult for
-developers of authoring tools and evaluation tools (which are used
-to evaluate the accessibility of Web content), as they will then
-need to support potentially conflicting sets of implementation and
-evaluation techniques.</li>
-  <li><strong>Combining two or more different accessibility provisions</strong> may
-likewise affect the meaning of these provisions. Again, this can
-change what is required to meet a given level of conformance to
-accessibility guidelines. As above, this can increase the burden
-for developers of authoring tools and evaluation tools, which play a
-key role in facilitating the production and evaluation of accessible
-Web content.</li>
-  <li><strong>Omitting or adding accessibility provisions</strong> likewise changes
-what is required to meet a given level of conformance. This may
-similarly make it more difficult for developers of authoring tools
-and evaluation tools to support the resulting reduced or expanded
-conformance levels.</li>
-</ul>
-
-<p>Various circumstances or beliefs in different countries and
-organizations can contribute to the fragmentation of Web accessibility
-standards. For each such factor, or “fragmentation driver,” however,
-there is also a good reason to promote harmonization of standards:</p>
-
-<table>
-    <thead>
-        <tr>
-            <th>Fragmentation Driver</th>
-            <th>Reason for Harmonization</th>
-        </tr>
-    </thead>
-  <tbody>
-    <tr>
-        <td>A restriction on the types of standards that governments can adopt; with a belief that W3C is not an official standards body</td>
-        <td>W3C is the leading standards body for the Web industry. Many governments have adopted HTML or XML, and therefore already have mechanisms whereby they can adopt W3C standards.</td>
-    </tr>
-    <tr>
-      <td>A requirement that only standards officially available in local language(s) can be adopted</td>
-      <td>W3C now allows the development of authorized translations in local languages through its <a href="http://www.w3.org/2005/02/TranslationPolicy">Policy for Authorized W3C Translations</a>. For example, <a href="http://www.w3.org/WAI/WCAG20/translations">Authorized Translations of WCAG</a> are available in several languages.</td>
-    </tr>
-    <tr>
-      <td>The belief that only local guidelines can meet the needs of the local disability community</td>
-      <td>Disability needs with regard to Web accessibility do not vary significantly from country to country. </td>
-    </tr>
-    <tr>
-      <td>The belief that the needs of people with disabilities outside a country are different or not relevant</td>
-      <td>The Web is worldwide. People with disabilities from other countries, with the same needs for accessibility and using the same kinds of assistive technologies, may need access to the Web-based resources of a particular country.</td>
-    </tr>
-    <tr>
-      <td>The belief that W3C/WAI guidelines were developed by a single country</td>
-      <td>W3C/WAI guidelines were developed with broad international input, and reflect needs from around the world.</td>
-    </tr>
-    <tr>
-      <td>The belief that development of local guidelines is the best activity in which to invest local funding for Web accessibility</td>
-      <td>Development of local guidelines takes scarce resources away from activities where building local capacity is crucial – such as development of education, awareness, training and technical assistance on Web accessibility.</td>
-    </tr>
-    <tr>
-      <td>The belief that it is more practical in the long term to have locally developed guidelines</td>
-      <td>Because Web technologies are constantly evolving, ongoing development and maintenance of local guidelines and techniques into the future may be prohibitively resource-intensive.</td>
-    </tr>
-    <tr>
-      <td>The belief that Web accessibility can be more easily achieved through locally developed guidelines</td>
-      <td>Web accessibility can be more easily achieved through increased availability of supporting tools and resources, including authoring tools, evaluation tools, browsers, media players, and training and technical resources. These tools and resources develop more rapidly when there is a unified market around a consistent international set of Web accessibility standards. </td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="consequences">Consequences</h2>
-
-<h3 id="webdev">Web Development</h3>
-
-<p>For Web developers using today’s authoring tools, development of
-accessible Web sites first requires an awareness of the need for Web
-accessibility, then a deliberate effort to apply WCAG. It may require
-working around features of authoring tools that make it hard to build
-accessible Web sites. For instance, some authoring tools still produce
-non-standard markup, which can be a barrier for accessibility. Authoring
-tools that conform to ATAG provide built-in support for production of
-accessible Web sites.</p>
-
-<p>When Web developers develop accessible Web sites using today’s authoring
-tools, they may need to work around inconsistent support of Web
-standards in browsers and media players. For instance, inconsistent
-initial support in browsers for Cascading Style Sheet (CSS) features,
-such as CSS positioning, led many Web developers to rely on less
-accessible design solutions for layout for many years. Browsers and
-media players that conformed to UAAG would provide reliable support for
-accessibility features, making the jobs of Web developers much easier.</p>
-
-<p>Web developers must already learn a variety of Web technologies and
-tools in order to be competitive in their field. Harmonization of Web
-accessibility standards enables Web developers to learn one consistent
-set of guidelines and implementation techniques, rather than needing to
-learn many different guidelines; and it allows them to re-use training
-and technical assistance resources among a broader Web community.</p>
-
-<h3 id="auth">Authoring Tools</h3>
-
-<p>Increased availability of authoring tools conforming to the Authoring
-Tool Accessibility Guidelines (ATAG) is key to making the Web accessible
-because, with such tools, Web content developers could more easily and
-more automatically create accessible Web sites.</p>
-
-<p>Authoring tool developers face competing priorities when deciding which
-features to build into their software. Product managers’ decisions with
-regard to which features are included in product releases are frequently
-based on the extent of demand for a given set of features throughout
-their customer base. Harmonized standards mean a more unified customer
-demand. This strengthens the business case for accessibility for
-authoring tool developers and can tip the balance towards implementation
-of more accessibility features in their products. This, in turn, means
-more rapid availability of authoring tools with features supporting
-production of accessible content.</p>
-
-<h3 id="evaldev">Evaluation Tools</h3>
-
-<p>Developers of evaluation tools are also impacted by fragmented
-standards, as these can delay, and/or increase the development cost, of
-the evaluation tools. Time needed to implement evaluation tests for
-conflicting versions of guidelines could otherwise be used to improve
-evaluation tools by increasing their usability or accuracy.</p>
-
-<p>Harmonized Web accessibility standards would allow developers of
-accessibility evaluation tools to concentrate their efforts on
-implementing one set of evaluation tests, rather than multiple tests for
-overlapping or conflicting guidelines and standards in different regions
-or economic sectors. Improved evaluation tools enable more people to
-test Web sites more reliably, and help ensure more accessible Web sites.</p>
-
-<h3 id="orgdev">Organizations</h3>
-
-<p>When there is fragmentation of standards, organizations that have
-audiences spanning different geographic regions, countries, or economic
-sectors must keep track of multiple sets of requirements. Such
-organizations may need to provide additional authoring tools, evaluation
-tools, training resources and technical assistance for their Web
-developers. This can divert resources from the actual development work
-needed to ensure accessible Web sites. The increase in cost and effort
-resulting from fragmented standards may consequently make it more
-difficult to make a convincing business case for accessibility within
-the organization.</p>
-
-<p>Harmonized Web accessibility standards, on the other hand, allow
-organizations to re-use authoring and evaluation tools, training, and
-technical assistance resources throughout the organization, thereby
-achieving more cost-effective accessibility solutions.</p>
-
-<h3 id="browsers">Browsers, Media Players, and Assistive Technologies</h3>
-
-<p>The harmonization of Web accessibility standards is also a concern with
-regard to browsers and media players. Conflicting standards for browser
-accessibility can slow implementation of accessibility support. Browsers
-and media players’ lack of conformance to the User Agent Accessibility
-Guidelines (UAAG) makes it harder for people with disabilities to access
-content on Web sites, and even to find and use the accessibility
-features that are already incorporated in some browsers and media
-players.</p>
-
-<p>Some of today’s browsers and media players do not provide access to
-certain kinds of accessibility information that a Web content developer
-may have included in a Web site; for instance, long descriptions of
-complex visuals such as maps and graphs, or summaries of information in
-data tables. UAAG describes how browsers and media players can enable
-access to such information.</p>
-
-<p>UAAG also describes requirements for browsers and media players that can
-work smoothly with assistive technologies, which some people with
-disabilities use, such as screen readers, screen magnifiers, and voice
-recognition software.</p>
-
-<p>Implementation of accessibility standards in browsers and authoring
-tools is mutually reinforcing. Once browser developers implement Web
-accessibility features, authoring tool developers have more reason to
-provide authoring support for those features. For instance, once
-browsers provide access to summaries of data tables, authoring tool
-developers then have a stronger rationale to provide a means for content
-developers to add summaries to tables. Similarly, browser developers are
-influenced by what authoring tools support, and are more likely to
-implement accessibility features once they know that authoring tools
-will provide the relevant authoring support.</p>
-
-<h3 id="repos">Information Repositories</h3>
-
-<p>Online information repositories allow the gathering and storing of
-content for re-use in a variety of ways, including the creation of
-online learning modules. If the content in an information repository
-conforms to a consistent accessibility standard, then that content can
-be more easily shared among an unlimited number of users. It can
-be re-purposed and personalized according to user profiles, which may
-include information on preferred learning styles and the accessibility
-requirements of users with disabilities. With harmonized standards for
-accessibility of content in information repositories, educators and
-learners are able to freely transform shared resources according to user
-needs.</p>
-
-<h2 id="action-steps">Action Steps</h2>
-
-<p>W3C continues to update and refine the WAI guidelines, supporting
-techniques, and other resources to keep pace with evolving Web
-technologies. The following steps can increase the international
-harmonization of Web accessibility standards, and help lead more rapidly
-to an accessible Web:</p>
-
-<ul>
-  <li>Participate in development of updated WAI guidelines and support
-material by reviewing and commenting on drafts, providing feedback
-during implementation trials, and/or participating in WAI Working
-Groups. <em>(See <a href="http://www.w3.org/WAI/participation">Participating in
-WAI</a>)</em></li>
-  <li>Promote awareness among policy-makers, standards developers,
-technology developers, and disability communities of the strategic
-importance of standards harmonization towards achieving an
-accessible Web.</li>
-  <li>Ensure that developers of authoring tools, browsers, and media
-players are aware of the need for ATAG- and UAAG- conformant tools,
-and aware of how implementation of ATAG and UAAG can improve
-interoperability with assistive technologies and accelerate overall
-progress on Web accessibility.</li>
-  <li>For organizations which currently have guidelines that diverge from
-international standards, consider establishing mechanisms for rapid
-review and potential transition to the latest version of WCAG.</li>
-  <li>Assist in preparing authorized translations of WAI guidelines
-according to W3C’s policy for authorized translations.</li>
-  <li>Redirect energies from the development of divergent standards to
-promoting awareness and providing implementation support for Web
-accessibility.</li>
-</ul>
-
-<h2 id="related-resources">Related Resources</h2>
-
-<p>For information on W3C/WAI guidelines and techniques, including versions
-under development, see <a href="http://www.w3.org/WAI/guid-tech.html">WAI Guidelines and
-Techniques</a>.</p>
-
-<p>For examples of how to reference a consistent set of international Web
-accessibility standards within diverse kinds of governmental and
-organizational laws and policies, in order to promote standards
-harmonization, see <a href="http://www.w3.org/WAI/impl/pol.html">Developing Organizational Policies for Web
-Accessibility</a>.</p>
-
-
-    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=Why%20Standards%20Harmonization%20is%20Essential%20to%20Web%20Accessibility">wai-eo-editors@w3.org</a> or via GitHub.</p>
-<div class="button-group">
-    <a href="mailto:wai-eo-editors@w3.org?subject=Why%20Standards%20Harmonization%20is%20Essential%20to%20Web%20Accessibility&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/wai-std-harmonization/edit/master/index.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-std-harmonization/issues/new?title=[]%20" class="button"><span>New GitHub Issue</span></a>
-</div></div></aside>
-
-
-    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
-  </main>
-</div>
-
-
-  
-  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-    <div class="inner" 
-      >
-      <p><strong>Date:</strong> Updated October 2002 (minor updates in November 2011 to account for WCAG 2.0 publication; otherwise, not edited). An <a href="http://www.w3.org/WAI/EO/Drafts/standards/standards_harmon">incomplete, unapproved draft update</a> of this document is available.</p> <p><strong>Editor:</strong> <a href="http://www.w3.org/People/Brewer">Judy Brewer</a>.  Contributors:  <a href="https://www.w3.org/WAI/EO/EOWG-members">EOWG Participants</a>.</p> <p>Developed by the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed with support from <a href="http://www.w3.org/WAI/TIES/"><acronym title="Web Accessibility Initiative: Training, Implementation, Education, Support">WAI-TIES</acronym></a>, a project of the European Commission <acronym title="Information Society Technologies">IST</acronym> Programme.</p>
-</div>
-  </footer>
-  
-
-
-<footer class="site-footer grid-4q" aria-label="Site">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
-    </div>
-    <div class="social" lang="en" dir="auto" translate="no">
-      <ul>
-        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
-        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
-        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
-        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
-    <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
-    </div>
-  </div>
-  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
-    <ul style="margin-bottom:0">
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-      <li><a href="/WAI/translations/"> Translations</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
-<script>
-  svg4everybody();
-</script><script>
-  var translationStrings = {};
-</script>
-<!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    </nav>
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span
+            >Strategies, standards, resources to make the Web accessible to
+            people with disabilities</span
+          >
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg focusable="false" aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            Menu</span
+          >
+        </button>
+      </div>
 
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">Search:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </label>
 
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg
+                        focusable="false"
+                        aria-label="Submit Search"
+                        class="icon-search"
+                      >
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="Main" lang="">
+      <ul>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/planning/"
+            ><span>Planning &amp; Policies</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/design-develop/"
+            ><span>Design &amp; Develop</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/test-evaluate/"
+            ><span>Test &amp; Evaluate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/teach-advocate/"
+            ><span>Teach &amp; Advocate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+      <ul style="align-self: center">
+        <li><a href="/WAI/" lang="en">Home</a></li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
+        <li>
+          <a
+            lang="en"
+            href="/WAI/standards-guidelines/harmonization/"
+            aria-current="page"
+            ><span>Standards Harmonization is Essential</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="default-grid with-gap leftcol">
+      <div class="sidenav">
+        <nav class="sn-contents" aria-label="Secondary">
+          <ul class="sidenav--list">
+            <li>
+              <a lang="en" href="/WAI/standards-guidelines/" class="page-link"
+                ><span>Standards/<wbr />Guidelines</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/wcag/"
+                class="page-link"
+                ><span>Web Content – WCAG</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="https://www.w3.org/WAI/WCAG21/quickref/"
+                    class="page-link"
+                    ><span>How to Meet WCAG 2 (Quick Reference)</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/glance/"
+                    class="page-link"
+                    ><span>At a Glance</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/docs/"
+                    class="page-link"
+                    ><span>The Documents</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/non-web-ict/"
+                    class="page-link"
+                    ><span>Applying to Non-Web ICT</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/new-in-22/"
+                    class="page-link"
+                    ><span>New in 2.2 Draft</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/new-in-21/"
+                    class="page-link"
+                    ><span>New in 2.1</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/translations/"
+                    class="page-link"
+                    ><span>Translations</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/commenting/"
+                    class="page-link"
+                    ><span>Commenting</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/conformance-logos/"
+                    class="page-link"
+                    ><span>Conformance Logos</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/faq/"
+                    class="page-link"
+                    ><span>FAQ</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/atag/"
+                class="page-link"
+                ><span>Authoring Tools – ATAG</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/atag/glance/"
+                    class="page-link"
+                    ><span>At a Glance</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/uaag/"
+                class="page-link"
+                ><span>User Agents – UAAG</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/wcag/wcag3-intro/"
+                class="page-link"
+                ><span>WCAG 3 Draft</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/aria/"
+                class="page-link"
+                ><span>WAI-ARIA</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/evaluation/"
+                class="page-link"
+                ><span>Evaluation – ACT &amp; EARL</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/act/"
+                    class="page-link"
+                    ><span>Accessibility Conformance Testing – ACT</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/earl/"
+                    class="page-link"
+                    ><span>Evaluation and Report Language – EARL</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/personalization/" class="page-link"
+                ><span>Personalization</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/pronunciation/" class="page-link"
+                ><span>Pronunciation</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/harmonization/"
+                aria-current="page"
+                class="page-link"
+                ><span>Standards Harmonization is Essential</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/w3c-process/"
+                class="page-link"
+                ><span>W3C Process for Developing Standards</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/linking/"
+                class="page-link"
+                ><span>Referencing and Linking to Standards</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/cognitive/" class="page-link"
+                ><span>Cognitive Accessibility at W3C</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/mobile/"
+                class="page-link"
+                ><span>Mobile Accessibility at W3C</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <main id="main">
+        <header>
+          <h1>Why Standards Harmonization is Essential to Web Accessibility</h1>
+        </header>
+        <aside class="box box-full">
+          <header class="box-h box-h-full"><h2>Abstract</h2></header>
+          <div class="box-i">
+            <p>
+              This document explains the key role that harmonization of
+              standards plays in increasing the accessibility of the Web for
+              people with disabilities. It examines how adoption of a consistent
+              set of international technical standards, the World Wide Web
+              Consortium’s (W3C) Web Accessibility Initiative (WAI) guidelines
+              for Web content, authoring tools, browsers and media players can
+              drive more rapid progress on Web accessibility, and make the
+              design and development of accessible Web sites more efficient.
+            </p>
+
+            <p>
+              Common standards for Web content accessibility and for authoring
+              tools encourages the development of tools that support production
+              of accessible Web content. Likewise, the adoption of a consistent
+              standard for browser and media player accessibility would improve
+              access to and reinforce the accessibility of Web content, and
+              would help ensure that accessible content will be more available
+              through assistive technologies used by some people with
+              disabilities.
+            </p>
+
+            <p>
+              This document introduces the concept of harmonization and causes
+              of fragmentation in the area of Web accessibility standards, and
+              examines the impact of harmonization and fragmentation on Web
+              developers, tool developers, and organizations. It also suggests
+              action steps for promoting Web accessibility standards
+              harmonization.
+            </p>
+          </div>
+        </aside>
+
+        <nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+          <header id="tocheading" class="box-h box-h-simple">
+            Page Contents
+          </header>
+          <div class="box-i">
+            <ul id="markdown-toc">
+              <li>
+                <a href="#overview" id="markdown-toc-overview">Overview</a>
+              </li>
+              <li>
+                <a href="#current-situation" id="markdown-toc-current-situation"
+                  >Current Situation</a
+                >
+              </li>
+              <li>
+                <a href="#consequences" id="markdown-toc-consequences"
+                  >Consequences</a
+                >
+              </li>
+              <li>
+                <a href="#action-steps" id="markdown-toc-action-steps"
+                  >Action Steps</a
+                >
+              </li>
+              <li>
+                <a href="#related-resources" id="markdown-toc-related-resources"
+                  >Related Resources</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <h2 id="overview">Overview</h2>
+
+        <p>
+          In this document <strong>“standards harmonization”</strong> refers to
+          <strong>the adoption of a consistent set of</strong>
+          <strong>international</strong>
+          <strong>technical standards for accessibility of:</strong>
+        </p>
+
+        <ul>
+          <li>Web content</li>
+          <li>browsers and media players</li>
+          <li>authoring tools</li>
+        </ul>
+
+        <p>
+          Around the world there is currently <strong>fragmentation</strong> –
+          <strong>conflicting</strong>, divergent technical standards** – rather
+          than harmonization of Web accessibility standards. While W3C’s Web
+          Content Accessibility Guidelines (WCAG) is the most broadly adopted
+          Web accessibility standard internationally, many countries have
+          developed or are in the process of developing their own versions of
+          technical guidelines or standards.
+        </p>
+
+        <p>
+          Furthermore, there is sometimes one version of a guideline or standard
+          at the national level, different versions at the provincial or state
+          level, and yet different versions adopted by commercial, educational,
+          and non-governmental organizations within the same country. For
+          organizations with audiences spanning different regions or economic
+          sectors, simply keeping track of the different requirements can be a
+          challenge.
+        </p>
+
+        <p>
+          Harmonization of Web accessibility standards is key to making an
+          accessible Web, because it creates a unified market for authoring
+          tools that produce conformant content. This unified market in turn
+          drives more rapid development of improved authoring tools. Improved
+          authoring tools make it easier to create accessible Web sites, and to
+          repair previously inaccessible sites; for instance, by prompting for
+          accessibility information such as alternative text for graphics,
+          captions for audio, or summaries for data tables. Widespread
+          availability of improved authoring tools can enable accessible design
+          to become the prevailing design mode even for Web developers only
+          minimally aware of the rationale for Web accessibility, or disinclined
+          to learn guidelines and techniques for accessibility.
+        </p>
+
+        <p>
+          Standards harmonization also creates a more compelling market for
+          developers of tools used to evaluate Web content accessibility. It
+          enables re-use of training and technical assistance resources for Web
+          accessibility across different regions and economic sectors. Standards
+          harmonization enables better access to information through browsers
+          and media players, and better interoperability with specialized
+          technologies that some people with disabilities must rely on. It
+          enables development of information repositories containing accessible,
+          compatible, and re-usable content.
+        </p>
+
+        <p>
+          The <a href="http://www.w3.org/">World Wide Web Consortium</a> (W3C)
+          <a href="http://www.w3.org/WAI/">Web Accessibility Initiative</a>
+          (WAI) has developed:
+        </p>
+
+        <ul>
+          <li>
+            <a href="/WAI/standards-guidelines/wcag/"
+              >Web Content Accessibility Guidelines (WCAG)</a
+            >, which describe how to make Web content and Web sites accessible;
+          </li>
+          <li>
+            <a href="/WAI/standards-guidelines/atag/"
+              >Authoring Tool Accessibility Guidelines (ATAG)</a
+            >, which describe how to make Web authoring tools that produce
+            content conforming to WCAG and that are accessible for people with
+            disabilities;
+          </li>
+          <li>
+            <a href="/WAI/standards-guidelines/uaag/"
+              >User Agent Accessibility Guidelines (UAAG)</a
+            >, which describe how to make browsers and media players accessible,
+            and how to ensure their interoperability with assistive
+            technologies.
+          </li>
+        </ul>
+
+        <p>
+          Together these three WAI guidelines provide mutually reinforcing
+          solutions which result in more comprehensive and effective
+          accessibility. W3C/WAI continues to advance these three guidelines by
+          updating and refining them as Web technologies evolve, and is
+          currently developing updated versions of the guidelines.
+        </p>
+
+        <h2 id="current-situation">Current Situation</h2>
+
+        <p>
+          Fragmentation of Web accessibility guidelines can impact progress on
+          Web accessibility in various ways:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Changing the wording of individual provisions</strong> in
+            accessibility guidelines often changes the technical meaning of the
+            provisions. This in turn changes what is required to meet a given
+            level of conformance in those guidelines. This can make it more
+            difficult for developers of authoring tools and evaluation tools
+            (which are used to evaluate the accessibility of Web content), as
+            they will then need to support potentially conflicting sets of
+            implementation and evaluation techniques.
+          </li>
+          <li>
+            <strong
+              >Combining two or more different accessibility provisions</strong
+            >
+            may likewise affect the meaning of these provisions. Again, this can
+            change what is required to meet a given level of conformance to
+            accessibility guidelines. As above, this can increase the burden for
+            developers of authoring tools and evaluation tools, which play a key
+            role in facilitating the production and evaluation of accessible Web
+            content.
+          </li>
+          <li>
+            <strong>Omitting or adding accessibility provisions</strong>
+            likewise changes what is required to meet a given level of
+            conformance. This may similarly make it more difficult for
+            developers of authoring tools and evaluation tools to support the
+            resulting reduced or expanded conformance levels.
+          </li>
+        </ul>
+
+        <p>
+          Various circumstances or beliefs in different countries and
+          organizations can contribute to the fragmentation of Web accessibility
+          standards. For each such factor, or “fragmentation driver,” however,
+          there is also a good reason to promote harmonization of standards:
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Fragmentation Driver</th>
+              <th>Reason for Harmonization</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                A restriction on the types of standards that governments can
+                adopt; with a belief that W3C is not an official standards body
+              </td>
+              <td>
+                W3C is the leading standards body for the Web industry. Many
+                governments have adopted HTML or XML, and therefore already have
+                mechanisms whereby they can adopt W3C standards.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                A requirement that only standards officially available in local
+                language(s) can be adopted
+              </td>
+              <td>
+                W3C now allows the development of authorized translations in
+                local languages through its
+                <a href="http://www.w3.org/2005/02/TranslationPolicy"
+                  >Policy for Authorized W3C Translations</a
+                >. For example,
+                <a href="http://www.w3.org/WAI/WCAG20/translations"
+                  >Authorized Translations of WCAG</a
+                >
+                are available in several languages.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                The belief that only local guidelines can meet the needs of the
+                local disability community
+              </td>
+              <td>
+                Disability needs with regard to Web accessibility do not vary
+                significantly from country to country.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                The belief that the needs of people with disabilities outside a
+                country are different or not relevant
+              </td>
+              <td>
+                The Web is worldwide. People with disabilities from other
+                countries, with the same needs for accessibility and using the
+                same kinds of assistive technologies, may need access to the
+                Web-based resources of a particular country.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                The belief that W3C/WAI guidelines were developed by a single
+                country
+              </td>
+              <td>
+                W3C/WAI guidelines were developed with broad international
+                input, and reflect needs from around the world.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                The belief that development of local guidelines is the best
+                activity in which to invest local funding for Web accessibility
+              </td>
+              <td>
+                Development of local guidelines takes scarce resources away from
+                activities where building local capacity is crucial – such as
+                development of education, awareness, training and technical
+                assistance on Web accessibility.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                The belief that it is more practical in the long term to have
+                locally developed guidelines
+              </td>
+              <td>
+                Because Web technologies are constantly evolving, ongoing
+                development and maintenance of local guidelines and techniques
+                into the future may be prohibitively resource-intensive.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                The belief that Web accessibility can be more easily achieved
+                through locally developed guidelines
+              </td>
+              <td>
+                Web accessibility can be more easily achieved through increased
+                availability of supporting tools and resources, including
+                authoring tools, evaluation tools, browsers, media players, and
+                training and technical resources. These tools and resources
+                develop more rapidly when there is a unified market around a
+                consistent international set of Web accessibility standards.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="consequences">Consequences</h2>
+
+        <h3 id="webdev">Web Development</h3>
+
+        <p>
+          For Web developers using today’s authoring tools, development of
+          accessible Web sites first requires an awareness of the need for Web
+          accessibility, then a deliberate effort to apply WCAG. It may require
+          working around features of authoring tools that make it hard to build
+          accessible Web sites. For instance, some authoring tools still produce
+          non-standard markup, which can be a barrier for accessibility.
+          Authoring tools that conform to ATAG provide built-in support for
+          production of accessible Web sites.
+        </p>
+
+        <p>
+          When Web developers develop accessible Web sites using today’s
+          authoring tools, they may need to work around inconsistent support of
+          Web standards in browsers and media players. For instance,
+          inconsistent initial support in browsers for Cascading Style Sheet
+          (CSS) features, such as CSS positioning, led many Web developers to
+          rely on less accessible design solutions for layout for many years.
+          Browsers and media players that conformed to UAAG would provide
+          reliable support for accessibility features, making the jobs of Web
+          developers much easier.
+        </p>
+
+        <p>
+          Web developers must already learn a variety of Web technologies and
+          tools in order to be competitive in their field. Harmonization of Web
+          accessibility standards enables Web developers to learn one consistent
+          set of guidelines and implementation techniques, rather than needing
+          to learn many different guidelines; and it allows them to re-use
+          training and technical assistance resources among a broader Web
+          community.
+        </p>
+
+        <h3 id="auth">Authoring Tools</h3>
+
+        <p>
+          Increased availability of authoring tools conforming to the Authoring
+          Tool Accessibility Guidelines (ATAG) is key to making the Web
+          accessible because, with such tools, Web content developers could more
+          easily and more automatically create accessible Web sites.
+        </p>
+
+        <p>
+          Authoring tool developers face competing priorities when deciding
+          which features to build into their software. Product managers’
+          decisions with regard to which features are included in product
+          releases are frequently based on the extent of demand for a given set
+          of features throughout their customer base. Harmonized standards mean
+          a more unified customer demand. This strengthens the business case for
+          accessibility for authoring tool developers and can tip the balance
+          towards implementation of more accessibility features in their
+          products. This, in turn, means more rapid availability of authoring
+          tools with features supporting production of accessible content.
+        </p>
+
+        <h3 id="evaldev">Evaluation Tools</h3>
+
+        <p>
+          Developers of evaluation tools are also impacted by fragmented
+          standards, as these can delay, and/or increase the development cost,
+          of the evaluation tools. Time needed to implement evaluation tests for
+          conflicting versions of guidelines could otherwise be used to improve
+          evaluation tools by increasing their usability or accuracy.
+        </p>
+
+        <p>
+          Harmonized Web accessibility standards would allow developers of
+          accessibility evaluation tools to concentrate their efforts on
+          implementing one set of evaluation tests, rather than multiple tests
+          for overlapping or conflicting guidelines and standards in different
+          regions or economic sectors. Improved evaluation tools enable more
+          people to test Web sites more reliably, and help ensure more
+          accessible Web sites.
+        </p>
+
+        <h3 id="orgdev">Organizations</h3>
+
+        <p>
+          When there is fragmentation of standards, organizations that have
+          audiences spanning different geographic regions, countries, or
+          economic sectors must keep track of multiple sets of requirements.
+          Such organizations may need to provide additional authoring tools,
+          evaluation tools, training resources and technical assistance for
+          their Web developers. This can divert resources from the actual
+          development work needed to ensure accessible Web sites. The increase
+          in cost and effort resulting from fragmented standards may
+          consequently make it more difficult to make a convincing business case
+          for accessibility within the organization.
+        </p>
+
+        <p>
+          Harmonized Web accessibility standards, on the other hand, allow
+          organizations to re-use authoring and evaluation tools, training, and
+          technical assistance resources throughout the organization, thereby
+          achieving more cost-effective accessibility solutions.
+        </p>
+
+        <h3 id="browsers">
+          Browsers, Media Players, and Assistive Technologies
+        </h3>
+
+        <p>
+          The harmonization of Web accessibility standards is also a concern
+          with regard to browsers and media players. Conflicting standards for
+          browser accessibility can slow implementation of accessibility
+          support. Browsers and media players’ lack of conformance to the User
+          Agent Accessibility Guidelines (UAAG) makes it harder for people with
+          disabilities to access content on Web sites, and even to find and use
+          the accessibility features that are already incorporated in some
+          browsers and media players.
+        </p>
+
+        <p>
+          Some of today’s browsers and media players do not provide access to
+          certain kinds of accessibility information that a Web content
+          developer may have included in a Web site; for instance, long
+          descriptions of complex visuals such as maps and graphs, or summaries
+          of information in data tables. UAAG describes how browsers and media
+          players can enable access to such information.
+        </p>
+
+        <p>
+          UAAG also describes requirements for browsers and media players that
+          can work smoothly with assistive technologies, which some people with
+          disabilities use, such as screen readers, screen magnifiers, and voice
+          recognition software.
+        </p>
+
+        <p>
+          Implementation of accessibility standards in browsers and authoring
+          tools is mutually reinforcing. Once browser developers implement Web
+          accessibility features, authoring tool developers have more reason to
+          provide authoring support for those features. For instance, once
+          browsers provide access to summaries of data tables, authoring tool
+          developers then have a stronger rationale to provide a means for
+          content developers to add summaries to tables. Similarly, browser
+          developers are influenced by what authoring tools support, and are
+          more likely to implement accessibility features once they know that
+          authoring tools will provide the relevant authoring support.
+        </p>
+
+        <h3 id="repos">Information Repositories</h3>
+
+        <p>
+          Online information repositories allow the gathering and storing of
+          content for re-use in a variety of ways, including the creation of
+          online learning modules. If the content in an information repository
+          conforms to a consistent accessibility standard, then that content can
+          be more easily shared among an unlimited number of users. It can be
+          re-purposed and personalized according to user profiles, which may
+          include information on preferred learning styles and the accessibility
+          requirements of users with disabilities. With harmonized standards for
+          accessibility of content in information repositories, educators and
+          learners are able to freely transform shared resources according to
+          user needs.
+        </p>
+
+        <h2 id="action-steps">Action Steps</h2>
+
+        <p>
+          W3C continues to update and refine the WAI guidelines, supporting
+          techniques, and other resources to keep pace with evolving Web
+          technologies. The following steps can increase the international
+          harmonization of Web accessibility standards, and help lead more
+          rapidly to an accessible Web:
+        </p>
+
+        <ul>
+          <li>
+            Participate in development of updated WAI guidelines and support
+            material by reviewing and commenting on drafts, providing feedback
+            during implementation trials, and/or participating in WAI Working
+            Groups.
+            <em
+              >(See
+              <a href="http://www.w3.org/WAI/participation"
+                >Participating in WAI</a
+              >)</em
+            >
+          </li>
+          <li>
+            Promote awareness among policy-makers, standards developers,
+            technology developers, and disability communities of the strategic
+            importance of standards harmonization towards achieving an
+            accessible Web.
+          </li>
+          <li>
+            Ensure that developers of authoring tools, browsers, and media
+            players are aware of the need for ATAG- and UAAG- conformant tools,
+            and aware of how implementation of ATAG and UAAG can improve
+            interoperability with assistive technologies and accelerate overall
+            progress on Web accessibility.
+          </li>
+          <li>
+            For organizations which currently have guidelines that diverge from
+            international standards, consider establishing mechanisms for rapid
+            review and potential transition to the latest version of WCAG.
+          </li>
+          <li>
+            Assist in preparing authorized translations of WAI guidelines
+            according to W3C’s policy for authorized translations.
+          </li>
+          <li>
+            Redirect energies from the development of divergent standards to
+            promoting awareness and providing implementation support for Web
+            accessibility.
+          </li>
+        </ul>
+
+        <h2 id="related-resources">Related Resources</h2>
+
+        <p>
+          For information on W3C/WAI guidelines and techniques, including
+          versions under development, see
+          <a href="http://www.w3.org/WAI/guid-tech.html"
+            >WAI Guidelines and Techniques</a
+          >.
+        </p>
+
+        <p>
+          For examples of how to reference a consistent set of international Web
+          accessibility standards within diverse kinds of governmental and
+          organizational laws and policies, in order to promote standards
+          harmonization, see
+          <a href="http://www.w3.org/WAI/impl/pol.html"
+            >Developing Organizational Policies for Web Accessibility</a
+          >.
+        </p>
+
+        <aside class="box box-icon box-space-above" id="helpimprove">
+          <header class="box-h box-h-icon box-h-space-above box-h-icon">
+            <svg focusable="false" aria-hidden="true" class="icon-comments">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-comments"
+              ></use>
+            </svg>
+            <h2>Help improve this page</h2>
+          </header>
+          <div class="box-i">
+            <p>
+              Please share your ideas, suggestions, or comments via e-mail to
+              the publicly-archived list
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=Why%20Standards%20Harmonization%20is%20Essential%20to%20Web%20Accessibility"
+                >wai-eo-editors@w3.org</a
+              >
+              or via GitHub.
+            </p>
+            <div class="button-group">
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=Why%20Standards%20Harmonization%20is%20Essential%20to%20Web%20Accessibility&body=[put%20comment%20here...]"
+                class="button"
+                ><span>E-mail</span></a
+              >
+              <a
+                href="https://github.com/w3c/wai-std-harmonization/edit/master/index.md"
+                class="button"
+                ><span>Fork &amp; Edit on GitHub</span></a
+              ><a
+                href="https://github.com/w3c/wai-std-harmonization/issues/new?title=[]%20"
+                class="button"
+                ><span>New GitHub Issue</span></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg focusable="false" aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            Back to Top</span
+          ></a
+        >
+      </main>
+    </div>
+
+    <footer
+      id="wai-site-footer"
+      class="page-footer default-grid"
+      aria-label="Page"
+    >
+      <div class="inner">
+        <p>
+          <strong>Date:</strong> Updated October 2002 (minor updates in November
+          2011 to account for WCAG 2.0 publication; otherwise, not edited).
+          An <a
+            href="http://www.w3.org/WAI/EO/Drafts/standards/standards_harmon"
+            >incomplete, unapproved draft update</a
+          > of this document is available.
+        </p>
+        <p>
+          <strong>Editor:</strong>
+          <a href="http://www.w3.org/People/Brewer">Judy Brewer</a>.
+          Contributors:
+          <a href="https://www.w3.org/WAI/EO/EOWG-members">EOWG Participants</a
+          >.
+        </p>
+        <p>
+          Developed by the Education and Outreach Working Group (<a
+            href="http://www.w3.org/WAI/EO/"
+            >EOWG</a
+          >). Developed with support from <a href="http://www.w3.org/WAI/TIES/"
+            ><acronym
+              title="Web Accessibility Initiative: Training, Implementation, Education, Support"
+              >WAI-TIES</acronym
+            ></a
+          >, a project of the European Commission <acronym
+            title="Information Society Technologies"
+            >IST</acronym
+          > Programme.
+        </p>
+      </div>
+    </footer>
+
+    <footer class="site-footer grid-4q" aria-label="Site">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a
+              class="largelink"
+              href="https://www.w3.org/WAI/"
+              lang="en"
+              dir="auto"
+              translate="no"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>
+            Strategies, standards, and supporting resources to make the Web
+            accessible to people with disabilities.
+          </p>
+        </div>
+        <div class="social" lang="en" dir="auto" translate="no">
+          <ul>
+            <li>
+              <a href="https://twitter.com/w3c_wai"
+                ><svg focusable="false" aria-hidden="true" class="icon-twitter">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/feed.xml"
+                ><svg focusable="false" aria-hidden="true" class="icon-rss">
+                  <use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use>
+                </svg>
+                Feed</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"
+                ><svg focusable="false" aria-hidden="true" class="icon-youtube">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/news/subscribe/" class="button"
+                >Get News in Email</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div lang="en" dir="auto" translate="no">
+          <p>
+            Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn">Beihang</a>)
+            <a href="/WAI/about/using-wai-material/"
+              >Permission to Use WAI Material</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div lang="en" dir="auto" translate="no" class="q4-start q4-end">
+        <ul style="margin-bottom: 0">
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li>
+            <a href="/WAI/about/accessibility-statement/"
+              >Accessibility Statement</a
+            >
+          </li>
+          <li><a href="/WAI/translations/"> Translations</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script>
+      var translationStrings = {};
+    </script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </body>
 </html>

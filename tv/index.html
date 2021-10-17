@@ -1,262 +1,837 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>W3C Media and Entertainment Activity</title>
+    <link
+      rel="stylesheet"
+      href="https://www.w3.org/2008/site/css/minimum"
+      type="text/css"
+      media="handheld, all"
+    />
+    <style type="text/css" media="print, screen and (min-width: 481px)">
+      @import url("https://www.w3.org/2008/site/css/advanced");
+    </style>
+    <style type="text/css">
+      .bullets {
+        margin-left: 2em;
+      }
+      .bullets li {
+        list-style: disc;
+      }
+    </style>
+    <link
+      href="https://www.w3.org/2008/site/css/minimum"
+      rel="stylesheet"
+      type="text/css"
+      media="handheld, only screen and (max-device-width: 480px)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.w3.org/2008/site/css/print"
+      type="text/css"
+      media="print"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://www.w3.org/2008/site/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="css/tv.css"
+      type="text/css"
+      media="handheld, all"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="Help" href="https://www.w3.org/Help/" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>W3C Media and Entertainment Activity</title>
-  <link rel="stylesheet" href="https://www.w3.org/2008/site/css/minimum" type="text/css" media="handheld, all">
-  <style type="text/css" media="print, screen and (min-width: 481px)">
-    @import url("https://www.w3.org/2008/site/css/advanced");
-  </style>
-  <style type="text/css">
-    .bullets {
-      margin-left: 2em;
-    }
-    .bullets li {
-      list-style: disc;
-    }
-  </style>
-  <link href="https://www.w3.org/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)">
-  <link rel="stylesheet" href="https://www.w3.org/2008/site/css/print" type="text/css" media="print">
-  <link rel="shortcut icon" href="https://www.w3.org/2008/site/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/tv.css" type="text/css" media="handheld, all">
-  <meta name="viewport" content="width=device-width">
-  <link rel="Help" href="https://www.w3.org/Help/">
-</head>
+  <body id="www-w3-org" class="w3c_public">
+    <div id="w3c_container">
+      <header id="w3c_mast" role="banner">
+        <!-- #w3c_mast / Page top header -->
+        <h1 class="logo">
+          <a tabindex="2" accesskey="1" href="https://www.w3.org/"
+            ><img
+              src="https://www.w3.org/2008/site/images/logo-w3c-mobile-lg"
+              width="90"
+              height="53"
+              alt="W3C"
+          /></a>
+          <span class="alt-logo">W3C</span>
+        </h1>
 
-<body id="www-w3-org" class="w3c_public">
-  <div id="w3c_container">
-    <header id="w3c_mast" role="banner">
-      <!-- #w3c_mast / Page top header -->
-      <h1 class="logo">
-        <a tabindex="2" accesskey="1" href="https://www.w3.org/"><img src="https://www.w3.org/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C"></a>
-        <span class="alt-logo">W3C</span>
-      </h1>
+        <nav id="w3c_nav" role="navigation">
+          <form
+            action="https://www.w3.org/Help/search"
+            method="get"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <!-- w3c_sec_nav is populated through js -->
+            <div class="w3c_sec_nav">
+              <!-- -->
+            </div>
+            <ul class="main_nav">
+              <!-- Main navigation menu -->
+              <li class="first-item">
+                <a href="https://www.w3.org/standards/">Standards</a>
+              </li>
+              <li><a href="https://www.w3.org/participate/">Participate</a></li>
+              <li>
+                <a href="https://www.w3.org/Consortium/membership"
+                  >Membership</a
+                >
+              </li>
+              <li class="last-item">
+                <a href="https://www.w3.org/Consortium/">About W3C</a>
+              </li>
+              <li class="search-item">
+                <div id="search-form" role="search">
+                  <input
+                    tabindex="3"
+                    class="text"
+                    name="q"
+                    value=""
+                    title="Search"
+                  />
+                  <button id="search-submit" name="search-submit" type="submit">
+                    <img
+                      class="submit"
+                      src="https://www.w3.org/2008/site/images/search-button"
+                      alt="Search"
+                      width="21"
+                      height="17"
+                    />
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </form>
+        </nav>
+      </header>
 
-      <nav id="w3c_nav" role="navigation">
-        <form action="https://www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
-          <!-- w3c_sec_nav is populated through js -->
-          <div class="w3c_sec_nav">
-            <!-- -->
-          </div>
-          <ul class="main_nav">
-            <!-- Main navigation menu -->
-            <li class="first-item"><a href="https://www.w3.org/standards/">Standards</a></li>
-            <li><a href="https://www.w3.org/participate/">Participate</a></li>
-            <li><a href="https://www.w3.org/Consortium/membership">Membership</a></li>
-            <li class="last-item"><a href="https://www.w3.org/Consortium/">About W3C</a></li>
-            <li class="search-item">
-              <div id="search-form" role="search">
-                <input tabindex="3" class="text" name="q" value="" title="Search">
-                <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="https://www.w3.org/2008/site/images/search-button" alt="Search" width="21" height="17"></button>
-              </div>
+      <div id="w3c_main">
+        <div id="w3c_logo_shadow" class="w3c_leftCol">
+          <img
+            alt="W3C"
+            src="https://www.w3.org/2008/site/images/logo-shadow"
+            height="32"
+          />
+        </div>
+        <aside id="w3c_sidenavigation" class="w3c_leftCol" role="complementary">
+          <h3 class="category">
+            <span class="ribbon"><b>Main media groups</b></span>
+          </h3>
+          <ul>
+            <li>
+              <h4>Media &amp; Entertainment Interest Group</h4>
+              <p>
+                The
+                <a href="https://www.w3.org/2011/webtv/"
+                  >Media &amp; Entertainment Interest Group</a
+                >
+                acts as a steering committee for media-related standardization
+                efforts at W3C. The group gathers feedback from media companies
+                and external organizations about media related aspects of the
+                web platform, tracks on-going works at W3C and elsewhere, and
+                dispatches media work items to the appropriate group(s) at W3C.
+              </p>
+              <p>
+                <a href="https://www.w3.org/2011/webtv/" class="btn"
+                  >More info</a
+                >
+              </p>
+            </li>
+            <li>
+              <h4>Media Working Group</h4>
+              <p>
+                The
+                <a href="https://www.w3.org/media-wg/">Media Working Group</a>
+                standardizes core client-side media processing and playback
+                features on the Web, e.g.
+                <a href="https://www.w3.org/TR/media-capabilities/"
+                  >Media Capabilities</a
+                >, <a href="https://www.w3.org/TR/webcodecs/">WebCodecs</a> and
+                revisions of
+                <a href="https://www.w3.org/TR/media-source/"
+                  >Media Source Extensions</a
+                >
+                (MSE) and
+                <a href="https://www.w3.org/TR/encrypted-media/"
+                  >Encrypted Media Extensions</a
+                >
+                (EME).
+              </p>
+              <p>
+                <a href="https://www.w3.org/media-wg/" class="btn">More info</a>
+              </p>
+            </li>
+            <li>
+              <h4>Timed Text Working Group</h4>
+              <p>
+                The
+                <a href="https://www.w3.org/AudioVideo/TT/"
+                  >Timed Text Working Group</a
+                >
+                develops standards for media online captioning, notably
+                <a href="https://www.w3.org/TR/ttml/">TTML</a> and
+                <a href="https://www.w3.org/TR/webvtt/">WebVTT</a>.
+              </p>
+              <p>
+                <a href="https://www.w3.org/AudioVideo/TT/" class="btn"
+                  >More info</a
+                >
+              </p>
+            </li>
+            <li>
+              <h4>Audio Working Group</h4>
+              <p>
+                The
+                <a href="https://www.w3.org/2011/audio/">Audio Working Group</a>
+                develops the
+                <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> to
+                add advanced sound and music synthesis capabilities to the Web.
+              </p>
+              <p>
+                <a href="https://www.w3.org/2011/audio/" class="btn"
+                  >More info</a
+                >
+              </p>
+            </li>
+            <li>
+              <h4>Immersive Web Working Group</h4>
+              <p>
+                The
+                <a href="https://www.w3.org/immersive-web/"
+                  >Immersive Web Working Group</a
+                >
+                brings Virtual Reality and Augmented Reality (collectively known
+                as XR) devices to Web applications.
+              </p>
+              <p>
+                <a href="https://www.w3.org/immersive-web/" class="btn"
+                  >More info</a
+                >
+              </p>
+            </li>
+            <li>
+              <h4>GPU for the Web Working Group</h4>
+              <p>
+                The
+                <a href="https://www.w3.org/2020/gpu/"
+                  >GPU for the Web Working Group</a
+                >
+                provides an interface between the Web Platform and modern 3D
+                graphics and computation capabilities present on native system
+                platforms through the
+                <a href="https://www.w3.org/TR/webgpu/">WebGPU</a> and
+                <a href="https://www.w3.org/TR/WGSL/">WGSL</a> specifications.
+              </p>
+              <p>
+                <a href="https://www.w3.org/2020/gpu/" class="btn">More info</a>
+              </p>
+            </li>
+            <li>
+              <h4>Second Screen Working Group</h4>
+              <p>
+                The
+                <a href="https://www.w3.org/2014/secondscreen/"
+                  >Second Screen Working Group</a
+                >
+                develops the
+                <a href="https://w3c.github.io/presentation-api/"
+                  >Presentation API</a
+                >, the
+                <a href="https://w3c.github.io/remote-playback/"
+                  >Remote Playback API</a
+                >
+                and the
+                <a href="https://www.w3.org/TR/openscreenprotocol/"
+                  >Open Screen Protocol</a
+                >
+                to enable use of secondary screens to display web content.
+              </p>
+              <p>
+                <a href="https://www.w3.org/2014/secondscreen/" class="btn"
+                  >More info</a
+                >
+              </p>
             </li>
           </ul>
-        </form>
-      </nav>
-    </header>
+        </aside>
 
-    <div id="w3c_main">
-      <div id="w3c_logo_shadow" class="w3c_leftCol"> <img alt="W3C" src="https://www.w3.org/2008/site/images/logo-shadow" height="32"> </div>
-      <aside id="w3c_sidenavigation" class="w3c_leftCol" role="complementary">
-        <h3 class="category"> <span class="ribbon"><b>Main media groups</b></span></h3>
-        <ul>
-          <li>
-            <h4>Media &amp; Entertainment Interest Group</h4>
-            <p>The <a href="https://www.w3.org/2011/webtv/">Media &amp; Entertainment Interest Group</a> acts as a steering committee for media-related standardization efforts at W3C. The group gathers feedback from media companies and external organizations about media related aspects of the web platform, tracks on-going works at W3C and elsewhere, and dispatches media work items to the appropriate group(s) at W3C.</p>
-            <p><a href="https://www.w3.org/2011/webtv/" class="btn">More info</a></p>
-          </li>
-          <li>
-            <h4>Media Working Group</h4>
-            <p>The <a href="https://www.w3.org/media-wg/">Media Working Group</a> standardizes core client-side media processing and playback features on the Web, e.g. <a href="https://www.w3.org/TR/media-capabilities/">Media Capabilities</a>, <a href="https://www.w3.org/TR/webcodecs/">WebCodecs</a> and revisions of <a href="https://www.w3.org/TR/media-source/">Media Source Extensions</a> (MSE) and <a href="https://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a> (EME).</p>
-            <p><a href="https://www.w3.org/media-wg/" class="btn">More info</a></p>
-          </li>
-          <li>
-            <h4>Timed Text Working Group</h4>
-            <p>The <a href="https://www.w3.org/AudioVideo/TT/">Timed Text Working Group</a> develops standards for media online captioning, notably <a href="https://www.w3.org/TR/ttml/">TTML</a> and <a href="https://www.w3.org/TR/webvtt/">WebVTT</a>.</p>
-            <p><a href="https://www.w3.org/AudioVideo/TT/" class="btn">More info</a></p>
-          </li>
-          <li>
-            <h4>Audio Working Group</h4>
-            <p>The <a href="https://www.w3.org/2011/audio/">Audio Working Group</a> develops the <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> to add advanced sound and music synthesis capabilities to the Web.</p>
-            <p><a href="https://www.w3.org/2011/audio/" class="btn">More info</a></p>
-          </li>
-          <li>
-            <h4>Immersive Web Working Group</h4>
-            <p>The <a href="https://www.w3.org/immersive-web/">Immersive Web Working Group</a> brings Virtual Reality and Augmented Reality (collectively known as XR) devices to Web applications.</p>
-            <p><a href="https://www.w3.org/immersive-web/" class="btn">More info</a></p>
-          </li>
-          <li>
-            <h4>GPU for the Web Working Group</h4>
-            <p>The <a href="https://www.w3.org/2020/gpu/">GPU for the Web Working Group</a> provides an interface between the Web Platform and modern 3D graphics and computation capabilities present on native system platforms through the <a href="https://www.w3.org/TR/webgpu/">WebGPU</a> and <a href="https://www.w3.org/TR/WGSL/">WGSL</a> specifications.</p>
-            <p><a href="https://www.w3.org/2020/gpu/" class="btn">More info</a></p>
-          </li>
-          <li>
-            <h4>Second Screen Working Group</h4>
-            <p>The <a href="https://www.w3.org/2014/secondscreen/">Second Screen Working Group</a> develops the <a href="https://w3c.github.io/presentation-api/">Presentation API</a>, the <a href="https://w3c.github.io/remote-playback/">Remote Playback API</a> and the <a href="https://www.w3.org/TR/openscreenprotocol/">Open Screen Protocol</a> to enable use of secondary screens to display web content.</p>
-            <p><a href="https://www.w3.org/2014/secondscreen/" class="btn">More info</a></p>
-          </li>
-        </ul>
-      </aside>
-
-      <main class="w3c_mainCol" role="main">
-        <div id="w3c_crumbs">
-          <div id="w3c_crumbs_frame">
-            <ul class="bct"> <!-- .bct / Breadcrumbs -->
-              <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
-              <li><a href="https://www.w3.org/">W3C</a> <span class="cr">&raquo;</span></li>
-              <li class="current">Media &amp; Entertainment Activity</li>
-            </ul>
-          </div>
-        </div>
-        <h1 class="title">Media &amp; Entertainment Activity</h1>
-        <div class="line">
-          <div class="unit size2on3" id="maincol">
-            <section id="w3c_content_body">
-              <section id="owp">
-                <h2><a href="#owp">The Open Web Platform has transformed media consumption</a></h2>
-                <p><img src="images/emmy.jpg" alt="W3C honored with an Emmy® Award for Standardization of a Full TV Experience" style="float:  left; margin-top: 0.3em; margin-right: 0.5em; width: 50%; max-width: 500px;" />The Open Web Platform has been the driver of the transformation of the media industry. The <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements in <a href="html.spec.whatwg.org/multipage/">HTML</a>, <a href="https://www.w3.org/TR/media-source/">Media Source Extensions</a> (MSE), <a href="https://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a> (EME) and the <a href="https://www.w3.org/TR/TTML">Timed Text Markup Language</a> (TTML) form the backbone of media streaming experiences on the Web. Together, these Emmy® award winning technologies have revolutionized media consumption worldwide.</p>
-
-                <p>The <a href="https://www.w3.org/2011/webtv/">Media &amp; Entertainment Interest Group</a> was established to help affected parties build on these foundations and maintain a competitive advantage. Members of the Interest Group refine the requirements that get adopted by Working Groups when they develop tomorrow's media standards.</p>
-
-                <p>The <a href="https://www.w3.org/media-wg/">Media Working Group</a> is at the core of media standardization at W3C. On top of maintaining media foundations, the group develops APIs to improve client-side media processing and playback features on the Web, such as <a href="https://www.w3.org/TR/media-capabilities">Media Capabilities</a>, <a href="https://www.w3.org/TR/picture-in-picture/">Picture-in-picture</a> or <a href="https://www.w3.org/TR/mediasession/">Media Session</a>.</p>
-              </section>
-              <section id="shaping" style="clear: both;">
-                <h2><a href="#shaping">The Media &amp; Entertainment Industry is shaping media on the Web at W3C</a></h2>
-                <p>Through the <a href="https://www.w3.org/2011/webtv/">Media &amp; Entertainment Interest Group</a>, the <a href="https://www.w3.org/media-wg/">Media Working Group</a> and a few other media related groups such as the <a href="https://www.w3.org/2011/audio/">Audio Working Group</a>, the <a href="https://www.w3.org/2014/secondscreen/">Second Screen Working Group</a>, or the <a href="https://www.w3.org/AudioVideo/TT/">Timed Text Working Group</a>, W3C has brought stakeholders together to help set the direction in which technological progress is made, reinforce core media technologies on the Web, create an interoperable ecosystem and build the future of media experiences.</p>
-              </section>
-
-              <section id="join" style="clear: both;">
-                <h2><a href="#join">Now is the time you can influence how media technologies on the Web evolve</a></h2>
-
-                <p><a href="mailto:membership@w3.org?Subject=Interest%20in%20Web%20and%20Television">Contact W3C</a> to learn more about the <a href="https://www.w3.org/Consortium/membership-benefits">benefits of W3C Membership</a>, and join <a href="https://www.w3.org/Consortium/Member/List">W3C Members</a> that shape the way media is created, controlled and consumed on the Web:</p>
-
-                <ul class="bullets">
-                  <li>Broadcasters</li>
-                  <li>Cable, telecom, multiple service operators</li>
-                  <li>Chipset and device manufacturers</li>
-                  <li>Browser and software vendors</li>
-                  <li>Technology providers and research labs</li>
-                  <li>Content providers and movie studios</li>
-                  <li>… and others!</li>
-                </ul>
-              </section>
-
-              <section id="next">
-                <h2><a href="#next">What's next for media and entertainment on the Web</a></h2>
-                <ul class="theme_ext">
-                  <li class="theme_ext_item tv_testing">
-                    <h3 class="w3c_topic"><span class="icon"></span>Baseline for media applications</h3>
-                    <p class="tPadding0">TVs are tested and certified as a matter of course. The Web platform evolves on a continuous basis. What is the baseline that device implementations need to support at a given point in time to be part of the Open Web? The <a href="https://www.w3.org/community/webmediaapi">Web Media API Community Group</a>, initiated by the CTA WAVE project, develops such a baseline.</p>
-                    <p class="tPadding0">A recurring question about media technologies is whether Web browsers should provide native support for additional technologies or whether Web browsers should only provide low-level hooks that applications may leverage to implement media features. This includes support for in-band tracks (e.g. see ongoing incubation effort on <a href="https://wicg.github.io/datacue/">DataCue API</a>), support for caption rendering (e.g. native support for TTML) and synchronized overlays (e.g. <a href="https://w3c.github.io/danmaku/">bullet chatting</a>), as well as support for media (de-)containerization (natively supported when <a href="https://www.w3.org/TR/media-source/">MSE</a> is used, up to applications in <a href="https://www.w3.org/TR/webcodecs/">WebCodecs</a>).</p>
-                  </li>
-                  <li class="theme_ext_item tv_audio">
-                    <h3 class="w3c_topic"><span class="icon"></span>Audio support</h3>
-                    <p class="tPadding0">Media elements in HTML5 and the <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> enable audio processing and rendering on the Web. They need to be extended e.g. to address advanced spatialization scenarios, in particular with the advent of Head Mounted Displays used in Virtual Reality. The <a href="https://www.w3.org/2011/audio/">Audio Working Group</a> discusses version 2.0 of the Web Audio API.</p>
-                  </li>
-                  <li class="theme_ext_item tv_multi-streams">
-                    <h3 class="w3c_topic"><span class="icon"></span>Improved Media distribution</h3>
-                    <p class="tPadding0">Cross-browser support for the <a href="https://www.w3.org/TR/media-source/">Media Source Extensions</a> (MSE) standard means adaptive streaming over HTTP has become the main mechanism to distribute media content on the Web. The ongoing revision of MSE in the Media Working Group adds support for codec switching, e.g. to enable ad-insertion scenarios.</p>
-                    <p class="tPadding0">Other distribution mechanisms are being used or tested to lower distribution latency, improve scaling, and/or reduce streaming costs, including the use of WebRTC technologies (e.g. in peer-to-peer CDN) or push mechanisms to enable multicast distribution. The <a href="https://www.w3.org/2011/webtv/">Media &amp; Entertainment Interest Group</a> discusses the scope of potential renewed standardization efforts in that area. In parallel, the <a href="https://www.w3.org/groups/wg/webtransport">WebTransport Working Group</a> develops <a href="https://www.w3.org/TR/webtransport/">WebTransport</a>, a low-latency transport API based on HTTP/3, and the Media Working Group standardizes <a href="https://www.w3.org/TR/webcodecs/">WebCodecs</a> to give applications better control over low-latency media encoding/decoding (as well as access to encoded/decoded frames to enable realtime media processing scenarios).</p>
-                  </li>
-                  <li class="theme_ext_item tv_secondscreen">
-                    <h3 class="w3c_topic"><span class="icon"></span>Second screen support</h3>
-                    <p class="tPadding0">The <a href="https://w3c.github.io/presentation-api/">Presentation API</a> and the <a href="https://w3c.github.io/remote-playback/">Remote Playback API</a> expose second screens to web applications but interoperability between screens can only be achieved provided the industry agrees on a common set of protocols for second screen support. The <a href="https://www.w3.org/2014/secondscreen/">Second Screen Working Group</a> develops such an <a href="https://www.w3.org/TR/openscreenprotocol/">Open Screen Protocol</a>.</p>
-                  </li>
-                  <li class="theme_ext_item tv_multi-ads">
-                    <h3 class="w3c_topic"><span class="icon"></span>HDR / Wide gamut color space support</h3>
-                    <p class="tPadding0">As HDR devices become widespread, the Web platform needs to allow use of extended color spaces across the board (in CSS, Canvas and media playback) to take advantage of these capabilities. The <a href="https://www.w3.org/community/colorweb/">Color on the Web Community Group</a> was created to explore use cases and inform W3C specification work.</p>
-                  </li>
-                  <li class="theme_ext_item tv_vr">
-                    <h3 class="w3c_topic"><span class="icon"></span>Immersive Web</h3>
-                    <p class="tPadding0">With the advent of Head Mounted Displays and the popularity of 360° and 3D cameras, media scenarios naturally extend to immersive scenarios that give the user additional degrees of freedom. The <a href="https://www.w3.org/immersive-web/">Immersive Web Working Group</a> develops specifications to expose XR devices to Web applications.</p>
-                  </li>
-                  <li class="theme_ext_item tv_games">
-                    <h3 class="w3c_topic"><span class="icon"></span>Games on the Web</h3>
-                    <p class="tPadding0"><a href="https://webassembly.org/">WebAssembly</a> exposes C++ power to Web applications. The <a href="https://www.w3.org/2020/gpu/">GPU for the Web Working Group</a> develops a modern interface between the Web platform and so-called video cards. The <a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> exposes head-mounted displays. These technologies, combined with the <a href="https://www.w3.org/TR/gamepad/">Gamepad API</a>, <a href="https://www.w3.org/TR/pointerlock/">Pointer Lock</a>, Web technologies behind <a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Progressive#Technology_guides">Progressive Web Applications</a> (PWA), and the ability to make <a href="https://www.w3.org/Payments/WG/">payments on the Web</a> without having to go through an application store are turning the Web into a competitive platform for immersive and highly performant games. The <a href="https://www.w3.org/Community/games/">Games Community Group</a> explores technical gaps for games on the Web.</p>
-                  </li>
-                </ul>
-              </section>
-            </section> <!-- /end #w3c_content_body -->
-          </div><!-- /end #mainol -->
-          <div class="unit size1on3 lastUnit" id="secondcol">
-            <div class="infobar bPadding">
-              <h3>Upcoming events</h3>
-              <ul class="theme">
-                <li><a href="https://www.w3.org/2020/10/TPAC/">Media meetings during TPAC<br/>Virtual event, Oct. 2021</a></li>
-                <li><a href="https://www.w3.org/Graphics/Color/Workshop/">Workshop on Wide Color Gamut and High Dynamic Range for the Web<br/>Virtual event, Jun. 2021</a></li>
-              </ul>
-              <h3>Past events</h3>
-              <ul class="theme">
-                <li><a href="https://www.w3.org/2020/10/TPAC/">Media meetings during TPAC<br/>Virtual event, Oct. 2020</a></li>
-                <li><a href="https://www.w3.org/2019/09/TPAC/">Media meetings at TPAC<br/>Fukuoka, Japan, Sept. 2019</a></li>
-                <li><a href="https://www.w3.org/2018/12/games-workshop/">Workshop on Web Games<br/>Redmond, WA, USA, Jun. 2019</a></li>
-                <li><a href="https://www.w3.org/2018/10/TPAC/">Media meetings at TPAC<br/>Lyon, France, Oct. 2018</a></li>
-                <li><a href="https://www.w3.org/2018/10/TPAC/">Media meetings at TPAC<br/>Lyon, France, Oct. 2018</a></li>
-                <li><a href="https://www.w3.org/2017/11/TPAC/">Media meetings at TPAC<br/>Burlingame, CA, USA, Nov. 2017</a></li>
-                <li><a href="https://www.w3.org/2017/CES/">W3C @ CES 2017<br/>Las Vegas, USA, Jan. 2017</a></li>
-                <li><a href="https://www.w3.org/2016/09/TPAC/">Media meetings at TPAC<br/>Lisbon, Portugal, Sept. 2016</a></li>
-                <li><a href="https://www.w3.org/2015/10/TPAC/">Media meetings at TPAC<br/>Sapporo, Japan, Oct. 2015</a></li>
-                <li><a href="https://www.w3.org/2014/11/TPAC/">Media meetings at TPAC<br/>California, USA, Oct. 2014</a></li>
-                <li><a href="https://www.w3.org/2013/10/tv-workshop/">Web and TV Workshop<br/>Munich, Germany, Mar. 2014</a></li>
-                <li><a href="https://www.w3.org/blog/2014/01/web-tv-future/">W3C @ CES<br/>Las Vegas, USA, Jan. 2014</a></li>
-                <li><a href="https://www.w3.org/2013/11/TPAC/">Media meetings at TPAC<br/>Shenzhen, China, Nov. 2013</a></li>
-                <li><a href="https://www.w3.org/2011/09/webtv/">Web and TV Workshop<br/>California, USA, Sept. 2011</a></li>
-                <li><a href="https://www.w3.org/2010/11/web-and-tv/">Web and TV Workshop<br/>Berlin, Germany, Feb. 2011</a></li>
-                <li><a href="https://www.w3.org/2010/09/web-on-tv/">Web on TV Workshop<br/>Tokyo, Japan, Sept. 2010</a></li>
+        <main class="w3c_mainCol" role="main">
+          <div id="w3c_crumbs">
+            <div id="w3c_crumbs_frame">
+              <ul class="bct">
+                <!-- .bct / Breadcrumbs -->
+                <li class="skip">
+                  <a
+                    tabindex="1"
+                    accesskey="2"
+                    title="Skip to content (e.g., when browsing via audio)"
+                    href="#w3c_content_body"
+                    >Skip</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3.org/">W3C</a>
+                  <span class="cr">&raquo;</span>
+                </li>
+                <li class="current">Media &amp; Entertainment Activity</li>
               </ul>
             </div>
-          </div><!-- /end #secondcol -->
-        </div>
-      </main><!-- /end .w3c_mainCol -->
-    </div><!-- /end #w3c_main -->
+          </div>
+          <h1 class="title">Media &amp; Entertainment Activity</h1>
+          <div class="line">
+            <div class="unit size2on3" id="maincol">
+              <section id="w3c_content_body">
+                <section id="owp">
+                  <h2>
+                    <a href="#owp"
+                      >The Open Web Platform has transformed media
+                      consumption</a
+                    >
+                  </h2>
+                  <p>
+                    <img
+                      src="images/emmy.jpg"
+                      alt="W3C honored with an Emmy® Award for Standardization of a Full TV Experience"
+                      style="
+                        float: left;
+                        margin-top: 0.3em;
+                        margin-right: 0.5em;
+                        width: 50%;
+                        max-width: 500px;
+                      "
+                    />The Open Web Platform has been the driver of the
+                    transformation of the media industry. The
+                    <code>&lt;audio&gt;</code> and
+                    <code>&lt;video&gt;</code> elements in
+                    <a href="html.spec.whatwg.org/multipage/">HTML</a>,
+                    <a href="https://www.w3.org/TR/media-source/"
+                      >Media Source Extensions</a
+                    >
+                    (MSE),
+                    <a href="https://www.w3.org/TR/encrypted-media/"
+                      >Encrypted Media Extensions</a
+                    >
+                    (EME) and the
+                    <a href="https://www.w3.org/TR/TTML"
+                      >Timed Text Markup Language</a
+                    >
+                    (TTML) form the backbone of media streaming experiences on
+                    the Web. Together, these Emmy® award winning technologies
+                    have revolutionized media consumption worldwide.
+                  </p>
 
-    <footer id="w3c_footer" role="contentinfo">
-      <div id="w3c_footer-inner">
-        <h2 class="offscreen">Footer Navigation</h2>
-        <div class="w3c_footer-nav">
-          <h3>Navigation</h3>
-          <ul class="footer_top_nav">
-            <li><a href="https://www.w3.org/">Home</a></li>
-            <li><a href="https://www.w3.org/standards/">Standards</a></li>
-            <li><a href="https://www.w3.org/participate/">Participate</a></li>
-            <li><a href="https://www.w3.org/Consortium/membership">Membership</a></li>
-            <li class="last-item"> <a href="https://www.w3.org/Consortium/">About W3C</a></li>
-          </ul>
-        </div>
-        <div class="w3c_footer-nav">
-          <h3>Contact W3C</h3>
-          <ul class="footer_bottom_nav">
-            <li><a href="https://www.w3.org/Consortium/contact">Contact</a></li>
-            <li><a accesskey="0" href="https://www.w3.org/Help/">Help and FAQ</a></li>
-            <li><a href="https://www.w3.org/Consortium/sponsor">Donate</a></li>
-            <li><a href="https://www.w3.org/Consortium/siteindex">Site Map</a></li>
-            <li><address id="w3c_signature"><a href="mailto:site-comments@w3.org">Feedback</a>
-              (<a href="https://lists.w3.org/Archives/Public/site-comments/">archive</a>)</address></li>
-          </ul>
-        </div>
-        <div class="w3c_footer-nav">
-          <h3>W3C Updates</h3>
-          <ul class="footer_follow_nav">
-            <li><a href="https://twitter.com/W3C" title="Follow W3C on Twitter">
-              <img src="https://www.w3.org/2008/site/images/Twitter_bird_logo_2012.svg" alt="Twitter" class="social-icon" height="40"> 
-              </a>
-            </li>
-          </ul>
-        </div>
+                  <p>
+                    The
+                    <a href="https://www.w3.org/2011/webtv/"
+                      >Media &amp; Entertainment Interest Group</a
+                    >
+                    was established to help affected parties build on these
+                    foundations and maintain a competitive advantage. Members of
+                    the Interest Group refine the requirements that get adopted
+                    by Working Groups when they develop tomorrow's media
+                    standards.
+                  </p>
 
-        <!-- #footer address / page signature -->
-        <p class="copyright">Copyright © 2021 W3C <sup>®</sup> 
-          (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, 
-          <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, 
-          <a href="https://www.keio.ac.jp/">Keio</a>, 
-          <a href="https://ev.buaa.edu.cn/">Beihang</a>) <a href="https://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231">Usage policies apply</a>.</p>
-      </div><!-- /end #w3c_footer-inner -->
-    </footer><!-- /end #w3c_footer -->
-  </div><!-- /end #w3c_container -->
+                  <p>
+                    The
+                    <a href="https://www.w3.org/media-wg/"
+                      >Media Working Group</a
+                    >
+                    is at the core of media standardization at W3C. On top of
+                    maintaining media foundations, the group develops APIs to
+                    improve client-side media processing and playback features
+                    on the Web, such as
+                    <a href="https://www.w3.org/TR/media-capabilities"
+                      >Media Capabilities</a
+                    >,
+                    <a href="https://www.w3.org/TR/picture-in-picture/"
+                      >Picture-in-picture</a
+                    >
+                    or
+                    <a href="https://www.w3.org/TR/mediasession/"
+                      >Media Session</a
+                    >.
+                  </p>
+                </section>
+                <section id="shaping" style="clear: both">
+                  <h2>
+                    <a href="#shaping"
+                      >The Media &amp; Entertainment Industry is shaping media
+                      on the Web at W3C</a
+                    >
+                  </h2>
+                  <p>
+                    Through the
+                    <a href="https://www.w3.org/2011/webtv/"
+                      >Media &amp; Entertainment Interest Group</a
+                    >, the
+                    <a href="https://www.w3.org/media-wg/"
+                      >Media Working Group</a
+                    >
+                    and a few other media related groups such as the
+                    <a href="https://www.w3.org/2011/audio/"
+                      >Audio Working Group</a
+                    >, the
+                    <a href="https://www.w3.org/2014/secondscreen/"
+                      >Second Screen Working Group</a
+                    >, or the
+                    <a href="https://www.w3.org/AudioVideo/TT/"
+                      >Timed Text Working Group</a
+                    >, W3C has brought stakeholders together to help set the
+                    direction in which technological progress is made, reinforce
+                    core media technologies on the Web, create an interoperable
+                    ecosystem and build the future of media experiences.
+                  </p>
+                </section>
 
-  <script src="https://www.w3.org/2008/site/js/main"> </script>
-</body>
+                <section id="join" style="clear: both">
+                  <h2>
+                    <a href="#join"
+                      >Now is the time you can influence how media technologies
+                      on the Web evolve</a
+                    >
+                  </h2>
+
+                  <p>
+                    <a
+                      href="mailto:membership@w3.org?Subject=Interest%20in%20Web%20and%20Television"
+                      >Contact W3C</a
+                    >
+                    to learn more about the
+                    <a href="https://www.w3.org/Consortium/membership-benefits"
+                      >benefits of W3C Membership</a
+                    >, and join
+                    <a href="https://www.w3.org/Consortium/Member/List"
+                      >W3C Members</a
+                    >
+                    that shape the way media is created, controlled and consumed
+                    on the Web:
+                  </p>
+
+                  <ul class="bullets">
+                    <li>Broadcasters</li>
+                    <li>Cable, telecom, multiple service operators</li>
+                    <li>Chipset and device manufacturers</li>
+                    <li>Browser and software vendors</li>
+                    <li>Technology providers and research labs</li>
+                    <li>Content providers and movie studios</li>
+                    <li>… and others!</li>
+                  </ul>
+                </section>
+
+                <section id="next">
+                  <h2>
+                    <a href="#next"
+                      >What's next for media and entertainment on the Web</a
+                    >
+                  </h2>
+                  <ul class="theme_ext">
+                    <li class="theme_ext_item tv_testing">
+                      <h3 class="w3c_topic">
+                        <span class="icon"></span>Baseline for media
+                        applications
+                      </h3>
+                      <p class="tPadding0">
+                        TVs are tested and certified as a matter of course. The
+                        Web platform evolves on a continuous basis. What is the
+                        baseline that device implementations need to support at
+                        a given point in time to be part of the Open Web? The
+                        <a href="https://www.w3.org/community/webmediaapi"
+                          >Web Media API Community Group</a
+                        >, initiated by the CTA WAVE project, develops such a
+                        baseline.
+                      </p>
+                      <p class="tPadding0">
+                        A recurring question about media technologies is whether
+                        Web browsers should provide native support for
+                        additional technologies or whether Web browsers should
+                        only provide low-level hooks that applications may
+                        leverage to implement media features. This includes
+                        support for in-band tracks (e.g. see ongoing incubation
+                        effort on
+                        <a href="https://wicg.github.io/datacue/">DataCue API</a
+                        >), support for caption rendering (e.g. native support
+                        for TTML) and synchronized overlays (e.g.
+                        <a href="https://w3c.github.io/danmaku/"
+                          >bullet chatting</a
+                        >), as well as support for media (de-)containerization
+                        (natively supported when
+                        <a href="https://www.w3.org/TR/media-source/">MSE</a> is
+                        used, up to applications in
+                        <a href="https://www.w3.org/TR/webcodecs/">WebCodecs</a
+                        >).
+                      </p>
+                    </li>
+                    <li class="theme_ext_item tv_audio">
+                      <h3 class="w3c_topic">
+                        <span class="icon"></span>Audio support
+                      </h3>
+                      <p class="tPadding0">
+                        Media elements in HTML5 and the
+                        <a href="https://webaudio.github.io/web-audio-api/"
+                          >Web Audio API</a
+                        >
+                        enable audio processing and rendering on the Web. They
+                        need to be extended e.g. to address advanced
+                        spatialization scenarios, in particular with the advent
+                        of Head Mounted Displays used in Virtual Reality. The
+                        <a href="https://www.w3.org/2011/audio/"
+                          >Audio Working Group</a
+                        >
+                        discusses version 2.0 of the Web Audio API.
+                      </p>
+                    </li>
+                    <li class="theme_ext_item tv_multi-streams">
+                      <h3 class="w3c_topic">
+                        <span class="icon"></span>Improved Media distribution
+                      </h3>
+                      <p class="tPadding0">
+                        Cross-browser support for the
+                        <a href="https://www.w3.org/TR/media-source/"
+                          >Media Source Extensions</a
+                        >
+                        (MSE) standard means adaptive streaming over HTTP has
+                        become the main mechanism to distribute media content on
+                        the Web. The ongoing revision of MSE in the Media
+                        Working Group adds support for codec switching, e.g. to
+                        enable ad-insertion scenarios.
+                      </p>
+                      <p class="tPadding0">
+                        Other distribution mechanisms are being used or tested
+                        to lower distribution latency, improve scaling, and/or
+                        reduce streaming costs, including the use of WebRTC
+                        technologies (e.g. in peer-to-peer CDN) or push
+                        mechanisms to enable multicast distribution. The
+                        <a href="https://www.w3.org/2011/webtv/"
+                          >Media &amp; Entertainment Interest Group</a
+                        >
+                        discusses the scope of potential renewed standardization
+                        efforts in that area. In parallel, the
+                        <a href="https://www.w3.org/groups/wg/webtransport"
+                          >WebTransport Working Group</a
+                        >
+                        develops
+                        <a href="https://www.w3.org/TR/webtransport/"
+                          >WebTransport</a
+                        >, a low-latency transport API based on HTTP/3, and the
+                        Media Working Group standardizes
+                        <a href="https://www.w3.org/TR/webcodecs/">WebCodecs</a>
+                        to give applications better control over low-latency
+                        media encoding/decoding (as well as access to
+                        encoded/decoded frames to enable realtime media
+                        processing scenarios).
+                      </p>
+                    </li>
+                    <li class="theme_ext_item tv_secondscreen">
+                      <h3 class="w3c_topic">
+                        <span class="icon"></span>Second screen support
+                      </h3>
+                      <p class="tPadding0">
+                        The
+                        <a href="https://w3c.github.io/presentation-api/"
+                          >Presentation API</a
+                        >
+                        and the
+                        <a href="https://w3c.github.io/remote-playback/"
+                          >Remote Playback API</a
+                        >
+                        expose second screens to web applications but
+                        interoperability between screens can only be achieved
+                        provided the industry agrees on a common set of
+                        protocols for second screen support. The
+                        <a href="https://www.w3.org/2014/secondscreen/"
+                          >Second Screen Working Group</a
+                        >
+                        develops such an
+                        <a href="https://www.w3.org/TR/openscreenprotocol/"
+                          >Open Screen Protocol</a
+                        >.
+                      </p>
+                    </li>
+                    <li class="theme_ext_item tv_multi-ads">
+                      <h3 class="w3c_topic">
+                        <span class="icon"></span>HDR / Wide gamut color space
+                        support
+                      </h3>
+                      <p class="tPadding0">
+                        As HDR devices become widespread, the Web platform needs
+                        to allow use of extended color spaces across the board
+                        (in CSS, Canvas and media playback) to take advantage of
+                        these capabilities. The
+                        <a href="https://www.w3.org/community/colorweb/"
+                          >Color on the Web Community Group</a
+                        >
+                        was created to explore use cases and inform W3C
+                        specification work.
+                      </p>
+                    </li>
+                    <li class="theme_ext_item tv_vr">
+                      <h3 class="w3c_topic">
+                        <span class="icon"></span>Immersive Web
+                      </h3>
+                      <p class="tPadding0">
+                        With the advent of Head Mounted Displays and the
+                        popularity of 360° and 3D cameras, media scenarios
+                        naturally extend to immersive scenarios that give the
+                        user additional degrees of freedom. The
+                        <a href="https://www.w3.org/immersive-web/"
+                          >Immersive Web Working Group</a
+                        >
+                        develops specifications to expose XR devices to Web
+                        applications.
+                      </p>
+                    </li>
+                    <li class="theme_ext_item tv_games">
+                      <h3 class="w3c_topic">
+                        <span class="icon"></span>Games on the Web
+                      </h3>
+                      <p class="tPadding0">
+                        <a href="https://webassembly.org/">WebAssembly</a>
+                        exposes C++ power to Web applications. The
+                        <a href="https://www.w3.org/2020/gpu/"
+                          >GPU for the Web Working Group</a
+                        >
+                        develops a modern interface between the Web platform and
+                        so-called video cards. The
+                        <a href="https://immersive-web.github.io/webxr/"
+                          >WebXR Device API</a
+                        >
+                        exposes head-mounted displays. These technologies,
+                        combined with the
+                        <a href="https://www.w3.org/TR/gamepad/">Gamepad API</a
+                        >,
+                        <a href="https://www.w3.org/TR/pointerlock/"
+                          >Pointer Lock</a
+                        >, Web technologies behind
+                        <a
+                          href="https://developer.mozilla.org/en-US/docs/Web/Apps/Progressive#Technology_guides"
+                          >Progressive Web Applications</a
+                        >
+                        (PWA), and the ability to make
+                        <a href="https://www.w3.org/Payments/WG/"
+                          >payments on the Web</a
+                        >
+                        without having to go through an application store are
+                        turning the Web into a competitive platform for
+                        immersive and highly performant games. The
+                        <a href="https://www.w3.org/Community/games/"
+                          >Games Community Group</a
+                        >
+                        explores technical gaps for games on the Web.
+                      </p>
+                    </li>
+                  </ul>
+                </section>
+              </section>
+              <!-- /end #w3c_content_body -->
+            </div>
+            <!-- /end #mainol -->
+            <div class="unit size1on3 lastUnit" id="secondcol">
+              <div class="infobar bPadding">
+                <h3>Upcoming events</h3>
+                <ul class="theme">
+                  <li>
+                    <a href="https://www.w3.org/2020/10/TPAC/"
+                      >Media meetings during TPAC<br />Virtual event, Oct.
+                      2021</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/Graphics/Color/Workshop/"
+                      >Workshop on Wide Color Gamut and High Dynamic Range for
+                      the Web<br />Virtual event, Jun. 2021</a
+                    >
+                  </li>
+                </ul>
+                <h3>Past events</h3>
+                <ul class="theme">
+                  <li>
+                    <a href="https://www.w3.org/2020/10/TPAC/"
+                      >Media meetings during TPAC<br />Virtual event, Oct.
+                      2020</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2019/09/TPAC/"
+                      >Media meetings at TPAC<br />Fukuoka, Japan, Sept. 2019</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2018/12/games-workshop/"
+                      >Workshop on Web Games<br />Redmond, WA, USA, Jun. 2019</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2018/10/TPAC/"
+                      >Media meetings at TPAC<br />Lyon, France, Oct. 2018</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2018/10/TPAC/"
+                      >Media meetings at TPAC<br />Lyon, France, Oct. 2018</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2017/11/TPAC/"
+                      >Media meetings at TPAC<br />Burlingame, CA, USA, Nov.
+                      2017</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2017/CES/"
+                      >W3C @ CES 2017<br />Las Vegas, USA, Jan. 2017</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2016/09/TPAC/"
+                      >Media meetings at TPAC<br />Lisbon, Portugal, Sept.
+                      2016</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2015/10/TPAC/"
+                      >Media meetings at TPAC<br />Sapporo, Japan, Oct. 2015</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2014/11/TPAC/"
+                      >Media meetings at TPAC<br />California, USA, Oct. 2014</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2013/10/tv-workshop/"
+                      >Web and TV Workshop<br />Munich, Germany, Mar. 2014</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/blog/2014/01/web-tv-future/"
+                      >W3C @ CES<br />Las Vegas, USA, Jan. 2014</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2013/11/TPAC/"
+                      >Media meetings at TPAC<br />Shenzhen, China, Nov. 2013</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2011/09/webtv/"
+                      >Web and TV Workshop<br />California, USA, Sept. 2011</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2010/11/web-and-tv/"
+                      >Web and TV Workshop<br />Berlin, Germany, Feb. 2011</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.w3.org/2010/09/web-on-tv/"
+                      >Web on TV Workshop<br />Tokyo, Japan, Sept. 2010</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /end #secondcol -->
+          </div>
+        </main>
+        <!-- /end .w3c_mainCol -->
+      </div>
+      <!-- /end #w3c_main -->
+
+      <footer id="w3c_footer" role="contentinfo">
+        <div id="w3c_footer-inner">
+          <h2 class="offscreen">Footer Navigation</h2>
+          <div class="w3c_footer-nav">
+            <h3>Navigation</h3>
+            <ul class="footer_top_nav">
+              <li><a href="https://www.w3.org/">Home</a></li>
+              <li><a href="https://www.w3.org/standards/">Standards</a></li>
+              <li><a href="https://www.w3.org/participate/">Participate</a></li>
+              <li>
+                <a href="https://www.w3.org/Consortium/membership"
+                  >Membership</a
+                >
+              </li>
+              <li class="last-item">
+                <a href="https://www.w3.org/Consortium/">About W3C</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w3c_footer-nav">
+            <h3>Contact W3C</h3>
+            <ul class="footer_bottom_nav">
+              <li>
+                <a href="https://www.w3.org/Consortium/contact">Contact</a>
+              </li>
+              <li>
+                <a accesskey="0" href="https://www.w3.org/Help/"
+                  >Help and FAQ</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/Consortium/sponsor">Donate</a>
+              </li>
+              <li>
+                <a href="https://www.w3.org/Consortium/siteindex">Site Map</a>
+              </li>
+              <li>
+                <address id="w3c_signature">
+                  <a href="mailto:site-comments@w3.org">Feedback</a> (<a
+                    href="https://lists.w3.org/Archives/Public/site-comments/"
+                    >archive</a
+                  >)
+                </address>
+              </li>
+            </ul>
+          </div>
+          <div class="w3c_footer-nav">
+            <h3>W3C Updates</h3>
+            <ul class="footer_follow_nav">
+              <li>
+                <a href="https://twitter.com/W3C" title="Follow W3C on Twitter">
+                  <img
+                    src="https://www.w3.org/2008/site/images/Twitter_bird_logo_2012.svg"
+                    alt="Twitter"
+                    class="social-icon"
+                    height="40"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- #footer address / page signature -->
+          <p class="copyright">
+            Copyright © 2021 W3C <sup>®</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn/">Beihang</a>)
+            <a
+              href="https://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231"
+              >Usage policies apply</a
+            >.
+          </p>
+        </div>
+        <!-- /end #w3c_footer-inner -->
+      </footer>
+      <!-- /end #w3c_footer -->
+    </div>
+    <!-- /end #w3c_container -->
+
+    <script src="https://www.w3.org/2008/site/js/main"></script>
+  </body>
 </html>
-

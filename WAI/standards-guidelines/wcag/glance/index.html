@@ -1,298 +1,954 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1633578570351143841"
+    />
 
-<title> WCAG 2.1 at a Glance | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="WCAG 2.1 at a Glance" />
-<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
-<meta property="og:locale" content="en" />
-<meta name="description" content="This page provides a paraphrased summary of Web Content Accessibility Guidelines (WCAG) 2.1." />
-<meta property="og:description" content="This page provides a paraphrased summary of Web Content Accessibility Guidelines (WCAG) 2.1." />
-<link rel="canonical" href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/" />
-<meta property="og:url" content="https://www.w3.org/WAI/standards-guidelines/wcag/glance/" />
-<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-intro-wcag/general-social.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-intro-wcag/general-social.jpg" />
-<meta property="twitter:title" content="WCAG 2.1 at a Glance" />
-<meta name="twitter:site" content="@w3c_wai" />
-<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
-<script type="application/ld+json">
-{"description":"This page provides a paraphrased summary of Web Content Accessibility Guidelines (WCAG) 2.1.","@type":"WebPage","image":"https://www.w3.org/WAI/content-images/wai-intro-wcag/general-social.jpg","headline":"WCAG 2.1 at a Glance","url":"https://www.w3.org/WAI/standards-guidelines/wcag/glance/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+    <title>
+      WCAG 2.1 at a Glance | Web Accessibility Initiative (WAI) | W3C
+    </title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <meta name="generator" content="Jekyll v4.2.0" />
+    <meta property="og:title" content="WCAG 2.1 at a Glance" />
+    <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+    <meta property="og:locale" content="en" />
+    <meta
+      name="description"
+      content="This page provides a paraphrased summary of Web Content Accessibility Guidelines (WCAG) 2.1."
+    />
+    <meta
+      property="og:description"
+      content="This page provides a paraphrased summary of Web Content Accessibility Guidelines (WCAG) 2.1."
+    />
+    <link
+      rel="canonical"
+      href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/"
+    />
+    <meta
+      property="og:url"
+      content="https://www.w3.org/WAI/standards-guidelines/wcag/glance/"
+    />
+    <meta
+      property="og:site_name"
+      content="Web Accessibility Initiative (WAI)"
+    />
+    <meta
+      property="og:image"
+      content="https://www.w3.org/WAI/content-images/wai-intro-wcag/general-social.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image"
+      content="https://www.w3.org/WAI/content-images/wai-intro-wcag/general-social.jpg"
+    />
+    <meta property="twitter:title" content="WCAG 2.1 at a Glance" />
+    <meta name="twitter:site" content="@w3c_wai" />
+    <meta
+      name="twitter:creator"
+      content="@W3C Web Accessibility Initiative (WAI)"
+    />
+    <script type="application/ld+json">
+      {
+        "description": "This page provides a paraphrased summary of Web Content Accessibility Guidelines (WCAG) 2.1.",
+        "@type": "WebPage",
+        "image": "https://www.w3.org/WAI/content-images/wai-intro-wcag/general-social.jpg",
+        "headline": "WCAG 2.1 at a Glance",
+        "url": "https://www.w3.org/WAI/standards-guidelines/wcag/glance/",
+        "author": {
+          "@type": "Person",
+          "name": "W3C Web Accessibility Initiative (WAI)"
+        },
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
 
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+  </head>
 
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
-</head>
-
-  <body id="top" class="page-wcag-2-1-at-a-glance ">
-    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
-  <ul>
-      <li><a href="#main">Skip to Content</a></li>
-      <li class="opt"><a href="/WAI/meta/customize/">Change Text Size or Colors</a></li>
-      <li class="opt languagelist">
+  <body id="top" class="page-wcag-2-1-at-a-glance">
+    <nav
+      aria-label="Skip Link and Language Selector"
+      id="controls"
+      class="default-grid"
+    >
+      <ul>
+        <li><a href="#main">Skip to Content</a></li>
+        <li class="opt">
+          <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
+        </li>
+        <li class="opt languagelist">
           <strong>This&nbsp;page&nbsp;in:</strong>
-          <ul class="languagelistul"><li><strong style="text-transform: capitalize;">English</strong></li><li><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/glance/es" lang="es"  dir="auto" translate="no">español</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/glance/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          <ul class="languagelistul">
+            <li><strong style="text-transform: capitalize">English</strong></li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/standards-guidelines/wcag/glance/es"
+                lang="es"
+                dir="auto"
+                translate="no"
+                >español</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/standards-guidelines/wcag/glance/fr"
+                lang="fr"
+                dir="auto"
+                translate="no"
+                >français</a
+              >
+            </li>
           </ul>
         </li>
         <li class="opt">
-          <a href="/WAI/translations/">All&nbsp;Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/"
+            >All&nbsp;Translations
+            <svg focusable="false" aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
         </li>
-        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations' data-hidetext='Hide Options'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations</button></li>
+        <li>
+          <button
+            id="showoptions"
+            data-showhidebuttonid="header-showoptions"
+            class="showhidebutton button-inline"
+            data-target="#controls .opt"
+            aria-expanded="false"
+            data-large-aria-expanded="true"
+            data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations'
+            data-hidetext="Hide Options"
+          >
+            <svg focusable="false" aria-hidden="true" class="icon-languages">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-languages"
+              ></use>
+            </svg>
+            Show Customization, Languages, Translations
+          </button>
+        </li>
       </ul>
     </nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
- 
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
-  </div>
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span
+            >Strategies, standards, resources to make the Web accessible to
+            people with disabilities</span
+          >
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg focusable="false" aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            Menu</span
+          >
+        </button>
+      </div>
 
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">Search:</span>
-              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
-            </label>
-            
-            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
-          </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="Main" lang="en"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
-  <ul style="align-self: center;">
-    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/wcag/"><span>Web Content – WCAG</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/wcag/glance/" aria-current="page"><span>At a Glance</span></a></li></ul>
-</nav>
-    <div class="default-grid with-gap leftcol">
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">Search:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </label>
 
-  
-    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
-      <ul class="sidenav--list">
-  <li>
-  <a lang="en" href="/WAI/standards-guidelines/" class="page-link"><span>Standards/<wbr>Guidelines</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/" aria-current="location" class="page-link"><span>Web Content – WCAG</span></a><ul><li>
-  <a lang="en" href="https://www.w3.org/WAI/WCAG21/quickref/" class="page-link"><span>How to Meet WCAG 2 (Quick Reference)</span></a></li>
-          <li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/glance/" aria-current="page" class="page-link"><span>At a Glance</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/docs/" class="page-link"><span>The Documents</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/non-web-ict/" class="page-link"><span>Applying to Non-Web ICT</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/new-in-22/" class="page-link"><span>New in 2.2 Draft</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/new-in-21/" class="page-link"><span>New in 2.1</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/translations/" class="page-link"><span>Translations</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/commenting/" class="page-link"><span>Commenting</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/conformance-logos/" class="page-link"><span>Conformance Logos</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/faq/" class="page-link"><span>FAQ</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/atag/" class="page-link"><span>Authoring Tools – ATAG</span></a><ul><li>
-  <a lang="en" href="/WAI/standards-guidelines/atag/glance/" class="page-link"><span>At a Glance</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/uaag/" class="page-link"><span>User Agents – UAAG</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/wcag3-intro/" class="page-link"><span>WCAG 3 Draft</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/aria/" class="page-link"><span>WAI-ARIA</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/evaluation/" class="page-link"><span>Evaluation – ACT &amp; EARL</span></a><ul><li>
-  <a lang="en" href="/WAI/standards-guidelines/act/" class="page-link"><span>Accessibility Conformance Testing – ACT</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/earl/" class="page-link"><span>Evaluation and Report Language – EARL</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/personalization/" class="page-link"><span>Personalization</span></a></li><li>
-  <a lang="en" href="/WAI/pronunciation/" class="page-link"><span>Pronunciation</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/harmonization/" class="page-link"><span>Standards Harmonization is Essential</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/w3c-process/" class="page-link"><span>W3C Process for Developing Standards</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/linking/" class="page-link"><span>Referencing and Linking to Standards</span></a></li><li>
-  <a lang="en" href="/WAI/cognitive/" class="page-link"><span>Cognitive Accessibility at W3C</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/mobile/" class="page-link"><span>Mobile Accessibility at W3C</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
-        <header id="languagehead">Languages/Translations</header>
-        <ul class="langlist">
-          <li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">English (original)</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/glance/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/glance/fr" dir="auto" translate="no" lang="fr">français</a></li></ul>
-        <p><a href="/WAI/translations/">All&nbsp;Translations</a></p>
-        <p><a href="/WAI/about/translating/">Translating WAI Resources</a></p>
-      </nav>
-</div>
-  
-
-  <main id="main" lang="en">
-
-      
-
-    
-    <header>
-      <h1>
-      
-      
-      
-        WCAG 2.1 at a Glance
-      
-      </h1></header>
-    <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
-
-<p>This page provides a paraphrased summary of Web Content Accessibility Guidelines (WCAG) 2.1. For the normative technical specification, see <a href="http://www.w3.org/TR/WCAG21/">www.w3.org/TR/WCAG21</a>.</p>
-
-</div></aside>
-
-<p>Please see the following key resources for learning and using WCAG 2.1:</p>
-<ul>
-  <li><strong><a href="/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a></strong></li>
-  <li><strong><a href="http://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG 2 (Quick Reference)</a></strong> — A customizable quick reference to Web Content Accessibility Guidelines (WCAG) 2 requirements (success criteria) and techniques</li>
-</ul>
-
-<aside class="box box-large"><header class="box-h  box-h-large"> <h2> Perceivable </h2></header><div class="box-i">
-
-<ul>
-  <li>Provide <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#text-equiv">text alternatives</a></strong> for non-text content.</li>
-  <li>Provide <a href="http://www.w3.org/WAI/WCAG21/quickref/#media-equiv"><strong>captions and other alternatives</strong></a> for multimedia.</li>
-  <li>Create content that can be <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#content-structure-separation">presented in different ways</a></strong>, including by assistive technologies, without losing meaning.</li>
-  <li>Make it easier for users to <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#visual-audio-contrast">see and hear content</a></strong>.</li>
-</ul>
-
-</div></aside>
-
-<aside class="box box-large"><header class="box-h  box-h-large"> <h2> Operable </h2></header><div class="box-i">
-
-<ul>
-  <li>Make all functionality available from a <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#keyboard-operation">keyboard</a></strong>.</li>
-  <li>Give users <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#time-limits">enough time</a></strong> to read and use content.</li>
-  <li>Do not use content that causes <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#seizure">seizures</a></strong> or physical reactions.</li>
-  <li>Help users <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#navigation-mechanisms">navigate and find content</a></strong>.</li>
-  <li>Make it easier to use <strong><a href="https://www.w3.org/WAI/WCAG21/quickref/#navigation-mechanisms">inputs other than keyboard</a></strong>.</li>
-</ul>
-
-</div></aside>
-
-<aside class="box box-large"><header class="box-h  box-h-large"> <h2> Understandable </h2></header><div class="box-i">
-
-<ul>
-  <li>Make text <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#meaning">readable and understandable</a></strong>.</li>
-  <li>Make content appear and operate in <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#consistent-behavior">predictable</a></strong> ways.</li>
-  <li>Help users <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#minimize-error">avoid and correct mistakes</a></strong>.</li>
-</ul>
-
-</div></aside>
-
-<aside class="box box-large"><header class="box-h  box-h-large"> <h2> Robust </h2></header><div class="box-i">
-
-<ul>
-  <li>Maximize <strong><a href="http://www.w3.org/WAI/WCAG21/quickref/#ensure-compat">compatibility</a></strong> with current and future user tools.</li>
-</ul>
-
-</div></aside>
-
-<h2 id="other-versions">Other Versions</h2>
-
-<ul>
-  <li><a href="/WAI/standards-guidelines/wcag/20/glance/">WCAG 2.0 at a Glance</a> has two differences from above:
-    <ul>
-      <li>“Do not use content that causes seizures or physical reactions.” does not include “or physical reactions”.</li>
-      <li>It does not include “Make it easier to use inputs other than keyboard.”</li>
-    </ul>
-  </li>
-</ul>
-
-
-    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20WCAG%202.1%20at%20a%20Glance">wai@w3.org</a> or via GitHub.</p>
-<div class="button-group">
-    <a href="mailto:wai@w3.org?subject=[en]%20WCAG%202.1%20at%20a%20Glance&body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/wai-intro-wcag/edit/master/content/glance.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-intro-wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
-</div></div></aside>
-
-
-    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
-  </main>
-</div>
-
-
-  
-  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-    <div class="inner" 
-      >
-      <p><strong>Date:</strong> Updated 5 June 2018. First published July 2008.</p> <p><strong>Editors:</strong> <a href="http://www.w3.org/People/Shawn">Shawn Lawton Henry</a> and Wayne Dick.</p> <p>Developed with input from the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>) and the Accessibility Guidelines Working Group (<a href="http://www.w3.org/WAI/GL/">AG WG</a>).</p>
-</div>
-  </footer>
-  
-
-
-<footer class="site-footer grid-4q" aria-label="Site">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
-    </div>
-    <div class="social" lang="en" dir="auto" translate="no">
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg
+                        focusable="false"
+                        aria-label="Submit Search"
+                        class="icon-search"
+                      >
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="Main" lang="en">
       <ul>
-        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
-        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
-        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
-        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/planning/"
+            ><span>Planning &amp; Policies</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/design-develop/"
+            ><span>Design &amp; Develop</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/test-evaluate/"
+            ><span>Test &amp; Evaluate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/teach-advocate/"
+            ><span>Teach &amp; Advocate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
       </ul>
-    </div>
-    <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
-    </div>
-  </div>
-  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
-    <ul style="margin-bottom:0">
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-      <li><a href="/WAI/translations/"> Translations</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
-<script>
-  svg4everybody();
-</script><script>
-  var translationStrings = {};
-</script>
-<!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    </nav>
+    <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+      <ul style="align-self: center">
+        <li><a href="/WAI/" lang="en">Home</a></li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/wcag/"
+            ><span>Web Content – WCAG</span></a
+          >
+        </li>
+        <li>
+          <a
+            lang="en"
+            href="/WAI/standards-guidelines/wcag/glance/"
+            aria-current="page"
+            ><span>At a Glance</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="default-grid with-gap leftcol">
+      <div class="sidenav">
+        <nav class="sn-contents" aria-label="Secondary">
+          <ul class="sidenav--list">
+            <li>
+              <a lang="en" href="/WAI/standards-guidelines/" class="page-link"
+                ><span>Standards/<wbr />Guidelines</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/wcag/"
+                aria-current="location"
+                class="page-link"
+                ><span>Web Content – WCAG</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="https://www.w3.org/WAI/WCAG21/quickref/"
+                    class="page-link"
+                    ><span>How to Meet WCAG 2 (Quick Reference)</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/glance/"
+                    aria-current="page"
+                    class="page-link"
+                    ><span>At a Glance</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/docs/"
+                    class="page-link"
+                    ><span>The Documents</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/non-web-ict/"
+                    class="page-link"
+                    ><span>Applying to Non-Web ICT</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/new-in-22/"
+                    class="page-link"
+                    ><span>New in 2.2 Draft</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/new-in-21/"
+                    class="page-link"
+                    ><span>New in 2.1</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/translations/"
+                    class="page-link"
+                    ><span>Translations</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/commenting/"
+                    class="page-link"
+                    ><span>Commenting</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/conformance-logos/"
+                    class="page-link"
+                    ><span>Conformance Logos</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/faq/"
+                    class="page-link"
+                    ><span>FAQ</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/atag/"
+                class="page-link"
+                ><span>Authoring Tools – ATAG</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/atag/glance/"
+                    class="page-link"
+                    ><span>At a Glance</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/uaag/"
+                class="page-link"
+                ><span>User Agents – UAAG</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/wcag/wcag3-intro/"
+                class="page-link"
+                ><span>WCAG 3 Draft</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/aria/"
+                class="page-link"
+                ><span>WAI-ARIA</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/evaluation/"
+                class="page-link"
+                ><span>Evaluation – ACT &amp; EARL</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/act/"
+                    class="page-link"
+                    ><span>Accessibility Conformance Testing – ACT</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/earl/"
+                    class="page-link"
+                    ><span>Evaluation and Report Language – EARL</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/personalization/" class="page-link"
+                ><span>Personalization</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/pronunciation/" class="page-link"
+                ><span>Pronunciation</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/harmonization/"
+                class="page-link"
+                ><span>Standards Harmonization is Essential</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/w3c-process/"
+                class="page-link"
+                ><span>W3C Process for Developing Standards</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/linking/"
+                class="page-link"
+                ><span>Referencing and Linking to Standards</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/cognitive/" class="page-link"
+                ><span>Cognitive Accessibility at W3C</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/mobile/"
+                class="page-link"
+                ><span>Mobile Accessibility at W3C</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="sidenav-languages" aria-labelledby="languagehead">
+          <header id="languagehead">Languages/Translations</header>
+          <ul class="langlist">
+            <li style="margin-bottom: 2px">
+              <strong style="text-transform: capitalize"
+                >English (original)</strong
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/standards-guidelines/wcag/glance/es"
+                dir="auto"
+                translate="no"
+                lang="es"
+                >español</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/standards-guidelines/wcag/glance/fr"
+                dir="auto"
+                translate="no"
+                lang="fr"
+                >français</a
+              >
+            </li>
+          </ul>
+          <p><a href="/WAI/translations/">All&nbsp;Translations</a></p>
+          <p><a href="/WAI/about/translating/">Translating WAI Resources</a></p>
+        </nav>
+      </div>
 
+      <main id="main" lang="en">
+        <header>
+          <h1>WCAG 2.1 at a Glance</h1>
+        </header>
+        <aside class="box box-full">
+          <header class="box-h box-h-full"><h2>Summary</h2></header>
+          <div class="box-i">
+            <p>
+              This page provides a paraphrased summary of Web Content
+              Accessibility Guidelines (WCAG) 2.1. For the normative technical
+              specification, see
+              <a href="http://www.w3.org/TR/WCAG21/">www.w3.org/TR/WCAG21</a>.
+            </p>
+          </div>
+        </aside>
 
+        <p>
+          Please see the following key resources for learning and using WCAG
+          2.1:
+        </p>
+        <ul>
+          <li>
+            <strong
+              ><a href="/WAI/standards-guidelines/wcag/"
+                >Web Content Accessibility Guidelines (WCAG) Overview</a
+              ></strong
+            >
+          </li>
+          <li>
+            <strong
+              ><a href="http://www.w3.org/WAI/WCAG21/quickref/"
+                >How to Meet WCAG 2 (Quick Reference)</a
+              ></strong
+            >
+            — A customizable quick reference to Web Content Accessibility
+            Guidelines (WCAG) 2 requirements (success criteria) and techniques
+          </li>
+        </ul>
+
+        <aside class="box box-large">
+          <header class="box-h box-h-large"><h2>Perceivable</h2></header>
+          <div class="box-i">
+            <ul>
+              <li>
+                Provide
+                <strong
+                  ><a href="http://www.w3.org/WAI/WCAG21/quickref/#text-equiv"
+                    >text alternatives</a
+                  ></strong
+                >
+                for non-text content.
+              </li>
+              <li>
+                Provide
+                <a href="http://www.w3.org/WAI/WCAG21/quickref/#media-equiv"
+                  ><strong>captions and other alternatives</strong></a
+                >
+                for multimedia.
+              </li>
+              <li>
+                Create content that can be
+                <strong
+                  ><a
+                    href="http://www.w3.org/WAI/WCAG21/quickref/#content-structure-separation"
+                    >presented in different ways</a
+                  ></strong
+                >, including by assistive technologies, without losing meaning.
+              </li>
+              <li>
+                Make it easier for users to
+                <strong
+                  ><a
+                    href="http://www.w3.org/WAI/WCAG21/quickref/#visual-audio-contrast"
+                    >see and hear content</a
+                  ></strong
+                >.
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <aside class="box box-large">
+          <header class="box-h box-h-large"><h2>Operable</h2></header>
+          <div class="box-i">
+            <ul>
+              <li>
+                Make all functionality available from a
+                <strong
+                  ><a
+                    href="http://www.w3.org/WAI/WCAG21/quickref/#keyboard-operation"
+                    >keyboard</a
+                  ></strong
+                >.
+              </li>
+              <li>
+                Give users
+                <strong
+                  ><a href="http://www.w3.org/WAI/WCAG21/quickref/#time-limits"
+                    >enough time</a
+                  ></strong
+                >
+                to read and use content.
+              </li>
+              <li>
+                Do not use content that causes
+                <strong
+                  ><a href="http://www.w3.org/WAI/WCAG21/quickref/#seizure"
+                    >seizures</a
+                  ></strong
+                >
+                or physical reactions.
+              </li>
+              <li>
+                Help users
+                <strong
+                  ><a
+                    href="http://www.w3.org/WAI/WCAG21/quickref/#navigation-mechanisms"
+                    >navigate and find content</a
+                  ></strong
+                >.
+              </li>
+              <li>
+                Make it easier to use
+                <strong
+                  ><a
+                    href="https://www.w3.org/WAI/WCAG21/quickref/#navigation-mechanisms"
+                    >inputs other than keyboard</a
+                  ></strong
+                >.
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <aside class="box box-large">
+          <header class="box-h box-h-large"><h2>Understandable</h2></header>
+          <div class="box-i">
+            <ul>
+              <li>
+                Make text
+                <strong
+                  ><a href="http://www.w3.org/WAI/WCAG21/quickref/#meaning"
+                    >readable and understandable</a
+                  ></strong
+                >.
+              </li>
+              <li>
+                Make content appear and operate in
+                <strong
+                  ><a
+                    href="http://www.w3.org/WAI/WCAG21/quickref/#consistent-behavior"
+                    >predictable</a
+                  ></strong
+                >
+                ways.
+              </li>
+              <li>
+                Help users
+                <strong
+                  ><a
+                    href="http://www.w3.org/WAI/WCAG21/quickref/#minimize-error"
+                    >avoid and correct mistakes</a
+                  ></strong
+                >.
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <aside class="box box-large">
+          <header class="box-h box-h-large"><h2>Robust</h2></header>
+          <div class="box-i">
+            <ul>
+              <li>
+                Maximize
+                <strong
+                  ><a
+                    href="http://www.w3.org/WAI/WCAG21/quickref/#ensure-compat"
+                    >compatibility</a
+                  ></strong
+                >
+                with current and future user tools.
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <h2 id="other-versions">Other Versions</h2>
+
+        <ul>
+          <li>
+            <a href="/WAI/standards-guidelines/wcag/20/glance/"
+              >WCAG 2.0 at a Glance</a
+            >
+            has two differences from above:
+            <ul>
+              <li>
+                “Do not use content that causes seizures or physical reactions.”
+                does not include “or physical reactions”.
+              </li>
+              <li>
+                It does not include “Make it easier to use inputs other than
+                keyboard.”
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <aside class="box box-icon box-space-above" id="helpimprove">
+          <header class="box-h box-h-icon box-h-space-above box-h-icon">
+            <svg focusable="false" aria-hidden="true" class="icon-comments">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-comments"
+              ></use>
+            </svg>
+            <h2>Help improve this page</h2>
+          </header>
+          <div class="box-i">
+            <p>
+              Please share your ideas, suggestions, or comments via e-mail to
+              the publicly-archived list
+              <a
+                href="mailto:wai@w3.org?subject=[en]%20WCAG%202.1%20at%20a%20Glance"
+                >wai@w3.org</a
+              >
+              or via GitHub.
+            </p>
+            <div class="button-group">
+              <a
+                href="mailto:wai@w3.org?subject=[en]%20WCAG%202.1%20at%20a%20Glance&body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D"
+                class="button"
+                ><span>E-mail</span></a
+              >
+              <a
+                href="https://github.com/w3c/wai-intro-wcag/edit/master/content/glance.md"
+                class="button"
+                ><span>Fork &amp; Edit on GitHub</span></a
+              ><a
+                href="https://github.com/w3c/wai-intro-wcag/issues/new"
+                class="button"
+                ><span>New GitHub Issue</span></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg focusable="false" aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            Back to Top</span
+          ></a
+        >
+      </main>
+    </div>
+
+    <footer
+      id="wai-site-footer"
+      class="page-footer default-grid"
+      aria-label="Page"
+    >
+      <div class="inner">
+        <p>
+          <strong>Date:</strong> Updated 5 June 2018. First published July 2008.
+        </p>
+        <p>
+          <strong>Editors:</strong>
+          <a href="http://www.w3.org/People/Shawn">Shawn Lawton Henry</a> and
+          Wayne Dick.
+        </p>
+        <p>
+          Developed with input from the Education and Outreach Working Group (<a
+            href="https://www.w3.org/WAI/about/groups/eowg/"
+            >EOWG</a
+          >) and the Accessibility Guidelines Working Group (<a
+            href="http://www.w3.org/WAI/GL/"
+            >AG WG</a
+          >).
+        </p>
+      </div>
+    </footer>
+
+    <footer class="site-footer grid-4q" aria-label="Site">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a
+              class="largelink"
+              href="https://www.w3.org/WAI/"
+              lang="en"
+              dir="auto"
+              translate="no"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>
+            Strategies, standards, and supporting resources to make the Web
+            accessible to people with disabilities.
+          </p>
+        </div>
+        <div class="social" lang="en" dir="auto" translate="no">
+          <ul>
+            <li>
+              <a href="https://twitter.com/w3c_wai"
+                ><svg focusable="false" aria-hidden="true" class="icon-twitter">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/feed.xml"
+                ><svg focusable="false" aria-hidden="true" class="icon-rss">
+                  <use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use>
+                </svg>
+                Feed</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"
+                ><svg focusable="false" aria-hidden="true" class="icon-youtube">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/news/subscribe/" class="button"
+                >Get News in Email</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div lang="en" dir="auto" translate="no">
+          <p>
+            Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn">Beihang</a>)
+            <a href="/WAI/about/using-wai-material/"
+              >Permission to Use WAI Material</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div lang="en" dir="auto" translate="no" class="q4-start q4-end">
+        <ul style="margin-bottom: 0">
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li>
+            <a href="/WAI/about/accessibility-statement/"
+              >Accessibility Statement</a
+            >
+          </li>
+          <li><a href="/WAI/translations/"> Translations</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script>
+      var translationStrings = {};
+    </script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </body>
 </html>

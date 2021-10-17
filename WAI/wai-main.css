@@ -51,29 +51,30 @@
  */
 
 body {
-    margin: 0 1em 1em 1em;	/* 0 at the top, because of #controls */
-    padding: 0;
-font-family: "Trebuchet MS", sans-serif; /* font family is an OPEN ISSUE */
-background: #fffaf5;
-color: black;
-	line-height: 135%;
-	font-size: 90%   /* font sizing is an OPEN ISSUE */
+  margin: 0 1em 1em 1em; /* 0 at the top, because of #controls */
+  padding: 0;
+  font-family: "Trebuchet MS", sans-serif; /* font family is an OPEN ISSUE */
+  background: #fffaf5;
+  color: black;
+  line-height: 135%;
+  font-size: 90%; /* font sizing is an OPEN ISSUE */
 }
 
 img {
-    border-style: none;		/* Undo Mozilla UA style sheet */
-    vertical-align: baseline;
-    max-width: 100%;		/* Scale images down on narrow windows */
+  border-style: none; /* Undo Mozilla UA style sheet */
+  vertical-align: baseline;
+  max-width: 100%; /* Scale images down on narrow windows */
 }
-form {				/* Undo MacIE5 UA style sheet */
-    margin: 0;
-    padding: 0;
+form {
+  /* Undo MacIE5 UA style sheet */
+  margin: 0;
+  padding: 0;
 }
 a:link {
-    color: #036;
+  color: #036;
 }
 a:visited {
-    color: #603;
+  color: #603;
 }
 
 /*
@@ -82,26 +83,26 @@ a:visited {
  * and right-aligned.
  */
 #controls {
-    display: block;
-    background: #CCC;
-    color: black;
-    text-align: right;
-    margin: 0 -1em 0 -1em;
-    padding: 0.2em;
-    border-bottom: 1px solid black;
-	font-family: Arial, sans-serif;
-    border-right: 2px solid #CCC; /* Avoids that Moz shows a horiz. scrollbar */
+  display: block;
+  background: #ccc;
+  color: black;
+  text-align: right;
+  margin: 0 -1em 0 -1em;
+  padding: 0.2em;
+  border-bottom: 1px solid black;
+  font-family: Arial, sans-serif;
+  border-right: 2px solid #ccc; /* Avoids that Moz shows a horiz. scrollbar */
 }
 #controls * {
-    display: inline;
-    color: black;
-    text-decoration: none;
-    margin: 0 0 0 .33em;
-    padding: 0;
+  display: inline;
+  color: black;
+  text-decoration: none;
+  margin: 0 0 0 0.33em;
+  padding: 0;
 }
 #controls a:hover,
 #controls a:focus {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /*
@@ -113,34 +114,36 @@ a:visited {
  * background) is in the middle+right column.
  */
 #masthead {
-    margin-left: 24%;		/* The background to the right of the logos */
-    background: url(images/perspective.jpg) no-repeat;
-    /* background: url(images/perspective-48.jpg) no-repeat; */
+  margin-left: 24%; /* The background to the right of the logos */
+  background: url(images/perspective.jpg) no-repeat;
+  /* background: url(images/perspective-48.jpg) no-repeat; */
 }
-*>#masthead {
-    background-position: 0.6em 0; /* Hide from WinIE */
-}
-#masthead p {			/* For WinIE only */
-    margin: 0 0 0 -24%;
-    width: 24%;
-}
-#masthead>p {			/* Hide from WinIE */
-    margin: 0 0 0 -31.58%;
-    width: 31.58%;
+* > #masthead {
+  background-position: 0.6em 0; /* Hide from WinIE */
 }
 #masthead p {
-    padding: 0 0.6em 0 0;
-    border-right: 1px solid #036;
-    white-space: nowrap;
-    min-height: 48px;		/* Keep height if logos are scaled down */
-	background: #005A9C;
-	color: #fff;
+  /* For WinIE only */
+  margin: 0 0 0 -24%;
+  width: 24%;
+}
+#masthead > p {
+  /* Hide from WinIE */
+  margin: 0 0 0 -31.58%;
+  width: 31.58%;
+}
+#masthead p {
+  padding: 0 0.6em 0 0;
+  border-right: 1px solid #036;
+  white-space: nowrap;
+  min-height: 48px; /* Keep height if logos are scaled down */
+  background: #005a9c;
+  color: #fff;
 }
 #masthead img {
-/*   max-width: 49%;   Scale logos down on narrow screens */
-    vertical-align: bottom;	/* Avoid empty space for descenders below */
-	background: #005A9C;
-	color: #fff;
+  /*   max-width: 49%;   Scale logos down on narrow screens */
+  vertical-align: bottom; /* Avoid empty space for descenders below */
+  background: #005a9c;
+  color: #fff;
 }
 
 /*
@@ -149,23 +152,22 @@ a:visited {
  */
 
 #tagline {
-    display: block;
-    overflow: hidden;/* Let height include floats */
-    margin: 0;
-    padding: 0;
-    color: white;
-    background:   url(images/tagbararc.png) top right no-repeat #930;
-    min-height: 23px;/* Height of rounded corner */
+  display: block;
+  overflow: hidden; /* Let height include floats */
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: url(images/tagbararc.png) top right no-repeat #930;
+  min-height: 23px; /* Height of rounded corner */
 }
 #tagline/* HACK: hide from MacIE5 */ {
-    clear: both;
+  clear: both;
 }
 #tagline p {
-    margin: 0;
-    padding: 0.3em 20px 0.3em 0.3em; /* 20px makes room for rounded corner */
-	text-align: right;
+  margin: 0;
+  padding: 0.3em 20px 0.3em 0.3em; /* 20px makes room for rounded corner */
+  text-align: right;
 }
-
 
 /*
  * #nav is the navigation area. The H2s are hidden.
@@ -176,28 +178,29 @@ a:visited {
  * CSS, HTML, specific design requirements, and generating  @@
  */
 #nav {
-    clear: left;
-    float: left;
-    width: 24%;
-    padding: 0 0.3em;		/* Make #nav same width as logos and tag */
-    color: #036;
-    font-size: 0.95em;
+  clear: left;
+  float: left;
+  width: 24%;
+  padding: 0 0.3em; /* Make #nav same width as logos and tag */
+  color: #036;
+  font-size: 0.95em;
 }
-#nav h2 {			/* hide visual rendering of h2 */
-    position: absolute;
-    left: -999px;
-    width: 990px;
+#nav h2 {
+  /* hide visual rendering of h2 */
+  position: absolute;
+  left: -999px;
+  width: 990px;
 }
 #nav a,
-#what a  {
-    color: #036;		/* WinIE doesn't support 'inherit' */
-    text-decoration: none;
-	}
+#what a {
+  color: #036; /* WinIE doesn't support 'inherit' */
+  text-decoration: none;
+}
 #nav1 a,
 #nav-static a {
-	display: block;
-	width: 100%;  /* to get display:block to work in WinIE & not have lots of leading between <li>s */
-	}
+  display: block;
+  width: 100%; /* to get display:block to work in WinIE & not have lots of leading between <li>s */
+}
 
 #nav a:hover,
 #nav a:focus,
@@ -205,17 +208,17 @@ a:visited {
 #what a:focus,
 #contents a:hover,
 #contents a:focus {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 #nav img {
-    max-width: 100%;		/* Scale down images on narrow screens */
+  max-width: 100%; /* Scale down images on narrow screens */
 }
 
 #w3cnav {
-    margin: 0 -0.3em 0em -0.3em; /* -0.3em to undo the padding on #nav */
-    padding: 0.3em 0.3em 0.3em 0;
-    background: white;
-    border: none;
+  margin: 0 -0.3em 0em -0.3em; /* -0.3em to undo the padding on #nav */
+  padding: 0.3em 0.3em 0.3em 0;
+  background: white;
+  border: none;
 }
 
 /*
@@ -225,28 +228,30 @@ a:visited {
  */
 
 /*#nav-static */
-#wainav, #subhomenav,
+#wainav,
+#subhomenav,
 #nav1 {
-    color: #036;
-    background: #dfebf7;
-    border: 1px solid #036;
-	border-right: 2px solid #036;
-    margin: 0 -0.3em;		/* -0.3em to undo the padding on #nav */
-    padding: 0;
-    /* font-weight: bold; */
-    position: relative;		/* Create containing block for #current-icon */
+  color: #036;
+  background: #dfebf7;
+  border: 1px solid #036;
+  border-right: 2px solid #036;
+  margin: 0 -0.3em; /* -0.3em to undo the padding on #nav */
+  padding: 0;
+  /* font-weight: bold; */
+  position: relative; /* Create containing block for #current-icon */
 }
 /*#nav-static{
     border-bottom: 2px solid #036;
 }
  */
-#wainav, #subhomenav {
-    padding: 0.5em 0.1em 0.5em 0.3em;
-	font-weight: bold;
+#wainav,
+#subhomenav {
+  padding: 0.5em 0.1em 0.5em 0.3em;
+  font-weight: bold;
 }
 /* hack for WinIE only \*/
 * html #w3cnav {
-    border-bottom: 1px solid #036;
+  border-bottom: 1px solid #036;
 }
 /* End hack */
 /*#nav-static {
@@ -257,25 +262,25 @@ a:visited {
  */
 
 #nav1 {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 #nav1 ul,
 #nav1 ol {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 #nav1 li {
-    padding: 0.5em 0.1em 0.5em 1.5em;
-    border-bottom: 1px solid #036;
-    margin: 0;			/* No bullet on first level */
-    list-style: none;
+  padding: 0.5em 0.1em 0.5em 1.5em;
+  border-bottom: 1px solid #036;
+  margin: 0; /* No bullet on first level */
+  list-style: none;
 }
 #nav1 li li {
-    margin: 0.2em 0.1em 0.2em 1.0em;
-    list-style: square;
-    padding: 0;
-    border-bottom: none;
-    vertical-align: top;	/* This has effect on the bullet in WinIE6... */
+  margin: 0.2em 0.1em 0.2em 1em;
+  list-style: square;
+  padding: 0;
+  border-bottom: none;
+  vertical-align: top; /* This has effect on the bullet in WinIE6... */
 }
 
 /*#nav-static li {
@@ -287,9 +292,9 @@ a:visited {
 /* long selector to be more specific than contradictory rule below */
 #nav ol#nav1 .anno li li.nav-head,
 #nav1 li li.nav-head {
-    list-style: none;
-    color:#369;
-	margin-top: 0.5em;
+  list-style: none;
+  color: #369;
+  margin-top: 0.5em;
 }
 
 /* anno [@@TODO: old code - needs cleanup]
@@ -297,26 +302,26 @@ a:visited {
        (no bullets, separating lines)
 */
 #nav .anno {
-	margin: 0;
-	padding: 0;
-	border-top: 0;
-	}
+  margin: 0;
+  padding: 0;
+  border-top: 0;
+}
 #nav ol#nav1 .anno li {
-	padding: 0.1em 0em 0.1em 0;
-	list-style: none;
-	margin-left: 0;
-	margin-right: 0;
-	border-top: 1px solid #69c;
-	margin-left: 1em;
-	}
+  padding: 0.1em 0em 0.1em 0;
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 1px solid #69c;
+  margin-left: 1em;
+}
 /* [@@ code needs cleanup]
  * lower level lists under anno have default w/ bullet
 */
-#nav ol#nav1 .anno li li  {
-    margin: 0.1em 0em 0.1em 1.0em;
-    list-style: square;
-    padding: 0;
-    border: none;
+#nav ol#nav1 .anno li li {
+  margin: 0.1em 0em 0.1em 1em;
+  list-style: square;
+  padding: 0;
+  border: none;
 }
 /* current-node [@@ code needs cleanup]
  * Specific appearance of current-node
@@ -324,51 +329,51 @@ a:visited {
 *
 */
 
-
-
 /*#nav-static */
 #current-node span.label,
-#nav ol li  li#current-node span.label,
+#nav ol li li#current-node span.label,
 #current-node {
-	background-color:#fffaf5;
-	font-weight: bold;
-	color: black;
+  background-color: #fffaf5;
+  font-weight: bold;
+  color: black;
 }
 #current-node span.label,
-#nav ol li  li#current-node span.label {
-	display:block;
+#nav ol li li#current-node span.label {
+  display: block;
 }
 
 /* @@end needs cleanup worst section :) */
 
 #nav1 .current-nav {
-    background: #eff5fb;
+  background: #eff5fb;
 }
 #current-node {
-    position:relative; /* For Icon position */
+  position: relative; /* For Icon position */
 }
-#current-icon {			/* Show to the left of the item */
-    color: #930;
-    position: absolute;
-    top:.25em;
-    left: -1.25em;
-    font-weight: bold;
-	font-size: 177%;
-    line-height:0;
-    display: block;		/* Redundant, except for WinIE6 */
+#current-icon {
+  /* Show to the left of the item */
+  color: #930;
+  position: absolute;
+  top: 0.25em;
+  left: -1.25em;
+  font-weight: bold;
+  font-size: 177%;
+  line-height: 0;
+  display: block; /* Redundant, except for WinIE6 */
 }
 /* hack for WinIE only \*/
 * html #current-icon {
-    left: -3em;
+  left: -3em;
 }
 * html #current-icon {
-	vertical-align: bottom; /* otherwise moves text way low & cuts it off */
+  vertical-align: bottom; /* otherwise moves text way low & cuts it off */
 }
 /* End hack */
-.current-page {			/* for >> not in #nav */
-    color: #930;
-    font-weight: bold;
-	font-size: 177%;
+.current-page {
+  /* for >> not in #nav */
+  color: #930;
+  font-weight: bold;
+  font-size: 177%;
 }
 
 /*
@@ -376,23 +381,24 @@ a:visited {
  * (underneath the #nav menus).
  */
 .sidebar {
-    margin: 0 0 0 -13.5%;	/* For WinIE */
-    width: 24%;
+  margin: 0 0 0 -13.5%; /* For WinIE */
+  width: 24%;
 }
-*>.sidebar {
-    margin: 0 0 0 -36.9863013698%;	/* For others #nav/#main */
-    width: 31.58%;
+* > .sidebar {
+  margin: 0 0 0 -36.9863013698%; /* For others #nav/#main */
+  width: 31.58%;
 }
 .sidebar {
-    clear: left;
-    float: left;
-    padding: 0 0 0 0.3em;
-    font-size: 0.95em;
+  clear: left;
+  float: left;
+  padding: 0 0 0 0.3em;
+  font-size: 0.95em;
 }
-.sidebar h2 {			/* hide visual rendering of h2 */
-    position: absolute;
-    left: -999px;
-    width: 990px;
+.sidebar h2 {
+  /* hide visual rendering of h2 */
+  position: absolute;
+  left: -999px;
+  width: 990px;
 }
 /*
 .sidebar a {
@@ -407,7 +413,7 @@ a:visited {
  * #main contains the contents that differs from page to page.
  */
 #main {
-    margin: 0 0 0 27%;		/* 27% is bigger than 24%, the width of #nav */
+  margin: 0 0 0 27%; /* 27% is bigger than 24%, the width of #nav */
 }
 
 /* causes big open space in WinIE7
@@ -417,43 +423,41 @@ a:visited {
 */
 
 h1 {
-    margin: 0 0 0 0;
-    padding: 1.3em 0 0 0;
-    font: bold 145% "Georgia", serif;
+  margin: 0 0 0 0;
+  padding: 1.3em 0 0 0;
+  font: bold 145% "Georgia", serif;
 }
 h1 .subtitle {
-font-size: 85%;
+  font-size: 85%;
 }
-
-
 
 /* #main h2,
-#announce */   /* @@ testing @@ */
+#announce */ /* @@ testing @@ */
 h2 {
-    color: #930;
-    border-bottom: 1px dashed #930;
+  color: #930;
+  border-bottom: 1px dashed #930;
 }
 #main h2 {
-    font-size: 1.35em;
-    margin-top: 1.0em;
-    margin-bottom: 0;
+  font-size: 1.35em;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 #announce h2 {
-    font-size: 1.15em;
-    margin: 1em 0 0.5em 0;
+  font-size: 1.15em;
+  margin: 1em 0 0.5em 0;
 }
 #main h3 {
-    color: #930;
-    font-size: 1.25em;
-font-family: "Trebuchet MS", sans-serif;
+  color: #930;
+  font-size: 1.25em;
+  font-family: "Trebuchet MS", sans-serif;
 }
 #main h4 {
-    font-size: 1.15em;
-font-family: "Trebuchet MS", sans-serif;
+  font-size: 1.15em;
+  font-family: "Trebuchet MS", sans-serif;
 }
 #main h5 {
-    font-size: 1.05em;
-font-family: "Trebuchet MS", sans-serif;
+  font-size: 1.05em;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 /*
@@ -465,284 +469,304 @@ font-family: "Trebuchet MS", sans-serif;
 #what,
 #announce,
 #contents {
-    float: right;
-    clear: right;
-    margin: 0 0 1em 2em;
-    padding: 0 0.3em 0.5em 1em;
+  float: right;
+  clear: right;
+  margin: 0 0 1em 2em;
+  padding: 0 0.3em 0.5em 1em;
 }
 #what,
 #contents {
-    width: 25%;			/* need to explore issues */
+  width: 25%; /* need to explore issues */
 }
 #announce {
-    width: 25%;			/* For WinIE */
-	background: #fffaf5; /* for Mozilla */
+  width: 25%; /* For WinIE */
+  background: #fffaf5; /* for Mozilla */
 }
-*>#announce {
-    width: 34.2465753425%;	/* = 25% / width(#main) */
+* > #announce {
+  width: 34.2465753425%; /* = 25% / width(#main) */
 }
 #what,
 #contents {
-    line-height: 115%;
+  line-height: 115%;
 }
 #what p {
-	font-size: 0.9em;
-	font-weight: bold;
-    margin: 1em 0 0.3em 0;
-    padding: 0;
-    border-bottom: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 1em 0 0.3em 0;
+  padding: 0;
+  border-bottom: none;
 }
 #contents h2 {
-    font-size: 1em;
-    margin: 1em 0 0.3em 0;
-    padding: 1em 0 0.3em 0;
-    border-bottom: none;
+  font-size: 1em;
+  margin: 1em 0 0.3em 0;
+  padding: 1em 0 0.3em 0;
+  border-bottom: none;
 }
 #what p:first-child,
 #contents h2:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 #what p,
 #contents h2 {
-    margin-top: 0.5em;
-    margin-bottom: 0.1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
 }
 #what ul {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
 #what ul,
 #announce ul,
 #contents ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 #announce li,
 #contents li {
-    margin: 0 0 0.3em 0;
+  margin: 0 0 0.3em 0;
 }
 #announce p {
-    margin-top: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /*
  * #what is black on yellow.
  */
 #what {
-    background: #FFC;
-    border: 1px solid #930;
-    border-top: none;
+  background: #ffc;
+  border: 1px solid #930;
+  border-top: none;
 }
 #announce {
-    background: #fffaf5;
-    border: 1px solid #930;
+  background: #fffaf5;
+  border: 1px solid #930;
 }
 
-#what h2 {			/* hide visual rendering of h2 */
-    position: absolute;
-    left: -999px;
-    width: 990px;
+#what h2 {
+  /* hide visual rendering of h2 */
+  position: absolute;
+  left: -999px;
+  width: 990px;
 }
 
 #what ul {
-    padding-left: 1.3em;
-    list-style: url(images/bullet-c60.gif);
+  padding-left: 1.3em;
+  list-style: url(images/bullet-c60.gif);
 }
-#announce ul{
-    padding-left: 1.1em;
-    list-style: url(images/bullet-036.gif);
+#announce ul {
+  padding-left: 1.1em;
+  list-style: url(images/bullet-036.gif);
 }
 
 /*
  * #contents is orange on white.
  */
 #contents {
-    background: #fffaf5;
-    border: 1px dashed #930;
-    font-weight: bold;
-    color: #930;
-	font-size: 0.9em;
+  background: #fffaf5;
+  border: 1px dashed #930;
+  font-weight: bold;
+  color: #930;
+  font-size: 0.9em;
 }
 #contents h2 {
-    color: black;
-	padding-top: 0.5em;
-	margin-top: 0.5em;
+  color: black;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
 }
 #contents ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 #contents li {
-    display: inline;		/* HACK: otherwise too much space in WinIE */
+  display: inline; /* HACK: otherwise too much space in WinIE */
 }
 #contents a {
-    color: #930;		/* WinIE6 doesn't support 'transparent' */
-    display: block;		/* Make background clickable in many browsers*/
-    margin: 0.4em 0;
-    padding: 0 0 0 1.5em;
-    background:   url(/Icons/downinpage.png) top left no-repeat;
+  color: #930; /* WinIE6 doesn't support 'transparent' */
+  display: block; /* Make background clickable in many browsers*/
+  margin: 0.4em 0;
+  padding: 0 0 0 1.5em;
+  background: url(/Icons/downinpage.png) top left no-repeat;
 }
 
 /*
  * The #footer contains the copyright
  */
 #footer {
-    border-top: 1px solid #930;
-    clear: both;
-    color: #333;
-    font-size: 0.9em;
+  border-top: 1px solid #930;
+  clear: both;
+  color: #333;
+  font-size: 0.9em;
 }
-#footer h2 { 			/* hide visual rendering of h2 */
-    position: absolute;
-    left: -999px;
-    width: 990px;
+#footer h2 {
+  /* hide visual rendering of h2 */
+  position: absolute;
+  left: -999px;
+  width: 990px;
 }
 #footer a {
-    color: inherit;
-    text-decoration: underline;
+  color: inherit;
+  text-decoration: underline;
 }
 #footer .cc {
-	border: 9px solid #fffaf5;
-	float: left;
+  border: 9px solid #fffaf5;
+  float: left;
 }
 .copyrightcc {
-	line-height:normal;
-	}
+  line-height: normal;
+}
 
 /*
  * spacing around lists
 */
 dt {
-	margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 li {
-	margin-bottom: 0.1em;
+  margin-bottom: 0.1em;
 }
 ul.listspaced li {
-	margin-bottom: 1em;
-	}
+  margin-bottom: 1em;
+}
 ol.listspaced li {
-	margin-bottom: 1em;
-	}
+  margin-bottom: 1em;
+}
 .listtight {
-	margin-bottom: 0;
-	}
-.listintro, listintrop {  /* class on the <p> for *no* space between it and list */
-	padding-bottom: 0;
-	margin-bottom: 0;
-	}
-.listafter {         /* class on the <p> for little space between it and list */
-	padding-top: 0;
-	margin-top: 0.5em;
-	}
-.listwithp, .listafterpul { /* class on the <ul> */
-	padding-top: 0;
-	margin-top: 0;
-	}
+  margin-bottom: 0;
+}
+.listintro,
+listintrop {
+  /* class on the <p> for *no* space between it and list */
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.listafter {
+  /* class on the <p> for little space between it and list */
+  padding-top: 0;
+  margin-top: 0.5em;
+}
+.listwithp,
+.listafterpul {
+  /* class on the <ul> */
+  padding-top: 0;
+  margin-top: 0;
+}
 
 /*
  * structure markup that is not needed in visual display
  * (still want avaialble to screen readers and such)
 */
-.no-display { 			/* hide visual rendering*/
-    position: absolute;
-    left: -999px;
-    width: 990px;
+.no-display {
+  /* hide visual rendering*/
+  position: absolute;
+  left: -999px;
+  width: 990px;
 }
 
 /*
  * misc
 */
 
-#skipwrapper {width: 1px; height: 1px; overflow: hidden; float: right}
+#skipwrapper {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  float: right;
+}
 hr {
-	color: #369;
-	background-color: #369;
+  color: #369;
+  background-color: #369;
 }
 .float-right {
-/* for images, put in img (doesn't disply in some browsers when in div or span) */
-	float: right;
-	}
+  /* for images, put in img (doesn't disply in some browsers when in div or span) */
+  float: right;
+}
 .float-left {
-	float: left;
-	}
+  float: left;
+}
 .subtext {
-	font-size: 0.9em;
-	font-style: italic;
-	color: #333333;
+  font-size: 0.9em;
+  font-style: italic;
+  color: #333333;
 }
 .center {
-	text-align: center;
+  text-align: center;
 }
 .right-align {
-	text-align: right;
+  text-align: right;
 }
 .border1c60 {
-	border-style: solid;
-	border-color: #930;
-	border-width: 1px;
-      }
+  border-style: solid;
+  border-color: #930;
+  border-width: 1px;
+}
 .changed {
-	background: #FFFFCC;
+  background: #ffffcc;
 }
 .highlight-version {
-	border: solid 1px #630;
-	color: #630;
-	background-color: #cfc;
-	font-weight: bold;
-	padding: 0.5em;
+  border: solid 1px #630;
+  color: #630;
+  background-color: #cfc;
+  font-weight: bold;
+  padding: 0.5em;
 }
 .termref {
-          text-decoration:none;
-          color:#000000;
-		  padding-bottom:0; margin-bottom:0;
-          border-bottom:dashed #808080 1px; /* de-emphasize glossary links */
-          background-color: transparent;
-          }
+  text-decoration: none;
+  color: #000000;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: dashed #808080 1px; /* de-emphasize glossary links */
+  background-color: transparent;
+}
 a.termref:link {
-        color:#000000;
-        background : inherit;
-        }
+  color: #000000;
+  background: inherit;
+}
 
-a.termref:hover, .termref:active, a.termref:focus {
-          color:#0000CC;
-          background : inherit;
-          border-bottom:solid #0000CC 1px; /* de-emphasize glossary links */
-      }
+a.termref:hover,
+.termref:active,
+a.termref:focus {
+  color: #0000cc;
+  background: inherit;
+  border-bottom: solid #0000cc 1px; /* de-emphasize glossary links */
+}
 
-.subhead { font-size: 0.75em; display: block; }
-
+.subhead {
+  font-size: 0.75em;
+  display: block;
+}
 
 /* ********************* for nav redesign 2011-03March **************** */
-.nav-discover, #nav .translations {
-    margin-left: -0.3em; /*-0.3em to undo the padding on #nav */
-    margin-right: -0.3em; /*-0.3em to undo the padding on #nav */
+.nav-discover,
+#nav .translations {
+  margin-left: -0.3em; /*-0.3em to undo the padding on #nav */
+  margin-right: -0.3em; /*-0.3em to undo the padding on #nav */
 }
 .nav-discover {
-    background: #FFC;
-    border: 1px solid #930;
-	padding-left: 31px;
-	padding-right: 5px;
-	font-style: italic;
-	}
-.nav-discouver a{
-	text-decoration: underline;
-	}
-.nav-discover h2 {			/* hide visual rendering of h2 */
-    position: absolute;
-    left: -999px;
-    width: 990px;
+  background: #ffc;
+  border: 1px solid #930;
+  padding-left: 31px;
+  padding-right: 5px;
+  font-style: italic;
+}
+.nav-discouver a {
+  text-decoration: underline;
+}
+.nav-discover h2 {
+  /* hide visual rendering of h2 */
+  position: absolute;
+  left: -999px;
+  width: 990px;
 }
 #nav .translations {
-	padding-left:32px;
-	}
+  padding-left: 32px;
+}
 
 /* ************ links back to top *************** */
 
 p.totop {
   display: block;
   text-align: right;
-  background-color:#eff5fb;
+  background-color: #eff5fb;
 }
 p.totop a {
   background: url(../Icons/topofpage.png) left no-repeat;
@@ -754,7 +778,7 @@ p.totop a {
   box-sizing: border-box;
   border: 1px solid #666 !important;
   background-color: #fff7f0;
-  border-radius: .5em;
+  border-radius: 0.5em;
   padding: 1em;
   margin: 1em auto;
   width: 90%;
@@ -773,7 +797,7 @@ p.totop a {
 .contribute .buttons {
   text-align: center;
   margin-top: 1em;
-  padding: .5em 0 0;
+  padding: 0.5em 0 0;
   border-top: 1px solid #ccc;
   line-height: 300%;
 }
@@ -783,35 +807,41 @@ p.totop a {
   font-weight: normal;
   font-size: 1em;
   line-height: 244.44444%;
-  padding: .5em .75em;
+  padding: 0.5em 0.75em;
   text-decoration: none;
   white-space: nowrap;
   border-color: #ccc;
   border-width: 1px;
   border-style: solid;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: #333;
   text-decoration: none;
   background: linear-gradient(to bottom, #ccc, #b3b3b3);
 }
 
 /* *** misc *** */
-.quiet {color: #4f4f4f;}
-.quiet a {color: #4f4f4f;}
+.quiet {
+  color: #4f4f4f;
+}
+.quiet a {
+  color: #4f4f4f;
+}
 
 /* ex-col jumping with hover/focus fix */
 .f_panelHead {
-   border-bottom: solid transparent;
+  border-bottom: solid transparent;
 }
-.f_panelHead.fs_hover, .f_panelHead.fs_focus {
-   border-bottom: solid currentColor;
+.f_panelHead.fs_hover,
+.f_panelHead.fs_focus {
+  border-bottom: solid currentColor;
 }
 .f_panelHead.fs_selected {
-   border-bottom: solid currentColor;
+  border-bottom: solid currentColor;
 }
 .ctrlcmd {
-   color: #963;
+  color: #963;
 }
 /* /end ex-col jumping with hover/focus fix */

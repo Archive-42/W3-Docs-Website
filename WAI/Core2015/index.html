@@ -1,300 +1,910 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1633578570351143841"
+    />
 
-<title> WAI-Core Project | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="WAI-Core Project" />
-<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
-<meta property="og:locale" content="en" />
-<meta name="description" content="Introduction" />
-<meta property="og:description" content="Introduction" />
-<link rel="canonical" href="https://www.w3.org/WAI/about/projects/wai-core-2015/" />
-<meta property="og:url" content="https://www.w3.org/WAI/about/projects/wai-core-2015/" />
-<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-10-07T03:49:30+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="WAI-Core Project" />
-<meta name="twitter:site" content="@w3c_wai" />
-<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
-<script type="application/ld+json">
-{"description":"Introduction","@type":"BlogPosting","headline":"WAI-Core Project","dateModified":"2021-10-07T03:49:30+00:00","datePublished":"2021-10-07T03:49:30+00:00","url":"https://www.w3.org/WAI/about/projects/wai-core-2015/","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/about/projects/wai-core-2015/"},"author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+    <title>WAI-Core Project | Web Accessibility Initiative (WAI) | W3C</title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <meta name="generator" content="Jekyll v4.2.0" />
+    <meta property="og:title" content="WAI-Core Project" />
+    <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+    <meta property="og:locale" content="en" />
+    <meta name="description" content="Introduction" />
+    <meta property="og:description" content="Introduction" />
+    <link
+      rel="canonical"
+      href="https://www.w3.org/WAI/about/projects/wai-core-2015/"
+    />
+    <meta
+      property="og:url"
+      content="https://www.w3.org/WAI/about/projects/wai-core-2015/"
+    />
+    <meta
+      property="og:site_name"
+      content="Web Accessibility Initiative (WAI)"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="article:published_time"
+      content="2021-10-07T03:49:30+00:00"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="WAI-Core Project" />
+    <meta name="twitter:site" content="@w3c_wai" />
+    <meta
+      name="twitter:creator"
+      content="@W3C Web Accessibility Initiative (WAI)"
+    />
+    <script type="application/ld+json">
+      {
+        "description": "Introduction",
+        "@type": "BlogPosting",
+        "headline": "WAI-Core Project",
+        "dateModified": "2021-10-07T03:49:30+00:00",
+        "datePublished": "2021-10-07T03:49:30+00:00",
+        "url": "https://www.w3.org/WAI/about/projects/wai-core-2015/",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.w3.org/WAI/about/projects/wai-core-2015/"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "W3C Web Accessibility Initiative (WAI)"
+        },
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
+    <meta
+      name="twitter:image"
+      property="og:image"
+      content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg"
+    />
 
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
-</head>
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+  </head>
 
   <body id="top" class="page-wai-core-project resource-about">
-    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
-  <ul>
+    <nav
+      aria-label="Skip Link and Language Selector"
+      id="controls"
+      class="default-grid"
+    >
+      <ul>
         <li><a href="#main">Skip to Content</a></li>
         <li class="opt">
           <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
         </li>
         <li class="opt">
-            <a href="/WAI/translations/">All Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/"
+            >All Translations
+            <svg focusable="false" aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
         </li>
-      </ul></nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
- 
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
-  </div>
-
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">Search:</span>
-              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
-            </label>
-            
-            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
-          </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="Main" lang="en"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
-  <ul style="align-self: center;">
-    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/about/"><span>About W3C WAI</span></a></li><li><a lang="en" href="/WAI/about/projects/"><span>Projects</span></a></li><li><a lang="en" href="/WAI/about/projects/wai-core-2015/" aria-current="page"><span>WAI-Core 2015, 2020</span></a></li></ul>
-</nav>
-    <div class="default-grid with-gap leftcol">
-
-  
-    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
-      <ul class="sidenav--list">
-  <li>
-  <a lang="en" href="/WAI/about/" class="page-link"><span>About WAI</span></a></li><li>
-  <a lang="en" href="/WAI/about/participating/" class="page-link"><span>Participating</span></a></li><li>
-  <a lang="en" href="/WAI/about/translating/" class="page-link"><span>Translating</span></a></li><li>
-  <a lang="en" href="/WAI/about/contacting/" class="page-link"><span>Contacting</span></a></li><li>
-  <a lang="en" href="/WAI/about/sponsoring/" class="page-link"><span>Sponsoring</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/" aria-current="location" class="page-link"><span>Projects</span></a><ul><li>
-  <a lang="en" href="/WAI/about/projects/wai-coop/" class="page-link"><span>WAI-CooP</span></a><ul><li>
-  <a lang="en" href="/WAI/about/projects/wai-coop/symposium1/" class="page-link"><span>Online Research Symposium</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-guide/" class="page-link"><span>WAI-Guide</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/" class="page-link"><span>WAI-Tools</span></a><ul><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/final-open-meeting/" class="page-link"><span>Final Open Meeting</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/session1/" class="page-link"><span>Video Recording 1</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/session2/" class="page-link"><span>Video Recording 2</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/session3/" class="page-link"><span>Video Recording 3</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/session4/" class="page-link"><span>Video Recording 4</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/session5/" class="page-link"><span>Video Recording 5</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/third-open-meeting/" class="page-link"><span>Third Open Meeting</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/second-open-meeting/" class="page-link"><span>Second Open Meeting</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/symposium/" class="page-link"><span>Online Symposium</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-tools/first-open-meeting/" class="page-link"><span>First Open Meeting</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/expand-access/" class="page-link"><span>WAI Expanding Access</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/easy-reading/" class="page-link"><span>Easy Reading</span></a></li>
-          <li>
-  <a lang="en" href="/WAI/about/projects/wai-core-2015/" aria-current="page" class="page-link"><span>WAI-Core 2015, 2020</span></a></li><li>
-  <a lang="en" href="/WAI/about/projects/wai-core-ford/" class="page-link"><span>WAI-Core Ford</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/about/groups/" class="page-link"><span>Groups</span></a><ul><li>
-  <a lang="en" href="https://www.w3.org/WAI/GL/" class="page-link"><span>AGWG: Accessibility Guidelines <abbr title="Working Group">WG</abbr></span></a></li><li>
-  <a lang="en" href="https://www.w3.org/WAI/APA/" class="page-link"><span>APA: Accessible Platform <abbr title="Working Group">WG</abbr></span></a></li><li>
-  <a lang="en" href="https://www.w3.org/WAI/ARIA/" class="page-link"><span>ARIA: Accessible Rich Internet Applications <abbr title="Working Group">WG</abbr></span></a></li><li>
-  <a lang="en" href="/WAI/about/groups/eowg/" class="page-link"><span>EOWG: Education and Outreach <abbr title="Working Group">WG</abbr></span></a><ul><li>
-  <a lang="en" href="/WAI/EO/charter-current" class="page-link"><span>Charter</span></a></li><li>
-  <a lang="en" href="/WAI/about/groups/eowg/participate/" class="page-link"><span>Participate (Join)</span></a></li><li>
-  <a lang="en" href="https://www.w3.org/groups/wg/eowg/participants" class="page-link"><span>Current Participants</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/about/groups/waiig/" class="page-link"><span>WAI IG: WAI Interest Group</span></a></li><li>
-  <a lang="en" href="/WAI/about/groups/taskforces/" class="page-link"><span>Group Task Forces</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/about/using-wai-material/" class="page-link"><span>Using WAI Material</span></a></li><li>
-  <a lang="en" href="/WAI/about/accessibility-statement/" class="page-link"><span>Accessibility Statement</span></a></li></ul></nav>
-</div>
-  
-
-  <main id="main" lang="en">
-
-      
-
-    
-    <header>
-      <h1>
-      
-      
-      
-        WAI-Core Project
-      
-      </h1></header>
-    <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Introduction </h2></header><div class="box-i">
-
-<p>This page provides information on the Web Accessibility Initiative - Core <strong>(WAI-Core) Project</strong> sponsored by the National Institute on Disability, Independent Living, and Rehabilitation Research (<a href="http://www.acl.gov/programs/NIDILRR/">NIDILLR</a>), US Department of Health and Human Services (<a href="http://www.hhs.gov/">HHS</a>).</p>
-
-</div></aside>
-
-
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#about-wai-core" id="markdown-toc-about-wai-core">About WAI-Core</a></li>
-  <li><a href="#how-to-participate" id="markdown-toc-how-to-participate">How to Participate</a></li>
-  <li><a href="#project-staff" id="markdown-toc-project-staff">Project Staff</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="about-wai-core">About WAI-Core</h2>
-
-<p>The WAI-Core Project, funded by NIDILRR at the US HHS, provides support for accessibility work at W3C WAI to:</p>
-
-<p>Task 1:</p>
-
-<ul>
-  <li>Provide staff support and technical expertise within a Working Group of Web accessibility experts representing different stakeholder groups, including via recruitment of public comments on draft technical reports from other W3C Working Groups, W3C Interest Groups and W3C Community Groups, and as needed to develop technical specifications that support accessibility, such as WAI-ARIA and Accessibility Application Programming Interface (API) mappings;</li>
-  <li>Update documentation as needed of accessibility experts’ guidance on accessibility requirements, specification design considerations, and known gaps, drawing on experience gained from reviewing resolutions to accessibility barriers in a wide range of Web technologies, to serve as a general introduction to accessibility self-review by other W3C working groups and to facilitate the scaling of accessibility expertise to a larger number of W3C specification reviews (currently Web Technology Accessibility Guidelines (WTAG)).</li>
-</ul>
-
-<p>Task 2:</p>
-
-<ul>
-  <li>Maintain one or more multi-stakeholder Working Groups of Web accessibility experts to develop updated guidance and technical support materials on Web content and applications, authoring tools, browsers, mobile applications, and other Web-enabled applications, devices and services; This may be in stand-alone, combined or modular format, including extensions of previous guidelines, or as updated combinations of previous guidelines. It may include accessibility guidance and technical support materials for technologies relating to industries newly converging with the Web, for example mobile, digital publishing, Web of things, TV and Web, education, health care, or other areas; and may include extensive guidance and/or techniques for areas such as cognitive and learning disability, low-vision accessibility, and/or voice input accessibility.</li>
-</ul>
-
-<p>Task 3:</p>
-
-<ul>
-  <li>Review, provide analysis of, and comment on understandability, readability of and usability of accessibility standards and implementation reference materials; develop non-technical introductions to accessibility guidelines and standards, and overviews of accessibility user requirements for people with disabilities; provide education and outreach activities to support acceptance of Web accessibility guidance; comment on draft standards, regulations, and/or policies where necessary to promote acceptance of Web accessibility solutions.</li>
-</ul>
-
-<h2 id="how-to-participate">How to Participate</h2>
-
-<p>WAI-Core work is developed through <a href="http://www.w3.org/WAI/groups">W3C/WAI Working Groups</a>. Working Groups that are currently relevant to WAI-Core work, and links to information on participation, include:</p>
-
-<ul>
-  <li><a href="http://www.w3.org/WAI/APA/">Accessible Platform Architectures (APA) Working Group</a> (<a href="https://www.w3.org/WAI/APA/#contribute">participation in APA WG</a>), for review of accessibility in W3C specifications;</li>
-  <li><a href="http://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications (ARIA) Working Group</a> (<a href="https://www.w3.org/WAI/ARIA/#contribute">participation in ARIA WG</a>), for development of accessibility specifications as needed, such as ARIA, and Accessibility Application Programming Interface Mappings;</li>
-  <li><a href="http://www.w3.org/WAI/GL/">Accessibility Guidelines (WCAG) Working Group</a> (<a href="https://www.w3.org/WAI/GL/participation.html">participation in AG WG</a>), for development of accessibility guidelines;</li>
-  <li><a href="http://www.w3.org/WAI/EO/">Education and Outreach Working Group (EOWG)</a> (<a href="https://www.w3.org/WAI/EO/participation.html">participation in EOWG</a>) for improving understanding and usability of accessibility standards and implementation reference materials, developing non-technical introductions to accessibility guidelines and standards, and providing education and outreach to support implementation of Web accessibility guidance.</li>
-</ul>
-
-<p>In addition to participation opportunities, everyone is welcome to review drafts. Draft in progress are highlighted on the <a href="http://www.w3.org/WAI/">WAI home page</a>. To get notifications of drafts for review, see <a href="http://www.w3.org/WAI/about/announcements">Getting WAI Announcements</a> for links to WAI tweets, RSS feed, and WAI Interest Group (WAI IG) emails.</p>
-
-<p>For more information on the WAI-Core Project and other WAI work, see <a href="http://www.w3.org/WAI/about-links.html">Getting Involved with WAI</a> and <a href="http://www.w3.org/WAI/participation">Participating in WAI</a>. If you have any questions, contact <a href="http://www.w3.org/People/Brewer/">Judy Brewer</a>.</p>
-
-<h2 id="project-staff">Project Staff</h2>
-
-<p>The following W3C staff are supported in part by WAI-Core funds:</p>
-
-<ul>
-  <li>Judy Brewer</li>
-  <li>Michael Cooper</li>
-  <li>Shawn Henry</li>
-</ul>
-
-
-    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20WAI-Core%20Project">wai@w3.org</a> or via GitHub.</p>
-<div class="button-group">
-    <a href="mailto:wai@w3.org?subject=[en]%20WAI-Core%20Project&body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/wai-about-wai/edit/master/_about/projects/wai-core-2015/index.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-about-wai/issues/new" class="button"><span>New GitHub Issue</span></a>
-</div></div></aside>
-
-
-    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
-  </main>
-</div>
-
-
-  
-
-
-<footer class="site-footer grid-4q" aria-label="Site">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
-    </div>
-    <div class="social" lang="en" dir="auto" translate="no">
-      <ul>
-        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
-        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
-        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
-        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
-    <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
-    </div>
-  </div>
-  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
-    <ul style="margin-bottom:0">
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-      <li><a href="/WAI/translations/"> Translations</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
-<script>
-  svg4everybody();
-</script><script>
-  var translationStrings = {};
-</script>
-<!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    </nav>
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span
+            >Strategies, standards, resources to make the Web accessible to
+            people with disabilities</span
+          >
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg focusable="false" aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            Menu</span
+          >
+        </button>
+      </div>
 
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">Search:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </label>
 
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg
+                        focusable="false"
+                        aria-label="Submit Search"
+                        class="icon-search"
+                      >
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="Main" lang="en">
+      <ul>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/planning/"
+            ><span>Planning &amp; Policies</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/design-develop/"
+            ><span>Design &amp; Develop</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/test-evaluate/"
+            ><span>Test &amp; Evaluate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/teach-advocate/"
+            ><span>Teach &amp; Advocate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+      <ul style="align-self: center">
+        <li><a href="/WAI/" lang="en">Home</a></li>
+        <li>
+          <a lang="en" href="/WAI/about/"><span>About W3C WAI</span></a>
+        </li>
+        <li>
+          <a lang="en" href="/WAI/about/projects/"><span>Projects</span></a>
+        </li>
+        <li>
+          <a
+            lang="en"
+            href="/WAI/about/projects/wai-core-2015/"
+            aria-current="page"
+            ><span>WAI-Core 2015, 2020</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="default-grid with-gap leftcol">
+      <div class="sidenav">
+        <nav class="sn-contents" aria-label="Secondary">
+          <ul class="sidenav--list">
+            <li>
+              <a lang="en" href="/WAI/about/" class="page-link"
+                ><span>About WAI</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/about/participating/" class="page-link"
+                ><span>Participating</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/about/translating/" class="page-link"
+                ><span>Translating</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/about/contacting/" class="page-link"
+                ><span>Contacting</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/about/sponsoring/" class="page-link"
+                ><span>Sponsoring</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/about/projects/"
+                aria-current="location"
+                class="page-link"
+                ><span>Projects</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/about/projects/wai-coop/"
+                    class="page-link"
+                    ><span>WAI-CooP</span></a
+                  >
+                  <ul>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-coop/symposium1/"
+                        class="page-link"
+                        ><span>Online Research Symposium</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/about/projects/wai-guide/"
+                    class="page-link"
+                    ><span>WAI-Guide</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/about/projects/wai-tools/"
+                    class="page-link"
+                    ><span>WAI-Tools</span></a
+                  >
+                  <ul>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-tools/final-open-meeting/"
+                        class="page-link"
+                        ><span>Final Open Meeting</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-tools/session1/"
+                        class="page-link"
+                        ><span>Video Recording 1</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-tools/session2/"
+                        class="page-link"
+                        ><span>Video Recording 2</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-tools/session3/"
+                        class="page-link"
+                        ><span>Video Recording 3</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-tools/session4/"
+                        class="page-link"
+                        ><span>Video Recording 4</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-tools/session5/"
+                        class="page-link"
+                        ><span>Video Recording 5</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-tools/third-open-meeting/"
+                        class="page-link"
+                        ><span>Third Open Meeting</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-tools/second-open-meeting/"
+                        class="page-link"
+                        ><span>Second Open Meeting</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-tools/symposium/"
+                        class="page-link"
+                        ><span>Online Symposium</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/projects/wai-tools/first-open-meeting/"
+                        class="page-link"
+                        ><span>First Open Meeting</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a lang="en" href="/WAI/expand-access/" class="page-link"
+                    ><span>WAI Expanding Access</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/about/projects/easy-reading/"
+                    class="page-link"
+                    ><span>Easy Reading</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/about/projects/wai-core-2015/"
+                    aria-current="page"
+                    class="page-link"
+                    ><span>WAI-Core 2015, 2020</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/about/projects/wai-core-ford/"
+                    class="page-link"
+                    ><span>WAI-Core Ford</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/about/groups/" class="page-link"
+                ><span>Groups</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="https://www.w3.org/WAI/GL/"
+                    class="page-link"
+                    ><span
+                      >AGWG: Accessibility Guidelines
+                      <abbr title="Working Group">WG</abbr></span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="https://www.w3.org/WAI/APA/"
+                    class="page-link"
+                    ><span
+                      >APA: Accessible Platform
+                      <abbr title="Working Group">WG</abbr></span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="https://www.w3.org/WAI/ARIA/"
+                    class="page-link"
+                    ><span
+                      >ARIA: Accessible Rich Internet Applications
+                      <abbr title="Working Group">WG</abbr></span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a lang="en" href="/WAI/about/groups/eowg/" class="page-link"
+                    ><span
+                      >EOWG: Education and Outreach
+                      <abbr title="Working Group">WG</abbr></span
+                    ></a
+                  >
+                  <ul>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/EO/charter-current"
+                        class="page-link"
+                        ><span>Charter</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="/WAI/about/groups/eowg/participate/"
+                        class="page-link"
+                        ><span>Participate (Join)</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        lang="en"
+                        href="https://www.w3.org/groups/wg/eowg/participants"
+                        class="page-link"
+                        ><span>Current Participants</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a lang="en" href="/WAI/about/groups/waiig/" class="page-link"
+                    ><span>WAI IG: WAI Interest Group</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/about/groups/taskforces/"
+                    class="page-link"
+                    ><span>Group Task Forces</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/about/using-wai-material/"
+                class="page-link"
+                ><span>Using WAI Material</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/about/accessibility-statement/"
+                class="page-link"
+                ><span>Accessibility Statement</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <main id="main" lang="en">
+        <header>
+          <h1>WAI-Core Project</h1>
+        </header>
+        <aside class="box box-full">
+          <header class="box-h box-h-full"><h2>Introduction</h2></header>
+          <div class="box-i">
+            <p>
+              This page provides information on the Web Accessibility Initiative
+              - Core <strong>(WAI-Core) Project</strong> sponsored by the
+              National Institute on Disability, Independent Living, and
+              Rehabilitation Research (<a
+                href="http://www.acl.gov/programs/NIDILRR/"
+                >NIDILLR</a
+              >), US Department of Health and Human Services (<a
+                href="http://www.hhs.gov/"
+                >HHS</a
+              >).
+            </p>
+          </div>
+        </aside>
+
+        <nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+          <header id="tocheading" class="box-h box-h-simple">
+            Page Contents
+          </header>
+          <div class="box-i">
+            <ul id="markdown-toc">
+              <li>
+                <a href="#about-wai-core" id="markdown-toc-about-wai-core"
+                  >About WAI-Core</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#how-to-participate"
+                  id="markdown-toc-how-to-participate"
+                  >How to Participate</a
+                >
+              </li>
+              <li>
+                <a href="#project-staff" id="markdown-toc-project-staff"
+                  >Project Staff</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <h2 id="about-wai-core">About WAI-Core</h2>
+
+        <p>
+          The WAI-Core Project, funded by NIDILRR at the US HHS, provides
+          support for accessibility work at W3C WAI to:
+        </p>
+
+        <p>Task 1:</p>
+
+        <ul>
+          <li>
+            Provide staff support and technical expertise within a Working Group
+            of Web accessibility experts representing different stakeholder
+            groups, including via recruitment of public comments on draft
+            technical reports from other W3C Working Groups, W3C Interest Groups
+            and W3C Community Groups, and as needed to develop technical
+            specifications that support accessibility, such as WAI-ARIA and
+            Accessibility Application Programming Interface (API) mappings;
+          </li>
+          <li>
+            Update documentation as needed of accessibility experts’ guidance on
+            accessibility requirements, specification design considerations, and
+            known gaps, drawing on experience gained from reviewing resolutions
+            to accessibility barriers in a wide range of Web technologies, to
+            serve as a general introduction to accessibility self-review by
+            other W3C working groups and to facilitate the scaling of
+            accessibility expertise to a larger number of W3C specification
+            reviews (currently Web Technology Accessibility Guidelines (WTAG)).
+          </li>
+        </ul>
+
+        <p>Task 2:</p>
+
+        <ul>
+          <li>
+            Maintain one or more multi-stakeholder Working Groups of Web
+            accessibility experts to develop updated guidance and technical
+            support materials on Web content and applications, authoring tools,
+            browsers, mobile applications, and other Web-enabled applications,
+            devices and services; This may be in stand-alone, combined or
+            modular format, including extensions of previous guidelines, or as
+            updated combinations of previous guidelines. It may include
+            accessibility guidance and technical support materials for
+            technologies relating to industries newly converging with the Web,
+            for example mobile, digital publishing, Web of things, TV and Web,
+            education, health care, or other areas; and may include extensive
+            guidance and/or techniques for areas such as cognitive and learning
+            disability, low-vision accessibility, and/or voice input
+            accessibility.
+          </li>
+        </ul>
+
+        <p>Task 3:</p>
+
+        <ul>
+          <li>
+            Review, provide analysis of, and comment on understandability,
+            readability of and usability of accessibility standards and
+            implementation reference materials; develop non-technical
+            introductions to accessibility guidelines and standards, and
+            overviews of accessibility user requirements for people with
+            disabilities; provide education and outreach activities to support
+            acceptance of Web accessibility guidance; comment on draft
+            standards, regulations, and/or policies where necessary to promote
+            acceptance of Web accessibility solutions.
+          </li>
+        </ul>
+
+        <h2 id="how-to-participate">How to Participate</h2>
+
+        <p>
+          WAI-Core work is developed through
+          <a href="http://www.w3.org/WAI/groups">W3C/WAI Working Groups</a>.
+          Working Groups that are currently relevant to WAI-Core work, and links
+          to information on participation, include:
+        </p>
+
+        <ul>
+          <li>
+            <a href="http://www.w3.org/WAI/APA/"
+              >Accessible Platform Architectures (APA) Working Group</a
+            >
+            (<a href="https://www.w3.org/WAI/APA/#contribute"
+              >participation in APA WG</a
+            >), for review of accessibility in W3C specifications;
+          </li>
+          <li>
+            <a href="http://www.w3.org/WAI/ARIA/"
+              >Accessible Rich Internet Applications (ARIA) Working Group</a
+            >
+            (<a href="https://www.w3.org/WAI/ARIA/#contribute"
+              >participation in ARIA WG</a
+            >), for development of accessibility specifications as needed, such
+            as ARIA, and Accessibility Application Programming Interface
+            Mappings;
+          </li>
+          <li>
+            <a href="http://www.w3.org/WAI/GL/"
+              >Accessibility Guidelines (WCAG) Working Group</a
+            >
+            (<a href="https://www.w3.org/WAI/GL/participation.html"
+              >participation in AG WG</a
+            >), for development of accessibility guidelines;
+          </li>
+          <li>
+            <a href="http://www.w3.org/WAI/EO/"
+              >Education and Outreach Working Group (EOWG)</a
+            >
+            (<a href="https://www.w3.org/WAI/EO/participation.html"
+              >participation in EOWG</a
+            >) for improving understanding and usability of accessibility
+            standards and implementation reference materials, developing
+            non-technical introductions to accessibility guidelines and
+            standards, and providing education and outreach to support
+            implementation of Web accessibility guidance.
+          </li>
+        </ul>
+
+        <p>
+          In addition to participation opportunities, everyone is welcome to
+          review drafts. Draft in progress are highlighted on the
+          <a href="http://www.w3.org/WAI/">WAI home page</a>. To get
+          notifications of drafts for review, see
+          <a href="http://www.w3.org/WAI/about/announcements"
+            >Getting WAI Announcements</a
+          >
+          for links to WAI tweets, RSS feed, and WAI Interest Group (WAI IG)
+          emails.
+        </p>
+
+        <p>
+          For more information on the WAI-Core Project and other WAI work, see
+          <a href="http://www.w3.org/WAI/about-links.html"
+            >Getting Involved with WAI</a
+          >
+          and
+          <a href="http://www.w3.org/WAI/participation">Participating in WAI</a
+          >. If you have any questions, contact
+          <a href="http://www.w3.org/People/Brewer/">Judy Brewer</a>.
+        </p>
+
+        <h2 id="project-staff">Project Staff</h2>
+
+        <p>The following W3C staff are supported in part by WAI-Core funds:</p>
+
+        <ul>
+          <li>Judy Brewer</li>
+          <li>Michael Cooper</li>
+          <li>Shawn Henry</li>
+        </ul>
+
+        <aside class="box box-icon box-space-above" id="helpimprove">
+          <header class="box-h box-h-icon box-h-space-above box-h-icon">
+            <svg focusable="false" aria-hidden="true" class="icon-comments">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-comments"
+              ></use>
+            </svg>
+            <h2>Help improve this page</h2>
+          </header>
+          <div class="box-i">
+            <p>
+              Please share your ideas, suggestions, or comments via e-mail to
+              the publicly-archived list
+              <a href="mailto:wai@w3.org?subject=[en]%20WAI-Core%20Project"
+                >wai@w3.org</a
+              >
+              or via GitHub.
+            </p>
+            <div class="button-group">
+              <a
+                href="mailto:wai@w3.org?subject=[en]%20WAI-Core%20Project&body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D"
+                class="button"
+                ><span>E-mail</span></a
+              >
+              <a
+                href="https://github.com/w3c/wai-about-wai/edit/master/_about/projects/wai-core-2015/index.md"
+                class="button"
+                ><span>Fork &amp; Edit on GitHub</span></a
+              ><a
+                href="https://github.com/w3c/wai-about-wai/issues/new"
+                class="button"
+                ><span>New GitHub Issue</span></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg focusable="false" aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            Back to Top</span
+          ></a
+        >
+      </main>
+    </div>
+
+    <footer class="site-footer grid-4q" aria-label="Site">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a
+              class="largelink"
+              href="https://www.w3.org/WAI/"
+              lang="en"
+              dir="auto"
+              translate="no"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>
+            Strategies, standards, and supporting resources to make the Web
+            accessible to people with disabilities.
+          </p>
+        </div>
+        <div class="social" lang="en" dir="auto" translate="no">
+          <ul>
+            <li>
+              <a href="https://twitter.com/w3c_wai"
+                ><svg focusable="false" aria-hidden="true" class="icon-twitter">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/feed.xml"
+                ><svg focusable="false" aria-hidden="true" class="icon-rss">
+                  <use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use>
+                </svg>
+                Feed</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"
+                ><svg focusable="false" aria-hidden="true" class="icon-youtube">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/news/subscribe/" class="button"
+                >Get News in Email</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div lang="en" dir="auto" translate="no">
+          <p>
+            Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn">Beihang</a>)
+            <a href="/WAI/about/using-wai-material/"
+              >Permission to Use WAI Material</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div lang="en" dir="auto" translate="no" class="q4-start q4-end">
+        <ul style="margin-bottom: 0">
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li>
+            <a href="/WAI/about/accessibility-statement/"
+              >Accessibility Statement</a
+            >
+          </li>
+          <li><a href="/WAI/translations/"> Translations</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script>
+      var translationStrings = {};
+    </script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </body>
 </html>

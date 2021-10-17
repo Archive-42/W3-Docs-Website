@@ -1,1115 +1,2833 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ar" dir="rtl" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1633578570351143841"
+    />
 
-<title> W3C | Web Accessibility Initiative (WAI) | مبادئ الوصول </title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="مبادئ الوصول" />
-<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
-<meta property="og:locale" content="ar" />
-<meta name="description" content="نبذة عن مبادئ متطلبات إمكانية الوصول للويب للمواقع الالكترونية، تطبيقات الويب، المتصفحات وغيرها من الأدوات." />
-<meta property="og:description" content="نبذة عن مبادئ متطلبات إمكانية الوصول للويب للمواقع الالكترونية، تطبيقات الويب، المتصفحات وغيرها من الأدوات." />
-<link rel="canonical" href="https://www.w3.org/WAI/fundamentals/accessibility-principles/ar" />
-<meta property="og:url" content="https://www.w3.org/WAI/fundamentals/accessibility-principles/ar" />
-<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png" />
-<meta property="twitter:title" content="مبادئ الوصول" />
-<meta name="twitter:site" content="@w3c_wai" />
-<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
-<script type="application/ld+json">
-{"description":"نبذة عن مبادئ متطلبات إمكانية الوصول للويب للمواقع الالكترونية، تطبيقات الويب، المتصفحات وغيرها من الأدوات.","@type":"WebPage","image":"https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png","headline":"مبادئ الوصول","url":"https://www.w3.org/WAI/fundamentals/accessibility-principles/ar","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+    <title>W3C | Web Accessibility Initiative (WAI) | مبادئ الوصول</title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <meta name="generator" content="Jekyll v4.2.0" />
+    <meta property="og:title" content="مبادئ الوصول" />
+    <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+    <meta property="og:locale" content="ar" />
+    <meta
+      name="description"
+      content="نبذة عن مبادئ متطلبات إمكانية الوصول للويب للمواقع الالكترونية، تطبيقات الويب، المتصفحات وغيرها من الأدوات."
+    />
+    <meta
+      property="og:description"
+      content="نبذة عن مبادئ متطلبات إمكانية الوصول للويب للمواقع الالكترونية، تطبيقات الويب، المتصفحات وغيرها من الأدوات."
+    />
+    <link
+      rel="canonical"
+      href="https://www.w3.org/WAI/fundamentals/accessibility-principles/ar"
+    />
+    <meta
+      property="og:url"
+      content="https://www.w3.org/WAI/fundamentals/accessibility-principles/ar"
+    />
+    <meta
+      property="og:site_name"
+      content="Web Accessibility Initiative (WAI)"
+    />
+    <meta
+      property="og:image"
+      content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image"
+      content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png"
+    />
+    <meta property="twitter:title" content="مبادئ الوصول" />
+    <meta name="twitter:site" content="@w3c_wai" />
+    <meta
+      name="twitter:creator"
+      content="@W3C Web Accessibility Initiative (WAI)"
+    />
+    <script type="application/ld+json">
+      {
+        "description": "نبذة عن مبادئ متطلبات إمكانية الوصول للويب للمواقع الالكترونية، تطبيقات الويب، المتصفحات وغيرها من الأدوات.",
+        "@type": "WebPage",
+        "image": "https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png",
+        "headline": "مبادئ الوصول",
+        "url": "https://www.w3.org/WAI/fundamentals/accessibility-principles/ar",
+        "author": {
+          "@type": "Person",
+          "name": "W3C Web Accessibility Initiative (WAI)"
+        },
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
 
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+  </head>
 
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
-</head>
-
-  <body id="top" class="page-مبادئ-الوصول ">
-    <nav aria-label="تخطي الرابط ومحدد اللغة" id="controls" class="default-grid">
-  <ul>
-      <li><a href="#main">انتقال إلى المضمون</a></li>
-      <li class="opt"><a href="/WAI/meta/customize/">تغيير حجم النص أو الألوان</a></li>
-      <li class="opt languagelist">
+  <body id="top" class="page-مبادئ-الوصول">
+    <nav
+      aria-label="تخطي الرابط ومحدد اللغة"
+      id="controls"
+      class="default-grid"
+    >
+      <ul>
+        <li><a href="#main">انتقال إلى المضمون</a></li>
+        <li class="opt">
+          <a href="/WAI/meta/customize/">تغيير حجم النص أو الألوان</a>
+        </li>
+        <li class="opt languagelist">
           <strong>هذه&nbsp;الصفحة&nbsp;بـ:</strong>
-          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/" lang="en"  dir="auto" translate="no">English</a></li><li><strong style="text-transform: capitalize;">العربية</strong></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/cs" lang="cs"  dir="auto" translate="no">čeština</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/es" lang="es"  dir="auto" translate="no">español</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/fr" lang="fr"  dir="auto" translate="no">français</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ko" lang="ko"  dir="auto" translate="no">한국어</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ru" lang="ru"  dir="auto" translate="no">русский язык</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/zh-hans" lang="zh-hans"  dir="auto" translate="no">简体汉语</a></li>
+          <ul class="languagelistul">
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/"
+                lang="en"
+                dir="auto"
+                translate="no"
+                >English</a
+              >
+            </li>
+            <li><strong style="text-transform: capitalize">العربية</strong></li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/cs"
+                lang="cs"
+                dir="auto"
+                translate="no"
+                >čeština</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/es"
+                lang="es"
+                dir="auto"
+                translate="no"
+                >español</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/fr"
+                lang="fr"
+                dir="auto"
+                translate="no"
+                >français</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ko"
+                lang="ko"
+                dir="auto"
+                translate="no"
+                >한국어</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ru"
+                lang="ru"
+                dir="auto"
+                translate="no"
+                >русский язык</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/zh-hans"
+                lang="zh-hans"
+                dir="auto"
+                translate="no"
+                >简体汉语</a
+              >
+            </li>
           </ul>
         </li>
         <li class="opt">
-          <a href="/WAI/translations/">كل&nbsp;الترجمات <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/"
+            >كل&nbsp;الترجمات
+            <svg focusable="false" aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
         </li>
-        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> إظهار التخصيص واللغات والترجمات' data-hidetext='إخفاء الخيارات'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> إظهار التخصيص واللغات والترجمات</button></li>
+        <li>
+          <button
+            id="showoptions"
+            data-showhidebuttonid="header-showoptions"
+            class="showhidebutton button-inline"
+            data-target="#controls .opt"
+            aria-expanded="false"
+            data-large-aria-expanded="true"
+            data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> إظهار التخصيص واللغات والترجمات'
+            data-hidetext="إخفاء الخيارات"
+          >
+            <svg focusable="false" aria-hidden="true" class="icon-languages">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-languages"
+              ></use>
+            </svg>
+            إظهار التخصيص واللغات والترجمات
+          </button>
+        </li>
       </ul>
     </nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
- 
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>ستراتيجيات ومعايير وموارد لجعل الويب في متناول الأشخاص ذوي الإعاقات</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> قائمة</span></button>
-  </div>
-
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">بحث:</span>
-              <input id="header-search" type="search" name="q" placeholder="بحث" aria-label="بحث">
-            </label>
-            
-            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="إرسال البحث" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
-          </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="الرئيسي" lang="ar"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="علامات التتبع" lang="en">
-  <ul style="align-self: center;">
-    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="ar" href="/WAI/fundamentals/accessibility-principles/ar" aria-current="page"><span>Accessibility Principles</span></a></li></ul>
-</nav>
-    <div class="default-grid with-gap leftcol">
-
-  
-    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
-      <ul class="sidenav--list">
-  <li>
-  <a lang="en" href="/WAI/fundamentals/" class="page-link"><span>Accessibility Fundamentals</span></a></li><li>
-  <a lang="ar" href="/WAI/fundamentals/accessibility-intro/ar" class="page-link"><span>مقدمة لولوجية الويب</span></a><ul><li>
-  <a lang="ar" href="/WAI/videos/standards-and-benefits/ar" class="page-link"><span>مقدمة فيديو</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/fundamentals/foundations-course/" class="page-link"><span>Foundations Online Course</span></a></li><li>
-  <a lang="en" href="/WAI/fundamentals/components/" class="page-link"><span>Components of Web Accessibility</span></a></li><li>
-  <a lang="ar" href="/WAI/fundamentals/accessibility-principles/ar" aria-current="page" class="page-link"><span>Accessibility Principles</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/" class="page-link"><span>Perspectives Videos</span></a><ul><li>
-  <a lang="en" href="/WAI/perspective-videos/keyboard/" class="page-link"><span>Keyboard Compatibility</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/contrast/" class="page-link"><span>Colors with Good Contrast</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/layout/" class="page-link"><span>Clear Layout and Design</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/speech/" class="page-link"><span>Text to Speech</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/controls/" class="page-link"><span>Large Links, Buttons, and Controls</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/captions/" class="page-link"><span>Video Captions</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/customizable/" class="page-link"><span>Customizable Text</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/voice/" class="page-link"><span>Speech Recognition</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/understandable/" class="page-link"><span>Understandable Content</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/notifications/" class="page-link"><span>Notifications and Feedback</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/people-use-web/" class="page-link"><span>How People with Disabilities Use the Web</span></a><ul><li>
-  <a lang="en" href="/WAI/people-use-web/user-stories/" class="page-link"><span>Stories of Web Users</span></a></li><li>
-  <a lang="en" href="/WAI/people-use-web/abilities-barriers/" class="page-link"><span>Diverse Abilities and Barriers</span></a></li><li>
-  <a lang="en" href="/WAI/people-use-web/tools-techniques/" class="page-link"><span>Tools and Techniques</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/older-users/" class="page-link"><span>Older Users and Accessibility</span></a><ul><li>
-  <a lang="en" href="/WAI/older-users/developing/" class="page-link"><span>How WCAG 2 Applies</span></a></li><li>
-  <a lang="en" href="/WAI/older-users/literature/" class="page-link"><span>Literature Review</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/fundamentals/accessibility-usability-inclusion/" class="page-link"><span>Accessibility, Usability, Inclusion</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
-        <header id="languagehead">لغات وترجمات</header>
-        <ul class="langlist">
-          <li style="margin-bottom: 2px;"><a href="/WAI/fundamentals/accessibility-principles/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">العربية</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/cs" dir="auto" translate="no" lang="cs">čeština</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/fr" dir="auto" translate="no" lang="fr">français</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ko" dir="auto" translate="no" lang="ko">한국어</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ru" dir="auto" translate="no" lang="ru">русский язык</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/zh-hans" dir="auto" translate="no" lang="zh-hans">简体汉语</a></li></ul><p><a href="/WAI/translations/#ar">الموارد الأخرى بـ العربية</a></p>
-        
-        <p><a href="/WAI/translations/">كل&nbsp;الترجمات</a></p>
-        <p><a href="/WAI/about/translating/">ترجمة موارد WAI</a></p>
-      </nav>
-</div>
-  
-
-  <main id="main" lang="ar">
-
-      
-
-    
-    <header>
-      <h1>
-      
-      
-      
-        مبادئ الوصول
-      
-      </h1></header>
-    <section id="translation-info" class="doc-note-box doc-note-translation">
-  <h2 class="visuallyhidden">عن هذه الترجمة</h2>
-  <p>قد لا تعكس هذه الترجمة التطوعية بدقة قصد <a href="/WAI/fundamentals/accessibility-principles/">الإنجليزية الأصلية</a>.</p>
-  
-  
-  <p><svg focusable="false" aria-hidden="true" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> ترجمة محدثة مع النسخة الإنجليزية.
-    <br>ترجمة محدثة: <span dir="auto">2020-10-19</span>. إنجليزية المحدثة: <span dir="auto">2019-05-10</span>.
-   </p>
-  
-  
-  <p>
-    <strong>الترجمة:</strong> محمد سليم. 
-    المساهمة: محمد الموسوي, نايف العوضي. <br>WAI تشكر هؤلاء المترجمين وترحب <a href="/WAI/about/translating/">الترجمات</a> الأخرى.</p>
-</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> ملخص </h2></header><div class="box-i">
-
-<p>يقدم هذا التقرير بعض متطلبات إمكانية الوصول للويب؛ للمواقع، والتطبيقات، ومتصفحات الويب وغيرها من الأدوات. و يوفر أيضاً مراجع للمعايير الدولية من مبادرة W3C لإمكانية الوصول للويب (WAI) و <a href="/people-use-web/user-stories/">قصص مستخدمي الويب</a></p>
-
-<p><strong>ملاحظة:</strong> هذه القائمة لاتحتوي على كل متطلبات إمكانية الوصول.</p>
-
-</div></aside>
-
-
-
-<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple box-h-full"> محتويات الصفحة</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#standards" id="markdown-toc-standards">متطلبات وصول الويب</a></li>
-  <li><a href="#perceivable" id="markdown-toc-perceivable">المعلومات المحسوسة و واجهة المستخدم</a>    <ul>
-      <li><a href="#alternatives" id="markdown-toc-alternatives">بدائل النص للمحتوى الغير نصي</a></li>
-      <li><a href="#captions" id="markdown-toc-captions">التسميات التوضيحية و البدائل الأخرى للوسائط المتعددة</a></li>
-      <li><a href="#adaptable" id="markdown-toc-adaptable">محتويات يمكن تقديمها بطرق مختلف</a></li>
-      <li><a href="#distinguishable" id="markdown-toc-distinguishable">المحتوى يكون أسهل عند الرؤية والسمع</a></li>
-    </ul>
-  </li>
-  <li><a href="#operable" id="markdown-toc-operable">واجهة مستخدم قابلة للتشغيل والتنقل</a>    <ul>
-      <li><a href="#keyboard" id="markdown-toc-keyboard">إتاحة الوظائف من خلال لوحة المفاتيح</a></li>
-      <li><a href="#section-7" id="markdown-toc-section-7">متطلبات الوصول المتعلقة بلوحة المفاتيح (روابط للوصف التقني)</a></li>
-      <li><a href="#time" id="markdown-toc-time">وقت المستخدمين الكافي لقراءة المحتوى واستخدامه</a></li>
-      <li><a href="#safe" id="markdown-toc-safe">المحتوى لا يسبب أي  نوبات وردود فعل جسدية</a></li>
-      <li><a href="#navigable" id="markdown-toc-navigable">إمكانية المستخدم  للتنقل بسهولة ، العثور على المحتويات ، وتحديد أماكنهم</a></li>
-      <li><a href="#modalities" id="markdown-toc-modalities">إمكانية المستخدمين لاستخدام مختلف أساليب الإدخال غير لوحة المفاتيح</a></li>
-    </ul>
-  </li>
-  <li><a href="#understandable" id="markdown-toc-understandable">المعلومات المفهومة و واجهة المستخدم</a>    <ul>
-      <li><a href="#readable" id="markdown-toc-readable">أن يكون النص قابل للقراءة والفهم</a></li>
-      <li><a href="#predictable" id="markdown-toc-predictable">أن يظهر و يعمل المحتوى بطريقة يمكن توقعها</a></li>
-      <li><a href="#tolerant" id="markdown-toc-tolerant">مساعدة المستخدمين على تلافي اخطائهم وتصحيحه</a></li>
-    </ul>
-  </li>
-  <li><a href="#robust" id="markdown-toc-robust">المحتوى القوي/النشط و الترجمة الملائمة</a>    <ul>
-      <li><a href="#compatible" id="markdown-toc-compatible">تناسق المحتوى مع أدوات المستخدمين الحالية والمستقبلية</a></li>
-    </ul>
-  </li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<div class="excol-all"></div>
-
-<h2 id="standards">متطلبات وصول الويب</h2>
-
-<p>إمكانية الوصول للويب تستند على عدة مكونات تعمل جنبًا الى جنب، وهي كالتالي:</p>
-
-<ul>
-  <li><strong id="webcontent">محتوى الويب</strong> - ويعنى بأي جزء من الموقع الالكتروني، ويشمل ذلك النصوص، الصور، النماذج، الوسائط المتعددة، والكود البرمجي بما في ذلك التطبيقات البرمجية.</li>
-  <li><strong id="useragents">وكيل الويب</strong> - وهو تطبيق يستخدمه الناس للوصول الى محتوى شبكة الويب، ويشمل ذلك متصفحات أجهزه سطح المكتب، المتصفحات الصوتية، المتصفحات الخاصة بالهواتف الذكية، مشغلات الوسائط المتعددة، وبعض <a href="/people-use-web/tools-techniques/#at" title="definition">التقنيات المساعدة</a></li>
-  <li><strong id="authoringtools">أدوات التأليف (البرمجة)</strong> - وهي برامج وتطبيقات تمكن الأشخاص من إنشاء محتوى في الويب، ويشمل ذلك محررات الكود البرمجي، أدوات تحويل المستندات، انظمة ادارة المحتوى، المدونات، نصوص قواعد البيانات، وبعض الأدوات الأخرى</li>
-</ul>
-
-<details><summary>
-
-    <h3 class="no_toc" id="section">المزيد عن متطلبات الوصول للويب</h3>
-
-  </summary>
-  <div>
-
-    <p>هذه المكونات مترابطة و تدعم بعضها البعض. على سبيل المثال, <strong>محتوى الويب</strong> يحتاج إلى تضمين بدائل نصية عوضاً عن الصور. هذه المعلومات تحتاج إلى المعالجة من قبل <strong>متصفح الويب</strong> و بعد ذلك تنقل إلى <strong>التكنولوجيا المساعدة</strong>, كمثال قارئ الشاشة. لإنشاء بدائل نصية يحتاج المؤلفين إلى <strong>أدوات تأليف</strong> تدعمهم للقيام بذلك. المزيد من المعلومات متوفرة في <a href="/fundamentals/components">[المكونات الرئيسية للوصول الى الويب]</a></p>
-
-    <p>تلعب المعايير دوراً رئيسياً في تحديد متطلبات إمكانية الوصول للويب لكل مكون من هذه المكونات. بعض متطلبات الوصول سهلة التحقيق، بينما فهم أساسيات كيفية استخدام الأشخاص ذوي الإعاقة للويب يساعد في تنفيذها بشكل أكثر فعالية وكفاءة. تتطلب بعض جوانب إمكانية الوصول مهارات تقنية أو معرفة متقدمة عن كيفية استخدام الأشخاص للويب. في كل الأحوال ، <a href="/test-evaluate/involving-users/">إشراك المستخدمين مبكراً خلال مشاريع الويب الخاصة بك</a>  سوف يساهم بجعل عملك أفضل وأسهل.</p>
-
-    <p>مبادرة W3C لإمكانية الوصول للويب (WAI) توفر مجموعة من الإرشادات المعترف بها دوليًا كمعيار لإمكانية الوصول إلى الويب وتشمل</p>
-
-    <ul>
-      <li><strong><a href="/standards-guidelines/wcag/">إرشادات الوصول إلى محتوى الويب (WCAG)</a></strong></li>
-      <li><strong><a href="/standards-guidelines/uaag/">إرشادات الوصول إلى وكيل الويب (UAAG)</a></strong></li>
-      <li><strong><a href="/standards-guidelines/atag/">إرشادات الوصول إلى أداة التأليف (ATAG)</a></strong></li>
-    </ul>
-
-    <p>هناك أيضًا مواصفات WAI <strong><a href="https://www.w3.org/WAI/intro/aria.php">للوصول تطبيقات الإنترنت الغنية (WAI-ARIA) </a></strong> التي يمكن الوصول إليها والتي تتضمن محتوى ديناميكي و عناصر تحكم متقدمة في واجهة المستخدم تم تطويرها باستخدام Ajax و JavaScript وتقنيات الويب الأخرى ذات صلة.</p>
-
-  </div>
-</details>
-
-<h2 id="perceivable">المعلومات المحسوسة و واجهة المستخدم</h2>
-
-<h3 id="alternatives">بدائل النص للمحتوى الغير نصي</h3>
-
-<p>بدائل النصوص هي مساوية للمحتوى غير النصي، مثال على ذلك :</p>
-<ul>
-  <li>مرادفات الصور القصيرة، ويشمل ذلك الايقونات، والأزرار، والرسومات</li>
-  <li>وصف للبيانات على شكل مخططات واشكال توضيحية</li>
-  <li>وصف مختصر عن المحتوى غير النصي مثل المحتوى الصوتي والمرئي</li>
-  <li>تسميات توضيحية لأدوات التحكم في النماذج مثل المدخلات وبقية مكونات واجهة المستخدم</li>
-</ul>
-
-<p>بديلات النصوص تعمل كبديل جيد لصورة او وظيفة لإيصال المستخدمين لتجربة مستخدم متوازية، كمثال: بديل نص مناسب لزر البحث سيكون كلمة “<em>بحث</em>” عوضاً عن “*عدسة مكبرة”.</p>
-
-<p>بديلات النصوص من الممكن تمثيلها بطرق مختلفة ومتنوعة، كمثال من الممكن ان يتم قراءتها بصوت عالي للأشخاص الذين لا يستطيعون رؤية الشاشة او للأشخاص الذين يعانون من صعوبات بالقراءة، قد يشمل ذلك أحجام معدلة للنصوص، او اظهار نصوص مكتوبة على أجهزة برايل . بديلات النصوص تعمل كأدوات بديلة عن ازرار التحكم لتسهيل استخدام لوحة المفاتيح، او الوصول باستخدام الأوامر الصوتية. من الممكن كذلك ان تعمل على التعرف على الأصوات (Speech input) او الملفات المرئية او اي صيغة من الملفات المستخدمة في الحاسوب، كالبرامج والتطبيقات البرمجية التي تعد جزءً من المواقع الالكترونية.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-1">متطلبات الوصول المتعلقة بـ بدائل النصوص(روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#text-alternatives">إرشادات – 1.1 بدائل النص</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content">إرشادات – 1.1 محتوى البديل</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a21">المبدأ أ.1.2: (أدوات إنشاء واجهة المستخدم)  القيام بإتاحة المحتوى البديل للمؤلفين</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">المبدأ أ.2.2: (أدوات إنشاء واجهة المستخدم) التأكد من إمكانية تحديد طريقة عرض التحرير بطريقة برمجية</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b37">المبدأ أ.7.3: (أدوات إنشاء واجهة المستخدم) التأكد من أن طرق العرض يمكن الوصول إليها مثل وكلاء الويب المستخدمين</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<details><summary>
-
-    <h4 id="stories-related-to-text-alternatives" class="no_toc">قصص ذات صلة ببدائل النصوص</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">أليكس، مراسل مصاب بالضغط النفسي المتكرر (باللغة الإنجليزية)</a></li>
-      <li><a href="people-use-web/user-stories/#onlinestudent/">مارتين، طالب عبر الإنترنت يعاني من ضعف السمع</a></li>
-      <li><a href="people-use-web/user-stories/#accountant/">ليا، موظف أول كفيف</a></li>
-      <li><a href="people-use-web/user-stories/#classroomstudent/">برييتي، طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة وتشتت الانتباه وعسر القراءة</a></li>
-      <li><a href="people-use-web/user-stories/#retiree/">ين، متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على المدى القصير</a></li>
-      <li><a href="people-use-web/user-stories/#teenager/">قاسم، مراهق أصم و كفيف</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="captions">التسميات التوضيحية و البدائل الأخرى للوسائط المتعددة</h3>
-
-<p>بعض الأمثلة على الاشخاص الذين لا يستطيعون سماع الأصوات او رؤية الملفات المرئية في حاجة الى بدائل:</p>
-
-<ul>
-  <li>نصوص سردية او تسميات توضيحية للمحتوى الصوتي، مثال: تسجيلات مقابلات الراديو</li>
-  <li>وصف توضيحي للأصوات، والتي تروي وصف التفاصيل المهمة بطريقة مرئية في مقطع مرئي</li>
-  <li>لغة اشارة مرافقة للمحتوى الصوتي، بما في ذلك أي من الأدوات المساعدة لفهم الأصوات</li>
-</ul>
-
-<p>المحتوى النصي المكتوب بعناية والذي يحتوي على تسلسل من أي معلومات بديلة للأصوات أو مرئيات يساهم بشكل كبير في توفير وصول أساسي للمعلومة و يسهل إنتاج التسميات التوضيحية للمحتوى الصوتي.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-2">متطلبات الوصول المتعلقة بـ الوسائط المتعددة (روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#time-based-media">إرشادات 2.1 – الوسائط المؤقتة</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li>
-        <p><a href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content">إرشادات 1.1 – المحتوى البديل</a>
-<strong>ATAG</strong></p>
-      </li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدآ أ.1: أدوات إنشاء واجهة مستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a21">إرشادات أ.1.2: (أدوات إنشاء واجهة المستخدم) القيام بإتاحة المحتوى البديل للمؤلفين</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">إرشادات أ.7.3: (أدوات إنشاء واجهة المستخدم) التأكد من أن المعاينات يمكن الوصول إليها مثل وكلاء المستخدم في السوق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 id="stories-related-to-multimedia" class="no_toc">قصص متعلقة بالوسائط المتعددة</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">مارتين، الب عبر الإنترنت يعاني من ضعف السمع (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">ليا، موظف أول كفيف (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">قاسم، مراهق أصم و كفيف (باللغة الإنجليزية)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="adaptable">محتويات يمكن تقديمها بطرق مختلف</h3>
-
-<p>لكي يتمكن المستخدمون من تغيير طريقة عرض المحتوى ، من الضروري أن:</p>
-
-<ul>
-  <li>يتم تمييز العناوين والقوائم والجداول وحقول الإدخال وهياكل المحتوى بشكل صحيح</li>
-  <li>تسلسل المعلومات أو التعليمات مستقلة عن أي عرض تقديمي</li>
-  <li>توفر المستعرضات والتقنيات المساعدة إعدادات لتخصيص العرض التقديمي</li>
-</ul>
-
-<p>تلبية هذه المتطلبات يسمح بقراءة المحتوى بشكل صحيح و بصوت عالٍ و واضح و تكييف الصوت تلبية احتياجات وتفضيلات مختلف الأشخاص. على سبيل المثال ، يمكن تقديم المحتوى باستخدام مجموعات ألوان مخصصة ، أو حجم النص ، أو أي تصميم آخر لتسهيل القراءة. يسهل هذا المتطلب أيضًا تقديم أشكالًا أخرى من التكيف ، بما في ذلك الإنشاء التلقائي لمخططات الصفحات والملخصات لمساعدة الأشخاص في الحصول على نظرة عامة والتركيز على أجزاء معينة بسهولة أكبر.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-3">متطلبات الوصول المتعلقة بالتكيف (روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#adaptable">إرشادات 3.1 - التكييف</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-text-config">إرشادات 4.1 – تكوين النص</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-volume-config">إرشادات 5.1 – تكوين النص</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-speech-config">إرشادات 6.1 – تكوين النص</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config">إرشادات 7.1 – تكوين النص</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views">إرشادات 9.1 – تكوين النص</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-info-link">إرشادات 10.1 – تكوين النص</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: إدوات</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">إرشادات أ.2.2: (أدوات إنشاء واجهة المستخدم) التأكد من إمكانية تحديد عرض التحرير بطريقة برمجية</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b37">إرشادات أ.7.3: (أدوات إنشاء واجهة المستخدم) التأكد من أن المعاينات يمكن الوصول إليها  مثل وكلاء المستخدم في السوق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-4">قصص ذات علاقة بالتكيف</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">ليي، متسوق عبر الإنترنت يعاني من عمى الألوان (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">أليكس، مراسل مصاب بالضغط النفسي المتكرر (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">ليا، موظف أول كفيف (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">برييتي، طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">ين، متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على المدى القصير (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">لويس، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">قاسم، مراهق أصم و كفيف (باللغة الإنجليزية)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="distinguishable">المحتوى يكون أسهل عند الرؤية والسمع</h3>
-
-<p>المحتوى المميز يسهل رؤيته وسماعه. يتضمن هذا النوع من المحتوى الآتي:</p>
-<ul>
-  <li>عدم استخدام اللون كطريقة وحيدة لنقل المعلومات أو تحديد المحتوى</li>
-  <li>أن توفر مجموعات ألوان المقدمة والخلفية الافتراضية تباينًا كافيًا</li>
-  <li>عدم فقد للمعلومات عندما يقوم المستخدمين بتغيير حجم النص حتى اربعة أضعاف أو تغيير تباعد النص</li>
-  <li>يعاد تدفق النص في النوافذ الصغيرة (“إطارات العرض”) وعندما يكبر المستخدمون النص</li>
-  <li>يمكن تغيير حجم صور النص أو استبدالها بنص حقيقي أو تجنبها عند الإمكان</li>
-  <li>يمكن للمستخدمين إيقاف أو ضبط مستوى الصوت الذي يتم تشغيله على موقع ويب</li>
-  <li>صوت الخلفية يكون منخفض أو يمكن إيقاف تشغيله لتجنب التداخل أو التشتيت</li>
-</ul>
-
-<p>تساعد تلبية هذه المتطلبات في فصل المقدمة عن الخلفية وذلك لجعل المعلومات المهمة أكثر تميزًا. يتضمن ذلك الاخذ في عين الاعتبار الأشخاص الذين لا يستخدمون التقنيات المساعدة والأشخاص الذين يستخدمونها في التداخل من المحتوى الصوتي أو المرئي البارز في الخلفية. على سبيل المثال، العديد من الأشخاص المصابين بعمى الألوان لا يستخدمون أي أدوات معينة ويعتمدون على تصميم مناسب يوفر تباينًا كافيًا في اللون بين النص والخلفية المحيطة به. بالنسبة للأشخاص الآخرين، قد يتداخل الصوت الذي يتم تشغيله تلقائيًا مع تحويل النص إلى كلام أو مع <a href="http://www.w3.org/WAI/training/accessible#ald" title="definition">أجهزة الاستماع المساعدة (ALDs)</a></p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-5">متطلبات الوصول المتعلقة بالتمييز (روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#distinguishable">إرشادات 4.1: التمييز</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#gl-interaction-highlight">إرشادات 3.1: التمييز</a></li>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#gl-text-config">إرشادات 4.1: تكوين النص</a></li>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#gl-volume-config">إرشادات 5.1: تكوين الصوت</a></li>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#gl-speech-config">إرشادات 6.1: تكوين الكلام المركب</a></li>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#gl-style-sheets-config">إرشادات 7.1: تكوين ورقة أنماط المستخدم</a></li>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#gl-viewport-orient">إرشادات 8.1: الاتجاه في منافذ العرض</a></li>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#gl-alternative-views">إرشادات 9.1: الآراء البديلة</a></li>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#gl-info-link">إرشادات 10.1: معلومات العناصر</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b37">إرشادات أ.7.3: (بالنسبة لأدوات إنشاء واجهة المستخدم) التأكد من أن المعاينات يمكن الوصول إليها مثل وكلاء المستخدم في السوق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-6">قصص ذات علاقة بالتمييز</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/people-use-web/user-stories/#shopper">ليي، متسوق عبر الإنترنت يعاني من عمى الألوان</a></li>
-      <li><a href="/people-use-web/user-stories/#onlinestudent">ليا، موظف أول كفيف</a></li>
-      <li><a href="/people-use-web/user-stories/#accountant">مارتين، طالب أون لاين يعاني من صعوبات بالسمع</a></li>
-      <li><a href="/people-use-web/user-stories/#retiree">ين، متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على المدى القصير</a></li>
-      <li><a href="/people-use-web/user-stories/#teenager">قاسم، مراهق أصم و كفيف</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="operable">واجهة مستخدم قابلة للتشغيل والتنقل</h2>
-
-<h3 id="keyboard">إتاحة الوظائف من خلال لوحة المفاتيح</h3>
-
-<p>العديد من الأشخاص لا يستخدمون الفأرة ويعتمدون على لوحة المفاتيح للتفاعل مع الويب. يتطلب ذلك الوصول إلى لوحة المفاتيح لجميع الوظائف، بما في ذلك نماذج التحكم، المدخلات، ومكونات واجهة المستخدم الأخرى.</p>
-
-<p>تشمل إمكانية الوصول إلى لوحة المفاتيح ما يلي:</p>
-<ul>
-  <li>جميع الوظائف المتوفرة عن طريق الفأرة تتوفر أيضاً عن طريق لوحة المفاتيح</li>
-  <li>لا ينحصر تركيز لوحة المفاتيح في أي جزء من المحتوى</li>
-  <li>توفر مستعرضات الويب، أدوات الإنشاء، والأدوات الأخرى دعمًا للوحة المفاتيح</li>
-</ul>
-
-<p>يساعد تلبية هذه المتطلبات مستخدمي لوحة المفاتيح، بما في ذلك الأشخاص الذين يستخدمون لوحات مفاتيح بديلة مثل لوحات المفاتيح ذات التخطيطات المريحة، لوحات المفاتيح على الشاشة، أو أجهزة السويتش. كما أنه يساعد الأشخاص الذين يستخدمون التعرف على الصوت (مدخلات الكلام) لتشغيل مواقع الويب وإملاء النص من خلال واجهة لوحة المفاتيح.</p>
-
-<details><summary>
-
-    <h3 id="section-7">متطلبات الوصول المتعلقة بلوحة المفاتيح (روابط للوصف التقني)</h3>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-accessible">إرشادات 1.2: لوحة مفاتيح متاحة للوصول</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-keyboard-access">إرشادات 1.2: لوحة مفاتيح متاحة للوصول</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation">إرشادات 2.2: لوحة مفاتيح متاحة للوصول</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation">إرشادات 3.2: لوحة مفاتيح متاحة للوصول</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-other-devices">إرشادات 11.2: لوحة مفاتيح متاحة للوصول</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a31">إرشادات أ.1.3: (لأدوات إنشاء واجهة المستخدم) توفير الوصول للوحة المفاتيح لخصائص الإنشاء</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-8">قصص ذات علاقة بالوصول للوحة المفاتيح</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/people-use-web/user-stories/#reporter">أليكس, مراسل مصاب بالضغط النفسي المتكرر</a></li>
-      <li><a href="/people-use-web/user-stories/#accountant">ليا, موظف أول كفيف</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="time">وقت المستخدمين الكافي لقراءة المحتوى واستخدامه</h3>
-
-<p>يحتاج بعض الأشخاص إلى وقت أطول من غيرهم لقراءة المحتوى واستخدامه. على سبيل المثال ، يحتاج بعض الأشخاص إلى مزيد من الوقت لكتابة نص، فهم الإرشادات، تشغيل عناصر التحكم ،أو لإكمال المهام على موقع ويب.</p>
-
-<p>أمثلة على توفير الوقت الكافي لهؤلاء الأشخاص:</p>
-
-<ul>
-  <li>وقف، تمديد، تعديل الحدود الزمنية ، إلا عند الضرورة</li>
-  <li>إيقاف، تعليق، إخفاء، التنقل، أو تمرير المحتوى</li>
-  <li>تأجيل أو توقيف أي محتوى قد يسبب انقطاع تجربة المستخدم، إلا عند الضرورة</li>
-  <li>إعادة التوثيق عند انتهاء الجلسة دون فقد البيانات</li>
-</ul>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-9">متطلبات الوصول المتعلقة بالوقت الكافي (روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#enough-time">إرشادات 2.2 – وقت كافي</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-time-independent">إرشادات 2.2 – تفاعل مستقل عن الوقت</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-control-inaccessible-content">إرشادات 2.2 – الوقت المتعلق بالوسائط</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a32">إرشادات أ.3.2: ( لأدوات إنشاء واجهة المستخدم) توفير الوقت الكافي للمؤلفين</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-10">قصص ذات علاقة بالوقت الكافي</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على المدى القصير (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">قاسم,مراهق أصم و كفيف (باللغة الإنجليزية)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="safe">المحتوى لا يسبب أي  نوبات وردود فعل جسدية</h3>
-
-<p>يمكن أن يتسبب المحتوى الذي يومض بمعدلات أو أنماط معينة في ردات فعل حساسة للضوء، و نوبات. يتم تجنب المحتوى الوامض كليًا أو استخدامه فقط بطريقة لا تسبب مخاطر معروفة. كما يمكن أن تسبب الرسوم المتحركة والمحتوى المتحرك إزعاجًا وردود أفعال جسدية.</p>
-
-<p>بعض الأمثلة لتجنب التسبب في نوبات او ردات فعل جسدية:</p>
-
-<ul>
-  <li>لا تقم بتضمين محتوى يومض بمعدلات وأنماط معينة</li>
-  <li>تحذير المستخدمين قبل عرض المحتوى الوامض، وتقديم البدائل</li>
-  <li>توفير آليات لإيقاف تشغيل الرسوم المتحركة ما لم تكن ضرورية</li>
-</ul>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-11">متطلبات الوصول المتعلقة بالنوبات (روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#seizures-and-physical-reactions">إرشادات 3.2 - النوبات</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-prevent-flash">إرشادات 9.2 - الومضات</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a33">إرشادات أ.3.3: (لأدوات إنشاء واجهة المستخدم) مساعدة المؤلفين بتجنب الومضات التي قد تسبب نوبات</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="navigable">إمكانية المستخدم  للتنقل بسهولة ، العثور على المحتويات ، وتحديد أماكنهم</h3>
-
-<p>المحتوى المنظم بشكل جيد يمكّن المستخدمين من استخدام الموقع والتنقل فيه على نحو فعال:</p>
-
-<ul>
-  <li>تحتوي الصفحات على عناوين واضحة ويتم تنظيمها باستخدام عناوين وصفية للأقسام</li>
-  <li>يجب أن يكون هناك أكثر من طريقة للعثور على الصفحات ذات الصلة ضمن مجموعة من صفحات الويب</li>
-  <li>يستطيع المستخدمين معرفة رقم الصفحة التي يتصفحونها حاليا ضمن نطاق محدد من الصفحات</li>
-  <li>توفر طرق لتجاوز مجموعات المحتوى التي تتكرر على صفحات متعددة</li>
-  <li>يكون تركيز لوحة المفاتيح مرئيًا، ويتبع ترتيب التركيز تسلسلًا ذا مغزى</li>
-  <li>اي روابط يتم عرضها يكون الهدف منها وما تؤدي إليه واضحًا</li>
-</ul>
-
-<p>يساعد تلبية هذه المتطلبات الأشخاص على التنقل عبر صفحات الويب بطرق مختلفة، اعتمادًا على احتياجاتهم وتفضيلاتهم الخاصة. على سبيل المثال؛ بينما يعتمد بعض الأشخاص على هياكل التنقل الهرمية مثل أشرطة القوائم للعثور على صفحات ويب معينة، يعتمد الآخرون على وظائف البحث على مواقع الويب بدلاً من ذلك.  بعض الأشخاص يرون المحتوى بينما البعض الآخرون قد يسمعونه أو يرونه ويسمعونه في نفس الوقت. قد يستخدم بعض الأشخاص المحتوى باستخدام الفأرة أو لوحة المفاتيح فقط ، بينما الآخرون قد يستخدمون كليهما.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-12">متطلبات الوصول المتعلقة بالتنقل (روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#navigable">إرشادات4.2: قابلية التنقل</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation">إرشادات 2.2: التنقل المتسلسل</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation">إرشادات 3.2: التنقل والتفعيل المباشر</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-search-text">إرشادات 4.2: البحث النصي</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-nav-structure">إرشادات 5.2: التنقل الهيكلي</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-configure-controls">إرشادات 7.2: الضوابط الرسومية</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a21">المبدأ أ.1.2: (أدوات إنشاء واجهة المستخدم)  القيام بإتاحة المحتوى البديل للمؤلفين</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">المبدأ أ.2.2: (أدوات إنشاء واجهة المستخدم) التأكد من إمكانية تحديد طريقة عرض التحرير بطريقة برمجية</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b37">المبدأ أ.7.3: (أدوات إنشاء واجهة المستخدم) التأكد من أن طرق العرض يمكن الوصول إليها مثل وكلاء الويب المستخدمين</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-13">قصص ذات علاقة بالتنقل</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">ليا, موظف أول كفيف (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على المدى القصير (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">قاسم,مراهق أصم و كفيف (باللغة الإنجليزية)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="modalities">إمكانية المستخدمين لاستخدام مختلف أساليب الإدخال غير لوحة المفاتيح</h3>
-
-<p>انماط الإدخال المختلفة عن لوحة المفاتيح، مثل اللمس، أو الأوامر الصوتية والإيماءات تجعل من المحتوى سهل التعامل لكثير من الأشخاص، بنفس الوقت لا يمكن للجميع أن يستخدم كل هذه الأنماط بنفس الدرجة، هناك بعض الاعتبارات بالتصميم تمكن من اظهار هذه الأنماط بشكل يساعد على الاستفادة القصوى منها، كالتالي:</p>
-
-<ul>
-  <li>بعض الإيماءات التي تتطلب براعة بالحركة يجب أن تستبدل بإيماءات تكون أقل تعقيدًا</li>
-  <li>مكونات مصممة لتفادي الضغط عليها بشكل غير متعمد، توفير خاصية التراجع كمثال</li>
-  <li>المسميات التي تظهر للمستخدم من المهم أن تتوافق مع أسماء الكائنات البرمجية، لدعم استخدامها عبر الأوامر الصوتية</li>
-  <li>الوظائف والأوامر التي يتم تفعيلها عبر الحركة من الممكن كذلك أن يتم تفعيلها عبر واجهة المستخدم</li>
-  <li>الأزرار، روابط الويب وغيرها من المكونات من اللازم أن يتم إظهارها بحجم مناسب للتعرف عليها واستخدامها عبر اللمس</li>
-</ul>
-
-<p>الإيفاء بهذه المتطلبات يجعل من المحتوى سهل الاستعمال من قبل كثير من الناس ممن يملكون قدرات مختلفة باستخدام عدد كبير من الأجهزة المختلفة، هذا المحتوى من الممكن تصفحه من خلال أجهزة الهواتف الذكية والأجهزة اللوحية وأجهزة الخدمة الذاتية</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-14">متطلبات الوصول المتعلقة بأنماط المدخلات (روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#input-modalities">إرشادات 5.2 – أنماط المدخلات</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-15">قصص متعلقة بأنماط المدخلات</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على المدى القصير (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة الإنجليزية)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="understandable">المعلومات المفهومة و واجهة المستخدم</h2>
-
-<h3 id="readable">أن يكون النص قابل للقراءة والفهم</h3>
-
-<p>صانعوا المحتوى يحتاجون إلى التأكد من أن محتواهم قابل للقراءة والفهم لجميع الفئات الممكنة، يشمل ذلك أن يكون قابل للقراءة من خلال خاصية التحويل من نص-الى-صوت، مثل هذا المحتوى يشمل:</p>
-
-<ul>
-  <li>التعرف على اللغة الأساسية الخاصة بصفحة الويب، مثل العربية، الألمانية، والكورية</li>
-  <li>التعرف على لغة المقاطع النصية، العبارات، والأجزاء الأخرى من صفحة الويب</li>
-  <li>توفير تعريفات لأي كلمات او عبارات او وصف، او اختصارات غير شائعة</li>
-  <li>استخدام ابسط واوضح لغة ممكنة</li>
-</ul>
-
-<p>الإيفاء بهذه المتطلبات يساعد البرامج والتطبيقات بما فيها التقنيات المساعدة على معالجة المحتوى النصي بشكل صحيح، على سبيل المثال، هذه المتطلبات تساعد التطبيقات على قراءة المحتوى بصوت عالي، وبناء ملخصات للصفحات و توفير تعريفات بالكلمات الغير شائعة مثل المصطلحات التقنية، كذلك تساعد الأشخاص الذين يواجهون مشاكل في فهم العبارات و الجمل والمفردات المعقدة، خاصة الأشخاص الذين يملكون انواع مختلفة من الإعاقات الإدراكية.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-16">متطلبات الوصول المتعلقة بقابلية القراءة (روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#readable">إرشادات 1.3 – قابل للقراءة</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b42">إرشادات.أ2.4: (لأدوات إنشاء واجهة المستخدم) بتوثيق واجهة المستخدم ، بما في ذلك جميع ميزات إمكانية الوصول</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-17">قصص ذات صلة بقابلية القراءة</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/people-use-web/user-stories/#onlinestudent">مارتين, طالب أون لاين يعاني من صعوبات بالسمع</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">ليا, موظف أول كفيف (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على المدى القصير (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة الإنجليزية)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="predictable">أن يظهر و يعمل المحتوى بطريقة يمكن توقعها</h3>
-
-<p>الكثير من الأشخاص يستندون على واجهات المستخدم المتوقعة، والتي تكون احيانًا مشوشة او غير واضحة في مظهرها او طريقة عملها، هنا بعض الأمثلة لإنشاء محتوى قابل للتوقع والاستخدام:</p>
-
-<ul>
-  <li>آليه التنقل بين الصفحات مكرره على عدة صفحات وتظهر في نفس المكان كل مره</li>
-  <li>مكونات واجهة المستخدم التي تظهر بشكل متكرر تحمل نفس المسميات كل مرة</li>
-  <li>أي تعديل على الصفحة او محتوياتها لا يتم دون وعي من المستخدم</li>
-</ul>
-
-<p>الإيفاء بهذه المتطلبات يساعد الأشخاص على التعود بشكل سريع على أساليب التنقل الموجودة في الموقع. واستخدامهم بالطريقة التي تلائم احتياجاتهم، على سبيل المثال: بعض الأشخاص يقومون بتخصيص بعض ازرار لوحة المفاتيح لبعض الوظائف التي يقومون بها بشكل دوري لزيادة فاعلية التنقل من خلال لوحة المفاتيح، البعض الآخر يتذكر الخطوات للوصول لصفحات محددة او لإكمال عملية محددة في موقع الويب، جميعهم يستندون على العمليات المكررة والثابته.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-18">متطلبات الوصول المتعلقة بالتوقعات (روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#predictable">إرشادات 2.3 – التوقع</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-predictable-operation">إرشادات 3.3 – التنبؤ</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">المبدأ أ.2.2: (أدوات إنشاء واجهة المستخدم) التأكد من إمكانية تحديد طريقة عرض التحرير بطريقة برمجية</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b37">المبدأ أ.2.4: (أدوات إنشاء واجهة المستخدم) التأكد من أن طرق العرض يمكن الوصول إليها مثل وكلاء الويب المستخدمين</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-19">قصص ذات صلة بالتنبؤ</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">ليا, موظف أول كفيف (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على المدى القصير (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">قاسم,مراهق أصم و كفيف (باللغة الإنجليزية)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="tolerant">مساعدة المستخدمين على تلافي اخطائهم وتصحيحه</h3>
-
-<p>النماذج وغيرها من أنماط التفاعل من الممكن ان تكون غير واضحة و صعبة الاستخدام لكثير من الأشخاص، ونتيجة لذلك يصبح الاشخاص اكثر عرضة لارتكاب الأخطاء أثناء استخدام مواقع الويب، بالتالي بعض الأمثلة لمساعدة المستخدمين على تجاوز وتصحيح هذه الأخطاء:</p>
-
-<ul>
-  <li>تعليمات وصفية، رسائل خطأ، و اقتراحات تصحيحية</li>
-  <li>توفير نقاط مساعدة حسب الموضوع للعمليات او التفاعلات المعقدة</li>
-  <li>فرصة لمراجعة، تصحيح، او استرجاع المدخلات عند الضرورة</li>
-</ul>
-
-<p>الإيفاء بهذه المتطلبات يساعد الأشخاص الذين لا يستطيعون رؤية أو سماع المحتوى، ومن الممكن ان لا يتعرفون على بعض العلاقات او التسلسلات المحددة او أي دلالات اخرى، كذلك يساعد الاشخاص الذين يواجهون صعوبات في فهم العمليات، من الذين يعانون من الارتباك، والتشويش، او النسيان، او يرتكبون اخطاء عند استخدام النماذج او اي تفاعل مع الموقع لأي سبب اخر.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="links-to-technical-specification">متطلبات الوصول المتعلقة بمساعدة المدخلات (روابط للوصف التقني) (links to technical specification)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#input-assistance">إرشادات 3.3: مساعدة المدخلات</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-avoid-mistakes">إرشادات 1.3: الأخطاء</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">المبدأ أ.2.2: (أدوات إنشاء واجهة المستخدم) التأكد من إمكانية تحديد طريقة عرض التحرير بطريقة برمجية</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b41">المبدأ أ.1.4: (لأدوات إنشاء واجهة المستخدم) مساعدة المؤلف بتجنب الأخطاء المتكررة</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-20">قصص ذات علاقة بمساعدة المدخلات</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/people-use-web/user-stories/#shopper">ليي, متسوق عبر الإنترنت يعاني من عمى الألوان</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على المدى القصير (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة الإنجليزية)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="robust">المحتوى القوي/النشط و الترجمة الملائمة</h2>
-
-<h3 id="compatible">تناسق المحتوى مع أدوات المستخدمين الحالية والمستقبلية</h3>
-
-<p>المحتوى القوي/النشط هو المتناسق مع مختلف المتصفحات والتكنولوجيا المساعدة و مختلف وكلاء الويب، مثال عن كيفية الوصول الى هذا المحتوى يتلخص في:</p>
-
-<ul>
-  <li>التأكد من سهولة تفسير النقاط ذات العلامات الدلالية، مثل التأكد من أنها صالحه وسهله الفهم</li>
-  <li>توفير اسم و وظيفة و قيمة لأي مكون غير أساسي من مكونات واجهة المستخدم</li>
-</ul>
-
-<p>الإيفاء بهذه المتطلبات يساعد على التأكد من ملائمة المحتوى لوكلاء الويب بشكل فعال، خاصة التقنيات المساعدة، حيث أنه يمكن التقنيات المساعدة من معالجة و تفسير المحتوى بالشكل المطلوب، يشمل ذلك الأزرار و حقول الإدخال التي لا تندرج ضمن معايير الويب الأساسية.</p>
-<details><summary>
-
-    <h4 class="no_toc" id="section-21">متطلبات الوصول المتعلقة بالتلائم (روابط للوصف التقني)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#compatible">إرشادات 1.4: التلائم</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-store-prefs">إرشادات 6.2: إعدادات التفضيل</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-AT-access">إرشادات 1.4: التقنية المساعدة</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-obs-env-conventions">إرشادات 1.5: إتباع المواصفات</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول قابلة للتطبيق</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">الجزء ب. دعم إنتاج محتوى قابل للوصول</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-22">قصص ذات صلة بالتلاؤم</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">ليي, متسوق عبر الإنترنت يعاني من عمى الألوان (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">ليا, موظف أول كفيف (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة الإنجليزية)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">قاسم,مراهق أصم و كفيف (باللغة الإنجليزية)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<div class="excol-all"></div>
-
-
-    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> لمساعدة تحسين هذه الصفحة </h2></header><div class="box-i"><p>المرجو المشاركة بأفكار أو اقتراحات أو تعليقات عبر البريد الإلكتروني إلى القائمة بالأرشيف العام <a href="mailto:{wai-eo-editors@w3.org?subject=[ar]%20%D9%85%D8%A8%D8%A7%D8%AF%D8%A6%20%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84">wai-eo-editors@w3.org</a> أو عبر GitHub</p>
-<div class="button-group">
-    <a href="mailto:wai-eo-editors@w3.org?subject=[ar]%20%D9%85%D8%A8%D8%A7%D8%AF%D8%A6%20%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84&body=[%D8%B6%D8%B9%20%D8%AA%D8%B9%D9%84%D9%8A%D9%82%20%D9%87%D9%86%D8%A7%20...]" class="button"><span>البريد الإلكتروني</span></a>
-    <a href="https://github.com/w3c/wai-website/edit/master/content/index.ar.md"  class="button"><span>تفرع وتحرير على GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?title=[ar]%20" class="button"><span>قضية جديدة على Github</span></a>
-</div></div></aside>
-
-
-    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> العودة إلى الأعلى</span></a>
-  </main>
-</div>
-
-
-  
-  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-    <div class="inner" 
-      >
-      <p><strong>التاريخ:</strong> تم التحديث في 1 مايو 2019.</p> <p><strong>المحررون:</strong> <a href="https://www.w3.org/People/shadi/">Shadi Abou Zahra</a>. <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments"> شكر وتقدير </a>.</p> <p> تم تطويره بمساهمة فريق التعليم و التوعية (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). طور سابقا من قبل <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf">WAI-AGE فريق</a>, بمساعدة<a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE مشروع</a>.</p>
-</div>
-  </footer>
-  
-
-
-<footer class="site-footer grid-4q" aria-label="Site">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>ستراتيجيات ومعايير وموارد داعمة لجعل الويب في متناول الأشخاص ذوي الإعاقات.</p>
-    </div>
-    <div class="social" lang="en" dir="auto" translate="no">
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span
+            >ستراتيجيات ومعايير وموارد لجعل الويب في متناول الأشخاص ذوي
+            الإعاقات</span
+          >
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg focusable="false" aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            قائمة</span
+          >
+        </button>
+      </div>
+
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">بحث:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="بحث"
+                      aria-label="بحث"
+                    />
+                  </label>
+
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg
+                        focusable="false"
+                        aria-label="إرسال البحث"
+                        class="icon-search"
+                      >
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="الرئيسي" lang="ar">
       <ul>
-        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
-        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
-        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
-        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/planning/"
+            ><span>Planning &amp; Policies</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/design-develop/"
+            ><span>Design &amp; Develop</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/test-evaluate/"
+            ><span>Test &amp; Evaluate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/teach-advocate/"
+            ><span>Teach &amp; Advocate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
       </ul>
-    </div>
-    <div lang="en" dir="auto" style="text-align: right;" translate="no">
-      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
-    </div>
-  </div>
-  <div lang="en" dir="auto" style="text-align: right;" translate="no" class="q4-start q4-end">
-    <ul style="margin-bottom:0">
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-      <li><a href="/WAI/translations/"> Translations</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
-<script>
-  svg4everybody();
-</script>
-<script src="/WAI/assets/scripts/lang/ar.js?1633578570351143841"></script><!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    </nav>
+    <nav class="default-grid breadcrumb" aria-label="علامات التتبع" lang="en">
+      <ul style="align-self: center">
+        <li><a href="/WAI/" lang="en">Home</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a
+            lang="ar"
+            href="/WAI/fundamentals/accessibility-principles/ar"
+            aria-current="page"
+            ><span>Accessibility Principles</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="default-grid with-gap leftcol">
+      <div class="sidenav">
+        <nav class="sn-contents" aria-label="Secondary">
+          <ul class="sidenav--list">
+            <li>
+              <a lang="en" href="/WAI/fundamentals/" class="page-link"
+                ><span>Accessibility Fundamentals</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="ar"
+                href="/WAI/fundamentals/accessibility-intro/ar"
+                class="page-link"
+                ><span>مقدمة لولوجية الويب</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="ar"
+                    href="/WAI/videos/standards-and-benefits/ar"
+                    class="page-link"
+                    ><span>مقدمة فيديو</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/foundations-course/"
+                class="page-link"
+                ><span>Foundations Online Course</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/components/"
+                class="page-link"
+                ><span>Components of Web Accessibility</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="ar"
+                href="/WAI/fundamentals/accessibility-principles/ar"
+                aria-current="page"
+                class="page-link"
+                ><span>Accessibility Principles</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/perspective-videos/" class="page-link"
+                ><span>Perspectives Videos</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/keyboard/"
+                    class="page-link"
+                    ><span>Keyboard Compatibility</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/contrast/"
+                    class="page-link"
+                    ><span>Colors with Good Contrast</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/layout/"
+                    class="page-link"
+                    ><span>Clear Layout and Design</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/speech/"
+                    class="page-link"
+                    ><span>Text to Speech</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/controls/"
+                    class="page-link"
+                    ><span>Large Links, Buttons, and Controls</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/captions/"
+                    class="page-link"
+                    ><span>Video Captions</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/customizable/"
+                    class="page-link"
+                    ><span>Customizable Text</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/voice/"
+                    class="page-link"
+                    ><span>Speech Recognition</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/understandable/"
+                    class="page-link"
+                    ><span>Understandable Content</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/notifications/"
+                    class="page-link"
+                    ><span>Notifications and Feedback</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/people-use-web/" class="page-link"
+                ><span>How People with Disabilities Use the Web</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/user-stories/"
+                    class="page-link"
+                    ><span>Stories of Web Users</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/abilities-barriers/"
+                    class="page-link"
+                    ><span>Diverse Abilities and Barriers</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/tools-techniques/"
+                    class="page-link"
+                    ><span>Tools and Techniques</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/older-users/" class="page-link"
+                ><span>Older Users and Accessibility</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/older-users/developing/"
+                    class="page-link"
+                    ><span>How WCAG 2 Applies</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/older-users/literature/"
+                    class="page-link"
+                    ><span>Literature Review</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/accessibility-usability-inclusion/"
+                class="page-link"
+                ><span>Accessibility, Usability, Inclusion</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="sidenav-languages" aria-labelledby="languagehead">
+          <header id="languagehead">لغات وترجمات</header>
+          <ul class="langlist">
+            <li style="margin-bottom: 2px">
+              <a
+                href="/WAI/fundamentals/accessibility-principles/"
+                lang="en"
+                dir="auto"
+                translate="no"
+                >English (original)</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <strong style="text-transform: capitalize">العربية</strong>
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/cs"
+                dir="auto"
+                translate="no"
+                lang="cs"
+                >čeština</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/es"
+                dir="auto"
+                translate="no"
+                lang="es"
+                >español</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/fr"
+                dir="auto"
+                translate="no"
+                lang="fr"
+                >français</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ko"
+                dir="auto"
+                translate="no"
+                lang="ko"
+                >한국어</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ru"
+                dir="auto"
+                translate="no"
+                lang="ru"
+                >русский язык</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/zh-hans"
+                dir="auto"
+                translate="no"
+                lang="zh-hans"
+                >简体汉语</a
+              >
+            </li>
+          </ul>
+          <p><a href="/WAI/translations/#ar">الموارد الأخرى بـ العربية</a></p>
 
+          <p><a href="/WAI/translations/">كل&nbsp;الترجمات</a></p>
+          <p><a href="/WAI/about/translating/">ترجمة موارد WAI</a></p>
+        </nav>
+      </div>
 
+      <main id="main" lang="ar">
+        <header>
+          <h1>مبادئ الوصول</h1>
+        </header>
+        <section
+          id="translation-info"
+          class="doc-note-box doc-note-translation"
+        >
+          <h2 class="visuallyhidden">عن هذه الترجمة</h2>
+          <p>
+            قد لا تعكس هذه الترجمة التطوعية بدقة قصد
+            <a href="/WAI/fundamentals/accessibility-principles/"
+              >الإنجليزية الأصلية</a
+            >.
+          </p>
+
+          <p>
+            <svg focusable="false" aria-hidden="true" class="icon-check-circle">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"
+              ></use>
+            </svg>
+            ترجمة محدثة مع النسخة الإنجليزية. <br />ترجمة محدثة:
+            <span dir="auto">2020-10-19</span>. إنجليزية المحدثة:
+            <span dir="auto">2019-05-10</span>.
+          </p>
+
+          <p>
+            <strong>الترجمة:</strong> محمد سليم. المساهمة: محمد الموسوي, نايف
+            العوضي. <br />WAI تشكر هؤلاء المترجمين وترحب
+            <a href="/WAI/about/translating/">الترجمات</a> الأخرى.
+          </p>
+        </section>
+        <aside class="box box-full">
+          <header class="box-h box-h-full"><h2>ملخص</h2></header>
+          <div class="box-i">
+            <p>
+              يقدم هذا التقرير بعض متطلبات إمكانية الوصول للويب؛ للمواقع،
+              والتطبيقات، ومتصفحات الويب وغيرها من الأدوات. و يوفر أيضاً مراجع
+              للمعايير الدولية من مبادرة W3C لإمكانية الوصول للويب (WAI) و
+              <a href="/people-use-web/user-stories/">قصص مستخدمي الويب</a>
+            </p>
+
+            <p>
+              <strong>ملاحظة:</strong> هذه القائمة لاتحتوي على كل متطلبات
+              إمكانية الوصول.
+            </p>
+          </div>
+        </aside>
+
+        <nav
+          class="box box-simple box-full"
+          aria-labelledby="tocheading"
+          id="toc"
+        >
+          <header id="tocheading" class="box-h box-h-simple box-h-full">
+            محتويات الصفحة
+          </header>
+          <div class="box-i">
+            <ul id="markdown-toc">
+              <li>
+                <a href="#standards" id="markdown-toc-standards"
+                  >متطلبات وصول الويب</a
+                >
+              </li>
+              <li>
+                <a href="#perceivable" id="markdown-toc-perceivable"
+                  >المعلومات المحسوسة و واجهة المستخدم</a
+                >
+                <ul>
+                  <li>
+                    <a href="#alternatives" id="markdown-toc-alternatives"
+                      >بدائل النص للمحتوى الغير نصي</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#captions" id="markdown-toc-captions"
+                      >التسميات التوضيحية و البدائل الأخرى للوسائط المتعددة</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#adaptable" id="markdown-toc-adaptable"
+                      >محتويات يمكن تقديمها بطرق مختلف</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#distinguishable" id="markdown-toc-distinguishable"
+                      >المحتوى يكون أسهل عند الرؤية والسمع</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#operable" id="markdown-toc-operable"
+                  >واجهة مستخدم قابلة للتشغيل والتنقل</a
+                >
+                <ul>
+                  <li>
+                    <a href="#keyboard" id="markdown-toc-keyboard"
+                      >إتاحة الوظائف من خلال لوحة المفاتيح</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-7" id="markdown-toc-section-7"
+                      >متطلبات الوصول المتعلقة بلوحة المفاتيح (روابط للوصف
+                      التقني)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#time" id="markdown-toc-time"
+                      >وقت المستخدمين الكافي لقراءة المحتوى واستخدامه</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#safe" id="markdown-toc-safe"
+                      >المحتوى لا يسبب أي نوبات وردود فعل جسدية</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#navigable" id="markdown-toc-navigable"
+                      >إمكانية المستخدم للتنقل بسهولة ، العثور على المحتويات ،
+                      وتحديد أماكنهم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#modalities" id="markdown-toc-modalities"
+                      >إمكانية المستخدمين لاستخدام مختلف أساليب الإدخال غير لوحة
+                      المفاتيح</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#understandable" id="markdown-toc-understandable"
+                  >المعلومات المفهومة و واجهة المستخدم</a
+                >
+                <ul>
+                  <li>
+                    <a href="#readable" id="markdown-toc-readable"
+                      >أن يكون النص قابل للقراءة والفهم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#predictable" id="markdown-toc-predictable"
+                      >أن يظهر و يعمل المحتوى بطريقة يمكن توقعها</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#tolerant" id="markdown-toc-tolerant"
+                      >مساعدة المستخدمين على تلافي اخطائهم وتصحيحه</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#robust" id="markdown-toc-robust"
+                  >المحتوى القوي/النشط و الترجمة الملائمة</a
+                >
+                <ul>
+                  <li>
+                    <a href="#compatible" id="markdown-toc-compatible"
+                      >تناسق المحتوى مع أدوات المستخدمين الحالية والمستقبلية</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="excol-all"></div>
+
+        <h2 id="standards">متطلبات وصول الويب</h2>
+
+        <p>
+          إمكانية الوصول للويب تستند على عدة مكونات تعمل جنبًا الى جنب، وهي
+          كالتالي:
+        </p>
+
+        <ul>
+          <li>
+            <strong id="webcontent">محتوى الويب</strong> - ويعنى بأي جزء من
+            الموقع الالكتروني، ويشمل ذلك النصوص، الصور، النماذج، الوسائط
+            المتعددة، والكود البرمجي بما في ذلك التطبيقات البرمجية.
+          </li>
+          <li>
+            <strong id="useragents">وكيل الويب</strong> - وهو تطبيق يستخدمه
+            الناس للوصول الى محتوى شبكة الويب، ويشمل ذلك متصفحات أجهزه سطح
+            المكتب، المتصفحات الصوتية، المتصفحات الخاصة بالهواتف الذكية، مشغلات
+            الوسائط المتعددة، وبعض
+            <a href="/people-use-web/tools-techniques/#at" title="definition"
+              >التقنيات المساعدة</a
+            >
+          </li>
+          <li>
+            <strong id="authoringtools">أدوات التأليف (البرمجة)</strong> - وهي
+            برامج وتطبيقات تمكن الأشخاص من إنشاء محتوى في الويب، ويشمل ذلك
+            محررات الكود البرمجي، أدوات تحويل المستندات، انظمة ادارة المحتوى،
+            المدونات، نصوص قواعد البيانات، وبعض الأدوات الأخرى
+          </li>
+        </ul>
+
+        <details>
+          <summary>
+            <h3 class="no_toc" id="section">المزيد عن متطلبات الوصول للويب</h3>
+          </summary>
+          <div>
+            <p>
+              هذه المكونات مترابطة و تدعم بعضها البعض. على سبيل المثال,
+              <strong>محتوى الويب</strong> يحتاج إلى تضمين بدائل نصية عوضاً عن
+              الصور. هذه المعلومات تحتاج إلى المعالجة من قبل
+              <strong>متصفح الويب</strong> و بعد ذلك تنقل إلى
+              <strong>التكنولوجيا المساعدة</strong>, كمثال قارئ الشاشة. لإنشاء
+              بدائل نصية يحتاج المؤلفين إلى <strong>أدوات تأليف</strong> تدعمهم
+              للقيام بذلك. المزيد من المعلومات متوفرة في
+              <a href="/fundamentals/components"
+                >[المكونات الرئيسية للوصول الى الويب]</a
+              >
+            </p>
+
+            <p>
+              تلعب المعايير دوراً رئيسياً في تحديد متطلبات إمكانية الوصول للويب
+              لكل مكون من هذه المكونات. بعض متطلبات الوصول سهلة التحقيق، بينما
+              فهم أساسيات كيفية استخدام الأشخاص ذوي الإعاقة للويب يساعد في
+              تنفيذها بشكل أكثر فعالية وكفاءة. تتطلب بعض جوانب إمكانية الوصول
+              مهارات تقنية أو معرفة متقدمة عن كيفية استخدام الأشخاص للويب. في كل
+              الأحوال ،
+              <a href="/test-evaluate/involving-users/"
+                >إشراك المستخدمين مبكراً خلال مشاريع الويب الخاصة بك</a
+              >
+              سوف يساهم بجعل عملك أفضل وأسهل.
+            </p>
+
+            <p>
+              مبادرة W3C لإمكانية الوصول للويب (WAI) توفر مجموعة من الإرشادات
+              المعترف بها دوليًا كمعيار لإمكانية الوصول إلى الويب وتشمل
+            </p>
+
+            <ul>
+              <li>
+                <strong
+                  ><a href="/standards-guidelines/wcag/"
+                    >إرشادات الوصول إلى محتوى الويب (WCAG)</a
+                  ></strong
+                >
+              </li>
+              <li>
+                <strong
+                  ><a href="/standards-guidelines/uaag/"
+                    >إرشادات الوصول إلى وكيل الويب (UAAG)</a
+                  ></strong
+                >
+              </li>
+              <li>
+                <strong
+                  ><a href="/standards-guidelines/atag/"
+                    >إرشادات الوصول إلى أداة التأليف (ATAG)</a
+                  ></strong
+                >
+              </li>
+            </ul>
+
+            <p>
+              هناك أيضًا مواصفات WAI
+              <strong
+                ><a href="https://www.w3.org/WAI/intro/aria.php"
+                  >للوصول تطبيقات الإنترنت الغنية (WAI-ARIA)
+                </a></strong
+              >
+              التي يمكن الوصول إليها والتي تتضمن محتوى ديناميكي و عناصر تحكم
+              متقدمة في واجهة المستخدم تم تطويرها باستخدام Ajax و JavaScript
+              وتقنيات الويب الأخرى ذات صلة.
+            </p>
+          </div>
+        </details>
+
+        <h2 id="perceivable">المعلومات المحسوسة و واجهة المستخدم</h2>
+
+        <h3 id="alternatives">بدائل النص للمحتوى الغير نصي</h3>
+
+        <p>بدائل النصوص هي مساوية للمحتوى غير النصي، مثال على ذلك :</p>
+        <ul>
+          <li>
+            مرادفات الصور القصيرة، ويشمل ذلك الايقونات، والأزرار، والرسومات
+          </li>
+          <li>وصف للبيانات على شكل مخططات واشكال توضيحية</li>
+          <li>وصف مختصر عن المحتوى غير النصي مثل المحتوى الصوتي والمرئي</li>
+          <li>
+            تسميات توضيحية لأدوات التحكم في النماذج مثل المدخلات وبقية مكونات
+            واجهة المستخدم
+          </li>
+        </ul>
+
+        <p>
+          بديلات النصوص تعمل كبديل جيد لصورة او وظيفة لإيصال المستخدمين لتجربة
+          مستخدم متوازية، كمثال: بديل نص مناسب لزر البحث سيكون كلمة
+          “<em>بحث</em>” عوضاً عن “*عدسة مكبرة”.
+        </p>
+
+        <p>
+          بديلات النصوص من الممكن تمثيلها بطرق مختلفة ومتنوعة، كمثال من الممكن
+          ان يتم قراءتها بصوت عالي للأشخاص الذين لا يستطيعون رؤية الشاشة او
+          للأشخاص الذين يعانون من صعوبات بالقراءة، قد يشمل ذلك أحجام معدلة
+          للنصوص، او اظهار نصوص مكتوبة على أجهزة برايل . بديلات النصوص تعمل
+          كأدوات بديلة عن ازرار التحكم لتسهيل استخدام لوحة المفاتيح، او الوصول
+          باستخدام الأوامر الصوتية. من الممكن كذلك ان تعمل على التعرف على
+          الأصوات (Speech input) او الملفات المرئية او اي صيغة من الملفات
+          المستخدمة في الحاسوب، كالبرامج والتطبيقات البرمجية التي تعد جزءً من
+          المواقع الالكترونية.
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-1">
+              متطلبات الوصول المتعلقة بـ بدائل النصوص(روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#text-alternatives"
+                  >إرشادات – 1.1 بدائل النص</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content"
+                  >إرشادات – 1.1 محتوى البديل</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول
+                  قابلة للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a21"
+                  >المبدأ أ.1.2: (أدوات إنشاء واجهة المستخدم) القيام بإتاحة
+                  المحتوى البديل للمؤلفين</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >المبدأ أ.2.2: (أدوات إنشاء واجهة المستخدم) التأكد من إمكانية
+                  تحديد طريقة عرض التحرير بطريقة برمجية</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b37"
+                  >المبدأ أ.7.3: (أدوات إنشاء واجهة المستخدم) التأكد من أن طرق
+                  العرض يمكن الوصول إليها مثل وكلاء الويب المستخدمين</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <h4 id="stories-related-to-text-alternatives" class="no_toc">
+              قصص ذات صلة ببدائل النصوص
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >أليكس، مراسل مصاب بالضغط النفسي المتكرر (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a href="people-use-web/user-stories/#onlinestudent/"
+                  >مارتين، طالب عبر الإنترنت يعاني من ضعف السمع</a
+                >
+              </li>
+              <li>
+                <a href="people-use-web/user-stories/#accountant/"
+                  >ليا، موظف أول كفيف</a
+                >
+              </li>
+              <li>
+                <a href="people-use-web/user-stories/#classroomstudent/"
+                  >برييتي، طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة
+                  وتشتت الانتباه وعسر القراءة</a
+                >
+              </li>
+              <li>
+                <a href="people-use-web/user-stories/#retiree/"
+                  >ين، متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على
+                  المدى القصير</a
+                >
+              </li>
+              <li>
+                <a href="people-use-web/user-stories/#teenager/"
+                  >قاسم، مراهق أصم و كفيف</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="captions">
+          التسميات التوضيحية و البدائل الأخرى للوسائط المتعددة
+        </h3>
+
+        <p>
+          بعض الأمثلة على الاشخاص الذين لا يستطيعون سماع الأصوات او رؤية الملفات
+          المرئية في حاجة الى بدائل:
+        </p>
+
+        <ul>
+          <li>
+            نصوص سردية او تسميات توضيحية للمحتوى الصوتي، مثال: تسجيلات مقابلات
+            الراديو
+          </li>
+          <li>
+            وصف توضيحي للأصوات، والتي تروي وصف التفاصيل المهمة بطريقة مرئية في
+            مقطع مرئي
+          </li>
+          <li>
+            لغة اشارة مرافقة للمحتوى الصوتي، بما في ذلك أي من الأدوات المساعدة
+            لفهم الأصوات
+          </li>
+        </ul>
+
+        <p>
+          المحتوى النصي المكتوب بعناية والذي يحتوي على تسلسل من أي معلومات بديلة
+          للأصوات أو مرئيات يساهم بشكل كبير في توفير وصول أساسي للمعلومة و يسهل
+          إنتاج التسميات التوضيحية للمحتوى الصوتي.
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-2">
+              متطلبات الوصول المتعلقة بـ الوسائط المتعددة (روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#time-based-media"
+                  >إرشادات 2.1 – الوسائط المؤقتة</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <p>
+                  <a
+                    href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content"
+                    >إرشادات 1.1 – المحتوى البديل</a
+                  >
+                  <strong>ATAG</strong>
+                </p>
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدآ أ.1: أدوات إنشاء واجهة مستخدم تتبع إرشادات وصول قابلة
+                  للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a21"
+                  >إرشادات أ.1.2: (أدوات إنشاء واجهة المستخدم) القيام بإتاحة
+                  المحتوى البديل للمؤلفين</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a37"
+                  >إرشادات أ.7.3: (أدوات إنشاء واجهة المستخدم) التأكد من أن
+                  المعاينات يمكن الوصول إليها مثل وكلاء المستخدم في السوق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 id="stories-related-to-multimedia" class="no_toc">
+              قصص متعلقة بالوسائط المتعددة
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#onlinestudent"
+                  hreflang="en"
+                  >مارتين، الب عبر الإنترنت يعاني من ضعف السمع (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >ليا، موظف أول كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >قاسم، مراهق أصم و كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="adaptable">محتويات يمكن تقديمها بطرق مختلف</h3>
+
+        <p>لكي يتمكن المستخدمون من تغيير طريقة عرض المحتوى ، من الضروري أن:</p>
+
+        <ul>
+          <li>
+            يتم تمييز العناوين والقوائم والجداول وحقول الإدخال وهياكل المحتوى
+            بشكل صحيح
+          </li>
+          <li>تسلسل المعلومات أو التعليمات مستقلة عن أي عرض تقديمي</li>
+          <li>
+            توفر المستعرضات والتقنيات المساعدة إعدادات لتخصيص العرض التقديمي
+          </li>
+        </ul>
+
+        <p>
+          تلبية هذه المتطلبات يسمح بقراءة المحتوى بشكل صحيح و بصوت عالٍ و واضح و
+          تكييف الصوت تلبية احتياجات وتفضيلات مختلف الأشخاص. على سبيل المثال ،
+          يمكن تقديم المحتوى باستخدام مجموعات ألوان مخصصة ، أو حجم النص ، أو أي
+          تصميم آخر لتسهيل القراءة. يسهل هذا المتطلب أيضًا تقديم أشكالًا أخرى من
+          التكيف ، بما في ذلك الإنشاء التلقائي لمخططات الصفحات والملخصات لمساعدة
+          الأشخاص في الحصول على نظرة عامة والتركيز على أجزاء معينة بسهولة أكبر.
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-3">
+              متطلبات الوصول المتعلقة بالتكيف (روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#adaptable"
+                  >إرشادات 3.1 - التكييف</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-text-config"
+                  >إرشادات 4.1 – تكوين النص</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-volume-config"
+                  >إرشادات 5.1 – تكوين النص</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-speech-config"
+                  >إرشادات 6.1 – تكوين النص</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config"
+                  >إرشادات 7.1 – تكوين النص</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views"
+                  >إرشادات 9.1 – تكوين النص</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-info-link"
+                  >إرشادات 10.1 – تكوين النص</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: إدوات</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >إرشادات أ.2.2: (أدوات إنشاء واجهة المستخدم) التأكد من إمكانية
+                  تحديد عرض التحرير بطريقة برمجية</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b37"
+                  >إرشادات أ.7.3: (أدوات إنشاء واجهة المستخدم) التأكد من أن
+                  المعاينات يمكن الوصول إليها مثل وكلاء المستخدم في السوق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-4">قصص ذات علاقة بالتكيف</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#shopper"
+                  hreflang="en"
+                  >ليي، متسوق عبر الإنترنت يعاني من عمى الألوان (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >أليكس، مراسل مصاب بالضغط النفسي المتكرر (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >ليا، موظف أول كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >برييتي، طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة
+                  وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >ين، متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على
+                  المدى القصير (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >لويس، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >قاسم، مراهق أصم و كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="distinguishable">المحتوى يكون أسهل عند الرؤية والسمع</h3>
+
+        <p>
+          المحتوى المميز يسهل رؤيته وسماعه. يتضمن هذا النوع من المحتوى الآتي:
+        </p>
+        <ul>
+          <li>
+            عدم استخدام اللون كطريقة وحيدة لنقل المعلومات أو تحديد المحتوى
+          </li>
+          <li>
+            أن توفر مجموعات ألوان المقدمة والخلفية الافتراضية تباينًا كافيًا
+          </li>
+          <li>
+            عدم فقد للمعلومات عندما يقوم المستخدمين بتغيير حجم النص حتى اربعة
+            أضعاف أو تغيير تباعد النص
+          </li>
+          <li>
+            يعاد تدفق النص في النوافذ الصغيرة (“إطارات العرض”) وعندما يكبر
+            المستخدمون النص
+          </li>
+          <li>
+            يمكن تغيير حجم صور النص أو استبدالها بنص حقيقي أو تجنبها عند الإمكان
+          </li>
+          <li>
+            يمكن للمستخدمين إيقاف أو ضبط مستوى الصوت الذي يتم تشغيله على موقع
+            ويب
+          </li>
+          <li>
+            صوت الخلفية يكون منخفض أو يمكن إيقاف تشغيله لتجنب التداخل أو التشتيت
+          </li>
+        </ul>
+
+        <p>
+          تساعد تلبية هذه المتطلبات في فصل المقدمة عن الخلفية وذلك لجعل
+          المعلومات المهمة أكثر تميزًا. يتضمن ذلك الاخذ في عين الاعتبار الأشخاص
+          الذين لا يستخدمون التقنيات المساعدة والأشخاص الذين يستخدمونها في
+          التداخل من المحتوى الصوتي أو المرئي البارز في الخلفية. على سبيل
+          المثال، العديد من الأشخاص المصابين بعمى الألوان لا يستخدمون أي أدوات
+          معينة ويعتمدون على تصميم مناسب يوفر تباينًا كافيًا في اللون بين النص
+          والخلفية المحيطة به. بالنسبة للأشخاص الآخرين، قد يتداخل الصوت الذي يتم
+          تشغيله تلقائيًا مع تحويل النص إلى كلام أو مع
+          <a
+            href="http://www.w3.org/WAI/training/accessible#ald"
+            title="definition"
+            >أجهزة الاستماع المساعدة (ALDs)</a
+          >
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-5">
+              متطلبات الوصول المتعلقة بالتمييز (روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#distinguishable"
+                  >إرشادات 4.1: التمييز</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#gl-interaction-highlight"
+                  >إرشادات 3.1: التمييز</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#gl-text-config"
+                  >إرشادات 4.1: تكوين النص</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#gl-volume-config"
+                  >إرشادات 5.1: تكوين الصوت</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#gl-speech-config"
+                  >إرشادات 6.1: تكوين الكلام المركب</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#gl-style-sheets-config"
+                  >إرشادات 7.1: تكوين ورقة أنماط المستخدم</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#gl-viewport-orient"
+                  >إرشادات 8.1: الاتجاه في منافذ العرض</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#gl-alternative-views"
+                  >إرشادات 9.1: الآراء البديلة</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#gl-info-link"
+                  >إرشادات 10.1: معلومات العناصر</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول
+                  قابلة للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b37"
+                  >إرشادات أ.7.3: (بالنسبة لأدوات إنشاء واجهة المستخدم) التأكد
+                  من أن المعاينات يمكن الوصول إليها مثل وكلاء المستخدم في
+                  السوق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-6">قصص ذات علاقة بالتمييز</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a href="/people-use-web/user-stories/#shopper"
+                  >ليي، متسوق عبر الإنترنت يعاني من عمى الألوان</a
+                >
+              </li>
+              <li>
+                <a href="/people-use-web/user-stories/#onlinestudent"
+                  >ليا، موظف أول كفيف</a
+                >
+              </li>
+              <li>
+                <a href="/people-use-web/user-stories/#accountant"
+                  >مارتين، طالب أون لاين يعاني من صعوبات بالسمع</a
+                >
+              </li>
+              <li>
+                <a href="/people-use-web/user-stories/#retiree"
+                  >ين، متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على
+                  المدى القصير</a
+                >
+              </li>
+              <li>
+                <a href="/people-use-web/user-stories/#teenager"
+                  >قاسم، مراهق أصم و كفيف</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="operable">واجهة مستخدم قابلة للتشغيل والتنقل</h2>
+
+        <h3 id="keyboard">إتاحة الوظائف من خلال لوحة المفاتيح</h3>
+
+        <p>
+          العديد من الأشخاص لا يستخدمون الفأرة ويعتمدون على لوحة المفاتيح
+          للتفاعل مع الويب. يتطلب ذلك الوصول إلى لوحة المفاتيح لجميع الوظائف،
+          بما في ذلك نماذج التحكم، المدخلات، ومكونات واجهة المستخدم الأخرى.
+        </p>
+
+        <p>تشمل إمكانية الوصول إلى لوحة المفاتيح ما يلي:</p>
+        <ul>
+          <li>
+            جميع الوظائف المتوفرة عن طريق الفأرة تتوفر أيضاً عن طريق لوحة
+            المفاتيح
+          </li>
+          <li>لا ينحصر تركيز لوحة المفاتيح في أي جزء من المحتوى</li>
+          <li>
+            توفر مستعرضات الويب، أدوات الإنشاء، والأدوات الأخرى دعمًا للوحة
+            المفاتيح
+          </li>
+        </ul>
+
+        <p>
+          يساعد تلبية هذه المتطلبات مستخدمي لوحة المفاتيح، بما في ذلك الأشخاص
+          الذين يستخدمون لوحات مفاتيح بديلة مثل لوحات المفاتيح ذات التخطيطات
+          المريحة، لوحات المفاتيح على الشاشة، أو أجهزة السويتش. كما أنه يساعد
+          الأشخاص الذين يستخدمون التعرف على الصوت (مدخلات الكلام) لتشغيل مواقع
+          الويب وإملاء النص من خلال واجهة لوحة المفاتيح.
+        </p>
+
+        <details>
+          <summary>
+            <h3 id="section-7">
+              متطلبات الوصول المتعلقة بلوحة المفاتيح (روابط للوصف التقني)
+            </h3>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-accessible"
+                  >إرشادات 1.2: لوحة مفاتيح متاحة للوصول</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-keyboard-access"
+                  >إرشادات 1.2: لوحة مفاتيح متاحة للوصول</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation"
+                  >إرشادات 2.2: لوحة مفاتيح متاحة للوصول</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation"
+                  >إرشادات 3.2: لوحة مفاتيح متاحة للوصول</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-other-devices"
+                  >إرشادات 11.2: لوحة مفاتيح متاحة للوصول</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول
+                  قابلة للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a31"
+                  >إرشادات أ.1.3: (لأدوات إنشاء واجهة المستخدم) توفير الوصول
+                  للوحة المفاتيح لخصائص الإنشاء</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-8">
+              قصص ذات علاقة بالوصول للوحة المفاتيح
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a href="/people-use-web/user-stories/#reporter"
+                  >أليكس, مراسل مصاب بالضغط النفسي المتكرر</a
+                >
+              </li>
+              <li>
+                <a href="/people-use-web/user-stories/#accountant"
+                  >ليا, موظف أول كفيف</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="time">وقت المستخدمين الكافي لقراءة المحتوى واستخدامه</h3>
+
+        <p>
+          يحتاج بعض الأشخاص إلى وقت أطول من غيرهم لقراءة المحتوى واستخدامه. على
+          سبيل المثال ، يحتاج بعض الأشخاص إلى مزيد من الوقت لكتابة نص، فهم
+          الإرشادات، تشغيل عناصر التحكم ،أو لإكمال المهام على موقع ويب.
+        </p>
+
+        <p>أمثلة على توفير الوقت الكافي لهؤلاء الأشخاص:</p>
+
+        <ul>
+          <li>وقف، تمديد، تعديل الحدود الزمنية ، إلا عند الضرورة</li>
+          <li>إيقاف، تعليق، إخفاء، التنقل، أو تمرير المحتوى</li>
+          <li>
+            تأجيل أو توقيف أي محتوى قد يسبب انقطاع تجربة المستخدم، إلا عند
+            الضرورة
+          </li>
+          <li>إعادة التوثيق عند انتهاء الجلسة دون فقد البيانات</li>
+        </ul>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-9">
+              متطلبات الوصول المتعلقة بالوقت الكافي (روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#enough-time"
+                  >إرشادات 2.2 – وقت كافي</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-time-independent"
+                  >إرشادات 2.2 – تفاعل مستقل عن الوقت</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-control-inaccessible-content"
+                  >إرشادات 2.2 – الوقت المتعلق بالوسائط</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول
+                  قابلة للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a32"
+                  >إرشادات أ.3.2: ( لأدوات إنشاء واجهة المستخدم) توفير الوقت
+                  الكافي للمؤلفين</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-10">قصص ذات علاقة بالوقت الكافي</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة
+                  وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على
+                  المدى القصير (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >قاسم,مراهق أصم و كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="safe">المحتوى لا يسبب أي نوبات وردود فعل جسدية</h3>
+
+        <p>
+          يمكن أن يتسبب المحتوى الذي يومض بمعدلات أو أنماط معينة في ردات فعل
+          حساسة للضوء، و نوبات. يتم تجنب المحتوى الوامض كليًا أو استخدامه فقط
+          بطريقة لا تسبب مخاطر معروفة. كما يمكن أن تسبب الرسوم المتحركة والمحتوى
+          المتحرك إزعاجًا وردود أفعال جسدية.
+        </p>
+
+        <p>بعض الأمثلة لتجنب التسبب في نوبات او ردات فعل جسدية:</p>
+
+        <ul>
+          <li>لا تقم بتضمين محتوى يومض بمعدلات وأنماط معينة</li>
+          <li>تحذير المستخدمين قبل عرض المحتوى الوامض، وتقديم البدائل</li>
+          <li>توفير آليات لإيقاف تشغيل الرسوم المتحركة ما لم تكن ضرورية</li>
+        </ul>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-11">
+              متطلبات الوصول المتعلقة بالنوبات (روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#seizures-and-physical-reactions"
+                  >إرشادات 3.2 - النوبات</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-prevent-flash"
+                  >إرشادات 9.2 - الومضات</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول
+                  قابلة للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a33"
+                  >إرشادات أ.3.3: (لأدوات إنشاء واجهة المستخدم) مساعدة المؤلفين
+                  بتجنب الومضات التي قد تسبب نوبات</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="navigable">
+          إمكانية المستخدم للتنقل بسهولة ، العثور على المحتويات ، وتحديد أماكنهم
+        </h3>
+
+        <p>
+          المحتوى المنظم بشكل جيد يمكّن المستخدمين من استخدام الموقع والتنقل فيه
+          على نحو فعال:
+        </p>
+
+        <ul>
+          <li>
+            تحتوي الصفحات على عناوين واضحة ويتم تنظيمها باستخدام عناوين وصفية
+            للأقسام
+          </li>
+          <li>
+            يجب أن يكون هناك أكثر من طريقة للعثور على الصفحات ذات الصلة ضمن
+            مجموعة من صفحات الويب
+          </li>
+          <li>
+            يستطيع المستخدمين معرفة رقم الصفحة التي يتصفحونها حاليا ضمن نطاق
+            محدد من الصفحات
+          </li>
+          <li>توفر طرق لتجاوز مجموعات المحتوى التي تتكرر على صفحات متعددة</li>
+          <li>
+            يكون تركيز لوحة المفاتيح مرئيًا، ويتبع ترتيب التركيز تسلسلًا ذا مغزى
+          </li>
+          <li>اي روابط يتم عرضها يكون الهدف منها وما تؤدي إليه واضحًا</li>
+        </ul>
+
+        <p>
+          يساعد تلبية هذه المتطلبات الأشخاص على التنقل عبر صفحات الويب بطرق
+          مختلفة، اعتمادًا على احتياجاتهم وتفضيلاتهم الخاصة. على سبيل المثال؛
+          بينما يعتمد بعض الأشخاص على هياكل التنقل الهرمية مثل أشرطة القوائم
+          للعثور على صفحات ويب معينة، يعتمد الآخرون على وظائف البحث على مواقع
+          الويب بدلاً من ذلك. بعض الأشخاص يرون المحتوى بينما البعض الآخرون قد
+          يسمعونه أو يرونه ويسمعونه في نفس الوقت. قد يستخدم بعض الأشخاص المحتوى
+          باستخدام الفأرة أو لوحة المفاتيح فقط ، بينما الآخرون قد يستخدمون
+          كليهما.
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-12">
+              متطلبات الوصول المتعلقة بالتنقل (روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#navigable"
+                  >إرشادات4.2: قابلية التنقل</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation"
+                  >إرشادات 2.2: التنقل المتسلسل</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation"
+                  >إرشادات 3.2: التنقل والتفعيل المباشر</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-search-text"
+                  >إرشادات 4.2: البحث النصي</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-nav-structure"
+                  >إرشادات 5.2: التنقل الهيكلي</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-configure-controls"
+                  >إرشادات 7.2: الضوابط الرسومية</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول
+                  قابلة للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a21"
+                  >المبدأ أ.1.2: (أدوات إنشاء واجهة المستخدم) القيام بإتاحة
+                  المحتوى البديل للمؤلفين</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >المبدأ أ.2.2: (أدوات إنشاء واجهة المستخدم) التأكد من إمكانية
+                  تحديد طريقة عرض التحرير بطريقة برمجية</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b37"
+                  >المبدأ أ.7.3: (أدوات إنشاء واجهة المستخدم) التأكد من أن طرق
+                  العرض يمكن الوصول إليها مثل وكلاء الويب المستخدمين</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-13">قصص ذات علاقة بالتنقل</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >ليا, موظف أول كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة
+                  وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على
+                  المدى القصير (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >قاسم,مراهق أصم و كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="modalities">
+          إمكانية المستخدمين لاستخدام مختلف أساليب الإدخال غير لوحة المفاتيح
+        </h3>
+
+        <p>
+          انماط الإدخال المختلفة عن لوحة المفاتيح، مثل اللمس، أو الأوامر الصوتية
+          والإيماءات تجعل من المحتوى سهل التعامل لكثير من الأشخاص، بنفس الوقت لا
+          يمكن للجميع أن يستخدم كل هذه الأنماط بنفس الدرجة، هناك بعض الاعتبارات
+          بالتصميم تمكن من اظهار هذه الأنماط بشكل يساعد على الاستفادة القصوى
+          منها، كالتالي:
+        </p>
+
+        <ul>
+          <li>
+            بعض الإيماءات التي تتطلب براعة بالحركة يجب أن تستبدل بإيماءات تكون
+            أقل تعقيدًا
+          </li>
+          <li>
+            مكونات مصممة لتفادي الضغط عليها بشكل غير متعمد، توفير خاصية التراجع
+            كمثال
+          </li>
+          <li>
+            المسميات التي تظهر للمستخدم من المهم أن تتوافق مع أسماء الكائنات
+            البرمجية، لدعم استخدامها عبر الأوامر الصوتية
+          </li>
+          <li>
+            الوظائف والأوامر التي يتم تفعيلها عبر الحركة من الممكن كذلك أن يتم
+            تفعيلها عبر واجهة المستخدم
+          </li>
+          <li>
+            الأزرار، روابط الويب وغيرها من المكونات من اللازم أن يتم إظهارها
+            بحجم مناسب للتعرف عليها واستخدامها عبر اللمس
+          </li>
+        </ul>
+
+        <p>
+          الإيفاء بهذه المتطلبات يجعل من المحتوى سهل الاستعمال من قبل كثير من
+          الناس ممن يملكون قدرات مختلفة باستخدام عدد كبير من الأجهزة المختلفة،
+          هذا المحتوى من الممكن تصفحه من خلال أجهزة الهواتف الذكية والأجهزة
+          اللوحية وأجهزة الخدمة الذاتية
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-14">
+              متطلبات الوصول المتعلقة بأنماط المدخلات (روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#input-modalities"
+                  >إرشادات 5.2 – أنماط المدخلات</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-15">قصص متعلقة بأنماط المدخلات</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على
+                  المدى القصير (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="understandable">المعلومات المفهومة و واجهة المستخدم</h2>
+
+        <h3 id="readable">أن يكون النص قابل للقراءة والفهم</h3>
+
+        <p>
+          صانعوا المحتوى يحتاجون إلى التأكد من أن محتواهم قابل للقراءة والفهم
+          لجميع الفئات الممكنة، يشمل ذلك أن يكون قابل للقراءة من خلال خاصية
+          التحويل من نص-الى-صوت، مثل هذا المحتوى يشمل:
+        </p>
+
+        <ul>
+          <li>
+            التعرف على اللغة الأساسية الخاصة بصفحة الويب، مثل العربية،
+            الألمانية، والكورية
+          </li>
+          <li>
+            التعرف على لغة المقاطع النصية، العبارات، والأجزاء الأخرى من صفحة
+            الويب
+          </li>
+          <li>
+            توفير تعريفات لأي كلمات او عبارات او وصف، او اختصارات غير شائعة
+          </li>
+          <li>استخدام ابسط واوضح لغة ممكنة</li>
+        </ul>
+
+        <p>
+          الإيفاء بهذه المتطلبات يساعد البرامج والتطبيقات بما فيها التقنيات
+          المساعدة على معالجة المحتوى النصي بشكل صحيح، على سبيل المثال، هذه
+          المتطلبات تساعد التطبيقات على قراءة المحتوى بصوت عالي، وبناء ملخصات
+          للصفحات و توفير تعريفات بالكلمات الغير شائعة مثل المصطلحات التقنية،
+          كذلك تساعد الأشخاص الذين يواجهون مشاكل في فهم العبارات و الجمل
+          والمفردات المعقدة، خاصة الأشخاص الذين يملكون انواع مختلفة من الإعاقات
+          الإدراكية.
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-16">
+              متطلبات الوصول المتعلقة بقابلية القراءة (روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#readable"
+                  >إرشادات 1.3 – قابل للقراءة</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول
+                  قابلة للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b42"
+                  >إرشادات.أ2.4: (لأدوات إنشاء واجهة المستخدم) بتوثيق واجهة
+                  المستخدم ، بما في ذلك جميع ميزات إمكانية الوصول</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-17">قصص ذات صلة بقابلية القراءة</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a href="/people-use-web/user-stories/#onlinestudent"
+                  >مارتين, طالب أون لاين يعاني من صعوبات بالسمع</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >ليا, موظف أول كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة
+                  وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على
+                  المدى القصير (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="predictable">أن يظهر و يعمل المحتوى بطريقة يمكن توقعها</h3>
+
+        <p>
+          الكثير من الأشخاص يستندون على واجهات المستخدم المتوقعة، والتي تكون
+          احيانًا مشوشة او غير واضحة في مظهرها او طريقة عملها، هنا بعض الأمثلة
+          لإنشاء محتوى قابل للتوقع والاستخدام:
+        </p>
+
+        <ul>
+          <li>
+            آليه التنقل بين الصفحات مكرره على عدة صفحات وتظهر في نفس المكان كل
+            مره
+          </li>
+          <li>
+            مكونات واجهة المستخدم التي تظهر بشكل متكرر تحمل نفس المسميات كل مرة
+          </li>
+          <li>أي تعديل على الصفحة او محتوياتها لا يتم دون وعي من المستخدم</li>
+        </ul>
+
+        <p>
+          الإيفاء بهذه المتطلبات يساعد الأشخاص على التعود بشكل سريع على أساليب
+          التنقل الموجودة في الموقع. واستخدامهم بالطريقة التي تلائم احتياجاتهم،
+          على سبيل المثال: بعض الأشخاص يقومون بتخصيص بعض ازرار لوحة المفاتيح
+          لبعض الوظائف التي يقومون بها بشكل دوري لزيادة فاعلية التنقل من خلال
+          لوحة المفاتيح، البعض الآخر يتذكر الخطوات للوصول لصفحات محددة او لإكمال
+          عملية محددة في موقع الويب، جميعهم يستندون على العمليات المكررة
+          والثابته.
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-18">
+              متطلبات الوصول المتعلقة بالتوقعات (روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#predictable"
+                  >إرشادات 2.3 – التوقع</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-predictable-operation"
+                  >إرشادات 3.3 – التنبؤ</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول
+                  قابلة للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >المبدأ أ.2.2: (أدوات إنشاء واجهة المستخدم) التأكد من إمكانية
+                  تحديد طريقة عرض التحرير بطريقة برمجية</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b37"
+                  >المبدأ أ.2.4: (أدوات إنشاء واجهة المستخدم) التأكد من أن طرق
+                  العرض يمكن الوصول إليها مثل وكلاء الويب المستخدمين</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-19">قصص ذات صلة بالتنبؤ</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >ليا, موظف أول كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة
+                  وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على
+                  المدى القصير (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >قاسم,مراهق أصم و كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="tolerant">مساعدة المستخدمين على تلافي اخطائهم وتصحيحه</h3>
+
+        <p>
+          النماذج وغيرها من أنماط التفاعل من الممكن ان تكون غير واضحة و صعبة
+          الاستخدام لكثير من الأشخاص، ونتيجة لذلك يصبح الاشخاص اكثر عرضة لارتكاب
+          الأخطاء أثناء استخدام مواقع الويب، بالتالي بعض الأمثلة لمساعدة
+          المستخدمين على تجاوز وتصحيح هذه الأخطاء:
+        </p>
+
+        <ul>
+          <li>تعليمات وصفية، رسائل خطأ، و اقتراحات تصحيحية</li>
+          <li>توفير نقاط مساعدة حسب الموضوع للعمليات او التفاعلات المعقدة</li>
+          <li>فرصة لمراجعة، تصحيح، او استرجاع المدخلات عند الضرورة</li>
+        </ul>
+
+        <p>
+          الإيفاء بهذه المتطلبات يساعد الأشخاص الذين لا يستطيعون رؤية أو سماع
+          المحتوى، ومن الممكن ان لا يتعرفون على بعض العلاقات او التسلسلات
+          المحددة او أي دلالات اخرى، كذلك يساعد الاشخاص الذين يواجهون صعوبات في
+          فهم العمليات، من الذين يعانون من الارتباك، والتشويش، او النسيان، او
+          يرتكبون اخطاء عند استخدام النماذج او اي تفاعل مع الموقع لأي سبب اخر.
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="links-to-technical-specification">
+              متطلبات الوصول المتعلقة بمساعدة المدخلات (روابط للوصف التقني)
+              (links to technical specification)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#input-assistance"
+                  >إرشادات 3.3: مساعدة المدخلات</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-avoid-mistakes"
+                  >إرشادات 1.3: الأخطاء</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول
+                  قابلة للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >المبدأ أ.2.2: (أدوات إنشاء واجهة المستخدم) التأكد من إمكانية
+                  تحديد طريقة عرض التحرير بطريقة برمجية</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b41"
+                  >المبدأ أ.1.4: (لأدوات إنشاء واجهة المستخدم) مساعدة المؤلف
+                  بتجنب الأخطاء المتكررة</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-20">
+              قصص ذات علاقة بمساعدة المدخلات
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a href="/people-use-web/user-stories/#shopper"
+                  >ليي, متسوق عبر الإنترنت يعاني من عمى الألوان</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة
+                  وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >ين, متقاعد مع ضعف البصر ورعاش اليد وفقدان خفيف للذاكرة على
+                  المدى القصير (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="robust">المحتوى القوي/النشط و الترجمة الملائمة</h2>
+
+        <h3 id="compatible">
+          تناسق المحتوى مع أدوات المستخدمين الحالية والمستقبلية
+        </h3>
+
+        <p>
+          المحتوى القوي/النشط هو المتناسق مع مختلف المتصفحات والتكنولوجيا
+          المساعدة و مختلف وكلاء الويب، مثال عن كيفية الوصول الى هذا المحتوى
+          يتلخص في:
+        </p>
+
+        <ul>
+          <li>
+            التأكد من سهولة تفسير النقاط ذات العلامات الدلالية، مثل التأكد من
+            أنها صالحه وسهله الفهم
+          </li>
+          <li>
+            توفير اسم و وظيفة و قيمة لأي مكون غير أساسي من مكونات واجهة المستخدم
+          </li>
+        </ul>
+
+        <p>
+          الإيفاء بهذه المتطلبات يساعد على التأكد من ملائمة المحتوى لوكلاء الويب
+          بشكل فعال، خاصة التقنيات المساعدة، حيث أنه يمكن التقنيات المساعدة من
+          معالجة و تفسير المحتوى بالشكل المطلوب، يشمل ذلك الأزرار و حقول الإدخال
+          التي لا تندرج ضمن معايير الويب الأساسية.
+        </p>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-21">
+              متطلبات الوصول المتعلقة بالتلائم (روابط للوصف التقني)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#compatible"
+                  >إرشادات 1.4: التلائم</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-store-prefs"
+                  >إرشادات 6.2: إعدادات التفضيل</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-AT-access"
+                  >إرشادات 1.4: التقنية المساعدة</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-obs-env-conventions"
+                  >إرشادات 1.5: إتباع المواصفات</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >المبدأ أ.1: أدوات إنشاء واجهة المستخدم تتبع إرشادات وصول
+                  قابلة للتطبيق</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >الجزء ب. دعم إنتاج محتوى قابل للوصول</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-22">قصص ذات صلة بالتلاؤم</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#shopper"
+                  hreflang="en"
+                  >ليي, متسوق عبر الإنترنت يعاني من عمى الألوان (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >أليكس, مراسل مصاب بالضغط النفسي المتكرر (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >ليا, موظف أول كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >برييتي, طالب في المرحلة الإعدادية يعاني من اضطراب فرط الحركة
+                  وتشتت الانتباه وعسر القراءة (باللغة الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >لويس ، مساعد سوبر ماركت مصاب بمتلازمة داون (باللغة
+                  الإنجليزية)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >قاسم,مراهق أصم و كفيف (باللغة الإنجليزية)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="excol-all"></div>
+
+        <aside class="box box-icon box-space-above" id="helpimprove">
+          <header class="box-h box-h-icon box-h-space-above box-h-icon">
+            <svg focusable="false" aria-hidden="true" class="icon-comments">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-comments"
+              ></use>
+            </svg>
+            <h2>لمساعدة تحسين هذه الصفحة</h2>
+          </header>
+          <div class="box-i">
+            <p>
+              المرجو المشاركة بأفكار أو اقتراحات أو تعليقات عبر البريد
+              الإلكتروني إلى القائمة بالأرشيف العام
+              <a
+                href="mailto:{wai-eo-editors@w3.org?subject=[ar]%20%D9%85%D8%A8%D8%A7%D8%AF%D8%A6%20%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84"
+                >wai-eo-editors@w3.org</a
+              >
+              أو عبر GitHub
+            </p>
+            <div class="button-group">
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=[ar]%20%D9%85%D8%A8%D8%A7%D8%AF%D8%A6%20%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84&body=[%D8%B6%D8%B9%20%D8%AA%D8%B9%D9%84%D9%8A%D9%82%20%D9%87%D9%86%D8%A7%20...]"
+                class="button"
+                ><span>البريد الإلكتروني</span></a
+              >
+              <a
+                href="https://github.com/w3c/wai-website/edit/master/content/index.ar.md"
+                class="button"
+                ><span>تفرع وتحرير على GitHub</span></a
+              ><a
+                href="https://github.com/w3c/wai-website/issues/new?title=[ar]%20"
+                class="button"
+                ><span>قضية جديدة على Github</span></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg focusable="false" aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            العودة إلى الأعلى</span
+          ></a
+        >
+      </main>
+    </div>
+
+    <footer
+      id="wai-site-footer"
+      class="page-footer default-grid"
+      aria-label="Page"
+    >
+      <div class="inner">
+        <p><strong>التاريخ:</strong> تم التحديث في 1 مايو 2019.</p>
+        <p>
+          <strong>المحررون:</strong>
+          <a href="https://www.w3.org/People/shadi/">Shadi Abou Zahra</a>.
+          <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments">
+            شكر وتقدير </a
+          >.
+        </p>
+        <p>
+          تم تطويره بمساهمة فريق التعليم و التوعية (<a
+            href="http://www.w3.org/WAI/EO/"
+            >EOWG</a
+          >). طور سابقا من قبل
+          <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf">WAI-AGE فريق</a>,
+          بمساعدة<a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE مشروع</a>.
+        </p>
+      </div>
+    </footer>
+
+    <footer class="site-footer grid-4q" aria-label="Site">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a
+              class="largelink"
+              href="https://www.w3.org/WAI/"
+              lang="en"
+              dir="auto"
+              translate="no"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>
+            ستراتيجيات ومعايير وموارد داعمة لجعل الويب في متناول الأشخاص ذوي
+            الإعاقات.
+          </p>
+        </div>
+        <div class="social" lang="en" dir="auto" translate="no">
+          <ul>
+            <li>
+              <a href="https://twitter.com/w3c_wai"
+                ><svg focusable="false" aria-hidden="true" class="icon-twitter">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/feed.xml"
+                ><svg focusable="false" aria-hidden="true" class="icon-rss">
+                  <use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use>
+                </svg>
+                Feed</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"
+                ><svg focusable="false" aria-hidden="true" class="icon-youtube">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/news/subscribe/" class="button"
+                >Get News in Email</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div lang="en" dir="auto" style="text-align: right" translate="no">
+          <p>
+            Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn">Beihang</a>)
+            <a href="/WAI/about/using-wai-material/"
+              >Permission to Use WAI Material</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div
+        lang="en"
+        dir="auto"
+        style="text-align: right"
+        translate="no"
+        class="q4-start q4-end"
+      >
+        <ul style="margin-bottom: 0">
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li>
+            <a href="/WAI/about/accessibility-statement/"
+              >Accessibility Statement</a
+            >
+          </li>
+          <li><a href="/WAI/translations/"> Translations</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script src="/WAI/assets/scripts/lang/ar.js?1633578570351143841"></script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </body>
 </html>

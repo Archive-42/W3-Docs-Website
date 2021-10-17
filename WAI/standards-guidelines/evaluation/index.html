@@ -1,241 +1,707 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1633578570351143841"
+    />
 
-<title> Evaluation Standards Overview - ACT &amp; EARL | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Evaluation Standards Overview - ACT &amp; EARL" />
-<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative." />
-<meta property="og:description" content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative." />
-<link rel="canonical" href="https://www.w3.org/WAI/standards-guidelines/evaluation/" />
-<meta property="og:url" content="https://www.w3.org/WAI/standards-guidelines/evaluation/" />
-<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Evaluation Standards Overview - ACT &amp; EARL" />
-<meta name="twitter:site" content="@w3c_wai" />
-<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
-<script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","headline":"Evaluation Standards Overview - ACT &amp; EARL","url":"https://www.w3.org/WAI/standards-guidelines/evaluation/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+    <title>
+      Evaluation Standards Overview - ACT &amp; EARL | Web Accessibility
+      Initiative (WAI) | W3C
+    </title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <meta name="generator" content="Jekyll v4.2.0" />
+    <meta
+      property="og:title"
+      content="Evaluation Standards Overview - ACT &amp; EARL"
+    />
+    <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      name="description"
+      content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative."
+    />
+    <meta
+      property="og:description"
+      content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative."
+    />
+    <link
+      rel="canonical"
+      href="https://www.w3.org/WAI/standards-guidelines/evaluation/"
+    />
+    <meta
+      property="og:url"
+      content="https://www.w3.org/WAI/standards-guidelines/evaluation/"
+    />
+    <meta
+      property="og:site_name"
+      content="Web Accessibility Initiative (WAI)"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Evaluation Standards Overview - ACT &amp; EARL"
+    />
+    <meta name="twitter:site" content="@w3c_wai" />
+    <meta
+      name="twitter:creator"
+      content="@W3C Web Accessibility Initiative (WAI)"
+    />
+    <script type="application/ld+json">
+      {
+        "description": "The Website of the World Wide Web Consortium’s Web Accessibility Initiative.",
+        "@type": "WebPage",
+        "headline": "Evaluation Standards Overview - ACT &amp; EARL",
+        "url": "https://www.w3.org/WAI/standards-guidelines/evaluation/",
+        "author": {
+          "@type": "Person",
+          "name": "W3C Web Accessibility Initiative (WAI)"
+        },
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
+    <meta
+      name="twitter:image"
+      property="og:image"
+      content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg"
+    />
 
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
-</head>
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+  </head>
 
-  <body id="top" class="page-evaluation-standards-overview-act-earl ">
-    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
-  <ul>
+  <body id="top" class="page-evaluation-standards-overview-act-earl">
+    <nav
+      aria-label="Skip Link and Language Selector"
+      id="controls"
+      class="default-grid"
+    >
+      <ul>
         <li><a href="#main">Skip to Content</a></li>
         <li class="opt">
           <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
         </li>
         <li class="opt">
-            <a href="/WAI/translations/">All Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/"
+            >All Translations
+            <svg focusable="false" aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
         </li>
-      </ul></nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
- 
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
-  </div>
-
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">Search:</span>
-              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
-            </label>
-            
-            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
-          </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="Main" lang=""><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
-  <ul style="align-self: center;">
-    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/evaluation/" aria-current="page"><span>Evaluation – ACT &amp; EARL</span></a></li></ul>
-</nav>
-    <div class="default-grid with-gap leftcol">
-
-  
-    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
-      <ul class="sidenav--list">
-  <li>
-  <a lang="en" href="/WAI/standards-guidelines/" class="page-link"><span>Standards/<wbr>Guidelines</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/" class="page-link"><span>Web Content – WCAG</span></a><ul><li>
-  <a lang="en" href="https://www.w3.org/WAI/WCAG21/quickref/" class="page-link"><span>How to Meet WCAG 2 (Quick Reference)</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/glance/" class="page-link"><span>At a Glance</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/docs/" class="page-link"><span>The Documents</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/non-web-ict/" class="page-link"><span>Applying to Non-Web ICT</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/new-in-22/" class="page-link"><span>New in 2.2 Draft</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/new-in-21/" class="page-link"><span>New in 2.1</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/translations/" class="page-link"><span>Translations</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/commenting/" class="page-link"><span>Commenting</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/conformance-logos/" class="page-link"><span>Conformance Logos</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/faq/" class="page-link"><span>FAQ</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/atag/" class="page-link"><span>Authoring Tools – ATAG</span></a><ul><li>
-  <a lang="en" href="/WAI/standards-guidelines/atag/glance/" class="page-link"><span>At a Glance</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/uaag/" class="page-link"><span>User Agents – UAAG</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/wcag/wcag3-intro/" class="page-link"><span>WCAG 3 Draft</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/aria/" class="page-link"><span>WAI-ARIA</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/evaluation/" aria-current="page" class="page-link"><span>Evaluation – ACT &amp; EARL</span></a><ul><li>
-  <a lang="en" href="/WAI/standards-guidelines/act/" class="page-link"><span>Accessibility Conformance Testing – ACT</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/earl/" class="page-link"><span>Evaluation and Report Language – EARL</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/personalization/" class="page-link"><span>Personalization</span></a></li><li>
-  <a lang="en" href="/WAI/pronunciation/" class="page-link"><span>Pronunciation</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/harmonization/" class="page-link"><span>Standards Harmonization is Essential</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/w3c-process/" class="page-link"><span>W3C Process for Developing Standards</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/linking/" class="page-link"><span>Referencing and Linking to Standards</span></a></li><li>
-  <a lang="en" href="/WAI/cognitive/" class="page-link"><span>Cognitive Accessibility at W3C</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/mobile/" class="page-link"><span>Mobile Accessibility at W3C</span></a></li></ul></nav>
-</div>
-  
-
-  <main id="main">
-
-      
-
-    
-    <header>
-      <h1>
-      
-      
-      
-        Evaluation Standards Overview - ACT &amp; EARL
-      
-      </h1></header>
-    <p>This page links to resources that support the development of web accessibility evaluation methods and tools. They are primarily for evaluation tool developers.</p>
-
-<h2 id="act">Accessibility Conformance Testing (ACT)</h2>
-
-<p>Accessibility Conformance Testing (ACT) establishes and documents rules for testing the conformance of web content to accessibility standards.</p>
-
-<p>ACT info:</p>
-<ul>
-  <li><a href="/WAI/standards-guidelines/act/">ACT Overview</a></li>
-  <li><a href="https://www.w3.org/TR/act-rules-format/">Accessibility Conformance Testing (ACT) Rules Format (Standard)</a></li>
-</ul>
-
-<h2 id="earl">Evaluation and Report Language (EARL)</h2>
-
-<p>Evaluation and Report Language (EARL) is a machine-readable format for expressing test results.</p>
-
-<p>EARL info:</p>
-<ul>
-  <li><a href="/WAI/standards-guidelines/earl/">Evaluation and Report Language (EARL) Overview</a> includes links to EARL documents.</li>
-</ul>
-
-
-
-    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=Evaluation%20Standards%20Overview%20-%20ACT%20&amp;%20EARL">wai-eo-editors@w3.org</a> or via GitHub.</p>
-<div class="button-group">
-    <a href="mailto:wai-eo-editors@w3.org?subject=Evaluation%20Standards%20Overview%20-%20ACT%20&%20EARL&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/wai-eval-standards/edit/master/index.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-eval-standards/issues/new?title=[]%20" class="button"><span>New GitHub Issue</span></a>
-</div></div></aside>
-
-
-    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
-  </main>
-</div>
-
-
-  
-  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-    <div class="inner" 
-      >
-      <p><strong>Date:</strong> Updated 8 May 2018.</p> <p><strong>Editors:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a> and <a href="https://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>.</p> <p>Developed with input from the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>).</p>
-</div>
-  </footer>
-  
-
-
-<footer class="site-footer grid-4q" aria-label="Site">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
-    </div>
-    <div class="social" lang="en" dir="auto" translate="no">
-      <ul>
-        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
-        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
-        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
-        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
-    <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
-    </div>
-  </div>
-  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
-    <ul style="margin-bottom:0">
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-      <li><a href="/WAI/translations/"> Translations</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
-<script>
-  svg4everybody();
-</script><script>
-  var translationStrings = {};
-</script>
-<!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    </nav>
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span
+            >Strategies, standards, resources to make the Web accessible to
+            people with disabilities</span
+          >
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg focusable="false" aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            Menu</span
+          >
+        </button>
+      </div>
 
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">Search:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </label>
 
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg
+                        focusable="false"
+                        aria-label="Submit Search"
+                        class="icon-search"
+                      >
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="Main" lang="">
+      <ul>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/planning/"
+            ><span>Planning &amp; Policies</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/design-develop/"
+            ><span>Design &amp; Develop</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/test-evaluate/"
+            ><span>Test &amp; Evaluate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/teach-advocate/"
+            ><span>Teach &amp; Advocate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+      <ul style="align-self: center">
+        <li><a href="/WAI/" lang="en">Home</a></li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
+        <li>
+          <a
+            lang="en"
+            href="/WAI/standards-guidelines/evaluation/"
+            aria-current="page"
+            ><span>Evaluation – ACT &amp; EARL</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="default-grid with-gap leftcol">
+      <div class="sidenav">
+        <nav class="sn-contents" aria-label="Secondary">
+          <ul class="sidenav--list">
+            <li>
+              <a lang="en" href="/WAI/standards-guidelines/" class="page-link"
+                ><span>Standards/<wbr />Guidelines</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/wcag/"
+                class="page-link"
+                ><span>Web Content – WCAG</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="https://www.w3.org/WAI/WCAG21/quickref/"
+                    class="page-link"
+                    ><span>How to Meet WCAG 2 (Quick Reference)</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/glance/"
+                    class="page-link"
+                    ><span>At a Glance</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/docs/"
+                    class="page-link"
+                    ><span>The Documents</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/non-web-ict/"
+                    class="page-link"
+                    ><span>Applying to Non-Web ICT</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/new-in-22/"
+                    class="page-link"
+                    ><span>New in 2.2 Draft</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/new-in-21/"
+                    class="page-link"
+                    ><span>New in 2.1</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/translations/"
+                    class="page-link"
+                    ><span>Translations</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/commenting/"
+                    class="page-link"
+                    ><span>Commenting</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/conformance-logos/"
+                    class="page-link"
+                    ><span>Conformance Logos</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/wcag/faq/"
+                    class="page-link"
+                    ><span>FAQ</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/atag/"
+                class="page-link"
+                ><span>Authoring Tools – ATAG</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/atag/glance/"
+                    class="page-link"
+                    ><span>At a Glance</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/uaag/"
+                class="page-link"
+                ><span>User Agents – UAAG</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/wcag/wcag3-intro/"
+                class="page-link"
+                ><span>WCAG 3 Draft</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/aria/"
+                class="page-link"
+                ><span>WAI-ARIA</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/evaluation/"
+                aria-current="page"
+                class="page-link"
+                ><span>Evaluation – ACT &amp; EARL</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/act/"
+                    class="page-link"
+                    ><span>Accessibility Conformance Testing – ACT</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/standards-guidelines/earl/"
+                    class="page-link"
+                    ><span>Evaluation and Report Language – EARL</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/personalization/" class="page-link"
+                ><span>Personalization</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/pronunciation/" class="page-link"
+                ><span>Pronunciation</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/harmonization/"
+                class="page-link"
+                ><span>Standards Harmonization is Essential</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/w3c-process/"
+                class="page-link"
+                ><span>W3C Process for Developing Standards</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/linking/"
+                class="page-link"
+                ><span>Referencing and Linking to Standards</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/cognitive/" class="page-link"
+                ><span>Cognitive Accessibility at W3C</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/standards-guidelines/mobile/"
+                class="page-link"
+                ><span>Mobile Accessibility at W3C</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <main id="main">
+        <header>
+          <h1>Evaluation Standards Overview - ACT &amp; EARL</h1>
+        </header>
+        <p>
+          This page links to resources that support the development of web
+          accessibility evaluation methods and tools. They are primarily for
+          evaluation tool developers.
+        </p>
+
+        <h2 id="act">Accessibility Conformance Testing (ACT)</h2>
+
+        <p>
+          Accessibility Conformance Testing (ACT) establishes and documents
+          rules for testing the conformance of web content to accessibility
+          standards.
+        </p>
+
+        <p>ACT info:</p>
+        <ul>
+          <li><a href="/WAI/standards-guidelines/act/">ACT Overview</a></li>
+          <li>
+            <a href="https://www.w3.org/TR/act-rules-format/"
+              >Accessibility Conformance Testing (ACT) Rules Format
+              (Standard)</a
+            >
+          </li>
+        </ul>
+
+        <h2 id="earl">Evaluation and Report Language (EARL)</h2>
+
+        <p>
+          Evaluation and Report Language (EARL) is a machine-readable format for
+          expressing test results.
+        </p>
+
+        <p>EARL info:</p>
+        <ul>
+          <li>
+            <a href="/WAI/standards-guidelines/earl/"
+              >Evaluation and Report Language (EARL) Overview</a
+            >
+            includes links to EARL documents.
+          </li>
+        </ul>
+
+        <aside class="box box-icon box-space-above" id="helpimprove">
+          <header class="box-h box-h-icon box-h-space-above box-h-icon">
+            <svg focusable="false" aria-hidden="true" class="icon-comments">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-comments"
+              ></use>
+            </svg>
+            <h2>Help improve this page</h2>
+          </header>
+          <div class="box-i">
+            <p>
+              Please share your ideas, suggestions, or comments via e-mail to
+              the publicly-archived list
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=Evaluation%20Standards%20Overview%20-%20ACT%20&amp;%20EARL"
+                >wai-eo-editors@w3.org</a
+              >
+              or via GitHub.
+            </p>
+            <div class="button-group">
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=Evaluation%20Standards%20Overview%20-%20ACT%20&%20EARL&body=[put%20comment%20here...]"
+                class="button"
+                ><span>E-mail</span></a
+              >
+              <a
+                href="https://github.com/w3c/wai-eval-standards/edit/master/index.md"
+                class="button"
+                ><span>Fork &amp; Edit on GitHub</span></a
+              ><a
+                href="https://github.com/w3c/wai-eval-standards/issues/new?title=[]%20"
+                class="button"
+                ><span>New GitHub Issue</span></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg focusable="false" aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            Back to Top</span
+          ></a
+        >
+      </main>
+    </div>
+
+    <footer
+      id="wai-site-footer"
+      class="page-footer default-grid"
+      aria-label="Page"
+    >
+      <div class="inner">
+        <p><strong>Date:</strong> Updated 8 May 2018.</p>
+        <p>
+          <strong>Editors:</strong>
+          <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a> and
+          <a href="https://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>.
+        </p>
+        <p>
+          Developed with input from the Education and Outreach Working Group (<a
+            href="http://www.w3.org/WAI/EO/"
+            >EOWG</a
+          >).
+        </p>
+      </div>
+    </footer>
+
+    <footer class="site-footer grid-4q" aria-label="Site">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a
+              class="largelink"
+              href="https://www.w3.org/WAI/"
+              lang="en"
+              dir="auto"
+              translate="no"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>
+            Strategies, standards, and supporting resources to make the Web
+            accessible to people with disabilities.
+          </p>
+        </div>
+        <div class="social" lang="en" dir="auto" translate="no">
+          <ul>
+            <li>
+              <a href="https://twitter.com/w3c_wai"
+                ><svg focusable="false" aria-hidden="true" class="icon-twitter">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/feed.xml"
+                ><svg focusable="false" aria-hidden="true" class="icon-rss">
+                  <use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use>
+                </svg>
+                Feed</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"
+                ><svg focusable="false" aria-hidden="true" class="icon-youtube">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/news/subscribe/" class="button"
+                >Get News in Email</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div lang="en" dir="auto" translate="no">
+          <p>
+            Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn">Beihang</a>)
+            <a href="/WAI/about/using-wai-material/"
+              >Permission to Use WAI Material</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div lang="en" dir="auto" translate="no" class="q4-start q4-end">
+        <ul style="margin-bottom: 0">
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li>
+            <a href="/WAI/about/accessibility-statement/"
+              >Accessibility Statement</a
+            >
+          </li>
+          <li><a href="/WAI/translations/"> Translations</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script>
+      var translationStrings = {};
+    </script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </body>
 </html>

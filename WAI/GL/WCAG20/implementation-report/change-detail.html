@@ -1,178 +1,695 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Changes to WCAG 2.0 since CR</title>
-<link rel="stylesheet" href="report.css" type="text/css" />
-<link rel="stylesheet" href="/WAI/wai-main.css" type="text/css" />
-</head>
-<body>
-<div id="controls">
-	<ul>
-		<li><a href="#main" shape="rect"><img src="/Icons/downinpage.png" alt="" /> Skip to content </a></li>
-		<li><a href="/WAI/changedesign.html" shape="rect">| Change 
-			text size or colors </a> </li>
-	</ul>
-</div>
-<div id="masthead">
-	<p id="logos"><a href="http://www.w3.org/" title="W3C Home" shape="rect"><img alt="W3C logo" height="48" src="/Icons/w3c_home" width="72" /></a><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"><img alt="Web Accessibility Initiative (WAI)         logo" height="48" src="/WAI/images/wai-temp" /></a></p>
-</div>
-<div id="tagline">
-	<p>WAI: Strategies, guidelines, resources to make the
-		Web accessible to people with disabilities</p>
-</div>
-<p id="breadcrumbs"><strong>Site Navigation: <a href="http://www.w3.org/">W3C Home</a> &gt; <a href="http://www.w3.org/WAI/">WAI Home</a> &gt; <a href="/WAI/GL/WCAG20/implementation-report/">WCAG 2.0 Implementation Report </a></strong></p>
-<div>
-	<h1>Changes to WCAG 2.0 since CR</h1>
-	<p><strong>Note:</strong> Links to the diff-marked version of the latest Editor's draft have been included so that changes can be viewed in context.</p>
-<div id="contents">
-		<h2>On this page</h2>
-		<ul>
-			<li><a href="#cat1">Significant</a></li>
-			<li><a href="#cat2">Clarifications</a></li>
-			<li><a href="#cat3">Editorial</a></li>
-		</ul>
-	</div>
-<div id="cat1">
-	<h2>Significant changes</h2>
-	<p>These changes affect the normative content of WCAG 2.0. However, the Working Group believes they would not have adversely affected public review of the document, and therefore did not require the document to be re-issued as a Working Draft. </p>
-	<ol><li> Conformance - <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#conformance-partial-lang" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#conformance-partial-lang">Statement of partial conformance - language</a> - Addition
-<ul><li> A "statement of partial conformance due to language" may be made, when the page does not conform, but would conform if accessibility support existed for (all of) the language(s) used on the page. The form of that statement would be, "This page would conform to WCAG 2.0 at level X if accessibility support existed for the following language(s):"
-</li></ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-scale" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-scale">SC 1.4.4 (Resize text)</a> - Clarification
-<ul><li> <b>Except for captions and images of text, text</b> can be resized without assistive technology up to 200 percent without loss of content or functionality.
-</li></ul>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Changes to WCAG 2.0 since CR</title>
+    <link rel="stylesheet" href="report.css" type="text/css" />
+    <link rel="stylesheet" href="/WAI/wai-main.css" type="text/css" />
+  </head>
+  <body>
+    <div id="controls">
+      <ul>
+        <li>
+          <a href="#main" shape="rect"
+            ><img src="/Icons/downinpage.png" alt="" /> Skip to content
+          </a>
+        </li>
+        <li>
+          <a href="/WAI/changedesign.html" shape="rect"
+            >| Change text size or colors
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="masthead">
+      <p id="logos">
+        <a href="http://www.w3.org/" title="W3C Home" shape="rect"
+          ><img
+            alt="W3C logo"
+            height="48"
+            src="/Icons/w3c_home"
+            width="72" /></a
+        ><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"
+          ><img
+            alt="Web Accessibility Initiative (WAI)         logo"
+            height="48"
+            src="/WAI/images/wai-temp"
+        /></a>
+      </p>
+    </div>
+    <div id="tagline">
+      <p>
+        WAI: Strategies, guidelines, resources to make the Web accessible to
+        people with disabilities
+      </p>
+    </div>
+    <p id="breadcrumbs">
+      <strong
+        >Site Navigation: <a href="http://www.w3.org/">W3C Home</a> &gt;
+        <a href="http://www.w3.org/WAI/">WAI Home</a> &gt;
+        <a href="/WAI/GL/WCAG20/implementation-report/"
+          >WCAG 2.0 Implementation Report
+        </a></strong
+      >
+    </p>
+    <div>
+      <h1>Changes to WCAG 2.0 since CR</h1>
+      <p>
+        <strong>Note:</strong> Links to the diff-marked version of the latest
+        Editor's draft have been included so that changes can be viewed in
+        context.
+      </p>
+      <div id="contents">
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#cat1">Significant</a></li>
+          <li><a href="#cat2">Clarifications</a></li>
+          <li><a href="#cat3">Editorial</a></li>
+        </ul>
+      </div>
+      <div id="cat1">
+        <h2>Significant changes</h2>
+        <p>
+          These changes affect the normative content of WCAG 2.0. However, the
+          Working Group believes they would not have adversely affected public
+          review of the document, and therefore did not require the document to
+          be re-issued as a Working Draft.
+        </p>
+        <ol>
+          <li>
+            Conformance -
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#conformance-partial-lang"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#conformance-partial-lang"
+              >Statement of partial conformance - language</a
+            >
+            - Addition
+            <ul>
+              <li>
+                A "statement of partial conformance due to language" may be
+                made, when the page does not conform, but would conform if
+                accessibility support existed for (all of) the language(s) used
+                on the page. The form of that statement would be, "This page
+                would conform to WCAG 2.0 at level X if accessibility support
+                existed for the following language(s):"
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-scale"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-scale"
+              >SC 1.4.4 (Resize text)</a
+            >
+            - Clarification
+            <ul>
+              <li>
+                <b>Except for captions and images of text, text</b> can be
+                resized without assistive technology up to 200 percent without
+                loss of content or functionality.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
 
-</li></ol>
-</div>
+      <div id="cat2">
+        <h2>Clarifications</h2>
+        <p>
+          These changes clarify WCAG 2.0 where implementation feedback was that
+          the requirements were not clear. They do not consitute a change in the
+          Working Group's <em>intended</em> meaning, even if they appear to
+          change meaning.
+        </p>
+        <ol>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#media-equiv"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#media-equiv"
+              >SC 1.2.1, 1.2.3, 1.2.8, 1.2.9</a
+            >
+            - Alternatives for time-based media - Clarification
+            <ul>
+              <li>
+                <a
+                  href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#alt-time-based-mediadef"
+                  class="external text"
+                  title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#alt-time-based-mediadef"
+                  >Replace the term</a
+                >
+                <b
+                  >A full text alternative for synchronized media including any
+                  interaction</b
+                >
+                with <b>An alternative for time-based media</b>
+              </li>
+              <li>Clarify definition</li>
+              <li>
+                Use "alternatives for time-based media" consistently for all
+                relevant Success Criteria
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-noaudio"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-noaudio"
+              >SC 1.4.7 (Low or No Background Audio)</a
+            >
+            - Clarification:
+            <ul>
+              <li>
+                <em> Changed: -</em> For<b> audio</b> content that (1) contains
+                speech in the foreground, (2) is not an audio CAPTCHA at least
+                one of the following is true: (Level AAA)
+                <ul>
+                  <li>
+                    No Background: The audio does not contain background sounds.
+                  </li>
+                  <li>Turn Off: The background sounds can be turned off.</li>
+                  <li>
+                    20 dB: The background sounds are at least 20 decibels lower
+                    than the foreground speech content, with the exception of
+                    occasional sound <b>effects</b>.
+                  </li>
+                </ul>
+                <em>to ---- </em>For <b>prerecorded audio-only content</b> that
+                (1) contains <b>primarily</b> speech in the foreground, (2) is
+                not an audio CAPTCHA
+                <b>
+                  or audio logo, and (3) is not vocalization intended to be
+                  primarily musical expression such as singing or rapping</b
+                >, at least one of the following is true: (Level AAA)
+                <ul>
+                  <li>
+                    No Background: The audio does not contain background sounds.
+                  </li>
+                  <li>Turn Off: The background sounds can be turned off.</li>
+                  <li>
+                    20 dB: The background sounds are at least 20 decibels lower
+                    than the foreground speech content, with the exception of
+                    occasional sound<b
+                      >s that last for only one or two seconds</b
+                    >.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#meaning-supplements"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#meaning-supplements"
+              >SC 3.1.5 (Reading Level)</a
+            >
+            - Clarification:
+            <ul>
+              <li>
+                Change to when text requires reading ability more advanced than
+                the lower secondary education level
+                <b>after removal of proper names and titles</b>, supplemental
+                content, or a version that does not require reading ability more
+                advanced than the lower secondary education level, is available.
+              </li>
+            </ul>
+          </li>
+          <li>
+            General - "Accessibility Supported Technology" changed to "Ways of
+            using technology that are accessibility supported" - Clarification
+            in the following locations:
+            <ul>
+              <li>
+                Introduction - "Accessibility Supported" in
+                <a
+                  href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#new-terms"
+                  class="external text"
+                  title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#new-terms"
+                  >Important Terms in WCAG 2.0</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#cc4"
+                  class="external text"
+                  title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#cc4"
+                  >Conformance section</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#accessibility-supporteddef"
+                  class="external text"
+                  title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#accessibility-supporteddef"
+                  >Definition of "accessibility supported"</a
+                >
+              </li>
+              <li>Understanding Document, Appendix B</li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#text-altdef"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#text-altdef"
+              >Definition of "text alternative"</a
+            >
+            - Clarification
+            <ul>
+              <li>
+                <em>Change -</em> "<b>programmatically determined</b> text that
+                is <b>used in place of</b> non-text content<b
+                  >, or text that is used in addition to non-text content and
+                  referred to from the programmatically determined
+                  (programmatically determinable) text</b
+                >"
+                <br />
+                <em>to ----</em> "Text that is
+                <b>programmatically associated with</b> non-text content
+                <b
+                  >or referred to from text that is programmatically associated
+                  with non-text content. Programmatically associated text is
+                  text whose location can be programatically determined from the
+                  non-text content.</b
+                >"
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
 
-<div id="cat2">
-    <h2>Clarifications</h2>
-    <p>These changes clarify WCAG 2.0 where implementation feedback was that the requirements were not clear. They do not consitute a change in the Working Group's <em>intended</em> meaning, even if they appear to change meaning.</p>
-    <ol><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#media-equiv" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#media-equiv">SC 1.2.1, 1.2.3, 1.2.8, 1.2.9</a> - Alternatives for time-based media - Clarification
-<ul><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#alt-time-based-mediadef" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#alt-time-based-mediadef">Replace the term</a> <b>A full text alternative for synchronized media including any interaction</b> with <b>An alternative for time-based media</b>
-</li><li> Clarify definition
-</li><li> Use "alternatives for time-based media" consistently for all relevant Success Criteria
+      <div id="cat3">
+        <h2>Editorial changes</h2>
+        <p>
+          These are editorial changes for clarification and to correct errors
+          which should have no impact on the substance of WCAG 2.0.
+        </p>
+        <ol>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#text-equiv-all"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#text-equiv-all"
+              >SC 1.1.1 (Non-text Content)</a
+            >
+            - Clarification
+            <ul>
+              <li>
+                <em> Change -</em> "If non-text content is a test or exercise
+                that <b>must be presented in non-text format</b>, then text
+                alternatives at least provide descriptive identification of the
+                non-text content."
+                <br />
+                <em>to ----</em> " If non-text content is a test or exercise
+                that <b>would be invalid if presented in text</b>, then text
+                alternatives at least provide descriptive identification of the
+                non-text content."
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#media-equiv-extended-ad"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#media-equiv-extended-ad"
+              >SC 1.2.7 Audio Description (Extended)</a
+            >
+            - Clarification (Pulled text from the normative definition and put
+            into the SC to make it clearer)
 
-</li></ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-noaudio" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-noaudio">SC 1.4.7 (Low or No Background Audio)</a> - Clarification:
-<ul><li><em> Changed:  -</em> For<b> audio</b> content that (1) contains  speech in the foreground, (2) is not an audio CAPTCHA  at least one of the following is true: (Level AAA) 
-<ul><li> No Background: The audio does not contain background sounds.
-</li>
-	<li>Turn Off: The background sounds can be turned off. </li>
-	<li>20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sound <b>effects</b>. </li>
-</ul>
-	<em>to ---- </em>For  <b>prerecorded audio-only content</b> that (1) contains  <b>primarily</b> speech in the foreground, (2) is not an audio CAPTCHA <b> or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping</b>, at least one of the following is true: (Level AAA) 
-	<ul><li> No Background: The audio does not contain background sounds.
-	</li><li>Turn Off: The background sounds can be turned off.
-	</li><li>20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sound<b>s that last for only one or two seconds</b>.
-		
-	</li></ul>
-		</li>
-</ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#meaning-supplements" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#meaning-supplements">SC 3.1.5 (Reading Level)</a> - Clarification:
-<ul><li> Change to when text requires reading ability more advanced than the lower secondary education level <b>after removal of proper names and titles</b>, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.
-</li></ul>
-</li>
-<li> General - "Accessibility Supported Technology" changed to "Ways of using technology that are accessibility supported" -  Clarification in the following locations:
-	<ul><li>Introduction -  "Accessibility Supported" in <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#new-terms" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#new-terms">Important Terms in WCAG 2.0</a>
-		
-	</li>
-	<li><a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#cc4" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#cc4">Conformance section</a>	</li>
-	<li><a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#accessibility-supporteddef" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#accessibility-supporteddef">Definition of "accessibility supported"</a>	</li>
-	<li> Understanding Document, Appendix B	</li>
-</ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#text-altdef" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#text-altdef">Definition of "text alternative"</a> - Clarification 
-<ul><li> <em>Change -</em> "<b>programmatically determined</b> text that is <b>used in place of</b> non-text content<b>, or text that is used in addition to non-text content and referred to from the programmatically determined (programmatically determinable) text</b>" 
-<br/>
-<em>to ----</em> "Text that is <b>programmatically associated with</b> non-text content <b>or referred to from text that is programmatically associated with non-text content. Programmatically associated text is text whose location can be programatically determined from the non-text content.</b>"
-</li></ul>
-</li></ol>
-</div>
-
-<div id="cat3">
-	<h2>Editorial changes</h2>
-	<p>These are editorial  changes for clarification and to correct errors which should have no impact on the substance of WCAG 2.0. </p>
-	<ol><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#text-equiv-all" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#text-equiv-all">SC 1.1.1 (Non-text Content)</a> - Clarification 
-<ul><li><em> Change  -</em>    "If non-text content is a test or exercise that <b>must be presented in non-text format</b>, then text alternatives at least provide descriptive identification of the non-text content." 
-		<br />
-		<em>to  ----</em> " If non-text content is a test or exercise that <b>would be invalid if presented in text</b>, then text alternatives at least provide descriptive identification of the non-text content."
-	</li>
-	</ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#media-equiv-extended-ad" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#media-equiv-extended-ad">SC 1.2.7 Audio Description (Extended)</a> - Clarification (Pulled text from the normative definition and put into the SC to make it clearer)
-
-<ul><li> <b>Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video,</b> extended audio description is provided for all prerecorded video content in synchronized media.
-</li></ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-contrast" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-contrast">SC 1.4.3</a> and <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast7" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast7">1.4.6</a> (Contrast) -  Clarify <b>Incidental</b> clause.
-<ul><li> <em>Change -</em> "Text or images of text that are part of an inactive user interface component, that are pure decoration, that are <b>incidental text in an image, or that are </b> not visible to anyone, have no <b>minimum</b> contrast requirement."<br />
-			<em>to  ----</em> "Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, <b>or that are part of a picture that contains significant other visual content,</b> have no contrast requirement."
-</li>
-</ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-visual-presentation" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-visual-presentation">SC 1.4.8 (Visual Presentation)</a> - Clarification
-<ul><li> Change "text <b>is</b> resized without assistive technology up to 200 percent ..."<br />
-	 to "text <b>can be </b> resized without assistive technology up to 200 percent ..."
-
-</li></ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#keyboard-operation-trapping" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#keyboard-operation-trapping">SC 2.1.2 (No Keyboard Trap)</a> - Clarification
-<ul><li> Add additional clause "If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys <b>or other standard exit methods</b>, the user is advised of the method for moving focus away."
-</li></ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#time-limits-required-behaviors" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#time-limits-required-behaviors">SC 2.2.1 (Timing Adjustable)</a> - Clarification
-<ul><li> Previous Note: "This success criterion acts to ensure that changes in content or context as a result of a time limit will not occur unexpectedly, which could prevent users from completing tasks. While exceptions to Success Criterion 2.2.1 where timing is essential exist, guideline 2.2 in general limits changes in content to those places where there is no other option. This success criterion should be considered in conjunction with Success Criterion 3.2.1 which puts limits on changes of content or context as a result of user action." 
-
-</li><li> New Note: "This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with  Success Criterion 3.2.1 which puts limits on changes of content or context as a result of user action."
-</li></ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#time-limits-pause" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#time-limits-pause">SC 2.2.2 (Pause, Stop Hide)</a> - Clarification
-<ul>
-	<li><em> Change  - </em>Auto-updating clause from "For any auto-updating information that (1) starts automatically <b>, (2) lasts more than three seconds, and (3)</b> is presented in parallel with other content, there is a mechanism ..."<br />
-	 		<em>to  ----</em> "For any auto-updating information that (1) starts automatically <b>and (2)</b> is presented in parallel with other content, there is a mechanism ..."</li>
-	<li> <em>Change -</em>  Note 3 "Content that is <b>updated from a process, real-time or remote stream</b> is not required to preserve or present information that is ..."<br />
-	 		<em>to ----</em> Note 3 "Content that is <b>automatically updated periodically by software, or that is streamed to the user agent</b> is not required to preserve or present information that is ..."</li>
-</ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff.html#cc5" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff.html#cc5">Clarification of Conformance Requirement 5 (diff-marked version)</a> 
-<ul><li> Note that the apparent large block of added text at the bottom is just a reformatting of the paragraph directly below it (shown as deleted in the diff-marked version)
-
-</li></ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#cc2" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#cc2">Conformance Requirement 2</a>, Note 1 - Clarification
-<ul>
-	<li> <em>Change -</em> Note 1: For the purpose of determining conformance, <b> a conforming alternative </b> to part of a page's content <b>is </b> considered part of the page when the <b> alternative content is obtainable</b> directly from the page, e.g., a long description.<br />
-		<em>to ----</em> Note 1: For the purpose of determining conformance, <b>alternatives</b> to part of a page's content <b>are</b> considered part of the page when the <b> alternatives can be obtained </b> directly from the page, e.g., a long description <b> or an alternative presentation of a video.</b>.</li>
-</ul>
-
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#conformance-partial" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#conformance-partial">Statement of partial conformance - third party content</a> - Clarification
-<ul>
-	<li> <em>Change -</em> A "statement of partial conformance" may be made, that the page does not conform, but could conform if certain parts were removed. The form of that statement would be, "This page would conform to WCAG 2.0 at level X if the following parts from uncontrolled sources were removed." In addition, the following would also be true of  <b> the non-conforming content that is excluded </b> in the statement of partial conformance:<br />
-		<em>to ----</em> A "statement of partial conformance" may be made, that the page does not conform, but could conform if certain parts were removed. The form of that statement would be, "This page <b> does not conform, but</b> would conform to WCAG 2.0 at level X if the following parts from uncontrolled sources were removed." In addition, the following would also be true of <b> uncontrolled content that is described </b> in the statement of partial conformance:</li>
-</ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#context-sensitivehelpdef" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#context-sensitivehelpdef">Definition of context-sensitive help</a> - Clarification (added the note that is already in Understanding document so it also is in the definition)
-<ul><li> <b>Note: Clear labels can act as context-sensitive help.</b>
-</li></ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#larger-scaledef" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#larger-scaledef">Definition of large scale text</a> - Clarification of Note 3
-<ul><li> <em>Change: -</em> Note 3: The actual size of the character that a user sees is dependent both on the author-defined size and the users display or user-agent settings. <b> This success criterion is based on common pixel sizes available today.</b> Users who have low vision would be responsible for choosing appropriate settings.<br /> 
-		<em>to ----</em> Note 3: The actual size of the character that a user sees is dependent both on the author-defined size and the users display or user-agent settings.<b> For many mainstream body text fonts, 14 and 18 point is roughly equivalent to 1.2 and 1.5 em or to 120% or 150% of the default size for body text (assuming that the body font is 100%), but authors would need to check this for the particular fonts in use. When fonts are defined in relative units, the actual point size is calculated by the user agent for display. The point size should be obtained from the user agent, or calculated based on font metrics as the user agent does, when evaluating this success criterion. </b> Users who have low vision would be responsible for choosing appropriate settings.
-</li>
-</ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#larger-scaledef" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#larger-scaledef">Definition of large scale text</a> - Clarified by adding a Note 5 and changing definition so terms agree:
-<ul><li> <b>Note 5: The 18 and 14 point sizes for roman texts are taken from the minimum size for large print (14pt) and the larger standard font size (18pt). For other fonts such as CJK languages the "equivalent" sizes would the the minimum large print size used for those languages and the next larger standard large print size. </b>
-</li><li> and change  <b>"equivalent stroke width"</b> to <b>"equivalent size"</b> in the definition for agreement of terms
-
-</li></ul>
-</li><li> <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#fullscreenwindowdef" class="external text" title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#fullscreenwindowdef">Definition of "on a full-screen window"</a>  - Clarification by adding a new note: 
-<ul><li><b> Note(new): Since people generally keep their computers for several years, it is best not to rely on the latest desktop/laptop display resolutions but to consider the common desktop/laptop display resolutions over the course of several years when making this evaluation.</b>
-</li></ul>
-</li></ol>
-</div>
-
-</div>
-<div id="footer">
-	<h2>Document Information</h2>
-	<p><strong>Content last updated:</strong> 29 October 2008</p>
-	<p>[<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]</p>
-	<div class="copyright">
-		<p><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright" shape="rect">Copyright</a> © 1994-2008 <a href="/" shape="rect"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>), All Rights Reserved. W3C <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer" shape="rect">liability</a>, <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks" shape="rect">trademark</a>, <a rel="Copyright" href="/Consortium/Legal/copyright-documents" shape="rect">document use</a> and <a rel="Copyright" href="/Consortium/Legal/copyright-software" shape="rect">software
-			licensing</a> rules apply. Your interactions with this site are in
-			accordance with our <a href="/Consortium/Legal/privacy-statement#Public" shape="rect">public</a> and <a href="/Consortium/Legal/privacy-statement#Members" shape="rect">Member</a> privacy
-			statements.</p>
-	</div>
-</div>
-</body>
+            <ul>
+              <li>
+                <b
+                  >Where pauses in foreground audio are insufficient to allow
+                  audio descriptions to convey the sense of the video,</b
+                >
+                extended audio description is provided for all prerecorded video
+                content in synchronized media.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-contrast"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-contrast"
+              >SC 1.4.3</a
+            >
+            and
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast7"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast7"
+              >1.4.6</a
+            >
+            (Contrast) - Clarify <b>Incidental</b> clause.
+            <ul>
+              <li>
+                <em>Change -</em> "Text or images of text that are part of an
+                inactive user interface component, that are pure decoration,
+                that are <b>incidental text in an image, or that are </b> not
+                visible to anyone, have no <b>minimum</b> contrast
+                requirement."<br />
+                <em>to ----</em> "Text or images of text that are part of an
+                inactive user interface component, that are pure decoration,
+                that are not visible to anyone,
+                <b
+                  >or that are part of a picture that contains significant other
+                  visual content,</b
+                >
+                have no contrast requirement."
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-visual-presentation"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#visual-audio-contrast-visual-presentation"
+              >SC 1.4.8 (Visual Presentation)</a
+            >
+            - Clarification
+            <ul>
+              <li>
+                Change "text <b>is</b> resized without assistive technology up
+                to 200 percent ..."<br />
+                to "text <b>can be </b> resized without assistive technology up
+                to 200 percent ..."
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#keyboard-operation-trapping"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#keyboard-operation-trapping"
+              >SC 2.1.2 (No Keyboard Trap)</a
+            >
+            - Clarification
+            <ul>
+              <li>
+                Add additional clause "If keyboard focus can be moved to a
+                component of the page using a keyboard interface, then focus can
+                be moved away from that component using only a keyboard
+                interface, and, if it requires more than unmodified arrow or tab
+                keys <b>or other standard exit methods</b>, the user is advised
+                of the method for moving focus away."
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#time-limits-required-behaviors"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#time-limits-required-behaviors"
+              >SC 2.2.1 (Timing Adjustable)</a
+            >
+            - Clarification
+            <ul>
+              <li>
+                Previous Note: "This success criterion acts to ensure that
+                changes in content or context as a result of a time limit will
+                not occur unexpectedly, which could prevent users from
+                completing tasks. While exceptions to Success Criterion 2.2.1
+                where timing is essential exist, guideline 2.2 in general limits
+                changes in content to those places where there is no other
+                option. This success criterion should be considered in
+                conjunction with Success Criterion 3.2.1 which puts limits on
+                changes of content or context as a result of user action."
+              </li>
+              <li>
+                New Note: "This success criterion helps ensure that users can
+                complete tasks without unexpected changes in content or context
+                that are a result of a time limit. This success criterion should
+                be considered in conjunction with Success Criterion 3.2.1 which
+                puts limits on changes of content or context as a result of user
+                action."
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#time-limits-pause"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#time-limits-pause"
+              >SC 2.2.2 (Pause, Stop Hide)</a
+            >
+            - Clarification
+            <ul>
+              <li>
+                <em> Change - </em>Auto-updating clause from "For any
+                auto-updating information that (1) starts automatically
+                <b>, (2) lasts more than three seconds, and (3)</b> is presented
+                in parallel with other content, there is a mechanism ..."<br />
+                <em>to ----</em> "For any auto-updating information that (1)
+                starts automatically <b>and (2)</b> is presented in parallel
+                with other content, there is a mechanism ..."
+              </li>
+              <li>
+                <em>Change -</em> Note 3 "Content that is
+                <b>updated from a process, real-time or remote stream</b> is not
+                required to preserve or present information that is ..."<br />
+                <em>to ----</em> Note 3 "Content that is
+                <b
+                  >automatically updated periodically by software, or that is
+                  streamed to the user agent</b
+                >
+                is not required to preserve or present information that is ..."
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff.html#cc5"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff.html#cc5"
+              >Clarification of Conformance Requirement 5 (diff-marked
+              version)</a
+            >
+            <ul>
+              <li>
+                Note that the apparent large block of added text at the bottom
+                is just a reformatting of the paragraph directly below it (shown
+                as deleted in the diff-marked version)
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#cc2"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#cc2"
+              >Conformance Requirement 2</a
+            >, Note 1 - Clarification
+            <ul>
+              <li>
+                <em>Change -</em> Note 1: For the purpose of determining
+                conformance, <b> a conforming alternative </b> to part of a
+                page's content <b>is </b> considered part of the page when the
+                <b> alternative content is obtainable</b> directly from the
+                page, e.g., a long description.<br />
+                <em>to ----</em> Note 1: For the purpose of determining
+                conformance, <b>alternatives</b> to part of a page's content
+                <b>are</b> considered part of the page when the
+                <b> alternatives can be obtained </b> directly from the page,
+                e.g., a long description
+                <b> or an alternative presentation of a video.</b>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#conformance-partial"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#conformance-partial"
+              >Statement of partial conformance - third party content</a
+            >
+            - Clarification
+            <ul>
+              <li>
+                <em>Change -</em> A "statement of partial conformance" may be
+                made, that the page does not conform, but could conform if
+                certain parts were removed. The form of that statement would be,
+                "This page would conform to WCAG 2.0 at level X if the following
+                parts from uncontrolled sources were removed." In addition, the
+                following would also be true of
+                <b> the non-conforming content that is excluded </b> in the
+                statement of partial conformance:<br />
+                <em>to ----</em> A "statement of partial conformance" may be
+                made, that the page does not conform, but could conform if
+                certain parts were removed. The form of that statement would be,
+                "This page <b> does not conform, but</b> would conform to WCAG
+                2.0 at level X if the following parts from uncontrolled sources
+                were removed." In addition, the following would also be true of
+                <b> uncontrolled content that is described </b> in the statement
+                of partial conformance:
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#context-sensitivehelpdef"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#context-sensitivehelpdef"
+              >Definition of context-sensitive help</a
+            >
+            - Clarification (added the note that is already in Understanding
+            document so it also is in the definition)
+            <ul>
+              <li>
+                <b>Note: Clear labels can act as context-sensitive help.</b>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#larger-scaledef"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#larger-scaledef"
+              >Definition of large scale text</a
+            >
+            - Clarification of Note 3
+            <ul>
+              <li>
+                <em>Change: -</em> Note 3: The actual size of the character that
+                a user sees is dependent both on the author-defined size and the
+                users display or user-agent settings.
+                <b>
+                  This success criterion is based on common pixel sizes
+                  available today.</b
+                >
+                Users who have low vision would be responsible for choosing
+                appropriate settings.<br />
+                <em>to ----</em> Note 3: The actual size of the character that a
+                user sees is dependent both on the author-defined size and the
+                users display or user-agent settings.<b>
+                  For many mainstream body text fonts, 14 and 18 point is
+                  roughly equivalent to 1.2 and 1.5 em or to 120% or 150% of the
+                  default size for body text (assuming that the body font is
+                  100%), but authors would need to check this for the particular
+                  fonts in use. When fonts are defined in relative units, the
+                  actual point size is calculated by the user agent for display.
+                  The point size should be obtained from the user agent, or
+                  calculated based on font metrics as the user agent does, when
+                  evaluating this success criterion.
+                </b>
+                Users who have low vision would be responsible for choosing
+                appropriate settings.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#larger-scaledef"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#larger-scaledef"
+              >Definition of large scale text</a
+            >
+            - Clarified by adding a Note 5 and changing definition so terms
+            agree:
+            <ul>
+              <li>
+                <b
+                  >Note 5: The 18 and 14 point sizes for roman texts are taken
+                  from the minimum size for large print (14pt) and the larger
+                  standard font size (18pt). For other fonts such as CJK
+                  languages the "equivalent" sizes would the the minimum large
+                  print size used for those languages and the next larger
+                  standard large print size.
+                </b>
+              </li>
+              <li>
+                and change <b>"equivalent stroke width"</b> to
+                <b>"equivalent size"</b> in the definition for agreement of
+                terms
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#fullscreenwindowdef"
+              class="external text"
+              title="http://www.w3.org/TR/2008/PR-WCAG20-20081103/Overview-diff#fullscreenwindowdef"
+              >Definition of "on a full-screen window"</a
+            >
+            - Clarification by adding a new note:
+            <ul>
+              <li>
+                <b>
+                  Note(new): Since people generally keep their computers for
+                  several years, it is best not to rely on the latest
+                  desktop/laptop display resolutions but to consider the common
+                  desktop/laptop display resolutions over the course of several
+                  years when making this evaluation.</b
+                >
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div id="footer">
+      <h2>Document Information</h2>
+      <p><strong>Content last updated:</strong> 29 October 2008</p>
+      <p>[<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]</p>
+      <div class="copyright">
+        <p>
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/ipr-notice#Copyright"
+            shape="rect"
+            >Copyright</a
+          >
+          © 1994-2008
+          <a href="/" shape="rect"
+            ><acronym title="World Wide Web Consortium">W3C</acronym></a
+          ><sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"
+            ><acronym title="Massachusetts Institute of Technology"
+              >MIT</acronym
+            ></a
+          >,
+          <a href="http://www.ercim.org/" shape="rect"
+            ><acronym
+              title="European Research Consortium for Informatics and Mathematics"
+              >ERCIM</acronym
+            ></a
+          >, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>), All Rights
+          Reserved. W3C
+          <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer" shape="rect"
+            >liability</a
+          >,
+          <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks" shape="rect"
+            >trademark</a
+          >,
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/copyright-documents"
+            shape="rect"
+            >document use</a
+          >
+          and
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/copyright-software"
+            shape="rect"
+            >software licensing</a
+          >
+          rules apply. Your interactions with this site are in accordance with
+          our
+          <a href="/Consortium/Legal/privacy-statement#Public" shape="rect"
+            >public</a
+          >
+          and
+          <a href="/Consortium/Legal/privacy-statement#Members" shape="rect"
+            >Member</a
+          >
+          privacy statements.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>

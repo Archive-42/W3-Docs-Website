@@ -1,1122 +1,2613 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zh-hans" dir="ltr" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1633578570351143841"
+    />
 
-<title> 无障碍原则 | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="无障碍原则" />
-<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
-<meta property="og:locale" content="zh_hans" />
-<meta name="description" content="网站、web应用程序、浏览器和其他工具的基本web无障碍需求概述。" />
-<meta property="og:description" content="网站、web应用程序、浏览器和其他工具的基本web无障碍需求概述。" />
-<link rel="canonical" href="https://www.w3.org/WAI/fundamentals/accessibility-principles/zh-hans" />
-<meta property="og:url" content="https://www.w3.org/WAI/fundamentals/accessibility-principles/zh-hans" />
-<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png" />
-<meta property="twitter:title" content="无障碍原则" />
-<meta name="twitter:site" content="@w3c_wai" />
-<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
-<script type="application/ld+json">
-{"description":"网站、web应用程序、浏览器和其他工具的基本web无障碍需求概述。","@type":"WebPage","image":"https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png","headline":"无障碍原则","url":"https://www.w3.org/WAI/fundamentals/accessibility-principles/zh-hans","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+    <title>无障碍原则 | Web Accessibility Initiative (WAI) | W3C</title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <meta name="generator" content="Jekyll v4.2.0" />
+    <meta property="og:title" content="无障碍原则" />
+    <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+    <meta property="og:locale" content="zh_hans" />
+    <meta
+      name="description"
+      content="网站、web应用程序、浏览器和其他工具的基本web无障碍需求概述。"
+    />
+    <meta
+      property="og:description"
+      content="网站、web应用程序、浏览器和其他工具的基本web无障碍需求概述。"
+    />
+    <link
+      rel="canonical"
+      href="https://www.w3.org/WAI/fundamentals/accessibility-principles/zh-hans"
+    />
+    <meta
+      property="og:url"
+      content="https://www.w3.org/WAI/fundamentals/accessibility-principles/zh-hans"
+    />
+    <meta
+      property="og:site_name"
+      content="Web Accessibility Initiative (WAI)"
+    />
+    <meta
+      property="og:image"
+      content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image"
+      content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png"
+    />
+    <meta property="twitter:title" content="无障碍原则" />
+    <meta name="twitter:site" content="@w3c_wai" />
+    <meta
+      name="twitter:creator"
+      content="@W3C Web Accessibility Initiative (WAI)"
+    />
+    <script type="application/ld+json">
+      {
+        "description": "网站、web应用程序、浏览器和其他工具的基本web无障碍需求概述。",
+        "@type": "WebPage",
+        "image": "https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png",
+        "headline": "无障碍原则",
+        "url": "https://www.w3.org/WAI/fundamentals/accessibility-principles/zh-hans",
+        "author": {
+          "@type": "Person",
+          "name": "W3C Web Accessibility Initiative (WAI)"
+        },
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
 
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+  </head>
 
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
-</head>
-
-  <body id="top" class="page-无障碍原则 ">
+  <body id="top" class="page-无障碍原则">
     <nav aria-label="跳过链接和语言选择器" id="controls" class="default-grid">
-  <ul>
-      <li><a href="#main">跳到内容</a></li>
-      <li class="opt"><a href="/WAI/meta/customize/">更改文本大小或颜色</a></li>
-      <li class="opt languagelist">
+      <ul>
+        <li><a href="#main">跳到内容</a></li>
+        <li class="opt">
+          <a href="/WAI/meta/customize/">更改文本大小或颜色</a>
+        </li>
+        <li class="opt languagelist">
           <strong>当前语言为：</strong>
-          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/" lang="en"  dir="auto" translate="no">English</a></li><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ar" lang="ar"  dir="auto" translate="no">العربية</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/cs" lang="cs"  dir="auto" translate="no">čeština</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/es" lang="es"  dir="auto" translate="no">español</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/fr" lang="fr"  dir="auto" translate="no">français</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ko" lang="ko"  dir="auto" translate="no">한국어</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ru" lang="ru"  dir="auto" translate="no">русский язык</a></li>
-          <li><strong style="text-transform: capitalize;">简体汉语</strong></li>
+          <ul class="languagelistul">
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/"
+                lang="en"
+                dir="auto"
+                translate="no"
+                >English</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ar"
+                lang="ar"
+                dir="auto"
+                translate="no"
+                >العربية</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/cs"
+                lang="cs"
+                dir="auto"
+                translate="no"
+                >čeština</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/es"
+                lang="es"
+                dir="auto"
+                translate="no"
+                >español</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/fr"
+                lang="fr"
+                dir="auto"
+                translate="no"
+                >français</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ko"
+                lang="ko"
+                dir="auto"
+                translate="no"
+                >한국어</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ru"
+                lang="ru"
+                dir="auto"
+                translate="no"
+                >русский язык</a
+              >
+            </li>
+            <li>
+              <strong style="text-transform: capitalize">简体汉语</strong>
+            </li>
           </ul>
         </li>
         <li class="opt">
-          <a href="/WAI/translations/">所有翻译 <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/"
+            >所有翻译
+            <svg focusable="false" aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
         </li>
-        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> 显示定制，语言，翻译' data-hidetext='隐藏选项'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> 显示定制，语言，翻译</button></li>
+        <li>
+          <button
+            id="showoptions"
+            data-showhidebuttonid="header-showoptions"
+            class="showhidebutton button-inline"
+            data-target="#controls .opt"
+            aria-expanded="false"
+            data-large-aria-expanded="true"
+            data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> 显示定制，语言，翻译'
+            data-hidetext="隐藏选项"
+          >
+            <svg focusable="false" aria-hidden="true" class="icon-languages">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-languages"
+              ></use>
+            </svg>
+            显示定制，语言，翻译
+          </button>
+        </li>
       </ul>
     </nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
- 
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>使残疾人能够访问Web的策略、标准和资源。</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> 菜单</span></button>
-  </div>
-
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">搜索:</span>
-              <input id="header-search" type="search" name="q" placeholder="搜索" aria-label="搜索">
-            </label>
-            
-            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="提交搜索" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
-          </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="主导航" lang="zh-hans"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="面包屑导航" lang="en">
-  <ul style="align-self: center;">
-    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="zh-hans" href="/WAI/fundamentals/accessibility-principles/zh-hans" aria-current="page"><span>无障碍原则</span></a></li></ul>
-</nav>
-    <div class="default-grid with-gap leftcol">
-
-  
-    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
-      <ul class="sidenav--list">
-  <li>
-  <a lang="en" href="/WAI/fundamentals/" class="page-link"><span>Accessibility Fundamentals</span></a></li><li>
-  <a lang="zh-hans" href="/WAI/fundamentals/accessibility-intro/zh-hans" class="page-link"><span>Web无障碍简介</span></a><ul><li>
-  <a lang="zh-hans" href="/WAI/videos/standards-and-benefits/zh-hans" class="page-link"><span>视频介绍</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/fundamentals/foundations-course/" class="page-link"><span>Foundations Online Course</span></a></li><li>
-  <a lang="en" href="/WAI/fundamentals/components/" class="page-link"><span>Components of Web Accessibility</span></a></li><li>
-  <a lang="zh-hans" href="/WAI/fundamentals/accessibility-principles/zh-hans" aria-current="page" class="page-link"><span>无障碍原则</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/" class="page-link"><span>Perspectives Videos</span></a><ul><li>
-  <a lang="en" href="/WAI/perspective-videos/keyboard/" class="page-link"><span>Keyboard Compatibility</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/contrast/" class="page-link"><span>Colors with Good Contrast</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/layout/" class="page-link"><span>Clear Layout and Design</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/speech/" class="page-link"><span>Text to Speech</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/controls/" class="page-link"><span>Large Links, Buttons, and Controls</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/captions/" class="page-link"><span>Video Captions</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/customizable/" class="page-link"><span>Customizable Text</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/voice/" class="page-link"><span>Speech Recognition</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/understandable/" class="page-link"><span>Understandable Content</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/notifications/" class="page-link"><span>Notifications and Feedback</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/people-use-web/" class="page-link"><span>How People with Disabilities Use the Web</span></a><ul><li>
-  <a lang="en" href="/WAI/people-use-web/user-stories/" class="page-link"><span>Stories of Web Users</span></a></li><li>
-  <a lang="en" href="/WAI/people-use-web/abilities-barriers/" class="page-link"><span>Diverse Abilities and Barriers</span></a></li><li>
-  <a lang="en" href="/WAI/people-use-web/tools-techniques/" class="page-link"><span>Tools and Techniques</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/older-users/" class="page-link"><span>Older Users and Accessibility</span></a><ul><li>
-  <a lang="en" href="/WAI/older-users/developing/" class="page-link"><span>How WCAG 2 Applies</span></a></li><li>
-  <a lang="en" href="/WAI/older-users/literature/" class="page-link"><span>Literature Review</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/fundamentals/accessibility-usability-inclusion/" class="page-link"><span>Accessibility, Usability, Inclusion</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
-        <header id="languagehead">语言/翻译</header>
-        <ul class="langlist">
-          <li style="margin-bottom: 2px;"><a href="/WAI/fundamentals/accessibility-principles/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ar" dir="auto" translate="no" lang="ar">العربية</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/cs" dir="auto" translate="no" lang="cs">čeština</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/fr" dir="auto" translate="no" lang="fr">français</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ko" dir="auto" translate="no" lang="ko">한국어</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ru" dir="auto" translate="no" lang="ru">русский язык</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">简体汉语</strong></li></ul><p><a href="/WAI/translations/#zh-hans">其他语言资源： 简体汉语</a></p>
-        
-        <p><a href="/WAI/translations/">所有翻译</a></p>
-        <p><a href="/WAI/about/translating/">翻译WAI的资源</a></p>
-      </nav>
-</div>
-  
-
-  <main id="main" lang="zh-hans">
-
-      
-
-    
-    <header>
-      <h1>
-      
-      
-      
-        无障碍原则
-      
-      </h1></header>
-    <section id="translation-info" class="doc-note-box doc-note-translation">
-  <h2 class="visuallyhidden">关于该翻译</h2>
-  <p>该志愿翻译可能不能准确地反映出<a href="/WAI/fundamentals/accessibility-principles/">英文原版内容</a>。</p>
-  
-  
-  <p><svg focusable="false" aria-hidden="true" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> 该翻译已与英文版本同步。
-    <br>翻译更新 <span dir="auto">2019-07-12</span>. 英文版本更新： <span dir="auto">2019-05-10</span>.
-   </p>
-  
-  
-  <p>
-    <strong>翻译者：</strong> <a href="https://lisongfeng.cn/index.php/start-page.html" rel="nofollow noopener" target="_blank">李松峰 <svg focusable="false" aria-label="new tab/window" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>, <a href="https://www.w3.org/people/roy" rel="nofollow noopener" target="_blank">冉若曦 <svg focusable="false" aria-label="new tab/window" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>. 
-    <br>WAI感谢这些翻译者们，并欢迎其他的<a href="/WAI/about/translating/">翻译</a>。</p>
-</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
-
-<p>本页面介绍了网站、web应用程序、浏览器和其他工具的一些web无障碍要求。它提供了从W3C web无障碍推进(WAI)到<a href="/WAI/people-use-web/user-stories/" hreflang="en">Web用户故事 (英文)</a>的国际标准的参考。</p>
-
-<p><strong>Note:</strong> 这不是所有无障碍需求的完整列表。</p>
-
-</div></aside>
-
-
-
-<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple box-h-full"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#standards" id="markdown-toc-standards">Web无障碍标准</a></li>
-  <li><a href="#perceivable" id="markdown-toc-perceivable">可感知信息和用户界面</a>    <ul>
-      <li><a href="#alternatives" id="markdown-toc-alternatives">用文本替代非文本内容</a></li>
-      <li><a href="#captions" id="markdown-toc-captions">多媒体的字幕及其他替代物</a></li>
-      <li><a href="#adaptable" id="markdown-toc-adaptable">内容有多种呈现方式</a></li>
-      <li><a href="#distinguishable" id="markdown-toc-distinguishable">内容的看和听更容易</a></li>
-    </ul>
-  </li>
-  <li><a href="#operable" id="markdown-toc-operable">可操作的用户界面和导航</a>    <ul>
-      <li><a href="#keyboard" id="markdown-toc-keyboard">可以通过键盘使用功能</a></li>
-      <li><a href="#time" id="markdown-toc-time">用户有充足的时间阅读和使用内容</a></li>
-      <li><a href="#safe" id="markdown-toc-safe">内容不要诱发癫痫和物理反应</a></li>
-      <li><a href="#navigable" id="markdown-toc-navigable">用户可以方便地导航、找到内容并确认自己在哪里</a></li>
-      <li><a href="#modalities" id="markdown-toc-modalities">用户可以使用除键盘外的不同输入方式</a></li>
-    </ul>
-  </li>
-  <li><a href="#understandable" id="markdown-toc-understandable">可理解的信息和用户界面</a>    <ul>
-      <li><a href="#readable" id="markdown-toc-readable">文本容易阅读和理解</a></li>
-      <li><a href="#predictable" id="markdown-toc-predictable">内容以可预测的方式出现和操作</a></li>
-      <li><a href="#tolerant" id="markdown-toc-tolerant">用户可以得到帮忙以避免和纠正错误</a></li>
-    </ul>
-  </li>
-  <li><a href="#robust" id="markdown-toc-robust">健壮的内容和可靠的解释</a>    <ul>
-      <li><a href="#compatible" id="markdown-toc-compatible">内容与现在和未来的用户工具兼容</a></li>
-    </ul>
-  </li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<div class="excol-all"></div>
-
-<h2 id="standards">Web无障碍标准</h2>
-
-<p>Web无障碍依赖几个相互联系的部分，包括：</p>
-
-<ul>
-  <li><strong id="webcontent">Web内容：</strong> - 指网站中的任意部分，如文本、图片、表单和多媒体，以及所有标记代码、脚本、应用，等等。</li>
-  <li><strong id="useragents">用户代理</strong> - 软件，用户通过它来访问Web内容，包括桌面图形界面浏览器、语音浏览器、手机浏览器、多媒体播放器、插件及一些辅助浏览技术。<a href="/WAI/people-use-web/tools-techniques/#at" title="definition" hreflang="en">辅助技术 (英文)</a>.</li>
-  <li><strong id="authoringtools">创作工具：</strong> - 软件或服务，用户使用它产生Web内容，包括代码编辑器、文档转换工具、内容管理系统、博客、数据库脚本，以及其他工具。</li>
-</ul>
-
-<details><summary>
-
-    <h3 class="no_toc" id="web">更多关于web无障碍的标准</h3>
-
-  </summary>
-  <div>
-
-    <p>这些部分相互关联并相互支持。例如， <strong>Web内容</strong> 需要包含图像的文本替代。 这些信息需要 <strong>web浏览器</strong> 处理同时被 <strong>辅助技术</strong>转换, 例如读屏软件. 为了创建文本替代，作者需要<strong>创作工具</strong> 来做这些工作. 更多的信息可在 <a href="/WAI/fundamentals/components/" hreflang="en">web无障碍的重要组成 (英文)</a>中找到.</p>
-
-    <p>标准在为每个组件定义无障碍需求方面扮演着重要的角色。一些无障碍需求很容易满足，但是了解残疾人如何使用Web的基本知识有助于更有效地实现这些需求。无障碍的某些方面需要更多的技术技能，也需要关于人们如何使用Web的高级知识。在所有情况下，<a href="/WAI/test-evaluate/involving-user/" hreflang="en">在整个web项目中早期让用户参与 (英文)</a>将使您的工作更好、更容易。</p>
-
-    <p>W3C的Web无障碍推进(WAI)提供了一组被国际公认为Web无障碍标准指南。这些包括:</p>
-
-    <ul>
-      <li><strong><a href="/WAI/standards-guidelines/wcag/" hreflang="en">Web内容无障碍指南 (WCAG) (英文)</a></strong></li>
-      <li><strong><a href="/WAI/standards-guidelines/uaag/" hreflang="en">用户代理无障碍指南 (UAAG) (英文)</a></strong></li>
-      <li><strong><a href="/WAI/standards-guidelines/atag/" hreflang="en">创作工具无障碍指南 (ATAG) (英文)</a></strong></li>
-    </ul>
-
-    <p>还有一个用于<strong><a href="https://www.w3.org/WAI/intro/aria.php">无障碍富网络应用(WAI-ARIA)</a></strong>的WAI规范，其中包括使用Ajax、JavaScript和相关web技术开发的动态内容和高级用户界面控件。</p>
-
-  </div>
-</details>
-
-<h2 id="perceivable">可感知信息和用户界面</h2>
-
-<h3 id="alternatives">用文本替代非文本内容</h3>
-
-<p>替代文本与非文内容是等价的。比如：</p>
-
-<ul>
-  <li>对图片（图标、按钮和图形）的简短描述；</li>
-  <li>图表、示意图和插图上数据的说明；</li>
-  <li>对音频和视频文件等非文本内容的简短说明；</li>
-  <li>表单控件、输入框等用户交互组件的标注。</li>
-</ul>
-
-<p>替代文本传达图片或功能的意图，提供等价的用户体验。比如，对搜索按钮的替代文本应该是“搜索”，而不是“放大镜”。</p>
-
-<p>替代文本的展示方式有很多种。比如，对看不见屏幕或视力不好的读者可以大声朗读出来，可以增大文本字号，也可以在盲文设备上显示。替代文本是控件和功能的标注，可以辅助键盘导航和语音识别导航（语音输入），也是识别音频、视频及其他格式文件乃至嵌入在网页中其他应用的标注。</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section">与替代文件相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#text-alternatives">指南 1.1 - 替代文本</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content">指南 1.1 - 替代内容</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a21">指南 A.2.1: （在开发工具界面中）应使用户可以使用替代内容</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">指南 A.2.2: （在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">指南 A.3.7: （在开发工具界面中）应保证预览应至少于市场中的用户代理的无障碍可访问性相同</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<details><summary>
-
-    <h4 id="stories-related-to-text-alternatives" class="no_toc">替代文本相关的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, 一个记者有重复性应激损伤 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, 听力障碍的在线学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, 盲人高级工作人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, 聋的盲人青年 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="captions">多媒体的字幕及其他替代物</h3>
-
-<p>听不见声音或看不见视频的人需要替代物。比如：</p>
-
-<ul>
-  <li>音频内容（如广播采访的录音）的文字版或字幕；</li>
-  <li>描述视频中重要影像细节的口述影像；</li>
-  <li>音频内容的手语表达，包括相应的受众体验。</li>
-</ul>
-
-<p>整理规范的文字稿应该提供场所或视觉信息，为读者提供基本的无障碍阅读体验，并作为字幕或口述影像的提炼基础。</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-1">与多媒体相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#time-based-media">指南 1.2 - 时基媒体</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content">指南 1.1 - 替代内容</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a21">指南 A.2.1:（在开发工具界面中）应使用户可以使用替代内容</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">指南 A.3.7:（在开发工具界面中）应保证预览应至少于市场中的用户代理的无障碍可访问性相同</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 id="stories-related-to-multimedia" class="no_toc">多媒体相关的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, 听力障碍的在线学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, 盲人高级工作人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, 聋的盲人青年 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="adaptable">内容有多种呈现方式</h3>
-
-<p>为针对不同用户以不同的方式呈现，内容必须：</p>
-
-<ul>
-  <li>正确地标记内容的结构，标题、列表、表格、输入字段，等等；</li>
-  <li>信息或指令的顺序适应任何呈现方式；</li>
-  <li>浏览器及辅助技术为定制不同的呈现方式提供便利。</li>
-</ul>
-
-<p>满足这个要求的内容可以被正确的读出、放大，或者改编以适应不同人群的需求及偏好。比如，可以自定义使用不同颜色、字号或其他样式来呈现，以方便阅读。这个要求也有助于其他形式的适配，包括自动生成内容大纲和摘要，从而让用户了解梗概并聚焦到特定部分。</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-2">与适应性相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#adaptable">指南 1.3 - 适应性</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-text-config">指南 1.4 - 文本配置</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-volume-config">指南 1.5 - 卷组态</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-speech-config">指南 1.6 - 合成语言配置</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config">指南 1.7 - 用户样式表配置</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views">指南 1.9 - 替代视图</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-info-link">指南 1.10 - 元素信息</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">指南 A.2.2: （在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">指南 A.3.7: （在开发工具界面中）应保证预览应至少于市场中的用户代理的无障碍可访问性相同</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-3">适应性相关的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, 有色盲的网上购物者 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, 一个记者有重复性应激损伤 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, 盲人高级工作人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, 唐氏综合症超市助理 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, 聋的盲人青年 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="distinguishable">内容的看和听更容易</h3>
-
-<p>便于区分的内容更容易看和听，比如：</p>
-
-<ul>
-  <li>不只使用颜色传达信息或标识内容；</li>
-  <li>默认的前景和背景色有足够高的对比度；</li>
-  <li>用户将文本放大到400%或增大文本间距时，内容不会丢失；</li>
-  <li>用户放大文本或使用小屏幕时，文本可以重排；</li>
-  <li>文本图片可以缩放或以实际文本替代，或尽可能避免使用；</li>
-  <li>用户可以暂停、停止或调整音频的音量；</li>
-  <li>背景音乐音量小且可以关闭，避免干扰和分神。</li>
-</ul>
-
-<p>满足这个要求有助于将前景和背景分离，让重要的信息更突出。这一条也涉及不使用辅助技术的人群，而对使用辅助技术的用户，音量过大或对比度过高也会导致注意力分散。比如，很多色盲用户不会使用特殊工具，直接依赖网页提供足够的色彩对比度。而对其他人来说，自动播放的音频可能干扰语音合成或 <a href="http://www.w3.org/WAI/training/accessible#ald" title="definition">助听设备 (ALDs)</a>.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-4">与可分辨性相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#distinguishable">指南 1.4 - 可辨别性</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-interaction-highlight">指南 1.3 - 高亮</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-text-config">指南 1.4 - 文本配置</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-volume-config">指南 1.5 - 卷组态</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-speech-config">指南 1.6 - 合成语言配置</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config">指南 1.7 - 用户样式表配置</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-viewport-orient">指南 1.8 - 视窗定位</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views">指南 1.9 - 替代视图</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-info-link">指南 1.10 - 元素信息</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">指南 A.3.7: （在开发工具界面中）应保证预览应至少于市场中的用户代理的无障碍可访问性相同</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-5">可分辨性的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, 有色盲的网上购物者 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, 听力障碍的在线学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, 盲人高级工作人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, 聋的盲人青年 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="operable">可操作的用户界面和导航</h2>
-
-<h3 id="keyboard">可以通过键盘使用功能</h3>
-
-<p>很多人不使用鼠标而依赖键盘来操作网页。这就要求使用键盘完全可以控制网页，包括表单控件、输入框及其他用户界面组件。</p>
-
-<p>键盘的无障碍性包括：</p>
-
-<ul>
-  <li>通过鼠标可以操控的功能，同样可以通过键盘实现；</li>
-  <li>键盘焦点不会被内容的任意部分卡住；</li>
-  <li>浏览器、创作工具及其他工具支持键盘操作。</li>
-</ul>
-
-<p>满足这个要求能帮助键盘用户，包括使用人体工程学键盘、屏幕软键盘或开关装置的人方便上网。同样，对于使用语音识别（语音输入）来操作网页和通过键盘输入的人同样有帮助。</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-6">与键盘无障碍相关的要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-accessible">指南 2.1 - 键盘可访问性</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-keyboard-access">指南 2.1 - 键盘访问</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation">指南 2.2 - 顺序导航</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation">指南 2.3 - 直接导航和激活</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-other-devices">指南 2.11 - 其他输入设备</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a31">指南 A.3.1: （在开发工具界面中）应提供对键盘访问的无障碍访问特性s</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-7">键盘无障碍的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, 一个记者有重复性应激损伤 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, 盲人高级工作人员 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="time">用户有充足的时间阅读和使用内容</h3>
-
-<p>阅读理解同样的内容，有人用的时间少，有人用的时间多。比如，有些人打字慢，理解慢，操作控件不熟练，最终导致使用网站的速度慢。</p>
-
-<p>所谓提供充足的时间，包括：</p>
-
-<ul>
-  <li>必要时提供解除、扩展和调整时间限制的机制；</li>
-  <li>提供暂停、停止或隐藏移动、闪烁或滚动内容的机制；</li>
-  <li>必要时延迟或避免打断用户；</li>
-  <li>会话超时后重新认证确保不丢失数据。</li>
-</ul>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-8">与充足时间相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#enough-time">指南 2.2 - 充足时间</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-time-independent">指南 2.8 - 时基交互</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-control-inaccessible-content">指南 2.10 - 时基媒体</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a32">指南 A.3.2:（在开发工具界面中）应向开发者提供足够的时间</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-9">充足时间的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, 一个记者有重复性应激损伤 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, 唐氏综合症超市助理 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, 聋的盲人青年 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="safe">内容不要诱发癫痫和物理反应</h3>
-
-<p>某种频率或图案的闪烁可能诱发光敏反应，包括癫痫。理想情况下，应该完全避免内容闪烁，或者如果无法避免也要确保不会导致已知风险。同样，动画及移动的内容也可能导致不适或物理反应。</p>
-
-<p>避免导致癫痫及物理反应的例子有：</p>
-
-<ul>
-  <li>不使用某种频率或图案的闪烁；</li>
-  <li>内容闪烁前对用户给出提示，同时提供替代方案；</li>
-  <li>除非必要，要让用户可以关掉动画。</li>
-</ul>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-10">与癫痫相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#seizures-and-physical-reactions">指南 2.3 - 癫痫</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-prevent-flash">指南 2.9 - 闪烁</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a33">指南 A.3.3: （在开发工具界面中）应帮助开发者以避免由闪烁引起的癫痫</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="navigable">用户可以方便地导航、找到内容并确认自己在哪里</h3>
-
-<p>组织得当的内容可以让用户随时定位自己并有效导航，比如：</p>
-
-<ul>
-  <li>页面标题表述适当，各部分标题也具有描述性；</li>
-  <li>在一组网页中有多种方式可以找到相关页面；</li>
-  <li>随时提醒用户在一组网页中的当前位置；</li>
-  <li>让用户可以跳过多个网页中都有的内容块；</li>
-  <li>键盘焦点可以看到，且焦点顺序有意义；</li>
-  <li>链接的意图明确，理想情况下即使链接本身也能让人一目了然。</li>
-</ul>
-
-<p>满足这个要求可以让用户根据自己的需求和偏好在多个页面间导航。比如，有人依赖层级导航结构如菜单来查找特定网页，也有人依赖网站的搜索功能。有人可能用眼睛看，有人可能用耳朵听，而有人会同时看和听。有人可能只使用鼠标，有人可能只使用键盘，而有人则会同时都用。</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-11">与导航相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#navigable">指南 2.4 - 可导航性</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation">指南 2.2 - 顺序导航</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation">指南 2.3 - 直接导航和激活</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-search-text">指南 2.4 - 文本搜索</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-nav-structure">指南 2.5 - 结构导航</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-configure-controls">指南 2.7 - 图形化控制</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">指南 A.2.2: （在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a34">指南 A.3.4: （在开发工具界面中）应从内容结构出发增强导航和编辑功能</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a35">指南 A.3.5: （在开发工具界面中）应提供内容搜索功能</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-12">导航的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, 一个记者有重复性应激损伤 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, 盲人高级工作人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, 唐氏综合症超市助理 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, 聋的盲人青年 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="modalities">用户可以使用除键盘外的不同输入方式</h3>
-
-<p>除键盘之外的输入方式还有触摸激活、语音识别（语音输入）及手势，这些方式可以为很多人提供便利。但并非所有人都可以同样程度地使用所有方式。特别的设计考量可以最大化这些方式的优势，包括：</p>
-
-<ul>
-  <li>要求敏捷及精确移动的手势有对应不需要高敏捷性的替代方式；</li>
-  <li>经特别设计避免组件被意外激活，比如提供撤销功能；</li>
-  <li>展示给用户的标注与代码中对象的名字对应，以支持通过语音激活；</li>
-  <li>通过运动激活的功能也可以通过用户界面上的组件激活；</li>
-  <li>按钮、链接和其他活动组件足够大，以便通过触摸来激活它们。</li>
-</ul>
-
-<p>满足这个要求可以让更多有能力使用更多设备的人更方便地使用内容。这里的内容包括手机、笔记本电脑和售票机上的内容。</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-13">与输入方式相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#input-modalities">指南 2.5 - 输入方式</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-14">输入方式的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, 一个记者有重复性应激损伤 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, 唐氏综合症超市助理 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="understandable">可理解的信息和用户界面</h2>
-
-<h3 id="readable">文本容易阅读和理解</h3>
-
-<p>内容作者要确保文字具有可读性且大多数读者都比较容易理解，包括文字转语音读出来也一样。其中包括：</p>
-
-<ul>
-  <li>标识网页使用的主要语言，如阿拉伯语、德语或韩语；</li>
-  <li>标识文本、短语或网页中其他部分的语言；</li>
-  <li>对不常见的词汇、短语、 习语和缩略语给出解释；</li>
-  <li>尽可能用最简单明了的表达，或提供简化版本。</li>
-</ul>
-
-<p>满足这个要求有助于软件包括辅助技术正确地处理文本内容。比如，软件因此可以正确地读出内容、生成页面摘要，并对不常用的技术词汇提供解释。同样，这也有助于人们理解复杂的句子、短语和词汇。特别是对具有不同认知背景的用户会有帮助。</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-15">与可读性相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#readable">指南 3.1 - 可读性</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b42">指南 A.4.2: （在开发工具界面中）应提供开发工具界面的完整文档，包括所有无障碍访问特性</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-16">可读性的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, 听力障碍的在线学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, 盲人高级工作人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, 唐氏综合症超市助理 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="predictable">内容以可预测的方式出现和操作</h3>
-
-<p>很多人依赖可预测的用户界面，而不一致的外观和行为则会导致迷惑，转移用户注意力。要让内容可预测，可以：</p>
-
-<ul>
-  <li>在多个页面相同位置重复出现导航条；</li>
-  <li>给多个页面上重复出现的用户界面组件添加相同的标注信息；</li>
-  <li>给没有用户同意不会发生的变化应用明显的区别。</li>
-</ul>
-
-<p>满足这个要求可以让人们更快熟悉网站提供的功能和导航机制，并根据自己的特殊需求及偏好来使用网站。比如，有些人会给自己频繁使用的键盘导航功能定义快捷键。而也有人会记住在网站上到达某个特定页面或完成特定流程的步骤。这些都有赖于可预测及一致的功能。</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-17">与可预测相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#predictable">指南 3.2 - 可预测性</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-predictable-operation">指南 3.3 - 可预测性</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">指南 A.2.2: （在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b42">指南 A.4.2: （在开发工具界面中）应提供开发工具界面的完整文档，包括所有无障碍访问特性</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-18">可预测的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, 一个记者有重复性应激损伤 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, 盲人高级工作人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, 唐氏综合症超市助理 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, 聋的盲人青年 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="tolerant">用户可以得到帮忙以避免和纠正错误</h3>
-
-<p>表单及其他交互可能导致用户迷惑或难于使用，最终让用户犯错。帮助用户避免和纠正错误的做法包括：</p>
-
-<ul>
-  <li>为用户提供说明、错误消息及建议，帮用户提供正确的信息；</li>
-  <li>为复杂功能及交互提供上下文相关的帮助；</li>
-  <li>必要时提供结果预览，以及纠正或重置表单的功能。</li>
-</ul>
-
-<p>满足这个要求可以帮助因为看不到或听不到而难以理解潜在关联、顺序和其他提示的人。对于不理解功能，因此产生困惑或迷茫、记不住，或者因种种原因在使用表单和交互时出错的人同样也有帮助。</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-19">与输入辅助相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#input-assistance">指南 3.3 - 辅助输入</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-avoid-mistakes">指南 3.1 - 错误</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">指南 A.2.2: （在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b41">指南 A.4.1: （在开发工具界面中）应帮助用户避免错误以及纠正错误</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-20">输入辅助的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, 有色盲的网上购物者 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, 一个记者有重复性应激损伤 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, 唐氏综合症超市助理 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="robust">健壮的内容和可靠的解释</h2>
-
-<h3 id="compatible">内容与现在和未来的用户工具兼容</h3>
-
-<p>健壮的内容兼容不同浏览器、辅助技术及其他用户代理。比如：</p>
-
-<ul>
-  <li>确保标记是可以被可靠解释的，比如确保使用有效的标记；</li>
-  <li>对非标准用户界面组件提供名称、角色和值。</li>
-</ul>
-
-<p>满足这个要求可以最大化地兼容当前及未来的用户代理，包括辅助技术。特别地，这可以让辅助技术正确处理内容，以及通过不同方式呈现或操作内容。非标准（脚本化）按钮、输入字段及其他控件也包含在内。</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="section-21">与兼容性相关的无障碍要求（相关技术规范的链接）</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#compatible">指南 4.1 - 兼容</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-store-prefs">指南 2.6 - 首选项设置</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-AT-access">指南 4.1 - 辅助技术</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-obs-env-conventions">指南 5.1 - 遵循规范</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">B部分. 支持无障碍内容的生成</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="section-22">兼容性的案例</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, 有色盲的网上购物者 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, 一个记者有重复性应激损伤 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, 盲人高级工作人员 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, 唐氏综合症超市助理 (英文)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, 聋的盲人青年 (英文)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<div class="excol-all"></div>
-
-
-
-    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> 帮助提升本页 </h2></header><div class="box-i"><p>请通过电子邮件将您的想法、建议或意见分享到公共存档列表<a href="mailto:wai-eo-editors@w3.org?subject=[zh-hans]%20%E6%97%A0%E9%9A%9C%E7%A2%8D%E5%8E%9F%E5%88%99">wai-eo-editors@w3.org</a>或通过GitHub提交意见</p>
-<div class="button-group">
-    <a href="mailto:wai-eo-editors@w3.org?subject=[zh-hans]%20%E6%97%A0%E9%9A%9C%E7%A2%8D%E5%8E%9F%E5%88%99&body=[%E6%8A%8A%E6%B3%A8%E9%87%8A%E5%86%99%E5%9C%A8%E8%BF%99%E9%87%8C......]" class="button"><span>邮件</span></a>
-    <a href="https://github.com/w3c/wai-accessibility-principles/edit/master/content/index.zh-hans.md"  class="button"><span>派生到本地，在Github上编辑</span></a><a href="https://github.com/w3c/wai-accessibility-principles/issues/new?title=[zh-hans]%20" class="button"><span>创建新的Github问题</span></a>
-</div></div></aside>
-
-
-    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> 回到顶部</span></a>
-  </main>
-</div>
-
-
-  
-  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-    <div class="inner" 
-      >
-      <p><strong>日期：</strong> 更新于2019年5月10日。<a href="/WAI/fundamentals/accessibility-principles/changelog/">修改日志</a></p> <p><strong>编者：</strong> <a href="https://www.w3.org/People/shadi/">Shadi Abou_Zahra</a>. <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments">致谢</a>.</p> <p>由教育及外展工作组(<a href="http://www.w3.org/WAI/EO/">EOWG</a>)开发. 之前该网页受 <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf">WAI-AGE 特别任务团</a>和<a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE项目</a>的支持.</p>
-</div>
-  </footer>
-  
-
-
-<footer class="site-footer grid-4q" aria-label="Site">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>使残疾人能够访问Web的策略、标准和支持资源。</p>
-    </div>
-    <div class="social" lang="en" dir="auto" translate="no">
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span>使残疾人能够访问Web的策略、标准和资源。</span>
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg focusable="false" aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            菜单</span
+          >
+        </button>
+      </div>
+
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">搜索:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="搜索"
+                      aria-label="搜索"
+                    />
+                  </label>
+
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg
+                        focusable="false"
+                        aria-label="提交搜索"
+                        class="icon-search"
+                      >
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="主导航" lang="zh-hans">
       <ul>
-        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
-        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
-        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
-        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/planning/"
+            ><span>Planning &amp; Policies</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/design-develop/"
+            ><span>Design &amp; Develop</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/test-evaluate/"
+            ><span>Test &amp; Evaluate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/teach-advocate/"
+            ><span>Teach &amp; Advocate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
       </ul>
-    </div>
-    <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
-    </div>
-  </div>
-  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
-    <ul style="margin-bottom:0">
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-      <li><a href="/WAI/translations/"> Translations</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
-<script>
-  svg4everybody();
-</script>
-<script src="/WAI/assets/scripts/lang/zh-hans.js?1633578570351143841"></script><!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    </nav>
+    <nav class="default-grid breadcrumb" aria-label="面包屑导航" lang="en">
+      <ul style="align-self: center">
+        <li><a href="/WAI/" lang="en">Home</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a
+            lang="zh-hans"
+            href="/WAI/fundamentals/accessibility-principles/zh-hans"
+            aria-current="page"
+            ><span>无障碍原则</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="default-grid with-gap leftcol">
+      <div class="sidenav">
+        <nav class="sn-contents" aria-label="Secondary">
+          <ul class="sidenav--list">
+            <li>
+              <a lang="en" href="/WAI/fundamentals/" class="page-link"
+                ><span>Accessibility Fundamentals</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="zh-hans"
+                href="/WAI/fundamentals/accessibility-intro/zh-hans"
+                class="page-link"
+                ><span>Web无障碍简介</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="zh-hans"
+                    href="/WAI/videos/standards-and-benefits/zh-hans"
+                    class="page-link"
+                    ><span>视频介绍</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/foundations-course/"
+                class="page-link"
+                ><span>Foundations Online Course</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/components/"
+                class="page-link"
+                ><span>Components of Web Accessibility</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="zh-hans"
+                href="/WAI/fundamentals/accessibility-principles/zh-hans"
+                aria-current="page"
+                class="page-link"
+                ><span>无障碍原则</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/perspective-videos/" class="page-link"
+                ><span>Perspectives Videos</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/keyboard/"
+                    class="page-link"
+                    ><span>Keyboard Compatibility</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/contrast/"
+                    class="page-link"
+                    ><span>Colors with Good Contrast</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/layout/"
+                    class="page-link"
+                    ><span>Clear Layout and Design</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/speech/"
+                    class="page-link"
+                    ><span>Text to Speech</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/controls/"
+                    class="page-link"
+                    ><span>Large Links, Buttons, and Controls</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/captions/"
+                    class="page-link"
+                    ><span>Video Captions</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/customizable/"
+                    class="page-link"
+                    ><span>Customizable Text</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/voice/"
+                    class="page-link"
+                    ><span>Speech Recognition</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/understandable/"
+                    class="page-link"
+                    ><span>Understandable Content</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/notifications/"
+                    class="page-link"
+                    ><span>Notifications and Feedback</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/people-use-web/" class="page-link"
+                ><span>How People with Disabilities Use the Web</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/user-stories/"
+                    class="page-link"
+                    ><span>Stories of Web Users</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/abilities-barriers/"
+                    class="page-link"
+                    ><span>Diverse Abilities and Barriers</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/tools-techniques/"
+                    class="page-link"
+                    ><span>Tools and Techniques</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/older-users/" class="page-link"
+                ><span>Older Users and Accessibility</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/older-users/developing/"
+                    class="page-link"
+                    ><span>How WCAG 2 Applies</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/older-users/literature/"
+                    class="page-link"
+                    ><span>Literature Review</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/accessibility-usability-inclusion/"
+                class="page-link"
+                ><span>Accessibility, Usability, Inclusion</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="sidenav-languages" aria-labelledby="languagehead">
+          <header id="languagehead">语言/翻译</header>
+          <ul class="langlist">
+            <li style="margin-bottom: 2px">
+              <a
+                href="/WAI/fundamentals/accessibility-principles/"
+                lang="en"
+                dir="auto"
+                translate="no"
+                >English (original)</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ar"
+                dir="auto"
+                translate="no"
+                lang="ar"
+                >العربية</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/cs"
+                dir="auto"
+                translate="no"
+                lang="cs"
+                >čeština</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/es"
+                dir="auto"
+                translate="no"
+                lang="es"
+                >español</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/fr"
+                dir="auto"
+                translate="no"
+                lang="fr"
+                >français</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ko"
+                dir="auto"
+                translate="no"
+                lang="ko"
+                >한국어</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ru"
+                dir="auto"
+                translate="no"
+                lang="ru"
+                >русский язык</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <strong style="text-transform: capitalize">简体汉语</strong>
+            </li>
+          </ul>
+          <p>
+            <a href="/WAI/translations/#zh-hans">其他语言资源： 简体汉语</a>
+          </p>
 
+          <p><a href="/WAI/translations/">所有翻译</a></p>
+          <p><a href="/WAI/about/translating/">翻译WAI的资源</a></p>
+        </nav>
+      </div>
 
+      <main id="main" lang="zh-hans">
+        <header>
+          <h1>无障碍原则</h1>
+        </header>
+        <section
+          id="translation-info"
+          class="doc-note-box doc-note-translation"
+        >
+          <h2 class="visuallyhidden">关于该翻译</h2>
+          <p>
+            该志愿翻译可能不能准确地反映出<a
+              href="/WAI/fundamentals/accessibility-principles/"
+              >英文原版内容</a
+            >。
+          </p>
+
+          <p>
+            <svg focusable="false" aria-hidden="true" class="icon-check-circle">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"
+              ></use>
+            </svg>
+            该翻译已与英文版本同步。 <br />翻译更新
+            <span dir="auto">2019-07-12</span>. 英文版本更新：
+            <span dir="auto">2019-05-10</span>.
+          </p>
+
+          <p>
+            <strong>翻译者：</strong>
+            <a
+              href="https://lisongfeng.cn/index.php/start-page.html"
+              rel="nofollow noopener"
+              target="_blank"
+              >李松峰
+              <svg
+                focusable="false"
+                aria-label="new tab/window"
+                class="icon-external-link"
+              >
+                <use
+                  xlink:href="/WAI/assets/images/icons.svg#icon-external-link"
+                ></use></svg></a
+            >,
+            <a
+              href="https://www.w3.org/people/roy"
+              rel="nofollow noopener"
+              target="_blank"
+              >冉若曦
+              <svg
+                focusable="false"
+                aria-label="new tab/window"
+                class="icon-external-link"
+              >
+                <use
+                  xlink:href="/WAI/assets/images/icons.svg#icon-external-link"
+                ></use></svg></a
+            >. <br />WAI感谢这些翻译者们，并欢迎其他的<a
+              href="/WAI/about/translating/"
+              >翻译</a
+            >。
+          </p>
+        </section>
+        <aside class="box box-full">
+          <header class="box-h box-h-full"><h2>Summary</h2></header>
+          <div class="box-i">
+            <p>
+              本页面介绍了网站、web应用程序、浏览器和其他工具的一些web无障碍要求。它提供了从W3C
+              web无障碍推进(WAI)到<a
+                href="/WAI/people-use-web/user-stories/"
+                hreflang="en"
+                >Web用户故事 (英文)</a
+              >的国际标准的参考。
+            </p>
+
+            <p><strong>Note:</strong> 这不是所有无障碍需求的完整列表。</p>
+          </div>
+        </aside>
+
+        <nav
+          class="box box-simple box-full"
+          aria-labelledby="tocheading"
+          id="toc"
+        >
+          <header id="tocheading" class="box-h box-h-simple box-h-full">
+            Page Contents
+          </header>
+          <div class="box-i">
+            <ul id="markdown-toc">
+              <li>
+                <a href="#standards" id="markdown-toc-standards"
+                  >Web无障碍标准</a
+                >
+              </li>
+              <li>
+                <a href="#perceivable" id="markdown-toc-perceivable"
+                  >可感知信息和用户界面</a
+                >
+                <ul>
+                  <li>
+                    <a href="#alternatives" id="markdown-toc-alternatives"
+                      >用文本替代非文本内容</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#captions" id="markdown-toc-captions"
+                      >多媒体的字幕及其他替代物</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#adaptable" id="markdown-toc-adaptable"
+                      >内容有多种呈现方式</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#distinguishable" id="markdown-toc-distinguishable"
+                      >内容的看和听更容易</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#operable" id="markdown-toc-operable"
+                  >可操作的用户界面和导航</a
+                >
+                <ul>
+                  <li>
+                    <a href="#keyboard" id="markdown-toc-keyboard"
+                      >可以通过键盘使用功能</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#time" id="markdown-toc-time"
+                      >用户有充足的时间阅读和使用内容</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#safe" id="markdown-toc-safe"
+                      >内容不要诱发癫痫和物理反应</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#navigable" id="markdown-toc-navigable"
+                      >用户可以方便地导航、找到内容并确认自己在哪里</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#modalities" id="markdown-toc-modalities"
+                      >用户可以使用除键盘外的不同输入方式</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#understandable" id="markdown-toc-understandable"
+                  >可理解的信息和用户界面</a
+                >
+                <ul>
+                  <li>
+                    <a href="#readable" id="markdown-toc-readable"
+                      >文本容易阅读和理解</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#predictable" id="markdown-toc-predictable"
+                      >内容以可预测的方式出现和操作</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#tolerant" id="markdown-toc-tolerant"
+                      >用户可以得到帮忙以避免和纠正错误</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#robust" id="markdown-toc-robust"
+                  >健壮的内容和可靠的解释</a
+                >
+                <ul>
+                  <li>
+                    <a href="#compatible" id="markdown-toc-compatible"
+                      >内容与现在和未来的用户工具兼容</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="excol-all"></div>
+
+        <h2 id="standards">Web无障碍标准</h2>
+
+        <p>Web无障碍依赖几个相互联系的部分，包括：</p>
+
+        <ul>
+          <li>
+            <strong id="webcontent">Web内容：</strong> -
+            指网站中的任意部分，如文本、图片、表单和多媒体，以及所有标记代码、脚本、应用，等等。
+          </li>
+          <li>
+            <strong id="useragents">用户代理</strong> -
+            软件，用户通过它来访问Web内容，包括桌面图形界面浏览器、语音浏览器、手机浏览器、多媒体播放器、插件及一些辅助浏览技术。<a
+              href="/WAI/people-use-web/tools-techniques/#at"
+              title="definition"
+              hreflang="en"
+              >辅助技术 (英文)</a
+            >.
+          </li>
+          <li>
+            <strong id="authoringtools">创作工具：</strong> -
+            软件或服务，用户使用它产生Web内容，包括代码编辑器、文档转换工具、内容管理系统、博客、数据库脚本，以及其他工具。
+          </li>
+        </ul>
+
+        <details>
+          <summary>
+            <h3 class="no_toc" id="web">更多关于web无障碍的标准</h3>
+          </summary>
+          <div>
+            <p>
+              这些部分相互关联并相互支持。例如，
+              <strong>Web内容</strong> 需要包含图像的文本替代。 这些信息需要
+              <strong>web浏览器</strong> 处理同时被
+              <strong>辅助技术</strong>转换, 例如读屏软件.
+              为了创建文本替代，作者需要<strong>创作工具</strong> 来做这些工作.
+              更多的信息可在
+              <a href="/WAI/fundamentals/components/" hreflang="en"
+                >web无障碍的重要组成 (英文)</a
+              >中找到.
+            </p>
+
+            <p>
+              标准在为每个组件定义无障碍需求方面扮演着重要的角色。一些无障碍需求很容易满足，但是了解残疾人如何使用Web的基本知识有助于更有效地实现这些需求。无障碍的某些方面需要更多的技术技能，也需要关于人们如何使用Web的高级知识。在所有情况下，<a
+                href="/WAI/test-evaluate/involving-user/"
+                hreflang="en"
+                >在整个web项目中早期让用户参与 (英文)</a
+              >将使您的工作更好、更容易。
+            </p>
+
+            <p>
+              W3C的Web无障碍推进(WAI)提供了一组被国际公认为Web无障碍标准指南。这些包括:
+            </p>
+
+            <ul>
+              <li>
+                <strong
+                  ><a href="/WAI/standards-guidelines/wcag/" hreflang="en"
+                    >Web内容无障碍指南 (WCAG) (英文)</a
+                  ></strong
+                >
+              </li>
+              <li>
+                <strong
+                  ><a href="/WAI/standards-guidelines/uaag/" hreflang="en"
+                    >用户代理无障碍指南 (UAAG) (英文)</a
+                  ></strong
+                >
+              </li>
+              <li>
+                <strong
+                  ><a href="/WAI/standards-guidelines/atag/" hreflang="en"
+                    >创作工具无障碍指南 (ATAG) (英文)</a
+                  ></strong
+                >
+              </li>
+            </ul>
+
+            <p>
+              还有一个用于<strong
+                ><a href="https://www.w3.org/WAI/intro/aria.php"
+                  >无障碍富网络应用(WAI-ARIA)</a
+                ></strong
+              >的WAI规范，其中包括使用Ajax、JavaScript和相关web技术开发的动态内容和高级用户界面控件。
+            </p>
+          </div>
+        </details>
+
+        <h2 id="perceivable">可感知信息和用户界面</h2>
+
+        <h3 id="alternatives">用文本替代非文本内容</h3>
+
+        <p>替代文本与非文内容是等价的。比如：</p>
+
+        <ul>
+          <li>对图片（图标、按钮和图形）的简短描述；</li>
+          <li>图表、示意图和插图上数据的说明；</li>
+          <li>对音频和视频文件等非文本内容的简短说明；</li>
+          <li>表单控件、输入框等用户交互组件的标注。</li>
+        </ul>
+
+        <p>
+          替代文本传达图片或功能的意图，提供等价的用户体验。比如，对搜索按钮的替代文本应该是“搜索”，而不是“放大镜”。
+        </p>
+
+        <p>
+          替代文本的展示方式有很多种。比如，对看不见屏幕或视力不好的读者可以大声朗读出来，可以增大文本字号，也可以在盲文设备上显示。替代文本是控件和功能的标注，可以辅助键盘导航和语音识别导航（语音输入），也是识别音频、视频及其他格式文件乃至嵌入在网页中其他应用的标注。
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section">
+              与替代文件相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#text-alternatives"
+                  >指南 1.1 - 替代文本</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content"
+                  >指南 1.1 - 替代内容</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a21"
+                  >指南 A.2.1: （在开发工具界面中）应使用户可以使用替代内容</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >指南 A.2.2:
+                  （在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a37"
+                  >指南 A.3.7:
+                  （在开发工具界面中）应保证预览应至少于市场中的用户代理的无障碍可访问性相同</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <h4 id="stories-related-to-text-alternatives" class="no_toc">
+              替代文本相关的案例
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, 一个记者有重复性应激损伤 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#onlinestudent"
+                  hreflang="en"
+                  >Martine, 听力障碍的在线学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, 盲人高级工作人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, 聋的盲人青年 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="captions">多媒体的字幕及其他替代物</h3>
+
+        <p>听不见声音或看不见视频的人需要替代物。比如：</p>
+
+        <ul>
+          <li>音频内容（如广播采访的录音）的文字版或字幕；</li>
+          <li>描述视频中重要影像细节的口述影像；</li>
+          <li>音频内容的手语表达，包括相应的受众体验。</li>
+        </ul>
+
+        <p>
+          整理规范的文字稿应该提供场所或视觉信息，为读者提供基本的无障碍阅读体验，并作为字幕或口述影像的提炼基础。
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-1">
+              与多媒体相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#time-based-media"
+                  >指南 1.2 - 时基媒体</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content"
+                  >指南 1.1 - 替代内容</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a21"
+                  >指南 A.2.1:（在开发工具界面中）应使用户可以使用替代内容</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a37"
+                  >指南
+                  A.3.7:（在开发工具界面中）应保证预览应至少于市场中的用户代理的无障碍可访问性相同</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 id="stories-related-to-multimedia" class="no_toc">
+              多媒体相关的案例
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#onlinestudent"
+                  hreflang="en"
+                  >Martine, 听力障碍的在线学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, 盲人高级工作人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, 聋的盲人青年 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="adaptable">内容有多种呈现方式</h3>
+
+        <p>为针对不同用户以不同的方式呈现，内容必须：</p>
+
+        <ul>
+          <li>正确地标记内容的结构，标题、列表、表格、输入字段，等等；</li>
+          <li>信息或指令的顺序适应任何呈现方式；</li>
+          <li>浏览器及辅助技术为定制不同的呈现方式提供便利。</li>
+        </ul>
+
+        <p>
+          满足这个要求的内容可以被正确的读出、放大，或者改编以适应不同人群的需求及偏好。比如，可以自定义使用不同颜色、字号或其他样式来呈现，以方便阅读。这个要求也有助于其他形式的适配，包括自动生成内容大纲和摘要，从而让用户了解梗概并聚焦到特定部分。
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-2">
+              与适应性相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#adaptable"
+                  >指南 1.3 - 适应性</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-text-config"
+                  >指南 1.4 - 文本配置</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-volume-config"
+                  >指南 1.5 - 卷组态</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-speech-config"
+                  >指南 1.6 - 合成语言配置</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config"
+                  >指南 1.7 - 用户样式表配置</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views"
+                  >指南 1.9 - 替代视图</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-info-link"
+                  >指南 1.10 - 元素信息</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >指南 A.2.2:
+                  （在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a37"
+                  >指南 A.3.7:
+                  （在开发工具界面中）应保证预览应至少于市场中的用户代理的无障碍可访问性相同</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-3">适应性相关的案例</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#shopper"
+                  hreflang="en"
+                  >Lee, 有色盲的网上购物者 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, 一个记者有重复性应激损伤 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, 盲人高级工作人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, 唐氏综合症超市助理 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, 聋的盲人青年 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="distinguishable">内容的看和听更容易</h3>
+
+        <p>便于区分的内容更容易看和听，比如：</p>
+
+        <ul>
+          <li>不只使用颜色传达信息或标识内容；</li>
+          <li>默认的前景和背景色有足够高的对比度；</li>
+          <li>用户将文本放大到400%或增大文本间距时，内容不会丢失；</li>
+          <li>用户放大文本或使用小屏幕时，文本可以重排；</li>
+          <li>文本图片可以缩放或以实际文本替代，或尽可能避免使用；</li>
+          <li>用户可以暂停、停止或调整音频的音量；</li>
+          <li>背景音乐音量小且可以关闭，避免干扰和分神。</li>
+        </ul>
+
+        <p>
+          满足这个要求有助于将前景和背景分离，让重要的信息更突出。这一条也涉及不使用辅助技术的人群，而对使用辅助技术的用户，音量过大或对比度过高也会导致注意力分散。比如，很多色盲用户不会使用特殊工具，直接依赖网页提供足够的色彩对比度。而对其他人来说，自动播放的音频可能干扰语音合成或
+          <a
+            href="http://www.w3.org/WAI/training/accessible#ald"
+            title="definition"
+            >助听设备 (ALDs)</a
+          >.
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-4">
+              与可分辨性相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#distinguishable"
+                  >指南 1.4 - 可辨别性</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-interaction-highlight"
+                  >指南 1.3 - 高亮</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-text-config"
+                  >指南 1.4 - 文本配置</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-volume-config"
+                  >指南 1.5 - 卷组态</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-speech-config"
+                  >指南 1.6 - 合成语言配置</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config"
+                  >指南 1.7 - 用户样式表配置</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-viewport-orient"
+                  >指南 1.8 - 视窗定位</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views"
+                  >指南 1.9 - 替代视图</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-info-link"
+                  >指南 1.10 - 元素信息</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a37"
+                  >指南 A.3.7:
+                  （在开发工具界面中）应保证预览应至少于市场中的用户代理的无障碍可访问性相同</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-5">可分辨性的案例</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#shopper"
+                  hreflang="en"
+                  >Lee, 有色盲的网上购物者 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#onlinestudent"
+                  hreflang="en"
+                  >Martine, 听力障碍的在线学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, 盲人高级工作人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, 聋的盲人青年 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="operable">可操作的用户界面和导航</h2>
+
+        <h3 id="keyboard">可以通过键盘使用功能</h3>
+
+        <p>
+          很多人不使用鼠标而依赖键盘来操作网页。这就要求使用键盘完全可以控制网页，包括表单控件、输入框及其他用户界面组件。
+        </p>
+
+        <p>键盘的无障碍性包括：</p>
+
+        <ul>
+          <li>通过鼠标可以操控的功能，同样可以通过键盘实现；</li>
+          <li>键盘焦点不会被内容的任意部分卡住；</li>
+          <li>浏览器、创作工具及其他工具支持键盘操作。</li>
+        </ul>
+
+        <p>
+          满足这个要求能帮助键盘用户，包括使用人体工程学键盘、屏幕软键盘或开关装置的人方便上网。同样，对于使用语音识别（语音输入）来操作网页和通过键盘输入的人同样有帮助。
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-6">
+              与键盘无障碍相关的要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-accessible"
+                  >指南 2.1 - 键盘可访问性</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-keyboard-access"
+                  >指南 2.1 - 键盘访问</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation"
+                  >指南 2.2 - 顺序导航</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation"
+                  >指南 2.3 - 直接导航和激活</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-other-devices"
+                  >指南 2.11 - 其他输入设备</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a31"
+                  >指南 A.3.1:
+                  （在开发工具界面中）应提供对键盘访问的无障碍访问特性s</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-7">键盘无障碍的案例</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, 一个记者有重复性应激损伤 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, 盲人高级工作人员 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="time">用户有充足的时间阅读和使用内容</h3>
+
+        <p>
+          阅读理解同样的内容，有人用的时间少，有人用的时间多。比如，有些人打字慢，理解慢，操作控件不熟练，最终导致使用网站的速度慢。
+        </p>
+
+        <p>所谓提供充足的时间，包括：</p>
+
+        <ul>
+          <li>必要时提供解除、扩展和调整时间限制的机制；</li>
+          <li>提供暂停、停止或隐藏移动、闪烁或滚动内容的机制；</li>
+          <li>必要时延迟或避免打断用户；</li>
+          <li>会话超时后重新认证确保不丢失数据。</li>
+        </ul>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-8">
+              与充足时间相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#enough-time"
+                  >指南 2.2 - 充足时间</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-time-independent"
+                  >指南 2.8 - 时基交互</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-control-inaccessible-content"
+                  >指南 2.10 - 时基媒体</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a32"
+                  >指南 A.3.2:（在开发工具界面中）应向开发者提供足够的时间</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-9">充足时间的案例</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, 一个记者有重复性应激损伤 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, 唐氏综合症超市助理 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, 聋的盲人青年 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="safe">内容不要诱发癫痫和物理反应</h3>
+
+        <p>
+          某种频率或图案的闪烁可能诱发光敏反应，包括癫痫。理想情况下，应该完全避免内容闪烁，或者如果无法避免也要确保不会导致已知风险。同样，动画及移动的内容也可能导致不适或物理反应。
+        </p>
+
+        <p>避免导致癫痫及物理反应的例子有：</p>
+
+        <ul>
+          <li>不使用某种频率或图案的闪烁；</li>
+          <li>内容闪烁前对用户给出提示，同时提供替代方案；</li>
+          <li>除非必要，要让用户可以关掉动画。</li>
+        </ul>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-10">
+              与癫痫相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#seizures-and-physical-reactions"
+                  >指南 2.3 - 癫痫</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-prevent-flash"
+                  >指南 2.9 - 闪烁</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a33"
+                  >指南 A.3.3:
+                  （在开发工具界面中）应帮助开发者以避免由闪烁引起的癫痫</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="navigable">用户可以方便地导航、找到内容并确认自己在哪里</h3>
+
+        <p>组织得当的内容可以让用户随时定位自己并有效导航，比如：</p>
+
+        <ul>
+          <li>页面标题表述适当，各部分标题也具有描述性；</li>
+          <li>在一组网页中有多种方式可以找到相关页面；</li>
+          <li>随时提醒用户在一组网页中的当前位置；</li>
+          <li>让用户可以跳过多个网页中都有的内容块；</li>
+          <li>键盘焦点可以看到，且焦点顺序有意义；</li>
+          <li>链接的意图明确，理想情况下即使链接本身也能让人一目了然。</li>
+        </ul>
+
+        <p>
+          满足这个要求可以让用户根据自己的需求和偏好在多个页面间导航。比如，有人依赖层级导航结构如菜单来查找特定网页，也有人依赖网站的搜索功能。有人可能用眼睛看，有人可能用耳朵听，而有人会同时看和听。有人可能只使用鼠标，有人可能只使用键盘，而有人则会同时都用。
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-11">
+              与导航相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#navigable"
+                  >指南 2.4 - 可导航性</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation"
+                  >指南 2.2 - 顺序导航</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation"
+                  >指南 2.3 - 直接导航和激活</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-search-text"
+                  >指南 2.4 - 文本搜索</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-nav-structure"
+                  >指南 2.5 - 结构导航</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-configure-controls"
+                  >指南 2.7 - 图形化控制</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >指南 A.2.2:
+                  （在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a34"
+                  >指南 A.3.4:
+                  （在开发工具界面中）应从内容结构出发增强导航和编辑功能</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a35"
+                  >指南 A.3.5: （在开发工具界面中）应提供内容搜索功能</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-12">导航的案例</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, 一个记者有重复性应激损伤 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, 盲人高级工作人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, 唐氏综合症超市助理 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, 聋的盲人青年 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="modalities">用户可以使用除键盘外的不同输入方式</h3>
+
+        <p>
+          除键盘之外的输入方式还有触摸激活、语音识别（语音输入）及手势，这些方式可以为很多人提供便利。但并非所有人都可以同样程度地使用所有方式。特别的设计考量可以最大化这些方式的优势，包括：
+        </p>
+
+        <ul>
+          <li>要求敏捷及精确移动的手势有对应不需要高敏捷性的替代方式；</li>
+          <li>经特别设计避免组件被意外激活，比如提供撤销功能；</li>
+          <li>展示给用户的标注与代码中对象的名字对应，以支持通过语音激活；</li>
+          <li>通过运动激活的功能也可以通过用户界面上的组件激活；</li>
+          <li>按钮、链接和其他活动组件足够大，以便通过触摸来激活它们。</li>
+        </ul>
+
+        <p>
+          满足这个要求可以让更多有能力使用更多设备的人更方便地使用内容。这里的内容包括手机、笔记本电脑和售票机上的内容。
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-13">
+              与输入方式相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#input-modalities"
+                  >指南 2.5 - 输入方式</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-14">输入方式的案例</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, 一个记者有重复性应激损伤 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, 唐氏综合症超市助理 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="understandable">可理解的信息和用户界面</h2>
+
+        <h3 id="readable">文本容易阅读和理解</h3>
+
+        <p>
+          内容作者要确保文字具有可读性且大多数读者都比较容易理解，包括文字转语音读出来也一样。其中包括：
+        </p>
+
+        <ul>
+          <li>标识网页使用的主要语言，如阿拉伯语、德语或韩语；</li>
+          <li>标识文本、短语或网页中其他部分的语言；</li>
+          <li>对不常见的词汇、短语、 习语和缩略语给出解释；</li>
+          <li>尽可能用最简单明了的表达，或提供简化版本。</li>
+        </ul>
+
+        <p>
+          满足这个要求有助于软件包括辅助技术正确地处理文本内容。比如，软件因此可以正确地读出内容、生成页面摘要，并对不常用的技术词汇提供解释。同样，这也有助于人们理解复杂的句子、短语和词汇。特别是对具有不同认知背景的用户会有帮助。
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-15">
+              与可读性相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#readable"
+                  >指南 3.1 - 可读性</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b42"
+                  >指南 A.4.2:
+                  （在开发工具界面中）应提供开发工具界面的完整文档，包括所有无障碍访问特性</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-16">可读性的案例</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#onlinestudent"
+                  hreflang="en"
+                  >Martine, 听力障碍的在线学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, 盲人高级工作人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, 唐氏综合症超市助理 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="predictable">内容以可预测的方式出现和操作</h3>
+
+        <p>
+          很多人依赖可预测的用户界面，而不一致的外观和行为则会导致迷惑，转移用户注意力。要让内容可预测，可以：
+        </p>
+
+        <ul>
+          <li>在多个页面相同位置重复出现导航条；</li>
+          <li>给多个页面上重复出现的用户界面组件添加相同的标注信息；</li>
+          <li>给没有用户同意不会发生的变化应用明显的区别。</li>
+        </ul>
+
+        <p>
+          满足这个要求可以让人们更快熟悉网站提供的功能和导航机制，并根据自己的特殊需求及偏好来使用网站。比如，有些人会给自己频繁使用的键盘导航功能定义快捷键。而也有人会记住在网站上到达某个特定页面或完成特定流程的步骤。这些都有赖于可预测及一致的功能。
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-17">
+              与可预测相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#predictable"
+                  >指南 3.2 - 可预测性</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-predictable-operation"
+                  >指南 3.3 - 可预测性</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >指南 A.2.2:
+                  （在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b42"
+                  >指南 A.4.2:
+                  （在开发工具界面中）应提供开发工具界面的完整文档，包括所有无障碍访问特性</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-18">可预测的案例</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, 一个记者有重复性应激损伤 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, 盲人高级工作人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, 唐氏综合症超市助理 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, 聋的盲人青年 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="tolerant">用户可以得到帮忙以避免和纠正错误</h3>
+
+        <p>
+          表单及其他交互可能导致用户迷惑或难于使用，最终让用户犯错。帮助用户避免和纠正错误的做法包括：
+        </p>
+
+        <ul>
+          <li>为用户提供说明、错误消息及建议，帮用户提供正确的信息；</li>
+          <li>为复杂功能及交互提供上下文相关的帮助；</li>
+          <li>必要时提供结果预览，以及纠正或重置表单的功能。</li>
+        </ul>
+
+        <p>
+          满足这个要求可以帮助因为看不到或听不到而难以理解潜在关联、顺序和其他提示的人。对于不理解功能，因此产生困惑或迷茫、记不住，或者因种种原因在使用表单和交互时出错的人同样也有帮助。
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-19">
+              与输入辅助相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#input-assistance"
+                  >指南 3.3 - 辅助输入</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-avoid-mistakes"
+                  >指南 3.1 - 错误</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >指南 A.2.2:
+                  （在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b41"
+                  >指南 A.4.1:
+                  （在开发工具界面中）应帮助用户避免错误以及纠正错误</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-20">输入辅助的案例</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#shopper"
+                  hreflang="en"
+                  >Lee, 有色盲的网上购物者 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, 一个记者有重复性应激损伤 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, 视力低下、手颤抖、轻度短期失忆的退休人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, 唐氏综合症超市助理 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="robust">健壮的内容和可靠的解释</h2>
+
+        <h3 id="compatible">内容与现在和未来的用户工具兼容</h3>
+
+        <p>健壮的内容兼容不同浏览器、辅助技术及其他用户代理。比如：</p>
+
+        <ul>
+          <li>确保标记是可以被可靠解释的，比如确保使用有效的标记；</li>
+          <li>对非标准用户界面组件提供名称、角色和值。</li>
+        </ul>
+
+        <p>
+          满足这个要求可以最大化地兼容当前及未来的用户代理，包括辅助技术。特别地，这可以让辅助技术正确处理内容，以及通过不同方式呈现或操作内容。非标准（脚本化）按钮、输入字段及其他控件也包含在内。
+        </p>
+
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-21">
+              与兼容性相关的无障碍要求（相关技术规范的链接）
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#compatible"
+                  >指南 4.1 - 兼容</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-store-prefs"
+                  >指南 2.6 - 首选项设置</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-AT-access"
+                  >指南 4.1 - 辅助技术</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-obs-env-conventions"
+                  >指南 5.1 - 遵循规范</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >准则 A.1: 开发工具界面（应）遵循可应用的无障碍访问性准则</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >B部分. 支持无障碍内容的生成</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="section-22">兼容性的案例</h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#shopper"
+                  hreflang="en"
+                  >Lee, 有色盲的网上购物者 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, 一个记者有重复性应激损伤 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, 盲人高级工作人员 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, 有注意缺陷多动障碍和阅读障碍的中学生 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, 唐氏综合症超市助理 (英文)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, 聋的盲人青年 (英文)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="excol-all"></div>
+
+        <aside class="box box-icon box-space-above" id="helpimprove">
+          <header class="box-h box-h-icon box-h-space-above box-h-icon">
+            <svg focusable="false" aria-hidden="true" class="icon-comments">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-comments"
+              ></use>
+            </svg>
+            <h2>帮助提升本页</h2>
+          </header>
+          <div class="box-i">
+            <p>
+              请通过电子邮件将您的想法、建议或意见分享到公共存档列表<a
+                href="mailto:wai-eo-editors@w3.org?subject=[zh-hans]%20%E6%97%A0%E9%9A%9C%E7%A2%8D%E5%8E%9F%E5%88%99"
+                >wai-eo-editors@w3.org</a
+              >或通过GitHub提交意见
+            </p>
+            <div class="button-group">
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=[zh-hans]%20%E6%97%A0%E9%9A%9C%E7%A2%8D%E5%8E%9F%E5%88%99&body=[%E6%8A%8A%E6%B3%A8%E9%87%8A%E5%86%99%E5%9C%A8%E8%BF%99%E9%87%8C......]"
+                class="button"
+                ><span>邮件</span></a
+              >
+              <a
+                href="https://github.com/w3c/wai-accessibility-principles/edit/master/content/index.zh-hans.md"
+                class="button"
+                ><span>派生到本地，在Github上编辑</span></a
+              ><a
+                href="https://github.com/w3c/wai-accessibility-principles/issues/new?title=[zh-hans]%20"
+                class="button"
+                ><span>创建新的Github问题</span></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg focusable="false" aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            回到顶部</span
+          ></a
+        >
+      </main>
+    </div>
+
+    <footer
+      id="wai-site-footer"
+      class="page-footer default-grid"
+      aria-label="Page"
+    >
+      <div class="inner">
+        <p>
+          <strong>日期：</strong> 更新于2019年5月10日。<a
+            href="/WAI/fundamentals/accessibility-principles/changelog/"
+            >修改日志</a
+          >
+        </p>
+        <p>
+          <strong>编者：</strong>
+          <a href="https://www.w3.org/People/shadi/">Shadi Abou_Zahra</a>.
+          <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments"
+            >致谢</a
+          >.
+        </p>
+        <p>
+          由教育及外展工作组(<a href="http://www.w3.org/WAI/EO/">EOWG</a>)开发.
+          之前该网页受
+          <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf"
+            >WAI-AGE 特别任务团</a
+          >和<a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE项目</a>的支持.
+        </p>
+      </div>
+    </footer>
+
+    <footer class="site-footer grid-4q" aria-label="Site">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a
+              class="largelink"
+              href="https://www.w3.org/WAI/"
+              lang="en"
+              dir="auto"
+              translate="no"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>使残疾人能够访问Web的策略、标准和支持资源。</p>
+        </div>
+        <div class="social" lang="en" dir="auto" translate="no">
+          <ul>
+            <li>
+              <a href="https://twitter.com/w3c_wai"
+                ><svg focusable="false" aria-hidden="true" class="icon-twitter">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/feed.xml"
+                ><svg focusable="false" aria-hidden="true" class="icon-rss">
+                  <use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use>
+                </svg>
+                Feed</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"
+                ><svg focusable="false" aria-hidden="true" class="icon-youtube">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/news/subscribe/" class="button"
+                >Get News in Email</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div lang="en" dir="auto" translate="no">
+          <p>
+            Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn">Beihang</a>)
+            <a href="/WAI/about/using-wai-material/"
+              >Permission to Use WAI Material</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div lang="en" dir="auto" translate="no" class="q4-start q4-end">
+        <ul style="margin-bottom: 0">
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li>
+            <a href="/WAI/about/accessibility-statement/"
+              >Accessibility Statement</a
+            >
+          </li>
+          <li><a href="/WAI/translations/"> Translations</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script src="/WAI/assets/scripts/lang/zh-hans.js?1633578570351143841"></script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </body>
 </html>

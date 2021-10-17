@@ -1,12 +1,70 @@
-
-BODY {background: #FFFFFF; color: black; margin: 2em 2em 2em 50px; } BODY,
-P, UL, OL, LI, H1, H2, H3, H4, BLOCKQUOTE, TD, .navbar, .intnavbar,
-.policyfooter, .headline, .restable, .grouptable { font-family: Arial, sans-serif
-} H1, H2, H3, H4 { font-weight: bold; color: #000066; text-decoration: none;
-} @media all { A:link IMG, A:visited IMG { border: none } } A:link { color:
-#330066; } A:visited { color: #000066; } H2 { font-size: 120%; width: 90%; } 
-.intnavbar {background: #e6ffc6; color: black; font-weight:
-bold; } HR {width: 90% } BLOCKQUOTE, .policyfooter { font-size: 90%; width:
-90%; } .restable { margin-left: 5% } .grouptable { margin-left: 5% } .search
-{ margin-left: 5% }
-
+BODY {
+  background: #ffffff;
+  color: black;
+  margin: 2em 2em 2em 50px;
+}
+BODY,
+P,
+UL,
+OL,
+LI,
+H1,
+H2,
+H3,
+H4,
+BLOCKQUOTE,
+TD,
+.navbar,
+.intnavbar,
+.policyfooter,
+.headline,
+.restable,
+.grouptable {
+  font-family: Arial, sans-serif;
+}
+H1,
+H2,
+H3,
+H4 {
+  font-weight: bold;
+  color: #000066;
+  text-decoration: none;
+}
+@media all {
+  A:link IMG,
+  A:visited IMG {
+    border: none;
+  }
+}
+A:link {
+  color: #330066;
+}
+A:visited {
+  color: #000066;
+}
+H2 {
+  font-size: 120%;
+  width: 90%;
+}
+.intnavbar {
+  background: #e6ffc6;
+  color: black;
+  font-weight: bold;
+}
+HR {
+  width: 90%;
+}
+BLOCKQUOTE,
+.policyfooter {
+  font-size: 90%;
+  width: 90%;
+}
+.restable {
+  margin-left: 5%;
+}
+.grouptable {
+  margin-left: 5%;
+}
+.search {
+  margin-left: 5%;
+}

@@ -1,1122 +1,2979 @@
 <!DOCTYPE html>
 <html class="no-js" lang="cs" dir="ltr" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "has-js");
 
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
-      document.body.appendChild(element);
-    }
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+        document.body.appendChild(element);
+      }
 
-    window.addEventListener("load", downloadJSAtOnload, false);
-  </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+      window.addEventListener("load", downloadJSAtOnload, false);
+    </script>
+    <link
+      rel="stylesheet"
+      href="/WAI/assets/css/style.css?1633578570351143841"
+    />
 
-<title> Zásady přístupnosti | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Zásady přístupnosti" />
-<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
-<meta property="og:locale" content="cs" />
-<meta name="description" content="Přehled základních požadavků na webovou přístupnost pro webové stránky, webové aplikace, prohlížeče a další nástroje." />
-<meta property="og:description" content="Přehled základních požadavků na webovou přístupnost pro webové stránky, webové aplikace, prohlížeče a další nástroje." />
-<link rel="canonical" href="https://www.w3.org/WAI/fundamentals/accessibility-principles/cs" />
-<meta property="og:url" content="https://www.w3.org/WAI/fundamentals/accessibility-principles/cs" />
-<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png" />
-<meta property="twitter:title" content="Zásady přístupnosti" />
-<meta name="twitter:site" content="@w3c_wai" />
-<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
-<script type="application/ld+json">
-{"description":"Přehled základních požadavků na webovou přístupnost pro webové stránky, webové aplikace, prohlížeče a další nástroje.","@type":"WebPage","image":"https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png","headline":"Zásady přístupnosti","url":"https://www.w3.org/WAI/fundamentals/accessibility-principles/cs","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+    <title>
+      Zásady přístupnosti | Web Accessibility Initiative (WAI) | W3C
+    </title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <meta name="generator" content="Jekyll v4.2.0" />
+    <meta property="og:title" content="Zásady přístupnosti" />
+    <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+    <meta property="og:locale" content="cs" />
+    <meta
+      name="description"
+      content="Přehled základních požadavků na webovou přístupnost pro webové stránky, webové aplikace, prohlížeče a další nástroje."
+    />
+    <meta
+      property="og:description"
+      content="Přehled základních požadavků na webovou přístupnost pro webové stránky, webové aplikace, prohlížeče a další nástroje."
+    />
+    <link
+      rel="canonical"
+      href="https://www.w3.org/WAI/fundamentals/accessibility-principles/cs"
+    />
+    <meta
+      property="og:url"
+      content="https://www.w3.org/WAI/fundamentals/accessibility-principles/cs"
+    />
+    <meta
+      property="og:site_name"
+      content="Web Accessibility Initiative (WAI)"
+    />
+    <meta
+      property="og:image"
+      content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image"
+      content="https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png"
+    />
+    <meta property="twitter:title" content="Zásady přístupnosti" />
+    <meta name="twitter:site" content="@w3c_wai" />
+    <meta
+      name="twitter:creator"
+      content="@W3C Web Accessibility Initiative (WAI)"
+    />
+    <script type="application/ld+json">
+      {
+        "description": "Přehled základních požadavků na webovou přístupnost pro webové stránky, webové aplikace, prohlížeče a další nástroje.",
+        "@type": "WebPage",
+        "image": "https://www.w3.org/WAI/content-images/wai-accessibility-principles/social.png",
+        "headline": "Zásady přístupnosti",
+        "url": "https://www.w3.org/WAI/fundamentals/accessibility-principles/cs",
+        "author": {
+          "@type": "Person",
+          "name": "W3C Web Accessibility Initiative (WAI)"
+        },
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
 
+    <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml" />
+  </head>
 
-  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
-</head>
-
-  <body id="top" class="page-zásady-přístupnosti ">
-    <nav aria-label="Přeskočit na hlavní obsah a výběr jazyka" id="controls" class="default-grid">
-  <ul>
-      <li><a href="#main">Přeskočit na obsah</a></li>
-      <li class="opt"><a href="/WAI/meta/customize/">Změnit velikost textu nebo barvy</a></li>
-      <li class="opt languagelist">
+  <body id="top" class="page-zásady-přístupnosti">
+    <nav
+      aria-label="Přeskočit na hlavní obsah a výběr jazyka"
+      id="controls"
+      class="default-grid"
+    >
+      <ul>
+        <li><a href="#main">Přeskočit na obsah</a></li>
+        <li class="opt">
+          <a href="/WAI/meta/customize/">Změnit velikost textu nebo barvy</a>
+        </li>
+        <li class="opt languagelist">
           <strong>Tato&nbsp;stránka&nbsp;v:</strong>
-          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/" lang="en"  dir="auto" translate="no">English</a></li><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ar" lang="ar"  dir="auto" translate="no">العربية</a></li>
-          <li><strong style="text-transform: capitalize;">čeština</strong></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/es" lang="es"  dir="auto" translate="no">español</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/fr" lang="fr"  dir="auto" translate="no">français</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ko" lang="ko"  dir="auto" translate="no">한국어</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ru" lang="ru"  dir="auto" translate="no">русский язык</a></li>
-          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/zh-hans" lang="zh-hans"  dir="auto" translate="no">简体汉语</a></li>
+          <ul class="languagelistul">
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/"
+                lang="en"
+                dir="auto"
+                translate="no"
+                >English</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ar"
+                lang="ar"
+                dir="auto"
+                translate="no"
+                >العربية</a
+              >
+            </li>
+            <li><strong style="text-transform: capitalize">čeština</strong></li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/es"
+                lang="es"
+                dir="auto"
+                translate="no"
+                >español</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/fr"
+                lang="fr"
+                dir="auto"
+                translate="no"
+                >français</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ko"
+                lang="ko"
+                dir="auto"
+                translate="no"
+                >한국어</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ru"
+                lang="ru"
+                dir="auto"
+                translate="no"
+                >русский язык</a
+              >
+            </li>
+            <li>
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/zh-hans"
+                lang="zh-hans"
+                dir="auto"
+                translate="no"
+                >简体汉语</a
+              >
+            </li>
           </ul>
         </li>
         <li class="opt">
-          <a href="/WAI/translations/">Všechny&nbsp;překlady <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/"
+            >Všechny&nbsp;překlady
+            <svg focusable="false" aria-hidden="true" class="icon-translations">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-translations"
+              ></use></svg
+          ></a>
         </li>
-        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Zobrazit přizpůsobení, jazyky, překlady' data-hidetext='Skrýt možnosti'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Zobrazit přizpůsobení, jazyky, překlady</button></li>
+        <li>
+          <button
+            id="showoptions"
+            data-showhidebuttonid="header-showoptions"
+            class="showhidebutton button-inline"
+            data-target="#controls .opt"
+            aria-expanded="false"
+            data-large-aria-expanded="true"
+            data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Zobrazit přizpůsobení, jazyky, překlady'
+            data-hidetext="Skrýt možnosti"
+          >
+            <svg focusable="false" aria-hidden="true" class="icon-languages">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-languages"
+              ></use>
+            </svg>
+            Zobrazit přizpůsobení, jazyky, překlady
+          </button>
+        </li>
       </ul>
     </nav>
-<header id="site-header" class="default-grid with-gap">
-  <div class="logos">
- 
-    <a lang="en" class="home" href="/WAI/">
-      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
-    </a>
-    <div class="claim">
-      <span>Strategie, standardy, zdroje pro tvorbu webu přístupného pro lidi s postižením</span>
-    </div>
-    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
-  </div>
-
-  <div class="navigations">
-  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
-    <ul>
-      <li><a href="/WAI/about/participating/">Get Involved</a></li>
-      <li><a href="/WAI/about/">About W3C WAI</a></li>
-      <li>
-        <form action="/WAI/search/" role="search">
-          <div>
-            <label for="header-search">
-              <span class="visuallyhidden">Hledat:</span>
-              <input id="header-search" type="search" name="q" placeholder="Hledat" aria-label="Hledat">
-            </label>
-            
-            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Vyhledat" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
-          </div>
-        </form>
-      </li>
-    </ul>
-  </nav>
-</div>
-</header><nav class="mainnav" aria-label="Hlavní menu" lang="cs"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Struktura" lang="en">
-  <ul style="align-self: center;">
-    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="cs" href="/WAI/fundamentals/accessibility-principles/cs" aria-current="page"><span>Accessibility Principles</span></a></li></ul>
-</nav>
-    <div class="default-grid with-gap leftcol">
-
-  
-    <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
-      <ul class="sidenav--list">
-  <li>
-  <a lang="en" href="/WAI/fundamentals/" class="page-link"><span>Accessibility Fundamentals</span></a></li><li>
-  <a lang="cs" href="/WAI/fundamentals/accessibility-intro/cs" class="page-link"><span>Úvod do webové přístupnosti</span></a><ul><li>
-  <a lang="cs" href="/WAI/videos/standards-and-benefits/cs" class="page-link"><span>Video úvod</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/fundamentals/foundations-course/" class="page-link"><span>Foundations Online Course</span></a></li><li>
-  <a lang="en" href="/WAI/fundamentals/components/" class="page-link"><span>Components of Web Accessibility</span></a></li><li>
-  <a lang="cs" href="/WAI/fundamentals/accessibility-principles/cs" aria-current="page" class="page-link"><span>Accessibility Principles</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/" class="page-link"><span>Perspectives Videos</span></a><ul><li>
-  <a lang="en" href="/WAI/perspective-videos/keyboard/" class="page-link"><span>Keyboard Compatibility</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/contrast/" class="page-link"><span>Colors with Good Contrast</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/layout/" class="page-link"><span>Clear Layout and Design</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/speech/" class="page-link"><span>Text to Speech</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/controls/" class="page-link"><span>Large Links, Buttons, and Controls</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/captions/" class="page-link"><span>Video Captions</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/customizable/" class="page-link"><span>Customizable Text</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/voice/" class="page-link"><span>Speech Recognition</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/understandable/" class="page-link"><span>Understandable Content</span></a></li><li>
-  <a lang="en" href="/WAI/perspective-videos/notifications/" class="page-link"><span>Notifications and Feedback</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/people-use-web/" class="page-link"><span>How People with Disabilities Use the Web</span></a><ul><li>
-  <a lang="en" href="/WAI/people-use-web/user-stories/" class="page-link"><span>Stories of Web Users</span></a></li><li>
-  <a lang="en" href="/WAI/people-use-web/abilities-barriers/" class="page-link"><span>Diverse Abilities and Barriers</span></a></li><li>
-  <a lang="en" href="/WAI/people-use-web/tools-techniques/" class="page-link"><span>Tools and Techniques</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/older-users/" class="page-link"><span>Older Users and Accessibility</span></a><ul><li>
-  <a lang="en" href="/WAI/older-users/developing/" class="page-link"><span>How WCAG 2 Applies</span></a></li><li>
-  <a lang="en" href="/WAI/older-users/literature/" class="page-link"><span>Literature Review</span></a></li></ul></li><li>
-  <a lang="en" href="/WAI/fundamentals/accessibility-usability-inclusion/" class="page-link"><span>Accessibility, Usability, Inclusion</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
-        <header id="languagehead">Jazyky/překlady</header>
-        <ul class="langlist">
-          <li style="margin-bottom: 2px;"><a href="/WAI/fundamentals/accessibility-principles/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ar" dir="auto" translate="no" lang="ar">العربية</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">čeština</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/fr" dir="auto" translate="no" lang="fr">français</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ko" dir="auto" translate="no" lang="ko">한국어</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/ru" dir="auto" translate="no" lang="ru">русский язык</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-principles/zh-hans" dir="auto" translate="no" lang="zh-hans">简体汉语</a></li></ul><p><a href="/WAI/translations/#cs">Další zdroje v čeština</a></p>
-        
-        <p><a href="/WAI/translations/">Všechny&nbsp;překlady</a></p>
-        <p><a href="/WAI/about/translating/">Překlady WAI zdrojů</a></p>
-      </nav>
-</div>
-  
-
-  <main id="main" lang="cs">
-
-      
-
-    
-    <header>
-      <h1>
-      
-      
-      
-        Zásady přístupnosti
-      
-      </h1></header>
-    <section id="translation-info" class="doc-note-box doc-note-translation">
-  <h2 class="visuallyhidden">O tomto překladu</h2>
-  <p>Tento dobrovolnický překlad nemusí přesně vystihovat záměry <a href="/WAI/fundamentals/accessibility-principles/">anglického originálu</a>.</p>
-  
-  
-  <p><svg focusable="false" aria-hidden="true" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> Překlad v souladu s anglickou verzí.
-    <br>Překlad aktualizován: <span dir="auto">2020-11-20</span>. Angličtina aktualizována: <span dir="auto">2019-05-10</span>.
-   </p>
-  
-  
-  <p>
-    <strong>Překladatel:</strong> Kristýna Švecová. 
-    <br>WAI děkuje překladatelům a vítá další <a href="/WAI/about/translating/">překlady</a>.</p>
-</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> Shrnutí </h2></header><div class="box-i">
-
-<p>Tato stránka představuje některé požadavky na přístupnost webu pro webové stránky, webové aplikace, prohlížeče a další nástroje. Poskytuje odkazy na mezinárodní standardy z Iniciativy pro webovou přístupnost W3C (WAI) a na <a href="/WAI/people-use-web/user-stories/" hreflang="en">příběhy uživatelů webu (anglicky)</a>.</p>
-
-<p><strong>Poznámka:</strong> Toto není kompletní seznam všech požadavků na přístupnost.</p>
-
-</div></aside>
-
-
-
-<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple box-h-full"> Obsah stránky</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#standards" id="markdown-toc-standards">Standardy webové přístupnosti</a></li>
-  <li><a href="#perceivable" id="markdown-toc-perceivable">Vnímatelné informace a uživatelské rozhraní</a>    <ul>
-      <li><a href="#alternatives" id="markdown-toc-alternatives">Textové alternativy pro netextový obsah</a></li>
-      <li><a href="#captions" id="markdown-toc-captions">Titulky a další alternativy pro multimédia</a></li>
-      <li><a href="#adaptable" id="markdown-toc-adaptable">Obsah lze prezentovat různými způsoby</a></li>
-      <li><a href="#distinguishable" id="markdown-toc-distinguishable">Obsah je lépe vidět a slyšet</a></li>
-    </ul>
-  </li>
-  <li><a href="#operable" id="markdown-toc-operable">Ovladatelné uživatelské rozhraní a navigace</a>    <ul>
-      <li><a href="#keyboard" id="markdown-toc-keyboard">Funkce jsou dostupné pomocí klávesnice</a></li>
-      <li><a href="#time" id="markdown-toc-time">Uživatelé mají dostatek času na přečtení a použití obsahu</a></li>
-      <li><a href="#safe" id="markdown-toc-safe">Obsah nezpůsobuje záchvaty a fyzické reakce</a></li>
-      <li><a href="#navigable" id="markdown-toc-navigable">Uživatelé mohou snadno procházet a vyhledávat obsah, snadno určí, kde se nacházejí</a></li>
-      <li><a href="#modalities" id="markdown-toc-modalities">Uživatelé mohou použít různé způsoby vstupu mimo klávesnici</a></li>
-    </ul>
-  </li>
-  <li><a href="#understandable" id="markdown-toc-understandable">Srozumitelné informace a uživatelské rozhraní</a>    <ul>
-      <li><a href="#readable" id="markdown-toc-readable">Text je čitelný a srozumitelný</a></li>
-      <li><a href="#predictable" id="markdown-toc-predictable">Obsah vypadá a funguje předvídatelně</a></li>
-      <li><a href="#tolerant" id="markdown-toc-tolerant">Uživatelům se pomáhá vyhnout se chybám a opravit je</a></li>
-    </ul>
-  </li>
-  <li><a href="#robust" id="markdown-toc-robust">Robustní obsah a spolehlivá interpretace</a>    <ul>
-      <li><a href="#compatible" id="markdown-toc-compatible">Obsah je kompatibilní se současnými i budoucími uživatelskými nástroji</a></li>
-    </ul>
-  </li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<div class="excol-all"></div>
-
-<h2 id="standards">Standardy webové přístupnosti</h2>
-
-<p>Webová přístupnost spoléhá na několik komponent, které spolupracují. Některé z nich jsou:</p>
-
-<ul>
-  <li><strong id="webcontent">Obsah webu</strong> - jakákoliv část webové stránky, která obsahuje text, obrázky, formuláře a multimédia, stejně tak markup kód, skripty, aplikace a další.</li>
-  <li><strong id="useragents">Uživatelské agenty</strong> - software, který lidé používají pro přístup k webovému obsahu. Jedná se o grafické prohlížeče pro PC, hlasové prohlížeče, mobilní prohlížeče, přehrávače multimédií, pluginy a některé <a href="/WAI/people-use-web/tools-techniques/#at" title="definition" hreflang="en">kompenzační pomůcky (anglicky)</a>.</li>
-  <li><strong id="authoringtools">Vývojové nástroje</strong> - software nebo služby, které se používají k tvorbě webového obsahu, včetně editorů kódu, nástrojů pro převod dokumentů, systémů pro správu obsahu, blogů, databázových skriptů a dalších.</li>
-</ul>
-
-<details><summary>
-
-    <h3 class="no_toc" id="dal-informace-o-standardech-webov-pstupnosti">Další informace o standardech webové přístupnosti</h3>
-
-  </summary>
-  <div>
-
-    <p>Výše zmíněné komponenty jsou propojeny a vzájemně se podporují. Například <strong>webový obsah</strong> musí zahrnovat textové alternativy pro obrázky. Tato informace musí být zpracována <strong>webovými prohlížeči</strong> a předána <strong>asistenčním technologiím</strong>, například čtečkám obrazovky. Autoři potřebují <strong>vývojové nástroje</strong>, které jim umožní tvorbu těchto textových alternativ. Více informací je v <a href="/WAI/fundamentals/components/" hreflang="en">Základních komponentech webové přístupnosti (anglicky)</a>.</p>
-
-    <p>Standardy hrají zásadní roli v definování požadavků na přístupnost pro každý z těchto komponentů. Splnění některých požadavků na přístupnost je jednoduché, přesto porozumnění základům, jak osoby se zdravotním postižením používají Web, pomáhá tyto požadavky splnit efektivněji. Některé aspekty přístupnosti vyžadují více technických dovedností nebo pokročilé znalosti toho, jak lidé používají Web. V každém případě <a href="/WAI/test-evaluate/involving-users/" hreflang="en">zapojení uživatelů ze začátku a během projektů (anglicky)</a> zlepší a usnadní vaši práci.</p>
-
-    <p>Iniciativa pro webovou přístupnost W3C (WAI) poskytuje soubor pokynů, které jsou mezinárodně uznávány jako standard pro webovou přístupnost. Jedná se o:</p>
-
-    <ul>
-      <li><strong><a href="/WAI/standards-guidelines/wcag/" hreflang="en">Pokyny pro zpřístupnění obsahu webu (WCAG) (anglicky)</a></strong></li>
-      <li><strong><a href="/WAI/standards-guidelines/uaag/" hreflang="en">Pokyny k uživatelským agentům (UAAG) (anglicky)</a></strong></li>
-      <li><strong><a href="/WAI/standards-guidelines/atag/" hreflang="en">Pokyny pro zpřístupnění vývojových nástrojů (ATAG) (anglicky)</a></strong></li>
-    </ul>
-
-    <p>K dispozici jsou také WAI specifikace pro <strong><a href="https://www.w3.org/WAI/intro/aria.php">Přístupné internetové aplikace (WAI-ARIA)</a></strong>, které zahrnují dynamický obsah a pokročilé ovládací prvky uživatelského rozhraní vyvinuté s použitím Ajaxu, JavaScriptu a souvisejících webových technologií.</p>
-
-  </div>
-</details>
-
-<h2 id="perceivable">Vnímatelné informace a uživatelské rozhraní</h2>
-
-<h3 id="alternatives">Textové alternativy pro netextový obsah</h3>
-
-<p>Textové alternativy jsou ekvivalenty pro netextový obsah. Mezi příklady patří:</p>
-
-<ul>
-  <li>Krátké alternativy pro obrázky, včetně ikon, tlačítek a grafického obsahu</li>
-  <li>Popis dat znázorněných v grafech, diagramech a ilustracích</li>
-  <li>Krátký popis netextového obsahu jako audio a video souborů</li>
-  <li>Popisky pro ovládací prvky formulářů, vstupů a dalších komponent uživatelského rozhraní</li>
-</ul>
-
-<p>Textové alternativy vyjadřují význam obrázku nebo pomáhají poskytnout srovnatelný uživatelský prožitek. Například vhodná textová alternativa pro tlačítko vyhledávání je “<em>vyhledat</em>”, ne “<em>lupa</em>”.</p>
-
-<p>Textové alternativy lze prezentovat různými způsoby. Například mohou být nahlas přečteny pro uživatele, kteří nevidí obrazovku a pro lidi s obtížemi při čtení. Mohou být zvětšeny na vlastní velikost textu nebo zobrazeny na braillských zařízeních. Textové alternativy slouží jako popisky pro ovládácí prvky a funkce pro usnadnění navigace pomocí klávesnice a navigace pomocí rozpoznávání hlasu (hlasový vstup). Také slouží jako popisky pro audio, video a další formáty. Mohou také popisovat aplikace, které jsou vloženy jako součást webové stránky.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-textovmi-alternativami-odkazy-na-technick-specifikace">Požadavky na přístupnost související s textovými alternativami (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#text-alternatives">Pokyn 1.1 - Textové alternativy</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content">Pokyn 1.1 - Alternativní obsah</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a21">Pokyn A.2.1: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zpřístupněte autorům alternativní obsah</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">Pokyn A.2.2: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zajistěte, aby bylo možné programově určit zobrazení pro úpravy</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">Pokyn A.3.7: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zajistěte, aby náhledy byly přinejmenším stejně přístupné jako v běžných uživatelských agentech</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<details><summary>
-
-    <h4 id="stories-related-to-text-alternatives" class="no_toc">Příběhy související s textovými alternativami</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reportér s poškozením z opakovaného namáhání (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, online studentka, která špatně slyší (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, vedoucí pracovnice, která je slepá (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, studentka střední školy s poruchou pozornosti, hyperaktivitou a dislexií (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou krátkodobé paměti (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="captions">Titulky a další alternativy pro multimédia</h3>
-
-<p>Osoby, které neslyší audio nebo nevidí video potřebují alternativy. Například:</p>
-
-<ul>
-  <li>Textové přepisy a titulky pro audio, jako třeba nahrávky rozhlasových rozhovorů</li>
-  <li>Audio popis líčí důležité vizuální detaily ve videu</li>
-  <li>Znaková řeč pro audio včetně důležitých sluchových prožitků</li>
-</ul>
-
-<p>Dobře napsané textové přepisy, které obsahují správnou posloupnost všech zvukových a vizuálních informací, poskytují základní úroveň přístupnosti a usnadňují tvorbu titulků a audio popisů.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-multimdii-odkazy-na-technick-specifikace">Požadavky na přístupnost související s multimédii (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#time-based-media">Pokyn 1.2 - Média závisející na času</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content">Pokyn 1.1 - Alternativní obsah</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a21">Pokyn A.2.1: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zpřístupněte autorům alternativní obsah</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">Pokyn A.3.7: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zajistěte, aby náhledy byly přinejmenším stejně přístupné jako v běžných uživatelských agentech</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 id="stories-related-to-multimedia" class="no_toc">Příběhy související s multimédii</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, online studentka, která špatně slyší (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, vedoucí pracovnice, která je slepá (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="adaptable">Obsah lze prezentovat různými způsoby</h3>
-
-<p>Aby uživatelé mohli změnit prezentaci obsahu, je nutné, aby:</p>
-
-<ul>
-  <li>nadpisy, seznamy, tabulky, vstupní políčka formulářů a struktury obsahu byly správně označeny</li>
-  <li>pořadí informací a instrukcí nezáleželo na prezentaci</li>
-  <li>prohlížeče a asistenční technologie poskytovaly nastavení pro přizpůsobení prezentace</li>
-</ul>
-
-<p>Splnění tohoto požadavku umožňuje správné čtení obsahu nahlas, zvětšení nebo přizpůsobení tak, aby vyhovovalo potřebám a preferencím různých lidí. Obsah může být například prezentován pomocí vlastních barevných kombinací, velikosti textu nebo jiných úprav vzhledu, které usnadní čtení. Tento požadavek také usnadňuje další formy přizpůsobení, včetně automatického generování obrysů a souhrnů stránek, které lidem pomohou získat přehled a snadněji se zaměřit na konkrétní části.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-pizpsobivost-odkazy-na-technick-specifikace">Požadavky na přístupnost související s přizpůsobivostí (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#adaptable">Pokyn 1.3 - Přizpůsobivost</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-text-config">Pokyn 1.4 - Konfigurace textu</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-volume-config">Pokyn 1.5 - Konfigurace hlasitosti</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-speech-config">Pokyn 1.6 - Konfigurace syntetizované řeči</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config">Pokyn 1.7 - Konfigurace šablony stylů uživatele</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views">Pokyn 1.9 - Alternativní zobrazení</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-info-link">Pokyn 1.10 - Informace o elementech</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">Pokyn A.2.2: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zajistěte, aby bylo možné programově určit zobrazení pro úpravy</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">Pokyn A.3.7: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zajistěte, aby náhledy byly přinejmenším stejně přístupné jako v běžných uživatelských agentech</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="pbhy-souvisejc-s-pizpsobivost">Příběhy související s přizpůsobivostí</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, online nakupující, který je barvoslepý (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reportér s poškozením z opakovaného namáhání (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, vedoucí pracovnice, která je slepá (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, studentka střední školy s poruchou pozornosti, hyperaktivitou a dislexií (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou krátkodobé paměti (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, asistent v supermarketu s Downovým syndromem (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="distinguishable">Obsah je lépe vidět a slyšet</h3>
-
-<p>Rozlišitelný obsah je lépe vidět a slyšet. Příklady takového obsahu jsou:</p>
-
-<ul>
-  <li>Barva není jediný nositel informace nebo identifikátor obsahu</li>
-  <li>Výchozí kombinace barvy popředí a pozadí má dostatečný barevný kontrast</li>
-  <li>Pokud uživatel zvětší text na 400% nebo změní velikost řádkování, žádné informace nejsou ztraceny</li>
-  <li>Přeformátování textu v malých oknech („výřezech“) a při zvětšení textu uživatelem</li>
-  <li>U obrázků textu lze změnit velikost. Lepší je ale nahradit je textem nebo se jim pokud možno vyhnout</li>
-  <li>Uživatel může pozastavit, zastavit nebo změnit hlasitost zvuku, který hraje na webové stránce</li>
-  <li>Audio na pozadí je potichu a je možné ho vypnout, aby nerušilo nebo nerozptylovalo uživatele</li>
-</ul>
-
-<p>Splnění tohoto požadavku pomáhá oddělit popředí od pozadí, takže jsou důležité informace lépe rozlišitelné. Toto má vliv jak na osoby, co nepoužívají asistenční technologie, tak na ty, kteří je používají. Ti mohou vnímat rušení, pokud je v pozadí výrazný audio nebo vizuální obsah. Například mnoho lidí s barvoslepostí nepoužívá určité nástroje a spoléhají se na vlastní design, který má dostatečný barevný kontrast mezi textem a jeho pozadím. Pro ostatní může zvuk na pozadí rušit převod textu na řeč nebo <a href="http://www.w3.org/WAI/training/accessible#ald" title="definition">asistenční zařízení pro slyšení (ALDs)</a>.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-rozliitelnost-odkazy-na-technick-specifikace">Požadavky na přístupnost související s rozlišitelností (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#distinguishable">Pokyn 1.4 - Rozlišitelnost</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-interaction-highlight">Pokyn 1.3 - Zvýraznění</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-text-config">Pokyn 1.4 - Konfigurace textu</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-volume-config">Pokyn 1.5 - Konfigurace hlasitosti</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-speech-config">Pokyn 1.6 - Konfigurace syntetizované řeči</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config">Pokyn 1.7 - Konfigurace šablony stylů uživatele</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-viewport-orient">Pokyn 1.8 - Orientace ve výřezech</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views">Pokyn 1.9 - Alternativní zobrazení</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-info-link">Pokyn 1.10 - Informace o elementech</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a37">Pokyn A.3.7: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zajistěte, aby náhledy byly přinejmenším stejně přístupné jako v běžných uživatelských agentech</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="pbhy-souvisejc-s-rozliitelnost">Příběhy související s rozlišitelností</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, online nakupující, který je barvoslepý (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, online student who is hard of hearing (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, vedoucí pracovnice, která je slepá (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou krátkodobé paměti (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="operable">Ovladatelné uživatelské rozhraní a navigace</h2>
-
-<h3 id="keyboard">Funkce jsou dostupné pomocí klávesnice</h3>
-
-<p>Mnoho lidí pro interakci s webem nepoužívá myš, ale spoléhá na klávesnici. To vyžaduje přístup ke všem funkcím z klávesnice, včetně ovládacích prvků formulářů, vstupů a dalších komponent uživatelského rozhraní.</p>
-
-<p>Přístupnost klávesnice znamená, že:</p>
-
-<ul>
-  <li>Všechny funkce, které jsou dostupné myší jsou také dostupné klávesnicí</li>
-  <li>Focus klávesnice neuvízne v žádné části obsahu</li>
-  <li>Webové prohlížeče, nástroje pro tvorbu a další nástroje podporují ovládání klávesnicí</li>
-</ul>
-
-<p>Splnění tohoto požadavku pomáhá uživatelům klávesnice včetně osob, které používají alternativní klávesnice jako třeba klávesnice s ergonomickým rozložením, klávesnice na obrazovce nebo tlačítková zářízení. Také pomáhá osobám, které používají rozpoznávání hlasu (hlasový vstup) k ovládání webových stránek a k diktování textu použitím klávesnice.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-pstupnost-z-klvesnice-odkazy-na-technick-specifikace">Požadavky na přístupnost související s přístupností z klávesnice (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-accessible">Pokyn 2.1 - Přístupnost z klávesnice</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-keyboard-access">Pokyn 2.1 - Přístup z klávesnice</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation">Pokyn 2.2 - Sekvenční navigace</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation">Pokyn 2.3 - Přímá navigace a aktivace</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-other-devices">Pokyn 2.11 - Další vstupní zařízení</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a31">Pokyn A.3.1: (Pro uživatelské rozhraní nástrojů pro tvorbu) Podporujte přístup z klávesnice k autorským funkcím</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="pbhy-souvisejc-s-pstupnost-z-klvesnice">Příběhy související s přístupností z klávesnice</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reportér s poškozením z opakovaného namáhání (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, vedoucí pracovnice, která je slepá (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="time">Uživatelé mají dostatek času na přečtení a použití obsahu</h3>
-
-<p>Někteří lidé potřebují více času než jiní pro čtení a použití obsahu. Například někteří lidé vyžadují více času pro napsání textu, porozumnění instrukcím, ovládání ovládacích prvků nebo jiný způsob provedení úkonů na webové stránce.</p>
-
-<p>Mezi příklady poskytnutí dostatku času patří poskytnutí možnosti:</p>
-
-<ul>
-  <li>Zastavení, zvýšení nebo přizpůsobení časových limitů, pokud to je v dané situaci možné</li>
-  <li>Pozastavit, zastavit nebo skrýt pohyb, blikání nebo posouvání obsahu</li>
-  <li>Odložit nebo potlačit vyrušení, pokud to je v dané situaci možné</li>
-  <li>Opětovného přihlášení po vypršení relace bez ztráty dat</li>
-</ul>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-dostatkem-asu-odkazy-na-technick-specifikace">Požadavky na přístupnost související s dostatkem času (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#enough-time">Pokyn 2.2 - Dostatek času</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-time-independent">Pokyn 2.8 - Časově nezávislé interakce</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-control-inaccessible-content">Pokyn 2.10 - Časově závislá média</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a32">Pokyn A.3.2: (Pro uživatelské rozhraní nástrojů pro tvorbu) Poskytněte autorům dostatek času</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="pbhy-souvisejc-s-dostatkem-asu">Příběhy související s dostatkem času</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reportér s poškozením z opakovaného namáhání (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, studentka střední školy s poruchou pozornosti, hyperaktivitou a dislexií (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou krátkodobé paměti (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, asistent v supermarketu s Downovým syndromem (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="safe">Obsah nezpůsobuje záchvaty a fyzické reakce</h3>
-
-<p>Obsah, který bliká určitou rychlostí nebo vzorem může způsobit fotocitlivé reakce včetně záchvatů. Blikající obsah by ideálně neměl být zobrazen vůbec nebo tak, aby nezpůsoboval známá rizika. Animace a pohybující se obsah může také způsobovat zdravotní potíže a fyzické reakce.</p>
-
-<p>Příklady, jak se nezpůsobovat záchvaty a fyzické reakce:</p>
-
-<ul>
-  <li>Nepoužívejte obsah, který bliká určitou rychlostí nebo vzorem</li>
-  <li>Varujte uživatele před zobrazením blikajícího obsahu a poskytněte alternativy</li>
-  <li>Poskytněte možnost vypnout animace, pokud nejsou nezbytné</li>
-</ul>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-se-zchvaty-odkazy-na-technick-specifikace">Požadavky na přístupnost související se záchvaty (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#seizures-and-physical-reactions">Pokyn 2.3 - Záchvaty</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-prevent-flash">Pokyn 2.9 - Blikání</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a33">Pokyn A.3.3: (Pro uživatelské rozhraní nástrojů pro tvorbu) Pomozte autorům vyhnout se blikání, které by mohlo způsobit záchvat</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="navigable">Uživatelé mohou snadno procházet a vyhledávat obsah, snadno určí, kde se nacházejí</h3>
-
-<p>Dobře zorganizovaný obsah pomáhá uživatelům orientovat se a efektivně procházet obsah. Mezi příklady patří:</p>
-
-<ul>
-  <li>Stránky mají jasný titul a popisné nadpisy jednotlivých sekcí</li>
-  <li>Najít relevantní stránky v rámci řady webových stránek lze více než jedním způsobem</li>
-  <li>Uživatelé jsou informovaní o současné lokaci v rámci několika souvisejících stránek</li>
-  <li>Je možné přeskočit části obsahu, které se opakují na více stránkách</li>
-  <li>Focus klávesnice je vidět a pořadí focusu dává smysl</li>
-  <li>Účel odkazu je jasný, nejlépe i v případě, kdy je odkaz zobrazen samostatně</li>
-</ul>
-
-<p>Splnění tohoto požadavku pomáhá lidem navigovat webovou stránkou různými způsoby podle jejich konkrétních potřeb a preferencí. Například někteří lidé při hledání určité webové stránky spoléhají na hierarchické navigační struktury, jako jsou panely nabídek. Jiní ale ve stejné situaci spoléhají spíše na funkci vyhledávání na webových stránkách. Někteří obsah vidí, jiný slyší nebo slyší a vidí zároveň. Někteří uživatelé používají pouze myš nebo klávesnici, zatímco jiní mohou používat obojí.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-navigac-odkazy-na-technick-specifikace">Požadavky na přístupnost související s navigací (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#navigable">Pokyn 2.4 - Navigace</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation">Pokyn 2.2 - Sekvenční navigace</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation">Pokyn 2.3 - Přímá navigace a aktivace</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-search-text">Pokyn 2.4 - Textové vyhledávání</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-nav-structure">Pokyn 2.5 - Strukturální navigace</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-configure-controls">Pokyn 2.7 - Grafické ovládací prvky</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">Pokyn A.2.2: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zajistěte, aby bylo možné programově určit zobrazení pro úpravy</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a34">Pokyn A.3.4: (Pro uživatelské rozhraní nástrojů pro tvorbu) Vylepšete navigaci a úpravy prostřednictvím struktury obsahu</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a35">Pokyn A.3.5: (Pro uživatelské rozhraní nástrojů pro tvorbu) Poskytněte textové vyhledávání obsahu</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="pbhy-souvisejc-s-navigac">Příběhy související s navigací</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reportér s poškozením z opakovaného namáhání (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, vedoucí pracovnice, která je slepá (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, studentka střední školy s poruchou pozornosti, hyperaktivitou a dislexií (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou krátkodobé paměti (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, asistent v supermarketu s Downovým syndromem (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="modalities">Uživatelé mohou použít různé způsoby vstupu mimo klávesnici</h3>
-
-<p>Způsoby vstupu kromě klávesnice, jako třeba aktivace dotykem, hlasové rozpoznávání (hlasový vstup) a gesta, umožňují pro mnoho lidí snadnější použití obsahu. Přesto ne všichni mohou použít kterýkoliv z těchto způsobů nebo ve stejné míře. Specifický design maximalizuje výhody těchto způsobů. To zahrnuje:</p>
-
-<ul>
-  <li>Gesta vyžadující obratnost nebo jemný pohyb mají alternativy, které nevyžadují velkou obratnost</li>
-  <li>Komponenty jsou navrženy tak, aby se zabránilo nechtěné aktivaci, například poskytnutím funkce Zpět</li>
-  <li>Popisky prezentované uživatelům se shodují s odpovídajícími názvy objektů v kódu, což podporuje aktivaci hlasem</li>
-  <li>Funkčnost aktivovanou pohybem lze aktivovat také prostřednictvím komponent uživatelského rozhraní</li>
-  <li>Tlačítka, odkazy a další aktivní komponenty jsou dostatečně velké, aby se snadněji aktivovaly dotykem</li>
-</ul>
-
-<p>Splnění tohoto požadavku usnadňuje používání obsahu pro mnoho lidí se širokou škálou schopností využívajících širokou škálu zařízení. To zahrnuje obsah používaný v mobilních telefonech, tabletech a samoobslužných terminálech, jako jsou automaty na jízdenky.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-se-zpsoby-vstupu-odkazy-na-technick-specifikace">Požadavky na přístupnost související se způsoby vstupu (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#input-modalities">Pokyn 2.5 - Způsoby vstupu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="pbhy-souvisejc-se-zpsoby-vstupu">Příběhy související se způsoby vstupu</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reportér s poškozením z opakovaného namáhání (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou krátkodobé paměti (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, asistent v supermarketu s Downovým syndromem (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="understandable">Srozumitelné informace a uživatelské rozhraní</h2>
-
-<h3 id="readable">Text je čitelný a srozumitelný</h3>
-
-<p>Autoři obsahu musí zajistit, aby byl text čitelný pro co nejširší publikum, včetně toho, kdy je čten nahlas pomocí převodu textu na řeč. Toto zahrnuje:</p>
-
-<ul>
-  <li>Určení primárního jazyka webové stránky, jako třeba arabština, holandština nebo korejština</li>
-  <li>Určení jazyka textu, frází nebo jiných částí webové stránky</li>
-  <li>Poskytnutí definic pro nezvyklá slova, fráze, idiomy a zkratky</li>
-  <li>Použití nejjasnějšího a nejjednoduššího možného vyjadřování nebo poskytnutí zjednodušených verzí</li>
-</ul>
-
-<p>Splnění tohoto požadavku pomáhá softwaru včetně asistenčních technologií správně zpracovat textový obsah. Například pomáhá tento požadavek softwaru nahlas přečíst obsah, generovat shrnutí stránky a poskytnout definice pro nezvyklá slova jako třeba technický slang. Také pomáhá lidem, kteří mají potíže s porozumněním složitějších vět, frází a slov. Zejména pomáhá osobám s různými typy kognitivních poruch.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-itelnost-odkazy-na-technick-specifikace">Požadavky na přístupnost související s čitelností (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#readable">Pokyn 3.1 - Čitelnost</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b42">Pokyn A.4.2: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zdokumentujte uživatelské rozhraní včetně všech funkcí přístupnosti</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="pbhy-souvisejc-s-itelnost">Příběhy související s čitelností</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#onlinestudent" hreflang="en">Martine, online studentka, která špatně slyší (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, vedoucí pracovnice, která je slepá (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, studentka střední školy s poruchou pozornosti, hyperaktivitou a dislexií (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou krátkodobé paměti (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, asistent v supermarketu s Downovým syndromem (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="predictable">Obsah vypadá a funguje předvídatelně</h3>
-
-<p>Mnoho lidí spoléhá na předvídatelné uživatelské rozhraní a jsou dezorientovaní nebo rozptýlení nekonzistentním vzhledem nebo chováním. Mezi příklady předvídatelného obsahu patří:</p>
-
-<ul>
-  <li>Navigační mechanismy, které se opakují na více stránkách, se objevují pokaždé na stejném místě</li>
-  <li>Komponenty uživatelského rozhraní, které se na webové stránce opakují, mají pokaždé stejné popisky</li>
-  <li>K významným změnám na webové stránce nedojde bez souhlasu uživatele</li>
-</ul>
-
-<p>Splnění tohoto požadavku pomáhá lidem rychle se naučit funkčnost a navigační mechanismy dostupné na webové stránce a ovládat je podle svých konkrétních potřeb a preferencí. Někteří lidé například přiřazují vlastní klávesové zkratky funkcím, které často používají, aby vylepšili navigaci klávesnicí. Jiní si zapamatují kroky k dosažení určitých stránek nebo k dokončení operací na webové stránce. Oba příklady spoléhají na předvídatelnou a konzistentní funkčnost.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-pedvdatelnost-odkazy-na-technick-specifikace">Požadavky na přístupnost související s předvídatelností (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#predictable">Pokyn 3.2 - Předvídatelnost</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-predictable-operation">Pokyn 3.3 - Předvídatelnost</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">Pokyn A.2.2: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zajistěte, aby bylo možné programově určit zobrazení pro úpravy</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b42">Pokyn A.4.2: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zdokumentujte uživatelské rozhraní včetně všech funkcí přístupnosti</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="pbhy-souvisejc-s-pedvdatelnost">Příběhy související s předvídatelností</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reportér s poškozením z opakovaného namáhání (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, vedoucí pracovnice, která je slepá (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, studentka střední školy s poruchou pozornosti, hyperaktivitou a dislexií (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou krátkodobé paměti (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, asistent v supermarketu s Downovým syndromem (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h3 id="tolerant">Uživatelům se pomáhá vyhnout se chybám a opravit je</h3>
-
-<p>Formuláře a další interakce mohou být pro některé uživatele matoucí nebo obtížně použitelné. V důsledku toho je pravděpodobnější, že udělají chybu. Mezi příklady pomoci uživatelům vyvarovat se chybám a opravit je patří:</p>
-
-<ul>
-  <li>Jasné instrukce, chybové zprávy a návrhy na opravu</li>
-  <li>Kontextová nápověda pro složitější funkce a interakci</li>
-  <li>V případě potřeby příležitost zkontrolovat, opravit nebo zrušit odeslání</li>
-</ul>
-
-<p>Splnění tohoto požadavku pomáhá lidem, kteří nevidí nebo neslyší obsah a nemusí rozpoznat implicitní vztahy, sekvence a další podněty. Pomáhá také lidem, kteří nerozumí funkčnosti, jsou dezorientovaní nebo zmatení, zapomínají nebo dělají chyby při vyplňování formulářů a interakcích z jakéhokoli jiného důvodu.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-asistenc-pro-vstup-odkazy-na-technick-specifikace">Požadavky na přístupnost související s asistencí pro vstup (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#input-assistance">Pokyn 3.3 - Asistence pro vstup</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-avoid-mistakes">Pokyn 3.1 - Chyby</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_a22">Pokyn A.2.2: (Pro uživatelské rozhraní nástrojů pro tvorbu) Zajistěte, aby bylo možné programově určit zobrazení pro úpravy</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#gl_b41">Pokyn A.4.1: (Pro uživatelské rozhraní nástrojů pro tvorbu) Pomozte autorům vyhnout se chybám a opravit je</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="pbhy-souvisejc-s-asistenc-vstupu">Příběhy související s asistencí vstupu</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, online nakupující, který je barvoslepý (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reportér s poškozením z opakovaného namáhání (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, studentka střední školy s poruchou pozornosti, hyperaktivitou a dislexií (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#retiree" hreflang="en">Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou krátkodobé paměti (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, asistent v supermarketu s Downovým syndromem (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<h2 id="robust">Robustní obsah a spolehlivá interpretace</h2>
-
-<h3 id="compatible">Obsah je kompatibilní se současnými i budoucími uživatelskými nástroji</h3>
-
-<p>Robustní obsah je kompatibilní s různými prohlížeči, asistenčními technologiemi a dalšími uživatelskými agenty. Mezi příklady toho, jak toho lze dosáhnout, patří:</p>
-
-<ul>
-  <li>Zajistit, že program je spolehlivě interpretován, například zajištěním jeho platnosti</li>
-  <li>Poskytnutí názvu, role a hodnoty pro nestandardní součásti uživatelského rozhraní</li>
-</ul>
-
-<p>Splnění tohoto požadavku pomáhá maximalizovat kompatibilitu se současnými i budoucími uživatelskými agenty, včetně asistenčních technologií. Zejména umožňuje asistenčním technologiím spolehlivé zpracování obsahu a jeho prezentaci nebo ovládání různými způsoby. To zahrnuje nestandardní (skriptovaná) tlačítka, vstupní pole a další ovládací prvky.</p>
-
-<details><summary>
-
-    <h4 class="no_toc" id="poadavky-na-pstupnost-souvisejc-s-kompatibilitou-odkazy-na-technick-specifikace">Požadavky na přístupnost související s kompatibilitou (odkazy na technické specifikace)</h4>
-
-  </summary>
-  <div>
-
-    <p><strong>WCAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#compatible">Pokyn 4.1 - Kompatibilita</a></li>
-    </ul>
-
-    <p><strong>UAAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-store-prefs">Pokyn 2.6 - Nastavení předvoleb</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-AT-access">Pokyn 4.1 - Asistenční technologie</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-obs-env-conventions">Pokyn 5.1 - Dodržujte specifikace</a></li>
-    </ul>
-
-    <p><strong>ATAG</strong></p>
-
-    <ul>
-      <li><a href="https://www.w3.org/TR/ATAG20/#principle_a1">Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí příslušnými pokyny pro přístupnost</a></li>
-      <li><a href="https://www.w3.org/TR/ATAG20/#part_b">Část B. Podporujte tvorbu přístupného obsahu</a></li>
-    </ul>
-
-  </div>
-</details>
-<details><summary>
-
-    <h4 class="no_toc" id="pbhy-souvisejc-s-kompatibilitou">Příběhy související s kompatibilitou</h4>
-
-  </summary>
-  <div>
-
-    <ul>
-      <li><a href="/WAI/people-use-web/user-stories/#shopper" hreflang="en">Lee, online nakupující, který je barvoslepý (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#reporter" hreflang="en">Alex, reportér s poškozením z opakovaného namáhání (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#accountant" hreflang="en">Ilya, vedoucí pracovnice, která je slepá (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#classroomstudent" hreflang="en">Preety, studentka střední školy s poruchou pozornosti, hyperaktivitou a dislexií (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#supermarketassistant" hreflang="en">Luis, asistent v supermarketu s Downovým syndromem (anglicky)</a></li>
-      <li><a href="/WAI/people-use-web/user-stories/#teenager" hreflang="en">Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a></li>
-    </ul>
-
-  </div>
-</details>
-
-<div class="excol-all"></div>
-
-
-
-    <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Pomozte vylepšit tuto stránku </h2></header><div class="box-i"><p>Prosíme, sdílejte své nápady, připomínky nebo komentáře e-mailem do veřejně archivovaného seznamu <a href="mailto:wai-eo-editors@w3.org?subject=[cs]%20Z%C3%A1sady%20p%C5%99%C3%ADstupnosti">wai-eo-editors@w3.org</a> nebo na GitHubu.</p>
-<div class="button-group">
-    <a href="mailto:wai-eo-editors@w3.org?subject=[cs]%20Z%C3%A1sady%20p%C5%99%C3%ADstupnosti&body=[vlo%C5%BEit%20koment%C3%A1%C5%99%20zde...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/wai-accessibility-principles/edit/master/content/index.cs.md"  class="button"><span>Vytvořit fork &amp; upravit na GitHubu</span></a><a href="https://github.com/w3c/wai-accessibility-principles/issues/new?title=[cs]%20" class="button"><span>Nová GitHub Issue</span></a>
-</div></div></aside>
-
-
-    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Nahoru</span></a>
-  </main>
-</div>
-
-
-  
-  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-    <div class="inner" 
-      >
-      <p><strong>Datum:</strong> Aktualizováno 10. května 2019. <a href="/WAI/fundamentals/accessibility-principles/changelog/">Seznam změn</a></p> <p><strong>Editoři:</strong> <a href="https://www.w3.org/People/shadi/">Shadi Abou Zahra</a>. <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments">Poděkování</a>.</p> <p>Vyvinuto Pracovní skupinou pro vzdělání a osvětu (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Dříve vyvinuto s Pracovní skupinou <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf">WAI-AGE</a> za podpory Projektu <a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE</a>.</p>
-</div>
-  </footer>
-  
-
-
-<footer class="site-footer grid-4q" aria-label="Site">
-  <div class="q1-start q3-end about">
-    <div>
-      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
-      <p>Strategie, standardy a další zdroje pro tvorbu webu přístupného pro lidi s postižením.</p>
-    </div>
-    <div class="social" lang="en" dir="auto" translate="no">
+    <header id="site-header" class="default-grid with-gap">
+      <div class="logos">
+        <a lang="en" class="home" href="/WAI/">
+          <span class="wai"
+            ><span class="wa">Web&nbsp;Accessibility</span>
+            <span class="i"
+              ><span class="initieative">Initiative</span>
+              <span>WAI</span></span
+            ></span
+          >
+        </a>
+        <div class="claim">
+          <span
+            >Strategie, standardy, zdroje pro tvorbu webu přístupného pro lidi s
+            postižením</span
+          >
+        </div>
+        <button
+          class="button button-menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="openmenu"
+        >
+          <span
+            ><svg focusable="false" aria-hidden="true" class="icon-menu">
+              <use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use>
+            </svg>
+            Menu</span
+          >
+        </button>
+      </div>
+
+      <div class="navigations">
+        <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+          <ul>
+            <li><a href="/WAI/about/participating/">Get Involved</a></li>
+            <li><a href="/WAI/about/">About W3C WAI</a></li>
+            <li>
+              <form action="/WAI/search/" role="search">
+                <div>
+                  <label for="header-search">
+                    <span class="visuallyhidden">Hledat:</span>
+                    <input
+                      id="header-search"
+                      type="search"
+                      name="q"
+                      placeholder="Hledat"
+                      aria-label="Hledat"
+                    />
+                  </label>
+
+                  <button
+                    class="button button-icon button-nobg button-noborder"
+                  >
+                    <span
+                      ><svg
+                        focusable="false"
+                        aria-label="Vyhledat"
+                        class="icon-search"
+                      >
+                        <use
+                          xlink:href="/WAI/assets/images/icons.svg#icon-search"
+                        ></use></svg
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="Hlavní menu" lang="cs">
       <ul>
-        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
-        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
-        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
-        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/planning/"
+            ><span>Planning &amp; Policies</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/design-develop/"
+            ><span>Design &amp; Develop</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/test-evaluate/"
+            ><span>Test &amp; Evaluate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/teach-advocate/"
+            ><span>Teach &amp; Advocate</span></a
+          >
+        </li>
+        <li>
+          <a lang="en" href="/WAI/standards-guidelines/"
+            ><span>Standards/<wbr />Guidelines</span></a
+          >
+        </li>
       </ul>
-    </div>
-    <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
-    </div>
-  </div>
-  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
-    <ul style="margin-bottom:0">
-      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-      <li><a href="/WAI/sitemap/">Site Map</a></li>
-      <li><a href="/WAI/news/">News</a></li>
-      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
-      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-      <li><a href="/WAI/translations/"> Translations</a></li>
-      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-    </ul>
-  </div>
-</footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
-<!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
-<script>
-  svg4everybody();
-</script>
-<script src="/WAI/assets/scripts/lang/cs.js?1633578570351143841"></script><!-- Matomo -->
-<script>
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '328']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    </nav>
+    <nav class="default-grid breadcrumb" aria-label="Struktura" lang="en">
+      <ul style="align-self: center">
+        <li><a href="/WAI/" lang="en">Home</a></li>
+        <li>
+          <a lang="en" href="/WAI/fundamentals/"
+            ><span>Accessibility Fundamentals</span></a
+          >
+        </li>
+        <li>
+          <a
+            lang="cs"
+            href="/WAI/fundamentals/accessibility-principles/cs"
+            aria-current="page"
+            ><span>Accessibility Principles</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="default-grid with-gap leftcol">
+      <div class="sidenav">
+        <nav class="sn-contents" aria-label="Secondary">
+          <ul class="sidenav--list">
+            <li>
+              <a lang="en" href="/WAI/fundamentals/" class="page-link"
+                ><span>Accessibility Fundamentals</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="cs"
+                href="/WAI/fundamentals/accessibility-intro/cs"
+                class="page-link"
+                ><span>Úvod do webové přístupnosti</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="cs"
+                    href="/WAI/videos/standards-and-benefits/cs"
+                    class="page-link"
+                    ><span>Video úvod</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/foundations-course/"
+                class="page-link"
+                ><span>Foundations Online Course</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/components/"
+                class="page-link"
+                ><span>Components of Web Accessibility</span></a
+              >
+            </li>
+            <li>
+              <a
+                lang="cs"
+                href="/WAI/fundamentals/accessibility-principles/cs"
+                aria-current="page"
+                class="page-link"
+                ><span>Accessibility Principles</span></a
+              >
+            </li>
+            <li>
+              <a lang="en" href="/WAI/perspective-videos/" class="page-link"
+                ><span>Perspectives Videos</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/keyboard/"
+                    class="page-link"
+                    ><span>Keyboard Compatibility</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/contrast/"
+                    class="page-link"
+                    ><span>Colors with Good Contrast</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/layout/"
+                    class="page-link"
+                    ><span>Clear Layout and Design</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/speech/"
+                    class="page-link"
+                    ><span>Text to Speech</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/controls/"
+                    class="page-link"
+                    ><span>Large Links, Buttons, and Controls</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/captions/"
+                    class="page-link"
+                    ><span>Video Captions</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/customizable/"
+                    class="page-link"
+                    ><span>Customizable Text</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/voice/"
+                    class="page-link"
+                    ><span>Speech Recognition</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/understandable/"
+                    class="page-link"
+                    ><span>Understandable Content</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/perspective-videos/notifications/"
+                    class="page-link"
+                    ><span>Notifications and Feedback</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/people-use-web/" class="page-link"
+                ><span>How People with Disabilities Use the Web</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/user-stories/"
+                    class="page-link"
+                    ><span>Stories of Web Users</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/abilities-barriers/"
+                    class="page-link"
+                    ><span>Diverse Abilities and Barriers</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/people-use-web/tools-techniques/"
+                    class="page-link"
+                    ><span>Tools and Techniques</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a lang="en" href="/WAI/older-users/" class="page-link"
+                ><span>Older Users and Accessibility</span></a
+              >
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/older-users/developing/"
+                    class="page-link"
+                    ><span>How WCAG 2 Applies</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="/WAI/older-users/literature/"
+                    class="page-link"
+                    ><span>Literature Review</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                lang="en"
+                href="/WAI/fundamentals/accessibility-usability-inclusion/"
+                class="page-link"
+                ><span>Accessibility, Usability, Inclusion</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="sidenav-languages" aria-labelledby="languagehead">
+          <header id="languagehead">Jazyky/překlady</header>
+          <ul class="langlist">
+            <li style="margin-bottom: 2px">
+              <a
+                href="/WAI/fundamentals/accessibility-principles/"
+                lang="en"
+                dir="auto"
+                translate="no"
+                >English (original)</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ar"
+                dir="auto"
+                translate="no"
+                lang="ar"
+                >العربية</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <strong style="text-transform: capitalize">čeština</strong>
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/es"
+                dir="auto"
+                translate="no"
+                lang="es"
+                >español</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/fr"
+                dir="auto"
+                translate="no"
+                lang="fr"
+                >français</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ko"
+                dir="auto"
+                translate="no"
+                lang="ko"
+                >한국어</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/ru"
+                dir="auto"
+                translate="no"
+                lang="ru"
+                >русский язык</a
+              >
+            </li>
+            <li style="margin-bottom: 2px">
+              <a
+                style="text-transform: capitalize"
+                href="/WAI/fundamentals/accessibility-principles/zh-hans"
+                dir="auto"
+                translate="no"
+                lang="zh-hans"
+                >简体汉语</a
+              >
+            </li>
+          </ul>
+          <p><a href="/WAI/translations/#cs">Další zdroje v čeština</a></p>
 
+          <p><a href="/WAI/translations/">Všechny&nbsp;překlady</a></p>
+          <p><a href="/WAI/about/translating/">Překlady WAI zdrojů</a></p>
+        </nav>
+      </div>
 
+      <main id="main" lang="cs">
+        <header>
+          <h1>Zásady přístupnosti</h1>
+        </header>
+        <section
+          id="translation-info"
+          class="doc-note-box doc-note-translation"
+        >
+          <h2 class="visuallyhidden">O tomto překladu</h2>
+          <p>
+            Tento dobrovolnický překlad nemusí přesně vystihovat záměry
+            <a href="/WAI/fundamentals/accessibility-principles/"
+              >anglického originálu</a
+            >.
+          </p>
+
+          <p>
+            <svg focusable="false" aria-hidden="true" class="icon-check-circle">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"
+              ></use>
+            </svg>
+            Překlad v souladu s anglickou verzí. <br />Překlad aktualizován:
+            <span dir="auto">2020-11-20</span>. Angličtina aktualizována:
+            <span dir="auto">2019-05-10</span>.
+          </p>
+
+          <p>
+            <strong>Překladatel:</strong> Kristýna Švecová. <br />WAI děkuje
+            překladatelům a vítá další
+            <a href="/WAI/about/translating/">překlady</a>.
+          </p>
+        </section>
+        <aside class="box box-full">
+          <header class="box-h box-h-full"><h2>Shrnutí</h2></header>
+          <div class="box-i">
+            <p>
+              Tato stránka představuje některé požadavky na přístupnost webu pro
+              webové stránky, webové aplikace, prohlížeče a další nástroje.
+              Poskytuje odkazy na mezinárodní standardy z Iniciativy pro webovou
+              přístupnost W3C (WAI) a na
+              <a href="/WAI/people-use-web/user-stories/" hreflang="en"
+                >příběhy uživatelů webu (anglicky)</a
+              >.
+            </p>
+
+            <p>
+              <strong>Poznámka:</strong> Toto není kompletní seznam všech
+              požadavků na přístupnost.
+            </p>
+          </div>
+        </aside>
+
+        <nav
+          class="box box-simple box-full"
+          aria-labelledby="tocheading"
+          id="toc"
+        >
+          <header id="tocheading" class="box-h box-h-simple box-h-full">
+            Obsah stránky
+          </header>
+          <div class="box-i">
+            <ul id="markdown-toc">
+              <li>
+                <a href="#standards" id="markdown-toc-standards"
+                  >Standardy webové přístupnosti</a
+                >
+              </li>
+              <li>
+                <a href="#perceivable" id="markdown-toc-perceivable"
+                  >Vnímatelné informace a uživatelské rozhraní</a
+                >
+                <ul>
+                  <li>
+                    <a href="#alternatives" id="markdown-toc-alternatives"
+                      >Textové alternativy pro netextový obsah</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#captions" id="markdown-toc-captions"
+                      >Titulky a další alternativy pro multimédia</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#adaptable" id="markdown-toc-adaptable"
+                      >Obsah lze prezentovat různými způsoby</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#distinguishable" id="markdown-toc-distinguishable"
+                      >Obsah je lépe vidět a slyšet</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#operable" id="markdown-toc-operable"
+                  >Ovladatelné uživatelské rozhraní a navigace</a
+                >
+                <ul>
+                  <li>
+                    <a href="#keyboard" id="markdown-toc-keyboard"
+                      >Funkce jsou dostupné pomocí klávesnice</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#time" id="markdown-toc-time"
+                      >Uživatelé mají dostatek času na přečtení a použití
+                      obsahu</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#safe" id="markdown-toc-safe"
+                      >Obsah nezpůsobuje záchvaty a fyzické reakce</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#navigable" id="markdown-toc-navigable"
+                      >Uživatelé mohou snadno procházet a vyhledávat obsah,
+                      snadno určí, kde se nacházejí</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#modalities" id="markdown-toc-modalities"
+                      >Uživatelé mohou použít různé způsoby vstupu mimo
+                      klávesnici</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#understandable" id="markdown-toc-understandable"
+                  >Srozumitelné informace a uživatelské rozhraní</a
+                >
+                <ul>
+                  <li>
+                    <a href="#readable" id="markdown-toc-readable"
+                      >Text je čitelný a srozumitelný</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#predictable" id="markdown-toc-predictable"
+                      >Obsah vypadá a funguje předvídatelně</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#tolerant" id="markdown-toc-tolerant"
+                      >Uživatelům se pomáhá vyhnout se chybám a opravit je</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#robust" id="markdown-toc-robust"
+                  >Robustní obsah a spolehlivá interpretace</a
+                >
+                <ul>
+                  <li>
+                    <a href="#compatible" id="markdown-toc-compatible"
+                      >Obsah je kompatibilní se současnými i budoucími
+                      uživatelskými nástroji</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="excol-all"></div>
+
+        <h2 id="standards">Standardy webové přístupnosti</h2>
+
+        <p>
+          Webová přístupnost spoléhá na několik komponent, které spolupracují.
+          Některé z nich jsou:
+        </p>
+
+        <ul>
+          <li>
+            <strong id="webcontent">Obsah webu</strong> - jakákoliv část webové
+            stránky, která obsahuje text, obrázky, formuláře a multimédia,
+            stejně tak markup kód, skripty, aplikace a další.
+          </li>
+          <li>
+            <strong id="useragents">Uživatelské agenty</strong> - software,
+            který lidé používají pro přístup k webovému obsahu. Jedná se o
+            grafické prohlížeče pro PC, hlasové prohlížeče, mobilní prohlížeče,
+            přehrávače multimédií, pluginy a některé
+            <a
+              href="/WAI/people-use-web/tools-techniques/#at"
+              title="definition"
+              hreflang="en"
+              >kompenzační pomůcky (anglicky)</a
+            >.
+          </li>
+          <li>
+            <strong id="authoringtools">Vývojové nástroje</strong> - software
+            nebo služby, které se používají k tvorbě webového obsahu, včetně
+            editorů kódu, nástrojů pro převod dokumentů, systémů pro správu
+            obsahu, blogů, databázových skriptů a dalších.
+          </li>
+        </ul>
+
+        <details>
+          <summary>
+            <h3
+              class="no_toc"
+              id="dal-informace-o-standardech-webov-pstupnosti"
+            >
+              Další informace o standardech webové přístupnosti
+            </h3>
+          </summary>
+          <div>
+            <p>
+              Výše zmíněné komponenty jsou propojeny a vzájemně se podporují.
+              Například <strong>webový obsah</strong> musí zahrnovat textové
+              alternativy pro obrázky. Tato informace musí být zpracována
+              <strong>webovými prohlížeči</strong> a předána
+              <strong>asistenčním technologiím</strong>, například čtečkám
+              obrazovky. Autoři potřebují <strong>vývojové nástroje</strong>,
+              které jim umožní tvorbu těchto textových alternativ. Více
+              informací je v
+              <a href="/WAI/fundamentals/components/" hreflang="en"
+                >Základních komponentech webové přístupnosti (anglicky)</a
+              >.
+            </p>
+
+            <p>
+              Standardy hrají zásadní roli v definování požadavků na přístupnost
+              pro každý z těchto komponentů. Splnění některých požadavků na
+              přístupnost je jednoduché, přesto porozumnění základům, jak osoby
+              se zdravotním postižením používají Web, pomáhá tyto požadavky
+              splnit efektivněji. Některé aspekty přístupnosti vyžadují více
+              technických dovedností nebo pokročilé znalosti toho, jak lidé
+              používají Web. V každém případě
+              <a href="/WAI/test-evaluate/involving-users/" hreflang="en"
+                >zapojení uživatelů ze začátku a během projektů (anglicky)</a
+              >
+              zlepší a usnadní vaši práci.
+            </p>
+
+            <p>
+              Iniciativa pro webovou přístupnost W3C (WAI) poskytuje soubor
+              pokynů, které jsou mezinárodně uznávány jako standard pro webovou
+              přístupnost. Jedná se o:
+            </p>
+
+            <ul>
+              <li>
+                <strong
+                  ><a href="/WAI/standards-guidelines/wcag/" hreflang="en"
+                    >Pokyny pro zpřístupnění obsahu webu (WCAG) (anglicky)</a
+                  ></strong
+                >
+              </li>
+              <li>
+                <strong
+                  ><a href="/WAI/standards-guidelines/uaag/" hreflang="en"
+                    >Pokyny k uživatelským agentům (UAAG) (anglicky)</a
+                  ></strong
+                >
+              </li>
+              <li>
+                <strong
+                  ><a href="/WAI/standards-guidelines/atag/" hreflang="en"
+                    >Pokyny pro zpřístupnění vývojových nástrojů (ATAG)
+                    (anglicky)</a
+                  ></strong
+                >
+              </li>
+            </ul>
+
+            <p>
+              K dispozici jsou také WAI specifikace pro
+              <strong
+                ><a href="https://www.w3.org/WAI/intro/aria.php"
+                  >Přístupné internetové aplikace (WAI-ARIA)</a
+                ></strong
+              >, které zahrnují dynamický obsah a pokročilé ovládací prvky
+              uživatelského rozhraní vyvinuté s použitím Ajaxu, JavaScriptu a
+              souvisejících webových technologií.
+            </p>
+          </div>
+        </details>
+
+        <h2 id="perceivable">Vnímatelné informace a uživatelské rozhraní</h2>
+
+        <h3 id="alternatives">Textové alternativy pro netextový obsah</h3>
+
+        <p>
+          Textové alternativy jsou ekvivalenty pro netextový obsah. Mezi
+          příklady patří:
+        </p>
+
+        <ul>
+          <li>
+            Krátké alternativy pro obrázky, včetně ikon, tlačítek a grafického
+            obsahu
+          </li>
+          <li>Popis dat znázorněných v grafech, diagramech a ilustracích</li>
+          <li>Krátký popis netextového obsahu jako audio a video souborů</li>
+          <li>
+            Popisky pro ovládací prvky formulářů, vstupů a dalších komponent
+            uživatelského rozhraní
+          </li>
+        </ul>
+
+        <p>
+          Textové alternativy vyjadřují význam obrázku nebo pomáhají poskytnout
+          srovnatelný uživatelský prožitek. Například vhodná textová alternativa
+          pro tlačítko vyhledávání je “<em>vyhledat</em>”, ne “<em>lupa</em>”.
+        </p>
+
+        <p>
+          Textové alternativy lze prezentovat různými způsoby. Například mohou
+          být nahlas přečteny pro uživatele, kteří nevidí obrazovku a pro lidi s
+          obtížemi při čtení. Mohou být zvětšeny na vlastní velikost textu nebo
+          zobrazeny na braillských zařízeních. Textové alternativy slouží jako
+          popisky pro ovládácí prvky a funkce pro usnadnění navigace pomocí
+          klávesnice a navigace pomocí rozpoznávání hlasu (hlasový vstup). Také
+          slouží jako popisky pro audio, video a další formáty. Mohou také
+          popisovat aplikace, které jsou vloženy jako součást webové stránky.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-textovmi-alternativami-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s textovými alternativami
+              (odkazy na technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#text-alternatives"
+                  >Pokyn 1.1 - Textové alternativy</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content"
+                  >Pokyn 1.1 - Alternativní obsah</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a21"
+                  >Pokyn A.2.1: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zpřístupněte autorům alternativní obsah</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >Pokyn A.2.2: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zajistěte, aby bylo možné programově určit zobrazení pro
+                  úpravy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a37"
+                  >Pokyn A.3.7: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zajistěte, aby náhledy byly přinejmenším stejně přístupné jako
+                  v běžných uživatelských agentech</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <h4 id="stories-related-to-text-alternatives" class="no_toc">
+              Příběhy související s textovými alternativami
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, reportér s poškozením z opakovaného namáhání
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#onlinestudent"
+                  hreflang="en"
+                  >Martine, online studentka, která špatně slyší (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, vedoucí pracovnice, která je slepá (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, studentka střední školy s poruchou pozornosti,
+                  hyperaktivitou a dislexií (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou
+                  krátkodobé paměti (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="captions">Titulky a další alternativy pro multimédia</h3>
+
+        <p>
+          Osoby, které neslyší audio nebo nevidí video potřebují alternativy.
+          Například:
+        </p>
+
+        <ul>
+          <li>
+            Textové přepisy a titulky pro audio, jako třeba nahrávky
+            rozhlasových rozhovorů
+          </li>
+          <li>Audio popis líčí důležité vizuální detaily ve videu</li>
+          <li>Znaková řeč pro audio včetně důležitých sluchových prožitků</li>
+        </ul>
+
+        <p>
+          Dobře napsané textové přepisy, které obsahují správnou posloupnost
+          všech zvukových a vizuálních informací, poskytují základní úroveň
+          přístupnosti a usnadňují tvorbu titulků a audio popisů.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-multimdii-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s multimédii (odkazy na
+              technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#time-based-media"
+                  >Pokyn 1.2 - Média závisející na času</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-access-alternative-content"
+                  >Pokyn 1.1 - Alternativní obsah</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a21"
+                  >Pokyn A.2.1: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zpřístupněte autorům alternativní obsah</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a37"
+                  >Pokyn A.3.7: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zajistěte, aby náhledy byly přinejmenším stejně přístupné jako
+                  v běžných uživatelských agentech</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 id="stories-related-to-multimedia" class="no_toc">
+              Příběhy související s multimédii
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#onlinestudent"
+                  hreflang="en"
+                  >Martine, online studentka, která špatně slyší (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, vedoucí pracovnice, která je slepá (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="adaptable">Obsah lze prezentovat různými způsoby</h3>
+
+        <p>Aby uživatelé mohli změnit prezentaci obsahu, je nutné, aby:</p>
+
+        <ul>
+          <li>
+            nadpisy, seznamy, tabulky, vstupní políčka formulářů a struktury
+            obsahu byly správně označeny
+          </li>
+          <li>pořadí informací a instrukcí nezáleželo na prezentaci</li>
+          <li>
+            prohlížeče a asistenční technologie poskytovaly nastavení pro
+            přizpůsobení prezentace
+          </li>
+        </ul>
+
+        <p>
+          Splnění tohoto požadavku umožňuje správné čtení obsahu nahlas,
+          zvětšení nebo přizpůsobení tak, aby vyhovovalo potřebám a preferencím
+          různých lidí. Obsah může být například prezentován pomocí vlastních
+          barevných kombinací, velikosti textu nebo jiných úprav vzhledu, které
+          usnadní čtení. Tento požadavek také usnadňuje další formy
+          přizpůsobení, včetně automatického generování obrysů a souhrnů
+          stránek, které lidem pomohou získat přehled a snadněji se zaměřit na
+          konkrétní části.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-pizpsobivost-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s přizpůsobivostí (odkazy na
+              technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#adaptable"
+                  >Pokyn 1.3 - Přizpůsobivost</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-text-config"
+                  >Pokyn 1.4 - Konfigurace textu</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-volume-config"
+                  >Pokyn 1.5 - Konfigurace hlasitosti</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-speech-config"
+                  >Pokyn 1.6 - Konfigurace syntetizované řeči</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config"
+                  >Pokyn 1.7 - Konfigurace šablony stylů uživatele</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views"
+                  >Pokyn 1.9 - Alternativní zobrazení</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-info-link"
+                  >Pokyn 1.10 - Informace o elementech</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >Pokyn A.2.2: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zajistěte, aby bylo možné programově určit zobrazení pro
+                  úpravy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a37"
+                  >Pokyn A.3.7: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zajistěte, aby náhledy byly přinejmenším stejně přístupné jako
+                  v běžných uživatelských agentech</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="pbhy-souvisejc-s-pizpsobivost">
+              Příběhy související s přizpůsobivostí
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#shopper"
+                  hreflang="en"
+                  >Lee, online nakupující, který je barvoslepý (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, reportér s poškozením z opakovaného namáhání
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, vedoucí pracovnice, která je slepá (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, studentka střední školy s poruchou pozornosti,
+                  hyperaktivitou a dislexií (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou
+                  krátkodobé paměti (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, asistent v supermarketu s Downovým syndromem
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="distinguishable">Obsah je lépe vidět a slyšet</h3>
+
+        <p>
+          Rozlišitelný obsah je lépe vidět a slyšet. Příklady takového obsahu
+          jsou:
+        </p>
+
+        <ul>
+          <li>Barva není jediný nositel informace nebo identifikátor obsahu</li>
+          <li>
+            Výchozí kombinace barvy popředí a pozadí má dostatečný barevný
+            kontrast
+          </li>
+          <li>
+            Pokud uživatel zvětší text na 400% nebo změní velikost řádkování,
+            žádné informace nejsou ztraceny
+          </li>
+          <li>
+            Přeformátování textu v malých oknech („výřezech“) a při zvětšení
+            textu uživatelem
+          </li>
+          <li>
+            U obrázků textu lze změnit velikost. Lepší je ale nahradit je textem
+            nebo se jim pokud možno vyhnout
+          </li>
+          <li>
+            Uživatel může pozastavit, zastavit nebo změnit hlasitost zvuku,
+            který hraje na webové stránce
+          </li>
+          <li>
+            Audio na pozadí je potichu a je možné ho vypnout, aby nerušilo nebo
+            nerozptylovalo uživatele
+          </li>
+        </ul>
+
+        <p>
+          Splnění tohoto požadavku pomáhá oddělit popředí od pozadí, takže jsou
+          důležité informace lépe rozlišitelné. Toto má vliv jak na osoby, co
+          nepoužívají asistenční technologie, tak na ty, kteří je používají. Ti
+          mohou vnímat rušení, pokud je v pozadí výrazný audio nebo vizuální
+          obsah. Například mnoho lidí s barvoslepostí nepoužívá určité nástroje
+          a spoléhají se na vlastní design, který má dostatečný barevný kontrast
+          mezi textem a jeho pozadím. Pro ostatní může zvuk na pozadí rušit
+          převod textu na řeč nebo
+          <a
+            href="http://www.w3.org/WAI/training/accessible#ald"
+            title="definition"
+            >asistenční zařízení pro slyšení (ALDs)</a
+          >.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-rozliitelnost-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s rozlišitelností (odkazy na
+              technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#distinguishable"
+                  >Pokyn 1.4 - Rozlišitelnost</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-interaction-highlight"
+                  >Pokyn 1.3 - Zvýraznění</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-text-config"
+                  >Pokyn 1.4 - Konfigurace textu</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-volume-config"
+                  >Pokyn 1.5 - Konfigurace hlasitosti</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-speech-config"
+                  >Pokyn 1.6 - Konfigurace syntetizované řeči</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-style-sheets-config"
+                  >Pokyn 1.7 - Konfigurace šablony stylů uživatele</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-viewport-orient"
+                  >Pokyn 1.8 - Orientace ve výřezech</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-alternative-views"
+                  >Pokyn 1.9 - Alternativní zobrazení</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-info-link"
+                  >Pokyn 1.10 - Informace o elementech</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a37"
+                  >Pokyn A.3.7: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zajistěte, aby náhledy byly přinejmenším stejně přístupné jako
+                  v běžných uživatelských agentech</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="pbhy-souvisejc-s-rozliitelnost">
+              Příběhy související s rozlišitelností
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#shopper"
+                  hreflang="en"
+                  >Lee, online nakupující, který je barvoslepý (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#onlinestudent"
+                  hreflang="en"
+                  >Martine, online student who is hard of hearing (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, vedoucí pracovnice, která je slepá (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou
+                  krátkodobé paměti (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="operable">Ovladatelné uživatelské rozhraní a navigace</h2>
+
+        <h3 id="keyboard">Funkce jsou dostupné pomocí klávesnice</h3>
+
+        <p>
+          Mnoho lidí pro interakci s webem nepoužívá myš, ale spoléhá na
+          klávesnici. To vyžaduje přístup ke všem funkcím z klávesnice, včetně
+          ovládacích prvků formulářů, vstupů a dalších komponent uživatelského
+          rozhraní.
+        </p>
+
+        <p>Přístupnost klávesnice znamená, že:</p>
+
+        <ul>
+          <li>
+            Všechny funkce, které jsou dostupné myší jsou také dostupné
+            klávesnicí
+          </li>
+          <li>Focus klávesnice neuvízne v žádné části obsahu</li>
+          <li>
+            Webové prohlížeče, nástroje pro tvorbu a další nástroje podporují
+            ovládání klávesnicí
+          </li>
+        </ul>
+
+        <p>
+          Splnění tohoto požadavku pomáhá uživatelům klávesnice včetně osob,
+          které používají alternativní klávesnice jako třeba klávesnice s
+          ergonomickým rozložením, klávesnice na obrazovce nebo tlačítková
+          zářízení. Také pomáhá osobám, které používají rozpoznávání hlasu
+          (hlasový vstup) k ovládání webových stránek a k diktování textu
+          použitím klávesnice.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-pstupnost-z-klvesnice-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s přístupností z klávesnice
+              (odkazy na technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-accessible"
+                  >Pokyn 2.1 - Přístupnost z klávesnice</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-keyboard-access"
+                  >Pokyn 2.1 - Přístup z klávesnice</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation"
+                  >Pokyn 2.2 - Sekvenční navigace</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation"
+                  >Pokyn 2.3 - Přímá navigace a aktivace</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-other-devices"
+                  >Pokyn 2.11 - Další vstupní zařízení</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a31"
+                  >Pokyn A.3.1: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Podporujte přístup z klávesnice k autorským funkcím</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="pbhy-souvisejc-s-pstupnost-z-klvesnice">
+              Příběhy související s přístupností z klávesnice
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, reportér s poškozením z opakovaného namáhání
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, vedoucí pracovnice, která je slepá (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="time">
+          Uživatelé mají dostatek času na přečtení a použití obsahu
+        </h3>
+
+        <p>
+          Někteří lidé potřebují více času než jiní pro čtení a použití obsahu.
+          Například někteří lidé vyžadují více času pro napsání textu,
+          porozumnění instrukcím, ovládání ovládacích prvků nebo jiný způsob
+          provedení úkonů na webové stránce.
+        </p>
+
+        <p>Mezi příklady poskytnutí dostatku času patří poskytnutí možnosti:</p>
+
+        <ul>
+          <li>
+            Zastavení, zvýšení nebo přizpůsobení časových limitů, pokud to je v
+            dané situaci možné
+          </li>
+          <li>
+            Pozastavit, zastavit nebo skrýt pohyb, blikání nebo posouvání obsahu
+          </li>
+          <li>
+            Odložit nebo potlačit vyrušení, pokud to je v dané situaci možné
+          </li>
+          <li>Opětovného přihlášení po vypršení relace bez ztráty dat</li>
+        </ul>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-dostatkem-asu-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s dostatkem času (odkazy na
+              technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#enough-time"
+                  >Pokyn 2.2 - Dostatek času</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-time-independent"
+                  >Pokyn 2.8 - Časově nezávislé interakce</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-control-inaccessible-content"
+                  >Pokyn 2.10 - Časově závislá média</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a32"
+                  >Pokyn A.3.2: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Poskytněte autorům dostatek času</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="pbhy-souvisejc-s-dostatkem-asu">
+              Příběhy související s dostatkem času
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, reportér s poškozením z opakovaného namáhání
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, studentka střední školy s poruchou pozornosti,
+                  hyperaktivitou a dislexií (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou
+                  krátkodobé paměti (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, asistent v supermarketu s Downovým syndromem
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="safe">Obsah nezpůsobuje záchvaty a fyzické reakce</h3>
+
+        <p>
+          Obsah, který bliká určitou rychlostí nebo vzorem může způsobit
+          fotocitlivé reakce včetně záchvatů. Blikající obsah by ideálně neměl
+          být zobrazen vůbec nebo tak, aby nezpůsoboval známá rizika. Animace a
+          pohybující se obsah může také způsobovat zdravotní potíže a fyzické
+          reakce.
+        </p>
+
+        <p>Příklady, jak se nezpůsobovat záchvaty a fyzické reakce:</p>
+
+        <ul>
+          <li>Nepoužívejte obsah, který bliká určitou rychlostí nebo vzorem</li>
+          <li>
+            Varujte uživatele před zobrazením blikajícího obsahu a poskytněte
+            alternativy
+          </li>
+          <li>Poskytněte možnost vypnout animace, pokud nejsou nezbytné</li>
+        </ul>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-se-zchvaty-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související se záchvaty (odkazy na
+              technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#seizures-and-physical-reactions"
+                  >Pokyn 2.3 - Záchvaty</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-prevent-flash"
+                  >Pokyn 2.9 - Blikání</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a33"
+                  >Pokyn A.3.3: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Pomozte autorům vyhnout se blikání, které by mohlo způsobit
+                  záchvat</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="navigable">
+          Uživatelé mohou snadno procházet a vyhledávat obsah, snadno určí, kde
+          se nacházejí
+        </h3>
+
+        <p>
+          Dobře zorganizovaný obsah pomáhá uživatelům orientovat se a efektivně
+          procházet obsah. Mezi příklady patří:
+        </p>
+
+        <ul>
+          <li>Stránky mají jasný titul a popisné nadpisy jednotlivých sekcí</li>
+          <li>
+            Najít relevantní stránky v rámci řady webových stránek lze více než
+            jedním způsobem
+          </li>
+          <li>
+            Uživatelé jsou informovaní o současné lokaci v rámci několika
+            souvisejících stránek
+          </li>
+          <li>
+            Je možné přeskočit části obsahu, které se opakují na více stránkách
+          </li>
+          <li>Focus klávesnice je vidět a pořadí focusu dává smysl</li>
+          <li>
+            Účel odkazu je jasný, nejlépe i v případě, kdy je odkaz zobrazen
+            samostatně
+          </li>
+        </ul>
+
+        <p>
+          Splnění tohoto požadavku pomáhá lidem navigovat webovou stránkou
+          různými způsoby podle jejich konkrétních potřeb a preferencí.
+          Například někteří lidé při hledání určité webové stránky spoléhají na
+          hierarchické navigační struktury, jako jsou panely nabídek. Jiní ale
+          ve stejné situaci spoléhají spíše na funkci vyhledávání na webových
+          stránkách. Někteří obsah vidí, jiný slyší nebo slyší a vidí zároveň.
+          Někteří uživatelé používají pouze myš nebo klávesnici, zatímco jiní
+          mohou používat obojí.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-navigac-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s navigací (odkazy na
+              technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#navigable"
+                  >Pokyn 2.4 - Navigace</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-sequential-navigation"
+                  >Pokyn 2.2 - Sekvenční navigace</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3.org/TR/UAAG20/#gl-direct-navigation-and-activation"
+                  >Pokyn 2.3 - Přímá navigace a aktivace</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-search-text"
+                  >Pokyn 2.4 - Textové vyhledávání</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-nav-structure"
+                  >Pokyn 2.5 - Strukturální navigace</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-configure-controls"
+                  >Pokyn 2.7 - Grafické ovládací prvky</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >Pokyn A.2.2: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zajistěte, aby bylo možné programově určit zobrazení pro
+                  úpravy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a34"
+                  >Pokyn A.3.4: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Vylepšete navigaci a úpravy prostřednictvím struktury
+                  obsahu</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a35"
+                  >Pokyn A.3.5: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Poskytněte textové vyhledávání obsahu</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="pbhy-souvisejc-s-navigac">
+              Příběhy související s navigací
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, reportér s poškozením z opakovaného namáhání
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, vedoucí pracovnice, která je slepá (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, studentka střední školy s poruchou pozornosti,
+                  hyperaktivitou a dislexií (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou
+                  krátkodobé paměti (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, asistent v supermarketu s Downovým syndromem
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="modalities">
+          Uživatelé mohou použít různé způsoby vstupu mimo klávesnici
+        </h3>
+
+        <p>
+          Způsoby vstupu kromě klávesnice, jako třeba aktivace dotykem, hlasové
+          rozpoznávání (hlasový vstup) a gesta, umožňují pro mnoho lidí
+          snadnější použití obsahu. Přesto ne všichni mohou použít kterýkoliv z
+          těchto způsobů nebo ve stejné míře. Specifický design maximalizuje
+          výhody těchto způsobů. To zahrnuje:
+        </p>
+
+        <ul>
+          <li>
+            Gesta vyžadující obratnost nebo jemný pohyb mají alternativy, které
+            nevyžadují velkou obratnost
+          </li>
+          <li>
+            Komponenty jsou navrženy tak, aby se zabránilo nechtěné aktivaci,
+            například poskytnutím funkce Zpět
+          </li>
+          <li>
+            Popisky prezentované uživatelům se shodují s odpovídajícími názvy
+            objektů v kódu, což podporuje aktivaci hlasem
+          </li>
+          <li>
+            Funkčnost aktivovanou pohybem lze aktivovat také prostřednictvím
+            komponent uživatelského rozhraní
+          </li>
+          <li>
+            Tlačítka, odkazy a další aktivní komponenty jsou dostatečně velké,
+            aby se snadněji aktivovaly dotykem
+          </li>
+        </ul>
+
+        <p>
+          Splnění tohoto požadavku usnadňuje používání obsahu pro mnoho lidí se
+          širokou škálou schopností využívajících širokou škálu zařízení. To
+          zahrnuje obsah používaný v mobilních telefonech, tabletech a
+          samoobslužných terminálech, jako jsou automaty na jízdenky.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-se-zpsoby-vstupu-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související se způsoby vstupu (odkazy na
+              technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#input-modalities"
+                  >Pokyn 2.5 - Způsoby vstupu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="pbhy-souvisejc-se-zpsoby-vstupu">
+              Příběhy související se způsoby vstupu
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, reportér s poškozením z opakovaného namáhání
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou
+                  krátkodobé paměti (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, asistent v supermarketu s Downovým syndromem
+                  (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="understandable">
+          Srozumitelné informace a uživatelské rozhraní
+        </h2>
+
+        <h3 id="readable">Text je čitelný a srozumitelný</h3>
+
+        <p>
+          Autoři obsahu musí zajistit, aby byl text čitelný pro co nejširší
+          publikum, včetně toho, kdy je čten nahlas pomocí převodu textu na řeč.
+          Toto zahrnuje:
+        </p>
+
+        <ul>
+          <li>
+            Určení primárního jazyka webové stránky, jako třeba arabština,
+            holandština nebo korejština
+          </li>
+          <li>Určení jazyka textu, frází nebo jiných částí webové stránky</li>
+          <li>
+            Poskytnutí definic pro nezvyklá slova, fráze, idiomy a zkratky
+          </li>
+          <li>
+            Použití nejjasnějšího a nejjednoduššího možného vyjadřování nebo
+            poskytnutí zjednodušených verzí
+          </li>
+        </ul>
+
+        <p>
+          Splnění tohoto požadavku pomáhá softwaru včetně asistenčních
+          technologií správně zpracovat textový obsah. Například pomáhá tento
+          požadavek softwaru nahlas přečíst obsah, generovat shrnutí stránky a
+          poskytnout definice pro nezvyklá slova jako třeba technický slang.
+          Také pomáhá lidem, kteří mají potíže s porozumněním složitějších vět,
+          frází a slov. Zejména pomáhá osobám s různými typy kognitivních
+          poruch.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-itelnost-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s čitelností (odkazy na
+              technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#readable"
+                  >Pokyn 3.1 - Čitelnost</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b42"
+                  >Pokyn A.4.2: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zdokumentujte uživatelské rozhraní včetně všech funkcí
+                  přístupnosti</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="pbhy-souvisejc-s-itelnost">
+              Příběhy související s čitelností
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#onlinestudent"
+                  hreflang="en"
+                  >Martine, online studentka, která špatně slyší (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, vedoucí pracovnice, která je slepá (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, studentka střední školy s poruchou pozornosti,
+                  hyperaktivitou a dislexií (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou
+                  krátkodobé paměti (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, asistent v supermarketu s Downovým syndromem
+                  (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="predictable">Obsah vypadá a funguje předvídatelně</h3>
+
+        <p>
+          Mnoho lidí spoléhá na předvídatelné uživatelské rozhraní a jsou
+          dezorientovaní nebo rozptýlení nekonzistentním vzhledem nebo chováním.
+          Mezi příklady předvídatelného obsahu patří:
+        </p>
+
+        <ul>
+          <li>
+            Navigační mechanismy, které se opakují na více stránkách, se
+            objevují pokaždé na stejném místě
+          </li>
+          <li>
+            Komponenty uživatelského rozhraní, které se na webové stránce
+            opakují, mají pokaždé stejné popisky
+          </li>
+          <li>
+            K významným změnám na webové stránce nedojde bez souhlasu uživatele
+          </li>
+        </ul>
+
+        <p>
+          Splnění tohoto požadavku pomáhá lidem rychle se naučit funkčnost a
+          navigační mechanismy dostupné na webové stránce a ovládat je podle
+          svých konkrétních potřeb a preferencí. Někteří lidé například
+          přiřazují vlastní klávesové zkratky funkcím, které často používají,
+          aby vylepšili navigaci klávesnicí. Jiní si zapamatují kroky k dosažení
+          určitých stránek nebo k dokončení operací na webové stránce. Oba
+          příklady spoléhají na předvídatelnou a konzistentní funkčnost.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-pedvdatelnost-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s předvídatelností (odkazy na
+              technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#predictable"
+                  >Pokyn 3.2 - Předvídatelnost</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-predictable-operation"
+                  >Pokyn 3.3 - Předvídatelnost</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >Pokyn A.2.2: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zajistěte, aby bylo možné programově určit zobrazení pro
+                  úpravy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b42"
+                  >Pokyn A.4.2: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zdokumentujte uživatelské rozhraní včetně všech funkcí
+                  přístupnosti</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="pbhy-souvisejc-s-pedvdatelnost">
+              Příběhy související s předvídatelností
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, reportér s poškozením z opakovaného namáhání
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, vedoucí pracovnice, která je slepá (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, studentka střední školy s poruchou pozornosti,
+                  hyperaktivitou a dislexií (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou
+                  krátkodobé paměti (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, asistent v supermarketu s Downovým syndromem
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 id="tolerant">
+          Uživatelům se pomáhá vyhnout se chybám a opravit je
+        </h3>
+
+        <p>
+          Formuláře a další interakce mohou být pro některé uživatele matoucí
+          nebo obtížně použitelné. V důsledku toho je pravděpodobnější, že
+          udělají chybu. Mezi příklady pomoci uživatelům vyvarovat se chybám a
+          opravit je patří:
+        </p>
+
+        <ul>
+          <li>Jasné instrukce, chybové zprávy a návrhy na opravu</li>
+          <li>Kontextová nápověda pro složitější funkce a interakci</li>
+          <li>
+            V případě potřeby příležitost zkontrolovat, opravit nebo zrušit
+            odeslání
+          </li>
+        </ul>
+
+        <p>
+          Splnění tohoto požadavku pomáhá lidem, kteří nevidí nebo neslyší obsah
+          a nemusí rozpoznat implicitní vztahy, sekvence a další podněty. Pomáhá
+          také lidem, kteří nerozumí funkčnosti, jsou dezorientovaní nebo
+          zmatení, zapomínají nebo dělají chyby při vyplňování formulářů a
+          interakcích z jakéhokoli jiného důvodu.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-asistenc-pro-vstup-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s asistencí pro vstup (odkazy
+              na technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3.org/WAI/WCAG21/quickref/#input-assistance"
+                  >Pokyn 3.3 - Asistence pro vstup</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-avoid-mistakes"
+                  >Pokyn 3.1 - Chyby</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_a22"
+                  >Pokyn A.2.2: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Zajistěte, aby bylo možné programově určit zobrazení pro
+                  úpravy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#gl_b41"
+                  >Pokyn A.4.1: (Pro uživatelské rozhraní nástrojů pro tvorbu)
+                  Pomozte autorům vyhnout se chybám a opravit je</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="pbhy-souvisejc-s-asistenc-vstupu">
+              Příběhy související s asistencí vstupu
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#shopper"
+                  hreflang="en"
+                  >Lee, online nakupující, který je barvoslepý (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, reportér s poškozením z opakovaného namáhání
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, studentka střední školy s poruchou pozornosti,
+                  hyperaktivitou a dislexií (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#retiree"
+                  hreflang="en"
+                  >Yun, důchodce se slabým zrakem, třesem rukou a mírnou ztrátou
+                  krátkodobé paměti (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, asistent v supermarketu s Downovým syndromem
+                  (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 id="robust">Robustní obsah a spolehlivá interpretace</h2>
+
+        <h3 id="compatible">
+          Obsah je kompatibilní se současnými i budoucími uživatelskými nástroji
+        </h3>
+
+        <p>
+          Robustní obsah je kompatibilní s různými prohlížeči, asistenčními
+          technologiemi a dalšími uživatelskými agenty. Mezi příklady toho, jak
+          toho lze dosáhnout, patří:
+        </p>
+
+        <ul>
+          <li>
+            Zajistit, že program je spolehlivě interpretován, například
+            zajištěním jeho platnosti
+          </li>
+          <li>
+            Poskytnutí názvu, role a hodnoty pro nestandardní součásti
+            uživatelského rozhraní
+          </li>
+        </ul>
+
+        <p>
+          Splnění tohoto požadavku pomáhá maximalizovat kompatibilitu se
+          současnými i budoucími uživatelskými agenty, včetně asistenčních
+          technologií. Zejména umožňuje asistenčním technologiím spolehlivé
+          zpracování obsahu a jeho prezentaci nebo ovládání různými způsoby. To
+          zahrnuje nestandardní (skriptovaná) tlačítka, vstupní pole a další
+          ovládací prvky.
+        </p>
+
+        <details>
+          <summary>
+            <h4
+              class="no_toc"
+              id="poadavky-na-pstupnost-souvisejc-s-kompatibilitou-odkazy-na-technick-specifikace"
+            >
+              Požadavky na přístupnost související s kompatibilitou (odkazy na
+              technické specifikace)
+            </h4>
+          </summary>
+          <div>
+            <p><strong>WCAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/#compatible"
+                  >Pokyn 4.1 - Kompatibilita</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>UAAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-store-prefs"
+                  >Pokyn 2.6 - Nastavení předvoleb</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-AT-access"
+                  >Pokyn 4.1 - Asistenční technologie</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/UAAG20/#gl-obs-env-conventions"
+                  >Pokyn 5.1 - Dodržujte specifikace</a
+                >
+              </li>
+            </ul>
+
+            <p><strong>ATAG</strong></p>
+
+            <ul>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#principle_a1"
+                  >Princip A.1: Uživatelská rozhraní nástrojů pro tvorbu se řídí
+                  příslušnými pokyny pro přístupnost</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3.org/TR/ATAG20/#part_b"
+                  >Část B. Podporujte tvorbu přístupného obsahu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <h4 class="no_toc" id="pbhy-souvisejc-s-kompatibilitou">
+              Příběhy související s kompatibilitou
+            </h4>
+          </summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#shopper"
+                  hreflang="en"
+                  >Lee, online nakupující, který je barvoslepý (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#reporter"
+                  hreflang="en"
+                  >Alex, reportér s poškozením z opakovaného namáhání
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#accountant"
+                  hreflang="en"
+                  >Ilya, vedoucí pracovnice, která je slepá (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#classroomstudent"
+                  hreflang="en"
+                  >Preety, studentka střední školy s poruchou pozornosti,
+                  hyperaktivitou a dislexií (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#supermarketassistant"
+                  hreflang="en"
+                  >Luis, asistent v supermarketu s Downovým syndromem
+                  (anglicky)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/WAI/people-use-web/user-stories/#teenager"
+                  hreflang="en"
+                  >Kaseem, teenagerka, která je hluchá a slepá (anglicky)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="excol-all"></div>
+
+        <aside class="box box-icon box-space-above" id="helpimprove">
+          <header class="box-h box-h-icon box-h-space-above box-h-icon">
+            <svg focusable="false" aria-hidden="true" class="icon-comments">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-comments"
+              ></use>
+            </svg>
+            <h2>Pomozte vylepšit tuto stránku</h2>
+          </header>
+          <div class="box-i">
+            <p>
+              Prosíme, sdílejte své nápady, připomínky nebo komentáře e-mailem
+              do veřejně archivovaného seznamu
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=[cs]%20Z%C3%A1sady%20p%C5%99%C3%ADstupnosti"
+                >wai-eo-editors@w3.org</a
+              >
+              nebo na GitHubu.
+            </p>
+            <div class="button-group">
+              <a
+                href="mailto:wai-eo-editors@w3.org?subject=[cs]%20Z%C3%A1sady%20p%C5%99%C3%ADstupnosti&body=[vlo%C5%BEit%20koment%C3%A1%C5%99%20zde...]"
+                class="button"
+                ><span>E-mail</span></a
+              >
+              <a
+                href="https://github.com/w3c/wai-accessibility-principles/edit/master/content/index.cs.md"
+                class="button"
+                ><span>Vytvořit fork &amp; upravit na GitHubu</span></a
+              ><a
+                href="https://github.com/w3c/wai-accessibility-principles/issues/new?title=[cs]%20"
+                class="button"
+                ><span>Nová GitHub Issue</span></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <a class="button button-backtotop" href="#top"
+          ><span
+            ><svg focusable="false" aria-hidden="true" class="icon-arrow-up">
+              <use
+                xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"
+              ></use>
+            </svg>
+            Nahoru</span
+          ></a
+        >
+      </main>
+    </div>
+
+    <footer
+      id="wai-site-footer"
+      class="page-footer default-grid"
+      aria-label="Page"
+    >
+      <div class="inner">
+        <p>
+          <strong>Datum:</strong> Aktualizováno 10. května 2019.
+          <a href="/WAI/fundamentals/accessibility-principles/changelog/"
+            >Seznam změn</a
+          >
+        </p>
+        <p>
+          <strong>Editoři:</strong>
+          <a href="https://www.w3.org/People/shadi/">Shadi Abou Zahra</a>.
+          <a href="https://www.w3.org/WAI/intro/people-use-web/acknowledgments"
+            >Poděkování</a
+          >.
+        </p>
+        <p>
+          Vyvinuto Pracovní skupinou pro vzdělání a osvětu (<a
+            href="http://www.w3.org/WAI/EO/"
+            >EOWG</a
+          >). Dříve vyvinuto s Pracovní skupinou
+          <a href="https://www.w3.org/WAI/EO/2008/wai-age-tf">WAI-AGE</a> za
+          podpory Projektu
+          <a href="https://www.w3.org/WAI/WAI-AGE/">WAI-AGE</a>.
+        </p>
+      </div>
+    </footer>
+
+    <footer class="site-footer grid-4q" aria-label="Site">
+      <div class="q1-start q3-end about">
+        <div>
+          <p>
+            <a
+              class="largelink"
+              href="https://www.w3.org/WAI/"
+              lang="en"
+              dir="auto"
+              translate="no"
+              >W3C Web Accessibility Initiative (WAI)</a
+            >
+          </p>
+          <p>
+            Strategie, standardy a další zdroje pro tvorbu webu přístupného pro
+            lidi s postižením.
+          </p>
+        </div>
+        <div class="social" lang="en" dir="auto" translate="no">
+          <ul>
+            <li>
+              <a href="https://twitter.com/w3c_wai"
+                ><svg focusable="false" aria-hidden="true" class="icon-twitter">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/feed.xml"
+                ><svg focusable="false" aria-hidden="true" class="icon-rss">
+                  <use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use>
+                </svg>
+                Feed</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"
+                ><svg focusable="false" aria-hidden="true" class="icon-youtube">
+                  <use
+                    xlink:href="/WAI/assets/images/icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/news/subscribe/" class="button"
+                >Get News in Email</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div lang="en" dir="auto" translate="no">
+          <p>
+            Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+              href="https://www.csail.mit.edu/"
+              ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+            >,
+            <a href="https://www.ercim.eu/"
+              ><abbr
+                title="European Research Consortium for Informatics and Mathematics"
+                >ERCIM</abbr
+              ></a
+            >, <a href="https://www.keio.ac.jp/">Keio</a>,
+            <a href="https://ev.buaa.edu.cn">Beihang</a>)
+            <a href="/WAI/about/using-wai-material/"
+              >Permission to Use WAI Material</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div lang="en" dir="auto" translate="no" class="q4-start q4-end">
+        <ul style="margin-bottom: 0">
+          <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+          <li><a href="/WAI/sitemap/">Site Map</a></li>
+          <li><a href="/WAI/news/">News</a></li>
+          <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+          <li>
+            <a href="/WAI/about/accessibility-statement/"
+              >Accessibility Statement</a
+            >
+          </li>
+          <li><a href="/WAI/translations/"> Translations</a></li>
+          <li><a href="/WAI/roles/">Resources for Roles</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Details4Everybody -->
+    <script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+    <!-- SVG4Everybody -->
+    <script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script src="/WAI/assets/scripts/lang/cs.js?1633578570351143841"></script>
+    <!-- Matomo -->
+    <script>
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "328"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </body>
 </html>

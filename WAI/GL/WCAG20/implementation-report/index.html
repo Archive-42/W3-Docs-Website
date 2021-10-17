@@ -1,214 +1,745 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>WCAG 2.0 Implementation Report</title>
-<link rel="stylesheet" href="report.css" type="text/css" />
-<link rel="stylesheet" href="/WAI/wai-main.css" type="text/css" />
-<style type="text/css">
-p {
-	text-align: justify;
-}
-</style>
-</head>
-<body>
-<div id="controls">
-	<ul>
-		<li><a href="#main" shape="rect"><img src="/Icons/downinpage.png" alt="" /> Skip to content </a></li>
-		<li><a href="/WAI/changedesign.html" shape="rect">| Change 
-			text size or colors </a> </li>
-	</ul>
-</div>
-<div id="masthead">
-	<p id="logos"><a href="http://www.w3.org/" title="W3C Home" shape="rect"><img alt="W3C logo" height="48" src="/Icons/w3c_home" width="72" /></a><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"><img alt="Web Accessibility Initiative (WAI)         logo" height="48" src="/WAI/images/wai-temp" /></a></p>
-</div>
-<div id="tagline">
-	<p>WAI: Strategies, guidelines, resources to make the
-		Web accessible to people with disabilities</p>
-</div>
-<p id="breadcrumbs"><strong>Site Navigation: <a href="http://www.w3.org/">W3C Home</a> &gt; <a href="http://www.w3.org/WAI/">WAI Home</a> &gt; <a href="/WAI/intro/wcag">WCAG Overview</a></strong></p>
-<div>
-	<p class="highlight-version">Note: This resource was created to support the transition of WCAG 2.0 to Proposed Recommendation. WCAG 2.0 is now a W3C Recommendation. The materials here remain for archival purposes, but the information may not be applicable to the current version of WCAG 2.0. In particular, accessibility support information was documented in November 2008 and is expected to be superceded soon thereafter. For updated information on WCAG, see the <a href="/WAI/intro/wcag">Web Content Accessibility Guidelines (WCAG) Overview</a>.</p>
-	<h1>WCAG 2.0 Implementation Report</h1>
-	<div id="contents">
-		<h2>On this page</h2>
-		<ul>
-			<li><a href="#exitcriteria">Candidate Recommendation Exit Criteria</a> </li>
-			<li><a href="#documentation">Documentation that the Exit Criteria have been met</a></li>
-			<li><a href="#conclusions">General Conclusions</a> </li>
-			<li><a href="#changes">Changes made to WCAG 2.0 based on implementation experience</a></li>
-			<li><a href="#process">Process used to satisfy the exit criteria</a></li>
-			<li><a href="#contributors">Contributors</a> </li>
-		</ul>
-	</div>
-	<p><a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/">WCAG 2.0 was published as a Candidate Recommendation</a> on 30 April 2008. To exit the <a href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsCR">Candidate Recommendation</a> stage, the WCAG Working Group must demonstrate the implementability of WCAG 2.0 by collecting at least two interoperable implementations. This page and associated resources document how this requirement has been satisfied. </p>
-	<p>Because WCAG 2.0 is a set of guidelines, rather than a technology specification, it is necessary to define how it relates to the Candidate Recommendation process. Although many types of authoring and evaluation tools might help authors implement the success criteria, and user agents play a role in ensuring benefit to the end user, WCAG 2.0 is ultimately a set of authoring guidelines. Therefore an implementation is defined as a unit of authored content - a Web page or site that conforms to WCAG 2.0. </p>
-	<p>The primary unit of normative requirements in WCAG 2.0 is the success criterion. Success criteria are satisfied by being actively met via one or more sufficient techniques, or by being not applicable to the content. WCAG 2.0 has provided sufficient techniques to meet each success criteria. Authors may also use other techniques as long as they meet the success criteria.</p>
-  <p>Conformance to WCAG 2.0 is defined in the <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#conformance">Conformance</a> section of the document. This defines three conformance levels, each of which requires that the success criteria for that level as well as for the lower levels be met. Conformance claims are only valid when accessibility support exists, meaning satisfying the success criteria is likely to result in real benefit to end users. For sites in which the author does not control all the content that appears in the site, such as portals and blogs, it is possible to include a Statement of Partial Conformance. To make a statement of partial conformance, authors must ensure that all the content they <em>do</em> control meets all the requirements.</p>
-<div id="exitcriteria">
-		<h2>Candidate Recommendation Exit Criteria</h2>
-		<p>In order to be clear about how these aspects of conformance relate to this authoring-oriented specification, the implementation requirements to exit Candidate Recommendation were included as part of the Candidate Recommendation itself. In addition to the requirements set out in <a href="http://www.w3.org/TR/wcag2-req/">Requirements for WCAG 2.0</a>, the requirements to advance to Proposed Recommendation were described in the <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#status_exit">Exit Criteria</a> section of the document. These requirements were:</p>
-		<ol>
-			<li> At least 10 conforming Web sites<sup> <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#statusnote1">1</a></sup> are available, of which
-				<ul>
-					<li> At least four conform at level A, </li>
-					<li> At least four conform at level AA, </li>
-					<li> At least two conform at level AAA;</li>
-				</ul>
-			</li>
-			<li> At least one Web site is available which makes a Statement of Partial Conformance; </li>
-			<li> At least two implementations<sup> <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#statusnote2">2</a></sup> exist for each success criterion;</li>
-			<li> Accessibility support documentation<sup> <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#statusnote3">3</a></sup> is available for at least two technologies with at least four platforms  (operating system/user agent/assistive technology combinations);</li>
-			<li> All sufficient techniques listed in <a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/">Understanding WCAG 2.0</a> at the end of the Candidate Recommendation period contain test procedures;</li>
-			<li> The  Working Group has responded formally to all issues raised against this  document related to any implementation efforts during the Candidate  Recommendation period. </li>
-		</ol>
-		<p id="statusnote1">[1] The  conforming Web sites should be distinct and independently developed,  represent diverse types of content including Content Management System  (CMS)-generated content, utilize diverse Web technologies including W3C  and non-W3C technologies, and have a varied representation of primary  languages and scripts. Web applications can be a single Web page;  otherwise conformance claims for Web sites should contain a minimum of  5 Web pages. Some success criteria may be satisfied in the conforming  Web sites by the absence of applicable content on the Web pages, but  Web sites should exhibit positive implementations of a significant  number of success criteria at the corresponding level of conformance. </p>
-		<p id="statusnote2">[2]  The implementations of success criteria need not be within the  conforming Web sites. Note that these implementations must contain  content of the type addressed by the individual success criterion, that  is, they cannot satisfy the success criteria purely by the absence of  applicable content on the Web pages. </p>
-		<p id="statusnote3">[3] In  the absence of documentation of accessibility-supported technologies,  conforming sites may show evidence by testing with assistive  technologies. </p>
-	</div>
-	<div id="documentation">
-		<h2>Documentation that the Exit Criteria have been met</h2>
-		<p>The WCAG Working Group offers the following as evidence that the above requirements have been met. Details about how this information was collected is described in separate sections of this report. </p>
-		<ul>
-			<li>Documentation of implementations of the success criteria, conformance levels, partial conformance, and partial conformance due to language is available in the <a href="results">implementation results</a>. Details of the implementations that contribute to satisfying each exit requirement are linked from the results page. </li>
-			<li>Accessibility support documentation is available from the <a href="accessibility_support">Reports on Accessibility Support for Ways of Using Various Web Technologies</a> page.</li>
-			<li>All sufficient techniques have been documented along with test procedures. These techniques are available from the <a href="http://www.w3.org/TR/WD-UNDERSTANDING-WCAG20-20081103/">Public Working Draft of Understanding WCAG 2.0</a>.</li>
-			<li>A record of issues received by the Working Group during the Candidate Recommendation and the Working Group's responses is available from the <a href="issue-disposition-report">Issue Disposition Report</a>. In addition to issues received as public comments, issues raised by implementers and evaluators are also included. </li>
-		</ul>
-		<p>The information above constitutes the substance of the WCAG Working Group's claim that the requirements to advance to Proposed Recommendation have been met. The information below describes how the information was collected and what actions have been taken on WCAG 2.0 during the implementation process. This provides informative support for the claim that the procedure used was valid to substantiate the claim. </p>
-	</div>
-	<div id="conclusions">
-		<h2>General conclusions </h2>
-		<p>The implementation phase of WCAG 2.0 demonstrated that the guidelines are effective for a wide range of implementations. Our implementations cover a variety of human languages, site sizes, application areas, web technologies used, and visual designs. </p>
-		<p>Although nearly all implementations had a least some errors that needed fixing to reach complete conformance at their targeted level, the errors tended to be oversights rather than misunderstandings of the guidelines. Where there were misunderstandings, the working group clarified the language of the guidelines or added  supplemental information to Understanding WCAG 2.0 or to our documented techniques. </p>
-	  <p>The implementation experience makes it clear that tool-supported evaluations are very important to the process of achieving conformance. </p>
-		<p>WCAG 2.0 will benefit from ongoing techniques development work, to expand the techniques documented for the current technology set, to ensure that techniques are available for other common web technologies, and to document accessibility solutions in new technologies as they develop. Additional accessibility-support documentation is also needed, and will be needed on an on-going basis, although not all of it by the WCAG WG. </p>
-  </div>
-	<div id="changes">
-		<h2>Changes made to WCAG 2.0 based on implementation experience </h2>
-		<p>A number of <a href="/TR/2008/CR-WCAG20-20080430/#status_risk">Items at Risk</a> were identified at the start of Candidate Recommendation. Implementations of all the success criteria are available, and none of the At Risk actions were taken.</p>
-		<p>Based on implementation experience during Candidate Recommendation, some changes have been made to WCAG 2.0 and its supporting documents. A detailed list of the <a href="change-detail">changes to WCAG 2.0 since CR</a> is available.</p>
-		
-  </div>
-	<div id="process">
-		<h2>Process used to satisfy the exit criteria </h2>
-		<div id="experience">
-			<h3>Implementation experience</h3>
-			<p>The <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/">WCAG 2.0 Candidate Recommendation</a> was published 30 April 2008. Implementations were requested via the following channels:</p>
-			<ul>
-				<li>a <a href="http://www.w3.org/2008/04/wcag20cr-pressrelease">press release</a> announcing the publication of the document;</li>
-				<li>a <a href="http://lists.w3.org/Archives/Public/w3c-wai-ig/2008AprJun/0042.html">message</a> to the WAI Interest Group, a W3C-operated mailing list with nearly 700 subscribers;</li>
-				<li>copies of the WAI Interest Group message sent directly to about 200 interested individuals and organizations; </li>
-				<li>copies of the WAI Interest Group message translated and sent to French and German accessibility lists; </li>
-				<li>a <a href="http://www.w3.org/QA/2008/04/wcag20_cr_april2008.html">blog post</a> on the W3C Q&amp;A blog;</li>
-				<li>information on the <a href="/">W3C</a> and <a href="/WAI/">WAI</a> main pages and RSS feeds. </li>
-			</ul>
-			<div id="implementations">
-				<h4>Implementations</h4>
-				<p>Individuals and organizations interested in submitting implementations of WCAG 2.0 were directed to <a href="http://www.w3.org/WAI/WCAG20/CR/">WCAG 2.0 Candidate Recommendation Implementation Information</a>, which explained the process and provided the opportunity to submit candidate implementations through an online form. Approximately 45 implementations were submitted for consideration.</p>
-				<p>The Working Group selected  a subset of the implementations to proceed in collecting implementation experience. The selection was based on the desire to demonstrate the greatest diversity of sites possible with respect to size, type of site (corporate, government, education, etc.), technologies relied upon, coverage of the success criteria, etc. Also prioritized were &quot;blackbox&quot; sites, where the site developer had had very little interaction with the WCAG Working Group, as a goal was to test the understandability of the support materials without the need for expert intervention. In order to ensure coverage of the success criteria, however, the  Working Group accepted 5 &quot;greybox&quot; sites, with some  interaction, and 5 &quot;whitebox&quot; sites developed by people  closely associated with or members of the Working Group.</p>
-				<p>Although the sites submitted for consideration provided significant coverage of the success criteria, some success criteria were not applicable to any of these sites. To provide implementation documentation for these success criteria, the Working Group selected 23 &quot;in the wild&quot; implementations - public Web sites that demonstrated good application of particular success criteria but were not submitted by the author for consideration. These sites were used only to demonstrate specific success criteria and were not evaluated for overall WCAG 2.0 conformance. </p>
-				<p>Available is a summary of <a href="characteristics">implementation characteristics</a>, as well as a <a href="implementation_list">list of all implementations</a> that were used in this process. </p>
-			</div>
-			<div id="evaluations">
-				<h4>Evaluation</h4>
-				<p>In order to validate that the implementations satisfied the WCAG 2.0 requirements, the Working Group evaluated each implementation. This involved evaluation of specific success criteria of interest and, in the case of implementations that were to be used as examples of particular conformance level, all success criteria relevant to the conformance level. </p>
-				<p>The evaluation process is time consuming and required a large team of evaluators to cover this number of sites.  29 people  from within the Working Group and from outside the Working Group with known subject matter expertise participated in the evaluation process. This was supported by an evaluation database that was developed for this purpose. The database collected and tabulated results to document how the Candidate Recommendation exit requirements were met. Evaluators also could use a dedicated <a href="http://lists.w3.org/Archives/Team/team-wcag2-implementations/">implementations mailing list (Team-only archive)</a> to discuss issues. </p>
-				<p>Note that though data on implementations that are used for this report is available, the raw data, interface to the database, and archives of the mailing list are visible only to evaluators and W3C Team due to implementation and evaluator confidentiality considerations. In short, evaluators were presented with a list of sufficient techniques from the WCAG 2.0 &quot;How to Meet&quot; document that are applicable to each success criterion.  A text field was also provided in which evaluators could enter other techniques used by the implementers to meet the success criterion. After determining which techniques were used, and finding any failures, the evaluator used that data to judge whether the success criterion was satisfied.</p>
-			  <p>The WCAG 2.0 success criteria are designed to be testable. Nevertheless, a degree of expertise and human judgment is often required in the evaluation process. To help ensure validity of results, the success criteria of interest for each implementation were evaluated by at least two evaluators. In cases where evaluators did not arrive at the same conclusion, they were asked to discuss their interpretations with each other and harmonize their results. The Working Group then used the data provided by the evaluators to arrive at a final evaluation for each success criterion. </p>
-				<p>At the end of this process, nearly 2000 records of data were collected about success criteria, and nearly 2700 records about techniques. This data has been analyzed and comprises the evidence that the exit requirements have been met. </p>
-			</div>
-		</div>
-		<div id="accessibilitysupport">
-			<h3>Documenting accessibility support </h3>
-			<p>In conjunction with the implementation activities, the concept of accessibility support gained clarity.  Originally, accessibility support was discussed in terms of technologies and features of technologies. In creating accessibility support documentation and gathering implementation feedback, we found it clearer to describe it as the &quot;uses&quot; of technologies and features of technologies.  This was then shortened to just &quot;the uses of a technology&quot; that are accessibility supported.   </p>
-			<p>This refinement in the description also clarified the relationship of &quot;accessibility support&quot; and the WCAG 2.0 techniques since &quot;uses of technology to meet the success criteria&quot; is exactly what the techniques are. In other words, when using technologies to meet WCAG 2.0 success criteria, technologies must be used in ways that are accessibility supported (i.e. technologies must be used in ways that will work with assistive technologies and accessibility features in user agents.).   </p>
-			<p>To demonstrate that accessibility support for technologies can be determined and documented, data on the accessibility support of four Web technologies was gathered.  All were evaluated with multiple platforms (operating system/user agent/assistive technology combinations). The Web technologies tested and documented included both W3C and non-W3C technologies (HTML, CSS, PDF and Silverlight).   </p>
-			<p>For the W3C technologies, evaluators tested each use with the different platforms and the results were recorded in a database. Reports were then generated from the database. For the PDF and Silverlight technologies, reports generated by the technology vendors themselves are provided documenting the results of testing across different OS/user agent/assistive technology platforms.   </p>
-			<p>All of the reports can be found at <a href="accessibility_support">Reports on Accessibility Support for Ways of Using Various Web Technologies</a>.  Authors could use databases or reports to look up techniques or &quot;uses&quot; of a technology that they would like to employ to see if the use will work with (are supported by) assistive technologies and accessibility features in user agents. Both the database and reports are preliminary and incomplete. Additional work is required to test against more platforms, and to expand the set of uses covered by the reports. They do demonstrate, however, that Accessibility Support information can be gathered and presented in a form that authors and others can use.</p>
-	  </div>
-		<div id="techniques">
-			<h3>Documenting techniques</h3>
-			<p>For each success criterion in WCAG 2.0, the working group has listed both sufficient techniques (techniques that the working  group agrees would meet the success criterion) and advisory techniques (techniques that may or may not be testable, that go beyond the success criterion, and that can provide  additional accessibility benefits to some users or in some situations). All of the sufficient techniques are documented and include a test  procedure. Some (but not most) of the advisory techniques are also  fully documented. Some of these have a test procedure while others are  general advice and a test procedure is not provided since there is no set criterion or level of implementation for the technique. </p>
-			<p>The <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">Understanding WCAG 2.0</a> and the <a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0 - Quick Reference</a> documents both provide a direct linking from the individual  success criteria in WCAG 2.0 and the sufficient and advisory techniques  documentation. A link to the proper place in the Understanding and How to Meet documents can be found at the end of each success criterion in WCAG 2.0. </p>
-			<p>Documentation of the  techniques includes a description of the technique, when it is applicable, any user agent limitations, examples (sometimes including code), resources, related techniques and, for all sufficient and  some advisory techniques, a test procedure.  </p>
-		</div>
-		<div id="issues">
-			<h3>Responding to issues</h3>
-			<p>As it has done in the past, the WCAG Working Group received comments on a dedicated <a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/">comments list</a>. Comments were tracked via an issue-tracking tool, proposals for how to address each issue were presented to the Working Group via Web-Based Surveys, and Working Group decisions executed. The record of these comments and their resolution is available from the <a href="issue-disposition-report">Issue Disposition Report</a>.</p>
-			<p>Some comments and questions arrived from individuals involved in implementations that were targeted to be used in this implementation report. The Working Group tried to find a balance between supporting the implementers while not compromising the &quot;blackbox&quot; nature of the site by hand-feeding an interpretation of WCAG 2.0. Some issues were substantive enough to require formal review by the Working Group, even though the response made the implementation more &quot;greybox&quot;. </p>
-			<p>Some issues were also raised during the evaluation process. Evaluators had questions of interpretation, some of which were not easily resolved during discussion on the evaluation mailing list. Complex issues of this type were handled in the same way as public comments and therefore appear in the issue disposition report.</p>
-		</div>
-	</div>
-	<div id="contributors">
-		<h2>Contributors</h2>
-		<div id="implementers">
-			<h3>Implementers</h3>
-			<p>The following people contributed implementations that were used in this report:</p>
-			<ul>
-				<li>Patrice Bourlon </li>
-				<li>Raven Calais (Australian Government Information Management Office) </li>
-				<li>Mike Cherim (Green-Beast.com) </li>
-				<li>James Coltham </li>
-				<li>Lainey Feingold (Law Office of Lainey Feingold) </li>
-				<li>Greg Gay (Adaptive Technology Resource Centre) </li>
-				<li>Brian Hardy (Vision Australia) </li>
-				<li>Kazuhito Kidachi (Mitsue-Links Co.,Ltd.)</li>
-				<li> Andrew Kirkpatrick (Adobe Systems) </li>
-				<li>Alessandro Miele </li>
-				<li>Matthew Ross (State Services Commission, New Zealand Government) </li>
-				<li>Michael Stenitzer (WIENFLUSS information.design.solutions) </li>
-				<li>Christophe Strobbe (K.U.Leuven) </li>
-				<li>Terry Thompson (DO-IT, University of Washington)</li>
-				</ul>
-		</div>
-		<div id="evaluators">
-			<h3>Evaluators</h3>
-			<p>The following people have contributed implementation evaluations. None evaluated sites with which they had a direct involvement.</p>
-			<ul>
-				<li>Bruce Bailey, U.S. Access Board  (WG Member) </li>
-				<li>Tim Boland, NIST (WG Member) </li>
-				<li>Ben Caldwell, Trace (WG Member) </li>
-				<li> Tomas Caspers</li>
-				<li>Sofia Celic (WG Member) </li>
-				<li>Sambhavi Chandrashekar, ATRC </li>
-				<li>Michael Cooper, W3C (WG Member) </li>
-				<li>Steve Faulkner, The Paciello Group </li>
-				<li> Kentarou Fukuda, IBM </li>
-				<li>P.J. Gardner, Gardner Information Design, Inc. and Boston-IA</li>
-				<li>Loretta Guarino Reid, Google (WG Chair)</li>
-				<li>Katie Haritos-Shea (WG Member) </li>
-				<li>Hans Hillen (The Paciello Group) </li>
-				<li>Andrew Kirkpatrick, Adobe  (WG Member) </li>
-				<li>Preety Kumar, Deque</li>
-				<li>Drew LaHart, IBM  (WG Member) </li>
-				<li>Gez Lemon, The Paciello Group </li>
-				<li>Chuck Letourneau, Starling Access Services </li>
-				<li> David MacDonald, eRamp  (WG Member) </li>
-				<li>Niqui Merret, niquimerret.com </li>
-				<li>Sailesh Panchang, Deque </li>
-				<li>Sharron Rush, Knowability </li>
-				<li> Jared Smith, WebAIM </li>
-				<li>Andi Snow-Weaver, IBM  (WG Member) </li>
-				<li>Jeanne Spellman, W3C </li>
-				<li>Christophe Strobbe, K.U.Leuven (WG Member) </li>
-				<li>Jim Thatcher, JimThatcher.com </li>
-				<li>Makoto Ueki, Infoaxia  (WG Member) </li>
-				<li>Gregg Vanderheiden, Trace (WG Chair) </li>
-				</ul>
-		</div>
-	</div>
-</div>
-<div id="footer">
-	<h2>Document Information</h2>
-	<p><strong>Content last updated:</strong> 29 October 2008</p>
-	<p>[<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]</p>
-	<div class="copyright">
-		<p><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright" shape="rect">Copyright</a> © 1994-2008 <a href="/" shape="rect"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>), All Rights Reserved. W3C <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer" shape="rect">liability</a>, <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks" shape="rect">trademark</a>, <a rel="Copyright" href="/Consortium/Legal/copyright-documents" shape="rect">document use</a> and <a rel="Copyright" href="/Consortium/Legal/copyright-software" shape="rect">software
-			licensing</a> rules apply. Your interactions with this site are in
-			accordance with our <a href="/Consortium/Legal/privacy-statement#Public" shape="rect">public</a> and <a href="/Consortium/Legal/privacy-statement#Members" shape="rect">Member</a> privacy
-			statements.</p>
-	</div>
-</div>
-</body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WCAG 2.0 Implementation Report</title>
+    <link rel="stylesheet" href="report.css" type="text/css" />
+    <link rel="stylesheet" href="/WAI/wai-main.css" type="text/css" />
+    <style type="text/css">
+      p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      <ul>
+        <li>
+          <a href="#main" shape="rect"
+            ><img src="/Icons/downinpage.png" alt="" /> Skip to content
+          </a>
+        </li>
+        <li>
+          <a href="/WAI/changedesign.html" shape="rect"
+            >| Change text size or colors
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="masthead">
+      <p id="logos">
+        <a href="http://www.w3.org/" title="W3C Home" shape="rect"
+          ><img
+            alt="W3C logo"
+            height="48"
+            src="/Icons/w3c_home"
+            width="72" /></a
+        ><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"
+          ><img
+            alt="Web Accessibility Initiative (WAI)         logo"
+            height="48"
+            src="/WAI/images/wai-temp"
+        /></a>
+      </p>
+    </div>
+    <div id="tagline">
+      <p>
+        WAI: Strategies, guidelines, resources to make the Web accessible to
+        people with disabilities
+      </p>
+    </div>
+    <p id="breadcrumbs">
+      <strong
+        >Site Navigation: <a href="http://www.w3.org/">W3C Home</a> &gt;
+        <a href="http://www.w3.org/WAI/">WAI Home</a> &gt;
+        <a href="/WAI/intro/wcag">WCAG Overview</a></strong
+      >
+    </p>
+    <div>
+      <p class="highlight-version">
+        Note: This resource was created to support the transition of WCAG 2.0 to
+        Proposed Recommendation. WCAG 2.0 is now a W3C Recommendation. The
+        materials here remain for archival purposes, but the information may not
+        be applicable to the current version of WCAG 2.0. In particular,
+        accessibility support information was documented in November 2008 and is
+        expected to be superceded soon thereafter. For updated information on
+        WCAG, see the
+        <a href="/WAI/intro/wcag"
+          >Web Content Accessibility Guidelines (WCAG) Overview</a
+        >.
+      </p>
+      <h1>WCAG 2.0 Implementation Report</h1>
+      <div id="contents">
+        <h2>On this page</h2>
+        <ul>
+          <li>
+            <a href="#exitcriteria">Candidate Recommendation Exit Criteria</a>
+          </li>
+          <li>
+            <a href="#documentation"
+              >Documentation that the Exit Criteria have been met</a
+            >
+          </li>
+          <li><a href="#conclusions">General Conclusions</a></li>
+          <li>
+            <a href="#changes"
+              >Changes made to WCAG 2.0 based on implementation experience</a
+            >
+          </li>
+          <li>
+            <a href="#process">Process used to satisfy the exit criteria</a>
+          </li>
+          <li><a href="#contributors">Contributors</a></li>
+        </ul>
+      </div>
+      <p>
+        <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/"
+          >WCAG 2.0 was published as a Candidate Recommendation</a
+        >
+        on 30 April 2008. To exit the
+        <a href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsCR"
+          >Candidate Recommendation</a
+        >
+        stage, the WCAG Working Group must demonstrate the implementability of
+        WCAG 2.0 by collecting at least two interoperable implementations. This
+        page and associated resources document how this requirement has been
+        satisfied.
+      </p>
+      <p>
+        Because WCAG 2.0 is a set of guidelines, rather than a technology
+        specification, it is necessary to define how it relates to the Candidate
+        Recommendation process. Although many types of authoring and evaluation
+        tools might help authors implement the success criteria, and user agents
+        play a role in ensuring benefit to the end user, WCAG 2.0 is ultimately
+        a set of authoring guidelines. Therefore an implementation is defined as
+        a unit of authored content - a Web page or site that conforms to WCAG
+        2.0.
+      </p>
+      <p>
+        The primary unit of normative requirements in WCAG 2.0 is the success
+        criterion. Success criteria are satisfied by being actively met via one
+        or more sufficient techniques, or by being not applicable to the
+        content. WCAG 2.0 has provided sufficient techniques to meet each
+        success criteria. Authors may also use other techniques as long as they
+        meet the success criteria.
+      </p>
+      <p>
+        Conformance to WCAG 2.0 is defined in the
+        <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#conformance"
+          >Conformance</a
+        >
+        section of the document. This defines three conformance levels, each of
+        which requires that the success criteria for that level as well as for
+        the lower levels be met. Conformance claims are only valid when
+        accessibility support exists, meaning satisfying the success criteria is
+        likely to result in real benefit to end users. For sites in which the
+        author does not control all the content that appears in the site, such
+        as portals and blogs, it is possible to include a Statement of Partial
+        Conformance. To make a statement of partial conformance, authors must
+        ensure that all the content they <em>do</em> control meets all the
+        requirements.
+      </p>
+      <div id="exitcriteria">
+        <h2>Candidate Recommendation Exit Criteria</h2>
+        <p>
+          In order to be clear about how these aspects of conformance relate to
+          this authoring-oriented specification, the implementation requirements
+          to exit Candidate Recommendation were included as part of the
+          Candidate Recommendation itself. In addition to the requirements set
+          out in
+          <a href="http://www.w3.org/TR/wcag2-req/">Requirements for WCAG 2.0</a
+          >, the requirements to advance to Proposed Recommendation were
+          described in the
+          <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#status_exit"
+            >Exit Criteria</a
+          >
+          section of the document. These requirements were:
+        </p>
+        <ol>
+          <li>
+            At least 10 conforming Web sites<sup>
+              <a
+                href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#statusnote1"
+                >1</a
+              ></sup
+            >
+            are available, of which
+            <ul>
+              <li>At least four conform at level A,</li>
+              <li>At least four conform at level AA,</li>
+              <li>At least two conform at level AAA;</li>
+            </ul>
+          </li>
+          <li>
+            At least one Web site is available which makes a Statement of
+            Partial Conformance;
+          </li>
+          <li>
+            At least two implementations<sup>
+              <a
+                href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#statusnote2"
+                >2</a
+              ></sup
+            >
+            exist for each success criterion;
+          </li>
+          <li>
+            Accessibility support documentation<sup>
+              <a
+                href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#statusnote3"
+                >3</a
+              ></sup
+            >
+            is available for at least two technologies with at least four
+            platforms (operating system/user agent/assistive technology
+            combinations);
+          </li>
+          <li>
+            All sufficient techniques listed in
+            <a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20/"
+              >Understanding WCAG 2.0</a
+            >
+            at the end of the Candidate Recommendation period contain test
+            procedures;
+          </li>
+          <li>
+            The Working Group has responded formally to all issues raised
+            against this document related to any implementation efforts during
+            the Candidate Recommendation period.
+          </li>
+        </ol>
+        <p id="statusnote1">
+          [1] The conforming Web sites should be distinct and independently
+          developed, represent diverse types of content including Content
+          Management System (CMS)-generated content, utilize diverse Web
+          technologies including W3C and non-W3C technologies, and have a varied
+          representation of primary languages and scripts. Web applications can
+          be a single Web page; otherwise conformance claims for Web sites
+          should contain a minimum of 5 Web pages. Some success criteria may be
+          satisfied in the conforming Web sites by the absence of applicable
+          content on the Web pages, but Web sites should exhibit positive
+          implementations of a significant number of success criteria at the
+          corresponding level of conformance.
+        </p>
+        <p id="statusnote2">
+          [2] The implementations of success criteria need not be within the
+          conforming Web sites. Note that these implementations must contain
+          content of the type addressed by the individual success criterion,
+          that is, they cannot satisfy the success criteria purely by the
+          absence of applicable content on the Web pages.
+        </p>
+        <p id="statusnote3">
+          [3] In the absence of documentation of accessibility-supported
+          technologies, conforming sites may show evidence by testing with
+          assistive technologies.
+        </p>
+      </div>
+      <div id="documentation">
+        <h2>Documentation that the Exit Criteria have been met</h2>
+        <p>
+          The WCAG Working Group offers the following as evidence that the above
+          requirements have been met. Details about how this information was
+          collected is described in separate sections of this report.
+        </p>
+        <ul>
+          <li>
+            Documentation of implementations of the success criteria,
+            conformance levels, partial conformance, and partial conformance due
+            to language is available in the
+            <a href="results">implementation results</a>. Details of the
+            implementations that contribute to satisfying each exit requirement
+            are linked from the results page.
+          </li>
+          <li>
+            Accessibility support documentation is available from the
+            <a href="accessibility_support"
+              >Reports on Accessibility Support for Ways of Using Various Web
+              Technologies</a
+            >
+            page.
+          </li>
+          <li>
+            All sufficient techniques have been documented along with test
+            procedures. These techniques are available from the
+            <a href="http://www.w3.org/TR/WD-UNDERSTANDING-WCAG20-20081103/"
+              >Public Working Draft of Understanding WCAG 2.0</a
+            >.
+          </li>
+          <li>
+            A record of issues received by the Working Group during the
+            Candidate Recommendation and the Working Group's responses is
+            available from the
+            <a href="issue-disposition-report">Issue Disposition Report</a>. In
+            addition to issues received as public comments, issues raised by
+            implementers and evaluators are also included.
+          </li>
+        </ul>
+        <p>
+          The information above constitutes the substance of the WCAG Working
+          Group's claim that the requirements to advance to Proposed
+          Recommendation have been met. The information below describes how the
+          information was collected and what actions have been taken on WCAG 2.0
+          during the implementation process. This provides informative support
+          for the claim that the procedure used was valid to substantiate the
+          claim.
+        </p>
+      </div>
+      <div id="conclusions">
+        <h2>General conclusions</h2>
+        <p>
+          The implementation phase of WCAG 2.0 demonstrated that the guidelines
+          are effective for a wide range of implementations. Our implementations
+          cover a variety of human languages, site sizes, application areas, web
+          technologies used, and visual designs.
+        </p>
+        <p>
+          Although nearly all implementations had a least some errors that
+          needed fixing to reach complete conformance at their targeted level,
+          the errors tended to be oversights rather than misunderstandings of
+          the guidelines. Where there were misunderstandings, the working group
+          clarified the language of the guidelines or added supplemental
+          information to Understanding WCAG 2.0 or to our documented techniques.
+        </p>
+        <p>
+          The implementation experience makes it clear that tool-supported
+          evaluations are very important to the process of achieving
+          conformance.
+        </p>
+        <p>
+          WCAG 2.0 will benefit from ongoing techniques development work, to
+          expand the techniques documented for the current technology set, to
+          ensure that techniques are available for other common web
+          technologies, and to document accessibility solutions in new
+          technologies as they develop. Additional accessibility-support
+          documentation is also needed, and will be needed on an on-going basis,
+          although not all of it by the WCAG WG.
+        </p>
+      </div>
+      <div id="changes">
+        <h2>Changes made to WCAG 2.0 based on implementation experience</h2>
+        <p>
+          A number of
+          <a href="/TR/2008/CR-WCAG20-20080430/#status_risk">Items at Risk</a>
+          were identified at the start of Candidate Recommendation.
+          Implementations of all the success criteria are available, and none of
+          the At Risk actions were taken.
+        </p>
+        <p>
+          Based on implementation experience during Candidate Recommendation,
+          some changes have been made to WCAG 2.0 and its supporting documents.
+          A detailed list of the
+          <a href="change-detail">changes to WCAG 2.0 since CR</a> is available.
+        </p>
+      </div>
+      <div id="process">
+        <h2>Process used to satisfy the exit criteria</h2>
+        <div id="experience">
+          <h3>Implementation experience</h3>
+          <p>
+            The
+            <a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/"
+              >WCAG 2.0 Candidate Recommendation</a
+            >
+            was published 30 April 2008. Implementations were requested via the
+            following channels:
+          </p>
+          <ul>
+            <li>
+              a
+              <a href="http://www.w3.org/2008/04/wcag20cr-pressrelease"
+                >press release</a
+              >
+              announcing the publication of the document;
+            </li>
+            <li>
+              a
+              <a
+                href="http://lists.w3.org/Archives/Public/w3c-wai-ig/2008AprJun/0042.html"
+                >message</a
+              >
+              to the WAI Interest Group, a W3C-operated mailing list with nearly
+              700 subscribers;
+            </li>
+            <li>
+              copies of the WAI Interest Group message sent directly to about
+              200 interested individuals and organizations;
+            </li>
+            <li>
+              copies of the WAI Interest Group message translated and sent to
+              French and German accessibility lists;
+            </li>
+            <li>
+              a
+              <a href="http://www.w3.org/QA/2008/04/wcag20_cr_april2008.html"
+                >blog post</a
+              >
+              on the W3C Q&amp;A blog;
+            </li>
+            <li>
+              information on the <a href="/">W3C</a> and
+              <a href="/WAI/">WAI</a> main pages and RSS feeds.
+            </li>
+          </ul>
+          <div id="implementations">
+            <h4>Implementations</h4>
+            <p>
+              Individuals and organizations interested in submitting
+              implementations of WCAG 2.0 were directed to
+              <a href="http://www.w3.org/WAI/WCAG20/CR/"
+                >WCAG 2.0 Candidate Recommendation Implementation Information</a
+              >, which explained the process and provided the opportunity to
+              submit candidate implementations through an online form.
+              Approximately 45 implementations were submitted for consideration.
+            </p>
+            <p>
+              The Working Group selected a subset of the implementations to
+              proceed in collecting implementation experience. The selection was
+              based on the desire to demonstrate the greatest diversity of sites
+              possible with respect to size, type of site (corporate,
+              government, education, etc.), technologies relied upon, coverage
+              of the success criteria, etc. Also prioritized were
+              &quot;blackbox&quot; sites, where the site developer had had very
+              little interaction with the WCAG Working Group, as a goal was to
+              test the understandability of the support materials without the
+              need for expert intervention. In order to ensure coverage of the
+              success criteria, however, the Working Group accepted 5
+              &quot;greybox&quot; sites, with some interaction, and 5
+              &quot;whitebox&quot; sites developed by people closely associated
+              with or members of the Working Group.
+            </p>
+            <p>
+              Although the sites submitted for consideration provided
+              significant coverage of the success criteria, some success
+              criteria were not applicable to any of these sites. To provide
+              implementation documentation for these success criteria, the
+              Working Group selected 23 &quot;in the wild&quot; implementations
+              - public Web sites that demonstrated good application of
+              particular success criteria but were not submitted by the author
+              for consideration. These sites were used only to demonstrate
+              specific success criteria and were not evaluated for overall WCAG
+              2.0 conformance.
+            </p>
+            <p>
+              Available is a summary of
+              <a href="characteristics">implementation characteristics</a>, as
+              well as a
+              <a href="implementation_list">list of all implementations</a> that
+              were used in this process.
+            </p>
+          </div>
+          <div id="evaluations">
+            <h4>Evaluation</h4>
+            <p>
+              In order to validate that the implementations satisfied the WCAG
+              2.0 requirements, the Working Group evaluated each implementation.
+              This involved evaluation of specific success criteria of interest
+              and, in the case of implementations that were to be used as
+              examples of particular conformance level, all success criteria
+              relevant to the conformance level.
+            </p>
+            <p>
+              The evaluation process is time consuming and required a large team
+              of evaluators to cover this number of sites. 29 people from within
+              the Working Group and from outside the Working Group with known
+              subject matter expertise participated in the evaluation process.
+              This was supported by an evaluation database that was developed
+              for this purpose. The database collected and tabulated results to
+              document how the Candidate Recommendation exit requirements were
+              met. Evaluators also could use a dedicated
+              <a
+                href="http://lists.w3.org/Archives/Team/team-wcag2-implementations/"
+                >implementations mailing list (Team-only archive)</a
+              >
+              to discuss issues.
+            </p>
+            <p>
+              Note that though data on implementations that are used for this
+              report is available, the raw data, interface to the database, and
+              archives of the mailing list are visible only to evaluators and
+              W3C Team due to implementation and evaluator confidentiality
+              considerations. In short, evaluators were presented with a list of
+              sufficient techniques from the WCAG 2.0 &quot;How to Meet&quot;
+              document that are applicable to each success criterion. A text
+              field was also provided in which evaluators could enter other
+              techniques used by the implementers to meet the success criterion.
+              After determining which techniques were used, and finding any
+              failures, the evaluator used that data to judge whether the
+              success criterion was satisfied.
+            </p>
+            <p>
+              The WCAG 2.0 success criteria are designed to be testable.
+              Nevertheless, a degree of expertise and human judgment is often
+              required in the evaluation process. To help ensure validity of
+              results, the success criteria of interest for each implementation
+              were evaluated by at least two evaluators. In cases where
+              evaluators did not arrive at the same conclusion, they were asked
+              to discuss their interpretations with each other and harmonize
+              their results. The Working Group then used the data provided by
+              the evaluators to arrive at a final evaluation for each success
+              criterion.
+            </p>
+            <p>
+              At the end of this process, nearly 2000 records of data were
+              collected about success criteria, and nearly 2700 records about
+              techniques. This data has been analyzed and comprises the evidence
+              that the exit requirements have been met.
+            </p>
+          </div>
+        </div>
+        <div id="accessibilitysupport">
+          <h3>Documenting accessibility support</h3>
+          <p>
+            In conjunction with the implementation activities, the concept of
+            accessibility support gained clarity. Originally, accessibility
+            support was discussed in terms of technologies and features of
+            technologies. In creating accessibility support documentation and
+            gathering implementation feedback, we found it clearer to describe
+            it as the &quot;uses&quot; of technologies and features of
+            technologies. This was then shortened to just &quot;the uses of a
+            technology&quot; that are accessibility supported.
+          </p>
+          <p>
+            This refinement in the description also clarified the relationship
+            of &quot;accessibility support&quot; and the WCAG 2.0 techniques
+            since &quot;uses of technology to meet the success criteria&quot; is
+            exactly what the techniques are. In other words, when using
+            technologies to meet WCAG 2.0 success criteria, technologies must be
+            used in ways that are accessibility supported (i.e. technologies
+            must be used in ways that will work with assistive technologies and
+            accessibility features in user agents.).
+          </p>
+          <p>
+            To demonstrate that accessibility support for technologies can be
+            determined and documented, data on the accessibility support of four
+            Web technologies was gathered. All were evaluated with multiple
+            platforms (operating system/user agent/assistive technology
+            combinations). The Web technologies tested and documented included
+            both W3C and non-W3C technologies (HTML, CSS, PDF and Silverlight).
+          </p>
+          <p>
+            For the W3C technologies, evaluators tested each use with the
+            different platforms and the results were recorded in a database.
+            Reports were then generated from the database. For the PDF and
+            Silverlight technologies, reports generated by the technology
+            vendors themselves are provided documenting the results of testing
+            across different OS/user agent/assistive technology platforms.
+          </p>
+          <p>
+            All of the reports can be found at
+            <a href="accessibility_support"
+              >Reports on Accessibility Support for Ways of Using Various Web
+              Technologies</a
+            >. Authors could use databases or reports to look up techniques or
+            &quot;uses&quot; of a technology that they would like to employ to
+            see if the use will work with (are supported by) assistive
+            technologies and accessibility features in user agents. Both the
+            database and reports are preliminary and incomplete. Additional work
+            is required to test against more platforms, and to expand the set of
+            uses covered by the reports. They do demonstrate, however, that
+            Accessibility Support information can be gathered and presented in a
+            form that authors and others can use.
+          </p>
+        </div>
+        <div id="techniques">
+          <h3>Documenting techniques</h3>
+          <p>
+            For each success criterion in WCAG 2.0, the working group has listed
+            both sufficient techniques (techniques that the working group agrees
+            would meet the success criterion) and advisory techniques
+            (techniques that may or may not be testable, that go beyond the
+            success criterion, and that can provide additional accessibility
+            benefits to some users or in some situations). All of the sufficient
+            techniques are documented and include a test procedure. Some (but
+            not most) of the advisory techniques are also fully documented. Some
+            of these have a test procedure while others are general advice and a
+            test procedure is not provided since there is no set criterion or
+            level of implementation for the technique.
+          </p>
+          <p>
+            The
+            <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/"
+              >Understanding WCAG 2.0</a
+            >
+            and the
+            <a href="http://www.w3.org/WAI/WCAG20/quickref/"
+              >How to Meet WCAG 2.0 - Quick Reference</a
+            >
+            documents both provide a direct linking from the individual success
+            criteria in WCAG 2.0 and the sufficient and advisory techniques
+            documentation. A link to the proper place in the Understanding and
+            How to Meet documents can be found at the end of each success
+            criterion in WCAG 2.0.
+          </p>
+          <p>
+            Documentation of the techniques includes a description of the
+            technique, when it is applicable, any user agent limitations,
+            examples (sometimes including code), resources, related techniques
+            and, for all sufficient and some advisory techniques, a test
+            procedure. 
+          </p>
+        </div>
+        <div id="issues">
+          <h3>Responding to issues</h3>
+          <p>
+            As it has done in the past, the WCAG Working Group received comments
+            on a dedicated
+            <a
+              href="http://lists.w3.org/Archives/Public/public-comments-wcag20/"
+              >comments list</a
+            >. Comments were tracked via an issue-tracking tool, proposals for
+            how to address each issue were presented to the Working Group via
+            Web-Based Surveys, and Working Group decisions executed. The record
+            of these comments and their resolution is available from the
+            <a href="issue-disposition-report">Issue Disposition Report</a>.
+          </p>
+          <p>
+            Some comments and questions arrived from individuals involved in
+            implementations that were targeted to be used in this implementation
+            report. The Working Group tried to find a balance between supporting
+            the implementers while not compromising the &quot;blackbox&quot;
+            nature of the site by hand-feeding an interpretation of WCAG 2.0.
+            Some issues were substantive enough to require formal review by the
+            Working Group, even though the response made the implementation more
+            &quot;greybox&quot;.
+          </p>
+          <p>
+            Some issues were also raised during the evaluation process.
+            Evaluators had questions of interpretation, some of which were not
+            easily resolved during discussion on the evaluation mailing list.
+            Complex issues of this type were handled in the same way as public
+            comments and therefore appear in the issue disposition report.
+          </p>
+        </div>
+      </div>
+      <div id="contributors">
+        <h2>Contributors</h2>
+        <div id="implementers">
+          <h3>Implementers</h3>
+          <p>
+            The following people contributed implementations that were used in
+            this report:
+          </p>
+          <ul>
+            <li>Patrice Bourlon</li>
+            <li>
+              Raven Calais (Australian Government Information Management Office)
+            </li>
+            <li>Mike Cherim (Green-Beast.com)</li>
+            <li>James Coltham</li>
+            <li>Lainey Feingold (Law Office of Lainey Feingold)</li>
+            <li>Greg Gay (Adaptive Technology Resource Centre)</li>
+            <li>Brian Hardy (Vision Australia)</li>
+            <li>Kazuhito Kidachi (Mitsue-Links Co.,Ltd.)</li>
+            <li>Andrew Kirkpatrick (Adobe Systems)</li>
+            <li>Alessandro Miele</li>
+            <li>
+              Matthew Ross (State Services Commission, New Zealand Government)
+            </li>
+            <li>Michael Stenitzer (WIENFLUSS information.design.solutions)</li>
+            <li>Christophe Strobbe (K.U.Leuven)</li>
+            <li>Terry Thompson (DO-IT, University of Washington)</li>
+          </ul>
+        </div>
+        <div id="evaluators">
+          <h3>Evaluators</h3>
+          <p>
+            The following people have contributed implementation evaluations.
+            None evaluated sites with which they had a direct involvement.
+          </p>
+          <ul>
+            <li>Bruce Bailey, U.S. Access Board (WG Member)</li>
+            <li>Tim Boland, NIST (WG Member)</li>
+            <li>Ben Caldwell, Trace (WG Member)</li>
+            <li>Tomas Caspers</li>
+            <li>Sofia Celic (WG Member)</li>
+            <li>Sambhavi Chandrashekar, ATRC</li>
+            <li>Michael Cooper, W3C (WG Member)</li>
+            <li>Steve Faulkner, The Paciello Group</li>
+            <li>Kentarou Fukuda, IBM</li>
+            <li>
+              P.J. Gardner, Gardner Information Design, Inc. and Boston-IA
+            </li>
+            <li>Loretta Guarino Reid, Google (WG Chair)</li>
+            <li>Katie Haritos-Shea (WG Member)</li>
+            <li>Hans Hillen (The Paciello Group)</li>
+            <li>Andrew Kirkpatrick, Adobe (WG Member)</li>
+            <li>Preety Kumar, Deque</li>
+            <li>Drew LaHart, IBM (WG Member)</li>
+            <li>Gez Lemon, The Paciello Group</li>
+            <li>Chuck Letourneau, Starling Access Services</li>
+            <li>David MacDonald, eRamp (WG Member)</li>
+            <li>Niqui Merret, niquimerret.com</li>
+            <li>Sailesh Panchang, Deque</li>
+            <li>Sharron Rush, Knowability</li>
+            <li>Jared Smith, WebAIM</li>
+            <li>Andi Snow-Weaver, IBM (WG Member)</li>
+            <li>Jeanne Spellman, W3C</li>
+            <li>Christophe Strobbe, K.U.Leuven (WG Member)</li>
+            <li>Jim Thatcher, JimThatcher.com</li>
+            <li>Makoto Ueki, Infoaxia (WG Member)</li>
+            <li>Gregg Vanderheiden, Trace (WG Chair)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <h2>Document Information</h2>
+      <p><strong>Content last updated:</strong> 29 October 2008</p>
+      <p>[<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]</p>
+      <div class="copyright">
+        <p>
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/ipr-notice#Copyright"
+            shape="rect"
+            >Copyright</a
+          >
+          © 1994-2008
+          <a href="/" shape="rect"
+            ><acronym title="World Wide Web Consortium">W3C</acronym></a
+          ><sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"
+            ><acronym title="Massachusetts Institute of Technology"
+              >MIT</acronym
+            ></a
+          >,
+          <a href="http://www.ercim.org/" shape="rect"
+            ><acronym
+              title="European Research Consortium for Informatics and Mathematics"
+              >ERCIM</acronym
+            ></a
+          >, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>), All Rights
+          Reserved. W3C
+          <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer" shape="rect"
+            >liability</a
+          >,
+          <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks" shape="rect"
+            >trademark</a
+          >,
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/copyright-documents"
+            shape="rect"
+            >document use</a
+          >
+          and
+          <a
+            rel="Copyright"
+            href="/Consortium/Legal/copyright-software"
+            shape="rect"
+            >software licensing</a
+          >
+          rules apply. Your interactions with this site are in accordance with
+          our
+          <a href="/Consortium/Legal/privacy-statement#Public" shape="rect"
+            >public</a
+          >
+          and
+          <a href="/Consortium/Legal/privacy-statement#Members" shape="rect"
+            >Member</a
+          >
+          privacy statements.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
