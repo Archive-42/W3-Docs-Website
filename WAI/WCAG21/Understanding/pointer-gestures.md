@@ -1,0 +1,112 @@
+-   [Contents](. "Table of Contents")
+-   [GL: Input Modalities](input-modalities)
+-   [Previous SC: Section Headings](section-headings)
+-   [Next SC: Pointer Cancellation](pointer-cancellation)
+
+On this page:
+
+-   [Intent](#intent)
+-   [Benefits](#benefits)
+-   [Examples](#examples)
+-   [Techniques](#techniques)
+-   [Key Terms](#key-terms)
+
+Understanding Success Criterion 2.5.1: Pointer Gestures
+=======================================================
+
+> Success Criterion [2.5.1 Pointer Gestures](https://www.w3.org/TR/WCAG21/#pointer-gestures) (Level A): All [functionality](#dfn-functionality) that uses multipoint or path-based gestures for operation can be operated with a [single pointer](#dfn-single-pointer) without a path-based gesture, unless a multipoint or path-based gesture is [essential](#dfn-essential).
+>
+> This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).
+
+Intent
+------
+
+The intent of this Success Criterion is to ensure that content can be controlled with a range of pointing devices, abilities, and assistive technologies. Some people cannot perform gestures in a precise manner, or they may use a specialized or adapted input device such as a head pointer, eye-gaze system, or speech-controlled mouse emulator. Some pointing methods lack the capability or accuracy to perform multipoint or path-based gestures.
+
+A **path-based gesture** involves an interaction where not just the endpoints matter. If going through an intermediate point (usually near the start of the gesture) also affects its meaning then it is a path-based gesture. The user engages a pointer (starting point), carries out a movement that goes through at least one intermediate-point before disengaging the pointer (end point). The intermediate point defines the gesture as requiring a specific path, even if the complete path is not defined.
+
+<figure><img src="img/path-based-gesture-1.png" alt="Figure 1 A path-based gesture involves starting a pointer movement that goes through at least one intermediate point before the end-point. The end-point may be a continuation, or allow for various movements." width="400" /><figcaption>Figure 1 A path-based gesture involves starting a pointer movement that goes through at least one intermediate point before the end-point. The end-point may be a continuation, or allow for various movements.</figcaption></figure>Examples of path-based gestures include swiping, sliders and carousels dependent on the direction of interaction, and other gestures which trace a prescribed path such as the drawing a specific shape. Such paths may be drawn with a finger or stylus on a touchscreen, graphics tablet, or trackpad, or with a mouse, joystick, or similar pointer device.
+
+Pointer interactions where the movement between the start and end points can go in any direction and are entirely non-prescriptive are not path-based.
+
+<figure><img src="img/path-based-gesture-2.png" alt="Figure 2 A free-form gesture does not require any particular path before the end-point, only the start and (optionally) the end point matter." width="400" /><figcaption>Figure 2 A free-form gesture does not require any particular path before the end-point, only the start and (optionally) the end point matter.</figcaption></figure>Note
+
+Any movement of a pointer could be difficult or impossible to use for someone who cannot perform precise movements, therefore alternative forms of interaction are always recommended. This success criterion is scoped to *path-based gestures* as it may be difficult or impossible to provide an alternative for free-form paths.
+
+Examples of **multipoint** gestures include a two-finger pinch zoom, a split tap where one finger rests on the screen and a second finger taps, or a two- or three-finger tap or swipe. Users may find it difficult or impossible to accomplish these if they type and point with a single finger or stick.
+
+Authors must ensure that their content can be operated without multipoint or path-based gestures. Multipoint or path-based gestures can be used so long as the functionality can also be operated by another method, such as a tap, click, double tap, double click, long press, or click & hold.
+
+This Success Criterion applies to gestures in the author-provided content, not gestures defined by the operating system, user agent, or assistive technology. Examples of operating system gestures would be swiping down to see system notifications and gestures for built-in assistive technologies (AT). Examples of user-agent-implemented gestures would be horizontal swiping implemented by browsers for navigating within the page history, or vertical swiping to scroll page content.
+
+There are times when a component requires a path-based gesture for touch screen devices but not with a mouse. Taking an example of a generic slider:
+
+-   **Using a mouse:** If the user clicks on the thumb control of the slider and moves vertically, the slider will respond by moving to the right or left, even if the movement is mostly upwards. There will be no page scrolling as a result of the vertical movement as long as they drag with focus on the slider. Therefore, the slider does not require a path-based gesture with mouse pointer.
+-   **Using a touch-screen:** If the user puts their finger on the thumb control of the slider and moves upwards more than sideways, the slider may not respond because the browser takes control of the swipe and interprets it as a scroll, and will move the page up and down. Moving left or right on the slider thumb engages the slider and then the user can vary their vertical movement. This implementation has the 3-point requirement to work with a finger on a touch screen device so is a path-based gesture.
+
+As touch screen devices can apply default gestures it is important to test with them if you are unsure whether a particular component does require a path-based gesture.
+
+Browsers on a touch screen device generally provide some default gestures that impact whether a path-based gesture is needed. For example, a web browser on a touch-screen devices might detect a vertical gesture and scroll the page. If a user places their finger on a slider thumb and moves up (to scroll down) that might not activate the slider (depending on implementation). If the user moves horizontally first then the slider could capture that gesture and ignore vertical movement, resulting in a path-based gesture. If you include touch-screen devices as accessibility supported then these types of interaction need testing with a touch screen as using a mouse in a similar way would not trigger the same browser behavior.
+
+This Success Criterion does not require all functionality to be available through pointing devices, but if it is available to pointer devices then it should not require path-based gestures. While content authors generally need to provide keyboard commands or other non-pointer mechanisms that perform actions equivalent to complex gestures (see Success Criterion 2.1.1 Keyboard), this is not sufficient to conform to this Success Criterion. That is because some users rely entirely on pointing devices, or find simple pointer inputs much easier than alternatives. For example, a user relying on a head-pointer would find clicking a control to be much more convenient than activating an on-screen keyboard to emulate a keyboard shortcut, and a person who has difficulty memorizing a series of keys (or gestures) may find it much easier to simply click on a labeled control. Therefore, if one or more pointer-based mechanisms are supported, then their benefits should be afforded to users through simple, single-point actions alone.
+
+An exception is made for functionality that is inherently and necessarily based on complex paths or multipoint gestures. For example, entering your signature may be inherently path-based (although acknowledging something or confirming your identity need not be).
+
+Gestures that involve dragging in any direction are not in scope for this SC because only the start and end points matter in a dragging operation. However, such gestures do require fine motor control. Authors are encouraged to provide non-dragging methods, for instance, a drag and drop operation could also be achieved by selecting an item (with a tap or keyboard interaction) and then selecting its destination as a second step.
+
+Benefits
+--------
+
+-   Users who cannot (accurately) perform complex pointer gestures will have alternative means for operating the content.
+
+-   The availability of user interface elements provided as a fallback for complex gestures helps users who may often be unaware of the support for complex pointer gestures. This can be especially beneficial for users with cognitive or learning disabilities.
+
+Examples
+--------
+
+-   A web site includes a map view that supports the pinch gesture to zoom into the map content. User interface controls offer the operation using plus and minus buttons to zoom in and out.
+
+-   A news site has a horizontal content slider with hidden news teasers that can moved into the viewport via horizontal swiping. It also offers forward and backward arrow buttons for single-point activation to navigate to adjacent slider content.
+
+-   A kanban widget with several vertical areas representing states in a defined process allows the user to right- or left-swipe elements to move them to an adjacent silo. The user can also accomplish this by selecting the element with a single tap or click, and then activating an arrow button to move the selected element.
+
+-   A custom slider requires movement in a strict left/right direction when operated by dragging the thumb control. Buttons on both sides of the slider increment and decrement the selected value and update the thumb position.
+
+Techniques
+----------
+
+Each numbered item in this section represents a technique or combination of techniques that the WCAG Working Group deems sufficient for meeting this Success Criterion. However, it is not necessary to use these particular techniques. For information on using other techniques, see [Understanding Techniques for WCAG Success Criteria](understanding-techniques), particularly the "Other Techniques" section.
+
+### Sufficient Techniques
+
+-   [G215: Providing controls to achieve the same result as path based or multipoint gestures](https://www.w3.org/WAI/WCAG21/Techniques/general/G215)
+-   [G216: Providing single point activation for a control slider](https://www.w3.org/WAI/WCAG21/Techniques/general/G216)
+
+### Failures
+
+The following are common mistakes that are considered failures of this Success Criterion by the WCAG Working Group.
+
+-   [F105: Failure of Success Criterion 2.5.1 due to providing functionality via a path-based gesture without simple pointer alternative](https://www.w3.org/WAI/WCAG21/Techniques/failures/F105)
+
+Key Terms
+---------
+
+essential
+
+if removed, would fundamentally change the information or functionality of the content, **and** information and functionality cannot be achieved in another way that would conform
+
+functionality
+
+[processes](#dfn-process) and outcomes achievable through user action
+
+process
+
+series of user actions where each action is required in order to complete an activity
+
+Successful use of a series of Web pages on a shopping site requires users to view alternative products, prices and offers, select products, submit an order, provide shipping information and provide payment information.
+
+An account registration page requires successful completion of a Turing test before the registration form can be accessed.
+
+single pointer
+
+pointer input that operates with one point of contact with the screen, including single taps and clicks, double-taps and clicks, long presses, and path-based gestures

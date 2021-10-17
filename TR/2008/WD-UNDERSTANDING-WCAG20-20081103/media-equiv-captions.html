@@ -1,299 +1,1013 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
-								Understanding Success Criterion 1.2.2  | Understanding WCAG 2.0
-              </title><style type="text/css">
-body {max-width: 75em;}
-
-code           { font-family: monospace; }
-
-div.constraint,
-div.issue,
-div.note,
-div.notice,
-div.example    { margin-left: 1.5em; margin-bottom: .5em; }
-
-ol.enumar      { list-style-type: decimal; margin-top: 0; margin-bottom: .25em;}
-ol.enumla      { list-style-type: lower-alpha; }
-ol.enumlr      { list-style-type: lower-roman; }
-ol.enumua      { list-style-type: upper-alpha; }
-ol.enumur      { list-style-type: upper-roman; }
-
-.screenreader {position: absolute; left: -1000em}
-
-h2.section, h3.section {font-weight: normal; font-size: 1.25em; margin-top: 1.5em; color: #000000; background:inherit;}
-h4 {font-weight: bold; font-size: 0.8125em; padding: 0; margin-bottom: 0; color: #333; background:inherit;}
-.boxed h3, .boxed h4 {font-weight: bold; font-size: 0.8125em; padding: 0.5em 1em; color: #000000; background: #f0f0f0; margin: 0 0 1em}
-.boxed {border: solid #ccc 1px; padding: 0 0 1em; margin: 1em 2em 0 2em}
-.boxed p, .boxed div {margin-left: 1em; margin-right: 1em}
-div.boxed h3, div.boxed h4, div.div2 h2, div.div2 h3, h2.terms, h3.terms .div3 h3, .div3 h4, .benefits h3, .benefits h4 .resources h3, .resources h4 .intent h3, .intent h4 {color:#000000;}
-.div3head, .div2head {color:#000000; background: inherit; font-size: 1.1em;}
-div.div2 dl, dl.keyterms {margin-left: 1.5em;}
-p.prefix {margin-bottom: 0.5em}
-.benefits h3, .resources h3, .intent h3 {font-size: 1.1em;}
-
-blockquote.scquote, blockquote.glquote {margin: 0 1em 0 1em; border: solid #ccc 1px; background: #f0f0f0; color: #000000; clear: left; padding: 0.9em 0.5em 0.5em 0.5em;}
-blockquote.scquote p, blockquote.glquote p {font-size: 0.8125em}
-
-	li p {
-		margin-top: 0;                  
-		margin-bottom: 0; 
-	}
-
-p {
-		margin-top: 0;                  
-		margin-bottom: .5em; 
-	}
-	
-p.prefix, p.sctxt {
-    margin-top: .25em;  
-    margin-bottom: 0;
-}
-
-strong.sc-handle {
-  font-size: 1em;
-}
-
-dd.prefix p {
-		margin-bottom: 0;                  
-}
-      	dd {
-		margin-bottom: .5em;                  
-	}
-	dt.label {padding-top: .5em;}
-ul {
-		margin-top: 0;   
-		margin-bottom: .25em;               
-}
-
-h4, h5 {margin-bottom: .5em;}
-
-    .revnote {
-        border-style : solid;
-        border-width : thin;
-        border-color : #A7ABBF;
-        background-color: #F0F8F8 ;
-        color : black;
-        page-break-inside: avoid ;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Understanding Success Criterion 1.2.2 | Understanding WCAG 2.0
+    </title>
+    <style type="text/css">
+      body {
+        max-width: 75em;
       }
-    p.revnote , div.revnote {
-        padding : 0.5em; 
-        margin : .25em 0 .25em 0; /* top, right, bottom, left */
-      }
-    .informative {
-        color : #000000;
-        background : #ffffff;
-        padding-bottom : 0.5em;
-        padding-left : 1em;
-        margin-top : 0.5em;
-        margin-left : 2em;
-        padding-right : 0.5em;
-        border-style : solid;
-        border-width : thin;
-        border-color : #f1f1f1;
-      }
-      
-    .principle { 	
-		padding: .5em; 	
-		border: thin solid #666666; 	
-		background-color: #FFFFFF; 	
-		color: #000000; 	
-		font-weight: bold; 
-	}
-       
-    .guideline {
-        border: thin solid #000066; 	
-        background-color: #CFE8EF ! important; 	
-        padding: .5em .5em .5em .5em; 	
-        margin-bottom: 0; 	
-        color: #000000;   
-      }
-      
-    .req, .bp, .additional, .terms, .section {      	    
-		  display: block; 
-		  border-bottom: thin solid #666666;
-		  margin-left: 1em;
-		  padding-bottom: .25em;
-		 } 
-		 
-		 .terms, .section {      	    
-		  display: block; 
-		  border-bottom: thin solid #666666;
-		  margin-left: 0;
-		 } 
-		 
-	div.sc {
-		 margin-left: 1em;
-	}	
-  
-    .bigger {
-        font-weight : bold;
-      }
-    .smaller {
-        font-size : 75%;
-      }
-    .termref {
-        color : #006400;
-        background : white;
-      }
-    a.termref:link {
-        color : #006400;
-        background : inherit;
-      }
-    a.termref:hover, a.termref:focus {
-        background-color : #fafad2;
-        color : #006400;
-      }
-	table.checklist {
-		empty-cells: show;
-		width: 94%;
-		margin-bottom: 1em;   
-	}
-					 	
-	.termref { 	
-		color: #006400; 	
-		background: white;
-	} 
-	
-	 a:link.termref { 	
-		 color: #006400; 	
-		 background: inherit; 	
-	}   
-	
-	a:hover.termref, a:focus.termref { 	
-		background-color: #FAFAD2; 	
-		color: #006400;
-	}
-      .sorethumb {color: red; background: inherit;}
-	table.checklist {
-		empty-cells: show;
-		width: 94%;
-		margin-bottom: 1em;
-	}
-					 
-p.sc {font-size: 100%; font-weight: bold; display: inline;}
 
-p.i, p.v {display: inline;}
+      code {
+        font-family: monospace;
+      }
 
-hr.divider {
-	background-color: #000066;
-	color: #000000;
-	height: 30px;
-}
+      div.constraint,
+      div.issue,
+      div.note,
+      div.notice,
+      div.example {
+        margin-left: 1.5em;
+        margin-bottom: 0.5em;
+      }
 
- ul.nobullet {
-  list-style-type: none;
- }
-a.HTMlink, a.HTMlink:visited { 
-	display: inline;
-	font: .9em Arial, Helvetica, sans-serif;
-	padding: 0px 0px 2px 15px;
-	}
-a.HTMlink:hover, a.HTMlink:focus { 
-	display: inline;
-	font: .9em Arial, Helvetica, sans-serif;
-	padding: 0px 0px 2px 15px;
-	background-color: transparent;
-	}
-	
-li.conformance {
-  margin-top: 1em;
-}
+      ol.enumar {
+        list-style-type: decimal;
+        margin-top: 0;
+        margin-bottom: 0.25em;
+      }
+      ol.enumla {
+        list-style-type: lower-alpha;
+      }
+      ol.enumlr {
+        list-style-type: lower-roman;
+      }
+      ol.enumua {
+        list-style-type: upper-alpha;
+      }
+      ol.enumur {
+        list-style-type: upper-roman;
+      }
 
-li.intro ul {
-margin-bottom: 1em;
-}
+      .screenreader {
+        position: absolute;
+        left: -1000em;
+      }
 
-p.indented {
- margin-left: 2.5em;
-}
+      h2.section,
+      h3.section {
+        font-weight: normal;
+        font-size: 1.25em;
+        margin-top: 1.5em;
+        color: #000000;
+        background: inherit;
+      }
+      h4 {
+        font-weight: bold;
+        font-size: 0.8125em;
+        padding: 0;
+        margin-bottom: 0;
+        color: #333;
+        background: inherit;
+      }
+      .boxed h3,
+      .boxed h4 {
+        font-weight: bold;
+        font-size: 0.8125em;
+        padding: 0.5em 1em;
+        color: #000000;
+        background: #f0f0f0;
+        margin: 0 0 1em;
+      }
+      .boxed {
+        border: solid #ccc 1px;
+        padding: 0 0 1em;
+        margin: 1em 2em 0 2em;
+      }
+      .boxed p,
+      .boxed div {
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+      div.boxed h3,
+      div.boxed h4,
+      div.div2 h2,
+      div.div2 h3,
+      h2.terms,
+      h3.terms .div3 h3,
+      .div3 h4,
+      .benefits h3,
+      .benefits h4 .resources h3,
+      .resources h4 .intent h3,
+      .intent h4 {
+        color: #000000;
+      }
+      .div3head,
+      .div2head {
+        color: #000000;
+        background: inherit;
+        font-size: 1.1em;
+      }
+      div.div2 dl,
+      dl.keyterms {
+        margin-left: 1.5em;
+      }
+      p.prefix {
+        margin-bottom: 0.5em;
+      }
+      .benefits h3,
+      .resources h3,
+      .intent h3 {
+        font-size: 1.1em;
+      }
 
-</style><link media="print" type="text/css" rel="stylesheet" href="print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WD.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/">Understanding WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents" title="Table of Contents">Contents</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Understanding SC  1.2.1 [Audio-only and Video-only (Prerecorded)]" href="media-equiv-av-only-alt.html"><strong>Previous: </strong>SC  1.2.1 [Audio-only and Video-only (Prerecorded)]</a></li><li><a title="Understanding SC  1.2.3 [Audio Description or Media Alternative]" href="media-equiv-audio-desc.html"><strong>Next: </strong>SC  1.2.3 [Audio Description or Media Alternative]</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#media-equiv-captions-intent-head">Intent</a></li><li><a href="#media-equiv-captions-examples-head">Examples</a></li><li><a href="#media-equiv-captions-resources-head">Related Resources</a></li><li><a href="#media-equiv-captions-techniques-head">Techniques &amp; Failures</a></li><li><a href="#key-terms">Key terms</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="media-equiv-captions" id="media-equiv-captions"> </a><strong>Captions (Prerecorded)</strong><span class="screenreader">:</span><br/>Understanding <abbr title="Success Criterion">SC</abbr> 1.2.2</h1><blockquote class="scquote"><div>
-<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#media-equiv-captions">1.2.2</a> Captions (Prerecorded):</strong> 
-                <a href="#captionsdef" class="termref">Captions</a> are provided for all <a href="#prerecordeddef" class="termref">prerecorded</a> <a href="#audiodef" class="termref">audio</a> content in <a href="#synchronizedmediadef" class="termref">synchronized media</a>, except when the media is a <a href="#multimedia-alt-textdef" class="termref">media alternative for text</a> and is clearly labeled as such. 
-					(Level A)
-				</p></div></blockquote><div class="intent"><h2 id="media-equiv-captions-intent-head" class="section">
-				Intent of this Success Criterion
-			</h2><p>The intent of this Success Criterion is to enable people who are deaf or hard of hearing to watch synchronized media presentations. Captions provide the part of the content available via the audio track. Captions not only include dialogue, but identify who is speaking and include non-speech information conveyed through sound, including meaningful sound effects. </p><p>It is acknowledged that at the present time there may be difficulty in creating captions for time-sensitive material and this may result in the author being faced with the choice of delaying the information until captions are available, or publishing time-sensitive content that is inaccessible to the deaf, at least for the interval until captions are available. Over time, the tools for captioning as well as building the captioning into the delivery process can shorten or eliminate such delays.
-          </p><p>Captions are not needed when the synchronized media is, itself, an alternate presentation of information that is also presented via text on the Web page. For example, if information on a page is accompanied by a synchronized media presentation that presents no more information than is already presented in text, but is easier for people with cognitive, language, or learning disabilities to understand, then it would not need to be captioned since the information is already presented on the page in text or in text alternatives (e.g. for images). 
-          </p><p>See also <em><a href="media-equiv-real-time-captions.html">
-    Understanding Success Criterion 1.2.4 Captions (Live)</a></em>.</p><div class="benefits"><h3 id="media-equiv-captions-13-head" class="div3head">
-				Specific Benefits of Success Criterion 1.2.2:
-			</h3><ul><li><p> People who are deaf or have a hearing loss can access the auditory information in the synchronized media content through captions.</p></li></ul></div></div><div class="div3"><h2 id="media-equiv-captions-examples-head" class="section">
-				Examples of Success Criterion 1.2.2</h2><ul><li><p>
-                <strong>A captioned tutorial</strong>
-              </p><p> A video clip shows how to tie a knot. The captions read, </p><p>"(music) </p><p>Using rope to tie knots was an important skill</p><p>for the likes of sailors, soldiers and woodsmen.." </p><p>From Sample Transcript Formatting by Whit Anderson.</p></li><li><p>A complex legal document contains synchronized media clips for different paragraphs that show a person speaking the contents of the paragraph. Each clip is associated with its corresponding paragraph. No captions are provided for the synchronized media.  
-              </p></li><li><p>An instruction manual containing a description of a part and its necessary orientation is accompanied by a synchronized media clip showing the part in its correct orientation. No captions are provided for the synchronized media clip.  
-              </p></li></ul></div><div class="resources"><h2 id="media-equiv-captions-resources-head" class="section">
-				Related Resources
-			</h2><p>Resources are for information purposes only, no endorsement implied.</p><h3 id="media-equiv-captions-14-head" class="div3head">Guides to Captioning</h3><ul><li><p>
-                    <a href="http://www.dcmp.org/captioningkey/">Captioning Key: Guidelines and Preferred Techniques</a>
-                </p></li><li><p>
-                  <a href="http://joeclark.org/access/captioning/bpoc/">Best Practices in Online Captioning</a>
-                </p></li></ul><h3 id="media-equiv-captions-15-head" class="div3head">SMIL Resources</h3><ul><li><p>
-                  <a href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</a>
-                </p></li><li><p>
-                  <a href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</a>
-                </p></li><li><p>
-                  <a href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</a>
-                </p></li><li><p>
-                  <a href="http://ncam.wgbh.org/richmedia/tutorials/smiltemplates.html">NCAM Rich Media Accessibility, Accessible SMIL Templates</a>
-                </p></li></ul><h3 id="media-equiv-captions-16-head" class="div3head">Other Captioning Resources</h3><ul><li><p>
-                  <a href="http://ncam.wgbh.org/">National Center for Accessible Media</a>
-                </p></li><li><p>
-                  <a href="http://www.webaim.org/techniques/captions/quicktime/index.php">Quicktime Captioning Tutorial</a>
-                </p></li><li><p>
-                  <a href="http://www.webaim.org/techniques/captions/real/index.php">RealPlayer Captioning Tutorial</a>
-                </p></li><li><p><a href="http://www.webaim.org/resources/captioning/">WebAIM: Captioning Resource List</a></p></li><li><p>
-                  <a href="http://www.webaim.org/techniques/captions/windows/index.php">Windows Media Player Captioning Tutorial</a>
-                </p></li></ul><h3 id="media-equiv-captions-17-head" class="div3head">Captioning Tools</h3><ul><li><p>
-                  <a href="http://ncam.wgbh.org/webaccess/magpie/">Media Access Generator (MAGpie) </a>
-                </p></li><li><p>
-                  <a href="http://www.journalism.wisc.edu/worldcaption/">World Caption Software</a>
-                </p></li></ul></div><div class="div3"><h2 id="media-equiv-captions-techniques-head" class="section">
-				Techniques and Failures for Success Criterion 1.2.2 - Captions (Prerecorded)</h2><p>Each numbered item in this section represents a technique or combination of techniques that the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group deems sufficient for meeting this Success Criterion. The techniques listed only satisfy the Success Criterion if all of the <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#conformance-reqs">WCAG 2.0 conformance requirements</a> have been met. </p><div class="boxed"><h3 id="media-equiv-captions-18-head" class="div3head">
-				Sufficient Techniques  
-			</h3><ol class="enumar"><li><p>
-                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G93">G93: 
-          Providing open (always visible) captions 
-          
-        </a>
-                </p></li><li><p>
-                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G87">G87: Providing closed captions</a> using any readily available media format that has a video player that  supports closed captioning 
-                </p></li><li><p>
-                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G87">G87: Providing closed captions</a> using any of the technology-specific techniques below 
-    </p><ul><li><p>
-                      <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/SM11">SM11: Providing captions through synchronized text streams in SMIL 1.0</a> (SMIL)
-			
-                    </p></li><li><p>
-                      <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/SM12">SM12: Providing captions through synchronized text streams in SMIL 2.0</a> (SMIL)
-			
-                    </p></li></ul></li></ol></div><div class="boxed"><h3 id="media-equiv-captions-19-head" class="div3head">
-				 Additional Techniques (Advisory) for 1.2.2</h3><p>Although not required for conformance, the following additional techniques should be considered in order to make content more accessible. Not all techniques can be used or would be effective in all situations.</p><ul><li><p>
-        Providing a note saying "No sound is used in this clip" for video-only clips (future link)
-    </p></li><li><p>
-        Using SMIL 1.0 to provide captions for all languages for which there are audio tracks (future link)
-    </p></li><li><p>
-        Using SMIL 2.0 to provide captions for all languages for which there are audio tracks (future link)
-    </p></li></ul></div><div class="boxed"><h3 id="media-equiv-captions-20-head" class="div3head">
-				 Common Failures for <abbr title="Success Criterion">SC</abbr> 1.2.2</h3><p>The following are common mistakes that are considered failures of Success Criterion 1.2.2 by the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group.</p><ul><li><p>
-                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F8">F8: Failure of Success Criterion 1.2.2 due to captions omitting some dialogue or important
-                    sound effects</a>
-                </p></li><li><p>
-                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F75">F75: Failure of Success Criterion 1.2.2 by providing synchronized media without captions when the synchronized media presents more information than is presented on the page</a>
-                </p></li><li><p>
-                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F74">F74: Failure of  SC1.2.2 and 1.2.8 due to not labeling a synchronized media alternative to text as an alternative</a>
-                </p></li></ul></div></div><div class="div3"><h2 id="key-terms" class="terms">Key Terms</h2><dl class="keyterms"><dt class="label"><a name="audiodef" id="audiodef"> </a>audio</dt><dd><p>the technology of sound reproduction</p><div class="note"><p class="prefix">Note: Audio can be created synthetically (including speech synthesis), recorded from real world sounds, or both.</p></div></dd><dt class="label"><a name="captionsdef" id="captionsdef"> </a>captions</dt><dd><p>synchronized visual <span>and/</span>or <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#text-altdef" class="termref">text alternative</a> for both <span>speech and non-speech</span> audio information needed to understand the media content</p><div class="note"><p class="prefix">Note 1:
-					Captions are similar to dialogue-only subtitles except captions convey not only the content of spoken dialogue, but also equivalents for non-dialogue audio information needed to understand the program content, including sound effects, music, laughter, speaker identification and location.</p><p class="prefix">Note 2:
-					Closed Captions are equivalents that can be turned on and off with some players.</p><p class="prefix">Note 3:
-					Open Captions are any captions that cannot be turned off. For example, if the captions are visual equivalent <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#images-of-textdef" class="termref">images of text</a> embedded in <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#videodef" class="termref">video</a>.</p><p class="prefix">Note 4:
-					Captions should not obscure or obstruct relevant information in the video.</p><p class="prefix">Note 5:
-					In some countries, captions are called subtitles.</p><p class="prefix">Note 6:
-					
-                <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#audiodescdef" class="termref">Audio descriptions</a> can be, but do not need to be, captioned since they are descriptions of information that is already presented visually.</p></div></dd><dt class="label"><a name="multimedia-alt-textdef" id="multimedia-alt-textdef"> </a>media alternative for text</dt><dd><p>media that presents no more information than is already presented in text (directly or via text alternatives)
-              
-            </p><div class="note"><p class="prefix">Note: A media alternative for text is provided for those who benefit from alternate representations of text.  Media alternatives for text may be audio-only, video-only (including sign-language video), or audio-video.</p></div></dd><dt class="label"><a name="prerecordeddef" id="prerecordeddef"> </a>prerecorded</dt><dd><p>information that is not <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#livedef" class="termref">live</a></p></dd><dt class="label"><a name="synchronizedmediadef" id="synchronizedmediadef"> </a>synchronized media</dt><dd><p><a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#audiodef" class="termref">audio</a> or <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#videodef" class="termref">video</a> synchronized with another 
-              format for presenting information and/or with time-based interactive components, unless the media is a <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#multimedia-alt-textdef" class="termref">media alternative for text</a> that is clearly labeled as such
-            </p></dd></dl></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Top</a></strong></li><li><strong><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents" title="Table of Contents">Contents</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Understanding SC  1.2.1 [Audio-only and Video-only (Prerecorded)]" href="media-equiv-av-only-alt.html"><strong>Previous: </strong>SC  1.2.1 [Audio-only and Video-only (Prerecorded)]</a></li><li><a title="Understanding SC  1.2.3 [Audio Description or Media Alternative]" href="media-equiv-audio-desc.html"><strong>Next: </strong>SC  1.2.3 [Audio Description or Media Alternative]</a></li></ul></div><div class="footer"><p class="copyright">This Web page is part of <a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/">Understanding WCAG 2.0: A guide to understanding and implementing WCAG 2.0</a>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">Overview of WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents.
- </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2008 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>
+      blockquote.scquote,
+      blockquote.glquote {
+        margin: 0 1em 0 1em;
+        border: solid #ccc 1px;
+        background: #f0f0f0;
+        color: #000000;
+        clear: left;
+        padding: 0.9em 0.5em 0.5em 0.5em;
+      }
+      blockquote.scquote p,
+      blockquote.glquote p {
+        font-size: 0.8125em;
+      }
+
+      li p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+
+      p.prefix,
+      p.sctxt {
+        margin-top: 0.25em;
+        margin-bottom: 0;
+      }
+
+      strong.sc-handle {
+        font-size: 1em;
+      }
+
+      dd.prefix p {
+        margin-bottom: 0;
+      }
+      dd {
+        margin-bottom: 0.5em;
+      }
+      dt.label {
+        padding-top: 0.5em;
+      }
+      ul {
+        margin-top: 0;
+        margin-bottom: 0.25em;
+      }
+
+      h4,
+      h5 {
+        margin-bottom: 0.5em;
+      }
+
+      .revnote {
+        border-style: solid;
+        border-width: thin;
+        border-color: #a7abbf;
+        background-color: #f0f8f8;
+        color: black;
+        page-break-inside: avoid;
+      }
+      p.revnote,
+      div.revnote {
+        padding: 0.5em;
+        margin: 0.25em 0 0.25em 0; /* top, right, bottom, left */
+      }
+      .informative {
+        color: #000000;
+        background: #ffffff;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+        margin-top: 0.5em;
+        margin-left: 2em;
+        padding-right: 0.5em;
+        border-style: solid;
+        border-width: thin;
+        border-color: #f1f1f1;
+      }
+
+      .principle {
+        padding: 0.5em;
+        border: thin solid #666666;
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+      }
+
+      .guideline {
+        border: thin solid #000066;
+        background-color: #cfe8ef !important;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        margin-bottom: 0;
+        color: #000000;
+      }
+
+      .req,
+      .bp,
+      .additional,
+      .terms,
+      .section {
+        display: block;
+        border-bottom: thin solid #666666;
+        margin-left: 1em;
+        padding-bottom: 0.25em;
+      }
+
+      .terms,
+      .section {
+        display: block;
+        border-bottom: thin solid #666666;
+        margin-left: 0;
+      }
+
+      div.sc {
+        margin-left: 1em;
+      }
+
+      .bigger {
+        font-weight: bold;
+      }
+      .smaller {
+        font-size: 75%;
+      }
+      .termref {
+        color: #006400;
+        background: white;
+      }
+      a.termref:link {
+        color: #006400;
+        background: inherit;
+      }
+      a.termref:hover,
+      a.termref:focus {
+        background-color: #fafad2;
+        color: #006400;
+      }
+      table.checklist {
+        empty-cells: show;
+        width: 94%;
+        margin-bottom: 1em;
+      }
+
+      .termref {
+        color: #006400;
+        background: white;
+      }
+
+      a:link.termref {
+        color: #006400;
+        background: inherit;
+      }
+
+      a:hover.termref,
+      a:focus.termref {
+        background-color: #fafad2;
+        color: #006400;
+      }
+      .sorethumb {
+        color: red;
+        background: inherit;
+      }
+      table.checklist {
+        empty-cells: show;
+        width: 94%;
+        margin-bottom: 1em;
+      }
+
+      p.sc {
+        font-size: 100%;
+        font-weight: bold;
+        display: inline;
+      }
+
+      p.i,
+      p.v {
+        display: inline;
+      }
+
+      hr.divider {
+        background-color: #000066;
+        color: #000000;
+        height: 30px;
+      }
+
+      ul.nobullet {
+        list-style-type: none;
+      }
+      a.HTMlink,
+      a.HTMlink:visited {
+        display: inline;
+        font: 0.9em Arial, Helvetica, sans-serif;
+        padding: 0px 0px 2px 15px;
+      }
+      a.HTMlink:hover,
+      a.HTMlink:focus {
+        display: inline;
+        font: 0.9em Arial, Helvetica, sans-serif;
+        padding: 0px 0px 2px 15px;
+        background-color: transparent;
+      }
+
+      li.conformance {
+        margin-top: 1em;
+      }
+
+      li.intro ul {
+        margin-bottom: 1em;
+      }
+
+      p.indented {
+        margin-left: 2.5em;
+      }
+    </style>
+    <link media="print" type="text/css" rel="stylesheet" href="print.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://www.w3.org/StyleSheets/TR/W3C-WD.css"
+    />
+    <link rel="stylesheet" type="text/css" href="slicenav.css" />
+  </head>
+  <body class="slices">
+    <div id="masthead">
+      <p class="logo">
+        <a href="http://www.w3.org/"
+          ><img
+            width="72"
+            height="48"
+            alt="W3C"
+            src="http://www.w3.org/Icons/w3c_home"
+        /></a>
+      </p>
+      <p class="collectiontitle">
+        <a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/"
+          >Understanding WCAG 2.0</a
+        >
+      </p>
+    </div>
+    <div id="skipnav">
+      <p class="skipnav">
+        <a href="#maincontent">Skip to Content (Press Enter)</a>
+      </p>
+    </div>
+    <div class="mainbody">
+      <a name="top"> </a
+      ><!-- TOP NAVIGATION BAR -->
+      <ul id="navigation">
+        <li>
+          <strong
+            ><a
+              href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents"
+              title="Table of Contents"
+              >Contents</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="intro.html" title="Introduction to Understanding WCAG 2.0"
+              ><abbr title="Introduction">Intro</abbr></a
+            ></strong
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  1.2.1 [Audio-only and Video-only (Prerecorded)]"
+            href="media-equiv-av-only-alt.html"
+            ><strong>Previous: </strong>SC 1.2.1 [Audio-only and Video-only
+            (Prerecorded)]</a
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  1.2.3 [Audio Description or Media Alternative]"
+            href="media-equiv-audio-desc.html"
+            ><strong>Next: </strong>SC 1.2.3 [Audio Description or Media
+            Alternative]</a
+          >
+        </li>
+      </ul>
+      <div class="navtoc">
+        <p>On this page:</p>
+        <ul id="navbar">
+          <li><a href="#media-equiv-captions-intent-head">Intent</a></li>
+          <li><a href="#media-equiv-captions-examples-head">Examples</a></li>
+          <li>
+            <a href="#media-equiv-captions-resources-head">Related Resources</a>
+          </li>
+          <li>
+            <a href="#media-equiv-captions-techniques-head"
+              >Techniques &amp; Failures</a
+            >
+          </li>
+          <li><a href="#key-terms">Key terms</a></li>
+        </ul>
+      </div>
+      <div class="skiptarget"><a id="maincontent">-</a></div>
+      <h1>
+        <a name="media-equiv-captions" id="media-equiv-captions"> </a
+        ><strong>Captions (Prerecorded)</strong
+        ><span class="screenreader">:</span><br />Understanding
+        <abbr title="Success Criterion">SC</abbr> 1.2.2
+      </h1>
+      <blockquote class="scquote">
+        <div>
+          <p class="sctxt">
+            <strong class="sc-handle"
+              ><a
+                href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#media-equiv-captions"
+                >1.2.2</a
+              >
+              Captions (Prerecorded):</strong
+            >
+            <a href="#captionsdef" class="termref">Captions</a> are provided for
+            all <a href="#prerecordeddef" class="termref">prerecorded</a>
+            <a href="#audiodef" class="termref">audio</a> content in
+            <a href="#synchronizedmediadef" class="termref"
+              >synchronized media</a
+            >, except when the media is a
+            <a href="#multimedia-alt-textdef" class="termref"
+              >media alternative for text</a
+            >
+            and is clearly labeled as such. (Level A)
+          </p>
+        </div>
+      </blockquote>
+      <div class="intent">
+        <h2 id="media-equiv-captions-intent-head" class="section">
+          Intent of this Success Criterion
+        </h2>
+        <p>
+          The intent of this Success Criterion is to enable people who are deaf
+          or hard of hearing to watch synchronized media presentations. Captions
+          provide the part of the content available via the audio track.
+          Captions not only include dialogue, but identify who is speaking and
+          include non-speech information conveyed through sound, including
+          meaningful sound effects.
+        </p>
+        <p>
+          It is acknowledged that at the present time there may be difficulty in
+          creating captions for time-sensitive material and this may result in
+          the author being faced with the choice of delaying the information
+          until captions are available, or publishing time-sensitive content
+          that is inaccessible to the deaf, at least for the interval until
+          captions are available. Over time, the tools for captioning as well as
+          building the captioning into the delivery process can shorten or
+          eliminate such delays.
+        </p>
+        <p>
+          Captions are not needed when the synchronized media is, itself, an
+          alternate presentation of information that is also presented via text
+          on the Web page. For example, if information on a page is accompanied
+          by a synchronized media presentation that presents no more information
+          than is already presented in text, but is easier for people with
+          cognitive, language, or learning disabilities to understand, then it
+          would not need to be captioned since the information is already
+          presented on the page in text or in text alternatives (e.g. for
+          images).
+        </p>
+        <p>
+          See also
+          <em
+            ><a href="media-equiv-real-time-captions.html">
+              Understanding Success Criterion 1.2.4 Captions (Live)</a
+            ></em
+          >.
+        </p>
+        <div class="benefits">
+          <h3 id="media-equiv-captions-13-head" class="div3head">
+            Specific Benefits of Success Criterion 1.2.2:
+          </h3>
+          <ul>
+            <li>
+              <p>
+                People who are deaf or have a hearing loss can access the
+                auditory information in the synchronized media content through
+                captions.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="div3">
+        <h2 id="media-equiv-captions-examples-head" class="section">
+          Examples of Success Criterion 1.2.2
+        </h2>
+        <ul>
+          <li>
+            <p>
+              <strong>A captioned tutorial</strong>
+            </p>
+            <p>A video clip shows how to tie a knot. The captions read,</p>
+            <p>"(music)</p>
+            <p>Using rope to tie knots was an important skill</p>
+            <p>for the likes of sailors, soldiers and woodsmen.."</p>
+            <p>From Sample Transcript Formatting by Whit Anderson.</p>
+          </li>
+          <li>
+            <p>
+              A complex legal document contains synchronized media clips for
+              different paragraphs that show a person speaking the contents of
+              the paragraph. Each clip is associated with its corresponding
+              paragraph. No captions are provided for the synchronized media.
+            </p>
+          </li>
+          <li>
+            <p>
+              An instruction manual containing a description of a part and its
+              necessary orientation is accompanied by a synchronized media clip
+              showing the part in its correct orientation. No captions are
+              provided for the synchronized media clip.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="resources">
+        <h2 id="media-equiv-captions-resources-head" class="section">
+          Related Resources
+        </h2>
+        <p>
+          Resources are for information purposes only, no endorsement implied.
+        </p>
+        <h3 id="media-equiv-captions-14-head" class="div3head">
+          Guides to Captioning
+        </h3>
+        <ul>
+          <li>
+            <p>
+              <a href="http://www.dcmp.org/captioningkey/"
+                >Captioning Key: Guidelines and Preferred Techniques</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="http://joeclark.org/access/captioning/bpoc/"
+                >Best Practices in Online Captioning</a
+              >
+            </p>
+          </li>
+        </ul>
+        <h3 id="media-equiv-captions-15-head" class="div3head">
+          SMIL Resources
+        </h3>
+        <ul>
+          <li>
+            <p>
+              <a href="http://www.w3.org/TR/REC-smil/"
+                >Synchronized Multimedia Integration Language (SMIL) 1.0</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="http://www.w3.org/TR/SMIL/"
+                >Synchronized Multimedia Integration Language (SMIL 2.0)</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="http://www.w3.org/TR/SMIL-access/"
+                >Accessibility Features of SMIL</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a
+                href="http://ncam.wgbh.org/richmedia/tutorials/smiltemplates.html"
+                >NCAM Rich Media Accessibility, Accessible SMIL Templates</a
+              >
+            </p>
+          </li>
+        </ul>
+        <h3 id="media-equiv-captions-16-head" class="div3head">
+          Other Captioning Resources
+        </h3>
+        <ul>
+          <li>
+            <p>
+              <a href="http://ncam.wgbh.org/"
+                >National Center for Accessible Media</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a
+                href="http://www.webaim.org/techniques/captions/quicktime/index.php"
+                >Quicktime Captioning Tutorial</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="http://www.webaim.org/techniques/captions/real/index.php"
+                >RealPlayer Captioning Tutorial</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="http://www.webaim.org/resources/captioning/"
+                >WebAIM: Captioning Resource List</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a
+                href="http://www.webaim.org/techniques/captions/windows/index.php"
+                >Windows Media Player Captioning Tutorial</a
+              >
+            </p>
+          </li>
+        </ul>
+        <h3 id="media-equiv-captions-17-head" class="div3head">
+          Captioning Tools
+        </h3>
+        <ul>
+          <li>
+            <p>
+              <a href="http://ncam.wgbh.org/webaccess/magpie/"
+                >Media Access Generator (MAGpie)
+              </a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="http://www.journalism.wisc.edu/worldcaption/"
+                >World Caption Software</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="div3">
+        <h2 id="media-equiv-captions-techniques-head" class="section">
+          Techniques and Failures for Success Criterion 1.2.2 - Captions
+          (Prerecorded)
+        </h2>
+        <p>
+          Each numbered item in this section represents a technique or
+          combination of techniques that the
+          <acronym title="Web Content Accessibility Guidelines">WCAG</acronym>
+          Working Group deems sufficient for meeting this Success Criterion. The
+          techniques listed only satisfy the Success Criterion if all of the
+          <a
+            href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#conformance-reqs"
+            >WCAG 2.0 conformance requirements</a
+          >
+          have been met.
+        </p>
+        <div class="boxed">
+          <h3 id="media-equiv-captions-18-head" class="div3head">
+            Sufficient Techniques
+          </h3>
+          <ol class="enumar">
+            <li>
+              <p>
+                <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G93"
+                  >G93: Providing open (always visible) captions
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G87"
+                  >G87: Providing closed captions</a
+                >
+                using any readily available media format that has a video player
+                that supports closed captioning
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G87"
+                  >G87: Providing closed captions</a
+                >
+                using any of the technology-specific techniques below
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    <a
+                      href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/SM11"
+                      >SM11: Providing captions through synchronized text
+                      streams in SMIL 1.0</a
+                    >
+                    (SMIL)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a
+                      href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/SM12"
+                      >SM12: Providing captions through synchronized text
+                      streams in SMIL 2.0</a
+                    >
+                    (SMIL)
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="boxed">
+          <h3 id="media-equiv-captions-19-head" class="div3head">
+            Additional Techniques (Advisory) for 1.2.2
+          </h3>
+          <p>
+            Although not required for conformance, the following additional
+            techniques should be considered in order to make content more
+            accessible. Not all techniques can be used or would be effective in
+            all situations.
+          </p>
+          <ul>
+            <li>
+              <p>
+                Providing a note saying "No sound is used in this clip" for
+                video-only clips (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Using SMIL 1.0 to provide captions for all languages for which
+                there are audio tracks (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Using SMIL 2.0 to provide captions for all languages for which
+                there are audio tracks (future link)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="boxed">
+          <h3 id="media-equiv-captions-20-head" class="div3head">
+            Common Failures for <abbr title="Success Criterion">SC</abbr> 1.2.2
+          </h3>
+          <p>
+            The following are common mistakes that are considered failures of
+            Success Criterion 1.2.2 by the
+            <acronym title="Web Content Accessibility Guidelines">WCAG</acronym>
+            Working Group.
+          </p>
+          <ul>
+            <li>
+              <p>
+                <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F8"
+                  >F8: Failure of Success Criterion 1.2.2 due to captions
+                  omitting some dialogue or important sound effects</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F75"
+                  >F75: Failure of Success Criterion 1.2.2 by providing
+                  synchronized media without captions when the synchronized
+                  media presents more information than is presented on the
+                  page</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F74"
+                  >F74: Failure of SC1.2.2 and 1.2.8 due to not labeling a
+                  synchronized media alternative to text as an alternative</a
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="div3">
+        <h2 id="key-terms" class="terms">Key Terms</h2>
+        <dl class="keyterms">
+          <dt class="label"><a name="audiodef" id="audiodef"> </a>audio</dt>
+          <dd>
+            <p>the technology of sound reproduction</p>
+            <div class="note">
+              <p class="prefix">
+                Note: Audio can be created synthetically (including speech
+                synthesis), recorded from real world sounds, or both.
+              </p>
+            </div>
+          </dd>
+          <dt class="label">
+            <a name="captionsdef" id="captionsdef"> </a>captions
+          </dt>
+          <dd>
+            <p>
+              synchronized visual <span>and/</span>or
+              <a
+                href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#text-altdef"
+                class="termref"
+                >text alternative</a
+              >
+              for both <span>speech and non-speech</span> audio information
+              needed to understand the media content
+            </p>
+            <div class="note">
+              <p class="prefix">
+                Note 1: Captions are similar to dialogue-only subtitles except
+                captions convey not only the content of spoken dialogue, but
+                also equivalents for non-dialogue audio information needed to
+                understand the program content, including sound effects, music,
+                laughter, speaker identification and location.
+              </p>
+              <p class="prefix">
+                Note 2: Closed Captions are equivalents that can be turned on
+                and off with some players.
+              </p>
+              <p class="prefix">
+                Note 3: Open Captions are any captions that cannot be turned
+                off. For example, if the captions are visual equivalent
+                <a
+                  href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#images-of-textdef"
+                  class="termref"
+                  >images of text</a
+                >
+                embedded in
+                <a
+                  href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#videodef"
+                  class="termref"
+                  >video</a
+                >.
+              </p>
+              <p class="prefix">
+                Note 4: Captions should not obscure or obstruct relevant
+                information in the video.
+              </p>
+              <p class="prefix">
+                Note 5: In some countries, captions are called subtitles.
+              </p>
+              <p class="prefix">
+                Note 6:
+
+                <a
+                  href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#audiodescdef"
+                  class="termref"
+                  >Audio descriptions</a
+                >
+                can be, but do not need to be, captioned since they are
+                descriptions of information that is already presented visually.
+              </p>
+            </div>
+          </dd>
+          <dt class="label">
+            <a name="multimedia-alt-textdef" id="multimedia-alt-textdef"> </a
+            >media alternative for text
+          </dt>
+          <dd>
+            <p>
+              media that presents no more information than is already presented
+              in text (directly or via text alternatives)
+            </p>
+            <div class="note">
+              <p class="prefix">
+                Note: A media alternative for text is provided for those who
+                benefit from alternate representations of text. Media
+                alternatives for text may be audio-only, video-only (including
+                sign-language video), or audio-video.
+              </p>
+            </div>
+          </dd>
+          <dt class="label">
+            <a name="prerecordeddef" id="prerecordeddef"> </a>prerecorded
+          </dt>
+          <dd>
+            <p>
+              information that is not
+              <a
+                href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#livedef"
+                class="termref"
+                >live</a
+              >
+            </p>
+          </dd>
+          <dt class="label">
+            <a name="synchronizedmediadef" id="synchronizedmediadef"> </a
+            >synchronized media
+          </dt>
+          <dd>
+            <p>
+              <a
+                href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#audiodef"
+                class="termref"
+                >audio</a
+              >
+              or
+              <a
+                href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#videodef"
+                class="termref"
+                >video</a
+              >
+              synchronized with another format for presenting information and/or
+              with time-based interactive components, unless the media is a
+              <a
+                href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#multimedia-alt-textdef"
+                class="termref"
+                >media alternative for text</a
+              >
+              that is clearly labeled as such
+            </p>
+          </dd>
+        </dl>
+      </div>
+      <!-- BOTTOM NAVIGATION BAR -->
+      <ul id="navigationbottom">
+        <li>
+          <strong><a href="#top">Top</a></strong>
+        </li>
+        <li>
+          <strong
+            ><a
+              href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents"
+              title="Table of Contents"
+              >Contents</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="intro.html" title="Introduction to Understanding WCAG 2.0"
+              ><abbr title="Introduction">Intro</abbr></a
+            ></strong
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  1.2.1 [Audio-only and Video-only (Prerecorded)]"
+            href="media-equiv-av-only-alt.html"
+            ><strong>Previous: </strong>SC 1.2.1 [Audio-only and Video-only
+            (Prerecorded)]</a
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  1.2.3 [Audio Description or Media Alternative]"
+            href="media-equiv-audio-desc.html"
+            ><strong>Next: </strong>SC 1.2.3 [Audio Description or Media
+            Alternative]</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p class="copyright">
+        This Web page is part of
+        <a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/"
+          >Understanding WCAG 2.0: A guide to understanding and implementing
+          WCAG 2.0</a
+        >. The entire document is also available as a
+        <a href="complete.html">single HTML file</a>. See the
+        <a href="http://www.w3.org/WAI/intro/wcag20"
+          >Overview of WCAG 2.0 Documents</a
+        >
+        for an explanation of how this document fits in with other Web Content
+        Accessibility Guidelines (WCAG) 2.0 documents.
+      </p>
+      <p class="copyright">
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
+          >Copyright</a
+        >
+        © 2008
+        <a href="http://www.w3.org/"
+          ><acronym title="World Wide Web Consortium">W3C</acronym></a
+        ><sup>®</sup> (<a href="http://www.csail.mit.edu/"
+          ><acronym title="Massachusetts Institute of Technology"
+            >MIT</acronym
+          ></a
+        >,
+        <a href="http://www.ercim.org/"
+          ><acronym
+            title="European Research Consortium for Informatics and Mathematics"
+            >ERCIM</acronym
+          ></a
+        >, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer"
+          >liability</a
+        >,
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks"
+          >trademark</a
+        >
+        and
+        <a href="http://www.w3.org/Consortium/Legal/copyright-documents"
+          >document use</a
+        >
+        rules apply.
+      </p>
+    </div>
+  </body>
+</html>

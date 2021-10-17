@@ -6,60 +6,11 @@
 
 Strategies, standards, resources to make the Web accessible to people with disabilities
 
-Menu
 
--   [Get Involved](/WAI/about/participating/)
--   [About W3C WAI](/WAI/about/)
--   <span class="visuallyhidden">Search:</span>
-
--   [Accessibility Fundamentals](/WAI/fundamentals/)
--   [Planning & Policies](/WAI/planning/)
--   [Design & Develop](/WAI/design-develop/)
--   [Test & Evaluate](/WAI/test-evaluate/)
--   [Teach & Advocate](/WAI/teach-advocate/)
--   [Standards/Guidelines](/WAI/standards-guidelines/)
 
 <!-- -->
 
--   [Home](/WAI/)
--   [About W3C WAI](/WAI/about/)
 
--   <a href="/WAI/about/" class="page-link"><span>About WAI</span></a>
--   <a href="/WAI/about/participating/" class="page-link"><span>Participating</span></a>
--   <a href="/WAI/about/translating/" class="page-link"><span>Translating</span></a>
--   <a href="/WAI/about/contacting/" class="page-link"><span>Contacting</span></a>
--   <a href="/WAI/about/sponsoring/" class="page-link"><span>Sponsoring</span></a>
--   <a href="/WAI/about/projects/" class="page-link"><span>Projects</span></a>
-    -   <a href="/WAI/about/projects/wai-coop/" class="page-link"><span>WAI-CooP</span></a>
-        -   <a href="/WAI/about/projects/wai-coop/symposium1/" class="page-link"><span>Online Research Symposium</span></a>
-    -   <a href="/WAI/about/projects/wai-guide/" class="page-link"><span>WAI-Guide</span></a>
-    -   <a href="/WAI/about/projects/wai-tools/" class="page-link"><span>WAI-Tools</span></a>
-        -   <a href="/WAI/about/projects/wai-tools/final-open-meeting/" class="page-link"><span>Final Open Meeting</span></a>
-        -   <a href="/WAI/about/projects/wai-tools/session1/" class="page-link"><span>Video Recording 1</span></a>
-        -   <a href="/WAI/about/projects/wai-tools/session2/" class="page-link"><span>Video Recording 2</span></a>
-        -   <a href="/WAI/about/projects/wai-tools/session3/" class="page-link"><span>Video Recording 3</span></a>
-        -   <a href="/WAI/about/projects/wai-tools/session4/" class="page-link"><span>Video Recording 4</span></a>
-        -   <a href="/WAI/about/projects/wai-tools/session5/" class="page-link"><span>Video Recording 5</span></a>
-        -   <a href="/WAI/about/projects/wai-tools/third-open-meeting/" class="page-link"><span>Third Open Meeting</span></a>
-        -   <a href="/WAI/about/projects/wai-tools/second-open-meeting/" class="page-link"><span>Second Open Meeting</span></a>
-        -   <a href="/WAI/about/projects/wai-tools/symposium/" class="page-link"><span>Online Symposium</span></a>
-        -   <a href="/WAI/about/projects/wai-tools/first-open-meeting/" class="page-link"><span>First Open Meeting</span></a>
-    -   <a href="/WAI/expand-access/" class="page-link"><span>WAI Expanding Access</span></a>
-    -   <a href="/WAI/about/projects/easy-reading/" class="page-link"><span>Easy Reading</span></a>
-    -   <a href="/WAI/about/projects/wai-core-2015/" class="page-link"><span>WAI-Core 2015, 2020</span></a>
-    -   <a href="/WAI/about/projects/wai-core-ford/" class="page-link"><span>WAI-Core Ford</span></a>
--   <a href="/WAI/about/groups/" class="page-link"><span>Groups</span></a>
-    -   <a href="https://www.w3.org/WAI/GL/" class="page-link"><span>AGWG: Accessibility Guidelines WG</span></a>
-    -   <a href="https://www.w3.org/WAI/APA/" class="page-link"><span>APA: Accessible Platform WG</span></a>
-    -   <a href="https://www.w3.org/WAI/ARIA/" class="page-link"><span>ARIA: Accessible Rich Internet Applications WG</span></a>
-    -   <a href="/WAI/about/groups/eowg/" class="page-link"><span>EOWG: Education and Outreach WG</span></a>
-        -   <a href="/WAI/EO/charter-current" class="page-link"><span>Charter</span></a>
-        -   <a href="/WAI/about/groups/eowg/participate/" class="page-link"><span>Participate (Join)</span></a>
-        -   <a href="https://www.w3.org/groups/wg/eowg/participants" class="page-link"><span>Current Participants</span></a>
-    -   <a href="/WAI/about/groups/waiig/" class="page-link"><span>WAI IG: WAI Interest Group</span></a>
-    -   <a href="/WAI/about/groups/taskforces/" class="page-link"><span>Group Task Forces</span></a>
--   <a href="/WAI/about/using-wai-material/" class="page-link"><span>Using WAI Material</span></a>
--   <a href="/WAI/about/accessibility-statement/" class="page-link"><span>Accessibility Statement</span></a>
 
 About W3C WAI
 =============

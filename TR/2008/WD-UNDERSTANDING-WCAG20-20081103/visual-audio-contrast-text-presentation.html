@@ -1,281 +1,1013 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
-								Understanding Success Criterion 1.4.5  | Understanding WCAG 2.0
-              </title><style type="text/css">
-body {max-width: 75em;}
-
-code           { font-family: monospace; }
-
-div.constraint,
-div.issue,
-div.note,
-div.notice,
-div.example    { margin-left: 1.5em; margin-bottom: .5em; }
-
-ol.enumar      { list-style-type: decimal; margin-top: 0; margin-bottom: .25em;}
-ol.enumla      { list-style-type: lower-alpha; }
-ol.enumlr      { list-style-type: lower-roman; }
-ol.enumua      { list-style-type: upper-alpha; }
-ol.enumur      { list-style-type: upper-roman; }
-
-.screenreader {position: absolute; left: -1000em}
-
-h2.section, h3.section {font-weight: normal; font-size: 1.25em; margin-top: 1.5em; color: #000000; background:inherit;}
-h4 {font-weight: bold; font-size: 0.8125em; padding: 0; margin-bottom: 0; color: #333; background:inherit;}
-.boxed h3, .boxed h4 {font-weight: bold; font-size: 0.8125em; padding: 0.5em 1em; color: #000000; background: #f0f0f0; margin: 0 0 1em}
-.boxed {border: solid #ccc 1px; padding: 0 0 1em; margin: 1em 2em 0 2em}
-.boxed p, .boxed div {margin-left: 1em; margin-right: 1em}
-div.boxed h3, div.boxed h4, div.div2 h2, div.div2 h3, h2.terms, h3.terms .div3 h3, .div3 h4, .benefits h3, .benefits h4 .resources h3, .resources h4 .intent h3, .intent h4 {color:#000000;}
-.div3head, .div2head {color:#000000; background: inherit; font-size: 1.1em;}
-div.div2 dl, dl.keyterms {margin-left: 1.5em;}
-p.prefix {margin-bottom: 0.5em}
-.benefits h3, .resources h3, .intent h3 {font-size: 1.1em;}
-
-blockquote.scquote, blockquote.glquote {margin: 0 1em 0 1em; border: solid #ccc 1px; background: #f0f0f0; color: #000000; clear: left; padding: 0.9em 0.5em 0.5em 0.5em;}
-blockquote.scquote p, blockquote.glquote p {font-size: 0.8125em}
-
-	li p {
-		margin-top: 0;                  
-		margin-bottom: 0; 
-	}
-
-p {
-		margin-top: 0;                  
-		margin-bottom: .5em; 
-	}
-	
-p.prefix, p.sctxt {
-    margin-top: .25em;  
-    margin-bottom: 0;
-}
-
-strong.sc-handle {
-  font-size: 1em;
-}
-
-dd.prefix p {
-		margin-bottom: 0;                  
-}
-      	dd {
-		margin-bottom: .5em;                  
-	}
-	dt.label {padding-top: .5em;}
-ul {
-		margin-top: 0;   
-		margin-bottom: .25em;               
-}
-
-h4, h5 {margin-bottom: .5em;}
-
-    .revnote {
-        border-style : solid;
-        border-width : thin;
-        border-color : #A7ABBF;
-        background-color: #F0F8F8 ;
-        color : black;
-        page-break-inside: avoid ;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Understanding Success Criterion 1.4.5 | Understanding WCAG 2.0
+    </title>
+    <style type="text/css">
+      body {
+        max-width: 75em;
       }
-    p.revnote , div.revnote {
-        padding : 0.5em; 
-        margin : .25em 0 .25em 0; /* top, right, bottom, left */
-      }
-    .informative {
-        color : #000000;
-        background : #ffffff;
-        padding-bottom : 0.5em;
-        padding-left : 1em;
-        margin-top : 0.5em;
-        margin-left : 2em;
-        padding-right : 0.5em;
-        border-style : solid;
-        border-width : thin;
-        border-color : #f1f1f1;
-      }
-      
-    .principle { 	
-		padding: .5em; 	
-		border: thin solid #666666; 	
-		background-color: #FFFFFF; 	
-		color: #000000; 	
-		font-weight: bold; 
-	}
-       
-    .guideline {
-        border: thin solid #000066; 	
-        background-color: #CFE8EF ! important; 	
-        padding: .5em .5em .5em .5em; 	
-        margin-bottom: 0; 	
-        color: #000000;   
-      }
-      
-    .req, .bp, .additional, .terms, .section {      	    
-		  display: block; 
-		  border-bottom: thin solid #666666;
-		  margin-left: 1em;
-		  padding-bottom: .25em;
-		 } 
-		 
-		 .terms, .section {      	    
-		  display: block; 
-		  border-bottom: thin solid #666666;
-		  margin-left: 0;
-		 } 
-		 
-	div.sc {
-		 margin-left: 1em;
-	}	
-  
-    .bigger {
-        font-weight : bold;
-      }
-    .smaller {
-        font-size : 75%;
-      }
-    .termref {
-        color : #006400;
-        background : white;
-      }
-    a.termref:link {
-        color : #006400;
-        background : inherit;
-      }
-    a.termref:hover, a.termref:focus {
-        background-color : #fafad2;
-        color : #006400;
-      }
-	table.checklist {
-		empty-cells: show;
-		width: 94%;
-		margin-bottom: 1em;   
-	}
-					 	
-	.termref { 	
-		color: #006400; 	
-		background: white;
-	} 
-	
-	 a:link.termref { 	
-		 color: #006400; 	
-		 background: inherit; 	
-	}   
-	
-	a:hover.termref, a:focus.termref { 	
-		background-color: #FAFAD2; 	
-		color: #006400;
-	}
-      .sorethumb {color: red; background: inherit;}
-	table.checklist {
-		empty-cells: show;
-		width: 94%;
-		margin-bottom: 1em;
-	}
-					 
-p.sc {font-size: 100%; font-weight: bold; display: inline;}
 
-p.i, p.v {display: inline;}
+      code {
+        font-family: monospace;
+      }
 
-hr.divider {
-	background-color: #000066;
-	color: #000000;
-	height: 30px;
-}
+      div.constraint,
+      div.issue,
+      div.note,
+      div.notice,
+      div.example {
+        margin-left: 1.5em;
+        margin-bottom: 0.5em;
+      }
 
- ul.nobullet {
-  list-style-type: none;
- }
-a.HTMlink, a.HTMlink:visited { 
-	display: inline;
-	font: .9em Arial, Helvetica, sans-serif;
-	padding: 0px 0px 2px 15px;
-	}
-a.HTMlink:hover, a.HTMlink:focus { 
-	display: inline;
-	font: .9em Arial, Helvetica, sans-serif;
-	padding: 0px 0px 2px 15px;
-	background-color: transparent;
-	}
-	
-li.conformance {
-  margin-top: 1em;
-}
+      ol.enumar {
+        list-style-type: decimal;
+        margin-top: 0;
+        margin-bottom: 0.25em;
+      }
+      ol.enumla {
+        list-style-type: lower-alpha;
+      }
+      ol.enumlr {
+        list-style-type: lower-roman;
+      }
+      ol.enumua {
+        list-style-type: upper-alpha;
+      }
+      ol.enumur {
+        list-style-type: upper-roman;
+      }
 
-li.intro ul {
-margin-bottom: 1em;
-}
+      .screenreader {
+        position: absolute;
+        left: -1000em;
+      }
 
-p.indented {
- margin-left: 2.5em;
-}
+      h2.section,
+      h3.section {
+        font-weight: normal;
+        font-size: 1.25em;
+        margin-top: 1.5em;
+        color: #000000;
+        background: inherit;
+      }
+      h4 {
+        font-weight: bold;
+        font-size: 0.8125em;
+        padding: 0;
+        margin-bottom: 0;
+        color: #333;
+        background: inherit;
+      }
+      .boxed h3,
+      .boxed h4 {
+        font-weight: bold;
+        font-size: 0.8125em;
+        padding: 0.5em 1em;
+        color: #000000;
+        background: #f0f0f0;
+        margin: 0 0 1em;
+      }
+      .boxed {
+        border: solid #ccc 1px;
+        padding: 0 0 1em;
+        margin: 1em 2em 0 2em;
+      }
+      .boxed p,
+      .boxed div {
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+      div.boxed h3,
+      div.boxed h4,
+      div.div2 h2,
+      div.div2 h3,
+      h2.terms,
+      h3.terms .div3 h3,
+      .div3 h4,
+      .benefits h3,
+      .benefits h4 .resources h3,
+      .resources h4 .intent h3,
+      .intent h4 {
+        color: #000000;
+      }
+      .div3head,
+      .div2head {
+        color: #000000;
+        background: inherit;
+        font-size: 1.1em;
+      }
+      div.div2 dl,
+      dl.keyterms {
+        margin-left: 1.5em;
+      }
+      p.prefix {
+        margin-bottom: 0.5em;
+      }
+      .benefits h3,
+      .resources h3,
+      .intent h3 {
+        font-size: 1.1em;
+      }
 
-</style><link media="print" type="text/css" rel="stylesheet" href="print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WD.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/">Understanding WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents" title="Table of Contents">Contents</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Understanding SC  1.4.4 [Resize text]" href="visual-audio-contrast-scale.html"><strong>Previous: </strong>SC  1.4.4 [Resize text]</a></li><li><a title="Understanding SC  1.4.6 [Contrast (Enhanced)]" href="visual-audio-contrast7.html"><strong>Next: </strong>SC  1.4.6 [Contrast (Enhanced)]</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#visual-audio-contrast-text-presentation-intent-head">Intent</a></li><li><a href="#visual-audio-contrast-text-presentation-examples-head">Examples</a></li><li><a href="#visual-audio-contrast-text-presentation-resources-head">Related Resources</a></li><li><a href="#visual-audio-contrast-text-presentation-techniques-head">Techniques &amp; Failures</a></li><li><a href="#key-terms">Key terms</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="visual-audio-contrast-text-presentation" id="visual-audio-contrast-text-presentation"> </a><strong>Images of Text</strong><span class="screenreader">:</span><br/>Understanding <abbr title="Success Criterion">SC</abbr> 1.4.5</h1><blockquote class="scquote"><div>
-<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#visual-audio-contrast-text-presentation">1.4.5</a> Images of Text:</strong> If the technologies being used can achieve the visual presentation, <a href="#textdef" class="termref">text</a> is used to convey information rather than <a href="#images-of-textdef" class="termref">images of text</a> except for the following:
-               
-					(Level AA)
-				</p><ul><li><p>
-                    <strong>Customizable:</strong> The image of text can be <a href="#visually-customizeddef" class="termref">visually customized</a> to the user's requirements;</p></li><li><p>
-                    <strong>Essential:</strong> A particular presentation of text is <a href="#essentialdef" class="termref">essential</a> to the information being conveyed.</p></li></ul><div class="note"><p class="prefix">Note: Logotypes (text that is part of a logo or brand name) are considered essential.</p></div></div></blockquote><div class="intent"><h2 id="visual-audio-contrast-text-presentation-intent-head" class="section">
-				Intent of this Success Criterion
-			</h2><p>The intent of this Success Criterion is to encourage authors who are using technologies that are capable of achieving a specific visual presentation to enable people who require a particular visual presentation of text to be able to adjust the text presentation as required. This includes people who require the text in a particular font size, foreground and background color, font family, line spacing or alignment.</p><p>If an author can use text to achieve the same visual effect, he or she should present the information as text rather than using an image. If for any reason, the author cannot format the text to get the same effect, the effect won't be reliably presented on the commonly available user agents, or using a technology to meet this criterion would interfere with meeting other criterion such as 1.4.4, then an image of text can be used. This includes instances where a particular presentation of text is essential to the information being conveyed, such as type samples, logotypes, branding, etc. Images of text may also be used in order to use a particular font that is either not widely deployed or which the author doesn't have the right to redistribute, or to ensure that the text would be anti-aliased on all user agents.</p><p>Images of text can also be used where it is possible for users to customize the image of text to match their requirements.</p><p>Techniques for satisfying this Success Criterion are the same as those for Success Criterion 1.4.9, except that they only need to apply if the visual presentation can be achieved with the technologies that the author is using. For Success Criterion 1.4.9, the sufficient techniques would be applied only when the user can customize the output. </p><p>See also <em><a href="visual-audio-contrast-text-images.html">
-    Understanding Success Criterion 1.4.9 Images of Text (No Exception)</a></em>.</p><div class="benefits"><h3 id="visual-audio-contrast-text-presentation-78-head" class="div3head">
-				Specific Benefits of Success Criterion 1.4.5:
-			</h3><ul><li><p>People with low vision (who may have trouble reading the text with the authored font family, size and/or color).</p></li><li><p>People with visual tracking problems (who may have trouble reading the text with the authored line spacing and/or alignment).</p></li><li><p>People with cognitive disabilities that affect reading.</p></li></ul></div></div><div class="div3"><h2 id="visual-audio-contrast-text-presentation-examples-head" class="section">
-				Examples of Success Criterion 1.4.5</h2><ul><li><p>
-                <strong>Styled Headings </strong>
-              </p><p>Rather than using bitmap images to present headings in a specific font and size, an author uses CSS to achieve the same result.</p></li><li><p>
-                <strong>Dynamically Generated Images </strong>
-              </p><p>A Web page uses server-side scripting to present text as an an image. The page includes controls that allow the user to adjust the font size and foreground and background colors of the generated image.</p></li><li><p>
-                <strong>A quote</strong>
-              </p><p>A Web page contains a quote. The quote itself is presented as italicized text, indented from the left margin. The name of the person to whom the quote is attributed is below the quote with 1.5x the line space and further indented from the left margin. CSS is used to position the text; set the spacing between lines; as well as display the text's font family, size, color and decoration.</p></li><li><p>
-                <strong>Navigation items</strong>
-              </p><p>A Web page contains a menu of navigation links that have both an icon and text to describe their target. CSS is used to display the text's font family, size and foreground and background colors; as well as the spacing between the navigation links.</p></li><li><p>
-                <strong>A logo containing text</strong>
-              </p><p>A Web site contains the organization's logo in the top left corner of each Web page. The logo contains logotype (text as part, or all, of the logo). The visual presentation of the text is essential to the identity of the logo and is included as a gif image which does not allow the text characteristics to be changed. The image has a text alternative.</p></li><li><p>
-                <strong>Representation of a font family</strong>
-              </p><p>A Web page contains information about a particular font family. Substituting the font family with another font would defeat the purpose of the representation. The representation is included as a jpeg image which does not allow the text characteristics to be changed. The image has a text alternative.</p></li><li><p>
-                <strong>A representation of a letter</strong>
-              </p><p>A Web page contains a representation of an original letter. The depiction of the letter in its original format is essential to information being conveyed about the time period in which it was written. The letter is included as a gif image which does not allow the text characteristics to be changed. The image has a text alternative.</p></li><li><p>
-                <strong>Symbolic text characters</strong>
-              </p><p>A form allows users to enter blocks of text. The form provides a number of buttons, including functions to style the text and check spelling. Some of the buttons use text characters that do not form a sequence that expresses something in human language. For example "B" to increase font weight, "I" to italicize the text and "ABC" to check the spelling. The symbolic text characters are included as gif images which do not allow the text characteristics to be changed. The buttons have text alternatives.</p></li><li><p>
-                <strong>Customizable font settings in images of text</strong>
-              </p><p>A Web site allows users to specify font settings and all images of text on the site are then provided based on those settings. 
-                </p></li></ul></div><div class="resources"><h2 id="visual-audio-contrast-text-presentation-resources-head" class="section">
-				Related Resources
-			</h2><p>Resources are for information purposes only, no endorsement implied.</p><ul><li><p>
-                <a href="http://www.alistapart.com/articles/cssatten">CSS Web fonts</a>
-              </p></li><li><p>
-                <a href="http://clagnut.com/blog/2042/">Weblog comments: WebKit now supports CSS @font-face rules</a>
-              </p></li><li><p>
-                <a href="http://www.workingwith.me.uk/articles/css/cross-browser-drop-shadows">Creating Cross Browser Compatible CSS Text Shadows</a>
-              </p></li><li><p>
-                <a href="http://www.yourhtmlsource.com/stylesheets/csstext.html">CSS and text</a>
-              </p></li></ul></div><div class="div3"><h2 id="visual-audio-contrast-text-presentation-techniques-head" class="section">
-				Techniques and Failures for Success Criterion 1.4.5 - Images of Text</h2><p>Each numbered item in this section represents a technique or combination of techniques that the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group deems sufficient for meeting this Success Criterion. The techniques listed only satisfy the Success Criterion if all of the <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#conformance-reqs">WCAG 2.0 conformance requirements</a> have been met. </p><div class="boxed"><h3 id="visual-audio-contrast-text-presentation-79-head" class="div3head">
-				Sufficient Techniques  
-			</h3><ol class="enumar"><li><p><a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C22">C22: Using CSS to control visual presentation of text</a>  (CSS)
-			</p></li><li><p><span><a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C30">C30: Using CSS to replace text with images of text and providing user interface controls to switch</a>  (CSS)
-			</span></p></li><li><p>
-                  <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G140">G140: Separating information and structure from presentation to enable different presentations</a>
-                </p></li></ol></div><div class="boxed"><h3 id="visual-audio-contrast-text-presentation-80-head" class="div3head">
-				 Additional Techniques (Advisory) for 1.4.5</h3><p>Although not required for conformance, the following additional techniques should be considered in order to make content more accessible. Not all techniques can be used or would be effective in all situations.</p><div><h4><a name="d0e3925" id="d0e3925"> </a>General techniques for non-text content</h4>
-<ol class="enumar"><li><p>Identifying informative non-text content (future link)</p></li></ol></div><div><h4><a name="d0e3932" id="d0e3932"> </a>CSS Techniques</h4>
-<ol class="enumar"><li><p>
-                    <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C12">C12: Using percent for font sizes</a>  (CSS)
-			
-                  </p></li><li><p>
-                    <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C13">C13: Using named font sizes</a>  (CSS)
-			
-                  </p></li><li><p>
-                    <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C14">C14: Using em units for font sizes</a>  (CSS)
-			
-                  </p></li><li><p>
-                    <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C8">C8: Using CSS letter-spacing to control spacing within a word</a>  (CSS)
-			
-                  </p></li><li><p>
-                    <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C6">C6: Positioning content based on structural markup</a>  (CSS)
-			
-                  </p></li><li><p>Avoid applying text styling to text characters within a word (future link)</p></li></ol></div></div><div class="boxed"><h3 id="visual-audio-contrast-text-presentation-81-head" class="div3head">
-				 Common Failures for <abbr title="Success Criterion">SC</abbr> 1.4.5</h3><p>The following are common mistakes that are considered failures of Success Criterion 1.4.5 by the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group.</p><p>(No failures currently documented)</p></div></div><div class="div3"><h2 id="key-terms" class="terms">Key Terms</h2><dl class="keyterms"><dt class="label"><a name="essentialdef" id="essentialdef"> </a>essential</dt><dd><p>if removed, would fundamentally change the information or functionality of the content, <strong>and</strong> information and functionality can not be achieved in another way that would conform </p></dd><dt class="label"><a name="images-of-textdef" id="images-of-textdef"> </a>image of text</dt><dd><p>text that has been rendered in a non-text form (e.g. an image) in order to achieve a particular visual effect </p><div class="note"><p class="prefix">Note: This does not include <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#textdef" class="termref">text</a> that is part of a picture that contains significant other visual content.</p></div><div class="example"><p class="prefix">Example: A person's name on a nametag in a photograph.</p></div></dd><dt class="label"><a name="textdef" id="textdef"> </a>text</dt><dd><p>sequence of characters that can be <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#programmaticallydetermineddef" class="termref">programmatically determined</a>, where the sequence is expressing something in <a href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#human-langdef" class="termref">human language</a>
-            </p></dd><dt class="label"><a name="visually-customizeddef" id="visually-customizeddef"> </a>visually customized</dt><dd><p>the font, size, color, and background can be set </p></dd></dl></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Top</a></strong></li><li><strong><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents" title="Table of Contents">Contents</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Understanding SC  1.4.4 [Resize text]" href="visual-audio-contrast-scale.html"><strong>Previous: </strong>SC  1.4.4 [Resize text]</a></li><li><a title="Understanding SC  1.4.6 [Contrast (Enhanced)]" href="visual-audio-contrast7.html"><strong>Next: </strong>SC  1.4.6 [Contrast (Enhanced)]</a></li></ul></div><div class="footer"><p class="copyright">This Web page is part of <a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/">Understanding WCAG 2.0: A guide to understanding and implementing WCAG 2.0</a>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">Overview of WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents.
- </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2008 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>
+      blockquote.scquote,
+      blockquote.glquote {
+        margin: 0 1em 0 1em;
+        border: solid #ccc 1px;
+        background: #f0f0f0;
+        color: #000000;
+        clear: left;
+        padding: 0.9em 0.5em 0.5em 0.5em;
+      }
+      blockquote.scquote p,
+      blockquote.glquote p {
+        font-size: 0.8125em;
+      }
+
+      li p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+
+      p.prefix,
+      p.sctxt {
+        margin-top: 0.25em;
+        margin-bottom: 0;
+      }
+
+      strong.sc-handle {
+        font-size: 1em;
+      }
+
+      dd.prefix p {
+        margin-bottom: 0;
+      }
+      dd {
+        margin-bottom: 0.5em;
+      }
+      dt.label {
+        padding-top: 0.5em;
+      }
+      ul {
+        margin-top: 0;
+        margin-bottom: 0.25em;
+      }
+
+      h4,
+      h5 {
+        margin-bottom: 0.5em;
+      }
+
+      .revnote {
+        border-style: solid;
+        border-width: thin;
+        border-color: #a7abbf;
+        background-color: #f0f8f8;
+        color: black;
+        page-break-inside: avoid;
+      }
+      p.revnote,
+      div.revnote {
+        padding: 0.5em;
+        margin: 0.25em 0 0.25em 0; /* top, right, bottom, left */
+      }
+      .informative {
+        color: #000000;
+        background: #ffffff;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+        margin-top: 0.5em;
+        margin-left: 2em;
+        padding-right: 0.5em;
+        border-style: solid;
+        border-width: thin;
+        border-color: #f1f1f1;
+      }
+
+      .principle {
+        padding: 0.5em;
+        border: thin solid #666666;
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+      }
+
+      .guideline {
+        border: thin solid #000066;
+        background-color: #cfe8ef !important;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        margin-bottom: 0;
+        color: #000000;
+      }
+
+      .req,
+      .bp,
+      .additional,
+      .terms,
+      .section {
+        display: block;
+        border-bottom: thin solid #666666;
+        margin-left: 1em;
+        padding-bottom: 0.25em;
+      }
+
+      .terms,
+      .section {
+        display: block;
+        border-bottom: thin solid #666666;
+        margin-left: 0;
+      }
+
+      div.sc {
+        margin-left: 1em;
+      }
+
+      .bigger {
+        font-weight: bold;
+      }
+      .smaller {
+        font-size: 75%;
+      }
+      .termref {
+        color: #006400;
+        background: white;
+      }
+      a.termref:link {
+        color: #006400;
+        background: inherit;
+      }
+      a.termref:hover,
+      a.termref:focus {
+        background-color: #fafad2;
+        color: #006400;
+      }
+      table.checklist {
+        empty-cells: show;
+        width: 94%;
+        margin-bottom: 1em;
+      }
+
+      .termref {
+        color: #006400;
+        background: white;
+      }
+
+      a:link.termref {
+        color: #006400;
+        background: inherit;
+      }
+
+      a:hover.termref,
+      a:focus.termref {
+        background-color: #fafad2;
+        color: #006400;
+      }
+      .sorethumb {
+        color: red;
+        background: inherit;
+      }
+      table.checklist {
+        empty-cells: show;
+        width: 94%;
+        margin-bottom: 1em;
+      }
+
+      p.sc {
+        font-size: 100%;
+        font-weight: bold;
+        display: inline;
+      }
+
+      p.i,
+      p.v {
+        display: inline;
+      }
+
+      hr.divider {
+        background-color: #000066;
+        color: #000000;
+        height: 30px;
+      }
+
+      ul.nobullet {
+        list-style-type: none;
+      }
+      a.HTMlink,
+      a.HTMlink:visited {
+        display: inline;
+        font: 0.9em Arial, Helvetica, sans-serif;
+        padding: 0px 0px 2px 15px;
+      }
+      a.HTMlink:hover,
+      a.HTMlink:focus {
+        display: inline;
+        font: 0.9em Arial, Helvetica, sans-serif;
+        padding: 0px 0px 2px 15px;
+        background-color: transparent;
+      }
+
+      li.conformance {
+        margin-top: 1em;
+      }
+
+      li.intro ul {
+        margin-bottom: 1em;
+      }
+
+      p.indented {
+        margin-left: 2.5em;
+      }
+    </style>
+    <link media="print" type="text/css" rel="stylesheet" href="print.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://www.w3.org/StyleSheets/TR/W3C-WD.css"
+    />
+    <link rel="stylesheet" type="text/css" href="slicenav.css" />
+  </head>
+  <body class="slices">
+    <div id="masthead">
+      <p class="logo">
+        <a href="http://www.w3.org/"
+          ><img
+            width="72"
+            height="48"
+            alt="W3C"
+            src="http://www.w3.org/Icons/w3c_home"
+        /></a>
+      </p>
+      <p class="collectiontitle">
+        <a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/"
+          >Understanding WCAG 2.0</a
+        >
+      </p>
+    </div>
+    <div id="skipnav">
+      <p class="skipnav">
+        <a href="#maincontent">Skip to Content (Press Enter)</a>
+      </p>
+    </div>
+    <div class="mainbody">
+      <a name="top"> </a
+      ><!-- TOP NAVIGATION BAR -->
+      <ul id="navigation">
+        <li>
+          <strong
+            ><a
+              href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents"
+              title="Table of Contents"
+              >Contents</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="intro.html" title="Introduction to Understanding WCAG 2.0"
+              ><abbr title="Introduction">Intro</abbr></a
+            ></strong
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  1.4.4 [Resize text]"
+            href="visual-audio-contrast-scale.html"
+            ><strong>Previous: </strong>SC 1.4.4 [Resize text]</a
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  1.4.6 [Contrast (Enhanced)]"
+            href="visual-audio-contrast7.html"
+            ><strong>Next: </strong>SC 1.4.6 [Contrast (Enhanced)]</a
+          >
+        </li>
+      </ul>
+      <div class="navtoc">
+        <p>On this page:</p>
+        <ul id="navbar">
+          <li>
+            <a href="#visual-audio-contrast-text-presentation-intent-head"
+              >Intent</a
+            >
+          </li>
+          <li>
+            <a href="#visual-audio-contrast-text-presentation-examples-head"
+              >Examples</a
+            >
+          </li>
+          <li>
+            <a href="#visual-audio-contrast-text-presentation-resources-head"
+              >Related Resources</a
+            >
+          </li>
+          <li>
+            <a href="#visual-audio-contrast-text-presentation-techniques-head"
+              >Techniques &amp; Failures</a
+            >
+          </li>
+          <li><a href="#key-terms">Key terms</a></li>
+        </ul>
+      </div>
+      <div class="skiptarget"><a id="maincontent">-</a></div>
+      <h1>
+        <a
+          name="visual-audio-contrast-text-presentation"
+          id="visual-audio-contrast-text-presentation"
+        >
+        </a
+        ><strong>Images of Text</strong><span class="screenreader">:</span
+        ><br />Understanding <abbr title="Success Criterion">SC</abbr> 1.4.5
+      </h1>
+      <blockquote class="scquote">
+        <div>
+          <p class="sctxt">
+            <strong class="sc-handle"
+              ><a
+                href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#visual-audio-contrast-text-presentation"
+                >1.4.5</a
+              >
+              Images of Text:</strong
+            >
+            If the technologies being used can achieve the visual presentation,
+            <a href="#textdef" class="termref">text</a> is used to convey
+            information rather than
+            <a href="#images-of-textdef" class="termref">images of text</a>
+            except for the following: (Level AA)
+          </p>
+          <ul>
+            <li>
+              <p>
+                <strong>Customizable:</strong> The image of text can be
+                <a href="#visually-customizeddef" class="termref"
+                  >visually customized</a
+                >
+                to the user's requirements;
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Essential:</strong> A particular presentation of text is
+                <a href="#essentialdef" class="termref">essential</a> to the
+                information being conveyed.
+              </p>
+            </li>
+          </ul>
+          <div class="note">
+            <p class="prefix">
+              Note: Logotypes (text that is part of a logo or brand name) are
+              considered essential.
+            </p>
+          </div>
+        </div>
+      </blockquote>
+      <div class="intent">
+        <h2
+          id="visual-audio-contrast-text-presentation-intent-head"
+          class="section"
+        >
+          Intent of this Success Criterion
+        </h2>
+        <p>
+          The intent of this Success Criterion is to encourage authors who are
+          using technologies that are capable of achieving a specific visual
+          presentation to enable people who require a particular visual
+          presentation of text to be able to adjust the text presentation as
+          required. This includes people who require the text in a particular
+          font size, foreground and background color, font family, line spacing
+          or alignment.
+        </p>
+        <p>
+          If an author can use text to achieve the same visual effect, he or she
+          should present the information as text rather than using an image. If
+          for any reason, the author cannot format the text to get the same
+          effect, the effect won't be reliably presented on the commonly
+          available user agents, or using a technology to meet this criterion
+          would interfere with meeting other criterion such as 1.4.4, then an
+          image of text can be used. This includes instances where a particular
+          presentation of text is essential to the information being conveyed,
+          such as type samples, logotypes, branding, etc. Images of text may
+          also be used in order to use a particular font that is either not
+          widely deployed or which the author doesn't have the right to
+          redistribute, or to ensure that the text would be anti-aliased on all
+          user agents.
+        </p>
+        <p>
+          Images of text can also be used where it is possible for users to
+          customize the image of text to match their requirements.
+        </p>
+        <p>
+          Techniques for satisfying this Success Criterion are the same as those
+          for Success Criterion 1.4.9, except that they only need to apply if
+          the visual presentation can be achieved with the technologies that the
+          author is using. For Success Criterion 1.4.9, the sufficient
+          techniques would be applied only when the user can customize the
+          output.
+        </p>
+        <p>
+          See also
+          <em
+            ><a href="visual-audio-contrast-text-images.html">
+              Understanding Success Criterion 1.4.9 Images of Text (No
+              Exception)</a
+            ></em
+          >.
+        </p>
+        <div class="benefits">
+          <h3
+            id="visual-audio-contrast-text-presentation-78-head"
+            class="div3head"
+          >
+            Specific Benefits of Success Criterion 1.4.5:
+          </h3>
+          <ul>
+            <li>
+              <p>
+                People with low vision (who may have trouble reading the text
+                with the authored font family, size and/or color).
+              </p>
+            </li>
+            <li>
+              <p>
+                People with visual tracking problems (who may have trouble
+                reading the text with the authored line spacing and/or
+                alignment).
+              </p>
+            </li>
+            <li>
+              <p>People with cognitive disabilities that affect reading.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="div3">
+        <h2
+          id="visual-audio-contrast-text-presentation-examples-head"
+          class="section"
+        >
+          Examples of Success Criterion 1.4.5
+        </h2>
+        <ul>
+          <li>
+            <p>
+              <strong>Styled Headings </strong>
+            </p>
+            <p>
+              Rather than using bitmap images to present headings in a specific
+              font and size, an author uses CSS to achieve the same result.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Dynamically Generated Images </strong>
+            </p>
+            <p>
+              A Web page uses server-side scripting to present text as an an
+              image. The page includes controls that allow the user to adjust
+              the font size and foreground and background colors of the
+              generated image.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>A quote</strong>
+            </p>
+            <p>
+              A Web page contains a quote. The quote itself is presented as
+              italicized text, indented from the left margin. The name of the
+              person to whom the quote is attributed is below the quote with
+              1.5x the line space and further indented from the left margin. CSS
+              is used to position the text; set the spacing between lines; as
+              well as display the text's font family, size, color and
+              decoration.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Navigation items</strong>
+            </p>
+            <p>
+              A Web page contains a menu of navigation links that have both an
+              icon and text to describe their target. CSS is used to display the
+              text's font family, size and foreground and background colors; as
+              well as the spacing between the navigation links.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>A logo containing text</strong>
+            </p>
+            <p>
+              A Web site contains the organization's logo in the top left corner
+              of each Web page. The logo contains logotype (text as part, or
+              all, of the logo). The visual presentation of the text is
+              essential to the identity of the logo and is included as a gif
+              image which does not allow the text characteristics to be changed.
+              The image has a text alternative.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Representation of a font family</strong>
+            </p>
+            <p>
+              A Web page contains information about a particular font family.
+              Substituting the font family with another font would defeat the
+              purpose of the representation. The representation is included as a
+              jpeg image which does not allow the text characteristics to be
+              changed. The image has a text alternative.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>A representation of a letter</strong>
+            </p>
+            <p>
+              A Web page contains a representation of an original letter. The
+              depiction of the letter in its original format is essential to
+              information being conveyed about the time period in which it was
+              written. The letter is included as a gif image which does not
+              allow the text characteristics to be changed. The image has a text
+              alternative.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Symbolic text characters</strong>
+            </p>
+            <p>
+              A form allows users to enter blocks of text. The form provides a
+              number of buttons, including functions to style the text and check
+              spelling. Some of the buttons use text characters that do not form
+              a sequence that expresses something in human language. For example
+              "B" to increase font weight, "I" to italicize the text and "ABC"
+              to check the spelling. The symbolic text characters are included
+              as gif images which do not allow the text characteristics to be
+              changed. The buttons have text alternatives.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Customizable font settings in images of text</strong>
+            </p>
+            <p>
+              A Web site allows users to specify font settings and all images of
+              text on the site are then provided based on those settings.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="resources">
+        <h2
+          id="visual-audio-contrast-text-presentation-resources-head"
+          class="section"
+        >
+          Related Resources
+        </h2>
+        <p>
+          Resources are for information purposes only, no endorsement implied.
+        </p>
+        <ul>
+          <li>
+            <p>
+              <a href="http://www.alistapart.com/articles/cssatten"
+                >CSS Web fonts</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="http://clagnut.com/blog/2042/"
+                >Weblog comments: WebKit now supports CSS @font-face rules</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a
+                href="http://www.workingwith.me.uk/articles/css/cross-browser-drop-shadows"
+                >Creating Cross Browser Compatible CSS Text Shadows</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="http://www.yourhtmlsource.com/stylesheets/csstext.html"
+                >CSS and text</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="div3">
+        <h2
+          id="visual-audio-contrast-text-presentation-techniques-head"
+          class="section"
+        >
+          Techniques and Failures for Success Criterion 1.4.5 - Images of Text
+        </h2>
+        <p>
+          Each numbered item in this section represents a technique or
+          combination of techniques that the
+          <acronym title="Web Content Accessibility Guidelines">WCAG</acronym>
+          Working Group deems sufficient for meeting this Success Criterion. The
+          techniques listed only satisfy the Success Criterion if all of the
+          <a
+            href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#conformance-reqs"
+            >WCAG 2.0 conformance requirements</a
+          >
+          have been met.
+        </p>
+        <div class="boxed">
+          <h3
+            id="visual-audio-contrast-text-presentation-79-head"
+            class="div3head"
+          >
+            Sufficient Techniques
+          </h3>
+          <ol class="enumar">
+            <li>
+              <p>
+                <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C22"
+                  >C22: Using CSS to control visual presentation of text</a
+                >
+                (CSS)
+              </p>
+            </li>
+            <li>
+              <p>
+                <span
+                  ><a
+                    href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C30"
+                    >C30: Using CSS to replace text with images of text and
+                    providing user interface controls to switch</a
+                  >
+                  (CSS)
+                </span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a
+                  href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/G140"
+                  >G140: Separating information and structure from presentation
+                  to enable different presentations</a
+                >
+              </p>
+            </li>
+          </ol>
+        </div>
+        <div class="boxed">
+          <h3
+            id="visual-audio-contrast-text-presentation-80-head"
+            class="div3head"
+          >
+            Additional Techniques (Advisory) for 1.4.5
+          </h3>
+          <p>
+            Although not required for conformance, the following additional
+            techniques should be considered in order to make content more
+            accessible. Not all techniques can be used or would be effective in
+            all situations.
+          </p>
+          <div>
+            <h4>
+              <a name="d0e3925" id="d0e3925"> </a>General techniques for
+              non-text content
+            </h4>
+            <ol class="enumar">
+              <li>
+                <p>Identifying informative non-text content (future link)</p>
+              </li>
+            </ol>
+          </div>
+          <div>
+            <h4><a name="d0e3932" id="d0e3932"> </a>CSS Techniques</h4>
+            <ol class="enumar">
+              <li>
+                <p>
+                  <a
+                    href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C12"
+                    >C12: Using percent for font sizes</a
+                  >
+                  (CSS)
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C13"
+                    >C13: Using named font sizes</a
+                  >
+                  (CSS)
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C14"
+                    >C14: Using em units for font sizes</a
+                  >
+                  (CSS)
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C8"
+                    >C8: Using CSS letter-spacing to control spacing within a
+                    word</a
+                  >
+                  (CSS)
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/C6"
+                    >C6: Positioning content based on structural markup</a
+                  >
+                  (CSS)
+                </p>
+              </li>
+              <li>
+                <p>
+                  Avoid applying text styling to text characters within a word
+                  (future link)
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="boxed">
+          <h3
+            id="visual-audio-contrast-text-presentation-81-head"
+            class="div3head"
+          >
+            Common Failures for <abbr title="Success Criterion">SC</abbr> 1.4.5
+          </h3>
+          <p>
+            The following are common mistakes that are considered failures of
+            Success Criterion 1.4.5 by the
+            <acronym title="Web Content Accessibility Guidelines">WCAG</acronym>
+            Working Group.
+          </p>
+          <p>(No failures currently documented)</p>
+        </div>
+      </div>
+      <div class="div3">
+        <h2 id="key-terms" class="terms">Key Terms</h2>
+        <dl class="keyterms">
+          <dt class="label">
+            <a name="essentialdef" id="essentialdef"> </a>essential
+          </dt>
+          <dd>
+            <p>
+              if removed, would fundamentally change the information or
+              functionality of the content, <strong>and</strong> information and
+              functionality can not be achieved in another way that would
+              conform
+            </p>
+          </dd>
+          <dt class="label">
+            <a name="images-of-textdef" id="images-of-textdef"> </a>image of
+            text
+          </dt>
+          <dd>
+            <p>
+              text that has been rendered in a non-text form (e.g. an image) in
+              order to achieve a particular visual effect
+            </p>
+            <div class="note">
+              <p class="prefix">
+                Note: This does not include
+                <a
+                  href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#textdef"
+                  class="termref"
+                  >text</a
+                >
+                that is part of a picture that contains significant other visual
+                content.
+              </p>
+            </div>
+            <div class="example">
+              <p class="prefix">
+                Example: A person's name on a nametag in a photograph.
+              </p>
+            </div>
+          </dd>
+          <dt class="label"><a name="textdef" id="textdef"> </a>text</dt>
+          <dd>
+            <p>
+              sequence of characters that can be
+              <a
+                href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#programmaticallydetermineddef"
+                class="termref"
+                >programmatically determined</a
+              >, where the sequence is expressing something in
+              <a
+                href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/#human-langdef"
+                class="termref"
+                >human language</a
+              >
+            </p>
+          </dd>
+          <dt class="label">
+            <a name="visually-customizeddef" id="visually-customizeddef"> </a
+            >visually customized
+          </dt>
+          <dd><p>the font, size, color, and background can be set</p></dd>
+        </dl>
+      </div>
+      <!-- BOTTOM NAVIGATION BAR -->
+      <ul id="navigationbottom">
+        <li>
+          <strong><a href="#top">Top</a></strong>
+        </li>
+        <li>
+          <strong
+            ><a
+              href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents"
+              title="Table of Contents"
+              >Contents</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="intro.html" title="Introduction to Understanding WCAG 2.0"
+              ><abbr title="Introduction">Intro</abbr></a
+            ></strong
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  1.4.4 [Resize text]"
+            href="visual-audio-contrast-scale.html"
+            ><strong>Previous: </strong>SC 1.4.4 [Resize text]</a
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  1.4.6 [Contrast (Enhanced)]"
+            href="visual-audio-contrast7.html"
+            ><strong>Next: </strong>SC 1.4.6 [Contrast (Enhanced)]</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p class="copyright">
+        This Web page is part of
+        <a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/"
+          >Understanding WCAG 2.0: A guide to understanding and implementing
+          WCAG 2.0</a
+        >. The entire document is also available as a
+        <a href="complete.html">single HTML file</a>. See the
+        <a href="http://www.w3.org/WAI/intro/wcag20"
+          >Overview of WCAG 2.0 Documents</a
+        >
+        for an explanation of how this document fits in with other Web Content
+        Accessibility Guidelines (WCAG) 2.0 documents.
+      </p>
+      <p class="copyright">
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
+          >Copyright</a
+        >
+        © 2008
+        <a href="http://www.w3.org/"
+          ><acronym title="World Wide Web Consortium">W3C</acronym></a
+        ><sup>®</sup> (<a href="http://www.csail.mit.edu/"
+          ><acronym title="Massachusetts Institute of Technology"
+            >MIT</acronym
+          ></a
+        >,
+        <a href="http://www.ercim.org/"
+          ><acronym
+            title="European Research Consortium for Informatics and Mathematics"
+            >ERCIM</acronym
+          ></a
+        >, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer"
+          >liability</a
+        >,
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks"
+          >trademark</a
+        >
+        and
+        <a href="http://www.w3.org/Consortium/Legal/copyright-documents"
+          >document use</a
+        >
+        rules apply.
+      </p>
+    </div>
+  </body>
+</html>

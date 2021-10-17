@@ -1,246 +1,697 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head><title>Understanding Guideline 3.1  | Understanding WCAG 2.0
-            </title><style type="text/css">
-body {max-width: 75em;}
-
-code           { font-family: monospace; }
-
-div.constraint,
-div.issue,
-div.note,
-div.notice,
-div.example    { margin-left: 1.5em; margin-bottom: .5em; }
-
-ol.enumar      { list-style-type: decimal; margin-top: 0; margin-bottom: .25em;}
-ol.enumla      { list-style-type: lower-alpha; }
-ol.enumlr      { list-style-type: lower-roman; }
-ol.enumua      { list-style-type: upper-alpha; }
-ol.enumur      { list-style-type: upper-roman; }
-
-.screenreader {position: absolute; left: -1000em}
-
-h2.section, h3.section {font-weight: normal; font-size: 1.25em; margin-top: 1.5em; color: #000000; background:inherit;}
-h4 {font-weight: bold; font-size: 0.8125em; padding: 0; margin-bottom: 0; color: #333; background:inherit;}
-.boxed h3, .boxed h4 {font-weight: bold; font-size: 0.8125em; padding: 0.5em 1em; color: #000000; background: #f0f0f0; margin: 0 0 1em}
-.boxed {border: solid #ccc 1px; padding: 0 0 1em; margin: 1em 2em 0 2em}
-.boxed p, .boxed div {margin-left: 1em; margin-right: 1em}
-div.boxed h3, div.boxed h4, div.div2 h2, div.div2 h3, h2.terms, h3.terms .div3 h3, .div3 h4, .benefits h3, .benefits h4 .resources h3, .resources h4 .intent h3, .intent h4 {color:#000000;}
-.div3head, .div2head {color:#000000; background: inherit; font-size: 1.1em;}
-div.div2 dl, dl.keyterms {margin-left: 1.5em;}
-p.prefix {margin-bottom: 0.5em}
-.benefits h3, .resources h3, .intent h3 {font-size: 1.1em;}
-
-blockquote.scquote, blockquote.glquote {margin: 0 1em 0 1em; border: solid #ccc 1px; background: #f0f0f0; color: #000000; clear: left; padding: 0.9em 0.5em 0.5em 0.5em;}
-blockquote.scquote p, blockquote.glquote p {font-size: 0.8125em}
-
-	li p {
-		margin-top: 0;                  
-		margin-bottom: 0; 
-	}
-
-p {
-		margin-top: 0;                  
-		margin-bottom: .5em; 
-	}
-	
-p.prefix, p.sctxt {
-    margin-top: .25em;  
-    margin-bottom: 0;
-}
-
-strong.sc-handle {
-  font-size: 1em;
-}
-
-dd.prefix p {
-		margin-bottom: 0;                  
-}
-      	dd {
-		margin-bottom: .5em;                  
-	}
-	dt.label {padding-top: .5em;}
-ul {
-		margin-top: 0;   
-		margin-bottom: .25em;               
-}
-
-h4, h5 {margin-bottom: .5em;}
-
-    .revnote {
-        border-style : solid;
-        border-width : thin;
-        border-color : #A7ABBF;
-        background-color: #F0F8F8 ;
-        color : black;
-        page-break-inside: avoid ;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <head>
+    <title>Understanding Guideline 3.1 | Understanding WCAG 2.0</title>
+    <style type="text/css">
+      body {
+        max-width: 75em;
       }
-    p.revnote , div.revnote {
-        padding : 0.5em; 
-        margin : .25em 0 .25em 0; /* top, right, bottom, left */
-      }
-    .informative {
-        color : #000000;
-        background : #ffffff;
-        padding-bottom : 0.5em;
-        padding-left : 1em;
-        margin-top : 0.5em;
-        margin-left : 2em;
-        padding-right : 0.5em;
-        border-style : solid;
-        border-width : thin;
-        border-color : #f1f1f1;
-      }
-      
-    .principle { 	
-		padding: .5em; 	
-		border: thin solid #666666; 	
-		background-color: #FFFFFF; 	
-		color: #000000; 	
-		font-weight: bold; 
-	}
-       
-    .guideline {
-        border: thin solid #000066; 	
-        background-color: #CFE8EF ! important; 	
-        padding: .5em .5em .5em .5em; 	
-        margin-bottom: 0; 	
-        color: #000000;   
-      }
-      
-    .req, .bp, .additional, .terms, .section {      	    
-		  display: block; 
-		  border-bottom: thin solid #666666;
-		  margin-left: 1em;
-		  padding-bottom: .25em;
-		 } 
-		 
-		 .terms, .section {      	    
-		  display: block; 
-		  border-bottom: thin solid #666666;
-		  margin-left: 0;
-		 } 
-		 
-	div.sc {
-		 margin-left: 1em;
-	}	
-  
-    .bigger {
-        font-weight : bold;
-      }
-    .smaller {
-        font-size : 75%;
-      }
-    .termref {
-        color : #006400;
-        background : white;
-      }
-    a.termref:link {
-        color : #006400;
-        background : inherit;
-      }
-    a.termref:hover, a.termref:focus {
-        background-color : #fafad2;
-        color : #006400;
-      }
-	table.checklist {
-		empty-cells: show;
-		width: 94%;
-		margin-bottom: 1em;   
-	}
-					 	
-	.termref { 	
-		color: #006400; 	
-		background: white;
-	} 
-	
-	 a:link.termref { 	
-		 color: #006400; 	
-		 background: inherit; 	
-	}   
-	
-	a:hover.termref, a:focus.termref { 	
-		background-color: #FAFAD2; 	
-		color: #006400;
-	}
-      .sorethumb {color: red; background: inherit;}
-	table.checklist {
-		empty-cells: show;
-		width: 94%;
-		margin-bottom: 1em;
-	}
-					 
-p.sc {font-size: 100%; font-weight: bold; display: inline;}
 
-p.i, p.v {display: inline;}
+      code {
+        font-family: monospace;
+      }
 
-hr.divider {
-	background-color: #000066;
-	color: #000000;
-	height: 30px;
-}
+      div.constraint,
+      div.issue,
+      div.note,
+      div.notice,
+      div.example {
+        margin-left: 1.5em;
+        margin-bottom: 0.5em;
+      }
 
- ul.nobullet {
-  list-style-type: none;
- }
-a.HTMlink, a.HTMlink:visited { 
-	display: inline;
-	font: .9em Arial, Helvetica, sans-serif;
-	padding: 0px 0px 2px 15px;
-	}
-a.HTMlink:hover, a.HTMlink:focus { 
-	display: inline;
-	font: .9em Arial, Helvetica, sans-serif;
-	padding: 0px 0px 2px 15px;
-	background-color: transparent;
-	}
-	
-li.conformance {
-  margin-top: 1em;
-}
+      ol.enumar {
+        list-style-type: decimal;
+        margin-top: 0;
+        margin-bottom: 0.25em;
+      }
+      ol.enumla {
+        list-style-type: lower-alpha;
+      }
+      ol.enumlr {
+        list-style-type: lower-roman;
+      }
+      ol.enumua {
+        list-style-type: upper-alpha;
+      }
+      ol.enumur {
+        list-style-type: upper-roman;
+      }
 
-li.intro ul {
-margin-bottom: 1em;
-}
+      .screenreader {
+        position: absolute;
+        left: -1000em;
+      }
 
-p.indented {
- margin-left: 2.5em;
-}
+      h2.section,
+      h3.section {
+        font-weight: normal;
+        font-size: 1.25em;
+        margin-top: 1.5em;
+        color: #000000;
+        background: inherit;
+      }
+      h4 {
+        font-weight: bold;
+        font-size: 0.8125em;
+        padding: 0;
+        margin-bottom: 0;
+        color: #333;
+        background: inherit;
+      }
+      .boxed h3,
+      .boxed h4 {
+        font-weight: bold;
+        font-size: 0.8125em;
+        padding: 0.5em 1em;
+        color: #000000;
+        background: #f0f0f0;
+        margin: 0 0 1em;
+      }
+      .boxed {
+        border: solid #ccc 1px;
+        padding: 0 0 1em;
+        margin: 1em 2em 0 2em;
+      }
+      .boxed p,
+      .boxed div {
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+      div.boxed h3,
+      div.boxed h4,
+      div.div2 h2,
+      div.div2 h3,
+      h2.terms,
+      h3.terms .div3 h3,
+      .div3 h4,
+      .benefits h3,
+      .benefits h4 .resources h3,
+      .resources h4 .intent h3,
+      .intent h4 {
+        color: #000000;
+      }
+      .div3head,
+      .div2head {
+        color: #000000;
+        background: inherit;
+        font-size: 1.1em;
+      }
+      div.div2 dl,
+      dl.keyterms {
+        margin-left: 1.5em;
+      }
+      p.prefix {
+        margin-bottom: 0.5em;
+      }
+      .benefits h3,
+      .resources h3,
+      .intent h3 {
+        font-size: 1.1em;
+      }
 
-</style><link media="print" type="text/css" rel="stylesheet" href="print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WD.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/">Understanding WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents" title="Table of Contents">Contents</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Understanding SC  2.4.10 [Section Headings]" href="navigation-mechanisms-headings.html"><strong>Previous: </strong>SC  2.4.10 [Section Headings]</a></li><li><a title="Understanding SC  3.1.1 [Language of Page]" href="meaning-doc-lang-id.html"><strong>Next: </strong>SC  3.1.1 [Language of Page]</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#meaning">Intent</a></li><li><a href="#meaning">Advisory Techniques</a></li><li><a href="#meaning-sc">Success Criteria</a></li></ul></div><div class="div1"><div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="meaning" id="meaning"> </a><strong>Readable</strong><span class="screenreader">:</span><br/>Understanding Guideline 3.1</h1><blockquote class="glquote"><div><p><strong>Guideline 3.1: </strong>
-            Make text content readable and understandable
-          </p></div></blockquote><div class="div2"> <h2 class="section"><a name="meaning-intent" id="meaning-intent"> </a>
-			Intent of Guideline 3.1</h2><p>The intent of this guideline is to allow text content to be read by users and by assistive technology, and to ensure that information necessary for understanding it is available.</p><p>People with disabilities experience text in many different ways. For some the experience is visual; for some it is auditory; for some it is tactile; for still others it is both visual and auditory. Some users experience great difficulty in recognizing written words yet understand extremely complex and sophisticated documents when the text is read aloud, or when key processes and ideas are illustrated visually or interpreted as sign language. For some users, it is difficult to infer the meaning of a word or phrase from context, especially when the word or phrase is used in an unusual way or has been given a specialized meaning; for these users the ability to read and understand may depend on the availability of specific definitions or the expanded forms of acronyms or abbreviations. User agents, including speech-enabled as well as graphical applications, may be unable to present text correctly unless the language and direction of the text are identified; while these may be minor problems for most users, they can be enormous barriers for users with disabilities. In cases where meaning cannot be determined without pronunciation information (for example, certain Japanese Kanji characters), pronunciation information must be available as well</p></div><div class="div2"> <h2 class="section"><a name="meaning-advisory" id="meaning-advisory"> </a>
-			Advisory Techniques for Guideline 3.1 (not success criteria specific)</h2><div class="textbody"><p>Specific techniques for meeting each Success Criterion for this guideline are listed in the understanding sections for each Success Criterion (listed below). If there are techniques, however, for addressing this guideline that do not fall under any of the success criteria, they are listed here. These techniques are not required or sufficient for meeting any success criteria, but can make certain types of Web content more accessible to more people.</p></div><ul><li><p>
-              Setting expectations about content in the page from uncontrolled sources (future link)
-              
-            </p></li><li><p>
-              Providing sign language interpretation for all content (future link) 
-              
-            </p></li><li><p>Using the clearest and simplest language appropriate for the content (future link) 
-            </p></li><li><p>Avoiding centrally aligned text (future link)
-            </p></li><li><p>Avoiding text that is fully justified (to both left and right margins) in a way that causes poor spacing between words or characters (future link) 
-            </p></li><li><p>Using left-justified text for languages that are written left to right (future link)</p></li><li><p>Using appropriate justification for languages that are written right-to-left (future link)</p></li><li><p>Limiting text column width (future link)</p></li><li><p>Avoiding chunks of italic text (future link)
-            </p></li><li><p>Avoiding overuse of different styles on individual pages and in sites (future link)
-            </p></li><li><p>Making links visually distinct (future link)
-            </p></li><li><p>Using images, illustrations, video, audio, or symbols to clarify meaning (future link)</p></li><li><p>Providing practical examples to clarify content (future link)</p></li><li><p>Using a light pastel background rather than a white background behind black text (future link)</p></li><li><p>Avoiding the use of unique interface controls unnecessarily (future link)</p></li><li><p>Using upper and lower case according to the spelling rules of the text language (future link)</p></li><li><p>Avoiding unusual foreign words (future link)</p></li><li><p>
-        Providing sign language versions of information, ideas, and processes that must be understood in order to use the content (future link)
-            </p></li><li><p>Making any reference to a location in a Web page into a link to that location (future link) 
-            </p></li><li><p>Making references to a heading or title include the full text of the title (future link) 
-            </p></li><li><p>Providing easy-to-read versions of basic information about a set of Web pages, including information about how to contact the Webmaster (future link) 
-            </p></li><li><p>Providing a sign language version of basic information about a set of Web pages, including information about how to contact the Webmaster (future link) 
-            </p></li></ul></div><hr/><h2 id="meaning-sc" class="section">Success Criteria for this Guideline:</h2><ul><li><a href="meaning-doc-lang-id.html">
-		Understanding Success Criterion 3.1.1  [Language of Page]
-	</a></li><li><a href="meaning-other-lang-id.html">
-		Understanding Success Criterion 3.1.2  [Language of Parts]
-	</a></li><li><a href="meaning-idioms.html">
-		Understanding Success Criterion 3.1.3  [Unusual Words]
-	</a></li><li><a href="meaning-located.html">
-		Understanding Success Criterion 3.1.4  [Abbreviations]
-	</a></li><li><a href="meaning-supplements.html">
-		Understanding Success Criterion 3.1.5  [Reading Level]
-	</a></li><li><a href="meaning-pronunciation.html">
-		Understanding Success Criterion 3.1.6  [Pronunciation]
-	</a></li></ul></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Top</a></strong></li><li><strong><a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents" title="Table of Contents">Contents</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Understanding SC  2.4.10 [Section Headings]" href="navigation-mechanisms-headings.html"><strong>Previous: </strong>SC  2.4.10 [Section Headings]</a></li><li><a title="Understanding SC  3.1.1 [Language of Page]" href="meaning-doc-lang-id.html"><strong>Next: </strong>SC  3.1.1 [Language of Page]</a></li></ul></div><div class="footer"><p class="copyright">This Web page is part of <a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/">Understanding WCAG 2.0: A guide to understanding and implementing WCAG 2.0</a>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">Overview of WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents.
- </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2008 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>
+      blockquote.scquote,
+      blockquote.glquote {
+        margin: 0 1em 0 1em;
+        border: solid #ccc 1px;
+        background: #f0f0f0;
+        color: #000000;
+        clear: left;
+        padding: 0.9em 0.5em 0.5em 0.5em;
+      }
+      blockquote.scquote p,
+      blockquote.glquote p {
+        font-size: 0.8125em;
+      }
+
+      li p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+
+      p.prefix,
+      p.sctxt {
+        margin-top: 0.25em;
+        margin-bottom: 0;
+      }
+
+      strong.sc-handle {
+        font-size: 1em;
+      }
+
+      dd.prefix p {
+        margin-bottom: 0;
+      }
+      dd {
+        margin-bottom: 0.5em;
+      }
+      dt.label {
+        padding-top: 0.5em;
+      }
+      ul {
+        margin-top: 0;
+        margin-bottom: 0.25em;
+      }
+
+      h4,
+      h5 {
+        margin-bottom: 0.5em;
+      }
+
+      .revnote {
+        border-style: solid;
+        border-width: thin;
+        border-color: #a7abbf;
+        background-color: #f0f8f8;
+        color: black;
+        page-break-inside: avoid;
+      }
+      p.revnote,
+      div.revnote {
+        padding: 0.5em;
+        margin: 0.25em 0 0.25em 0; /* top, right, bottom, left */
+      }
+      .informative {
+        color: #000000;
+        background: #ffffff;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+        margin-top: 0.5em;
+        margin-left: 2em;
+        padding-right: 0.5em;
+        border-style: solid;
+        border-width: thin;
+        border-color: #f1f1f1;
+      }
+
+      .principle {
+        padding: 0.5em;
+        border: thin solid #666666;
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+      }
+
+      .guideline {
+        border: thin solid #000066;
+        background-color: #cfe8ef !important;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        margin-bottom: 0;
+        color: #000000;
+      }
+
+      .req,
+      .bp,
+      .additional,
+      .terms,
+      .section {
+        display: block;
+        border-bottom: thin solid #666666;
+        margin-left: 1em;
+        padding-bottom: 0.25em;
+      }
+
+      .terms,
+      .section {
+        display: block;
+        border-bottom: thin solid #666666;
+        margin-left: 0;
+      }
+
+      div.sc {
+        margin-left: 1em;
+      }
+
+      .bigger {
+        font-weight: bold;
+      }
+      .smaller {
+        font-size: 75%;
+      }
+      .termref {
+        color: #006400;
+        background: white;
+      }
+      a.termref:link {
+        color: #006400;
+        background: inherit;
+      }
+      a.termref:hover,
+      a.termref:focus {
+        background-color: #fafad2;
+        color: #006400;
+      }
+      table.checklist {
+        empty-cells: show;
+        width: 94%;
+        margin-bottom: 1em;
+      }
+
+      .termref {
+        color: #006400;
+        background: white;
+      }
+
+      a:link.termref {
+        color: #006400;
+        background: inherit;
+      }
+
+      a:hover.termref,
+      a:focus.termref {
+        background-color: #fafad2;
+        color: #006400;
+      }
+      .sorethumb {
+        color: red;
+        background: inherit;
+      }
+      table.checklist {
+        empty-cells: show;
+        width: 94%;
+        margin-bottom: 1em;
+      }
+
+      p.sc {
+        font-size: 100%;
+        font-weight: bold;
+        display: inline;
+      }
+
+      p.i,
+      p.v {
+        display: inline;
+      }
+
+      hr.divider {
+        background-color: #000066;
+        color: #000000;
+        height: 30px;
+      }
+
+      ul.nobullet {
+        list-style-type: none;
+      }
+      a.HTMlink,
+      a.HTMlink:visited {
+        display: inline;
+        font: 0.9em Arial, Helvetica, sans-serif;
+        padding: 0px 0px 2px 15px;
+      }
+      a.HTMlink:hover,
+      a.HTMlink:focus {
+        display: inline;
+        font: 0.9em Arial, Helvetica, sans-serif;
+        padding: 0px 0px 2px 15px;
+        background-color: transparent;
+      }
+
+      li.conformance {
+        margin-top: 1em;
+      }
+
+      li.intro ul {
+        margin-bottom: 1em;
+      }
+
+      p.indented {
+        margin-left: 2.5em;
+      }
+    </style>
+    <link media="print" type="text/css" rel="stylesheet" href="print.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://www.w3.org/StyleSheets/TR/W3C-WD.css"
+    />
+    <link rel="stylesheet" type="text/css" href="slicenav.css" />
+  </head>
+  <body class="slices">
+    <div id="masthead">
+      <p class="logo">
+        <a href="http://www.w3.org/"
+          ><img
+            width="72"
+            height="48"
+            alt="W3C"
+            src="http://www.w3.org/Icons/w3c_home"
+        /></a>
+      </p>
+      <p class="collectiontitle">
+        <a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/"
+          >Understanding WCAG 2.0</a
+        >
+      </p>
+    </div>
+    <div id="skipnav">
+      <p class="skipnav">
+        <a href="#maincontent">Skip to Content (Press Enter)</a>
+      </p>
+    </div>
+    <div class="mainbody">
+      <a name="top"> </a
+      ><!-- TOP NAVIGATION BAR -->
+      <ul id="navigation">
+        <li>
+          <strong
+            ><a
+              href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents"
+              title="Table of Contents"
+              >Contents</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="intro.html" title="Introduction to Understanding WCAG 2.0"
+              ><abbr title="Introduction">Intro</abbr></a
+            ></strong
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  2.4.10 [Section Headings]"
+            href="navigation-mechanisms-headings.html"
+            ><strong>Previous: </strong>SC 2.4.10 [Section Headings]</a
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  3.1.1 [Language of Page]"
+            href="meaning-doc-lang-id.html"
+            ><strong>Next: </strong>SC 3.1.1 [Language of Page]</a
+          >
+        </li>
+      </ul>
+      <div class="navtoc">
+        <p>On this page:</p>
+        <ul id="navbar">
+          <li><a href="#meaning">Intent</a></li>
+          <li><a href="#meaning">Advisory Techniques</a></li>
+          <li><a href="#meaning-sc">Success Criteria</a></li>
+        </ul>
+      </div>
+      <div class="div1">
+        <div class="skiptarget"><a id="maincontent">-</a></div>
+        <h1>
+          <a name="meaning" id="meaning"> </a><strong>Readable</strong
+          ><span class="screenreader">:</span><br />Understanding Guideline 3.1
+        </h1>
+        <blockquote class="glquote">
+          <div>
+            <p>
+              <strong>Guideline 3.1: </strong>
+              Make text content readable and understandable
+            </p>
+          </div>
+        </blockquote>
+        <div class="div2">
+          <h2 class="section">
+            <a name="meaning-intent" id="meaning-intent"> </a> Intent of
+            Guideline 3.1
+          </h2>
+          <p>
+            The intent of this guideline is to allow text content to be read by
+            users and by assistive technology, and to ensure that information
+            necessary for understanding it is available.
+          </p>
+          <p>
+            People with disabilities experience text in many different ways. For
+            some the experience is visual; for some it is auditory; for some it
+            is tactile; for still others it is both visual and auditory. Some
+            users experience great difficulty in recognizing written words yet
+            understand extremely complex and sophisticated documents when the
+            text is read aloud, or when key processes and ideas are illustrated
+            visually or interpreted as sign language. For some users, it is
+            difficult to infer the meaning of a word or phrase from context,
+            especially when the word or phrase is used in an unusual way or has
+            been given a specialized meaning; for these users the ability to
+            read and understand may depend on the availability of specific
+            definitions or the expanded forms of acronyms or abbreviations. User
+            agents, including speech-enabled as well as graphical applications,
+            may be unable to present text correctly unless the language and
+            direction of the text are identified; while these may be minor
+            problems for most users, they can be enormous barriers for users
+            with disabilities. In cases where meaning cannot be determined
+            without pronunciation information (for example, certain Japanese
+            Kanji characters), pronunciation information must be available as
+            well
+          </p>
+        </div>
+        <div class="div2">
+          <h2 class="section">
+            <a name="meaning-advisory" id="meaning-advisory"> </a> Advisory
+            Techniques for Guideline 3.1 (not success criteria specific)
+          </h2>
+          <div class="textbody">
+            <p>
+              Specific techniques for meeting each Success Criterion for this
+              guideline are listed in the understanding sections for each
+              Success Criterion (listed below). If there are techniques,
+              however, for addressing this guideline that do not fall under any
+              of the success criteria, they are listed here. These techniques
+              are not required or sufficient for meeting any success criteria,
+              but can make certain types of Web content more accessible to more
+              people.
+            </p>
+          </div>
+          <ul>
+            <li>
+              <p>
+                Setting expectations about content in the page from uncontrolled
+                sources (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Providing sign language interpretation for all content (future
+                link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Using the clearest and simplest language appropriate for the
+                content (future link)
+              </p>
+            </li>
+            <li><p>Avoiding centrally aligned text (future link)</p></li>
+            <li>
+              <p>
+                Avoiding text that is fully justified (to both left and right
+                margins) in a way that causes poor spacing between words or
+                characters (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Using left-justified text for languages that are written left to
+                right (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Using appropriate justification for languages that are written
+                right-to-left (future link)
+              </p>
+            </li>
+            <li><p>Limiting text column width (future link)</p></li>
+            <li><p>Avoiding chunks of italic text (future link)</p></li>
+            <li>
+              <p>
+                Avoiding overuse of different styles on individual pages and in
+                sites (future link)
+              </p>
+            </li>
+            <li><p>Making links visually distinct (future link)</p></li>
+            <li>
+              <p>
+                Using images, illustrations, video, audio, or symbols to clarify
+                meaning (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Providing practical examples to clarify content (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Using a light pastel background rather than a white background
+                behind black text (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Avoiding the use of unique interface controls unnecessarily
+                (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Using upper and lower case according to the spelling rules of
+                the text language (future link)
+              </p>
+            </li>
+            <li><p>Avoiding unusual foreign words (future link)</p></li>
+            <li>
+              <p>
+                Providing sign language versions of information, ideas, and
+                processes that must be understood in order to use the content
+                (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Making any reference to a location in a Web page into a link to
+                that location (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Making references to a heading or title include the full text of
+                the title (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Providing easy-to-read versions of basic information about a set
+                of Web pages, including information about how to contact the
+                Webmaster (future link)
+              </p>
+            </li>
+            <li>
+              <p>
+                Providing a sign language version of basic information about a
+                set of Web pages, including information about how to contact the
+                Webmaster (future link)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <h2 id="meaning-sc" class="section">
+          Success Criteria for this Guideline:
+        </h2>
+        <ul>
+          <li>
+            <a href="meaning-doc-lang-id.html">
+              Understanding Success Criterion 3.1.1 [Language of Page]
+            </a>
+          </li>
+          <li>
+            <a href="meaning-other-lang-id.html">
+              Understanding Success Criterion 3.1.2 [Language of Parts]
+            </a>
+          </li>
+          <li>
+            <a href="meaning-idioms.html">
+              Understanding Success Criterion 3.1.3 [Unusual Words]
+            </a>
+          </li>
+          <li>
+            <a href="meaning-located.html">
+              Understanding Success Criterion 3.1.4 [Abbreviations]
+            </a>
+          </li>
+          <li>
+            <a href="meaning-supplements.html">
+              Understanding Success Criterion 3.1.5 [Reading Level]
+            </a>
+          </li>
+          <li>
+            <a href="meaning-pronunciation.html">
+              Understanding Success Criterion 3.1.6 [Pronunciation]
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- BOTTOM NAVIGATION BAR -->
+      <ul id="navigationbottom">
+        <li>
+          <strong><a href="#top">Top</a></strong>
+        </li>
+        <li>
+          <strong
+            ><a
+              href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/#contents"
+              title="Table of Contents"
+              >Contents</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="intro.html" title="Introduction to Understanding WCAG 2.0"
+              ><abbr title="Introduction">Intro</abbr></a
+            ></strong
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  2.4.10 [Section Headings]"
+            href="navigation-mechanisms-headings.html"
+            ><strong>Previous: </strong>SC 2.4.10 [Section Headings]</a
+          >
+        </li>
+        <li>
+          <a
+            title="Understanding SC  3.1.1 [Language of Page]"
+            href="meaning-doc-lang-id.html"
+            ><strong>Next: </strong>SC 3.1.1 [Language of Page]</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p class="copyright">
+        This Web page is part of
+        <a href="http://www.w3.org/TR/2008/WD-UNDERSTANDING-WCAG20-20081103/"
+          >Understanding WCAG 2.0: A guide to understanding and implementing
+          WCAG 2.0</a
+        >. The entire document is also available as a
+        <a href="complete.html">single HTML file</a>. See the
+        <a href="http://www.w3.org/WAI/intro/wcag20"
+          >Overview of WCAG 2.0 Documents</a
+        >
+        for an explanation of how this document fits in with other Web Content
+        Accessibility Guidelines (WCAG) 2.0 documents.
+      </p>
+      <p class="copyright">
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
+          >Copyright</a
+        >
+        © 2008
+        <a href="http://www.w3.org/"
+          ><acronym title="World Wide Web Consortium">W3C</acronym></a
+        ><sup>®</sup> (<a href="http://www.csail.mit.edu/"
+          ><acronym title="Massachusetts Institute of Technology"
+            >MIT</acronym
+          ></a
+        >,
+        <a href="http://www.ercim.org/"
+          ><acronym
+            title="European Research Consortium for Informatics and Mathematics"
+            >ERCIM</acronym
+          ></a
+        >, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer"
+          >liability</a
+        >,
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks"
+          >trademark</a
+        >
+        and
+        <a href="http://www.w3.org/Consortium/Legal/copyright-documents"
+          >document use</a
+        >
+        rules apply.
+      </p>
+    </div>
+  </body>
+</html>

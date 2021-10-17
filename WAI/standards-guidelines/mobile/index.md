@@ -16,18 +16,7 @@
 
 Strategies, standards, resources to make the Web accessible to people with disabilities
 
-Menu
 
--   [Get Involved](/WAI/about/participating/)
--   [About W3C WAI](/WAI/about/)
--   <span class="visuallyhidden">Search:</span>
-
--   [Accessibility Fundamentals](/WAI/fundamentals/)
--   [Planning & Policies](/WAI/planning/)
--   [Design & Develop](/WAI/design-develop/)
--   [Test & Evaluate](/WAI/test-evaluate/)
--   [Teach & Advocate](/WAI/teach-advocate/)
--   [Standards/Guidelines](/WAI/standards-guidelines/)
 
 <!-- -->
 
