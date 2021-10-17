@@ -61,12 +61,12 @@
       }
       node.appendChild( frag );
 
-      function makeClickHandler( node ) {
+      function makeClickHandler({classList}) {
         let isOpen = true;
         return function collapseWarning( event ) {
           const button = event.target;
           isOpen = !isOpen;
-          node.classList.toggle( "outdated-collapsed" );
+          classList.toggle( "outdated-collapsed" );
           document.body.classList.toggle( "outdated-spec" );
           button.innerText = isOpen ? "\u25BE collapse" : "\u25B4 expand";
         };
@@ -76,16 +76,16 @@
 
       if ( w3cCSS ) {
         button.focus();
-        window.onkeydown = event => {
+        window.onkeydown = ({keyCode}) => {
           const isCollapsed = node.classList.contains( "outdated-collapsed" );
-          if ( event.keyCode === ESCAPEKEY && !isCollapsed ) {
+          if ( keyCode === ESCAPEKEY && !isCollapsed ) {
             button.click();
           }
         };
 
-        window.addEventListener( "click", event => {
+        window.addEventListener( "click", ({target}) => {
           if (
-            !node.contains( event.target ) &&
+            !node.contains( target ) &&
             !node.classList.contains( "outdated-collapsed" )
           ) {
             button.click();
@@ -129,7 +129,9 @@
       const u = "https://www.w3.org/analytics/piwik/";
       _paq.push( [ "setTrackerUrl", `${u}matomo.php` ] );
       _paq.push( [ "setSiteId", "447" ] );
-      const d = document, g = d.createElement( "script" ), s = d.getElementsByTagName( "script" )[ 0 ];
+      const d = document;
+      const g = d.createElement( "script" );
+      const s = d.getElementsByTagName( "script" )[ 0 ];
       g.type = "text/javascript";
       g.async = true;
       g.src = `${u}matomo.js`;

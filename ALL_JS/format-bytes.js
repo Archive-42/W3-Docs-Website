@@ -19,4 +19,4 @@ const formatBytes = (bytes, space = true) => {
   return `${(bytes / 1000000000).toFixed(1)}${spacer}GB`
 }
 
-module.exports = formatBytes
+export default formatBytes;

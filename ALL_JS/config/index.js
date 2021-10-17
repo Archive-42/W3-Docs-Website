@@ -1,6 +1,6 @@
-const flatten = require('./flatten.js')
-const definitions = require('./definitions.js')
-const describeAll = require('./describe-all.js')
+import flatten from './flatten.js';
+import definitions from './definitions.js';
+import describeAll from './describe-all.js';
 
 // aliases where they get expanded into a completely different thing
 // these are NOT supported in the environment or npmrc files, only
@@ -35,8 +35,8 @@ for (const [key, {short}] of Object.entries(definitions)) {
     shorthands[s] = [`--${key}`]
 }
 
-module.exports = {
-  get defaults () {
+export default {
+  get defaults() {
     // NB: 'default' is a reserved word
     return Object.entries(definitions).map(([key, { default: def }]) => {
       return [key, def]
@@ -49,4 +49,4 @@ module.exports = {
   flatten,
   shorthands,
   describeAll,
-}
+};

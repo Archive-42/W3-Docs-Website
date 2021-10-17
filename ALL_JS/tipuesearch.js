@@ -7,11 +7,11 @@ http://www.tipue.com/search
 */
 
 
-(function($) {
+($ => {
 
      $.fn.tipuesearch = function(options) {
 
-          var set = $.extend( {
+          const set = $.extend( {
 
           'contentLocation'        : 'tipuesearch/tipuesearch_content.json',
           'contextBuffer'          : 60,
@@ -37,29 +37,28 @@ http://www.tipue.com/search
 
           return this.each(function() {
 
-               var tipuesearch_in = {
+               let tipuesearch_in = {
                     pages: []
                };
                $.ajaxSetup({
                     async: false
                });
-               var tipuesearch_t_c = 0;
+               let tipuesearch_t_c = 0;
 
                $('#tipue_search_content').hide().html('<div class="tipue_search_spinner"><div class="tipue_search_rect1"></div><div class="tipue_search_rect2"></div><div class="rect3"></div></div>').show();
 
                if (set.mode == 'live')
                {
-                    for (var i = 0; i < tipuesearch_pages.length; i++)
+                    for (let i = 0; i < tipuesearch_pages.length; i++)
                     {
-                         $.get(tipuesearch_pages[i]).done(function(html)
-                         {
-                              var cont = $(set.liveContent, html).text();
+                         $.get(tipuesearch_pages[i]).done(html => {
+                              let cont = $(set.liveContent, html).text();
                               cont = cont.replace(/\s+/g, ' ');
-                              var desc = $(set.liveDescription, html).text();
+                              let desc = $(set.liveDescription, html).text();
                               desc = desc.replace(/\s+/g, ' ');
 
-                              var t_1 = html.toLowerCase().indexOf('<title>');
-                              var t_2 = html.toLowerCase().indexOf('</title>', t_1 + 7);
+                              const t_1 = html.toLowerCase().indexOf('<title>');
+                              const t_2 = html.toLowerCase().indexOf('</title>', t_1 + 7);
                               if (t_1 != -1 && t_2 != -1)
                               {
                                    var tit = html.slice(t_1 + 7, t_2);
@@ -82,8 +81,7 @@ http://www.tipue.com/search
 
                if (set.mode == 'json')
                {
-                    $.getJSON(set.contentLocation).done(function(json)
-                    {
+                    $.getJSON(set.contentLocation).done(json => {
                          tipuesearch_in = $.extend({}, json);
                     });
                }
@@ -93,7 +91,7 @@ http://www.tipue.com/search
                     tipuesearch_in = $.extend({}, tipuesearch);
                }
 
-               var tipue_search_w = '';
+               let tipue_search_w = '';
                if (set.newWindow)
                {
                     tipue_search_w = ' target="_blank"';
@@ -101,9 +99,9 @@ http://www.tipue.com/search
 
                function getURLP(name)
                {
-                    var _locSearch = location.search;
-                    var _splitted = (new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(_locSearch)||[,""]);
-                    var searchString = _splitted[1].replace(/\+/g, '%20');
+                    const _locSearch = location.search;
+                    const _splitted = (new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(_locSearch)||[,""]);
+                    let searchString = _splitted[1].replace(/\+/g, '%20');
                     try
                     {
                          searchString = decodeURIComponent(searchString);
@@ -121,8 +119,7 @@ http://www.tipue.com/search
                     getTipueSearch(0, true);
                }
 
-               $(this).keyup(function(event)
-               {
+               $(this).keyup(event => {
                     if(event.keyCode == '13')
                     {
                          getTipueSearch(0, true);
@@ -132,15 +129,15 @@ http://www.tipue.com/search
 
                function getTipueSearch(start, replace)
                {
-                    var out = '';
-                    var show_replace = false;
-                    var show_stop = false;
-                    var standard = true;
-                    var c = 0;
+                    let out = '';
+                    let show_replace = false;
+                    let show_stop = false;
+                    let standard = true;
+                    let c = 0;
                     found = [];
 
-                    var d_o = $('#tipue_search_input').val();
-                    var d = d_o.toLowerCase();
+                    let d_o = $('#tipue_search_input').val();
+                    let d = d_o.toLowerCase();
                     d = $.trim(d);
 
                     if ((d.match("^\"") && d.match("\"$")) || (d.match("^'") && d.match("'$")))
@@ -148,14 +145,14 @@ http://www.tipue.com/search
                          standard = false;
                     }
 
-                    var d_w = d.split(' ');
+                    let d_w = d.split(' ');
 
                     if (standard)
                     {
                          d = '';
                          for (var i = 0; i < d_w.length; i++)
                          {
-                              var a_w = true;
+                              let a_w = true;
                               for (var f = 0; f < tipuesearch_stop_words.length; f++)
                               {
                                    if (d_w[i] == tipuesearch_stop_words[f])
@@ -198,7 +195,7 @@ http://www.tipue.com/search
                                    d_w = d.split(' ');
                               }
 
-                              var d_t = d;
+                              let d_t = d;
                               for (var i = 0; i < d_w.length; i++)
                               {
                                    for (var f = 0; f < tipuesearch_stem.words.length; f++)
@@ -339,7 +336,7 @@ http://www.tipue.com/search
                          {
                               if (set.showTitleCount && tipuesearch_t_c == 0)
                               {
-                                   var title = document.title;
+                                   const title = document.title;
                                    document.title = '(' + c + ') ' + title;
                                    tipuesearch_t_c++;
                               }
@@ -359,17 +356,17 @@ http://www.tipue.com/search
                               }
                               if (set.showTime)
                               {
-                                   var endTimer = new Date().getTime();
-                                   var time = (endTimer - startTimer) / 1000;
+                                   const endTimer = new Date().getTime();
+                                   const time = (endTimer - startTimer) / 1000;
                                    out += ' (' + time.toFixed(2) + ' ' + tipuesearch_string_14 + ')';
                                    set.showTime = false;
                               }
                               out += '</div>';
                               out += '<ul class="search-results">';
 
-                              found.sort(function(a, b) { return b.score - a.score } );
+                              found.sort((a, b) => { return b.score - a.score } );
 
-                              var l_o = 0;
+                              let l_o = 0;
                               for (var i = 0; i < found.length; i++)
                               {
                                    if (l_o >= start && l_o < set.show + start)
@@ -383,7 +380,7 @@ http://www.tipue.com/search
 
                                         if (set.showURL)
                                         {
-                                             var s_u = found[i].url.toLowerCase();
+                                             let s_u = found[i].url.toLowerCase();
                                              if (s_u.indexOf('http://') == 0)
                                              {
                                                   s_u = s_u.slice(7);
@@ -393,16 +390,16 @@ http://www.tipue.com/search
 
                                         if (found[i].desc)
                                         {
-                                             var t = found[i].desc;
+                                             let t = found[i].desc;
 
                                              if (set.showContext)
                                              {
                                                   d_w = d.split(' ');
-                                                  var s_1 = found[i].desc.toLowerCase().indexOf(d_w[0]);
+                                                  const s_1 = found[i].desc.toLowerCase().indexOf(d_w[0]);
                                                   if (s_1 > set.contextStart)
                                                   {
-                                                       var t_1 = t.substr(s_1 - set.contextBuffer);
-                                                       var s_2 = t_1.indexOf(' ');
+                                                       let t_1 = t.substr(s_1 - set.contextBuffer);
+                                                       const s_2 = t_1.indexOf(' ');
                                                        t_1 = t.substr(s_1 - set.contextBuffer + s_2);
                                                        t_1 = $.trim(t_1);
 
@@ -431,8 +428,8 @@ http://www.tipue.com/search
                                                   t = t.replace(patr, "<mark>$1</mark>");
                                              }
 
-                                             var t_d = '';
-                                             var t_w = t.split(' ');
+                                             let t_d = '';
+                                             const t_w = t.split(' ');
                                              if (t_w.length < set.descriptiveWords)
                                              {
                                                   t_d = t;
@@ -499,8 +496,8 @@ http://www.tipue.com/search
 
                               if (c > set.show)
                               {
-                                   var pages = Math.ceil(c / set.show);
-                                   var page = (start / set.show);
+                                   const pages = Math.ceil(c / set.show);
+                                   const page = (start / set.show);
                                    out += '<footer><nav class="pagination" aria-label="pagination"><ul>';
 
                                    if (start > 0)
@@ -582,8 +579,7 @@ http://www.tipue.com/search
 
                     $('#tipue_search_content').hide().html(out).slideDown(200);
 
-                    $('#tipue_search_replaced').click(function()
-                    {
+                    $('#tipue_search_replaced').click(() => {
                          getTipueSearch(0, false);
                     });
 
@@ -595,8 +591,8 @@ http://www.tipue.com/search
 
                     $('.tipue_search_foot_box').click(function()
                     {
-                         var id_v = $(this).attr('id');
-                         var id_a = id_v.split('_');
+                         const id_v = $(this).attr('id');
+                         const id_a = id_v.split('_');
 
                          getTipueSearch(parseInt(id_a[0]), id_a[1]);
                     });

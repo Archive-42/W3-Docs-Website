@@ -1,11 +1,10 @@
-const os = require('os')
-const path = require('path')
-const writeFileAtomic = require('write-file-atomic')
-const mkdirp = require('mkdirp-infer-owner')
-const fs = require('graceful-fs')
-
-const errorMessage = require('./error-message.js')
-const replaceInfo = require('./replace-info.js')
+import os from 'os';
+import path from 'path';
+import writeFileAtomic from 'write-file-atomic';
+import mkdirp from 'mkdirp-infer-owner';
+import fs from 'graceful-fs';
+import errorMessage from './error-message.js';
+import replaceInfo from './replace-info.js';
 
 let exitHandlerCalled = false
 let logFileName
@@ -16,7 +15,7 @@ const getLogFile = () => {
   // we call this multiple times, so we need to treat it as a singleton because
   // the date is part of the name
   if (!logFileName)
-    logFileName = path.resolve(npm.config.get('cache'), '_logs', (new Date()).toISOString().replace(/[.:]/g, '_') + '-debug.log')
+    logFileName = path.resolve(npm.config.get('cache'), '_logs', `${(new Date()).toISOString().replace(/[.:]/g, '_')}-debug.log`)
 
   return logFileName
 }
@@ -35,12 +34,12 @@ process.on('exit', code => {
       const dir = path.dirname(npm.config.get('cache'))
       mkdirp.sync(dir)
 
-      fs.appendFileSync(file, JSON.stringify({
-        command: process.argv.slice(2),
-        logfile: getLogFile(),
-        version: npm.version,
-        ...npm.timings,
-      }) + '\n')
+      fs.appendFileSync(file, `${JSON.stringify({
+  command: process.argv.slice(2),
+  logfile: getLogFile(),
+  version: npm.version,
+  ...npm.timings,
+})}\n`)
 
       const st = fs.lstatSync(path.dirname(npm.config.get('cache')))
       fs.chownSync(dir, st.uid, st.gid)
@@ -76,7 +75,7 @@ process.on('exit', code => {
       '',
       [
         'A complete log of this run can be found in:',
-        '    ' + getLogFile(),
+        `    ${getLogFile()}`,
       ].join('\n')
     )
   }
@@ -138,10 +137,10 @@ const exitHandler = (err) => {
       npm.log.verbose('cwd', process.cwd())
 
       const args = replaceInfo(process.argv)
-      npm.log.verbose('', os.type() + ' ' + os.release())
+      npm.log.verbose('', `${os.type()} ${os.release()}`)
       npm.log.verbose('argv', args.map(JSON.stringify).join(' '))
       npm.log.verbose('node', process.version)
-      npm.log.verbose('npm ', 'v' + npm.version)
+      npm.log.verbose('npm ', `v${npm.version}`)
 
       for (const k of ['code', 'syscall', 'file', 'path', 'dest', 'errno']) {
         const v = err[k]
@@ -191,14 +190,14 @@ const messageText = msg => msg.map(line => line.slice(1).join(' ')).join('\n')
 const writeLogFile = () => {
   try {
     let logOutput = ''
-    npm.log.record.forEach(m => {
-      const p = [m.id, m.level]
-      if (m.prefix)
-        p.push(m.prefix)
+    npm.log.record.forEach(({id, level, prefix, message}) => {
+      const p = [id, level]
+      if (prefix)
+        p.push(prefix)
       const pref = p.join(' ')
 
-      m.message.trim().split(/\r?\n/)
-        .map(line => (pref + ' ' + line).trim())
+      message.trim().split(/\r?\n/)
+        .map(line => (`${pref} ${line}`).trim())
         .forEach(line => {
           logOutput += line + os.EOL
         })
@@ -221,7 +220,8 @@ const writeLogFile = () => {
   }
 }
 
-module.exports = exitHandler
-module.exports.setNpm = (n) => {
+export default exitHandler;
+
+export function setNpm(n) {
   npm = n
 }

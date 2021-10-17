@@ -221,12 +221,12 @@ const wrapAll = s => {
     }
 
     if (block.charAt(0) === '*') {
-      return '* ' + block.substr(1).trim().split('\n* ').map(li => {
-        return wrap(li).replace(/\n/g, '\n  ')
-      }).join('\n* ')
+      return `* ${block.substr(1).trim().split('\n* ').map(li => {
+  return wrap(li).replace(/\n/g, '\n  ')
+}).join('\n* ')}`;
     } else
       return wrap(block)
-  }).join('\n\n')
+  }).join('\n\n');
 }
 
-module.exports = Definition
+export default Definition;

@@ -1,8 +1,9 @@
 // this is called when an ERESOLVE error is caught in the exit-handler,
 // or when there's a log.warn('eresolve', msg, explanation), to turn it
 // into a human-intelligible explanation of what's wrong and how to fix.
-const { writeFileSync } = require('fs')
-const { explainEdge, explainNode, printNode } = require('./explain-dep.js')
+import {writeFileSync} from 'fs';
+
+import {explainEdge, explainNode, printNode} from './explain-dep.js';
 
 // expl is an explanation object that comes from Arborist.  It looks like:
 // Depth is how far we want to want to descend into the object making a report.
@@ -16,27 +17,26 @@ const explain = (expl, color, depth) => {
     current && current.whileInstalling ||
     edge && edge.from && edge.from.whileInstalling
   if (whileInstalling)
-    out.push('While resolving: ' + printNode(whileInstalling, color))
+    out.push(`While resolving: ${printNode(whileInstalling, color)}`)
 
   // it "should" be impossible for an ERESOLVE explanation to lack both
   // current and currentEdge, but better to have a less helpful error
   // than a crashing failure.
   if (current)
-    out.push('Found: ' + explainNode(current, depth, color))
+    out.push(`Found: ${explainNode(current, depth, color)}`)
   else if (peerConflict && peerConflict.current)
-    out.push('Found: ' + explainNode(peerConflict.current, depth, color))
+    out.push(`Found: ${explainNode(peerConflict.current, depth, color)}`)
   else if (currentEdge)
-    out.push('Found: ' + explainEdge(currentEdge, depth, color))
+    out.push(`Found: ${explainEdge(currentEdge, depth, color)}`)
   else /* istanbul ignore else - should always have one */ if (edge)
-    out.push('Found: ' + explainEdge(edge, depth, color))
+    out.push(`Found: ${explainEdge(edge, depth, color)}`)
 
-  out.push('\nCould not resolve dependency:\n' +
-    explainEdge(edge, depth, color))
+  out.push(`\nCould not resolve dependency:\n${explainEdge(edge, depth, color)}`)
 
   if (peerConflict) {
     const heading = '\nConflicting peer dependency:'
     const pc = explainNode(peerConflict.peer, depth, color)
-    out.push(heading + ' ' + pc)
+    out.push(`${heading} ${pc}`)
   }
 
   return out.join('\n')
@@ -66,7 +66,7 @@ ${JSON.stringify(expl, null, 2)}
     `\n\n${fix}\n\nSee ${fullReport} for a full report.`
 }
 
-module.exports = {
+export default {
   explain,
   report,
-}
+};

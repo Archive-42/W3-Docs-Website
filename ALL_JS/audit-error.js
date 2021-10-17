@@ -31,4 +31,4 @@ const auditError = (npm, report) => {
   throw 'audit endpoint returned an error'
 }
 
-module.exports = auditError
+export default auditError;

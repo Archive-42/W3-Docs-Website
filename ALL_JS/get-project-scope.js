@@ -1,5 +1,6 @@
-const { resolve } = require('path')
-module.exports = prefix => {
+import {resolve} from 'path';
+
+export default prefix => {
   try {
     const { name } = require(resolve(prefix, 'package.json'))
     if (!name || typeof name !== 'string')
@@ -14,4 +15,4 @@ module.exports = prefix => {
   } catch (er) {
     return ''
   }
-}
+};

@@ -7,7 +7,8 @@
 //
 // TODO: move nerfdart auth stuff into a nested object that
 // is only passed along to paths that end up calling npm-registry-fetch.
-const definitions = require('./definitions.js')
+import definitions from './definitions.js';
+
 const flatten = (obj, flat = {}) => {
   for (const [key, val] of Object.entries(obj)) {
     const def = definitions[key]
@@ -29,4 +30,4 @@ const flatten = (obj, flat = {}) => {
   return flat
 }
 
-module.exports = flatten
+export default flatten;

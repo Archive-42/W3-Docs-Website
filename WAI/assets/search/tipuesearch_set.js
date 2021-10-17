@@ -10,7 +10,7 @@ Stop words
 Stop words list from http://www.ranks.nl/stopwords
 */
 
-var tipuesearch_stop_words = [
+const tipuesearch_stop_words = [
   "a",
   "about",
   "above",
@@ -189,15 +189,15 @@ var tipuesearch_stop_words = [
 
 // Word replace
 
-var tipuesearch_replace = { words: [] };
+const tipuesearch_replace = { words: [] };
 
 // Weighting
 
-var tipuesearch_weight = { weight: [] };
+const tipuesearch_weight = { weight: [] };
 
 // Illogical stemming
 
-var tipuesearch_stem = {
+const tipuesearch_stem = {
   words: [
     { word: "e-mail", stem: "email" },
     { word: "javascript", stem: "jquery" },
@@ -207,7 +207,7 @@ var tipuesearch_stem = {
 
 // Related searches
 
-var tipuesearch_related = {
+const tipuesearch_related = {
   searches: [
     { search: "tipue", related: "Tipue Search" },
     { search: "tipue", before: "Tipue Search", related: "Getting Started" },
@@ -218,24 +218,24 @@ var tipuesearch_related = {
 
 // Internal strings
 
-var tipuesearch_string_1 = "No title";
-var tipuesearch_string_2 = "Showing results for";
-var tipuesearch_string_3 = "Search instead for";
-var tipuesearch_string_4 = "1 result";
-var tipuesearch_string_5 = "results";
-var tipuesearch_string_6 = "Back";
-var tipuesearch_string_7 = "More";
-var tipuesearch_string_8 = "Nothing found.";
-var tipuesearch_string_9 = "Common words are largely ignored.";
-var tipuesearch_string_10 = "Search too short";
-var tipuesearch_string_11 = "Should be one character or more.";
-var tipuesearch_string_12 = "Should be";
-var tipuesearch_string_13 = "characters or more.";
-var tipuesearch_string_14 = "seconds";
-var tipuesearch_string_15 = "Searches related to";
+const tipuesearch_string_1 = "No title";
+const tipuesearch_string_2 = "Showing results for";
+const tipuesearch_string_3 = "Search instead for";
+const tipuesearch_string_4 = "1 result";
+const tipuesearch_string_5 = "results";
+const tipuesearch_string_6 = "Back";
+const tipuesearch_string_7 = "More";
+const tipuesearch_string_8 = "Nothing found.";
+const tipuesearch_string_9 = "Common words are largely ignored.";
+const tipuesearch_string_10 = "Search too short";
+const tipuesearch_string_11 = "Should be one character or more.";
+const tipuesearch_string_12 = "Should be";
+const tipuesearch_string_13 = "characters or more.";
+const tipuesearch_string_14 = "seconds";
+const tipuesearch_string_15 = "Searches related to";
 
 // Internals
 
 // Timer for showTime
 
-var startTimer = new Date().getTime();
+const startTimer = new Date().getTime();

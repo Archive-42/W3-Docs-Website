@@ -4,10 +4,12 @@
 // Promise that succeeds when we've tried to delete everything,
 // just for the benefit of testing this function properly.
 
-const { resolve } = require('path')
-const rimraf = require('rimraf')
-const glob = require('glob')
-module.exports = (cache, max, warn) => {
+import {resolve} from 'path';
+
+import rimraf from 'rimraf';
+import glob from 'glob';
+
+export default (cache, max, warn) => {
   /* eslint-disable promise/param-names */
   return new Promise(done => {
     glob(resolve(cache, '_logs', '*-debug.log'), (er, files) => {
@@ -29,4 +31,4 @@ module.exports = (cache, max, warn) => {
       }
     })
   })
-}
+};

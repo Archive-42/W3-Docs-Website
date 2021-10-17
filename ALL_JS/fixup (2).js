@@ -5,20 +5,20 @@
  * - some fixup to improve the table of contents                              *
  * - the obsolete warning on outdated specs                                   *
  ******************************************************************************/
-(function () {
+(() => {
   "use strict";
-  var ESCAPEKEY = 27;
-  var collapseSidebarText =
+  const ESCAPEKEY = 27;
+  const collapseSidebarText =
     '<span aria-hidden="true">←</span> ' + "<span>Collapse Sidebar</span>";
-  var expandSidebarText =
+  const expandSidebarText =
     '<span aria-hidden="true">→</span> ' + "<span>Pop Out Sidebar</span>";
-  var tocJumpText =
+  const tocJumpText =
     '<span aria-hidden="true">↑</span> ' +
     "<span>Jump to Table of Contents</span>";
 
-  var sidebarMedia = window.matchMedia("screen and (min-width: 78em)");
-  var autoToggle = function (e) {
-    toggleSidebar(e.matches);
+  const sidebarMedia = window.matchMedia("screen and (min-width: 78em)");
+  const autoToggle = ({matches}) => {
+    toggleSidebar(matches);
   };
   if (sidebarMedia.addListener) {
     sidebarMedia.addListener(autoToggle);
@@ -31,8 +31,8 @@
 
     if (!skipScroll) {
       /* Don't scroll to compensate for the ToC if we're above it already. */
-      var headY = 0;
-      var head = document.querySelector(".head");
+      let headY = 0;
+      const head = document.querySelector(".head");
       if (head) {
         // terrible approx of "top of ToC"
         headY += head.offsetTop + head.offsetHeight;
@@ -40,10 +40,10 @@
       skipScroll = window.scrollY < headY;
     }
 
-    var toggle = document.getElementById("toc-toggle");
-    var tocNav = document.getElementById("toc");
+    const toggle = document.getElementById("toc-toggle");
+    const tocNav = document.getElementById("toc");
     if (on) {
-      var tocHeight = tocNav.offsetHeight;
+      const tocHeight = tocNav.offsetHeight;
       document.body.classList.add("toc-sidebar");
       document.body.classList.remove("toc-inline");
       toggle.innerHTML = collapseSidebarText;
@@ -69,7 +69,7 @@
 
   function createSidebarToggle() {
     /* Create the sidebar toggle in JS; it shouldn't exist when JS is off. */
-    var toggle = document.createElement("a");
+    const toggle = document.createElement("a");
     /* This should probably be a button, but appearance isn't standards-track.*/
     toggle.id = "toc-toggle";
     toggle.class = "toc-toggle";
@@ -77,7 +77,7 @@
     toggle.innerHTML = collapseSidebarText;
 
     sidebarMedia.addListener(autoToggle);
-    var toggler = function (e) {
+    const toggler = e => {
       e.preventDefault();
       sidebarMedia.removeListener(autoToggle); // persist explicit off states
       toggleSidebar();
@@ -86,7 +86,7 @@
     toggle.addEventListener("click", toggler, false);
 
     /* Get <nav id=toc-nav>, or make it if we don't have one. */
-    var tocNav = document.getElementById("toc-nav");
+    let tocNav = document.getElementById("toc-nav");
     if (!tocNav) {
       tocNav = document.createElement("p");
       tocNav.id = "toc-nav";
@@ -94,7 +94,7 @@
       document.body.insertBefore(tocNav, document.body.firstChild);
     }
     /* While we're at it, make sure we have a Jump to Toc link. */
-    var tocJump = document.getElementById("toc-jump");
+    let tocJump = document.getElementById("toc-jump");
     if (!tocJump) {
       tocJump = document.createElement("a");
       tocJump.id = "toc-jump";
@@ -106,7 +106,7 @@
     tocNav.appendChild(toggle);
   }
 
-  var toc = document.getElementById("toc");
+  const toc = document.getElementById("toc");
   if (toc) {
     if (!document.getElementById("toc-toggle")) {
       createSidebarToggle();
@@ -118,12 +118,12 @@
        then auto-close the sidebar once you click on something in there. */
     toc.addEventListener(
       "click",
-      function (e) {
+      ({target}) => {
         if (
           document.body.classList.contains("toc-sidebar") &&
           !sidebarMedia.matches
         ) {
-          var el = e.target;
+          let el = target;
           while (el != toc) {
             // find closest <a>
             if (el.tagName.toLowerCase() == "a") {
@@ -143,19 +143,19 @@
   }
 
   /* Amendment Diff Toggling */
-  var showDiff = function (event) {
-    var a = event.target.parentElement.parentElement;
-    var ins = document.querySelectorAll(
-      "ins[cite='#" + a.id + "'], #" + a.id + " ins"
+  const showDiff = ({target}) => {
+    const a = target.parentElement.parentElement;
+    const ins = document.querySelectorAll(
+      `ins[cite='#${a.id}'], #${a.id} ins`
     );
-    var del = document.querySelectorAll(
-      "del[cite='#" + a.id + "'], #" + a.id + " del"
+    const del = document.querySelectorAll(
+      `del[cite='#${a.id}'], #${a.id} del`
     );
-    ins.forEach(function (e) {
+    ins.forEach(e => {
       e.hidden = false;
       e.classList.remove("diff-inactive");
     });
-    del.forEach(function (e) {
+    del.forEach(e => {
       e.hidden = false;
       e.classList.remove("diff-inactive");
     });
@@ -163,19 +163,19 @@
     a.querySelectorAll("button[value=old]")[0].disabled = false;
     a.querySelectorAll("button[value=new]")[0].disabled = false;
   };
-  var showOld = function (event) {
-    var a = event.target.parentElement.parentElement;
-    var ins = document.querySelectorAll(
-      "ins[cite='#" + a.id + "'], #" + a.id + " ins"
+  const showOld = ({target}) => {
+    const a = target.parentElement.parentElement;
+    const ins = document.querySelectorAll(
+      `ins[cite='#${a.id}'], #${a.id} ins`
     );
-    var del = document.querySelectorAll(
-      "del[cite='#" + a.id + "'], #" + a.id + " del"
+    const del = document.querySelectorAll(
+      `del[cite='#${a.id}'], #${a.id} del`
     );
-    ins.forEach(function (e) {
+    ins.forEach(e => {
       e.hidden = true;
       e.classList.add("diff-inactive");
     });
-    del.forEach(function (e) {
+    del.forEach(e => {
       e.hidden = false;
       e.classList.add("diff-inactive");
     });
@@ -183,19 +183,19 @@
     a.querySelectorAll("button[value=old]")[0].disabled = true;
     a.querySelectorAll("button[value=new]")[0].disabled = false;
   };
-  var showNew = function (event) {
-    var a = event.target.parentElement.parentElement;
-    var ins = document.querySelectorAll(
-      "ins[cite='#" + a.id + "'], #" + a.id + " ins"
+  const showNew = ({target}) => {
+    const a = target.parentElement.parentElement;
+    const ins = document.querySelectorAll(
+      `ins[cite='#${a.id}'], #${a.id} ins`
     );
-    var del = document.querySelectorAll(
-      "del[cite='#" + a.id + "'], #" + a.id + " del"
+    const del = document.querySelectorAll(
+      `del[cite='#${a.id}'], #${a.id} del`
     );
-    ins.forEach(function (e) {
+    ins.forEach(e => {
       e.hidden = false;
       e.classList.add("diff-inactive");
     });
-    del.forEach(function (e) {
+    del.forEach(e => {
       e.hidden = true;
       e.classList.add("diff-inactive");
     });
@@ -203,25 +203,25 @@
     a.querySelectorAll("button[value=old]")[0].disabled = false;
     a.querySelectorAll("button[value=new]")[0].disabled = true;
   };
-  var amendments = document.querySelectorAll(
+  const amendments = document.querySelectorAll(
     "[id].amendment, [id].correction, [id].addition"
   );
-  amendments.forEach(function (a) {
-    var ins = document.querySelectorAll(
-      "ins[cite='#" + a.id + "'], #" + a.id + " ins"
+  amendments.forEach(a => {
+    const ins = document.querySelectorAll(
+      `ins[cite='#${a.id}'], #${a.id} ins`
     );
-    var del = document.querySelectorAll(
-      "del[cite='#" + a.id + "'], #" + a.id + " del"
+    const del = document.querySelectorAll(
+      `del[cite='#${a.id}'], #${a.id} del`
     );
     if (ins.length == 0 && del.length == 0) {
       return;
     }
 
-    var tbar = document.createElement("div");
+    const tbar = document.createElement("div");
     tbar.lang = "en";
     tbar.class = "amendment-toggles";
 
-    var toggle = document.createElement("button");
+    let toggle = document.createElement("button");
     toggle.value = "diff";
     toggle.innerHTML = "Show Change";
     toggle.disabled = true;
@@ -244,19 +244,19 @@
   });
 
   /* Wrap tables in case they overflow */
-  var tables = document.querySelectorAll(
+  const tables = document.querySelectorAll(
     ":not(.overlarge) > table.data, :not(.overlarge) > table.index"
   );
-  var numTables = tables.length;
-  for (var i = 0; i < numTables; i++) {
-    var table = tables[i];
+  const numTables = tables.length;
+  for (let i = 0; i < numTables; i++) {
+    const table = tables[i];
     if (
       !table.matches(".example *, .note *, .advisement *, .def *, .issue *")
     ) {
       /* Overflowing colored boxes looks terrible, and also
          the kinds of tables inside these boxes
          are less likely to need extra space. */
-      var wrapper = document.createElement("div");
+      const wrapper = document.createElement("div");
       wrapper.className = "overlarge";
       table.parentNode.insertBefore(wrapper, table);
       wrapper.appendChild(table);
@@ -268,10 +268,10 @@
     document.location.hostname === "www.w3.org" &&
     /^\/TR\/\d{4}\//.test(document.location.pathname)
   ) {
-    var request = new XMLHttpRequest();
+    const request = new XMLHttpRequest();
 
     request.open("GET", "https://www.w3.org/TR/tr-outdated-spec");
-    request.onload = function () {
+    request.onload = () => {
       if (request.status < 200 || request.status >= 400) {
         return;
       }
@@ -282,7 +282,7 @@
         return;
       }
       document.body.classList.add("outdated-spec");
-      var node = document.createElement("p");
+      const node = document.createElement("p");
       node.classList.add("outdated-warning");
       node.tabIndex = -1;
       node.setAttribute("role", "dialog");
@@ -292,34 +292,34 @@
         node.classList.add(currentSpec.style);
       }
 
-      var frag = document.createDocumentFragment();
-      var heading = document.createElement("strong");
+      const frag = document.createDocumentFragment();
+      const heading = document.createElement("strong");
       heading.id = "outdatedWarning";
       heading.innerHTML = currentSpec.header;
       frag.appendChild(heading);
 
-      var anchor = document.createElement("a");
+      const anchor = document.createElement("a");
       anchor.href = currentSpec.latestUrl;
-      anchor.innerText = currentSpec.latestUrl + ".";
+      anchor.innerText = `${currentSpec.latestUrl}.`;
 
-      var warning = document.createElement("span");
+      const warning = document.createElement("span");
       warning.innerText = currentSpec.warning;
       warning.appendChild(anchor);
       frag.appendChild(warning);
 
-      var button = document.createElement("button");
-      var handler = makeClickHandler(node);
+      const button = document.createElement("button");
+      const handler = makeClickHandler(node);
       button.addEventListener("click", handler);
       button.innerHTML = "&#9662; collapse";
       frag.appendChild(button);
       node.appendChild(frag);
 
-      function makeClickHandler(node) {
-        var isOpen = true;
+      function makeClickHandler({classList}) {
+        let isOpen = true;
         return function collapseWarning(event) {
-          var button = event.target;
+          const button = event.target;
           isOpen = !isOpen;
-          node.classList.toggle("outdated-collapsed");
+          classList.toggle("outdated-collapsed");
           document.body.classList.toggle("outdated-spec");
           button.innerText = isOpen ? "\u25BE collapse" : "\u25B4 expand";
         };
@@ -327,16 +327,16 @@
 
       document.body.appendChild(node);
       button.focus();
-      window.onkeydown = function (event) {
-        var isCollapsed = node.classList.contains("outdated-collapsed");
-        if (event.keyCode === ESCAPEKEY && !isCollapsed) {
+      window.onkeydown = ({keyCode}) => {
+        const isCollapsed = node.classList.contains("outdated-collapsed");
+        if (keyCode === ESCAPEKEY && !isCollapsed) {
           button.click();
         }
       };
 
-      window.addEventListener("click", function (event) {
+      window.addEventListener("click", ({target}) => {
         if (
-          !node.contains(event.target) &&
+          !node.contains(target) &&
           !node.classList.contains("outdated-collapsed")
         ) {
           button.click();
@@ -345,9 +345,9 @@
 
       document.addEventListener(
         "focus",
-        function (event) {
-          var isCollapsed = node.classList.contains("outdated-collapsed");
-          var containsTarget = node.contains(event.target);
+        event => {
+          const isCollapsed = node.classList.contains("outdated-collapsed");
+          const containsTarget = node.contains(event.target);
           if (!isCollapsed && !containsTarget) {
             event.stopPropagation();
             node.focus();
@@ -357,7 +357,7 @@
       ); // use capture to enable event delegation as focus doesn't bubble up
     };
 
-    request.onerror = function () {
+    request.onerror = () => {
       console.error(
         "Request to https://www.w3.org/TR/tr-outdated-spec failed."
       );
@@ -395,8 +395,8 @@
         </span>
       </a>
     `;
-    const changeListener = (event) => {
-      const { value } = event.target;
+    const changeListener = ({target}) => {
+      const { value } = target;
       darkCss.disabled = value === "light";
       darkCss.media = value === "auto" ? "(prefers-color-scheme: dark)" : "";
       localStorage.setItem("tr-theme", value);
@@ -405,7 +405,7 @@
       input.addEventListener("change", changeListener);
     });
 
-    var tocNav = document.querySelector("#toc-nav");
+    const tocNav = document.querySelector("#toc-nav");
     tocNav.appendChild(...render.children);
   }
 
@@ -414,20 +414,20 @@
     document.location.hostname === "www.w3.org" &&
     /^\/TR\//.test(document.location.pathname)
   ) {
-    var _paq = (window._paq = window._paq || []);
+    const _paq = (window._paq = window._paq || []);
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(["trackPageView"]);
     _paq.push(["enableLinkTracking"]);
-    (function () {
-      var u = "https://www.w3.org/analytics/piwik/";
-      _paq.push(["setTrackerUrl", u + "matomo.php"]);
+    (() => {
+      const u = "https://www.w3.org/analytics/piwik/";
+      _paq.push(["setTrackerUrl", `${u}matomo.php`]);
       _paq.push(["setSiteId", "447"]);
-      var d = document,
-        g = d.createElement("script"),
-        s = d.getElementsByTagName("script")[0];
+      const d = document;
+      const g = d.createElement("script");
+      const s = d.getElementsByTagName("script")[0];
       g.type = "text/javascript";
       g.async = true;
-      g.src = u + "matomo.js";
+      g.src = `${u}matomo.js`;
       s.parentNode.insertBefore(g, s);
     })();
   }

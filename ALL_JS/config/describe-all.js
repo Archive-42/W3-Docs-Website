@@ -1,4 +1,4 @@
-const definitions = require('./definitions.js')
+import definitions from './definitions.js';
 const localeCompare = require('@isaacs/string-locale-compare')('en')
 const describeAll = () => {
   // sort not-deprecated ones to the top
@@ -17,4 +17,4 @@ const describeAll = () => {
         '<!-- see lib/utils/config/definitions.js -->\n\n'
     )
 }
-module.exports = describeAll
+export default describeAll;

@@ -1,8 +1,8 @@
 const aliases = require('../utils/cmd-list').aliases
 
 module.exports = function usage (cmd, txt, opt) {
-  const post = Object.keys(aliases).reduce(function (p, c) {
-    var val = aliases[c]
+  const post = Object.keys(aliases).reduce((p, c) => {
+    const val = aliases[c];
     if (val !== cmd)
       return p
     return p.concat(c)

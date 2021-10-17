@@ -1,3 +1,3 @@
-const isWindows = require('./is-windows.js')
-const isWindowsBash = require('./is-windows-bash.js')
-module.exports = isWindows && !isWindowsBash
+import isWindows from './is-windows.js';
+import isWindowsBash from './is-windows-bash.js';
+export default isWindows && !isWindowsBash;

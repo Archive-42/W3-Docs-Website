@@ -1,4 +1,4 @@
-const chalk = require('chalk')
+import chalk from 'chalk';
 const nocolor = {
   bold: s => s,
   dim: s => s,
@@ -10,7 +10,7 @@ const nocolor = {
   green: s => s,
 }
 
-const { relative } = require('path')
+import {relative} from 'path';
 
 const explainNode = (node, depth, color) =>
   printNode(node, color) +
@@ -44,19 +44,19 @@ const printNode = (node, color) => {
   const { bold, dim, green } = color ? chalk : nocolor
   const extra = []
   if (extraneous)
-    extra.push(' ' + bold(colorType('extraneous', color)))
+    extra.push(` ${bold(colorType('extraneous', color))}`)
 
   if (dev)
-    extra.push(' ' + bold(colorType('dev', color)))
+    extra.push(` ${bold(colorType('dev', color))}`)
 
   if (optional)
-    extra.push(' ' + bold(colorType('optional', color)))
+    extra.push(` ${bold(colorType('optional', color))}`)
 
   if (peer)
-    extra.push(' ' + bold(colorType('peer', color)))
+    extra.push(` ${bold(colorType('peer', color))}`)
 
   if (bundled)
-    extra.push(' ' + bold(colorType('bundled', color)))
+    extra.push(` ${bold(colorType('bundled', color))}`)
 
   const pkgid = isWorkspace
     ? green(`${name}@${version}`)
@@ -71,7 +71,7 @@ const explainLinksIn = ({ linksIn }, depth, color) => {
     return ''
 
   const messages = linksIn.map(link => explainNode(link, depth - 1, color))
-  const str = '\n' + messages.join('\n')
+  const str = `\n${messages.join('\n')}`
   return str.split('\n').join('\n  ')
 }
 
@@ -101,7 +101,7 @@ const explainDependents = ({ name, dependents }, depth, color) => {
     messages.push(`${dependents.length - max} more ${show}`)
   }
 
-  const str = '\n' + messages.join('\n')
+  const str = `\n${messages.join('\n')}`
   return str.split('\n').join('\n  ')
 }
 
@@ -126,4 +126,4 @@ const explainFrom = (from, depth, color) => {
     explainLinksIn(from, depth - 1, color)
 }
 
-module.exports = { explainNode, printNode, explainEdge }
+export default { explainNode, printNode, explainEdge };

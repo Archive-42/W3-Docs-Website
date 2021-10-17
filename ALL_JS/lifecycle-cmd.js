@@ -1,7 +1,8 @@
 // The implementation of commands that are just "run a script"
 // restart, start, stop, test
 
-const BaseCommand = require('../base-command.js')
+import BaseCommand from '../base-command.js';
+
 class LifecycleCmd extends BaseCommand {
   static get usage () {
     return ['[-- <args>]']
@@ -15,4 +16,4 @@ class LifecycleCmd extends BaseCommand {
     this.npm.commands['run-script']([this.constructor.name, ...args], cb)
   }
 }
-module.exports = LifecycleCmd
+export default LifecycleCmd;

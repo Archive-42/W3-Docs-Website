@@ -1,4 +1,4 @@
-var tipuesearch = {"pages": [{
+const tipuesearch = {"pages": [{
     "title": "RTC Accessibility User Requirements (RAUR) Note Published",
     "text": "RTC Accessibility User Requirements (RAUR) is published as a Working Group Note. Real-time communication (RTC) provides real-time peer to peer audio, video, and data exchange directly between supported user agents. This enables instantaneous applications for video and audio calls, text chat, file exchange, screen sharing, and gaming. RAUR describes various accessibility related user needs, requirements, and scenarios for real-time communication (RTC) applications. These user needs should drive accessibility requirements in various related specifications and the overall architecture that enables RTC.",
     "tags": "",

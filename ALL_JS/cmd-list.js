@@ -151,11 +151,11 @@ const shellouts = [
   'birthday',
 ]
 
-module.exports = {
+export default {
   aliases: Object.assign({}, shorthands, affordances),
   shorthands,
   affordances,
   cmdList,
   plumbing,
   shellouts,
-}
+};

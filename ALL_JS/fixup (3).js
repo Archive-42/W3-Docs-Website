@@ -2,20 +2,20 @@
  * This code handles:                                                         *
  * - the obsolete warning on outdated specs                                   *
  ******************************************************************************/
-( function () {
+(() => {
   "use strict";
 
-  var ESCAPEKEY = 27;
+  const ESCAPEKEY = 27;
   /* Deprecation warning */
   if (
     document.location.hostname === "www.w3.org" &&
     ( /^\/TR\/(\d{4}\/|(NOTE|WD|PR|REC)\-)/.test( document.location.pathname ) ||
       !/^\/TR\//.test( document.location.pathname ) )
   ) {
-    var request = new XMLHttpRequest();
+    const request = new XMLHttpRequest();
 
     request.open( "GET", "https://www.w3.org/TR/tr-outdated-spec" );
-    request.onload = function () {
+    request.onload = () => {
       if ( request.status < 200 || request.status >= 400 ) {
         return;
       }
@@ -26,10 +26,10 @@
         return;
       }
       document.body.classList.add( "outdated-spec" );
-      var w3cCSS = document.querySelector(
+      const w3cCSS = document.querySelector(
         'link[href*="www.w3.org/StyleSheets/TR/W3C-"]'
       ); //old specs don't have the TR stylesheets
-      var node = document.createElement( "p" );
+      const node = document.createElement( "p" );
       node.classList.add( "outdated-warning" );
       node.tabIndex = -1;
       node.setAttribute( "role", "dialog" );
@@ -39,36 +39,36 @@
         node.classList.add( currentSpec.style );
       }
 
-      var frag = document.createDocumentFragment();
-      var heading = document.createElement( "strong" );
+      const frag = document.createDocumentFragment();
+      const heading = document.createElement( "strong" );
       heading.id = "outdatedWarning";
       heading.innerHTML = currentSpec.header;
       frag.appendChild( heading );
 
-      var anchor = document.createElement( "a" );
+      const anchor = document.createElement( "a" );
       anchor.href = currentSpec.latestUrl;
-      anchor.innerText = currentSpec.latestUrl + ".";
+      anchor.innerText = `${currentSpec.latestUrl}.`;
 
-      var warning = document.createElement( "span" );
+      const warning = document.createElement( "span" );
       warning.innerText = currentSpec.warning;
       warning.appendChild( anchor );
       frag.appendChild( warning );
 
       if ( w3cCSS ) {
         var button = document.createElement( "button" );
-        var handler = makeClickHandler( node );
+        const handler = makeClickHandler( node );
         button.addEventListener( "click", handler );
         button.innerHTML = "&#9662; collapse";
         frag.appendChild( button );
       }
       node.appendChild( frag );
 
-      function makeClickHandler( node ) {
-        var isOpen = true;
+      function makeClickHandler({classList}) {
+        let isOpen = true;
         return function collapseWarning( event ) {
-          var button = event.target;
+          const button = event.target;
           isOpen = !isOpen;
-          node.classList.toggle( "outdated-collapsed" );
+          classList.toggle( "outdated-collapsed" );
           document.body.classList.toggle( "outdated-spec" );
           button.innerText = isOpen ? "\u25BE collapse" : "\u25B4 expand";
         };
@@ -78,16 +78,16 @@
 
       if ( w3cCSS ) {
         button.focus();
-        window.onkeydown = function ( event ) {
-          var isCollapsed = node.classList.contains( "outdated-collapsed" );
-          if ( event.keyCode === ESCAPEKEY && !isCollapsed ) {
+        window.onkeydown = ({keyCode}) => {
+          const isCollapsed = node.classList.contains( "outdated-collapsed" );
+          if ( keyCode === ESCAPEKEY && !isCollapsed ) {
             button.click();
           }
         };
 
-        window.addEventListener( "click", function ( event ) {
+        window.addEventListener( "click", ({target}) => {
           if (
-            !node.contains( event.target ) &&
+            !node.contains( target ) &&
             !node.classList.contains( "outdated-collapsed" )
           ) {
             button.click();
@@ -96,9 +96,9 @@
 
         document.addEventListener(
           "focus",
-          function ( event ) {
-            var isCollapsed = node.classList.contains( "outdated-collapsed" );
-            var containsTarget = node.contains( event.target );
+          event => {
+            const isCollapsed = node.classList.contains( "outdated-collapsed" );
+            const containsTarget = node.contains( event.target );
             if ( !isCollapsed && !containsTarget ) {
               event.stopPropagation();
               node.focus();
@@ -109,7 +109,7 @@
       }
     };
 
-    request.onerror = function () {
+    request.onerror = () => {
       console.error(
         "Request to https://www.w3.org/TR/tr-outdated-spec failed."
       );
@@ -123,21 +123,21 @@
     document.location.hostname === "www.w3.org" &&
     /^\/TR\//.test( document.location.pathname )
   ) {
-    var _paq = ( window._paq = window._paq || [] );
+    const _paq = ( window._paq = window._paq || [] );
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push( [ "trackPageView" ] );
     _paq.push( [ "enableLinkTracking" ] );
-    ( function () {
-      var u = "https://www.w3.org/analytics/piwik/";
-      _paq.push( [ "setTrackerUrl", u + "matomo.php" ] );
+    (() => {
+      const u = "https://www.w3.org/analytics/piwik/";
+      _paq.push( [ "setTrackerUrl", `${u}matomo.php` ] );
       _paq.push( [ "setSiteId", "447" ] );
-      var d = document,
-        g = d.createElement( "script" ),
-        s = d.getElementsByTagName( "script" )[ 0 ];
+      const d = document;
+      const g = d.createElement( "script" );
+      const s = d.getElementsByTagName( "script" )[ 0 ];
       g.type = "text/javascript";
       g.async = true;
-      g.src = u + "matomo.js";
+      g.src = `${u}matomo.js`;
       s.parentNode.insertBefore( g, s );
-    } )();
+    })();
   }
-} )();
+})();

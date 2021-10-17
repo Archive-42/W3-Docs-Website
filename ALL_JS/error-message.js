@@ -1,11 +1,11 @@
-const { format } = require('util')
-const { resolve } = require('path')
-const nameValidator = require('validate-npm-package-name')
-const npmlog = require('npmlog')
-const replaceInfo = require('./replace-info.js')
-const { report } = require('./explain-eresolve.js')
+import {format} from 'util';
+import {resolve} from 'path';
+import nameValidator from 'validate-npm-package-name';
+import npmlog from 'npmlog';
+import replaceInfo from './replace-info.js';
+import {report} from './explain-eresolve.js';
 
-module.exports = (er, npm) => {
+export default (er, npm) => {
   const short = []
   const detail = []
 
@@ -196,7 +196,7 @@ module.exports = (er, npm) => {
           ]
           errorsArray.forEach((item, idx) => detail.push([
             '404',
-            ' ' + (idx + 1) + '. ' + item,
+            ` ${idx + 1}. ${item}`,
           ]))
         }
 
@@ -215,7 +215,7 @@ module.exports = (er, npm) => {
 
     case 'EISGIT':
       short.push(['git', er.message])
-      short.push(['git', '    ' + er.path])
+      short.push(['git', `    ${er.path}`])
       detail.push([
         'git',
         [
@@ -243,10 +243,10 @@ module.exports = (er, npm) => {
       detail.push([
         'notsup',
         [
-          'Valid OS:    ' + validOs,
-          'Valid Arch:  ' + validArch,
-          'Actual OS:   ' + process.platform,
-          'Actual Arch: ' + process.arch,
+          `Valid OS:    ${validOs}`,
+          `Valid Arch:  ${validArch}`,
+          `Actual OS:   ${process.platform}`,
+          `Actual Arch: ${process.arch}`,
         ].join('\n'),
       ])
       break
@@ -254,7 +254,7 @@ module.exports = (er, npm) => {
 
     case 'EEXIST':
       short.push(['', er.message])
-      short.push(['', 'File exists: ' + (er.dest || er.path)])
+      short.push(['', `File exists: ${er.dest || er.path}`])
       detail.push(['', 'Remove the existing file and try again, or run npm'])
       detail.push(['', 'with --force to overwrite files recklessly.'])
       break
@@ -300,16 +300,16 @@ module.exports = (er, npm) => {
 
     case 'EBADENGINE':
       short.push(['engine', er.message])
-      short.push(['engine', 'Not compatible with your version of node/npm: ' + er.pkgid])
+      short.push(['engine', `Not compatible with your version of node/npm: ${er.pkgid}`])
       detail.push([
         'notsup',
         [
-          'Not compatible with your version of node/npm: ' + er.pkgid,
-          'Required: ' + JSON.stringify(er.required),
-          'Actual:   ' + JSON.stringify({
-            npm: npm.version,
-            node: npm.config.loaded ? npm.config.get('node-version') : process.version,
-          }),
+          `Not compatible with your version of node/npm: ${er.pkgid}`,
+          `Required: ${JSON.stringify(er.required)}`,
+          `Actual:   ${JSON.stringify({
+  npm: npm.version,
+  node: npm.config.loaded ? npm.config.get('node-version') : process.version,
+})}`,
         ].join('\n'),
       ])
       break
@@ -342,7 +342,7 @@ module.exports = (er, npm) => {
         'enoent',
         [
           'This is related to npm not being able to find a file.',
-          er.file ? "\nCheck if the file '" + er.file + "' is present." : '',
+          er.file ? `\nCheck if the file '${er.file}' is present.` : '',
         ].join('\n'),
       ])
       break
@@ -378,4 +378,4 @@ module.exports = (er, npm) => {
       break
   }
   return { summary: short, detail: detail }
-}
+};

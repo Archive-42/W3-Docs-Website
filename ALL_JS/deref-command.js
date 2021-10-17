@@ -1,19 +1,20 @@
 // de-reference abbreviations and shorthands into canonical command name
 
-const { aliases, cmdList, plumbing } = require('../utils/cmd-list.js')
+import {aliases, cmdList, plumbing} from '../utils/cmd-list.js';
+
 const aliasNames = Object.keys(aliases)
 const fullList = cmdList.concat(aliasNames).filter(c => !plumbing.includes(c))
-const abbrev = require('abbrev')
+import abbrev from 'abbrev';
 const abbrevs = abbrev(fullList)
 
-module.exports = c => {
+export default c => {
   if (!c || typeof c !== 'string')
     return ''
 
   if (c.match(/[A-Z]/))
-    c = c.replace(/([A-Z])/g, m => '-' + m.toLowerCase())
+    c = c.replace(/([A-Z])/g, m => `-${m.toLowerCase()}`)
 
-  if (plumbing.indexOf(c) !== -1)
+  if (plumbing.includes(c))
     return c
 
   // first deref the abbrev, if there is one
@@ -24,4 +25,4 @@ module.exports = c => {
     a = aliases[a]
 
   return a || ''
-}
+};

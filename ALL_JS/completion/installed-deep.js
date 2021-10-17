@@ -1,25 +1,24 @@
-const { resolve } = require('path')
-const Arborist = require('@npmcli/arborist')
+import {resolve} from 'path';
+import Arborist from '@npmcli/arborist';
 const localeCompare = require('@isaacs/string-locale-compare')('en')
 
-const installedDeep = async (npm) => {
+const installedDeep = async ({flatOptions, globalDir}) => {
   const {
     depth,
     global,
     prefix,
-  } = npm.flatOptions
+  } = flatOptions
 
-  const getValues = (tree) =>
-    [...tree.inventory.values()]
-      .filter(i => i.location !== '' && !i.isRoot)
-      .map(i => {
-        return i
-      })
-      .filter(i => (i.depth - 1) <= depth)
-      .sort((a, b) => (a.depth - b.depth) || localeCompare(a.name, b.name))
+  const getValues = ({inventory}) => [...inventory.values()]
+    .filter(({location, isRoot}) => location !== '' && !isRoot)
+    .map(i => {
+      return i
+    })
+    .filter(i => (i.depth - 1) <= depth)
+    .sort((a, b) => (a.depth - b.depth) || localeCompare(a.name, b.name))
 
   const res = new Set()
-  const gArb = new Arborist({ global: true, path: resolve(npm.globalDir, '..') })
+  const gArb = new Arborist({ global: true, path: resolve(globalDir, '..') })
   const gTree = await gArb.loadActual({ global: true })
 
   for (const node of getValues(gTree))
@@ -35,4 +34,4 @@ const installedDeep = async (npm) => {
   return [...res]
 }
 
-module.exports = installedDeep
+export default installedDeep;

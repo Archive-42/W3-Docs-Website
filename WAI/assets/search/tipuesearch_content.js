@@ -1,4 +1,4 @@
-var tipuesearch = {
+const tipuesearch = {
   pages: [
     {
       title: "RTC Accessibility User Requirements (RAUR) Note Published",

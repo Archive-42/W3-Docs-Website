@@ -1,17 +1,16 @@
 const definitions = {}
-module.exports = definitions
-
-const Definition = require('./definition.js')
-
-const { version: npmVersion } = require('../../../package.json')
-const ciDetect = require('@npmcli/ci-detect')
+export default definitions;
+import Definition from './definition.js';
+import {version as npmVersion} from '../../../package.json';
+import ciDetect from '@npmcli/ci-detect';
 const ciName = ciDetect()
-const querystring = require('querystring')
-const isWindows = require('../is-windows.js')
-const { join } = require('path')
+import querystring from 'querystring';
+import isWindows from '../is-windows.js';
+import {join} from 'path';
 
 // used by cafile flattening to flatOptions.ca
-const fs = require('fs')
+import fs from 'fs';
+
 const maybeReadFile = file => {
   try {
     return fs.readFileSync(file, 'utf8')
@@ -59,7 +58,7 @@ const editor = process.env.EDITOR ||
 const shell = isWindows ? process.env.ComSpec || 'cmd'
   : process.env.SHELL || 'sh'
 
-const { tmpdir, networkInterfaces } = require('os')
+import {tmpdir, networkInterfaces} from 'os';
 const getLocalAddresses = () => {
   try {
     return Object.values(networkInterfaces()).map(
@@ -82,7 +81,7 @@ const cacheRoot = (isWindows && process.env.LOCALAPPDATA) || '~'
 const cacheExtra = isWindows ? 'npm-cache' : '.npm'
 const cache = `${cacheRoot}/${cacheExtra}`
 
-const Config = require('@npmcli/config')
+import Config from '@npmcli/config';
 
 // TODO: refactor these type definitions so that they are less
 // weird to pull out of the config module.
@@ -370,12 +369,12 @@ define('cafile', {
     certificates. Similar to the \`ca\` setting, but allows for multiple
     CA's, as well as for the CA information to be stored in a file on disk.
   `,
-  flatten (key, obj, flatOptions) {
+  flatten(key, {cafile}, flatOptions) {
     // always set to null in defaults
-    if (!obj.cafile)
+    if (!cafile)
       return
 
-    const raw = maybeReadFile(obj.cafile)
+    const raw = maybeReadFile(cafile)
     if (!raw)
       return
 
@@ -458,9 +457,9 @@ define('color', {
     If false, never shows colors.  If \`"always"\` then always shows colors.
     If true, then only prints color codes for tty file descriptors.
   `,
-  flatten (key, obj, flatOptions) {
-    flatOptions.color = !obj.color ? false
-      : obj.color === 'always' ? true
+  flatten(key, {color}, flatOptions) {
+    flatOptions.color = !color ? false
+      : color === 'always' ? true
       : process.stdout.isTTY
   },
 })
