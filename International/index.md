@@ -1,4 +1,4 @@
-I18n site search:  
+I18n site search:
 
 [<span class="topRight"> RSS Feeds </span><img src="/International/icons/rss.gif" alt="RSS feeds" width="16" height="16" />](/International/log/description)
 
@@ -10,12 +10,9 @@ Internationalization (i18n)
 
 Making the World Wide Web worldwide!
 
-  
+[Learn](/International/i18n-drafts/nav/learn "Learn techniques and requirements for internationalization.")  [Find](/International/i18n-drafts/nav/find "Find information on this site.")  [Ask](/International/i18n-drafts/nav/ask "Ask for help or information.")  [Follow](/International/i18n-drafts/nav/follow "Follow the work at W3C Internationalization.")  [Participate](/International/i18n-drafts/nav/participate "Participate in W3C Internationalization work.")  [About](/International/i18n-drafts/nav/about "About W3C Internationalization.")
 
-[Learn](/International/i18n-drafts/nav/learn "Learn techniques and requirements for internationalization.")  [Find](/International/i18n-drafts/nav/find "Find information on this site.")  [Ask](/International/i18n-drafts/nav/ask "Ask for help or information.")  [Follow](/International/i18n-drafts/nav/follow "Follow the work at W3C Internationalization.")  [Participate](/International/i18n-drafts/nav/participate "Participate in W3C Internationalization work.")  [About](/International/i18n-drafts/nav/about "About W3C Internationalization.") 
-
-Groups/repos
-------------
+## Groups/repos
 
 [![](/International/icons/right.gif) i18n WG](http://w3c.github.io/i18n-activity/i18n-wg/)
 
@@ -45,8 +42,7 @@ Groups/repos
 
 [![](/International/icons/right.gif) Tibetan LE](https://w3c.github.io/tlreq/home)
 
-<span id="Participation">Participate!</span>
---------------------------------------------
+## <span id="Participation">Participate!</span>
 
 [![](/International/icons/right.gif) International­ization Sponsorship Program](/International/sponsorship/)
 
@@ -56,8 +52,7 @@ Groups/repos
 
 [![](/International/icons/right.gif) Follow the work](/International/log/description)
 
-<span id="sec_site_links">Search for news</span>
-------------------------------------------------
+## <span id="sec_site_links">Search for news</span>
 
 News by category
 
@@ -511,12 +506,11 @@ Search news
 
 Search for:
 
-I18n sponsors
--------------
+## I18n sponsors
 
 [![APL, Japan](/International/icons/sponsor_logos/apl.png "Advanced Publishing Lab (APL)")](https://www.aplab.jp/) [![The Paciello Group](/International/icons/sponsor_logos/tpg-logo.png "The Paciello Group")](https://www.paciellogroup.com/) [![Monotype](/International/icons/sponsor_logos/monotype_logo.png "Monotype")](http://www.monotype.com/) [![Alibaba](/International/icons/sponsor_logos/alibaba-logo.png "Alibaba")](http://www.alibabagroup.com/en/global/home)
 
--   [Log in](https://www.w3.org/blog/International/wp-login.php)
+- [Log in](https://www.w3.org/blog/International/wp-login.php)
 
 ![](/International/logos/mlw-notext-500-white.png)
 
@@ -528,7 +522,7 @@ What We Do
 Enablement](https://w3.org/International/i18n-drafts/nav/languagedev)  
 [Learn more](https://w3.org/International/i18n-drafts/nav/languagedev)
 
-*Quick links*  
+_Quick links_  
 [Language Matrix](https://w3.org/International/typography/gap-analysis/language-matrix.html)  
 [Language Enablement Index](https://www.w3.org/TR/typography/)  
 [Gap-analysis Pipeline](https://github.com/w3c/i18n-activity/projects/3)  
@@ -542,7 +536,7 @@ Enablement](https://w3.org/International/i18n-drafts/nav/languagedev)
 Support](https://w3.org/International/i18n-drafts/nav/specdev)  
 [Learn more](w3.org/International/i18n-drafts/nav/specdev)
 
-*Quick links*  
+_Quick links_  
 [Spec devt techniques](https://www.w3.org/TR/international-specs/)  
 [Self-reviews](https://w3.org/International/i18n-drafts/techniques/shortchecklist)  
 [Request a review](https://www.w3.org/Guide/documentreview/)  
@@ -555,7 +549,7 @@ Support](https://w3.org/International/i18n-drafts/nav/specdev)
 Outreach](https://w3.org/International/i18n-drafts/nav/contentdev)  
 [Learn more](w3.org/International/i18n-drafts/nav/contentdev)
 
-*Quick links*  
+_Quick links_  
 [HTML/CSS authoring](https://w3.org/International/techniques/authoring-html)  
 [Articles](https://www.w3.org/International/articlelist)  
 [Tech reports](https://www.w3.org/standards/techs/i18n#w3c_all)  
@@ -677,7 +671,7 @@ This article tells you how to write HTML where text with different writing direc
 
 The worked examples and the descriptions of markup have been moved to a new page: [Inline bidi markup examples](https://www.w3.org/International/articles/inline-bidi-markup/bidi_examples). This and various small edits, including a new set of examples with links to live versions, are intended to make it easier to read the main article and make its advice clearer.
 
-Send any [comments via GitHub](https://github.com/w3c/i18n-drafts/issues/new?title=%5Barticles/inline-bidi-markup/index%5D%20%20BRIEF_TITLE_GOES_HERE&body=%5Bsource%5D%20(https%3A%2F%2Fwww.w3.org%2FInternational%2Farticles%2Finline-bidi-markup%2F)%20%5Ben%5D%0A%0A).
+Send any [comments via GitHub](<https://github.com/w3c/i18n-drafts/issues/new?title=%5Barticles/inline-bidi-markup/index%5D%20%20BRIEF_TITLE_GOES_HERE&body=%5Bsource%5D%20(https%3A%2F%2Fwww.w3.org%2FInternational%2Farticles%2Finline-bidi-markup%2F)%20%5Ben%5D%0A%0A>).
 
 <span class="comments-link">Comments Off<span class="screen-reader-text"> on Updated article: Inline markup and bidirectional text in HTML</span></span>
 
@@ -693,7 +687,7 @@ The article [Structural markup and right-to-left text in HTML](https://w3c.githu
 
 This article looks at ways of handling text direction for structural markup in HTML, ie. at the document level and for elements like paragraphs, tables and forms. The article has been largely rewritten to take into account recent developments in HTML and CSS. A section was added to describe the use of logical properties. The text was make more concise.
 
-Please send any comments as github issues by [clicking on this link](https://github.com/w3c/i18n-drafts/issues/new?title=%5Bquestions/qa-html-dir%5D%20%20BRIEF_TITLE_GOES_HERE&body=%5Bsource%5D%20(https%3A%2F%2Fw3c.github.io%2Fi18n-drafts%2Fquestions%2Fqa-html-dir)%20%5Ben%5D%0A%0A), or on “Leave a comment” at the bottom of the article. (This will add some useful information to your comment.)
+Please send any comments as github issues by [clicking on this link](<https://github.com/w3c/i18n-drafts/issues/new?title=%5Bquestions/qa-html-dir%5D%20%20BRIEF_TITLE_GOES_HERE&body=%5Bsource%5D%20(https%3A%2F%2Fw3c.github.io%2Fi18n-drafts%2Fquestions%2Fqa-html-dir)%20%5Ben%5D%0A%0A>), or on “Leave a comment” at the bottom of the article. (This will add some useful information to your comment.)
 
 <span class="comments-link">[Leave a comment](https://www.w3.org/blog/International/2021/05/07/for-review-structural-markup-and-right-to-left-text-in-html/#respond)</span>
 
@@ -707,7 +701,7 @@ Sometimes people wonder whether it’s possible to obtain a definitive list of l
 
 [Read the article](https://www.w3.org/International/questions/qa-direction-from-language).
 
-To comment on this article, [raise a GitHub issue](https://github.com/w3c/i18n-drafts/issues/new?title=%5Bquestions/qa-direction-from-language%5D%20%20BRIEF_TITLE_GOES_HERE&body=%5Bsource%5D%20(https%3A%2F%2Fwww.w3.org%2FInternational%2Fquestions%2Fqa-direction-from-language)%20%5Ben%5D%0A%0A).
+To comment on this article, [raise a GitHub issue](<https://github.com/w3c/i18n-drafts/issues/new?title=%5Bquestions/qa-direction-from-language%5D%20%20BRIEF_TITLE_GOES_HERE&body=%5Bsource%5D%20(https%3A%2F%2Fwww.w3.org%2FInternational%2Fquestions%2Fqa-direction-from-language)%20%5Ben%5D%0A%0A>).
 
 <span class="comments-link">[Leave a comment](https://www.w3.org/blog/International/2021/05/07/article-published-can-we-derive-base-direction-from-language/#respond)</span>
 
@@ -721,7 +715,7 @@ Information about text direction and language needs to be associated with string
 
 [Read the article](https://www.w3.org/International/articles/lang-bidi-use-cases/).
 
-To send a comment, [raise a GitHub issue](https://github.com/w3c/i18n-drafts/issues/new?title=%5Barticles/lang-bidi-use-cases/%5D%20%20BRIEF_TITLE_GOES_HERE&body=%5Bsource%5D%20(https%3A%2F%2Fwww.w3.org%2FInternational%2Farticles%2Flang-bidi-use-cases%2F)%20%5Ben%5D%0A%0A).
+To send a comment, [raise a GitHub issue](<https://github.com/w3c/i18n-drafts/issues/new?title=%5Barticles/lang-bidi-use-cases/%5D%20%20BRIEF_TITLE_GOES_HERE&body=%5Bsource%5D%20(https%3A%2F%2Fwww.w3.org%2FInternational%2Farticles%2Flang-bidi-use-cases%2F)%20%5Ben%5D%0A%0A>).
 
 <span class="comments-link">[Leave a comment](https://www.w3.org/blog/International/2021/05/07/article-published-use-cases-for-bidi-and-language-metadata-on-the-web/#respond)</span>
 
@@ -731,7 +725,7 @@ Categories: **[New resource](https://www.w3.org/blog/International/category/new-
 
 :: [Next Page »](https://www.w3.org/blog/International/page/2/)
 
-------------------------------------------------------------------------
+---
 
 <span class="copyright">Copyright © 2017 W3C <sup>®</sup> ([MIT](http://www.csail.mit.edu/), [ERCIM](http://www.ercim.eu/), [Keio](http://www.keio.ac.jp/), [Beihang](http://ev.buaa.edu.cn/)) [Usage policies apply](/Consortium/Legal/ipr-notice).</span>  
 Questions or comments? <ishida@w3.org>

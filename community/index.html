@@ -3,462 +3,1290 @@
 <!--[if IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if IE 8]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="en-US" class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;"
+    />
+    <link
+      rel="shortcut icon"
+      href="/community/src/templates/wordpress/StoryTeller/favicon.ico"
+      type="image/x-icon"
+    />
 
-<head>
-<meta charset="UTF-8" />
-<meta name="robots" content="index" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
-<link rel="shortcut icon" href="/community/src/templates/wordpress/StoryTeller/favicon.ico" type="image/x-icon" />
+    <title>Community and Business Groups</title>
+    <meta property="og:title" content="Community and Business Groups" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="/community/src/templates/wordpress/StoryTeller/style.css"
+    />
+    <link rel="pingback" href="https://www.w3.org/community/xmlrpc.php" />
+    <script
+      type="text/javascript"
+      src="/community/src/templates/wordpress/StoryTeller/js/modernizr-1.7.min.js"
+    ></script>
 
-<title>Community and Business Groups</title><meta property='og:title' content='Community and Business Groups' /><link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" media="all" href="/community/src/templates/wordpress/StoryTeller/style.css" />
-<link rel="pingback" href="https://www.w3.org/community/xmlrpc.php" />
-<script type='text/javascript' src='/community/src/templates/wordpress/StoryTeller/js/modernizr-1.7.min.js'></script>
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="dns-prefetch" href="//www.w3.org" />
+    <link rel="dns-prefetch" href="//s.w.org" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Community and Business Groups &raquo; Feed"
+      href="https://www.w3.org/community/feed/"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Community and Business Groups &raquo; Comments Feed"
+      href="https://www.w3.org/community/comments/feed/"
+    />
+    <script type="text/javascript">
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "https:\/\/www.w3.org\/community\/wp-includes\/js\/wp-emoji-release.min.js?ver=788bdf01c4eb08cc6a9d1b628784f3a5",
+        },
+      };
+      !(function (e, a, t) {
+        var n,
+          r,
+          o,
+          i = a.createElement("canvas"),
+          p = i.getContext && i.getContext("2d");
+        function s(e, t) {
+          var a = String.fromCharCode;
+          p.clearRect(0, 0, i.width, i.height),
+            p.fillText(a.apply(this, e), 0, 0);
+          e = i.toDataURL();
+          return (
+            p.clearRect(0, 0, i.width, i.height),
+            p.fillText(a.apply(this, t), 0, 0),
+            e === i.toDataURL()
+          );
+        }
+        function c(e) {
+          var t = a.createElement("script");
+          (t.src = e),
+            (t.defer = t.type = "text/javascript"),
+            a.getElementsByTagName("head")[0].appendChild(t);
+        }
+        for (
+          o = Array("flag", "emoji"),
+            t.supports = { everything: !0, everythingExceptFlag: !0 },
+            r = 0;
+          r < o.length;
+          r++
+        )
+          (t.supports[o[r]] = (function (e) {
+            if (!p || !p.fillText) return !1;
+            switch (
+              ((p.textBaseline = "top"), (p.font = "600 32px Arial"), e)
+            ) {
+              case "flag":
+                return s(
+                  [127987, 65039, 8205, 9895, 65039],
+                  [127987, 65039, 8203, 9895, 65039]
+                )
+                  ? !1
+                  : !s(
+                      [55356, 56826, 55356, 56819],
+                      [55356, 56826, 8203, 55356, 56819]
+                    ) &&
+                      !s(
+                        [
+                          55356, 57332, 56128, 56423, 56128, 56418, 56128,
+                          56421, 56128, 56430, 56128, 56423, 56128, 56447,
+                        ],
+                        [
+                          55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418,
+                          8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128,
+                          56423, 8203, 56128, 56447,
+                        ]
+                      );
+              case "emoji":
+                return !s(
+                  [55357, 56424, 8205, 55356, 57212],
+                  [55357, 56424, 8203, 55356, 57212]
+                );
+            }
+            return !1;
+          })(o[r])),
+            (t.supports.everything = t.supports.everything && t.supports[o[r]]),
+            "flag" !== o[r] &&
+              (t.supports.everythingExceptFlag =
+                t.supports.everythingExceptFlag && t.supports[o[r]]);
+        (t.supports.everythingExceptFlag =
+          t.supports.everythingExceptFlag && !t.supports.flag),
+          (t.DOMReady = !1),
+          (t.readyCallback = function () {
+            t.DOMReady = !0;
+          }),
+          t.supports.everything ||
+            ((n = function () {
+              t.readyCallback();
+            }),
+            a.addEventListener
+              ? (a.addEventListener("DOMContentLoaded", n, !1),
+                e.addEventListener("load", n, !1))
+              : (e.attachEvent("onload", n),
+                a.attachEvent("onreadystatechange", function () {
+                  "complete" === a.readyState && t.readyCallback();
+                })),
+            (n = t.source || {}).concatemoji
+              ? c(n.concatemoji)
+              : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)));
+      })(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="dashicons-css"
+      href="https://www.w3.org/community/wp-includes/css/dashicons.min.css?ver=788bdf01c4eb08cc6a9d1b628784f3a5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="admin-bar-css"
+      href="https://www.w3.org/community/wp-includes/css/admin-bar.min.css?ver=788bdf01c4eb08cc6a9d1b628784f3a5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="https://www.w3.org/community/wp-includes/css/dist/block-library/style.min.css?ver=788bdf01c4eb08cc6a9d1b628784f3a5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="enlighterjs-css"
+      href="https://www.w3.org/community/wp-content/plugins/enlighter/cache/X1_enlighterjs.min.css?ver=5RB/eCCvrGE8olH"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.w3.org/community/wp-includes/js/jquery/jquery.min.js?ver=3.5.1"
+      id="jquery-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.w3.org/community/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2"
+      id="jquery-migrate-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.w3.org/community/wp-content/mu-plugins/js/jquery.tablesorter.min.js?ver=788bdf01c4eb08cc6a9d1b628784f3a5"
+      id="jquery.tablesorter-js"
+    ></script>
+    <link
+      rel="https://api.w.org/"
+      href="https://www.w3.org/community/wp-json/"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="https://www.w3.org/community/xmlrpc.php?rsd"
+    />
+    <link
+      rel="wlwmanifest"
+      type="application/wlwmanifest+xml"
+      href="https://www.w3.org/community/wp-includes/wlwmanifest.xml"
+    />
 
-<meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//www.w3.org' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Community and Business Groups &raquo; Feed" href="https://www.w3.org/community/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Community and Business Groups &raquo; Comments Feed" href="https://www.w3.org/community/comments/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.w3.org\/community\/wp-includes\/js\/wp-emoji-release.min.js?ver=788bdf01c4eb08cc6a9d1b628784f3a5"}};
-			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-	<link rel='stylesheet' id='dashicons-css'  href='https://www.w3.org/community/wp-includes/css/dashicons.min.css?ver=788bdf01c4eb08cc6a9d1b628784f3a5' type='text/css' media='all' />
-<link rel='stylesheet' id='admin-bar-css'  href='https://www.w3.org/community/wp-includes/css/admin-bar.min.css?ver=788bdf01c4eb08cc6a9d1b628784f3a5' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css'  href='https://www.w3.org/community/wp-includes/css/dist/block-library/style.min.css?ver=788bdf01c4eb08cc6a9d1b628784f3a5' type='text/css' media='all' />
-<link rel='stylesheet' id='enlighterjs-css'  href='https://www.w3.org/community/wp-content/plugins/enlighter/cache/X1_enlighterjs.min.css?ver=5RB/eCCvrGE8olH' type='text/css' media='all' />
-<script type='text/javascript' src='https://www.w3.org/community/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
-<script type='text/javascript' src='https://www.w3.org/community/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<script type='text/javascript' src='https://www.w3.org/community/wp-content/mu-plugins/js/jquery.tablesorter.min.js?ver=788bdf01c4eb08cc6a9d1b628784f3a5' id='jquery.tablesorter-js'></script>
-<link rel="https://api.w.org/" href="https://www.w3.org/community/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.w3.org/community/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.w3.org/community/wp-includes/wlwmanifest.xml" /> 
+    <style type="text/css"></style>
+    <style type="text/css" media="print">
+      #wpadminbar {
+        display: none;
+      }
+    </style>
+    <style type="text/css" media="screen">
+      html {
+        margin-top: 32px !important;
+      }
+      * html body {
+        margin-top: 32px !important;
+      }
+      @media screen and (max-width: 782px) {
+        html {
+          margin-top: 46px !important;
+        }
+        * html body {
+          margin-top: 46px !important;
+        }
+      }
+    </style>
+  </head>
 
-<style type='text/css'></style>
-<style type="text/css" media="print">#wpadminbar { display:none; }</style>
-	<style type="text/css" media="screen">
-	html { margin-top: 32px !important; }
-	* html body { margin-top: 32px !important; }
-	@media screen and ( max-width: 782px ) {
-		html { margin-top: 46px !important; }
-		* html body { margin-top: 46px !important; }
-	}
-</style>
-	</head>
+  <body class="home blog admin-bar no-customize-support">
+    <div id="wpadminbar" class="nojq nojs">
+      <a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1"
+        >Skip to toolbar</a
+      >
+      <div
+        class="quicklinks"
+        id="wp-toolbar"
+        role="navigation"
+        aria-label="Toolbar"
+      >
+        <ul
+          id="wp-admin-bar-top-secondary"
+          class="ab-top-secondary ab-top-menu"
+        >
+          <li id="wp-admin-bar-w3c-skip">
+            <a
+              class="ab-item"
+              href="#content"
+              title="Skip to content (e.g., when browsing via audio)"
+              >Skip</a
+            >
+          </li>
+          <li id="wp-admin-bar-log-in">
+            <a
+              class="ab-item"
+              href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2F"
+              title="Log In"
+              >Log In</a
+            >
+          </li>
+          <li id="wp-admin-bar-my-account">
+            <a
+              class="ab-item"
+              href="https://www.w3.org/users/myprofile"
+              title="My W3C Account"
+              >My W3C Account</a
+            >
+          </li>
+          <li id="wp-admin-bar-search" class="admin-bar-search">
+            <div class="ab-item ab-empty-item" tabindex="-1">
+              <form
+                action="https://www.w3.org/community/"
+                method="get"
+                id="adminbarsearch"
+              >
+                <input
+                  class="adminbar-input"
+                  name="s"
+                  id="adminbar-search"
+                  type="text"
+                  value=""
+                  maxlength="150"
+                  title="Search"
+                /><input type="submit" class="adminbar-button" value="Search" />
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-<body class="home blog admin-bar no-customize-support">
-		<div id="wpadminbar" class="nojq nojs">
-							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
-						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
-				<ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-w3c-skip'><a class='ab-item' href='#content' title='Skip to content (e.g., when browsing via audio)'>Skip</a></li><li id='wp-admin-bar-log-in'><a class='ab-item' href='https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2F' title='Log In'>Log In</a></li><li id='wp-admin-bar-my-account'><a class='ab-item' href='https://www.w3.org/users/myprofile' title='My W3C Account'>My W3C Account</a></li><li id='wp-admin-bar-search' class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://www.w3.org/community/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" title="Search" /><input type="submit" class="adminbar-button" value="Search"/></form></div></li></ul>			</div>
-					</div>
+    <!--[if lte IE 8]>
+      <noscript
+        ><strong
+          >JavaScript is required for this website to be displayed correctly.
+          Please enable JavaScript before continuing...</strong
+        ></noscript
+      >
+    <![endif]-->
 
-		<!--[if lte IE 8 ]>
-<noscript><strong>JavaScript is required for this website to be displayed correctly. Please enable JavaScript before continuing...</strong></noscript>
-<![endif]-->
+    <header>
+      <div class="logos">
+        <a href="http://www.w3.org/" class="w3-logo"
+          ><img
+            alt="w3c logo"
+            class="animated fadeInLeft"
+            src="/community/src/templates/wordpress/StoryTeller/img/svg/w3c-logo.svg"
+        /></a>
+        <a href="/community/" class="cgbg-logo"
+          ><img
+            alt="w3c community group logo"
+            class="animated fadeInRotate height"
+            src="/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo.svg"
+        /></a>
+        <a href="/community/" class="cgbg-logo-title"
+          ><h1 class="animated fadeInRight">Community & Business Groups</h1></a
+        >
+      </div>
 
-	<header>
-        <div class="logos">
-			<a href="http://www.w3.org/" class="w3-logo"><img alt="w3c logo" class="animated fadeInLeft" src="/community/src/templates/wordpress/StoryTeller/img/svg/w3c-logo.svg" /></a>
-			<a href="/community/" class="cgbg-logo"><img alt="w3c community group logo" class="animated fadeInRotate height" src="/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo.svg" /></a>
-			<a href="/community/" class="cgbg-logo-title"><h1 class="animated fadeInRight" >Community & Business Groups</h1></a>
-		</div>
-
-		<div class="white-bar"></div>
-        <div class="white-circle"></div>
-        <div class="blue-top"></div>
-    </header><!-- #header -->
+      <div class="white-bar"></div>
+      <div class="white-circle"></div>
+      <div class="blue-top"></div>
+    </header>
+    <!-- #header -->
 
     <div class="center ov-visible">
-			<nav id="access" class="right main-nav">
-										        <ul id="menu-top-menu">
-		             <li id="menu-item-60" class="cg menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-60"><a title="Groups" href="/community/groups/"><span>Current Groups</span></a></li>
-		             <li id="menu-item-57" class="rp menu-item menu-item-type-custom menu-item-object-custom menu-item-57"><a href="/community/reports/"><span>Reports</span></a></li>
-		             <li id="menu-item-59" class="ab menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a title="About" href="/community/about/"><span>About</span></a></li>
-		        </ul>
-		        			</nav><!-- #access -->
-	</div>
-
-	<div class="center">
-
-<div class="maincolumn">
-
-
-      							
-
-			<div class="textwidget"><p class="main-intro">W3C Community and Business Groups give developers, designers, and anyone passionate about the Web a place to hold discussions and publish ideas. These groups are proposed and run by the community.</p></div>
-		<!-- Recent groups section -->
-<section class="main-groups">
-  <header class="section-title">
-    <h1 id="content">Join new groups</h1>
-    <a href="/community/about/faq/#how-do-i-join-a-group" class="tooltip information"><span>More on how to join a group</span></a>
-  </header>
-
-  <!-- Each group in one article -->
-    <article class="clearfix">
-    <h2 class="group-title"><a href="/community/patcg">Private Advertising Technology Community Group</a></h2>
-    <div class="left group-desc">
-      <p class="group-desc-cont">
-        The mission of the Private Advertising Technology Community Group is to incubate web features and APIs that support...
-        <a href="/community/patcg/">More</a>        
-      </p>
-            <a href="/community/wp-login.php?redirect_to=%2Fcommunity%2Fpatcg%2Fjoin" class="button action orange">Join group</a>
-          </div>
-    <aside class="right group-info">
-      <p class="group-label">Launched: <time datetime="2021-10-14 ">2021-10-14 </time></p>
-      <p class="group-label">Participants: <span>39</span></p>
-    </aside>
-  </article>
-    <article class="clearfix">
-    <h2 class="group-title"><a href="/community/coga-community">Cognitive Accessibility Community Group</a></h2>
-    <div class="left group-desc">
-      <p class="group-desc-cont">
-         Mission 
- The mission of the COGA Community Group is to work with and support the  Cognitive and Learning...
-        <a href="/community/coga-community/">More</a>        
-      </p>
-            <a href="/community/wp-login.php?redirect_to=%2Fcommunity%2Fcoga-community%2Fjoin" class="button action orange">Join group</a>
-          </div>
-    <aside class="right group-info">
-      <p class="group-label">Launched: <time datetime="2021-08-09 ">2021-08-09 </time></p>
-      <p class="group-label">Participants: <span>43</span></p>
-    </aside>
-  </article>
-    <article class="clearfix">
-    <h2 class="group-title"><a href="/community/fed-id">Federated Identity Community Group</a></h2>
-    <div class="left group-desc">
-      <p class="group-desc-cont">
-        The purpose of the Federated Identity Community Group is to provide a forum focused on incubating web features that...
-        <a href="/community/fed-id/">More</a>        
-      </p>
-            <a href="/community/wp-login.php?redirect_to=%2Fcommunity%2Ffed-id%2Fjoin" class="button action orange">Join group</a>
-          </div>
-    <aside class="right group-info">
-      <p class="group-label">Launched: <time datetime="2021-07-06 ">2021-07-06 </time></p>
-      <p class="group-label">Participants: <span>122</span></p>
-    </aside>
-  </article>
-      <a title="More groups to join" class="tooltip view-more on-home" href="/community/groups"><span>More groups to join</span></a>
-
-
-  </section>
-
-<!-- Proposed groups section -->
-<section class="main-groups">
-  <header class="section-title">
-    <h1 id="support">Support newly proposed groups</h1>
-    <a href="/community/about/faq/#how-do-i-support-creation-of-a-group" class="tooltip information"><span>More on how to support a group</span></a>
-  </header>
-  
-  <!-- Each group in one article -->
-          <article class="clearfix">
-    <h2 class="group-title"><a href="https://www.w3.org/community/blog/2021/10/09/proposed-group-blockchain-wallet-exchange-platform-community-group/">Blockchain Wallet &amp; Exchange Platform Community Group</a></h2>
-    <div class="left group-desc">
-      <p class="group-desc-cont">
-        The purpose of this community group is to establish and explore the technology challenges for blockchain wallet and...
-        <a href="https://www.w3.org/community/blog/2021/10/09/proposed-group-blockchain-wallet-exchange-platform-community-group/">More</a>
-      </p>  
-            <a class="button action orange" href="/community/wp-login.php?redirect_to=%2Fcommunity">Support creation</a>
-            <a href="https://www.w3.org/community/blog/2021/10/09/proposed-group-blockchain-wallet-exchange-platform-community-group/#comments" class="tooltip comment-more inline"><span>Comment on the proposal</span></a>
-    </div>
-    <aside class="right group-info">
-      <p class="group-label">Proposed: <time datetime="2021-10-09">2021-10-09</time></p>
-      <p rel="author" class="group-label">Author: <span>Frank Corsi</span></p>
-            <p class="supporters no4"><a title="Community Groups launch once at least five individuals have expressed support." href="/community/about/agreements/#complete-proposal">No. of supporters</a>: 4<span></span></p>
-          </aside>
-  </article>
-          <article class="clearfix">
-    <h2 class="group-title"><a href="https://www.w3.org/community/blog/2021/09/29/proposed-group-consent-name-system-community-group/">Consent Name System Community Group</a></h2>
-    <div class="left group-desc">
-      <p class="group-desc-cont">
-        Our mission: design and build the 3rd generation of the CNS to be deployed globally as a free commons, a sibling to...
-        <a href="https://www.w3.org/community/blog/2021/09/29/proposed-group-consent-name-system-community-group/">More</a>
-      </p>  
-            <a class="button action orange" href="/community/wp-login.php?redirect_to=%2Fcommunity">Support creation</a>
-            <a href="https://www.w3.org/community/blog/2021/09/29/proposed-group-consent-name-system-community-group/#comments" class="tooltip comment-more inline"><span>Comment on the proposal</span></a>
-    </div>
-    <aside class="right group-info">
-      <p class="group-label">Proposed: <time datetime="2021-09-29">2021-09-29</time></p>
-      <p rel="author" class="group-label">Author: <span>Jay Glasgow</span></p>
-            <p class="supporters no3"><a title="Community Groups launch once at least five individuals have expressed support." href="/community/about/agreements/#complete-proposal">No. of supporters</a>: 3<span></span></p>
-          </aside>
-  </article>
-    </section>
-
-
-		</div><!-- .maincolumn -->
-
-				<div class="sidebar">							
-					<section id="text-18" class="widget-container widget_text">			<div class="textwidget"><section class="story">
-<div class="wheels-container">
-<div class="green-wheel" style="transform: rotate(114deg);"></div>
-<div class="orange-wheel" style="transform: rotate(-114deg);"></div>
-<div class="brown-wheel" style="transform: rotate(114deg);"></div>
-</div>
-<div class="idea">
-<p>Share an idea</p>
-<p>                    <a href="#" class="tooltip graphic" data-group="#idea-modal"><span>Learn how to build support</span></a>
-                </div>
-<div class="create-group">
-<p>Propose a group</p>
-<p>                    <a href="#" class="leanModal tooltip graphic" data-group="#create-modal"><span>Learn how to propose a group</span></a>
-                </div>
-<div class="publish">
-<p>Publish a Report</p>
-<p>                    <a href="#" class="leanModal tooltip graphic" data-group="#publish-modal"><span>Learn how to publish a report</span></a>
-                </div>
-<div class="success">
-<p>Take it to the Next Level</p>
-<p> <a href="#" class="leanModal tooltip graphic" data-group="#success-modal"><span>Learn about how turn reports into standards</span></a>
-                </div>
-</section>
-<div id="idea-modal" tabindex="-1" role="dialog" aria-labelledby="idea-modal-header">
-<div class="modal">
-<header id="idea-modal-header">
-<p>Share your idea</p>
-</header>
-<p>                <a href="#" class="modal_close" aria-label="close">x</a></p>
-<div class="modal_content">
-<h3>Look for an initial community of interest</h3>
-<p>Before getting started, check the <a href="/community/groups/">list of current groups</a> to see if people are already discussing your topic. You can join their group, or propose your own if you think your work will not overlap.</p>
-</div>
-</div>
-</div>
-<div id="create-modal" tabindex="-1" role="dialog" aria-labelledby="create-modal-header">
-<div class="modal">
-<header id="create-modal-header">
-<p>Propose a group</p>
-</header>
-<p>                <a href="#" class="modal_close" aria-label="close">x</a></p>
-<div class="modal_content">
-<h3>Anyone can propose a group</h3>
-<ol>
-                </ol>
-<p>Anyone with a <a href="/accounts/request">W3C account</a> may propose a new group:</p>
-<ol>
-<li>Propose a group with a title and short summary. The description should provide enough information that will help people decide whether to join, such as a brief statement of the group&#8217;s mission, goals, and deliverables. Please state clearly whether the group will create specifications.</li>
-<li> Get four more people (or, for Business Groups, organizations) to support the group by pushing a button to show their support. The button is available on the list of <a href="/community/groups/proposed">proposed groups</a> but you must be logged in to see it. If you have already shown support for the group, the button is no longer available. </li>
-<li>W3C then launches the group and people can <a href="/community/about/faq/#how-do-i-join-a-group">join</a>, which involves agreeing to <a href="/community/about/agreements/">process</a><br />
-and <a href="/community/about/agreements/cla/">licensing</a> terms. W3C Membership is not required to join a Community or Business Group.<br />
-There is no fee to join a Community Group but there<br />
-are <a href="/community/about/fees/">fees</a> for non-Members to join a Business Group.
-</li>
-</ol>
-<p><a href="/community/groups/propose_cg" title="Start a community group" class="button action dark-green">Create a Community Group</a><br />
-                <a href="/community/groups/propose_bg" title="Start a business group" class="button action green">Create a Business Group</a>
-                </div>
-</div>
-</div>
-<div id="publish-modal" tabindex="-1" role="dialog" aria-labelledby="publish-modal-header">
-<div class="modal">
-<header id="publish-modal-header">
-<p>Learn how to publish a report</p>
-</header>
-<p>                <a href="#" class="modal_close" aria-label="close">x</a></p>
-<div class="modal_content">
-<h3>Chairs can publish group reports</h3>
-<p>Some Community and Business Groups publish reports. Each group must have a Chair, and the Chair is empowered to publish the group&#8217;s reports. Publishing a report announces it to the community, lists it on the group&#8217;s home page, and adds to the <a href="/community/reports/">list of all reports</a>.<br />
-Reports must satisfy a small number of <a href="/community/reports/reqs/">requirements</a>. Participants make Royalty-Free patent licensing commitments to specifications published by Community and Business Groups, and the material is available under a <a href="/community/about/agreements/cla-deed/">permissive copyright license</a>.
-</p>
-<p>Once a group has completed its work, it can publish a final report and call for stronger patent licensing commitments under the <a href="/community/about/agreements/fsa-deed/">Final Specification Agreement</a>.</p>
-<p>Learn more about <a href="/community/about/faq/#how-do-we-publish-a-specification">how Chairs publish a report</a>.</p>
-</div>
-</div>
-</div>
-<div id="success-modal" tabindex="-1" role="dialog" aria-labelledby="success-modal-header">
-<div class="modal">
-<header id="success-modal-header">
-<p>Take it to the Next Level</p>
-</header>
-<p>                <a href="#" class="modal_close" aria-label="close">x</a></p>
-<div class="modal_content">
-<h3>Do you want to create a Web Standard</h3>
-<p>Community and Business Group Reports are not yet W3C Standards. Some groups may wish for their work to continue on the W3C Recommendation Track, the <a href="/Consortium/Process/">Process</a> by which W3C charters Working Groups to develop Web standards. There are several advantages to advancing work to the Recommendation Track, including building stronger global consensus; systematic reviews for security, privacy, accessibility, and internationalization; a strong commitment from W3C to pursue broad interoperability, and additional W3C resources dedicated to advancing the work.</p>
-<p>Learn more about <a href="https://web.archive.org/web/20170621114813/http://www.w3.org/community/council/wiki/Transition_to_the_W3C_standards_track">the transition to the Recommendation Track</a>.</p>
-</div>
-</div>
-</div>
-</div>
-		</section>            <section class="bMargin">                
-                <p class="intro story-graphic">A <a href="/community/about/#cg">W3C Community Group</a> is an open forum, without fees, where Web developers and other stakeholders develop specifications, hold discussions, develop test suites, and connect with W3C's international community of Web experts.</p>
-                <a href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fgroups%2Fpropose_cg%2F" class="button action dark-green">Create a Community Group</a><br />
-                <p class="intro story-graphic">A <a href="/community/about/#bg">W3C Business Group</a> gives innovators that want to have an impact on the development of the Web in the near-term a vendor-neutral forum for collaborating with like-minded stakeholders, including W3C Members and non-Members.</p>
-                <a href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fgroups%2Fpropose_bg%2F" class="button action green">Create a Business Group</a>
-            </section>
-
-		<section id="recent-posts-3" class="widget-container widget_recent_entries">
-		<h3>Recent News</h3>
-		<ul>
-											<li>
-					<a href="https://www.w3.org/community/patcg/2021/10/14/call-for-participation-in-private-advertising-technology-community-group/">Call for Participation in Private Advertising Technology Community Group</a>
-											<span class="post-date">October 14, 2021</span>
-									</li>
-											<li>
-					<a href="https://www.w3.org/community/blog/2021/10/14/proposed-group-private-advertising-technology-community-group/">Proposed Group: Private Advertising Technology Community Group</a>
-											<span class="post-date">October 14, 2021</span>
-									</li>
-											<li>
-					<a href="https://www.w3.org/community/music-notation/2021/10/12/co-chair-meeting-october-12-2021/">Co-chair meeting: October 12, 2021</a>
-											<span class="post-date">October 12, 2021</span>
-									</li>
-											<li>
-					<a href="https://www.w3.org/community/blog/2021/10/09/proposed-group-blockchain-wallet-exchange-platform-community-group/">Proposed Group: Blockchain Wallet &amp; Exchange Platform Community Group</a>
-											<span class="post-date">October 9, 2021</span>
-									</li>
-											<li>
-					<a href="https://www.w3.org/community/coga-community/2021/10/06/call-for-participation-literature-review-on-mental-health-and-web-design/">Call for participation: Literature review on mental health and web design</a>
-											<span class="post-date">October 6, 2021</span>
-									</li>
-					</ul>
-
-		</section><section id="nav_menu-12" class="widget-container widget_nav_menu"><h3>More News</h3><div class="menu-news-archives-container"><ul id="menu-news-archives" class="menu"><li id="menu-item-7252" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7252"><a href="/community/blog/2019/">2019</a></li>
-<li id="menu-item-7251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7251"><a href="/community/blog/2018/">2018</a></li>
-<li id="menu-item-6371" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6371"><a href="/community/blog/2017/">2017</a></li>
-<li id="menu-item-6370" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6370"><a href="/community/blog/2016/">2016</a></li>
-<li id="menu-item-4662" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4662"><a href="/community/blog/2015/">2015</a></li>
-<li id="menu-item-4640" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4640"><a href="/community/blog/2014/">2014</a></li>
-<li id="menu-item-4661" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4661"><a href="/community/blog/2013/">2013</a></li>
-<li id="menu-item-4663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4663"><a href="/community/blog/2012/">2012</a></li>
-<li id="menu-item-4664" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4664"><a href="/community/blog/2011">2011</a></li>
-</ul></div></section><section id="text-17" class="widget-container widget_text"><h3>Tools</h3>			<div class="textwidget"><section class="tools">
-<ul>
-<li class="facebook_icon"><a href="https://www.facebook.com/thew3c">W3C on Facebook</a></li>
-<li class="twitter_icon"><a href="https://twitter.com/search?src=typd&#038;q=%23w3ccommunity">W3C on Twitter</a></li>
-<li class="rss_icon"><a href="/community?feed=rss">Subscribe to our RSS feed</a></li>
-</ul>
-</section>
-</div>
-		</section>					
-					
-				</div><!-- .sidebar -->
-			
-		
-
-
-
-	</div> <!-- end .center -->
-
-  
-
-	    <!-- Footer -->
-	    <div id="w3c_footer">
-	        <div class="logo-footer"><a href="/community"><img src="/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo-footer.svg" alt="Community and Business Groups"></a></div>
-	        <div class="center">
-	            <h2 class="visuallyhidden">Footer Navigation</h2>
-	            <div class="footer-nav">
-	              <h3>Navigation</h3>
-	              <ul class="footer_top_nav">
-	                <li><a href="/">Home</a></li>
-	                <li><a href="/standards/">Standards</a></li>
-	                <li><a href="/participate/">Participate</a></li>
-	                <li><a href="/Consortium/membership">Membership</a></li>
-	                <li><a href="/Consortium/">About W3C</a></li>
-	              </ul>
-	            </div>
-	            <div class="footer-nav">
-	              <h3>Contact W3C</h3>
-	              <ul class="footer_bottom_nav">
-	                <li><a href="/Consortium/contact">Contact</a></li>
-	                <li><a accesskey="0" href="/Help/">Help and FAQ</a></li>
-	                <li><a href="/Consortium/sponsor/">Sponsor / Donate</a></li>
-	                <li><a href="/Consortium/siteindex">Site Map</a></li>
-	                <li>
-	                  <address id="w3c_signature">
-	                  <a href="mailto:site-comments@w3.org">Feedback</a> (<a href="http://lists.w3.org/Archives/Public/site-comments/">archive</a>)
-	                  </address>
-	                </li>
-	              </ul>
-	            </div>
-	            <div class="footer-nav">
-	              <h3>W3C Updates</h3>
-	              <ul class="footer_follow_nav">
-		                 <li>
-	   	   <a href="http://twitter.com/W3C" title="Follow W3C on Twitter"><img src="/2008/site/images/Twitter_bird_logo_2012.svg" alt="Twitter" class="social-icon" height="40"/></a>
+      <nav id="access" class="right main-nav">
+        <ul id="menu-top-menu">
+          <li
+            id="menu-item-60"
+            class="
+              cg
+              menu-item menu-item-type-custom menu-item-object-custom
+              current-menu-item
+              menu-item-home menu-item-60
+            "
+          >
+            <a title="Groups" href="/community/groups/"
+              ><span>Current Groups</span></a
+            >
           </li>
-	              </ul>
-	            </div>
-
-				<!-- #footer address / page signature -->
-				<footer class="clear copyright">Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</footer>
-
-	        </div><!-- .center -->
-	    </div>
-
-<!-- modal window - propose a community group - not logged in -->
-<div id="login-modal" role="dialog">
-  <div class="modal">
-    <header><p>Log In</p></header>
-    <a href="#" class="modal_close" tabindex="8">x</a>
-    <div class="modal_content arrow-down">
-      <form name="loginform" id="loginform" action="https://www.w3.org/community/wp-login.php" method="post">
-        <div class="wrap-input">
-        	<label for="user_login" class="visuallyhidden">Username:</label>
-         	<input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="3" placeholder="username" autofocus />
-
-			<label for="user_pass" class="visuallyhidden">Password:</label>
-         	<input type="password" name="pwd" id="user_pass" class="input highlight" value="" size="20" tabindex="4" placeholder="password"/>
-        </div>
-        <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="5"/> Remember me</label></p>
-        <p class="submit">
-          <button type="submit" name="wp-submit" id="wp-submit" class="button action dark-green" value="Log In" tabindex="6">Log in</button> <span class="separator">or</span>
-          <a class="button action green none" href="http://www.w3.org/accounts/request" tabindex="7" >Request an account</a>
-          <input type="hidden" name="redirect_to" value="/community/wp-admin/"/>
-          <input type="hidden" name="testcookie" value="1"/>
-        </p>
-      </form>
+          <li
+            id="menu-item-57"
+            class="
+              rp
+              menu-item
+              menu-item-type-custom
+              menu-item-object-custom
+              menu-item-57
+            "
+          >
+            <a href="/community/reports/"><span>Reports</span></a>
+          </li>
+          <li
+            id="menu-item-59"
+            class="
+              ab
+              menu-item
+              menu-item-type-post_type
+              menu-item-object-page menu-item-59
+            "
+          >
+            <a title="About" href="/community/about/"><span>About</span></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- #access -->
     </div>
-  </div>
-</div>
 
-	    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-	    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	    <script type='text/javascript' src='/community/src/templates/wordpress/StoryTeller/js/jquery.tinysort.min.js'></script>
-	    <script src="/community/src/templates/wordpress/StoryTeller/js/underscore-min.js"></script>
-	    <script src="/community/src/templates/wordpress/StoryTeller/js/backbone-min.js"></script>
-	    <script src="/community/src/templates/wordpress/StoryTeller/js/plugins.js"></script>
-	    <script src="/community/src/templates/wordpress/StoryTeller/js/main.js"></script>
+    <div class="center">
+      <div class="maincolumn">
+        <div class="textwidget">
+          <p class="main-intro">
+            W3C Community and Business Groups give developers, designers, and
+            anyone passionate about the Web a place to hold discussions and
+            publish ideas. These groups are proposed and run by the community.
+          </p>
+        </div>
+        <!-- Recent groups section -->
+        <section class="main-groups">
+          <header class="section-title">
+            <h1 id="content">Join new groups</h1>
+            <a
+              href="/community/about/faq/#how-do-i-join-a-group"
+              class="tooltip information"
+              ><span>More on how to join a group</span></a
+            >
+          </header>
 
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['setVisitorCookieTimeout', '33696000']);
-_paq.push(['setSessionCookieTimeout', '1800']);
-_paq.push(['setReferralCookieTimeout', '15778463']);
-_paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://www.w3.org/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'js/index.php']);
-    _paq.push(['setSiteId', '25']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'js/index.php'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
-<noscript><p><img src="https://www.w3.org/analytics/piwik/js/index.php?idsite=25&rec=1" style="border:0;" alt="" /></p></noscript>
-<script type='text/javascript' src='https://www.w3.org/community/wp-includes/js/hoverintent-js.min.js?ver=2.2.1' id='hoverintent-js-js'></script>
-<script type='text/javascript' src='https://www.w3.org/community/wp-includes/js/admin-bar.min.js?ver=788bdf01c4eb08cc6a9d1b628784f3a5' id='admin-bar-js'></script>
-<script type='text/javascript' src='https://www.w3.org/community/wp-content/plugins/enlighter/cache/X1_enlighterjs.min.js?ver=5RB/eCCvrGE8olH' id='enlighterjs-js'></script>
-<script type='text/javascript' id='enlighterjs-js-after'>
-!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"enlighter","language":"enlighter","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
-</script>
-<script type='text/javascript' src='https://www.w3.org/community/wp-includes/js/wp-embed.min.js?ver=788bdf01c4eb08cc6a9d1b628784f3a5' id='wp-embed-js'></script>
-<script type='text/javascript' src='https://www.w3.org/community/wp-content/plugins/wp-piwik/js/chartjs/chart.min.js?ver=788bdf01c4eb08cc6a9d1b628784f3a5' id='wp-piwik-chartjs-js'></script>
+          <!-- Each group in one article -->
+          <article class="clearfix">
+            <h2 class="group-title">
+              <a href="/community/patcg"
+                >Private Advertising Technology Community Group</a
+              >
+            </h2>
+            <div class="left group-desc">
+              <p class="group-desc-cont">
+                The mission of the Private Advertising Technology Community
+                Group is to incubate web features and APIs that support...
+                <a href="/community/patcg/">More</a>
+              </p>
+              <a
+                href="/community/wp-login.php?redirect_to=%2Fcommunity%2Fpatcg%2Fjoin"
+                class="button action orange"
+                >Join group</a
+              >
+            </div>
+            <aside class="right group-info">
+              <p class="group-label">
+                Launched: <time datetime="2021-10-14 ">2021-10-14 </time>
+              </p>
+              <p class="group-label">Participants: <span>39</span></p>
+            </aside>
+          </article>
+          <article class="clearfix">
+            <h2 class="group-title">
+              <a href="/community/coga-community"
+                >Cognitive Accessibility Community Group</a
+              >
+            </h2>
+            <div class="left group-desc">
+              <p class="group-desc-cont">
+                Mission The mission of the COGA Community Group is to work with
+                and support the Cognitive and Learning...
+                <a href="/community/coga-community/">More</a>
+              </p>
+              <a
+                href="/community/wp-login.php?redirect_to=%2Fcommunity%2Fcoga-community%2Fjoin"
+                class="button action orange"
+                >Join group</a
+              >
+            </div>
+            <aside class="right group-info">
+              <p class="group-label">
+                Launched: <time datetime="2021-08-09 ">2021-08-09 </time>
+              </p>
+              <p class="group-label">Participants: <span>43</span></p>
+            </aside>
+          </article>
+          <article class="clearfix">
+            <h2 class="group-title">
+              <a href="/community/fed-id">Federated Identity Community Group</a>
+            </h2>
+            <div class="left group-desc">
+              <p class="group-desc-cont">
+                The purpose of the Federated Identity Community Group is to
+                provide a forum focused on incubating web features that...
+                <a href="/community/fed-id/">More</a>
+              </p>
+              <a
+                href="/community/wp-login.php?redirect_to=%2Fcommunity%2Ffed-id%2Fjoin"
+                class="button action orange"
+                >Join group</a
+              >
+            </div>
+            <aside class="right group-info">
+              <p class="group-label">
+                Launched: <time datetime="2021-07-06 ">2021-07-06 </time>
+              </p>
+              <p class="group-label">Participants: <span>122</span></p>
+            </aside>
+          </article>
+          <a
+            title="More groups to join"
+            class="tooltip view-more on-home"
+            href="/community/groups"
+            ><span>More groups to join</span></a
+          >
+        </section>
 
-</body>
+        <!-- Proposed groups section -->
+        <section class="main-groups">
+          <header class="section-title">
+            <h1 id="support">Support newly proposed groups</h1>
+            <a
+              href="/community/about/faq/#how-do-i-support-creation-of-a-group"
+              class="tooltip information"
+              ><span>More on how to support a group</span></a
+            >
+          </header>
+
+          <!-- Each group in one article -->
+          <article class="clearfix">
+            <h2 class="group-title">
+              <a
+                href="https://www.w3.org/community/blog/2021/10/09/proposed-group-blockchain-wallet-exchange-platform-community-group/"
+                >Blockchain Wallet &amp; Exchange Platform Community Group</a
+              >
+            </h2>
+            <div class="left group-desc">
+              <p class="group-desc-cont">
+                The purpose of this community group is to establish and explore
+                the technology challenges for blockchain wallet and...
+                <a
+                  href="https://www.w3.org/community/blog/2021/10/09/proposed-group-blockchain-wallet-exchange-platform-community-group/"
+                  >More</a
+                >
+              </p>
+              <a
+                class="button action orange"
+                href="/community/wp-login.php?redirect_to=%2Fcommunity"
+                >Support creation</a
+              >
+              <a
+                href="https://www.w3.org/community/blog/2021/10/09/proposed-group-blockchain-wallet-exchange-platform-community-group/#comments"
+                class="tooltip comment-more inline"
+                ><span>Comment on the proposal</span></a
+              >
+            </div>
+            <aside class="right group-info">
+              <p class="group-label">
+                Proposed: <time datetime="2021-10-09">2021-10-09</time>
+              </p>
+              <p rel="author" class="group-label">
+                Author: <span>Frank Corsi</span>
+              </p>
+              <p class="supporters no4">
+                <a
+                  title="Community Groups launch once at least five individuals have expressed support."
+                  href="/community/about/agreements/#complete-proposal"
+                  >No. of supporters</a
+                >: 4<span></span>
+              </p>
+            </aside>
+          </article>
+          <article class="clearfix">
+            <h2 class="group-title">
+              <a
+                href="https://www.w3.org/community/blog/2021/09/29/proposed-group-consent-name-system-community-group/"
+                >Consent Name System Community Group</a
+              >
+            </h2>
+            <div class="left group-desc">
+              <p class="group-desc-cont">
+                Our mission: design and build the 3rd generation of the CNS to
+                be deployed globally as a free commons, a sibling to...
+                <a
+                  href="https://www.w3.org/community/blog/2021/09/29/proposed-group-consent-name-system-community-group/"
+                  >More</a
+                >
+              </p>
+              <a
+                class="button action orange"
+                href="/community/wp-login.php?redirect_to=%2Fcommunity"
+                >Support creation</a
+              >
+              <a
+                href="https://www.w3.org/community/blog/2021/09/29/proposed-group-consent-name-system-community-group/#comments"
+                class="tooltip comment-more inline"
+                ><span>Comment on the proposal</span></a
+              >
+            </div>
+            <aside class="right group-info">
+              <p class="group-label">
+                Proposed: <time datetime="2021-09-29">2021-09-29</time>
+              </p>
+              <p rel="author" class="group-label">
+                Author: <span>Jay Glasgow</span>
+              </p>
+              <p class="supporters no3">
+                <a
+                  title="Community Groups launch once at least five individuals have expressed support."
+                  href="/community/about/agreements/#complete-proposal"
+                  >No. of supporters</a
+                >: 3<span></span>
+              </p>
+            </aside>
+          </article>
+        </section>
+      </div>
+      <!-- .maincolumn -->
+
+      <div class="sidebar">
+        <section id="text-18" class="widget-container widget_text">
+          <div class="textwidget">
+            <section class="story">
+              <div class="wheels-container">
+                <div
+                  class="green-wheel"
+                  style="transform: rotate(114deg)"
+                ></div>
+                <div
+                  class="orange-wheel"
+                  style="transform: rotate(-114deg)"
+                ></div>
+                <div
+                  class="brown-wheel"
+                  style="transform: rotate(114deg)"
+                ></div>
+              </div>
+              <div class="idea">
+                <p>Share an idea</p>
+                <p>
+                  <a href="#" class="tooltip graphic" data-group="#idea-modal"
+                    ><span>Learn how to build support</span></a
+                  >
+                </p>
+              </div>
+
+              <div class="create-group">
+                <p>Propose a group</p>
+                <p>
+                  <a
+                    href="#"
+                    class="leanModal tooltip graphic"
+                    data-group="#create-modal"
+                    ><span>Learn how to propose a group</span></a
+                  >
+                </p>
+              </div>
+
+              <div class="publish">
+                <p>Publish a Report</p>
+                <p>
+                  <a
+                    href="#"
+                    class="leanModal tooltip graphic"
+                    data-group="#publish-modal"
+                    ><span>Learn how to publish a report</span></a
+                  >
+                </p>
+              </div>
+
+              <div class="success">
+                <p>Take it to the Next Level</p>
+                <p>
+                  <a
+                    href="#"
+                    class="leanModal tooltip graphic"
+                    data-group="#success-modal"
+                    ><span>Learn about how turn reports into standards</span></a
+                  >
+                </p>
+              </div>
+            </section>
+            <div
+              id="idea-modal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="idea-modal-header"
+            >
+              <div class="modal">
+                <header id="idea-modal-header">
+                  <p>Share your idea</p>
+                </header>
+                <p><a href="#" class="modal_close" aria-label="close">x</a></p>
+                <div class="modal_content">
+                  <h3>Look for an initial community of interest</h3>
+                  <p>
+                    Before getting started, check the
+                    <a href="/community/groups/">list of current groups</a> to
+                    see if people are already discussing your topic. You can
+                    join their group, or propose your own if you think your work
+                    will not overlap.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              id="create-modal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="create-modal-header"
+            >
+              <div class="modal">
+                <header id="create-modal-header">
+                  <p>Propose a group</p>
+                </header>
+                <p><a href="#" class="modal_close" aria-label="close">x</a></p>
+                <div class="modal_content">
+                  <h3>Anyone can propose a group</h3>
+                  <ol></ol>
+                  <p>
+                    Anyone with a
+                    <a href="/accounts/request">W3C account</a> may propose a
+                    new group:
+                  </p>
+                  <ol>
+                    <li>
+                      Propose a group with a title and short summary. The
+                      description should provide enough information that will
+                      help people decide whether to join, such as a brief
+                      statement of the group&#8217;s mission, goals, and
+                      deliverables. Please state clearly whether the group will
+                      create specifications.
+                    </li>
+                    <li>
+                      Get four more people (or, for Business Groups,
+                      organizations) to support the group by pushing a button to
+                      show their support. The button is available on the list of
+                      <a href="/community/groups/proposed">proposed groups</a>
+                      but you must be logged in to see it. If you have already
+                      shown support for the group, the button is no longer
+                      available.
+                    </li>
+                    <li>
+                      W3C then launches the group and people can
+                      <a href="/community/about/faq/#how-do-i-join-a-group"
+                        >join</a
+                      >, which involves agreeing to
+                      <a href="/community/about/agreements/">process</a><br />
+                      and
+                      <a href="/community/about/agreements/cla/">licensing</a>
+                      terms. W3C Membership is not required to join a Community
+                      or Business Group.<br />
+                      There is no fee to join a Community Group but there<br />
+                      are <a href="/community/about/fees/">fees</a> for
+                      non-Members to join a Business Group.
+                    </li>
+                  </ol>
+                  <p>
+                    <a
+                      href="/community/groups/propose_cg"
+                      title="Start a community group"
+                      class="button action dark-green"
+                      >Create a Community Group</a
+                    ><br />
+                    <a
+                      href="/community/groups/propose_bg"
+                      title="Start a business group"
+                      class="button action green"
+                      >Create a Business Group</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              id="publish-modal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="publish-modal-header"
+            >
+              <div class="modal">
+                <header id="publish-modal-header">
+                  <p>Learn how to publish a report</p>
+                </header>
+                <p><a href="#" class="modal_close" aria-label="close">x</a></p>
+                <div class="modal_content">
+                  <h3>Chairs can publish group reports</h3>
+                  <p>
+                    Some Community and Business Groups publish reports. Each
+                    group must have a Chair, and the Chair is empowered to
+                    publish the group&#8217;s reports. Publishing a report
+                    announces it to the community, lists it on the group&#8217;s
+                    home page, and adds to the
+                    <a href="/community/reports/">list of all reports</a>.<br />
+                    Reports must satisfy a small number of
+                    <a href="/community/reports/reqs/">requirements</a>.
+                    Participants make Royalty-Free patent licensing commitments
+                    to specifications published by Community and Business
+                    Groups, and the material is available under a
+                    <a href="/community/about/agreements/cla-deed/"
+                      >permissive copyright license</a
+                    >.
+                  </p>
+                  <p>
+                    Once a group has completed its work, it can publish a final
+                    report and call for stronger patent licensing commitments
+                    under the
+                    <a href="/community/about/agreements/fsa-deed/"
+                      >Final Specification Agreement</a
+                    >.
+                  </p>
+                  <p>
+                    Learn more about
+                    <a
+                      href="/community/about/faq/#how-do-we-publish-a-specification"
+                      >how Chairs publish a report</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              id="success-modal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="success-modal-header"
+            >
+              <div class="modal">
+                <header id="success-modal-header">
+                  <p>Take it to the Next Level</p>
+                </header>
+                <p><a href="#" class="modal_close" aria-label="close">x</a></p>
+                <div class="modal_content">
+                  <h3>Do you want to create a Web Standard</h3>
+                  <p>
+                    Community and Business Group Reports are not yet W3C
+                    Standards. Some groups may wish for their work to continue
+                    on the W3C Recommendation Track, the
+                    <a href="/Consortium/Process/">Process</a> by which W3C
+                    charters Working Groups to develop Web standards. There are
+                    several advantages to advancing work to the Recommendation
+                    Track, including building stronger global consensus;
+                    systematic reviews for security, privacy, accessibility, and
+                    internationalization; a strong commitment from W3C to pursue
+                    broad interoperability, and additional W3C resources
+                    dedicated to advancing the work.
+                  </p>
+                  <p>
+                    Learn more about
+                    <a
+                      href="https://web.archive.org/web/20170621114813/http://www.w3.org/community/council/wiki/Transition_to_the_W3C_standards_track"
+                      >the transition to the Recommendation Track</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bMargin">
+          <p class="intro story-graphic">
+            A <a href="/community/about/#cg">W3C Community Group</a> is an open
+            forum, without fees, where Web developers and other stakeholders
+            develop specifications, hold discussions, develop test suites, and
+            connect with W3C's international community of Web experts.
+          </p>
+          <a
+            href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fgroups%2Fpropose_cg%2F"
+            class="button action dark-green"
+            >Create a Community Group</a
+          ><br />
+          <p class="intro story-graphic">
+            A <a href="/community/about/#bg">W3C Business Group</a> gives
+            innovators that want to have an impact on the development of the Web
+            in the near-term a vendor-neutral forum for collaborating with
+            like-minded stakeholders, including W3C Members and non-Members.
+          </p>
+          <a
+            href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fgroups%2Fpropose_bg%2F"
+            class="button action green"
+            >Create a Business Group</a
+          >
+        </section>
+
+        <section
+          id="recent-posts-3"
+          class="widget-container widget_recent_entries"
+        >
+          <h3>Recent News</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.w3.org/community/patcg/2021/10/14/call-for-participation-in-private-advertising-technology-community-group/"
+                >Call for Participation in Private Advertising Technology
+                Community Group</a
+              >
+              <span class="post-date">October 14, 2021</span>
+            </li>
+            <li>
+              <a
+                href="https://www.w3.org/community/blog/2021/10/14/proposed-group-private-advertising-technology-community-group/"
+                >Proposed Group: Private Advertising Technology Community
+                Group</a
+              >
+              <span class="post-date">October 14, 2021</span>
+            </li>
+            <li>
+              <a
+                href="https://www.w3.org/community/music-notation/2021/10/12/co-chair-meeting-october-12-2021/"
+                >Co-chair meeting: October 12, 2021</a
+              >
+              <span class="post-date">October 12, 2021</span>
+            </li>
+            <li>
+              <a
+                href="https://www.w3.org/community/blog/2021/10/09/proposed-group-blockchain-wallet-exchange-platform-community-group/"
+                >Proposed Group: Blockchain Wallet &amp; Exchange Platform
+                Community Group</a
+              >
+              <span class="post-date">October 9, 2021</span>
+            </li>
+            <li>
+              <a
+                href="https://www.w3.org/community/coga-community/2021/10/06/call-for-participation-literature-review-on-mental-health-and-web-design/"
+                >Call for participation: Literature review on mental health and
+                web design</a
+              >
+              <span class="post-date">October 6, 2021</span>
+            </li>
+          </ul>
+        </section>
+        <section id="nav_menu-12" class="widget-container widget_nav_menu">
+          <h3>More News</h3>
+          <div class="menu-news-archives-container">
+            <ul id="menu-news-archives" class="menu">
+              <li
+                id="menu-item-7252"
+                class="
+                  menu-item
+                  menu-item-type-custom
+                  menu-item-object-custom
+                  menu-item-7252
+                "
+              >
+                <a href="/community/blog/2019/">2019</a>
+              </li>
+              <li
+                id="menu-item-7251"
+                class="
+                  menu-item
+                  menu-item-type-custom
+                  menu-item-object-custom
+                  menu-item-7251
+                "
+              >
+                <a href="/community/blog/2018/">2018</a>
+              </li>
+              <li
+                id="menu-item-6371"
+                class="
+                  menu-item
+                  menu-item-type-custom
+                  menu-item-object-custom
+                  menu-item-6371
+                "
+              >
+                <a href="/community/blog/2017/">2017</a>
+              </li>
+              <li
+                id="menu-item-6370"
+                class="
+                  menu-item
+                  menu-item-type-custom
+                  menu-item-object-custom
+                  menu-item-6370
+                "
+              >
+                <a href="/community/blog/2016/">2016</a>
+              </li>
+              <li
+                id="menu-item-4662"
+                class="
+                  menu-item
+                  menu-item-type-custom
+                  menu-item-object-custom
+                  menu-item-4662
+                "
+              >
+                <a href="/community/blog/2015/">2015</a>
+              </li>
+              <li
+                id="menu-item-4640"
+                class="
+                  menu-item
+                  menu-item-type-custom
+                  menu-item-object-custom
+                  menu-item-4640
+                "
+              >
+                <a href="/community/blog/2014/">2014</a>
+              </li>
+              <li
+                id="menu-item-4661"
+                class="
+                  menu-item
+                  menu-item-type-custom
+                  menu-item-object-custom
+                  menu-item-4661
+                "
+              >
+                <a href="/community/blog/2013/">2013</a>
+              </li>
+              <li
+                id="menu-item-4663"
+                class="
+                  menu-item
+                  menu-item-type-custom
+                  menu-item-object-custom
+                  menu-item-4663
+                "
+              >
+                <a href="/community/blog/2012/">2012</a>
+              </li>
+              <li
+                id="menu-item-4664"
+                class="
+                  menu-item
+                  menu-item-type-custom
+                  menu-item-object-custom
+                  menu-item-4664
+                "
+              >
+                <a href="/community/blog/2011">2011</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="text-17" class="widget-container widget_text">
+          <h3>Tools</h3>
+          <div class="textwidget">
+            <section class="tools">
+              <ul>
+                <li class="facebook_icon">
+                  <a href="https://www.facebook.com/thew3c">W3C on Facebook</a>
+                </li>
+                <li class="twitter_icon">
+                  <a
+                    href="https://twitter.com/search?src=typd&#038;q=%23w3ccommunity"
+                    >W3C on Twitter</a
+                  >
+                </li>
+                <li class="rss_icon">
+                  <a href="/community?feed=rss">Subscribe to our RSS feed</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </section>
+      </div>
+      <!-- .sidebar -->
+    </div>
+    <!-- end .center -->
+
+    <!-- Footer -->
+    <div id="w3c_footer">
+      <div class="logo-footer">
+        <a href="/community"
+          ><img
+            src="/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo-footer.svg"
+            alt="Community and Business Groups"
+        /></a>
+      </div>
+      <div class="center">
+        <h2 class="visuallyhidden">Footer Navigation</h2>
+        <div class="footer-nav">
+          <h3>Navigation</h3>
+          <ul class="footer_top_nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/standards/">Standards</a></li>
+            <li><a href="/participate/">Participate</a></li>
+            <li><a href="/Consortium/membership">Membership</a></li>
+            <li><a href="/Consortium/">About W3C</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>Contact W3C</h3>
+          <ul class="footer_bottom_nav">
+            <li><a href="/Consortium/contact">Contact</a></li>
+            <li><a accesskey="0" href="/Help/">Help and FAQ</a></li>
+            <li><a href="/Consortium/sponsor/">Sponsor / Donate</a></li>
+            <li><a href="/Consortium/siteindex">Site Map</a></li>
+            <li>
+              <address id="w3c_signature">
+                <a href="mailto:site-comments@w3.org">Feedback</a> (<a
+                  href="http://lists.w3.org/Archives/Public/site-comments/"
+                  >archive</a
+                >)
+              </address>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>W3C Updates</h3>
+          <ul class="footer_follow_nav">
+            <li>
+              <a href="http://twitter.com/W3C" title="Follow W3C on Twitter"
+                ><img
+                  src="/2008/site/images/Twitter_bird_logo_2012.svg"
+                  alt="Twitter"
+                  class="social-icon"
+                  height="40"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- #footer address / page signature -->
+        <footer class="clear copyright">
+          Copyright &#xA9; 2021 W3C <sup>&#xAE;</sup> (<a
+            href="http://www.csail.mit.edu/"
+            ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+          >,
+          <a href="http://www.ercim.eu/"
+            ><abbr
+              title="European Research Consortium for Informatics and Mathematics"
+              >ERCIM</abbr
+            ></a
+          >, <a href="http://www.keio.ac.jp/">Keio</a>,
+          <a href="http://ev.buaa.edu.cn/">Beihang</a>)
+          <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.
+        </footer>
+      </div>
+      <!-- .center -->
+    </div>
+
+    <!-- modal window - propose a community group - not logged in -->
+    <div id="login-modal" role="dialog">
+      <div class="modal">
+        <header><p>Log In</p></header>
+        <a href="#" class="modal_close" tabindex="8">x</a>
+        <div class="modal_content arrow-down">
+          <form
+            name="loginform"
+            id="loginform"
+            action="https://www.w3.org/community/wp-login.php"
+            method="post"
+          >
+            <div class="wrap-input">
+              <label for="user_login" class="visuallyhidden">Username:</label>
+              <input
+                type="text"
+                name="log"
+                id="user_login"
+                class="input"
+                value=""
+                size="20"
+                tabindex="3"
+                placeholder="username"
+                autofocus
+              />
+
+              <label for="user_pass" class="visuallyhidden">Password:</label>
+              <input
+                type="password"
+                name="pwd"
+                id="user_pass"
+                class="input highlight"
+                value=""
+                size="20"
+                tabindex="4"
+                placeholder="password"
+              />
+            </div>
+            <p class="forgetmenot">
+              <label for="rememberme"
+                ><input
+                  name="rememberme"
+                  type="checkbox"
+                  id="rememberme"
+                  value="forever"
+                  tabindex="5"
+                />
+                Remember me</label
+              >
+            </p>
+            <p class="submit">
+              <button
+                type="submit"
+                name="wp-submit"
+                id="wp-submit"
+                class="button action dark-green"
+                value="Log In"
+                tabindex="6"
+              >
+                Log in
+              </button>
+              <span class="separator">or</span>
+              <a
+                class="button action green none"
+                href="http://www.w3.org/accounts/request"
+                tabindex="7"
+                >Request an account</a
+              >
+              <input
+                type="hidden"
+                name="redirect_to"
+                value="/community/wp-admin/"
+              />
+              <input type="hidden" name="testcookie" value="1" />
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-1.7.2.min.js"><\/script>'
+        );
+    </script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script
+      type="text/javascript"
+      src="/community/src/templates/wordpress/StoryTeller/js/jquery.tinysort.min.js"
+    ></script>
+    <script src="/community/src/templates/wordpress/StoryTeller/js/underscore-min.js"></script>
+    <script src="/community/src/templates/wordpress/StoryTeller/js/backbone-min.js"></script>
+    <script src="/community/src/templates/wordpress/StoryTeller/js/plugins.js"></script>
+    <script src="/community/src/templates/wordpress/StoryTeller/js/main.js"></script>
+
+    <!-- Matomo -->
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setVisitorCookieTimeout", "33696000"]);
+      _paq.push(["setSessionCookieTimeout", "1800"]);
+      _paq.push(["setReferralCookieTimeout", "15778463"]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "https://www.w3.org/analytics/piwik/";
+        _paq.push(["setTrackerUrl", u + "js/index.php"]);
+        _paq.push(["setSiteId", "25"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.async = true;
+        g.src = u + "js/index.php";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+    <noscript
+      ><p>
+        <img
+          src="https://www.w3.org/analytics/piwik/js/index.php?idsite=25&rec=1"
+          style="border: 0"
+          alt=""
+        /></p
+    ></noscript>
+    <script
+      type="text/javascript"
+      src="https://www.w3.org/community/wp-includes/js/hoverintent-js.min.js?ver=2.2.1"
+      id="hoverintent-js-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.w3.org/community/wp-includes/js/admin-bar.min.js?ver=788bdf01c4eb08cc6a9d1b628784f3a5"
+      id="admin-bar-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.w3.org/community/wp-content/plugins/enlighter/cache/X1_enlighterjs.min.js?ver=5RB/eCCvrGE8olH"
+      id="enlighterjs-js"
+    ></script>
+    <script type="text/javascript" id="enlighterjs-js-after">
+      !(function (e, n) {
+        if ("undefined" != typeof EnlighterJS) {
+          var o = {
+            selectors: {
+              block: "pre.EnlighterJSRAW",
+              inline: "code.EnlighterJSRAW",
+            },
+            options: {
+              indent: 4,
+              ampersandCleanup: true,
+              linehover: true,
+              rawcodeDbclick: false,
+              textOverflow: "break",
+              linenumbers: true,
+              theme: "enlighter",
+              language: "enlighter",
+              retainCssClasses: false,
+              collapse: false,
+              toolbarOuter: "",
+              toolbarTop: "{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}",
+              toolbarBottom: "",
+            },
+          };
+          (e.EnlighterJSINIT = function () {
+            EnlighterJS.init(o.selectors.block, o.selectors.inline, o.options);
+          })();
+        } else {
+          ((n && (n.error || n.log)) || function () {})(
+            "Error: EnlighterJS resources not loaded yet!"
+          );
+        }
+      })(window, console);
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.w3.org/community/wp-includes/js/wp-embed.min.js?ver=788bdf01c4eb08cc6a9d1b628784f3a5"
+      id="wp-embed-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.w3.org/community/wp-content/plugins/wp-piwik/js/chartjs/chart.min.js?ver=788bdf01c4eb08cc6a9d1b628784f3a5"
+      id="wp-piwik-chartjs-js"
+    ></script>
+  </body>
 </html>

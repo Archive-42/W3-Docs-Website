@@ -1,0 +1,173 @@
+[<img src="../../img/w3c-bde9a11f.svg" alt="W3C" width="90" />](http://w3.org/) <a href="http://w3.org/WAI/" class="wai"><img src="../../img/wai-590850fc.svg" alt="Web Accessibility Initiative" /></a>
+
+[Web Accessibility Tutorials <span class="subheading">Guidance on how to create websites that meet WCAG</span>](../../)
+
+<a href="#nav" class="btn btn-jump">Jump to the navigation</a>
+
+<span class="home">[<span class="count"></span><span class="txt">Tutorials home</span>](../../)</span> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span> <span class="other"> [<span class="count"></span><span class="txt">Menus</span>](../) <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span> <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Menu Structure</span></span> </span>
+
+Menu Structure
+==============
+
+Semantic markup conveys the menu structure to users. Menus coded semantically can easily adapt to different situations, such as small screen displays, screen magnification, and other assistive technology.
+
+Menu representation
+-------------------
+
+Convey the menu structure, typically by using a list. Such structural information allows assistive technologies to announce the number of items in the menu and provide corresponding navigation functionality.
+
+### Unordered list
+
+Use an unordered list (`<ul>`) when the menu items are not in a specific order. Most types of menus, such as website navigation, fall in this category.
+
+Code snippet: Unordered List
+
+    <ul>
+        <li><a href="…">Home</a></li>
+        <li><a href="…">Shop</a></li>
+        <li><a href="…">Space Bears</a></li>
+        <li><a href="…">Mars Cars</a></li>
+        <li><a href="…">Contact</a></li>
+        …
+    </ul>
+
+### Ordered list
+
+Use an ordered list (`<ol>`) when the sequence of the menu items is important. In the following example, the menu items represent the steps of a construction manual:
+
+Code snippet: Ordered List
+
+    <ol>
+        <li><a href="…">Unpacking the Space Craft</a></li>
+        <li><a href="…">Check Contents of Package</a></li>
+        <li><a href="…">Build Chassis</a></li>
+        <li><a href="…">Build Engine</a></li>
+        <li><a href="…">Mount Engine to Chassis</a></li>
+        …
+    </ol>
+
+Identify menus
+--------------
+
+Identify the menu, ideally using the HTML5 `<nav>` element to allow users access to the menu directly. Other techniques to mark up a menu are described in the [page regions](../../page-structure/regions/) tutorial.
+
+Code snippet: HTML
+
+    <nav>
+        <ul>
+            …
+        </ul>
+    </nav>
+
+Label menus
+-----------
+
+Label menus to make them easier to find and understand. Labels should be short but descriptive, to allow users to distinguish between multiple menus on a web page. Use a heading, `aria-label`, or `aria-labelledby` to provide the label. Those techniques are described in the [labeling regions](../../page-structure/labels/) tutorial.
+
+Code snippet: HTML
+
+    <nav aria-labelledby="mainmenulabel">
+        <h2 id="mainmenulabel" class="visuallyhidden">Main Menu</h2>
+    </nav>
+
+Indicate the current item
+-------------------------
+
+Use markup to indicate the current item of a menu, such as the current page on a website, to improve orientation in the menu.
+
+### Using invisible text
+
+Provide an invisible label that is read aloud to screen reader users and used by other assistive technologies to mark the current item which allows custom label text.
+
+Remove the anchor (`<a>`), so users cannot interact with the current item. That avoids misunderstandings and emphasizes that the current menu item is active.
+
+In the following example, the menu item has the invisible text “Current Page:” and the `<a>` element is replaced by a `<span>` with a class `current`:
+
+Code snippet: HTML
+
+    <li>
+        <span class="current">
+            <span class="visuallyhidden">Current Page: </span>
+            Space Bears
+        </span>
+    </li>
+
+### Using WAI-ARIA
+
+Use the `aria-current="page"` attribute to indicate the current page in the menu. This technique is particularly useful when the anchor (`<a>`) cannot be removed from the HTML.
+
+In the following example the link in the navigation points to the main content of the page.
+
+Code snippet: HTML
+
+    <li>
+        <a href="#main" aria-current="page">
+        Space Bears
+        </a>
+    </li>
+
+Related WCAG resources
+----------------------
+
+These tutorials provide best-practice guidance on implementing accessibility in different situations. This page combined the following WCAG success criteria and techniques from different conformance levels:
+
+**Success Criteria:**
+
+-   [4.1.2 Name, Role, Value:](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value) For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)
+
+**Techniques:**
+
+-   [ARIA6: Using aria-label to provide labels for objects](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA6)
+-   [ARIA11: Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA11)
+
+-   [<span class="count"></span><span class="txt"><span class="dir">Previous:</span><span class="title">Menu Concepts</span></span>](../)
+-   [<span class="count"></span><span class="txt"><span class="dir">Next:</span><span class="title">Styling</span></span>](../styling/)
+
+We welcome your ideas
+---------------------
+
+Please send any ideas, suggestions, or comments to the [(publicly-archived) mailing list wai-eo-editors@w3.org](mailto:wai-eo-editors@w3.org?subject=%5BTutorial%20Feedback%5D). You can also contribute to the [code directly on Github](https://github.com/w3c/wai-tutorials).
+
+<a href="https://github.com/w3c/wai-tutorials/blob/master/source/menus/structure.html.erb.md" class="btn">Fork &amp; edit this page on Github</a>
+
+Menus Tutorial
+--------------
+
+-   [<span class="count"></span><span class="txt">Concepts</span>](../)
+-   <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Structure</span></span>
+-   [<span class="count"></span><span class="txt">Styling</span>](../styling/)
+-   [<span class="count"></span><span class="txt">Fly-out Menus</span>](../flyout/)
+-   [<span class="count"></span><span class="txt">Application Menus</span>](../application-menus/)
+-   [<span class="count"></span><span class="txt">Application Menu Example & Code</span>](../application-menus-code/)
+
+All Tutorials
+-------------
+
+-   [<span class="count"></span><span class="txt">Page Structure</span>](../../page-structure/)
+-   <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Menus</span></span>
+-   [<span class="count"></span><span class="txt">Images</span>](../../images/)
+-   [<span class="count"></span><span class="txt">Tables</span>](../../tables/)
+-   [<span class="count"></span><span class="txt">Forms</span>](../../forms/)
+-   [<span class="count"></span><span class="txt">Carousels</span>](../../carousels/)
+
+Document Information
+--------------------
+
+**Feedback: We welcome ideas for improvements, bug reports, and comments** via [GitHub](https://github.com/w3c/wai-tutorials) or e-mail to <wai-eo-editors@w3.org> (a publicly archived list) or <wai@w3.org> (a WAI staff-only list).
+
+-   **Status:** Updated 27 July 2019 (first published May 2015)
+-   Editors:
+    -   [Eric Eggert](https://www.w3.org/People/yatil/)
+    -   [Shadi Abou-Zahra](https://www.w3.org/People/shadi/)
+
+    Contributors:
+    -   The Education and Outreach Working Group ([EOWG](https://www.w3.org/WAI/EO/))
+
+-   Developed with support from the [WAI-ACT project](https://www.w3.org/WAI/ACT/), co-funded by the **European Commission IST Programme**.
+-   \[[<span class="count"></span><span class="txt">Attributions</span>](../../attributions/)\] \[[<span class="count"></span><span class="txt">Changelog</span>](../../changelog/)\]
+
+\[[WAI Site Map](https://www.w3.org/WAI/sitemap.html)\] \[[Help with WAI Website](https://www.w3.org/WAI/sitehelp.html)\] \[[Search](https://www.w3.org/WAI/search.php)\] \[[Contacting WAI](https://www.w3.org/WAI/contacts)\]
+
+Copyright © 2019 W3C <sup>®</sup> ([MIT](http://www.csail.mit.edu/), [ERCIM](http://www.ercim.eu/), [Keio](http://www.keio.ac.jp/), [Beihang](http://ev.buaa.edu.cn/)) [Usage policies apply](/Consortium/Legal/ipr-notice).
+
+![](//www.w3.org/analytics/piwik/piwik.php?idsite=328)

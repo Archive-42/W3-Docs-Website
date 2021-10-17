@@ -1,15 +1,12 @@
 [Skip ⬇](#intro "Skip to content")
 
-[![TPAC 2021](images/TPAC-2021-cover.svg)](./)
-==============================================
+# [![TPAC 2021](images/TPAC-2021-cover.svg)](./)
 
-12 / 18–29 October
-------------------
+## 12 / 18–29 October
 
 ### virtual meetings
 
-Navigation menu
----------------
+## Navigation menu
 
 ![W3C](../../../Icons/WWW/w3c_home_nb_transp.png)
 
@@ -21,12 +18,11 @@ On this page: [Participation & Registration](#participation)<span style="color: 
 
 <img src="images/twitter-logo-blue.png" alt="Twitter" class="icon" srcset="images/twitter-logo-blue.svg" height="18" /> Share your experience: [@w3c](http://twitter.com/W3C) [\#w3cTPAC](https://twitter.com/search?src=typd&q=w3cTPAC "Search #w3cTPAC on Twitter")
 
-W3C TPAC 2021
--------------
+## W3C TPAC 2021
 
 Welcome to our W3C annual conference!
 
-*If you are already [registered](https://www.w3.org/2021/10/TPAC/#participation) and you have received the second confirmation email you may [go directly to the TPAC Attendee Hub](https://eur.cvent.me/yGw02).*
+_If you are already [registered](https://www.w3.org/2021/10/TPAC/#participation) and you have received the second confirmation email you may [go directly to the TPAC Attendee Hub](https://eur.cvent.me/yGw02)._
 
 W3C's virtual 2021 TPAC focuses on collaborative meetings that gather the community to create momentum and collective brainstorming.
 
@@ -53,8 +49,7 @@ The name TPAC is familiar enough to regular W3C participants that we are still u
 
 <img src="images/wave-hand" height="200" />
 
-Participation and Registration
-------------------------------
+## Participation and Registration
 
 Before you register, take a moment to watch the TPAC 2021  
 logistics video or listen to the [audio description](logisticsAudioDescription),
@@ -75,8 +70,7 @@ Meeting Registration is now open!
 
 [Skip ⬇](#sponsors "Next section")
 
-Schedule and format
--------------------
+## Schedule and format
 
 [![](images/sched1) 12 Oct  
 AC meeting (member-only) ](ac-agenda.html) [![](images/sched2) 18–22 Oct  
@@ -88,8 +82,7 @@ group updates & demos](group-updates.html)
 
 [Skip ⬇](#footer "Next section")
 
-Sponsors
---------
+## Sponsors
 
 ### Title sponsor
 
@@ -111,14 +104,13 @@ For further details, contact <sponsorship@w3.org>
 
 [Top ⇱](#header "Back to top")
 
-Get help
---------
+## Get help
 
 If you have questions, assistance is available by [email](mailto:w3t-tpregister@w3.org) and on [IRC](https://irc.w3.org/?channels=tpac-help).
 
 [![](images/email.png)Email](mailto:w3t-tpregister@w3.org) [![](images/ircchat.png "help")IRC](https://irc.w3.org/?channels=tpac-help)
 
-------------------------------------------------------------------------
+---
 
 [<img src="images/twitter-logo-blue.png" alt="Twitter" class="icon" srcset="images/twitter-logo-blue.svg" height="18" /> \#w3cTPAC](https://twitter.com/search?src=typd&q=w3cTPAC "Search #w3cTPAC on Twitter")
 

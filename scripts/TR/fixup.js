@@ -2,16 +2,20 @@
  * This code handles:                                                         *
  * - the obsolete warning on outdated specs                                   *
  ******************************************************************************/
-(function() {
+(function () {
   "use strict";
 
   var ESCAPEKEY = 27;
   /* Deprecation warning */
-  if (document.location.hostname === "www.w3.org" && (/^\/TR\/(\d{4}\/|(NOTE|WD|PR|REC)\-)/.test(document.location.pathname) || !/^\/TR\//.test(document.location.pathname))) {
+  if (
+    document.location.hostname === "www.w3.org" &&
+    (/^\/TR\/(\d{4}\/|(NOTE|WD|PR|REC)\-)/.test(document.location.pathname) ||
+      !/^\/TR\//.test(document.location.pathname))
+  ) {
     var request = new XMLHttpRequest();
 
-    request.open('GET', 'https://www.w3.org/TR/tr-outdated-spec');
-    request.onload = function() {
+    request.open("GET", "https://www.w3.org/TR/tr-outdated-spec");
+    request.onload = function () {
       if (request.status < 200 || request.status >= 400) {
         return;
       }
@@ -22,7 +26,9 @@
         return;
       }
       document.body.classList.add("outdated-spec");
-      var w3cCSS = document.querySelector('link[href*="www.w3.org/StyleSheets/TR/W3C-"]'); //old specs don't have the TR stylesheets
+      var w3cCSS = document.querySelector(
+        'link[href*="www.w3.org/StyleSheets/TR/W3C-"]'
+      ); //old specs don't have the TR stylesheets
       var node = document.createElement("p");
       node.classList.add("outdated-warning");
       node.tabIndex = -1;
@@ -30,7 +36,7 @@
       node.setAttribute("aria-modal", "true");
       node.setAttribute("aria-labelledby", "outdatedWarning");
       if (currentSpec.style) {
-          node.classList.add(currentSpec.style);
+        node.classList.add(currentSpec.style);
       }
 
       var frag = document.createDocumentFragment();
@@ -64,8 +70,8 @@
           isOpen = !isOpen;
           node.classList.toggle("outdated-collapsed");
           document.body.classList.toggle("outdated-spec");
-          button.innerText = (isOpen) ? '\u25BE collapse' : '\u25B4 expand';
-        }
+          button.innerText = isOpen ? "\u25BE collapse" : "\u25B4 expand";
+        };
       }
 
       document.body.appendChild(node);
@@ -77,45 +83,61 @@
           if (event.keyCode === ESCAPEKEY && !isCollapsed) {
             button.click();
           }
-        }
+        };
 
-        window.addEventListener("click", function(event) {
-          if (!node.contains(event.target) && !node.classList.contains("outdated-collapsed")) {
+        window.addEventListener("click", function (event) {
+          if (
+            !node.contains(event.target) &&
+            !node.classList.contains("outdated-collapsed")
+          ) {
             button.click();
           }
         });
 
-        document.addEventListener("focus", function(event) {
-          var isCollapsed = node.classList.contains("outdated-collapsed");
-          var containsTarget = node.contains(event.target);
-          if (!isCollapsed && !containsTarget) {
-            event.stopPropagation();
-            node.focus();
-          }
-        }, true); // use capture to enable event delegation as focus doesn't bubble up
+        document.addEventListener(
+          "focus",
+          function (event) {
+            var isCollapsed = node.classList.contains("outdated-collapsed");
+            var containsTarget = node.contains(event.target);
+            if (!isCollapsed && !containsTarget) {
+              event.stopPropagation();
+              node.focus();
+            }
+          },
+          true
+        ); // use capture to enable event delegation as focus doesn't bubble up
       }
     };
 
-    request.onerror = function() {
-      console.error("Request to https://www.w3.org/TR/tr-outdated-spec failed.");
+    request.onerror = function () {
+      console.error(
+        "Request to https://www.w3.org/TR/tr-outdated-spec failed."
+      );
     };
 
     request.send();
   }
 
   /* Matomo analytics */
-  if (document.location.hostname === "www.w3.org" && /^\/TR\//.test(document.location.pathname)) {
-    var _paq = window._paq = window._paq || [];
+  if (
+    document.location.hostname === "www.w3.org" &&
+    /^\/TR\//.test(document.location.pathname)
+  ) {
+    var _paq = (window._paq = window._paq || []);
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="https://www.w3.org/analytics/piwik/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '447']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    _paq.push(["trackPageView"]);
+    _paq.push(["enableLinkTracking"]);
+    (function () {
+      var u = "https://www.w3.org/analytics/piwik/";
+      _paq.push(["setTrackerUrl", u + "matomo.php"]);
+      _paq.push(["setSiteId", "447"]);
+      var d = document,
+        g = d.createElement("script"),
+        s = d.getElementsByTagName("script")[0];
+      g.type = "text/javascript";
+      g.async = true;
+      g.src = u + "matomo.js";
+      s.parentNode.insertBefore(g, s);
     })();
   }
-
 })();

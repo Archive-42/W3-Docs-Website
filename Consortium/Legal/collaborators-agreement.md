@@ -1,42 +1,39 @@
-[<img src="/2008/site/images/logo-w3c-mobile-lg" alt="W3C" width="90" height="53" />](/) <span class="alt-logo">W3C</span>
-==========================================================================================================================
+# [<img src="/2008/site/images/logo-w3c-mobile-lg" alt="W3C" width="90" height="53" />](/) <span class="alt-logo">W3C</span>
 
--   [Standards](/standards/)
--   [Participate](/participate/)
--   [Membership](/Consortium/membership)
--   [About W3C](/Consortium/)
--   <img src="/2008/site/images/search-button" alt="Search" class="submit" width="21" height="17" />
+- [Standards](/standards/)
+- [Participate](/participate/)
+- [Membership](/Consortium/membership)
+- [About W3C](/Consortium/)
+- <img src="/2008/site/images/search-button" alt="Search" class="submit" width="21" height="17" />
 
 <img src="/2008/site/images/logo-shadow" height="32" />
 
-Site Navigation
----------------
+## Site Navigation
 
 ### <span class="ribbon">[Instructions for non-Members (Invited Experts) <img src="/2008/site/images/header-link" alt="Header link" class="header-link" width="13" height="13" />](/2004/08/invexp.html "Up to Instructions for non-Members (Invited Experts)")</span>
 
--   [External Contributions](/participate/extcontributions.html)
--   <a href="http://www.w3.org/Consortium/Legal/collaborators-agreement" class="current">Invited Expert and Collaborator Agreement</a>
+- [External Contributions](/participate/extcontributions.html)
+- <a href="http://www.w3.org/Consortium/Legal/collaborators-agreement" class="current">Invited Expert and Collaborator Agreement</a>
 
-  
+- [Skip](#w3c_content_body "Skip to content (e.g., when browsing via audio)")
+- [W3C](/) <span class="cr">»</span>
+- [Participate](/participate/) <span class="cr">»</span>
+- [Groups](/Consortium/activities.html) <span class="cr">»</span>
+- [Instructions for non-Members…](/2004/08/invexp.html) <span class="cr">»</span>
+- Invited Expert and Collaborator Agreement
 
--   [Skip](#w3c_content_body "Skip to content (e.g., when browsing via audio)")
--   [W3C](/) <span class="cr">»</span> 
--   [Participate](/participate/) <span class="cr">»</span> 
--   [Groups](/Consortium/activities.html) <span class="cr">»</span> 
--   [Instructions for non-Members…](/2004/08/invexp.html) <span class="cr">»</span> 
--   Invited Expert and Collaborator Agreement
-
--   On this page →
--   [W3C Process](#L83)<span class="bullet"> • </span>
--   [Participation cost](#L160)<span class="bullet"> • </span>
--   [Notifications](#L164)<span class="bullet"> • </span>
--   [Duration and Termination](#L172)<span class="bullet"> • </span>
--   [Assignment](#L182)<span class="bullet"> • </span>
--   [Choice of Law](#L186)<span class="bullet"> • </span>
--   [About this Document](#about)
+- On this page →
+- [W3C Process](#L83)<span class="bullet"> • </span>
+- [Participation cost](#L160)<span class="bullet"> • </span>
+- [Notifications](#L164)<span class="bullet"> • </span>
+- [Duration and Termination](#L172)<span class="bullet"> • </span>
+- [Assignment](#L182)<span class="bullet"> • </span>
+- [Choice of Law](#L186)<span class="bullet"> • </span>
+- [About this Document](#about)
 
 1. Introduction
----------------
+
+---
 
 W3C, as an organization, only accepts membership from organizations. To be able to work with individual experts in W3C Groups, W3C has a system of so called "Invited Experts".
 
@@ -48,12 +45,13 @@ This document establishes the rules and legal conditions for invited experts acc
 
 Further information about the Invited expert application can be found at:
 
--   [Policy for Approval of Invited Experts](/2004/08/invexp.html)
--   [W3C Process Document](/Consortium/Process/#invited-expert-wg)
--   [Invited Expert Application](/ieapp/new)
+- [Policy for Approval of Invited Experts](/2004/08/invexp.html)
+- [W3C Process Document](/Consortium/Process/#invited-expert-wg)
+- [Invited Expert Application](/ieapp/new)
 
 2. W3C Process
---------------
+
+---
 
 W3C develops technical Specifications called “Technical Reports”. Those “Technical Reports” are built following a predefined Process that is laid down in the [W3C Process Document](http://www.w3.org/Consortium/Process/). The Invited Expert hereby recognizes that his or her activities in the W3C are guided and ruled by the then current [W3C Process Document](http://www.w3.org/Consortium/Process/). Violation of the W3C Process is ground for termination of the Invited Expert Agreement by W3C (see [section 5](#L172).).
 
@@ -100,12 +98,14 @@ Capabilities are granted to the individual Invited Expert, not the organization 
 Neither Invited Experts nor their employers will use the name of W3C, MIT, ERCIM or KEIO without prior permission. In return W3C, MIT, ERCIM or KEIO will not use the name of the Participant in any form of publicity without prior permission. This is often determined by the policy of the W3C Group with respect to contributions to a deliverable or press release attribution.
 
 3. Participation cost
----------------------
+
+---
 
 The cost for participation in W3C work, including telecommunication costs, travel costs and all other costs incurred by the participation in W3C work will reside solely with the Invited Expert. On an exceptional basis W3C may grant some compensation for travel expenses and/or collaboration.
 
 4. Notifications
-----------------
+
+---
 
 The Invited Expert will notify W3C of any change in affiliation and other aspects relevant for this relationship. This includes any possible conflicts of interest that might arise. Such conflicts may arise from participation in other work on standards and consulting relationships in technology areas competing with the work the Expert was invited for. [Section 3.1.1 of the W3C Process Document](http://www.w3.org/Consortium/Process/#coi) applies.
 
@@ -114,7 +114,8 @@ Such notifications should be sent to the Team-Contact of the W3C Group the Exper
 In all notifications and communications, Invited Experts will, to the best of their knowledge, convey complete and true information.
 
 5. Duration and Termination
----------------------------
+
+---
 
 The duration of the Invited Expert's participation is determined and fixed by W3C, and archived. The Participation can be renewed one or more times. At the completion of the Invited Expert's term, W3C will terminate the relationship and remove all privileges without being obliged to give prior notice.
 
@@ -125,17 +126,20 @@ Invited Experts are subject to the same commitment as any other Member of the W3
 Even in the event of termination of the Invited Expert relationship sections [2.2](#L118), [2.3](#L131), [2.5](#L147) and [2.6](#L156) will persist.
 
 6. Assignment
--------------
+
+---
 
 As the relationship of the Invited Expert with W3C is as an individual relationship, all assignments to any third party are not permissible. Assignments in violation of this clause are null and void.
 
 7. Choice of Law
-----------------
+
+---
 
 This Agreement shall be construed and controlled by the laws of the Commonwealth of Massachusetts, USA. Further, the laws of the Commonwealth of Massachusetts, USA, will govern any dispute arising from the terms of this agreement or a breach of this Agreement. The Invited Expert agrees to personal jurisdiction by the state and federal courts sitting in the Commonwealth of Massachusetts.
 
 8. About this Document
-----------------------
+
+---
 
 This version:  
 http://www.w3.org/Consortium/Legal/2015/06-invited-expert
@@ -162,27 +166,26 @@ Last Changes:
 
 2018-02-01: Document adapted to the changes introduced by the change of the [2018 Process Document](https://www.w3.org/2018/Process-20180201/)
 
-Footer Navigation
------------------
+## Footer Navigation
 
 ### Navigation
 
--   [Home](/)
--   [Standards](/standards/)
--   [Participate](/participate/)
--   [Membership](/Consortium/membership)
--   [About W3C](/Consortium/)
+- [Home](/)
+- [Standards](/standards/)
+- [Participate](/participate/)
+- [Membership](/Consortium/membership)
+- [About W3C](/Consortium/)
 
 ### Contact W3C
 
--   [Contact](/Consortium/contact)
--   [Help and FAQ](/Help/)
--   [Sponsor / Donate](/Consortium/sponsor/)
--   [Site Map](/Consortium/siteindex)
--   [Feedback](http://lists.w3.org/Archives/Public/site-comments/)
+- [Contact](/Consortium/contact)
+- [Help and FAQ](/Help/)
+- [Sponsor / Donate](/Consortium/sponsor/)
+- [Site Map](/Consortium/siteindex)
+- [Feedback](http://lists.w3.org/Archives/Public/site-comments/)
 
 ### W3C Updates
 
--   [<img src="/2008/site/images/Twitter_bird_logo_2012.svg" alt="Twitter" class="social-icon" height="40" />](http://twitter.com/W3C "Follow W3C on Twitter")
+- [<img src="/2008/site/images/Twitter_bird_logo_2012.svg" alt="Twitter" class="social-icon" height="40" />](http://twitter.com/W3C "Follow W3C on Twitter")
 
 Copyright © 2018 W3C <sup>®</sup> ([MIT](http://www.csail.mit.edu/), [ERCIM](http://www.ercim.eu/), [Keio](http://www.keio.ac.jp/), [Beihang](http://ev.buaa.edu.cn/)) [Usage policies apply](/Consortium/Legal/ipr-notice).

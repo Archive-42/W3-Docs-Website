@@ -4,8 +4,7 @@ The W3C [CSS3 Color specification](http://www.w3.org/TR/css3-color/#SRGB) specif
 
 The latest official sRGB specification may also be purchased from the [IEC](http://www.iec.ch/).
 
-A Standard Default Color Space for the Internet - sRGB
-======================================================
+# A Standard Default Color Space for the Internet - sRGB
 
 Michael Stokes (Hewlett-Packard), Matthew Anderson (Microsoft),
 
@@ -13,16 +12,13 @@ Srinivasan Chandrasekar (Microsoft), Ricardo Motta (Hewlett-Packard)
 
 Version 1.10, November 5, 1996
 
-Introduction
-------------
+## Introduction
 
 Hewlett-Packard and Microsoft propose the addition of support for a standard color space, sRGB, within the Microsoft operating systems, HP products, the Internet, and all other interested vendors. The aim of this color space is to complement the current color management strategies by enabling a third method of handling color in the operating systems, device drivers and the Internet that utilizes a simple and robust device independent color definition. This will provide good quality and backward compatibility with minimum transmission and system overhead. Based on a calibrated colorimetric RGB color space well suited to Cathode Ray Tube (CRT) monitors, television, scanners, digital cameras, and printing systems, such a space can be supported with minimum cost to software and hardware vendors. Our intent here is to promote its adoption by showing the benefits of supporting a standard color space, and the suitability of the standard color space, sRGB, we are proposing. We will describe some of the system issues and propose a methodology for to implement support for sRGB and color management on the World Wide Web.
 
-Part 1 : History and Background of sRGB color space
-===================================================
+# Part 1 : History and Background of sRGB color space
 
-A Perceived Need
-----------------
+## A Perceived Need
 
 Recently the [International Color Consortium](http://www.color.org) has proposed breakthrough solutions to problems in communicating color in open systems. Yet the [ICC profile](ftp://sgigate.sgi.com/pub/icc/ICC32.pdf) format does not provide a complete solution for all situations.
 
@@ -30,21 +26,19 @@ Currently, the ICC has one means of tracking and ensuring that a color is correc
 
 We expect application developers and users that do not want the overhead of embedding profiles with documents or images to convert them to a common color space and store them in that format. Currently there is a plethora of RGB monitor color spaces attempting to fill this void with little guidance or attempts at standards. There is a need to merge the many standard and non-standard RGB monitor spaces into a single standard RGB color space. Such a standard could dramatically improve the color fidelity in the desktop environment. For example, if operating system vendors provide support for a standard RGB color space, the input and output device vendors that support this standard color space could easily and confidently communicate color without further color management overhead in the most common situations. The three major factors of this RGB space are the colorimetric RGB definition, the equivalent gamma value of 2.2 and the well-defined viewing conditions, along with a number of secondary details necessary to enable the clear and unambiguous communication of color.
 
-Colorimetric RGB
-----------------
+## Colorimetric RGB
 
 The dichotomy between the device dependent (e.g. amounts of ink expressed in CMYK or digitized video voltages expressed in RGB) and device independent color spaces (such as CIELAB or CIEXYZ) has created a performance burden on applications that have attempted to avoid device color spaces. This is primarily due to the complexity of the color transforms they need to perform to return the colors to device dependent color spaces. This situation is worsened by a reliability gap between the complexity and variety of the transforms, making it hard to ensure that the system is properly configured.
 
 To address these concerns and serve the needs of PC and Web based color imaging systems, we propose a colorimetric RGB specification that is based on the average performance of personal computer displays. This solution is supported by the following observations:
 
--   Most computer monitors are similar in their key color characteristics - the phosphor chromaticities (primaries) and transfer function
--   RGB spaces are native to displays, scanners and digital cameras, which are the devices with the highest performance constraints
--   RGB spaces can be made device independent in a straightforward way. They can also describe color gamuts that are large enough for all but a small number of applications.
+- Most computer monitors are similar in their key color characteristics - the phosphor chromaticities (primaries) and transfer function
+- RGB spaces are native to displays, scanners and digital cameras, which are the devices with the highest performance constraints
+- RGB spaces can be made device independent in a straightforward way. They can also describe color gamuts that are large enough for all but a small number of applications.
 
 This combination of factors makes a colorimetric RGB space well suited for wide adoption since it can both describe the colors in an unambiguous way and be the native space for actual hardware devices. This, many readers will recognize, describes in a roundabout way what has been the practice in color television for some 45 years. This proven methodology provides excellent performance where it is needed the most, the fast display of images in CRT monitors.
 
-Gamma and the desired CRT gamma of 2.2
---------------------------------------
+## Gamma and the desired CRT gamma of 2.2
 
 For computer software and hardware designers the most significant aspect of the proposed space is the 2.2 CRT gamma. Because gamma correction tends to be a topic surrounded by confusion, it is worthwhile spending a few paragraphs discussing it.
 
@@ -52,22 +46,18 @@ For computer software and hardware designers the most significant aspect of the 
 
 We start this discussion by defining four separate aspects of gamma.
 
-1.  *viewing gamma* - the overall system gamma that we want to obtain and is typically computed by multiplying the camera gamma by the display gamma as shown below.
+1.  _viewing gamma_ - the overall system gamma that we want to obtain and is typically computed by multiplying the camera gamma by the display gamma as shown below.
 
     ![viewing gamma = camera gamma × display gamma](srgb02) (0.1)
 
-      
-
-2.  *camera gamma* - the characteristic of the image sensor or video camera standard transfer function
-3.  *CRT gamma* - the gamma of the physical CRT.
-4.  *LUT gamma* - the gamma of the frame buffer lookup table
-5.  *display gamma* - the "display system" gamma downstream of the frame buffer which is typically computed by multiplying the CRT gamma by the LUT gamma as shown below.
+2.  _camera gamma_ - the characteristic of the image sensor or video camera standard transfer function
+3.  _CRT gamma_ - the gamma of the physical CRT.
+4.  _LUT gamma_ - the gamma of the frame buffer lookup table
+5.  _display gamma_ - the "display system" gamma downstream of the frame buffer which is typically computed by multiplying the CRT gamma by the LUT gamma as shown below.
 
     ![display gamma = CRT gamma × LUT gamma](srgb01)(0.2)
 
-      
-
-These definitions have been kindly provided by the [World Wide Web Consortium](http://www.w3.org/) and are included in the PNG file format specification available at <http://www.w3.org/pub/WWW/TR/REC-png-multi.html>. These definitions do *not* describe the individual gamma parameter in equation 0.4 below. Instead, they describe the resulting power parameter of the appropriate transfer function when fit by a power function. It is extremely important to keep this distinction clear or else one implicitly assumes equations 0.4 and 0.5 are equivalent and the system black level is truly 0.0 and the system gain is 1.0.
+These definitions have been kindly provided by the [World Wide Web Consortium](http://www.w3.org/) and are included in the PNG file format specification available at <http://www.w3.org/pub/WWW/TR/REC-png-multi.html>. These definitions do _not_ describe the individual gamma parameter in equation 0.4 below. Instead, they describe the resulting power parameter of the appropriate transfer function when fit by a power function. It is extremely important to keep this distinction clear or else one implicitly assumes equations 0.4 and 0.5 are equivalent and the system black level is truly 0.0 and the system gain is 1.0.
 
 ### Viewing Gamma
 
@@ -77,7 +67,7 @@ If the viewing condition is different from the standard, then the decoding proce
 
 The ITU-R BT.709 transfer function in combination with its target monitor is attempting to achieve a viewing gamma of 1.125 by incorrectly assuming a CRT gamma of 2.5 and an LUT gamma of 1.0/2.222 as shown in the equation below. The justification of a viewing gamma value of 1.125 is described below in the section on viewing environment compensation.
 
-![illustration](srgb03) (0.3)  
+![illustration](srgb03) (0.3)
 
 Using the actual power function fit value for the 709 transfer function of 1.0/1.956 and maintaining the display gamma of 1.125, we can solve for the ideal target monitor gamma of 2.2. This is consistent with the CRT gamma value proposed in this paper.
 
@@ -93,13 +83,13 @@ Because all television sets have to display content generated with this encoding
 
 The non-linearity of the electro-optical radiation transfer function of CRTs is often expressed by a mathematical power function exponent parameter called gamma. This transfer function describes how much visible radiant energy (cd/m<sup>2</sup>) results from voltages applied to the CRT electron-gun. Because most of the other characteristics of CRT based computer monitors are linear (including DACs and video amplifiers) the resulting transfer function has the same gamma value determining its non-linearity.
 
-![illustration](srgb04) (0.4)  
+![illustration](srgb04) (0.4)
 
 Where k<sub>1</sub> and k<sub>2</sub> are the system gain and offset, D is the normalized pixel value, A is the maximum luminance of the CRT and I is the resulting luminance. This equation and a thorough analysis of the CRT characteristics and history are well described in "An Analytical Model for the Colorimetric Characterization of Color CRTs" by Ricardo Motta, Rochester Institute of Technology, 1991.
 
 The key point that we wish to convey here is that gamma component of the CRT gamma is dependent only on the electron gun design, and the vast majority of monitors and TV sets in use today are based on designs that result, on average, in the value 2.2 for gamma component of the CRT gamma and a 2.2 overall CRT gamma value when typical system gain and offsets are optimally set. Most of the variation between computer monitors and between TV sets are due to the differences in system gain and offsets (k<sub>1</sub> and k<sub>2</sub>), which are partially under control of the user in the form of contrast and brightness knobs. Unfortunately, the actual set-up is often not known, but the best CRT performance happens when the system offset puts the dark parts of the images at the CRT cut-off, i.e. the black (pixel value 0) parts of the CRT image are just about to emit light. Under these conditions equation 0.4 above becomes
 
-![illustration](srgb05) &gt;(0.5)  
+![illustration](srgb05) &gt;(0.5)
 
 and the monitor has the widest-dynamic range. Unfortunately, this is not the common condition. Unfortunately the simplified form in equation 0.5 is what is usually found in the computer literature.
 
@@ -115,14 +105,13 @@ The second systematic deviation happens when the graphics system in the computer
 
 There has been significant confusion derived from assuming the CRT gamma value is identical to the exponent in equation 0.4. This has led to many claims of CRT gamma values of 2.5 for video, 1.8 for the Apple Macintosh and 1.4 for SGI monitors. Unfortunately, it has been our experience that this misconception is not well founded in the actual physics of the displays and solid measurements.
 
-sRGB and ITU-R BT.709 Compatibility
------------------------------------
+## sRGB and ITU-R BT.709 Compatibility
 
 There has been some confusion in previous versions of this proposal with respect to compatibility with the ITU-R BT.709 standard. Many readers have also expressed concern for compatibility with the 709 recommendation in general. After review, the authors have confirmed the compatibility between this proposal and the 709 recommendation. Unfortunately, the ITU-R BT.709 standard can be somewhat confusing for many readers. Below is an attempt to clarify and reduce this confusion.
 
 For a single color space to achieve acceptance, it must be objective, that is, have a tightly-defined relationship with the CIE standards. We are fortunate to have obtained in April 1990 unanimous worldwide agreement on a calibrated nonlinear RGB space for HDTV production and program exchange: Rec. ITU-R BT.709. This recommendation specifies the encoding of real world scene tristimulus values into a standard monitor RGB color space assuming a dark viewing condition. HP and Microsoft suggest using these parameters as the basis for the sRGB color space but with a dim viewing condition which is closer to most typical viewing environments for computer displayed imagery. Unfortunately the ITU specification is rather vague on defining the target monitor. This paper attempts to provide a clear and well defined target monitor for the Rec. ITU-R BT.709 camera encoding standard for a dim viewing environment.
 
-The ITU-R BT.709 standard specifically describes the encoding transfer function for a video camera that when viewed on a "standard" monitor will produce excellent image quality. The implicit target of this encoding is a standard video monitor whose transfer function or CRT gamma is *not* explicitly delineated. Instead a typical monitor setup is assumed. This paper attempts to explicitly describe a standard monitor setup that is compatible with the 709-encoding standard.
+The ITU-R BT.709 standard specifically describes the encoding transfer function for a video camera that when viewed on a "standard" monitor will produce excellent image quality. The implicit target of this encoding is a standard video monitor whose transfer function or CRT gamma is _not_ explicitly delineated. Instead a typical monitor setup is assumed. This paper attempts to explicitly describe a standard monitor setup that is compatible with the 709-encoding standard.
 
 This is illustrated in Figures 1-3 below. Figure one is directly derived from the ITU-R BT.709 standard. This standard provides mathematical methods to transform from tristimulus values of the scene using a video camera into a reference monitor device space.
 
@@ -143,42 +132,38 @@ This sRGB recommendation essentially defines the second part of this transformat
 
 In summary, there has been some concern with the choice of a 2.2 CRT gamma with a 1.0 LUT gamma as opposed to a 1.571 (2.2/1.4) or a 1.294 (2.2/1.7) display gamma. We feel that there are many reasons to support a 2.2 CRT, including;
 
--   compatibility with a large legacy of images
--   Photo CD,
--   many Unix workstations,
--   PC's with 256+ colors and their desktop color schemes and icons,
--   several ultra-large image collections,
--   analog television,
--   Apple Macintosh video imagery,
--   CCIR 601 images,
--   a better fit with Weber's fraction,
--   compatibility with numerous standards,
--   TIFF/EP,
--   EXIF,
--   digital TV,
--   HDTV,
--   analog video,
--   PhotoCD,
--   it is closer to native CRTs gamma,
--   and consistency with a larger market of displays.
+- compatibility with a large legacy of images
+- Photo CD,
+- many Unix workstations,
+- PC's with 256+ colors and their desktop color schemes and icons,
+- several ultra-large image collections,
+- analog television,
+- Apple Macintosh video imagery,
+- CCIR 601 images,
+- a better fit with Weber's fraction,
+- compatibility with numerous standards,
+- TIFF/EP,
+- EXIF,
+- digital TV,
+- HDTV,
+- analog video,
+- PhotoCD,
+- it is closer to native CRTs gamma,
+- and consistency with a larger market of displays.
 
-Alpha Channel Masking and Computer Graphics Compatibility
----------------------------------------------------------
+## Alpha Channel Masking and Computer Graphics Compatibility
 
 Another concern that has been expressed about encoding using a gamma of 2.2 is the use of alpha masking. Typically computer graphics effects, including alpha masking, operate in an optical intensity environment as opposed to a visually uniform one. This mandates using a linear gamma of 1.0 in most computer graphic operations which is obviously incompatible with the visually uniform encoding using a gamma of 2.2. In a 24 bit encoding scheme, encoding a mid-level gray using a gamma of 1.0 would result in a digital count of 46. Such an encoding scheme would create visually objectionable artifacts such as contours. Therefore we recommend that effects such as alpha masking be performed either prior to encoding or by decoding to a color resolution greater than 24 bits and then converting into linear intensity space.
 
 Again, it is fundamental to realize that there are two common operational spaces discussed here; 1) the linear intensity space in which most optical and synthetic visualization operations work within and 2) a nearly visually perceptibly uniform space in which visual based operations, compression and many devices work within. This difference is vitally important to remember since both types of operations are required and thus interaction between these two types of spaces occur frequently.
 
-Part 2: Definition of the sRGB Color Space
-==========================================
+# Part 2: Definition of the sRGB Color Space
 
-A Single RGB Standard Color Space
----------------------------------
+## A Single RGB Standard Color Space
 
 There are two parts to the proposed standard described in this paper; the viewing environment parameters with its dependencies on the human visual system and the standard device space colorimetric definitions and transformations. The viewing environment descriptions contain all the necessary information, when combined with most color appearance models, to provide conversions between the standard and target viewing environments. The colorimetric definitions provide the transforms necessary to convert between the sRGB color space and the CIEXYZ two degree observer color space.
 
-sRGB reference viewing environment
-----------------------------------
+## sRGB reference viewing environment
 
 Reference viewing environments are defined for standard RGB in Table 0.1.
 
@@ -194,7 +179,7 @@ Reference viewing environments are defined for standard RGB in Table 0.1.
 
 <span class="palatino">Illuminant White</span>
 
-<span class="palatino">*x* = 0.3127, *y* = 0.3291 (D65) </span>
+<span class="palatino">_x_ = 0.3127, _y_ = 0.3291 (D65) </span>
 
 <span class="palatino">Image surround</span>
 
@@ -218,7 +203,7 @@ Reference viewing environments are defined for standard RGB in Table 0.1.
 
 <span class="palatino">Typical Ambient White Point</span>
 
-<span class="palatino">*x* = 0.3457, *y* = 0.3585 (D50)</span>
+<span class="palatino">_x_ = 0.3457, _y_ = 0.3585 (D50)</span>
 
 <span class="palatino">Typical Viewing Flare</span>
 
@@ -226,11 +211,11 @@ Reference viewing environments are defined for standard RGB in Table 0.1.
 
 The sRGB reference viewing environment corresponds to conditions typical of monitor display viewing conditions.
 
-The *luminance level* is representative of typical CRT display levels.
+The _luminance level_ is representative of typical CRT display levels.
 
-The chromaticities of the *illuminant white* are those of CIE D<sub>65</sub>.
+The chromaticities of the _illuminant white_ are those of CIE D<sub>65</sub>.
 
-The *image surround* is defined as "20%" of the maximum white luminance. This is close to a CIELAB L\* value of 50, while maintaining computational simplicity. The areas surrounding the image being viewed are similar in luminance and chrominance to the image itself. This surround condition would correspond, for example, to a reflection print displayed on a spectrally non-selective gray background of about twenty percent reflectance, where the print and the background are uniformly illuminated by the same light source.
+The _image surround_ is defined as "20%" of the maximum white luminance. This is close to a CIELAB L\* value of 50, while maintaining computational simplicity. The areas surrounding the image being viewed are similar in luminance and chrominance to the image itself. This surround condition would correspond, for example, to a reflection print displayed on a spectrally non-selective gray background of about twenty percent reflectance, where the print and the background are uniformly illuminated by the same light source.
 
 This specification defines the concepts of an encoding viewing environment and a typical viewing environment. The encoding viewing environment is consistent with recent discussions within the ISO JTAG2 committee for graphic arts and photographic viewing conditions for photographic images on monitors. If possible to achieve, this is the recommended viewing environment for viewing photographic images on monitors. The typical viewing environment is representative of a typical office or home office viewing environment for personal computers.
 
@@ -238,20 +223,19 @@ For optimal results, we recommend using the encoding viewing environment when vi
 
 While one would theoretically use the viewing conditions which represent the actual or typical viewing environment, if this is done with 24 bit images a significant loss in the quality of shadow detail results. This is due to encoding the typical viewing flare of approximately 5.0 percent into a 24 bit image as opposed to the encoding viewing flare of 1 percent. Therefore we recommend using the encoding viewing environment for most situations including when one's viewing environment is consistent with the typical viewing environment and not the encoding viewing environment.
 
-The *encoding ambient illuminance level* is intended to be representative of a dim viewing environment. Note that the illuminance is at least an order of magnitude lower than average outdoor levels and approximately one-third of the typical ambient illuminance level.
+The _encoding ambient illuminance level_ is intended to be representative of a dim viewing environment. Note that the illuminance is at least an order of magnitude lower than average outdoor levels and approximately one-third of the typical ambient illuminance level.
 
-The chromaticities of the *encoding ambient white* are those of CIE D<sub>50</sub>.
+The chromaticities of the _encoding ambient white_ are those of CIE D<sub>50</sub>.
 
-*Encoding viewing flare* is specified to be 1.0% of the maximum white-luminance level.
+_Encoding viewing flare_ is specified to be 1.0% of the maximum white-luminance level.
 
-The *typical ambient illuminance level* is intended to be representative of a typical office viewing environment. Note that the illuminance is at least an order of magnitude lower than average outdoor levels.
+The _typical ambient illuminance level_ is intended to be representative of a typical office viewing environment. Note that the illuminance is at least an order of magnitude lower than average outdoor levels.
 
-The chromaticities of the *typical ambient white* are those of CIE D<sub>50</sub>.
+The chromaticities of the _typical ambient white_ are those of CIE D<sub>50</sub>.
 
-*Typical Viewing flare* is specified to be 5.0% of the maximum white-luminance level.
+_Typical Viewing flare_ is specified to be 5.0% of the maximum white-luminance level.
 
-Colorimetric definitions and digital encodings
-----------------------------------------------
+## Colorimetric definitions and digital encodings
 
 sRGB in combination with the reference viewing environments can be defined from standard CIE colorimetric values through simple mathematical transformations.
 
@@ -269,7 +253,7 @@ The CIE chromaticities for the red, green, and blueITU-R BT.709 reference primar
 
 **<span class="palatino">D65</span>**
 
-*<span class="palatino">x</span>*
+_<span class="palatino">x</span>_
 
 <span class="palatino">0.6400</span>
 
@@ -279,7 +263,7 @@ The CIE chromaticities for the red, green, and blueITU-R BT.709 reference primar
 
 <span class="palatino">0.3127</span>
 
-*<span class="palatino">y</span>*
+_<span class="palatino">y</span>_
 
 <span class="palatino">0.3300</span>
 
@@ -289,7 +273,7 @@ The CIE chromaticities for the red, green, and blueITU-R BT.709 reference primar
 
 <span class="palatino">0.3290</span>
 
-*<span class="palatino">z</span>*
+_<span class="palatino">z</span>_
 
 <span class="palatino">0.0300</span>
 
@@ -299,9 +283,9 @@ The CIE chromaticities for the red, green, and blueITU-R BT.709 reference primar
 
 <span class="palatino">0.3583</span>
 
-sRGB tristimulus values for the illuminated objects of the scene are simply linear combinations of the 1931 CIE XYZ values and these *RGB* tristimulus values can be computed using the following derived relationship:
+sRGB tristimulus values for the illuminated objects of the scene are simply linear combinations of the 1931 CIE XYZ values and these _RGB_ tristimulus values can be computed using the following derived relationship:
 
-![illustration](srgb09) (1.1)  
+![illustration](srgb09) (1.1)
 
 In the RGB encoding process, negative sRGB tristimulus values, and sRGB tristimulus values greater than 1.00 are not typically retained. When encoding software cannot support this extended range, the luminance dynamic range and color gamut of RGB is limited to the tristimulus values between 0.0 and 1.0 by simple clipping. This gamut, however, is large enough to encompass most colors that can be displayed on CRT monitors<sub>.</sub>
 
@@ -309,62 +293,59 @@ The sRGB tristimulus values are next transformed to nonlinear sR'G'B' values as 
 
 If ![illustration](srgb10)
 
-![illustration](srgb11) (1.2a)  
+![illustration](srgb11) (1.2a)
 
 else if ![illustration](srgb12)
 
-![illustration](srgb13) (1.2b)  
+![illustration](srgb13) (1.2b)
 
 The effect of the above equations is to closely fit a straightforward gamma 2.2 curve with an slight offset to allow for invertability in integer math. Therefore, we are maintaining consistency with the gamma 2.2 legacy images and the video industry as described previously.
 
 Finally, the nonlinear sR'G'B' values are converted to digital code values. This conversion scales the above sR'G'B' values by using the equation below where WDC represents the white digital count and KDC represents the black digital count.
 
-![illustration](srgb14) (1.3)  
+![illustration](srgb14) (1.3)
 
 This current specification proposes using a black digital count of 0 and a white digital count of 255 for 24-bit (8-bits/channel) encoding. The resulting RGB values are formed according to the following equations:
 
-![illustration](srgb15) (1.4)  
+![illustration](srgb15) (1.4)
 
 This obviously can be simplified as shown below.
 
-![illustration](srgb16) (1.5)  
+![illustration](srgb16) (1.5)
 
 The reverse relationship is defined as follows;
 
-![illustration](srgb17) (1.6)  
+![illustration](srgb17) (1.6)
 
 If ![illustration](srgb18)
 
-![illustration](srgb19) (1.7a)  
+![illustration](srgb19) (1.7a)
 
 else if ![illustration](srgb20)
 
-![illustration](srgb21) (1.7b)  
+![illustration](srgb21) (1.7b)
 
 and
 
-![illustration](srgb22) (1.8)  
+![illustration](srgb22) (1.8)
 
 Digital broadcast television uses a black digital count of 16 and a white digital count of 235 in order to provide a larger encoded color gamut. We do not propose using this encoding at this time, due to the large legacy of images and applications using the previous black and white digital coding counts. However, it is vital to allow for a future revision to provide this capability.
 
-Part 3 : Implementation on the Web
-==================================
+# Part 3 : Implementation on the Web
 
-Color Spaces
-------------
+## Color Spaces
 
-***Definition:***
+**_Definition:_**
 
-*A color space is a model for representing color numerically in terms of three or more coordinates. e.g. The RGB color space represents colors in terms of the Red, Green and Blue coordinates.*
+_A color space is a model for representing color numerically in terms of three or more coordinates. e.g. The RGB color space represents colors in terms of the Red, Green and Blue coordinates._
 
 For color to be reproduced in a predictable manner across different devices and materials, it has to be described in a way that is independent of the specific behavior of the mechanisms and materials used to produce it. For instance, color CRTs and color printers use very different mechanisms for producing color. To address this issue, current methods require that color be described using device independent color coordinates, which are translated into device dependent color coordinates for each device.
 
-Color Management
-----------------
+## Color Management
 
-***Definition:***
+**_Definition:_**
 
-*Color management is a term that describes a technology that translates the colors of an object (images, graphics or text) from their current color space to the color space of the output devices like monitors, printers, ...*
+_Color management is a term that describes a technology that translates the colors of an object (images, graphics or text) from their current color space to the color space of the output devices like monitors, printers, ..._
 
 Traditionally, operating systems have supported color by declaring support for a particular color space, RGB in most cases. However, since RGB varies between devices, color was not reliably reproduced across different devices.
 
@@ -374,8 +355,7 @@ HP and Microsoft propose an additional means of managing color that is optimized
 
 We are proposing the use of the color space, sRGB, that is consistent with but is a more tightly defined derivative of Rec. ITU-R BT.709 as the standard color space for the OS's and the Internet. In April of 1990 this space obtained unanimous worldwide agreement as the calibrated nonlinear RGB space for HDTV production and program exchange.
 
-Proposed Style Sheet Syntax for specifying sRGB on the Internet
----------------------------------------------------------------
+## Proposed Style Sheet Syntax for specifying sRGB on the Internet
 
 We propose that all page elements defined in the style sheets be assumed to be in the sRGB color space unless embedded ICC profiles indicate otherwise.
 
@@ -397,16 +377,14 @@ Example:
     <IMG ID=mypic001 SRC="http://www.site.com/layout.mypic001.png">
     <IMG CLASS="perceptualintent" SRC="http://www.site.com/layout.mypic002.gif">
 
-Standard Color Space in Practice
---------------------------------
+## Standard Color Space in Practice
 
 Once page elements are converted to sRGB, the browser needs to interpret the color space correctly and use the OS color management to image the page. The following table summarizes how the browser handles color management in each of the possible scenarios.
 
 <table><tbody><tr class="odd"><td></td><td><strong>Style Sheet Colors(sRGB)</strong></td><td><strong>HTML Page with no Color Space information</strong></td><td><strong>Re-purpose Data outside of Browser/<br />
 HTML environment</strong></td></tr><tr class="even"><td><strong>Embedded Profile in Image</strong></td><td>Color Space for Image determined by embedded profile.</td><td>Color Space for Image determined by embedded profile.</td><td>Color Space for Image determined by embedded profile.</td></tr><tr class="odd"><td><strong>Image file specifies sRGB</strong></td><td>Color Space for Image is sRGB</td><td>Color Space for Image is sRGB</td><td>Color Space for Image is sRGB</td></tr><tr class="even"><td><strong>Image has no Color space information.</strong></td><td>Color Space for Image is sRGB</td><td>Color Space for image is sRGB.</td><td>Color Space for image is sRGB.</td></tr><tr class="odd"><td><strong>Text</strong></td><td>Color Space for text is sRGB</td><td>Color Space for text is sRGB.</td><td>Color Space for text is sRGB.</td></tr><tr class="even"><td><strong>Graphics</strong></td><td>Color Space for Graphics is sRGB</td><td>Color Space for graphics is sRGB.</td><td>Color Space for graphics is sRGB.</td></tr></tbody></table>
 
-Browsing Scenarios
-------------------
+## Browsing Scenarios
 
 The following cases describe what an end-user sees in the various scenarios:
 
@@ -438,8 +416,7 @@ The following cases describe what an end-user sees in the various scenarios:
 
     This is the standard color management scenario. The two ICC profiles are combined to produce a transform that will map the colors of the image into the output device's color space. The resulting image will be consistent across devices, and will be very close to the original in appearance.
 
-Authoring Scenarios
--------------------
+## Authoring Scenarios
 
 The following scenarios describe how to get an image into the sRGB color space when creating it.
 
@@ -455,14 +432,12 @@ The following scenarios describe how to get an image into the sRGB color space w
 
     Specify the image is in sRGB if the image file format supports this.
 
-Suggestions to benefit from sRGB
---------------------------------
+## Suggestions to benefit from sRGB
 
 1.  CRT manufacturers who build monitors in compliance with the sRGB specification will get faster display times for objects in this color space. (No transformation needs to occur.)
 2.  Scanner and digital camera manufacturers who optimize the color transforms and gamma correction for compatibility with sRGB will benefit for the same reason.
 
-Palette Issues
---------------
+## Palette Issues
 
 There are several different scenarios to consider when dealing with palettized images and displays.
 
@@ -484,17 +459,15 @@ There are several different scenarios to consider when dealing with palettized i
 
 5.  **Image has a color table (8bpp) and was created using an arbitrary palette and client monitor is palettized**
 
-    If the client monitor only has a palettized profile and can only display the image by discarding this profiled palette and replacing it with an uncalibrated palette, we do *not* recommend to color manage this scenario. If the client monitor is able to treat the image as if it was a truecolor (unpalettized) image, it should proceed as for case 3 above.
+    If the client monitor only has a palettized profile and can only display the image by discarding this profiled palette and replacing it with an uncalibrated palette, we do _not_ recommend to color manage this scenario. If the client monitor is able to treat the image as if it was a truecolor (unpalettized) image, it should proceed as for case 3 above.
 
 Note that cases 3 and 4 assume an industry standard default palette defined in sRGB color space that will be used by authoring and display software to handle 8bpp images. Microsoft and HP are working on the definition of such a palette.
 
-Conclusion
-----------
+## Conclusion
 
 We believe that the addition of standard color space, sRGB, support to the Internet, device drivers and operating systems is a complementary addition to the existing color management support that utilizes and expands the benefits and availability of color management to a broader range of users. Furthermore, we believe that sRGB overcomes many application developer and end-user reservations to adopting color management. The call for action below presents a clear path forward to improved color management.
 
-Call for action
----------------
+## Call for action
 
 1.  OS and authoring tools should utilize CRT calibration methods to ensure that images created locally on the monitor are properly translated into sRGB.
 2.  Authoring tools should enable the use of the OS color management tools to transform the incoming images into sRGB by combining the incoming device ICC profiles with the sRGB ICC profile. These images will be stored in the original file format (like GIF, PNG and JPEG), but with the correct colors.
@@ -503,7 +476,6 @@ Call for action
 5.  Browser vendors should support the style sheet extensions proposed above and use the OS color management tools to ensure that colors are properly displayed.
 6.  Organizations that create and support file formats should ensure that the file formats encompass the ability to embed profiles and declare their color space.
 
-Acknowledgments
----------------
+## Acknowledgments
 
 The authors would like to sincerely thank Ed Giorgianni of Eastman Kodak Company, Bob Sobol of Hewlett-Packard Company, Charles Poynton, author of <span class="underline">A Technical Introduction to Digital Video</span> (John Wiley and Sons), Chris Lilley of W3C, Dave Martindale of the University of British Columbia and many others, for their many insightful comments and encouragement throughout this process.

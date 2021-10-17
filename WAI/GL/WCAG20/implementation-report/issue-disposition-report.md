@@ -1,0 +1,2376 @@
+-   [![](/Icons/downinpage.png) Skip to content](#main)
+-   [| Change text size or colors](/WAI/changedesign.html)
+
+[<img src="/Icons/w3c_home" alt="W3C logo" width="72" height="48" />](http://www.w3.org/ "W3C Home")[<img src="/WAI/images/wai-temp" alt="Web Accessibility Initiative (WAI) logo" height="48" />](http://www.w3.org/WAI/ "WAI Home")
+
+WAI: Strategies, guidelines, resources to make the Web accessible to people with disabilities
+
+**Site Navigation: [W3C Home](http://www.w3.org/) &gt; [WAI Home](http://www.w3.org/WAI/) &gt; [WCAG 2.0 Implementation Report](/WAI/GL/WCAG20/implementation-report/)**
+
+Issue Disposition Report for 30 April 2008 WCAG 2.0 Candidate Recommendation
+============================================================================
+
+This is the official Issue Disposition report for the [30 April 2008 WCAG 2.0 Candidate Recommendation](http://www.w3.org/TR/2008/CR-WCAG20-20080430/). The table at the top summarizes the issues, and is followed by details for each issue. The summary table structure is:
+
+-   **Issue:** The issue ID assigned, and a link to the details for that issue in the second section of the report.
+-   **Type:** Categorizes type of comment - general comment, editorial, question, or typographical error)
+-   **Disposition:** Indicates how the Working Group addressed the comment - accepted the change, did not accept, or partial/other, which means some of the comment was accepted, or the response was merely a clarification to the commentor
+-   **Acknowledgement:** The reviewer's response to the disposition - none received, accepted, or did not agree.
+-   **Component:** The part of WCAG 2.0 that was affected by this issue.
+
+A [database-driven view of this report](http://trace.wisc.edu/bugzilla_wcag/issuereports/responses/issue_disposition_report20080430.php) is available which includes the ability to sort the columns. However, that version is not official.
+
+Total Issues: 70
+
+The working group received responses indicating that the reviewer agrees with the actions taken for 65 issues, disagrees with the working group response to 2 issues, and has received no response from reviewers on 3 issues.
+
+Summary
+-------
+
+<table><thead><tr class="header"><th>Issue</th><th>Type</th><th>Disposition</th><th>Acknowledgment</th><th>Component</th></tr></thead><tbody><tr class="odd"><td><strong><a href="#i2598">2598</a>:</strong> Drop 2.1.3 and revise 2.1.1</td><td>proposal</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>2.1.1 (Keyboard)</td></tr><tr class="even"><td><strong><a href="#i2599">2599</a>:</strong> Reorganizing the requirements in GL 1.2</td><td>editorial</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>Presentation and Structure</td></tr><tr class="odd"><td><strong><a href="#i2600">2600</a>:</strong> accessibility supported technology</td><td>comment</td><td>NOT ACCEPTED</td><td>reviewer disagrees</td><td>CR4 (Accessibility-Supported Technologies Only)</td></tr><tr class="even"><td><strong><a href="#i2602">2602</a>:</strong> Fieldset - Legend techniques</td><td>proposal</td><td>ACCEPTED</td><td>reviewer agrees</td><td>HTML/XHTML Techniques</td></tr><tr class="odd"><td><strong><a href="#i2603">2603</a>:</strong> Longdesc</td><td>proposal</td><td>ACCEPTED</td><td>reviewer agrees</td><td>HTML/XHTML Techniques</td></tr><tr class="even"><td><strong><a href="#i2604">2604</a>:</strong> H81: Nested Lists</td><td>proposal</td><td>ACCEPTED</td><td>reviewer agrees</td><td>HTML/XHTML Techniques</td></tr><tr class="odd"><td><strong><a href="#i2605">2605</a>:</strong> About technique H48</td><td>proposal</td><td>ACCEPTED</td><td>reviewer agrees</td><td>HTML/XHTML Techniques</td></tr><tr class="even"><td><strong><a href="#i2606">2606</a>:</strong> SC 3.2.5 vs. SC 2.2.4 and G75 and G76</td><td>proposal</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>3.2.5 (Change on Request)</td></tr><tr class="odd"><td><strong><a href="#i2607">2607</a>:</strong> Duplicate General techniques: form validation</td><td>proposal</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>General</td></tr><tr class="even"><td><strong><a href="#i2608">2608</a>:</strong> Duplicate General techniques: alt-text</td><td>proposal</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>General</td></tr><tr class="odd"><td><strong><a href="#i2609">2609</a>:</strong> providing a multipage view rather than a single file version of QuickRef</td><td>proposal</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>Presentation and Structure</td></tr><tr class="even"><td><strong><a href="#i2610">2610</a>:</strong> Should C16 also refer to SC 2.4.7?</td><td>proposal</td><td>ACCEPTED</td><td>reviewer agrees</td><td>CSS Techniques</td></tr><tr class="odd"><td><strong><a href="#i2611">2611</a>:</strong> Understanding 3.2.2</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>3.2.2 (On Input)</td></tr><tr class="even"><td><strong><a href="#i2612">2612</a>:</strong> inconsistency with G122</td><td>proposal</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>General</td></tr><tr class="odd"><td><strong><a href="#i2613">2613</a>:</strong> Additional resource for consideration</td><td>proposal</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.1.1 (Non-text Content)</td></tr><tr class="even"><td><strong><a href="#i2615">2615</a>:</strong> Image use cases that WCAG doesn't address</td><td>proposal</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>1.1.1 (Non-text Content)</td></tr><tr class="odd"><td><strong><a href="#i2616">2616</a>:</strong> Editorial: WCAG 2.0 is hard to connect to concrete HTML authoring</td><td>editorial</td><td>NOT ACCEPTED</td><td>none received</td><td>General</td></tr><tr class="even"><td><strong><a href="#i2617">2617</a>:</strong> Terminology clarifications requested by JIS</td><td>translation</td><td>ACCEPTED</td><td>reviewer agrees</td><td>Translations</td></tr><tr class="odd"><td><strong><a href="#i2618">2618</a>:</strong> Geospatial mapping applications</td><td>question</td><td>PARTIAL/OTHER</td><td>none received</td><td>General</td></tr><tr class="even"><td><strong><a href="#i2619">2619</a>:</strong> Large Print</td><td>editorial</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.4.3 (Contrast (Minimum))</td></tr><tr class="odd"><td><strong><a href="#i2620">2620</a>:</strong> "minimum" or "enhanced"?</td><td>editorial</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>1.4.6 (Contrast (Enhanced))</td></tr><tr class="even"><td><strong><a href="#i2621">2621</a>:</strong> wording of "dialog"</td><td>editorial</td><td>ACCEPTED</td><td>reviewer agrees</td><td>Appendix A: Glossary</td></tr><tr class="odd"><td><strong><a href="#i2622">2622</a>:</strong> Note 5 in "conforming alternate version"</td><td>translation</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>Appendix A: Glossary</td></tr><tr class="even"><td><strong><a href="#i2623">2623</a>:</strong> "virtual magnifying glasses" in Note 1 for "viewport"</td><td>translation</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>Appendix A: Glossary</td></tr><tr class="odd"><td><strong><a href="#i2624">2624</a>:</strong> "URI" or "URL"</td><td>translation</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>Appendix A: Glossary</td></tr><tr class="even"><td><strong><a href="#i2625">2625</a>:</strong> 18 point or 14 point bold</td><td>question</td><td>ACCEPTED</td><td>reviewer agrees</td><td>Appendix A: Glossary</td></tr><tr class="odd"><td><strong><a href="#i2626">2626</a>:</strong> large scale text for CJK</td><td>comment</td><td>ACCEPTED</td><td>reviewer agrees</td><td>Appendix A: Glossary</td></tr><tr class="even"><td><strong><a href="#i2627">2627</a>:</strong> "must be presented in non-text format"</td><td>proposal</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.1.1 (Non-text Content)</td></tr><tr class="odd"><td><strong><a href="#i2628">2628</a>:</strong> on a full-screen window</td><td>editorial</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>1.4.8 (Visual Presentation)</td></tr><tr class="even"><td><strong><a href="#i2629">2629</a>:</strong> definition of "process"</td><td>editorial</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>Appendix A: Glossary</td></tr><tr class="odd"><td><strong><a href="#i2630">2630</a>:</strong> glyph for English</td><td>question</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>1.4.8 (Visual Presentation)</td></tr><tr class="even"><td><strong><a href="#i2631">2631</a>:</strong> G182: will this include underlining text links</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>General</td></tr><tr class="odd"><td><strong><a href="#i2632">2632</a>:</strong> Instances where technique G153 is not met.</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>General</td></tr><tr class="even"><td><strong><a href="#i2633">2633</a>:</strong> Is 3.3.1 relevant if errors are not automatically detected?</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>3.3.1 (Error Identification)</td></tr><tr class="odd"><td><strong><a href="#i2634">2634</a>:</strong> "all" or "potentially serious" mistakes?</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>3.3.6 (Error Prevention (All))</td></tr><tr class="even"><td><strong><a href="#i2635">2635</a>:</strong> H44 and H65 do not seem related to 3.2.4</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>HTML/XHTML Techniques</td></tr><tr class="odd"><td><strong><a href="#i2636">2636</a>:</strong> H33 Creates accessibility issues</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>HTML/XHTML Techniques</td></tr><tr class="even"><td><strong><a href="#i2637">2637</a>:</strong> H30 examples encourage wordy links</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>HTML/XHTML Techniques</td></tr><tr class="odd"><td><strong><a href="#i2638">2638</a>:</strong> Inconsistent labeling causing confusion.</td><td>impl. issue</td><td>NOT ACCEPTED</td><td>none received</td><td>General</td></tr><tr class="even"><td><strong><a href="#i2639">2639</a>:</strong> G65 - editorial correction</td><td>comment</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>General</td></tr><tr class="odd"><td><strong><a href="#i2640">2640</a>:</strong> G156 should be a sufficient technique</td><td>impl. issue</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>1.4.3 (Contrast (Minimum))</td></tr><tr class="even"><td><strong><a href="#i2642">2642</a>:</strong> Don't make contrast conditional on font size</td><td>impl. issue</td><td>NOT ACCEPTED</td><td>reviewer agrees</td><td>1.4.3 (Contrast (Minimum))</td></tr><tr class="odd"><td><strong><a href="#i2643">2643</a>:</strong> Success Criteria seem redundant, etc.</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>General</td></tr><tr class="even"><td><strong><a href="#i2644">2644</a>:</strong> Are characters in the Windows Character Map images of text?</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>1.4.3 (Contrast (Minimum))</td></tr><tr class="odd"><td><strong><a href="#i2645">2645</a>:</strong> Provide success feedback</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>3.3.6 (Error Prevention (All))</td></tr><tr class="even"><td><strong><a href="#i2646">2646</a>:</strong> H44 : sufficient technique for 3.2.4?</td><td>comment</td><td>ACCEPTED</td><td>reviewer agrees</td><td>HTML/XHTML Techniques</td></tr><tr class="odd"><td><strong><a href="#i2647">2647</a>:</strong> Two comman failures missing</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>1.1.1 (Non-text Content)</td></tr><tr class="even"><td><strong><a href="#i2648">2648</a>:</strong> F42 is overly broad.</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>Common Failures</td></tr><tr class="odd"><td><strong><a href="#i2649">2649</a>:</strong> Common failure needed for elements that should allow focus, but don't</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>2.1.1 (Keyboard)</td></tr><tr class="even"><td><strong><a href="#i2650">2650</a>:</strong> F78: Overwriting default focus indicator</td><td>comment</td><td>ACCEPTED</td><td>reviewer agrees</td><td>Common Failures</td></tr><tr class="odd"><td><strong><a href="#i2651">2651</a>:</strong> Extended Audio Description</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.2.7 (Audio Description (Extended))</td></tr><tr class="even"><td><strong><a href="#i2652">2652</a>:</strong> Sign Language for Videos</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer disagrees</td><td>1.2.6 (Sign Language)</td></tr><tr class="odd"><td><strong><a href="#i2653">2653</a>:</strong> Audio Background</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>1.4.7 (Low or No Background Audio)</td></tr><tr class="even"><td><strong><a href="#i2654">2654</a>:</strong> Space-and-a-half between paragraphs</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.4.8 (Visual Presentation)</td></tr><tr class="odd"><td><strong><a href="#i2655">2655</a>:</strong> Evaluating Reading Levels</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>3.1.5 (Reading Level)</td></tr><tr class="even"><td><strong><a href="#i2656">2656</a>:</strong> Editorial problems - German translation</td><td>translation</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>Translations</td></tr><tr class="odd"><td><strong><a href="#i2658">2658</a>:</strong> Decorative Images</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>1.1.1 (Non-text Content)</td></tr><tr class="even"><td><strong><a href="#i2659">2659</a>:</strong> Complex diagrams</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.1.1 (Non-text Content)</td></tr><tr class="odd"><td><strong><a href="#i2661">2661</a>:</strong> Clarification of SC 1.4.7</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.4.7 (Low or No Background Audio)</td></tr><tr class="even"><td><strong><a href="#i2662">2662</a>:</strong> National Apology to the Stolen Generations</td><td>impl. issue</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>conforming alternate version</td></tr><tr class="odd"><td><strong><a href="#i2663">2663</a>:</strong> National Apology to the Stolen Generations</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.2.3 (Audio Description or Full Text Alternative)</td></tr><tr class="even"><td><strong><a href="#i2664">2664</a>:</strong> Do modal dialogs violate keyboard trap?</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>2.1.2 (No Keyboard Trap)</td></tr><tr class="odd"><td><strong><a href="#i2666">2666</a>:</strong> On behavior of containers that are designed to fit limited text</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.4.4 (Resize text)</td></tr><tr class="even"><td><strong><a href="#i2669">2669</a>:</strong> SC 1.4.3, SC 1.4.6 and font size units</td><td>impl. issue</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.4.3 (Contrast (Minimum))</td></tr><tr class="odd"><td><strong><a href="#i2671">2671</a>:</strong> Statement of partial conformance</td><td>comment</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>Conformance</td></tr><tr class="even"><td><strong><a href="#i2672">2672</a>:</strong> Described in a way that users can identify</td><td>comment</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>Conformance</td></tr><tr class="odd"><td><strong><a href="#i2673">2673</a>:</strong> Partial conformance and conformance requirement 5</td><td>comment</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>Conformance</td></tr><tr class="even"><td><strong><a href="#i2674">2674</a>:</strong> Must links to other media warn users?</td><td>comment</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>General</td></tr><tr class="odd"><td><strong><a href="#i2675">2675</a>:</strong> Interference with screen reader</td><td>comment</td><td>PARTIAL/OTHER</td><td>reviewer agrees</td><td>1.4.2 (Audio Control)</td></tr><tr class="even"><td><strong><a href="#i2676">2676</a>:</strong> Must captions be resizable?</td><td>comment</td><td>ACCEPTED</td><td>reviewer agrees</td><td>1.4.4 (Resize text)</td></tr></tbody></table>
+
+Details
+-------
+
+<span id="i2598"></span>
+
+### Issue 2598: Drop 2.1.3 and revise 2.1.1
+
+**Issue Created:** 20 May 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008May/0005.html>  
+**Component:** 2.1.1 (Keyboard)  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>There is no difference between 2.1.1 and 2.1.3 if a Web page does not contain content that uses analogue input (i.e. the underlying function requires input that depends on the path of the user's movement and not just the endpoints).<br />
+<br />
+Question:<br />
+<br />
+a. If all functionality on such a Web page is keyboard-accessible, does it automatically meet AAA SC 2.1.3?<br />
+<br />
+b. Conversely, can one argue that making such a Web page keyboard-accessible is only a "AAA" requirement and disregard it as a "A" level requirement?<br />
+<br />
+If the answer to (a) is "Yes" and (b) above is "No", I feel that The reason for repeating the requirement at 2.1.3 is unclear or even futile.<br />
+<br />
+In that event I reiterate that 2.1.3 be dropped and 2.1.1 be re-stated as:<br />
+<br />
+SC2.1.1: All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.<br />
+This does not apply to content that uses analogue input (i.e. the underlying function requires input that depends on the path of the user's movement and<br />
+not just the endpoints).<br />
+<br />
+(I recall I had made this suggestion to TIETAC too).</td><td>The answer to (a) is "yes". If a Web page does not contain content that uses analogue input, then if it meets 2.1.1, it will also meet 2.1.3.<br />
+<br />
+The answer to (b) is "no". The Level A success criterion must be satisfied to conform at Level A. That it also satisfies a Level AAA success criterion is immaterial for Level A conformance.<br />
+<br />
+Note, of course, that your questions were limited to Web pages that do not contain analogue input. For pages which do contain analogue input, satisfying 2.1.1 does not also satisfy 2.1.3.<br />
+<br />
+Your proposed restatement of 2.1.1 is equivalent to the current success criterion 2.1.1. If 2.1.3 were dropped, then Web pages that contain analogue input would conform at Level AAA. The purpose of 2.1.3 is to ensure that all content is keyboard operable.<br />
+<br />
+At level A, it is permissible to have content that requires time-dependant analog input without providing a keyboard accessible alternative. This is not permissible at Level AAA because of 2.1.3.<br />
+<br />
+Response sent 17 Jun 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jun/0006.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jun/0006.html</a></td></tr></tbody></table>
+
+<span id="i2599"></span>
+
+### Issue 2599: Reorganizing the requirements in GL 1.2
+
+**Issue Created:** 28 May 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008May/0006.html>  
+**Component:** Presentation and Structure  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>In attempting to harmonize ATAG 2.0's "Guideline A.2.2 [For the<br />
+authoring tool user interface] Display synchronized alternatives for<br />
+synchronized media" with WCAG 2.0's "Guideline 1.2 Time-based Media:<br />
+Provide alternatives for time-based media" I found the WCAG guideline<br />
+confusing because it's bold labels mix the media types to be made<br />
+accessible (e,g,"Audio-only and Video-only (Prerecorded):") with the<br />
+ways this can be done (e.g. "Sign Language").<br />
+<br />
+I think it makes the most sense to follow the lead of WCAG Guideline 1.1<br />
+and focus on the original media since that's what content authors will<br />
+have in front of them.<br />
+<br />
+NOTE: The proposed changes are purely organizational and are not<br />
+intended to modify any normative requirement.<br />
+<br />
+-----------------------------------------------------------<br />
+LEVEL A:<br />
+<br />
+NOTE: Guideline 1.2 does not apply to any media that act as a *media<br />
+alternatives for text* and are clearly labeled as such.<br />
+<br />
+*Prerecorded Media:*<br />
+<br />
+*Audio-only*<br />
+- A *text alternative* is provided.<br />
+*Video-only*<br />
+- Either:<br />
++ a text alternative is provided or<br />
++ an audio track is provided that presents equivalent information.<br />
+*Synchronized Audio and Video*<br />
+- *Captions* of the audio are provided.<br />
+- Either:<br />
++ a *full text alternative for synchronized media including any<br />
+interaction* is provided or<br />
++ *audio descriptions* of the video are provided.<br />
+<br />
+-----------------------------------------------------------<br />
+LEVEL AA:<br />
+<br />
+*Prerecorded Media:*<br />
+<br />
+*Synchronized Audio and Video*<br />
+- *Audio descriptions* of the video are provided.<br />
+<br />
+*Live Media:*<br />
+<br />
+*Synchronized Audio and Video*<br />
+- Live *captions* of the audio are provided.<br />
+<br />
+-----------------------------------------------------------<br />
+LEVEL AAA:<br />
+<br />
+*Prerecorded Media:*<br />
+<br />
+*Video-only*<br />
+- A *text alternative* is provided.<br />
+<br />
+*Synchronized Audio and Video*<br />
+- *Sign language interpretation* of the audio is provided.<br />
+- *Extended audio description* of the video is provided.<br />
+- A *full text alternative for synchronized media including any<br />
+interaction* is provided.<br />
+<br />
+*Live Media:*<br />
+<br />
+*Audio-only*<br />
+- A *text alternative* is provided.</td><td>The handles (bold labels) for each success criterion are meant to be unique, so that they can be a shorthand for referring to the success criterion and a memory aid for remembering what it addressed. The proposed reorganization reuses handles, since different conformance levels include different requirements for the same media types.<br />
+<br />
+Response sent 24 Jul 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0013.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0013.html</a></td></tr></tbody></table>
+
+<span id="i2600"></span>
+
+### Issue 2600: accessibility supported technology
+
+**Issue Created:** 17 Jun 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008May/0000.html>  
+**Component:** CR4 (Accessibility-Supported Technologies Only)  
+**Disposition:** NOT ACCEPTED <span class="disagree">(Reviewer Disagrees)</span>
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>We noticed that WCAG 2.0 advanced to a candidate recommendation even though we have not received a follow up response to one of the issues we raised (which remains unresolved in the candidate recommendation). The issue in question is the one that we raised on April 9 (<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Apr/0043.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Apr/0043.html</a>) regarding perceived gaps in the "accessibility supported" definition (which is a continuation of the absence of support for programmatic objects issue that we raised earlier).<br />
+<br />
+Are you still considering our recommendation for resolving this issue or was the issue that we raised previously accidentally overlooked?<br />
+<br />
+Thank you,<br />
+<br />
+Common Look and Feel Office | Bureau de la normalisation des sites Internet<br />
+Treasury Board of Canada, Secretariat | Secrétariat du Conseil du Trésor du Canada<br />
+Government of Canada | Gouvernement du Canada<br />
+<br />
+-----Original Message-----<br />
+From: Common Look and Feel/Normalisation des sites Internet<br />
+Sent: April 9, 2008 3:22 PM<br />
+To: 'public-comments-WCAG20@w3.org'<br />
+Cc: 'Loretta Guarino Reid'<br />
+Subject: RE: Your comments on WCAG 2.0 Last Call Working Draft of December, 2007<br />
+<br />
+We agree that a technology (such as JavaScript) cannot be considered an accessibility supported technology if one or more of the supported environments requires that technology to be disabled.<br />
+<br />
+We also agree that a technology cannot be considered an accessibility supported technology if one or more of the supported user agents (such as cell phones, PDAs, or specialized browsers) cannot support the technology natively or through a widely-distributed plugin.<br />
+<br />
+The problem is that these requirements are not clear in the "accessibility supported" definition (<a href="http://www.w3.org/TR/WCAG20/#accessibility-supporteddef">http://www.w3.org/TR/WCAG20/#accessibility-supporteddef</a>).<br />
+<br />
+We recommend including the following wording in the "accessibility supported" definition and to also add "environment" to the glossary as it is used repeatedly throughout WCAG 2.0 and the meaning can be a bit unclear:<br />
+<br />
+<br />
+3. The Web content technology is not restricted in any of the supported environments. This means that all of the following are true:<br />
+<br />
+a) The technology is either supported natively or supported through widely distributed plugins for all of the supported user agents in the supported environments; AND<br />
+b) The technology is not restricted from being installed, enabled, or used in any of the supported environments; AND<br />
+c) The supported user agents, widely distributed plugins, and other technologies required to provide support for the technology are not restricted from being installed, enabled, or used in any of the supported environments.<br />
+<br />
+<br />
+Common Look and Feel Office | Bureau de la normalisation des sites Internet<br />
+Treasury Board of Canada, Secretariat | Secrétariat du Conseil du Trésor du Canada<br />
+Government of Canada | Gouvernement du Canada<br />
+<br />
+-----Original Message-----<br />
+From: Loretta Guarino Reid [mailto:lorettaguarino@google.com]<br />
+Sent: April 3, 2008 5:42 PM<br />
+To: Common Look and Feel/Normalisation des sites Internet<br />
+Cc: public-comments-WCAG20@w3.org<br />
+Subject: Re: Your comments on WCAG 2.0 Last Call Working Draft of December, 2007<br />
+<br />
+&gt; B) CONCERNS WITH COMMENT 3 RESPONSE<br />
+&gt;<br />
+&gt; Quote from the Comment 3 response:<br />
+&gt; "The situations you describe are addressed differently in WCAG 2.0 than in 1.0. WCAG 2.0 has an improved set of conformance requirements. Refer to <a href="http://www.w3.org/TR/WCAG20/#conformance-reqs.">http://www.w3.org/TR/WCAG20/#conformance-reqs.</a> We believe this is a more effective and thorough approach."<br />
+&gt;<br />
+&gt; The problem is that the conformance requirements do not cover a technology being disabled or unavailable resulting in accessibility issues, it only covers whether a technology is "accessibility-supported" or not which only deals with compatibility with assistive technologies.<br />
+&gt;<br />
+&gt; a) What about users with cell phones and other Internet-enabled devices? The way things are worded now, you could make JavaScript rendered content that is fully accessible to assistive technologies and keyboard users yet unavailable when JavaScript is disabled and the page could still achieve full compliance.<br />
+&gt;<br />
+&gt; b) What if the device does not support the required plugin (such as Flash)? There could be an accessibility supported plugin that is available for normal browsers but are not available for certain devices resulting in Web pages. This would meet the conformance requirements but still result in content being unavailable to certain users.<br />
+&gt;<br />
+&gt; Ultimately the conformance requirements as they are worded now leave many loopholes where sites can be completely inaccessible and unusable on certain user agents yet still be fully compliant (such as a fully JavaScript-rendered site that is fully accessible to assistive technologies but just an empty page on a handheld device that does not support JavaScript or secure environments where JavaScript is disabled).<br />
+&gt;<br />
+&gt; RECOMMENDATION: Either expand "Accessibility-Supported Technologies" conformance requirement to cover the case where an accessibility-supported technology is disabled or the required accessibility-plugin is not supported by the widely distributed user agent (cell phones and Internet-enabled devices are pretty common but most do not support Flash or JavaScript).<br />
+&gt;<br />
+<br />
+---------------------------------------------<br />
+Response from Working Group:<br />
+---------------------------------------------<br />
+If a technology is not supported on the users' user agents (including<br />
+such user agents as cell phones or Internet-enabled devices), then the<br />
+technology is not accessibility supported. If an author is producing<br />
+content for a secure environment where Javascript is disabled, then<br />
+the author cannot rely on Javascript. Determining the range of user<br />
+agents used in an environment is a challenge, but one which authors<br />
+must already face. It is important that information about which user<br />
+agents and assistive technologies support different technologies be<br />
+available to authors, so they understand the environment for which<br />
+they are producing content.<br />
+<br />
+Authors cannot control whether or not a user disables a technology<br />
+such as Javascript or fails to load a plug-in that is available to<br />
+users. As long as the conformance claim documents which technologies<br />
+are relied upon, and as long as the user agents can support that<br />
+technology, the author has met the accessibility-supported<br />
+requirements of WCAG 2.0<br />
+<br />
+Thanks again for the interest that you have taken in these guidelines.<br />
+Could we ask you to let us know whether or not you are satisfied with<br />
+this response by Wed, April 9?<br />
+<br />
+Loretta Guarino Reid, WCAG WG Co-Chair<br />
+Gregg Vanderheiden, WCAG WG Co-Chair<br />
+Michael Cooper, WCAG WG Staff Contact<br />
+<br />
+On behalf of the WCAG Working Group</td><td>Our apologies for leaving this dangling. We believed that we had confirmed via telephone that all of your Last Call comments had been addressed to your satisfaction.<br />
+<br />
+In the WCAG 2.0 supporting document, “Understanding Conformance” there is a discussion about the conditions for a WCAG 2.0 Success Criteria. The text is as follows:<br />
+<br />
+"All Success Criteria must be important access issues for people with disabilities that address problems beyond the usability problems that might be faced by all users. In other words, the access issue must cause a proportionately greater problem for people with disabilities than it causes people without disabilities in order to be considered an accessibility issue (and covered under these accessibility guidelines)."<br />
+<br />
+<a href="http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20-20080505/intro.html">http://www.w3.org/WAI/GL/WCAG20/WD-UNDERSTANDING-WCAG20-20080505/intro.html</a><br />
+<br />
+Taking the example you've provided, if the use of JavaScript is incompatible with handheld devices (and creating a blank page), then nobody will be able to access the content (regardless of ability) and therefore it is a global problem affecting all users. It would not affect people with disabilities disproportionately, and as such it falls beyond the scope of WCAG. This would also be true in environments where JavaScript is prohibited in a secure government environment. No one could access the content.<br />
+<br />
+In order for content to conform, SC 2.1.1 requires it must be keyboard accessible regardless of technology. Success Criteria 1.1.1 requires it be available in text. We believe the current language of Accessibility-Supported covers closed environments where conforming content is targeted for that environment.<br />
+<br />
+The definition of Accessibility Supported is already complex. We believe that introducing policy constraints (such as those in a closed environment) as well as technical constraints into the definition will make it more difficult to understand.<br />
+<br />
+Response sent 28 Jun 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jun/0024.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jun/0024.html</a></td></tr></tbody></table>
+
+<span id="i2602"></span>
+
+### Issue 2602: Fieldset - Legend techniques
+
+**Issue Created:** 01 Jul 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0000.html>  
+**Component:** HTML/XHTML Techniques  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Please refer to H71 and H82: both relate to using fieldset - legend<br />
+method to group form controls and refer to SC 1.3.1<br />
+Admittedly the 'description' for both differ. The former relates to a group<br />
+of controls sharing common descriptive / instructional text. But other than<br />
+that I do not see why this technique should be listed twice.</td><td>We have combined these into a single technique.<br />
+<br />
+Response sent 10 July 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0006.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0006.html</a></td></tr></tbody></table>
+
+<span id="i2603"></span>
+
+### Issue 2603: Longdesc
+
+**Issue Created:** 01 Jul 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0000.html>  
+**Component:** HTML/XHTML Techniques  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>The longdesc for images is mentioned and illustrated by H37 and H45.<br />
+Maybe reference to longdesc technique should be retained only in H45.</td><td>We have removed the discussion of longdesc from H37 and have added H45 to the Related Techniques.<br />
+<br />
+Response sent 10 July 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0006.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0006.html</a></td></tr></tbody></table>
+
+<span id="i2604"></span>
+
+### Issue 2604: H81: Nested Lists
+
+**Issue Created:** 01 Jul 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0000.html>  
+**Component:** HTML/XHTML Techniques  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>H81: Using nested list to convey link purpose: I think AT support is<br />
+lacking and should be noted under user agent notes</td><td>We added a user agent note as requested and also added text to the technique description. We agree that this technique is not currently well supported by assistive technology.<br />
+<br />
+Response sent 03 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0001.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0001.html</a></td></tr></tbody></table>
+
+<span id="i2605"></span>
+
+### Issue 2605: About technique H48
+
+**Issue Created:** 08 Jul 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0003.html>  
+**Component:** HTML/XHTML Techniques  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>HTML technique H48 deals with marking up lists. One of the tests is:<br />
+"Check that content that has the visual appearance of a bulleted list is<br />
+marked as an unordered list".<br />
+Comment: Even when bullets are not used, a sighted user can still<br />
+determine that certain items make up a list. For instance, top-nav or footer<br />
+links placed in one line horizontally. A sighted user would be able to<br />
+relate these items as a group of n items.<br />
+These should also be marked up as a list with no bullets.<br />
+So I suggest that the test should be worded as:<br />
+"Check that content that has the visual appearance of a list (with / without<br />
+bullets) is marked as an unordered list".</td><td>We have changed the test procedure as suggested.<br />
+<br />
+Response sent 10 July 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0005.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0005.html</a></td></tr></tbody></table>
+
+<span id="i2606"></span>
+
+### Issue 2606: SC 3.2.5 vs. SC 2.2.4 and G75 and G76
+
+**Issue Created:** 10 Jul 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0004.html>  
+**Component:** 3.2.5 (Change on Request)  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>SC 2.2.4 Interruptions: Interruptions can be postponed or suppressed by the<br />
+user, except interruptions involving an emergency. (Level AAA)<br />
+<br />
+SC3.2.5 Change on Request:<br />
+Changes of context are initiated only by user request or a mechanism is<br />
+available to turn off such changes. (Level AAA)<br />
+Comment:<br />
+3.2 deals with making Web page content behave in predictable ways and the<br />
+emphasis is on consistent layout, navigation and identification. This is in<br />
+keeping with the "understanding" principle.<br />
+I believe a change in context caused by auto updating content (3.2.5) is<br />
+covered by interruptions (2.2.4) that upset task focus. Such an<br />
+interruption or change in context makes it difficult to operate (or even<br />
+read) the Web page. So change of context by auto updating content is a<br />
+transgression of the "operate" principle than the "understand" principle.<br />
+Difficulty in understanding posed by auto updating content is a consequence<br />
+of difficulties posed during operation.<br />
+On the other hand, changes in context referred to 3.2.1 or 3.2.2 are also<br />
+unexpected but are based on user action (focus change / form input) and<br />
+certainly hamper understanding. As a consequence it makes operation<br />
+difficult.<br />
+The supporting techniques for 2.2.4 and 3.2.5 too are identical:<br />
+G75 for 2.2.4: Providing a mechanism to postpone any updating of content<br />
+G76 for 3.2.5: Providing a mechanism to request an update of the content<br />
+instead of updating automatically<br />
+<br />
+I think this is just a play of words and both SC 3.2.5 and technique G76<br />
+can be deleted without any loss.</td><td>Response sent to commenter, 24 July 2008:<br />
+<br />
+While we agree that listing automatic updates under 3.2.5 (Change on Request)<br />
+overlaps somewhat with the requirements of 2.2.4 (Interruptions), the two do<br />
+not overlap completely in that not all changes of context would be considered<br />
+an interruption. For example, providing a link that causes a movie to be opened<br />
+in a media player rather than in the current user agent would not be an<br />
+interruption, but would be a change of context.<br />
+<br />
+Regarding G75 and G76, providing a mechanism that postpones or allows users to<br />
+configure the frequency of automatic updates (G75) is different than providing<br />
+a mechanism that allows users to manually request them (G76). You are correct<br />
+however, that G76 should have been listed under 2.2.4 and we have corrected<br />
+that error.<br />
+<br />
+-----------------------<br />
+<br />
+Reply from commenter at<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0016.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0016.html</a> :<br />
+<br />
+I beg to differ with the WG on this issue.<br />
+<br />
+A link that opens up a presentation in a media player does cause a change in<br />
+context but is a user initiated request (like the ones I stated in my email).<br />
+Such links or UI elements will require advisory text like "launches in new<br />
+window in media player" or the like. This link for instance cannot be turned<br />
+off as required by the "or" clause of 3.2.5 because the content requires a<br />
+player to display it. As the SC suggests, should the link be disabled or hidden<br />
+if the user prefers not to view content in a media player? Perhaps the content<br />
+and the player are fully accessible and no alternative rendering is available.<br />
+<br />
+User initiated change in context cannot cause an interruption because the user<br />
+expects something to happen by activating an UI element. And advisory text<br />
+would be a sufficient technique for this.<br />
+<br />
+Auto updating / refreshing content that is not user initiated is primarily an<br />
+interruption which may also cause a change in context. Like a pop-up or the<br />
+start of a Flash presentation suddenly.<br />
+(The techniques doc too refers to change in context caused by auto updating<br />
+content while discussing G76).<br />
+<br />
+I would find 3.2.5 acceptable if it read:<br />
+"Changes of context are initiated only by user request."<br />
+Causing a change in context without prior notification when a UI element is<br />
+activated by user is a failure of 3.2.5.<br />
+<br />
+I still think that G75 and G76 are no different.<br />
+<br />
+-----------------------<br />
+<br />
+The working group believes these are different. An interruption usually means that the user is returned to their original position after the interruption ends. A change of context generally would not. So 2.2.4 wouldn’t necessarily cover 3.2.5. And 3.2.5 doesn’t cover 2.2.4 because interruptions can take the form of a dialog box or other event that doesn’t necessarily change the context.<br />
+<br />
+We do agree that these are very similar - and a single success criterion might be constructed that would cover both. But it is too late in the process now to do this. And it would not change the substance of the guidelines.<br />
+<br />
+Response Sent 23 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0028.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0028.html</a></td></tr></tbody></table>
+
+<span id="i2607"></span>
+
+### Issue 2607: Duplicate General techniques: form validation
+
+**Issue Created:** 11 Jul 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0007.html>  
+**Component:** General  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>G83, G84 and G85 that relate to SC 3.3.1 and 3.3.3 employ the same<br />
+testing techniques: Check if validation errors are described in text with<br />
+appropriate tips for correction.<br />
+They could be incomplete data, incorrect range of values or incorrect format<br />
+or even other (unstated) errors like values entered in one field may not be<br />
+consistent with other entries in the form. All are basically validation<br />
+errors. Three separate techniques are not warranted. Merge them.<br />
+<br />
+G83: Providing text descriptions to identify required fields that were not<br />
+completed<br />
+G84: Providing a text description when the user provides information that is<br />
+not in the list of allowed values<br />
+G85: Providing a text description when user input falls outside the required<br />
+format or values</td><td>While it is true that these are all examples of validation errors, we think it is helpful to separate them. It draws more attention to these particular types of validation for which there are suggestions available. This list is by no means exhaustive, and a generic validation technique would be a good addition. Would you help us by writing one and submitting it via <a href="http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/</a> ?<br />
+<br />
+Response sent 24 July 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0014.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0014.html</a></td></tr></tbody></table>
+
+<span id="i2608"></span>
+
+### Issue 2608: Duplicate General techniques: alt-text
+
+**Issue Created:** 11 Jul 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0007.html>  
+**Component:** General  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>G82, G94 and G95: Not clear why there are 3 techniques. There are copious<br />
+notes on how alt text / short text alts should be written in different<br />
+situations. Significant portions of descriptions for G94 and G95 are<br />
+identical. So I suggest: merge all three.<br />
+<br />
+G82: Providing a text alternative that identifies the purpose of the<br />
+non-text content<br />
+G94: Providing short text alternative for non-text content that serves the<br />
+same purpose and presents the same information as the non-text content<br />
+G95: Providing short text alternatives that provide a brief description of<br />
+the non-text content</td><td>Although the techniques are quite similar, they address different situations and require different types of information in the text alternative. G82, which only requires that the purpose of the non-text content be identified, would not be sufficient for Situation A of SC 1.1.1, where it is possible to provide a text equivalent to the non-text content.<br />
+<br />
+We have added pointers between the two techniques to show they are related.<br />
+<br />
+Response sent 24 July 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0014.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0014.html</a></td></tr></tbody></table>
+
+<span id="i2609"></span>
+
+### Issue 2609: providing a multipage view rather than a single file version of QuickRef
+
+**Issue Created:** 21 Jul 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0008.html>  
+**Component:** Presentation and Structure  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>When the "How to Meet SC X.Y.Z" link is selected from the WCAG 2.0 document, the full "How to Meet WCAG 2.0" document is loaded every time. When the connection is slow, it takes quite a while to load and the page jumps around until the browser can render the correct scrolling position within the display. One also ends up with more information than one had requested, which was just to learn more about implementing a specific Success Criterion.<br />
+<br />
+Note: the "Understanding SC X.Y.Z" link takes users to a dedicated standalone page which has a clear and easy to use navigation, as well as more efficient orientation cues.<br />
+<br />
+Proposed Change:<br />
+1. Provide a multipage view on the "How to Meet WCAG 2.0" document as the default presentation, as it is often easier to use. "How to Meet SC X.Y.Z" links in the WCAG 2.0 document should take users to the specific pages of the multipage resource.<br />
+<br />
+2. Provide an option in the customizable interface to select a single page view for those who want a full listing (for example to print out a checklist of requirements to cover).<br />
+<br />
+Note: the "Understanding WCAG 2.0" document also has an option to display it as a single file.</td><td>Interesting suggestion. However, the working group feels that the single-page view of the How to Meet document is one of its primary use cases in that it allows authors to view all of the techniques for WCAG 2.0 on a single page. If an author is interested only in a specific success criterion, they can use the "Understanding SC X.Y.Z" document, which includes the short list of sufficient and advisory techniques and common failures for a given success criterion.<br />
+<br />
+At this time, we have decided not to make the changes you have suggested, but we will keep them in mind should time and resources become available to explore this further.<br />
+<br />
+Response sent 03 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0003.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0003.html</a></td></tr></tbody></table>
+
+<span id="i2610"></span>
+
+### Issue 2610: Should C16 also refer to SC 2.4.7?
+
+**Issue Created:** 21 Jul 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0009.html>  
+**Component:** CSS Techniques  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>The stated purpose, examples and evaluation process for C15 and C16 are<br />
+quite identical. But the former refers to SC 2.4.7 and the latter to C16.<br />
+Should C16 also refer to SC 2.4.7?<br />
+<br />
+Refer to following:<br />
+C15: Using CSS to change the presentation of a user interface component when<br />
+it receives focus<br />
+C16: Changing the background color or border of the element with hover and<br />
+focus<br />
+<br />
+For C15: The objective of this technique is to demonstrate how the current<br />
+focus can be made visually evident by changing the appearance of the focused<br />
+element with CSS styling.<br />
+For C16: The objective of this technique is to demonstrate how visual<br />
+appearance may be enhanced via style sheets to provide visual feedback when<br />
+an interactive element has focus or when a user hovers over it using a<br />
+pointing device.</td><td>We have combined techniques C15 and C16.<br />
+<br />
+Response sent 28 Aug 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0049.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0049.html</a> :</td></tr></tbody></table>
+
+<span id="i2611"></span>
+
+### Issue 2611: Understanding 3.2.2
+
+**Issue Created:** 22 Jul 2008  
+**Source:** (Original comment not archived)  
+**Component:** 3.2.2 (On Input)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>My developers in Germany recently went through the 3.2.2 understanding doc and found some problems. I was able to help them due to my understanding of the matter, but I think we ought to make some corrections. Here are the issues.<br />
+<br />
+First example of SC, “A form is provided for creating calendar entries in a Web based calendaring and scheduling application. Along with the standard fields for subject, time and location, there is a set of radio buttons to select the type of calendar entry to create. The calendar entry type can be meeting, appointment or reminder. If the user selects the radio for meeting, additional fields are displayed on the page for entering the meeting participants. Different fields appear if the reminder button is chosen. Because only parts of the entry change and the overall structure remains the same the basic context remains for the user. Instructions at the beginning of the Web page explain the behavior of each radio button and the fields that appear when the button is selected.”<br />
+<br />
+Pay attention to the last two sentences. It say the example is NOT a change of context on the second last sentence. Then we go on to say that instruction is needed on the next sentence. That is a contradiction. If the scenario is not a change of context, which I agree, then no instruction is needed according to the success criteria. If we intend to show an example to which instruction is needed, then we need a real change of context, not a minor change of content.<br />
+<br />
+The second example with tab strip seems to say that a change of content due to switching from tab to tab is not considered a change of context because it is an expected behavior. Although I agree, it does not seem to the appropriate decision criteria since “expected behavior” is not part of the change of context definition. We ought to tighten up either the example language or the definition. Obviously, that would stress test our agreement as to what degree of change of content constitutes a change of context. Oh that can of worm!<br />
+<br />
+The intent section ends with, “Changes of context are appropriate only when it is clear that such a change will happen when a field is selected or a button is pressed.” Maybe it is because my audience are Germans, but they are confused as to whether “only when it is clear that such a change will happen” applies to “a button is pressed”. I told them it does not, but they were really confused over it. Considering that many of our audience may not be fluent in English, we may want to simplify that.</td><td>Thank you for pointing out these issues in Understanding SC 3.2.2. We have clarified them in the current document.<br />
+<br />
+Response sent 24 July 2008.</td></tr></tbody></table>
+
+<span id="i2612"></span>
+
+### Issue 2612: inconsistency with G122
+
+**Issue Created:** 24 Jul 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Jul/0011.html>  
+**Component:** General  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>I was looking at WCAG 2.0 forms techniques to see what might apply to older users - went to two different techniques places and found different suggestions in the examples:<br />
+<br />
+<a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20080430/G14.html">http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20080430/G14.html</a><br />
+<br />
+Example 4 recommends an "*" for required fields<br />
+<br />
+<a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20080430/G122.html">http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20080430/G122.html</a><br />
+<br />
+Example 1 illustrates the better practice of using words (albeit an abbreviation) and recommends "(req)" for required fields<br />
+<br />
+The literature is reporting that older users often have difficulty with the "*" solution (as do/did WindowsEyes users and also others with low-vision). Also, better than "(req)" is "(required)" for required fields - no one should be confused then.<br />
+<br />
+Proposed Change:<br />
+Both examples should preferably use "(required)", in addition to colour, to indicate mandatory fields.</td><td>We have revised technique G122 as you proposed.<br />
+<br />
+The working group felt it was important to include an example that includes the use of asterisk because we feel that it is sufficient to meet the success criterion and its use is commonly understood on the Web today. However, we added a new sufficient technique and a note to the example in G14 to highlight ways to reduce the accessibility challenges caused by the asterisk.<br />
+<br />
+We have added the following note to the example in G14 related to asterisks:<br />
+<br />
+Note: Asterisks may not be read by all screen readers (in all reading modes) and may be difficult for users with low vision because they are rendered in a smaller size than default text. It is important for authors to include the text indicating that asterisk is used and to consider increasing the size of the asterisk that is presented.<br />
+<br />
+We have also added a new sufficient technique to SC 3.3.2, "H90: Indicating required form controls", where we discuss using a larger font size for asterisks and alerting the user to its use at the start of the form.<br />
+<br />
+<a href="http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS/H90.html">http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS/H90.html</a><br />
+<br />
+Response sent 8 Aug 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0002.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0002.html</a></td></tr></tbody></table>
+
+<span id="i2613"></span>
+
+### Issue 2613: Additional resource for consideration
+
+**Issue Created:** 06 Aug 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0001.html>  
+**Component:** 1.1.1 (Non-text Content)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>I note you do not list the resources from RNIB, a W3C member.<br />
+<br />
+Proposed Change:<br />
+Please consider <a href="http://www.rnib.org.uk/wacblog/articles/better-connected/better-connected-better-results-alt-text/">http://www.rnib.org.uk/wacblog/articles/better-connected/better-connected-better-results-alt-text/</a> and/or <a href="http://www.rnib.org.uk/wacblog/images/captcha-if-youre-names-not-down-youre-not-coming-in/#more-150">http://www.rnib.org.uk/wacblog/images/captcha-if-youre-names-not-down-youre-not-coming-in/#more-150</a> for 1.1.1<br />
+<br />
+Other articles from the RNIB may be suitable resources for other sections (eg see <a href="http://www.rnib.org.uk/wacblog/">http://www.rnib.org.uk/wacblog/</a> and <a href="http://www.rnib.org.uk/xpedio/groups/public/documents/PublicWebsite/public_checkpoints.hcsp#P8_458">http://www.rnib.org.uk/xpedio/groups/public/documents/PublicWebsite/public_checkpoints.hcsp#P8_458</a>)</td><td>Thank you, we have added these resources to Understanding 1.1.1 and other RNIB<br />
+articles to other sections.<br />
+<br />
+Response sent 29 Aug 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0031.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0031.html</a></td></tr></tbody></table>
+
+<span id="i2615"></span>
+
+### Issue 2615: Image use cases that WCAG doesn't address
+
+**Issue Created:** 20 Aug 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0013.html>  
+**Component:** 1.1.1 (Non-text Content)  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>This comment is about Guideline 1.1 Text Alternatives, and this comment is about the substance of the guideline.<br />
+<br />
+The HTML5 draft[1] gives advice and examples for including text alternatives for a variety of image uses cases. As far as I can tell, the following use cases aren't addressed by WCAG 2.0:<br />
+<br />
+* A diagram illustrates what is already said textually. (HTML5 says alt="" for this case.)<br />
+<br />
+* A user-uploaded image whose content is unknown to the programmer of the HTML generator that frames the image for Web display and the user hasn't supplied a text alternative. (HTML5 says to put the description of what kind of image the image is in curly braces in the alt attribute. E.g. a photo sharing site would use alt="{photo}".)<br />
+<br />
+Proposed change:<br />
+I propose aligning with the HTML5 draft by saying that an image be marked as omissible from non-visual rendering if it illustrates what the surrounding prose already says.<br />
+<br />
+I propose aligning with the HTML5 draft by saying that if the generator of markup does not have a text alternative available, it should use the natural-language expression describing the kind of content (to the precision known to the generator) as the text alternative and use a mechanism provided by the host format for marking the text as not really being a text alternative but an indication of what kind of non-text content is in question.<br />
+<br />
+[1] <a href="http://www.w3.org/html/wg/html5/">http://www.w3.org/html/wg/html5/</a><br />
+--<br />
+Henri Sivonen<br />
+hsivonen@iki.fi<br />
+<a href="http://hsivonen.iki.fi/">http://hsivonen.iki.fi/</a></td><td>We try to make our guidelines match technical standards to the extent possible.<br />
+<br />
+We have looked at the HTML 5 standard and we note that although many of the examples match the WCAG 2.0 guidelines - some do not, including the ones you mentioned. (although the second example you mention seems to have been removed from the September editors draft)<br />
+<br />
+We are adding one sufficient technique to make it clear that some of the examples in HTML 5 do conform with WCAG. The new technique is:<br />
+<br />
+G196: Using a text alternative on one item within a group of images that describes all items in the group (<a href="http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS/G196.html">http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS/G196.html</a>)<br />
+<br />
+As for the other one you cite above, we think that WCAG currently draws the line in the right place and changing the standard would create problems for accessibility.<br />
+<br />
+Response sent 23 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0029.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0029.html</a></td></tr></tbody></table>
+
+<span id="i2616"></span>
+
+### Issue 2616: Editorial: WCAG 2.0 is hard to connect to concrete HTML authoring
+
+**Issue Created:** 20 Aug 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0014.html>  
+**Component:** General  
+**Disposition:** NOT ACCEPTED (No response from reviewer)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>This comment applies to the whole set of WCAG 2.0 documents as is an editorial comment.<br />
+<br />
+I tried to compare alt advice in the HTML5 draft with WCAG 2.0. I found that matching a concrete image use case to suggested HTML syntax is harder when reading WCAG 2.0 than when reading HTML5.<br />
+<br />
+Splitting the content of WCAG 2.0 across three documents and trying to operate on a technology-agnostic abstraction level makes it WCAG 2.0 less approachable than a document that covers concrete cases using a specific markup language as the example.<br />
+<br />
+Proposed solution: Making the Understanding document the spec and introducing things by concrete example cases instead of abstract terms.</td><td>One of the requirements of WCAG (<a href="http://www.w3.org/TR/wcag2-req/">http://www.w3.org/TR/wcag2-req/</a>) is to ensure that requirements may be applied across technologies and to ensure that the revision is "backwards and forward compatible". We agree that this makes the language of the guidelines more abstract and we have provided the Understanding and Techniques documents to help authors better understand how to apply the guidelines when using different technologies.<br />
+<br />
+Note that because the Understanding and Techniques documents are not normative, it possible for the working group to add to and revise them without going back through the W3C Recommendation process. This will, for example, make it possible for us to include HTML5 techniques when it becomes a recommendation.<br />
+<br />
+How to Meet WCAG 2.0 (<a href="http://www.w3.org/WAI/WCAG20/quickref/">http://www.w3.org/WAI/WCAG20/quickref/</a>) already addresses part of this concern as it can be configured to show only the techniques in the technologies of interest.<br />
+<br />
+We hope that once WCAG 2.0 has become a Recommendation and is stable, additional document and resources will be created that will make it easier for authors who are only interested in specific technologies.<br />
+<br />
+Response sent 29 Aug 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0048.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0048.html</a></td></tr></tbody></table>
+
+<span id="i2617"></span>
+
+### Issue 2617: Terminology clarifications requested by JIS
+
+**Issue Created:** 22 Aug 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0015.html>  
+**Component:** Translations  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td><a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0015.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0015.html</a><br />
+<br />
+There are both "accessibility supported" and "accessibility-supported" in WCAG 2.0 CR. Are they intentional or editorial mistakes?<br />
+<br />
+Proposed Change:<br />
+Need consistency through the document if they are editorial mistakes.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0016.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0016.html</a><br />
+<br />
+We need clarification on what "symbols" means. Does it mean graphic symbols for people with developmental disorders and speech comprehension difficulties? Or does it imply more than it?<br />
+<br />
+Proposed Change:<br />
+Hard to translate. Add the explanation to the Glossary.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0017.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0017.html</a><br />
+<br />
+What do you want to say by "indicating an action"? Some concrete examples would be helpful for us to translate the phrase.<br />
+<br />
+Proposed Change:<br />
+Hard to translate. Provide examples.<br />
+<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0018.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0018.html</a><br />
+<br />
+The term "mechanism" is defined in the Appendix A: Glossary. Is it used in unusual meaning?<br />
+<br />
+Proposed Change:<br />
+Just to clarify. We need your help in order to find the appropriate word in Japanese.<br />
+<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0019.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0019.html</a><br />
+<br />
+What is "glyph"?<br />
+<br />
+For Japanese, it can be translated in several ways. We need to make sure what it indicates. Could you provide us with the visual examples(not in text)? It will allow us to find an appropriate word in Japanese.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0020.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0020.html</a><br />
+<br />
+We couldn't understand both "line spacing" and "leading". Could you explain both by using visual examples? There are multiple interpretation in Japan and both are confusing. For "line spacing" / "leading", We guess there would be differences among languages.<br />
+<br />
+Proposed Change:<br />
+Need visual explanation on what "line spacing" is and what "leading" is. We'll be able to translate them if we see both.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0021.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0021.html</a><br />
+<br />
+We need more details on "space-and-a-half". It is one of the jargon. We couldn't find an appropriate word in Japanese.<br />
+<br />
+Proposed Change:<br />
+Need explanation.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0022.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0022.html</a><br />
+<br />
+We need the clarification what "path" means. Is it applied to pointing device only? Or also keyboard interfaces? Or any other movement?<br />
+<br />
+Proposed Change:<br />
+"path" can be translated to wider range of meaning. Need clarification.<br />
+<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0023.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0023.html</a><br />
+<br />
+"timing" = "time limit"?<br />
+<br />
+The "Note" reads "While exceptions to Success Criterion 2.2.1 where timing is essential exist,". Does "timing" mean "time limit"?<br />
+<br />
+Proposed Change:<br />
+Need explanation.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0024.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0024.html</a><br />
+<br />
+Does it mean that "5.0 seconds" is not included and "5.01 seconds" is included?<br />
+<br />
+Proposed Change:<br />
+Just to confirm.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0025.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0025.html</a><br />
+<br />
+What "process" means<br />
+<br />
+In Note 3, it reads "Content that is updated from a process, real-time or remote stream". We couldn't understand "a process, real-time or remote stream". Is this mean "process, realtime stream or remote stream"? Also we couldn't understand what "process" is in this Note 3.<br />
+<br />
+Proposed Change:<br />
+Very hard to translate. Could you say this in other words?<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0026.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0026.html</a><br />
+<br />
+Why "bypass"?<br />
+<br />
+We use "skip" for this. We'd like to know why you use "bypass" instead of "skip". What is the difference??<br />
+<br />
+Proposed Change:<br />
+Need explanation for appropriate translation.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0027.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0027.html</a><br />
+<br />
+"sections" = "section" in Glossary?<br />
+<br />
+In Note 2, it reads "This success criterion covers sections within writing,". We couldn't understand what "sections within writing" means. Does "sections within writing" mean the same thing as "section" in Glossary?<br />
+<br />
+Proposed Change:<br />
+Need clarification.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0028.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0028.html</a><br />
+<br />
+"report progress" for whom?<br />
+<br />
+In Note 1, it reads "Although conformance can only be achieved at the stated levels, authors are encouraged to satisfy and report progress toward meeting success criteria from all levels beyond the achieved level of conformance." What did you want to say by "report progress"?<br />
+<br />
+Proposed Change:<br />
+Hard to translation. Need clarification.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0029.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0029.html</a><br />
+<br />
+In "Optional components of a conformance claim" section, it reads "This information should be provided in a form that consumers can use, preferably machine-readable metadata." Who is "consumers"? Does it mean "end users of the web site/web appication"? If so, why "consumers" instead of "users"?<br />
+<br />
+Proposed Change:<br />
+Need explanation.<br />
+<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0030.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0030.html</a><br />
+<br />
+We found that several words don't have links to the same words in Glossary though they are defined in Glossary. For the same word, some are linked and the others are not linked. Is this an editorial mistakes? Or the words which don't link to Glossary are used in different meaning?<br />
+<br />
+Proposed Change:<br />
+Add link to Glosarry to all if they are editorial mistakes.</td><td>accessibility supported/accessibility-supported<br />
+<br />
+There are both "accessibility supported" and "accessibility-supported" in WCAG 2.0 CR. Are they intentional or editorial mistakes?<br />
+<br />
+Proposed Change:<br />
+<br />
+Need consistency through the document if they are editorial mistakes.<br />
+<br />
+RESPONSE: They are both correct. In English if you have two words that modify a third, the two words should be hyphenated. Thus ‘accessibility-supported technology’ should be hyphenated but ‘the technology is accessibility supported’ would not.<br />
+<br />
+-------------------------<br />
+<br />
+What is "symbols"?<br />
+<br />
+We need clarification on what "symbols" means. Does it mean graphic symbols for people with developmental disorders and speech comprehension difficulties? Or does it imply more than it?<br />
+<br />
+Proposed Change:<br />
+<br />
+Hard to translate. Add the explanation to the Glossary.<br />
+<br />
+RESPONSE: Symbols could apply to ‘anything that represents something else’ See <a href="http://en.wikipedia.org/wiki/Symbol">http://en.wikipedia.org/wiki/Symbol</a> . It is not limited to graphic symbols for people with developmental disorders and speech comprehension difficulties.<br />
+<br />
+-------------------------<br />
+<br />
+What is "action"?<br />
+<br />
+What do you want to say by "indicating an action"? Some concrete examples would be helpful for us to translate the phrase.<br />
+<br />
+Proposed Change:<br />
+<br />
+Hard to translate. Provide examples.<br />
+<br />
+RESPONSE: This means “indicating that something will happen or has already happened”. For example, using color to indicate that a link will open in a new window or that a database entry been updated successfully. “Prompting a response” refers to a use of color that would indicate that the user should do something. For example, a Web page could use highlighting on form fields to indicate that a required field had been left blank.<br />
+<br />
+-------------------------<br />
+<br />
+mechanism<br />
+<br />
+The term "mechanism" is defined in the Appendix A: Glossary. Is it used in unusual meaning?<br />
+<br />
+Proposed Change:<br />
+<br />
+Just to clarify. We need your help in order to find the appropriate word in Japanese.<br />
+<br />
+RESPONSE: It is defined because there are many definitions for mechanism and we are using it in a restricted (but not unusual) way.<br />
+<br />
+-------------------------<br />
+<br />
+What is "glyph"?<br />
+<br />
+For Japanese, it can be translated in several ways. We need to make sure what it indicates. Could you provide us with the visual examples (not in text)? It will allow us to find an appropriate word in Japanese.<br />
+<br />
+RESPONSE: The characters in hiragana and katakana are glyphs. Kanji are also glyphs. As are the representations of characters in the Western Alphabet See <a href="http://en.wikipedia.org/wiki/Glyphs">http://en.wikipedia.org/wiki/Glyphs</a><br />
+<br />
+-------------------------<br />
+<br />
+What is "line spacing" / "leading"?<br />
+<br />
+We couldn't understand both "line spacing" and "leading". Could you explain both by using visual examples? There are multiple interpretation in Japan and both are confusing. For "line spacing" / "leading", We guess there would be differences among languages.<br />
+<br />
+Proposed Change:<br />
+<br />
+Need visual explanation on what "line spacing" is and what "leading" is. We'll be able to translate them if we see both.<br />
+<br />
+RESPONSE: “Line spacing” is the space from the top of one line to the top of the next line. It is also called “Leading” for historical reasons. It comes from the old days when type was set by hand. Thin sheets of lead (the metal) were inserted between lines to adjust their spacing. So we now call any extra space between lines “leading”.<br />
+<br />
+-------------------------<br />
+<br />
+What is "space-and-a-half"?<br />
+<br />
+We need more details on "space-and-a-half". It is one of the jargon. We couldn't find an appropriate word in Japanese.<br />
+<br />
+Proposed Change:<br />
+<br />
+Need explanation.<br />
+<br />
+RESPONSE: There is not a word for this in English either. We must use a phrase. Space-and-a-half means that there is 50% more distance from the top of one line and the top of the next line than is normal for that font. (50% more than ‘single-spaced’ text)<br />
+<br />
+We have added an illustration of this to the understanding document (<a href="http://tinyurl.com/62jzfl">http://tinyurl.com/62jzfl</a>).<br />
+<br />
+-------------------------<br />
+<br />
+What "path" means<br />
+<br />
+We need the clarification what "path" means. Is it applied to pointing device only? Or also keyboard interfaces? Or any other movement?<br />
+<br />
+Proposed Change:<br />
+<br />
+"path" can be translated to wider range of meaning. Need clarification.<br />
+<br />
+RESPONSE: PATH means the “path taken by the users movement”. With pointing devices, the path you take to a button does not change the result if you press the button. However, if you are drawing a freehand line, you get a much different shape depending on the path of your movement. Same for a watercolor painting on your computer.<br />
+<br />
+-------------------------<br />
+<br />
+"timing" = "time limit"?<br />
+<br />
+The "Note" reads "While exceptions to Success Criterion 2.2.1 where timing is essential exist,". Does "timing" mean "time limit"?<br />
+<br />
+Proposed Change:<br />
+<br />
+Need explanation.<br />
+<br />
+RESPONSE: YES. We have revised the note to read as follows.<br />
+<br />
+DONE Note: This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1 which puts limits on changes of content or context as a result of user action.<br />
+<br />
+-------------------------<br />
+<br />
+more than 5 seconds<br />
+Does it mean that "5.0 seconds" is not included and "5.01 seconds" is included?<br />
+<br />
+Proposed Change:<br />
+<br />
+Just to confirm.<br />
+<br />
+RESPONSE: YES. "more than 5 sec" = "&gt; 5 sec". One would prefer more than 1/100th of a second but that would indeed satisfy the requirement.<br />
+<br />
+-------------------------<br />
+<br />
+What "process" means<br />
+<br />
+In Note 3, it reads "Content that is updated from a process, real-time or remote stream". We couldn't understand "a process, real-time or remote stream". Is this mean "process, real time stream or remote stream"? Also we couldn't understand what "process" is in this Note 3.<br />
+<br />
+Proposed Change:<br />
+<br />
+Very hard to translate. Could you say this in other words?<br />
+<br />
+RESPONSE: We have revised the note as follows:<br />
+"Content that is automatically updated periodically by software, or that is streamed to the user agent…” [is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so.]<br />
+<br />
+Is this easier to understand?<br />
+<br />
+-------------------------<br />
+Why "bypass"?<br />
+<br />
+We use "skip" for this. We'd like to know why you use "bypass" instead of "skip". What is the difference??<br />
+<br />
+Proposed Change:<br />
+<br />
+Need explanation for appropriate translation.<br />
+<br />
+RESPONSE: Bypass and Skip mean the same thing. You could use either word in this provision. In English skip has multiple meanings so Bypass was used in our document. It means to “pass by without stopping”.<br />
+<br />
+-------------------------<br />
+"sections" = "section" in Glossary?<br />
+<br />
+In Note 2, it reads "This success criterion covers sections within writing,". We couldn't understand what "sections within writing" means. Does "sections within writing" mean the same thing as "section" in Glossary?<br />
+<br />
+Need clarification.<br />
+<br />
+RESPONSE: YES. Sections is the plural of ‘section’ and we mean it as defined in the Glossary.<br />
+<br />
+-------------------------<br />
+<br />
+"report progress" for whom?<br />
+<br />
+In Note 1, it reads "Although conformance can only be achieved at the stated levels, authors are encouraged to satisfy and report progress toward meeting success criteria from all levels beyond the achieved level of conformance." What did you want to say by "report progress"?<br />
+<br />
+Proposed Change:<br />
+<br />
+Hard to translation. Need clarification.<br />
+<br />
+RESPONSE: We mean "include in the conformance claim." We should make this clearer. We will change this to "authors are encouraged to report (in their claim) any progress toward…"<br />
+<br />
+-------------------------<br />
+<br />
+why "consumers"?<br />
+<br />
+In "Optional components of a conformance claim" section, it reads "This information should be provided in a form that consumers can use, preferably machine-readable metadata." Who is "consumers"? Does it mean "end users of the web site/web application"? If so, why "consumers" instead of "users"?<br />
+<br />
+Need explanation.<br />
+<br />
+RESPONSE: Good catch. We should be consistent. We only user ‘consumers’ in the one location in the document. We will change it to ‘This information should be provided to users in a usable form, preferably machine-readable metadata’ in the next draft.<br />
+<br />
+-------------------------<br />
+<br />
+words in Glossary<br />
+<br />
+We found that several words don't have links to the same words in Glossary though they are defined in Glossary. For the same word, some are linked and the others are not linked. Is this an editorial mistakes? Or the words which don't link to Glossary are used in different meaning?<br />
+<br />
+Proposed Change:<br />
+<br />
+Add link to Glossary to all if they are editorial mistakes.<br />
+<br />
+RESPONSE: We provide links from terms as they are used normatively in SC and some other places. We don't duplicate a link in the SC or paragraph/section. We only make it a link the first time it appears.<br />
+<br />
+Responses sent 29 Aug 2008:<br />
+Response to commenter in<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0031.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0031.html</a><br />
+- through -<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0047.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Aug/0047.html</a></td></tr></tbody></table>
+
+<span id="i2618"></span>
+
+### Issue 2618: Geospatial mapping applications
+
+**Issue Created:** 02 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0000.html>  
+**Component:** General  
+**Disposition:** PARTIAL/OTHER (No response from reviewer)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Are there any inclusions / exclusions in the new guidelines that identify accessibility requirements for geospatial mapping web applications, similar to Google Maps? The Government Agency I work for, Geoscience Australia, produces many applications of this type and I would like to know what effect we will have if we adopt these guidelines. An example of a particular mapping application we host can be viewed at<br />
+<br />
+<a href="http://webmap.ga.gov.au/imf-natural_hazards/imf.jsp?site=natural_hazards_earthquake">http://webmap.ga.gov.au/imf-natural_hazards/imf.jsp?site=natural_hazards_earthquake</a></td><td>There are no exclusions for complex non-text content such as geospatial maps. However, if your example is typical, the "Recent Earthquakes" link provides a long description of the information provided by the map. In addition, your example provides an alternate version of the data used to generate the map via the search feature. The map could contain a short description that indicates what kind of data it contains and tells the user where to find the longer description. See Situation B in Understanding Success Criterion 1.1.1 for similar techniques.<br />
+<br />
+Response sent 03 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0002.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0002.html</a></td></tr></tbody></table>
+
+<span id="i2619"></span>
+
+### Issue 2619: Large Print
+
+**Issue Created:** 02 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0001.html>  
+**Component:** 1.4.3 (Contrast (Minimum))  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Are "Large Print" used in SC 1.4.3 and 1.4.6 different from "large print" used in GL 1.1? If so, the same wording is confusing.<br />
+<br />
+Proposed Change:<br />
+Change "Large Print" used in SC 1.4.3 and 1.4.6 to "Large Text".</td><td>Since this appears to be causing translation difficulties, we have changed the handles on SC 1.4.3 and 1.4.6 to "Large Text".<br />
+<br />
+Response sent 03 OCt 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0004.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0004.html</a></td></tr></tbody></table>
+
+<span id="i2620"></span>
+
+### Issue 2620: "minimum" or "enhanced"?
+
+**Issue Created:** 02 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0002.html>  
+**Component:** 1.4.6 (Contrast (Enhanced))  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>In the section of "Incidental", it reads "..., have no minimum contrast requirement". It should be "enhanced" instead of "minimum" as this is the SC for "Contrast (Enhanced)".<br />
+<br />
+Proposed Change:<br />
+Change "..., have no minimum contrast requirement" to "..., have no enhanced contrast requirement".</td><td>"Minimum" is correct in these parts of SC 1.4.6. Just as with SC 1.4.3, there is no minimum contrast requirement for text that occurs in the situations described by the Incidental and Logotypes clauses. So that text may have very poor contrast and still satisfy the success criterion.<br />
+<br />
+We have revised the second bullet of 1.4.3 and 1.4.6 as follows to clarify this:<br />
+<br />
+Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.<br />
+<br />
+Response sent 03 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0005.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0005.html</a></td></tr></tbody></table>
+
+<span id="i2621"></span>
+
+### Issue 2621: wording of "dialog"
+
+**Issue Created:** 16 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0011.html>  
+**Component:** Appendix A: Glossary  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>We thought that "dialog" means "a conversation between two or more persons" in general. For caption, it is not limited to the conversation.<br />
+<br />
+Proposed Change:<br />
+For example, change "dialog" to "speech/dialog".</td><td>We have revised the definition of "captions" as follows:<br />
+<br />
+captions<br />
+synchronized visual and/or text alternative for both speech and non-speech audio information needed to understand the media content<br />
+<br />
+Response sent 03 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0006.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0006.html</a></td></tr></tbody></table>
+
+<span id="i2622"></span>
+
+### Issue 2622: Note 5 in "conforming alternate version"
+
+**Issue Created:** 16 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0012.html>  
+**Component:** Appendix A: Glossary  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>It is difficult for us to interpret Note 5.<br />
+<br />
+Did Note 5 want to say that the conforming alternative version may be located on the other website which is outside of the scope of conformance?<br />
+<br />
+Proposed Change:<br />
+Need clarification for translation.</td><td>Your interpretation of this note is correct. If, for example, you included a high resolution photograph of a handwritten historical document on a page on your site and you referenced a conforming alternate version located on another site that included an HTML version of the document you had photographed, you would still be able to claim conformance for the original page.<br />
+<br />
+We have modified the note as follows:<br />
+<br />
+Note 5: The conforming alternative version does not need to reside within the scope of conformance&lt;add&gt;, or even on the same Web site,&lt;/add&gt; as long as it is as freely available as the non-conforming version.<br />
+<br />
+Response sent 03 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0007.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0007.html</a></td></tr></tbody></table>
+
+<span id="i2623"></span>
+
+### Issue 2623: "virtual magnifying glasses" in Note 1 for "viewport"
+
+**Issue Created:** 16 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0013.html>  
+**Component:** Appendix A: Glossary  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Why did you use "virtual magnifying glasses" instead of "magnifying software" or "screen magnifier"?<br />
+<br />
+Proposed Change:<br />
+Just to confirm the intent.</td><td>This language comes from the definition of viewport used in the User Agent Accessibility Guidelines (<a href="http://www.w3.org/TR/WAI-USERAGENT/glossary.html">http://www.w3.org/TR/WAI-USERAGENT/glossary.html</a>).<br />
+<br />
+It is meant to describe a type of magnification software that allows users to enlarge portions of the screen in a manner very similar to the way users might use a hand held magnifying glass.<br />
+<br />
+Response sent 03 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0008.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0008.html</a></td></tr></tbody></table>
+
+<span id="i2624"></span>
+
+### Issue 2624: "URI" or "URL"
+
+**Issue Created:** 16 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0014.html>  
+**Component:** Appendix A: Glossary  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>In "Web page" section, both "URI" and "URL" are used.<br />
+<br />
+Proposed Change:<br />
+If there isn't any difference between "URI" and "URL", use "URI" in order to be consistent through the document.</td><td>We have updated the documents to use "URI" as proposed.<br />
+<br />
+Response sent 23 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0037.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0037.html</a></td></tr></tbody></table>
+
+<span id="i2625"></span>
+
+### Issue 2625: 18 point or 14 point bold
+
+**Issue Created:** 16 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0015.html>  
+**Component:** Appendix A: Glossary  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>What is "common pixel sizes available today"? 1024 x 768?<br />
+<br />
+Proposed Change:<br />
+We need more concrete premise for the users display.</td><td>Since the note relates to the definition of large scale text, we have removed this sentence "This success criterion is based on common pixel sizes available today." Additional detail about why 14 point bold and 18 point were chosen can be found in the understanding 1.4.3 and 1.4.6 documents.<br />
+<br />
+Response sent 24 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0042.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0042.html</a></td></tr></tbody></table>
+
+<span id="i2626"></span>
+
+### Issue 2626: large scale text for CJK
+
+**Issue Created:** 16 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0016.html>  
+**Component:** Appendix A: Glossary  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>In "large scale (text)", it reads "... font size that would yield equivalent stroke width for Chinese, Japanese and Korean (CJK) fonts". For Japanese, the stroke width differs according to the font face, also between Kanji and Hiragana/Katakana. And the stroke width is not proportional to the font size.<br />
+<br />
+Proposed Change:<br />
+We can't determine the large scale text for Japanese characters with this definition. Please tell us how to find appropriate font size for Japanese. To be testable, we have to present the font sizes like "18 point or 14 point bold" for Japanese authors.</td><td>We determined the font sizes for this provision by using the standard font sizes for large print in the United States.<br />
+<br />
+We suggest that the font sizes for CJK languages be derived in the same fashion. If you have a suggestion for a specific font size that would be suitable for large print in CJK languages, we would welcome any input you might have.<br />
+<br />
+We have added the following note to the definition:<br />
+<br />
+NOTE 5: The 18 and 14 point sizes for roman texts are taken from the minimum size for large print (14pt) and the larger standard font size (18pt). For other fonts such as CJK languages the "equivalent" sizes would the the minimum large print size used for those languages and the next larger standard large print size.<br />
+<br />
+Response sent 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2627"></span>
+
+### Issue 2627: "must be presented in non-text format"
+
+**Issue Created:** 16 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0017.html>  
+**Component:** 1.1.1 (Non-text Content)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>"must be presented in non-text format" which is defined in Glossary can be changed to "would be invalid if presented in text" as defined in Grossary. The phrase is used just one time.<br />
+<br />
+Proposed Change:<br />
+Just replace "must be presented in non-text format" with "would be invalid if presented in text" and remove "must be presented in non-text format" from Glossary.</td><td>We have updated the draft as proposed.<br />
+<br />
+Response sent 06 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0010.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0010.html</a></td></tr></tbody></table>
+
+<span id="i2628"></span>
+
+### Issue 2628: on a full-screen window
+
+**Issue Created:** 16 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0018.html>  
+**Component:** 1.4.8 (Visual Presentation)  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>"on a full-screen window" is used just one time.<br />
+<br />
+Proposed Change:<br />
+Change "on a full-screen window" to "on the most common sized desktop/laptop display with the viewport maximized" as defined in Glossary and remove "on a full-screen window" from Glossary.</td><td>We have moved an important note from the understanding doc to the definition so it no longer works to move the definition up to the success criterion.<br />
+<br />
+Response sent 06 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0011.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0011.html</a></td></tr></tbody></table>
+
+<span id="i2629"></span>
+
+### Issue 2629: definition of "process"
+
+**Issue Created:** 16 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0019.html>  
+**Component:** Appendix A: Glossary  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>It reads "series of user actions where each action is required in order to complete an activity". Can we remove "where action is required" and say "series of user actions in order to complete an activity"?<br />
+<br />
+Proposed Change:<br />
+If it would change the meaning, just keep it as it is.</td><td>Removing this phrase would change the meaning of the term. This is because it specifies that "each action" is required in order to complete an activity. For example, a process would require that a user complete each of the following actions:<br />
+1. add an item to their shopping cart<br />
+2. provide a shipping address<br />
+3. provide payment information<br />
+4. review and submit their order<br />
+<br />
+Response sent 06 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0012.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0012.html</a></td></tr></tbody></table>
+
+<span id="i2630"></span>
+
+### Issue 2630: glyph for English
+
+**Issue Created:** 16 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0020.html>  
+**Component:** 1.4.8 (Visual Presentation)  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>In English, does glyph include %, $, &amp;, @, # and so on? For "33%" as an example, "33" is character and "%" is glyph?<br />
+<br />
+Proposed Change:<br />
+Just to confirm the answers from WCAG WG.</td><td>The differences between these terms can be somewhat confusing. Perhaps the following definitions (from wikipedia) will help.<br />
+<br />
+- a grapheme is the fundamental unit in written language. Graphemes include alphabetic letters, Chinese characters, numerals, punctuation marks, and all the individual symbols of any of the world's writing systems.<br />
+<br />
+- a character is a unit of information that roughly corresponds to a grapheme<br />
+<br />
+- a glyph is the shape given in a particular typeface to a specific grapheme or symbol<br />
+<br />
+Another useful resource that may help in understanding this topic is:<br />
+<br />
+FAQ: Character encodings for beginners:<br />
+<a href="http://www.w3.org/International/questions/qa-what-is-encoding">http://www.w3.org/International/questions/qa-what-is-encoding</a><br />
+<br />
+In your example, all of the items mentioned (%, $, &amp;, @, #, 33%) would be both characters and glyphs because the association between their shape and the information the shapes represent are intact. If however, you were to create a font where the character mapping for the letter "b" was associated with a glyph that was a picture of a fish, then you would have something that is a glyph, but not a character.<br />
+<br />
+Another resource that may be helpful is<br />
+<a href="http://ja.wikipedia.org/wiki/%E5%AD%97%E4%BD%93">http://ja.wikipedia.org/wiki/%E5%AD%97%E4%BD%93</a><br />
+<br />
+Response sent 06 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0012.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0012.html</a></td></tr></tbody></table>
+
+<span id="i2631"></span>
+
+### Issue 2631: G182: will this include underlining text links
+
+**Issue Created:** 17 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/implementation_experience?implementation_id=25>  
+**Component:** General  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Will this technique include a specific sub-technique relating to underlining text links?</td><td>Yes, this technique has been drafted and includes information related to underlining text links.<br />
+<br />
+Refer to <a href="http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS/G182.html">http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS/G182.html</a> for the new technique.<br />
+<br />
+Response sent to implementor 06 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2632"></span>
+
+### Issue 2632: Instances where technique G153 is not met.
+
+**Issue Created:** 17 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/implementation_experience?implementation_id=25>  
+**Component:** General  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Testing with different tools provide widely varying results. E.g. Juicy Studio Readability Flesch-Kincaid Test reads the entire web page including navigation, not just content. It can also give a very different result to the Microsift Word Flesch-Kincaid Test tool. These tools need to be checked to ensure they are accurate.</td><td>While the working group has attempted to provide helpful Related Resources, no endorsement is implied, and we cannot take responsibility for the design of the tools. The working group commends any reading experts who are willing to test the tools and provide feedback to the authors to improve them.<br />
+<br />
+Based on implementation experience, we have also changed the Success Criterion to require that the text meet the reading levels AFTER removal of proper names and titles. This may require yet more adjustments to how to use the existing tools.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2633"></span>
+
+### Issue 2633: Is 3.3.1 relevant if errors are not automatically detected?
+
+**Issue Created:** 17 Sep 2008  
+**Source:** (Original comment not archived)  
+**Component:** 3.3.1 (Error Identification)  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>General Note: Success Criterion 3.3.1 states: "If an error is automatically detected, the item that is in error is identified and the error is described to the user in text"<br />
+<br />
+The Success Criterion seems to imply that if errors are not automatically detected then the Success Criterion is not relevant.<br />
+However, the technique G83: "Providing text descriptions to identify required fields that were not completed" seems to state that errors must be detected:<br />
+<br />
+1. Fill out a form, deliberately leaving one or more required (mandatory) fields blank, and submit it.<br />
+2. Check that a text description is provided identifying the mandatory field(s) that was not completed.<br />
+<br />
+Is it a breach of this Success Criterion if errors are not automatically detected?<br />
+<br />
+G83 Technique also contains an example which does not work for screen reader users:<br />
+<br />
+"A user is completing a form that contains mandatory fields. The labels of the fields indicate whether or not they are mandatory. The user tabs to a mandatory field, and tabs out of the field without entering any data or selecting a choice. A client-side script modifies the label of the field to indicate that leaving it blank was an error".<br />
+<br />
+Many screen readers would not pick up the change in the DOM which is done by the scripting. Even if the screen readers copy of the page is updated when the label is updated (reflecting the change in the DOM), the user might not tab back to that control to have the label announced.<br />
+<br />
+The two other examples mentioned in the technique works very well for screen reader users. So including the above example in the technique could potentially mean that it is implemented instead of a technique that works for screen reader users.</td><td>If errors are not automatically detected, SC 3.3.1 is not relevant. The success criterion ensures that when errors are reported they are reported in a way that makes it easier for users to understand what field was in error and why.<br />
+<br />
+If the error is not automatically detected then none of the users are notified of the error and people with disabilities are at no special disadvantage.<br />
+<br />
+We have added an explanation to the third example in G83 that screen reader users may not be aware of the error:<br />
+<br />
+Note: Some screen readers may not notice and announce the change to the label so screen reader users may be unaware of the error.<br />
+<br />
+Response sent 06 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2634"></span>
+
+### Issue 2634: "all" or "potentially serious" mistakes?
+
+**Issue Created:** 17 Sep 2008  
+**Source:** (Original comment not archived)  
+**Component:** 3.3.6 (Error Prevention (All))  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>General Note: This SC seems to apply to all forms, by including the word "all":<br />
+"3.6.6 Error Prevention (All): For Web pages that require the user to submit information ..."<br />
+<br />
+However, when reading the "Understanding" section and the techniques it seems that this success criteria only applies when potentially serious mistakes can be made (for example purchasing goods, or submitting private information).<br />
+<br />
+This success criterion is on level AAA and would therefore be expected to apply to "all" situations where form information is submitted, for example search functions (spell checking should be provided) and users submitting feedback regarding web site design and functionality (feedback checked for omitted fields).</td><td>We agree. We have removed the phrase " that could result in serious consequences" from intent if 3.3.6 and from the benefits section. Also, the techniques you have suggested are addressed in other success criteria such as 3.3.5 and 3.3.1.<br />
+<br />
+Response sent 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2635"></span>
+
+### Issue 2635: H44 and H65 do not seem related to 3.2.4
+
+**Issue Created:** 17 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/implementation_experience?implementation_id=25>  
+**Component:** HTML/XHTML Techniques  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>General Note:<br />
+The two techniques for Success Criterion 3.2.4 - Consistent Identification do not seem related to the success criterion.<br />
+<br />
+The two techniques are:<br />
+<br />
+H44: Using label elements to associate text labels with form controls (HTML)<br />
+H65: Using the title attribute to identify form controls when the label element cannot be used<br />
+<br />
+These techniques deal purely with correct labeling on individual pages while the success criterion is about consistent labeling across many pages.<br />
+<br />
+The techniques seem to imply, for example, that if a search function at the top of all pages have different label text on different pages, it still passes if the labels are correctly marked-up (associated) on the individual pages. This goes against the Success Criterion.</td><td>We have revised the sufficient techniques section of Understanding Success Criterion 3.2.4 to clarify that the sufficient techniques from Success Criterion 1.1.1 and Success Criterion 4.1.2 should be used to provide labels, names and text alternatives. SC 3.2.4 requires that they be used consistently.<br />
+<br />
+Response to implementor sent 06 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2636"></span>
+
+### Issue 2636: H33 Creates accessibility issues
+
+**Issue Created:** 17 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/implementation_experience?implementation_id=25>  
+**Component:** HTML/XHTML Techniques  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Technique: "H33: Supplementing link text with the title attribute" creates accessibility issues: it encourages the use of an attribute that is not widely announced by screen readers and never will be.<br />
+<br />
+Screen reader users have more than enough information to process when listening to a page, and expecting them to listen to the title of links just in case the title includes extra information is unreasonable.<br />
+<br />
+Why includes this technique when there are perfectly good alternatives, for example including information in the link text or off-screen?.</td><td>The User Agent and Assistive Technology Notes for H33 are extensive, documenting the limitations of this technique and the obstacles it can pose for users. This technique is only sufficient when the title is providing supplemental information to the link text.<br />
+<br />
+We have added the following paragraph to the description of this technique:<br />
+<br />
+Because of the extensive user agent limitations in supporting access to the title attribute, authors should use caution in applying this technique. For this reason, it is preferred that the author use technique C7: Using CSS to hide a portion of the link text or H30: Providing link text that describes the purpose of a link for anchor elements.<br />
+<br />
+Response sent to implementor 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2637"></span>
+
+### Issue 2637: H30 examples encourage wordy links
+
+**Issue Created:** 17 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/implementation_experience?implementation_id=25>  
+**Component:** HTML/XHTML Techniques  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>General Note: The following example from technique H30: "Providing link text that describes the purpose of a link for anchor elements" encourages wordy links (not many web pages have link phrases like "go to the home page"):<br />
+<br />
+Example 4<br />
+<br />
+A link contains an icon and text, and the site help refers to the icon. The img has a text alternative which is the name used for the icon in the site help, which describes clicking the home page icon.<br />
+<br />
+&lt;a href="foo.htm"&gt;<br />
+&lt;img src="house.gif" alt="home page icon"/&gt;<br />
+Go to the home page<br />
+&lt;/a&gt;<br />
+<br />
+Suggestion:<br />
+<br />
+Example 4<br />
+<br />
+A link contains text and an icon, and the site help refers to the icon. The img has a text alternative which is the name used for the icon in the site help.<br />
+<br />
+&lt;a href="foo.htm"&gt;<br />
+Woodend Music Festival Program<br />
+&lt;img src="pdficon.gif" alt="PDF format"/&gt;<br />
+&lt;/a&gt;</td><td>Thanks for noticing this. We tightened up the text in our example and added your proposed example as well.<br />
+<br />
+Response sent to implementor 06 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2638"></span>
+
+### Issue 2638: Inconsistent labeling causing confusion.
+
+**Issue Created:** 17 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/implementation_experience?implementation_id=25>  
+**Component:** General  
+**Disposition:** NOT ACCEPTED (No response from reviewer)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>General WCAG 2.0 Issue:<br />
+<br />
+Inconsistent labeling causing confusion.<br />
+<br />
+Items 1.2.2 to 1.2.8 indicate what needs to be provided to make content accessible which is inconsistent to labelling of other Success Criteria.<br />
+Make wording consistent. It is better if all success criterion start with a phrase indicating content. This is because web designers checking pages for potential accessibility issues need to keep the relevant content in mind rather than what needs to be provided to make content accessible.</td><td>We agree with you but these provisions are a special case. There are some tricky issues with these and we tried many different forms for these SC before we could find one that worked. These are worded in this fashion because they must be in order to be accurate for the full range of media that they would apply to.<br />
+<br />
+Response to implementor 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2639"></span>
+
+### Issue 2639: G65 - editorial correction
+
+**Issue Created:** 18 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0022.html>  
+**Component:** General  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Refer to Testing procedure for G65 (bread crumb nav)<br />
+5. For a breadcrumb trail that does include the current location:<br />
+1. Check that all elements except for the current location are implemented<br />
+as links.<br />
+<br />
+2. Check that the current location is not implemented as a link.<br />
+<br />
+<br />
+Comment:<br />
+Item#2 above is redundant and may be omitted. Already covered in item#1.</td><td>Since Item #1 explicitly excludes the current location, Item #2 is not covered by it. The requirement for the current location in the breadcrumb trail is different from the requirements for the other elements.<br />
+<br />
+Response sent 06 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0014.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0014.html</a></td></tr></tbody></table>
+
+<span id="i2640"></span>
+
+### Issue 2640: G156 should be a sufficient technique
+
+**Issue Created:** 18 Sep 2008  
+**Source:** (Original comment not archived)  
+**Component:** 1.4.3 (Contrast (Minimum))  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Why not putting G156 as possible sufficient technique. When all background and foreground colors are managed through CSS, if the contrast is not sufficient for a user, he can disable styles ou use his own stylesheets.</td><td>Because G156 does not address the contrast ratio of the background and foreground colors, it would not be sufficient to meet the requirements for 1.4.3. Also, few users know how to create or use custom CSS or turn it off. However, since using it could make it easier for a user to adjust their user agents so in order to improve the contrast ratio, we have listed it as an advisory technique for both 1.4.3 and 1.4.6.<br />
+<br />
+Response sent to implementer 06 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2642"></span>
+
+### Issue 2642: Don't make contrast conditional on font size
+
+**Issue Created:** 18 Sep 2008  
+**Source:** (Original comment not archived)  
+**Component:** 1.4.3 (Contrast (Minimum))  
+**Disposition:** NOT ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Additionally conditioning the target ratio to the font size is much complicated... I use mainly "em" or named font size... what does it gives in "points" ???<br />
+<br />
+I suggest to stay with ISO standard 3:1 for 1.4.3 and 5:1 for 1.4.6 and not taking into consideration this size stuff...</td><td>The ISO standard is for people with normal vision. These guidelines are designed to provide enough contrast to accommodate people with low vision including those with colorblindness.<br />
+<br />
+We could use 5:1 and 7:1 without a lesser value for larger print but this is more restrictive than necessary. However, if an author desires to make it simpler for themselves they could just use 5:1 and 7:1 and avoid considering font size.<br />
+<br />
+Note that based on implementation feedback, we have changed the ratio for SC 1.4.3 from 5:1 to 4.5:1. For people with vision impairments, 4.5:1 is equivalent to ISO's 3:1 for people with normal vision.<br />
+<br />
+Response to commenter sent 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2643"></span>
+
+### Issue 2643: Success Criteria seem redundant, etc.
+
+**Issue Created:** 18 Sep 2008  
+**Source:** (Original comment not archived)  
+**Component:** General  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>SC 1.2.5 Audio Descriptions: Isn't this already covered under 1.2.3? I don't understand why it's separated how here, and in 1.2.8.<br />
+<br />
+SC 1.2.8: Full Text Alternative: Isn't this already covered under 1.2.3? I don't understand why it's separated how here, and in 1.2.8.<br />
+<br />
+SC 1.4.9: Images of Text (No Exception) : Seems redundant with 1.4.5.<br />
+<br />
+SC 2.4.9: Link Purpose (Link Only): Seems redundant with 2.4.4.<br />
+<br />
+SC 2.4.10: Section Headings : This seems too similar to 1.3.1 to be so disconnected.</td><td>WCAG 2.0 contains progressive requirements for some types of content, that is, the requirements at Level AA are more rigorous than the requirements at Level A and similarly for Level AAA and Level AA.<br />
+<br />
+So SC 1.2.3 at Level A requires either Audio Descriptions or Full Text Alternatives. At Level AA, SC 1.2.5 requires Audio Descriptions and Level AAA SC 1.2.8 requires Full Text Alternatives. To conform at Level AAA, both Audio Descriptions (possibly Extended) and Full Text Alternatives are required.<br />
+<br />
+However, at Level AA, it is possible to conform with only Audio Descriptions provided and at Level A, it is possible to conform with only Full Text Alternatives.<br />
+<br />
+SC 1.4.5 (Images of Text), at Level AA, is very similar to SC 1.4.9 (Images of Text (No Exception) at Level AAA except a Level AA an exception is permitted if the technology used cannot achieve the visual presentation of the text. At Level AAA, this exception is removed.<br />
+<br />
+When content satisfies SC 2.4.4 Link Purpose (In Context) at Level A the user may need to consults programmatically determined link context to determine the purpose of the link. At Level AAA, SC 2.4.9 (Link Purpose (Link Only)) requires that the link context depend only on the link text itself not on the context.<br />
+<br />
+With respect the headings, SC 1.3.1 (Info and Relationships) requires that if headings are used they are marked up in a way that assistive technology can recognize them as headings. But it does not require that headings be used. SC 2.4.10 (Section Headings) requires that headings be present.<br />
+<br />
+Response sent to implementer, 06 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2644"></span>
+
+### Issue 2644: Are characters in the Windows Character Map images of text?
+
+**Issue Created:** 18 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=39>  
+**Component:** 1.4.3 (Contrast (Minimum))  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>The screenshots of the Windows Character Map contain text but are not really images of text. However, the text in the screenshots is not incidental either. How does SC 1.4.3 apply to these screenshots?<br />
+<br />
+<a href="http://canada.esat.kuleuven.be/user/error404/chinese/WindowsCharacterMap.html">http://canada.esat.kuleuven.be/user/error404/chinese/WindowsCharacterMap.html</a></td><td>The provision has "that are part of a picture that contains significant other visual content," as an exception. This exception is intended to separate pictures that have text in them from images of text that are done to replace text (in order to get a particular look).<br />
+<br />
+So these images would not be "images of text" and are not covered by 1.4.3.<br />
+<br />
+To make this clearer we are adding the following to the Understanding doc.<br />
+<br />
+In this provision there is an exception that reads "that are part of a picture that contains significant other visual content,". This exception is intended to separate pictures that have text in them from images of text that are done to replace text in order to get a particular look.<br />
+<br />
+Response to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2645"></span>
+
+### Issue 2645: Provide success feedback
+
+**Issue Created:** 18 Sep 2008  
+**Source:** (Original comment not archived)  
+**Component:** 3.3.6 (Error Prevention (All))  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>In addition to error feedback, success feedback is also provided to inform users that an operation completed successfully, removing the need to manually confirm whether an action was successful or not.<br />
+<br />
+Success feedback is not included as a criteria in WCAG2. It probably should be. Without it AT users are often required to expend significant effort to confirm that an action just completed was successful</td><td>We agree that success feedback is often helpful to users. We have added an advisory technique to SC 3.3.1, 3.3.3, and 3.3.4 and would welcome any help you can provide in drafting it.<br />
+<br />
+We have added an advisory technique titled, "Providing success feedback when data is submitted successfully."<br />
+<br />
+Response sent to implementor 06 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2646"></span>
+
+### Issue 2646: H44 : sufficient technique for 3.2.4?
+
+**Issue Created:** 19 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0024.html>  
+**Component:** HTML/XHTML Techniques  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>H44 (using labels for form controls) deals only with explicit association<br />
+and does not refer to "consistency". Yet the "Applicability" section refers<br />
+to 3.2.4 (Consistent Identification). The eval techniques for 3.2.4 also<br />
+lists H44 as a sufficient technique. I think this is not appropriate and<br />
+the cross references should be deleted.<br />
+Also note: H65 (using title attribute for form controls) does not refer to<br />
+3.2.4.</td><td>We have revised the sufficient techniques section of Understanding Success Criterion 3.2.4 to clarify that the sufficient techniques from Success Criterion 1.1.1 and Success Criterion 4.1.2 should be used to provide labels, names and text alternatives. SC 3.2.4 requires that they be used consistently.<br />
+<br />
+Response sent 06 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0015.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0015.html</a></td></tr></tbody></table>
+
+<span id="i2647"></span>
+
+### Issue 2647: Two comman failures missing
+
+**Issue Created:** 20 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=47>  
+**Component:** 1.1.1 (Non-text Content)  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>There are two notable failures to which there were not Failure options provided. 1) Failure due to images that convey content, but do not have appropriate alternative text (either in alt attribute or context), and 2) Failure for linked image (image is only element within the link) missing alt text or alt attribute.</td><td>Regarding:<br />
+"1) Failure due to images that convey content, but do not have appropriate alternative text (either in alt attribute or context)"<br />
+<br />
+Although we do require that text alternatives serve the equivalent purpose of the non-text content, we do not feel it is possible to create a testable failure that would identify when text alternatives are not appropriate. We do, however, have a failure for using placeholders in alt text.<br />
+<br />
+Regarding:<br />
+"2) Failure for linked image (image is only element within the link) missing alt text or alt attribute."<br />
+<br />
+You may have linked images in different technologies where alt text is not the proper technique for the text alternative.<br />
+<br />
+We have added a failure titled "F89: Failure of 2.4.4, 2.4.9 and 4.1.2 due to using null alt on an image where the image is the only content in a link" (<a href="http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS/F89.html">http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS/F89.html</a>)<br />
+<br />
+Response to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2648"></span>
+
+### Issue 2648: F42 is overly broad.
+
+**Issue Created:** 20 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=47>  
+**Component:** Common Failures  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>If an alternative mechanism is provided to trigger the scripting functionality, this should not be a failure.</td><td>We have added "in a way that is not programmatically determinable" so that the failure title reads as follows:<br />
+<br />
+F42: Failure of Success Criterion 1.3.1 and 2.1.1 due to using scripting events to emulate links in a way that is not programmatically determinable.<br />
+<br />
+As with any content that does not meet the requirements, it is possible to conform by providing a conforming alternate version (Refer to Understanding conforming alternate versions). However, even if an alternate mechanism is provided in a way that makes the page as a whole conform, the specific sections of code that include the problems illustrated in F42 would still fail the requirements of the success criterion.<br />
+<br />
+Response to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2649"></span>
+
+### Issue 2649: Common failure needed for elements that should allow focus, but don't
+
+**Issue Created:** 20 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=47>  
+**Component:** 2.1.1 (Keyboard)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>There should be a failure for elements that should allow keyboard focus, but do not (either through scripting, tabindex, etc.). On this site there are some checkboxes that are removed from the tab order. I marked this as a F55 failure as the failure is evidenced from the test even though it doesn't directly fit into F55's scope (focus is set, then lost).</td><td>We agree that this describes a failure of the success criterion because the content would not be keyboard operable. However, we do not have the resources to draft the failure at this point in time. If you are interested in drafting such a failure, we would welcome your input. You can use the techniques submission form (<a href="http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/</a>) to submit draft techniques.<br />
+<br />
+Response to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2650"></span>
+
+### Issue 2650: F78: Overwriting default focus indicator
+
+**Issue Created:** 22 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/w3c-wai-gl/2008JulSep/0092.html>  
+**Component:** Common Failures  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>I have a question/comment about F78: Failure of Success Criterion 2.4.7 due to styling element outlines and borders in a way that overrides or renders non-visible the default visual focus indicator. The failure as it is written seems to mean that the browser default focus cannot be overwritten or turned off. Does assistive technology use the browsers default focus indicator to indicate focus to a user?<br />
+If so, then I understand that it probably shouldn't be turned off entirely, but I'm having trouble understanding why the default focus indicator can't be rendered non-visible, as long as it is replaced by something more visible.<br />
+<br />
+In my opinion, in most browsers, including both IE 7 and Firefox 2, the default focus indicator is so hard to see that overriding it almost seems necessary in order to make the focus indicator really visible. It is especially hard to see when a form element, such as a checkbox, has focus.<br />
+<br />
+This Failure also seems to be in contradiction with 2.4.7 Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA). Reading 2.4.7, it seems that is OK to override the default focus border as long as focus IS visible. We also allow an "author supplied, highly visible focus indicator" and C15 allows the use of CSS to change the presentation of a UI component when it receives focus. For example, changing the background color of a focused menu item still makes focus visible even if there is no dotted border.<br />
+<br />
+Does F78 mean that all of the sufficient techniques in 2.4.7 will fail? Perhaps F78 should just say that shouldn't entirely disable the focus indicator?</td><td>Thanks for catching this. We agree that the failure was written too narrowly. We have updated it so that the failure only occurs if there is no visible focus indicator.<br />
+<br />
+Response sent 06 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/w3c-wai-gl/2008OctDec/0009.html">http://lists.w3.org/Archives/Public/w3c-wai-gl/2008OctDec/0009.html</a></td></tr></tbody></table>
+
+<span id="i2651"></span>
+
+### Issue 2651: Extended Audio Description
+
+**Issue Created:** 22 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=15>  
+**Component:** 1.2.7 (Audio Description (Extended))  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>&gt; There are many instances where important visual information<br />
+&gt; was left out of the Descriptions because there was not time.<br />
+&gt; At AAA, Extended Audio Description would pause the<br />
+&gt; video for a short audio description rather than rushing or<br />
+&gt; leaving out important information.<br />
+&gt;<br />
+<br />
+# I respectfully disagree. The note under "extended audio description" in<br />
+the WCAG 2.0 Glossary says "This technique is only used when the sense of<br />
+the video would be lost without the additional audio description and the<br />
+pauses between dialog/narration are too short." The subjective judgement<br />
+here is whether the "sense of the video would be lost". Audio description on<br />
+all of our videos was provided by highly credible audio description vendors<br />
+(WGBH, Narrative TV, and Vitac), and we had an opportunity to review their<br />
+audio description scripts prior to recording to ensure that users would<br />
+indeed have full access to the "sense" of the video. Since both the vendor<br />
+and DO-IT have signed off on the audio description content for each video, I<br />
+believe that we have met this success criterion.<br />
+<br />
+If you stand by your disagreement, I would be interested in knowing specific<br />
+details about where you feel our audio description is inadequate. This would<br />
+be important feedback for our vendors, since their failure to meet the<br />
+success criteria will impact large numbers of their clients' videos as well.</td><td>We have revised Success Criterion 1.2.7 as follows:<br />
+<br />
+1.2.7 Audio Description (Extended): Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media. (Level AAA)<br />
+<br />
+Quality of text alternatives is subjective, so we do not specify the quality of text alternatives, captions or descriptions. As long as the alternatives are not mere placeholders, the Success Criterion would be met.<br />
+<br />
+Therefore, these examples would meet the success criterion, though we would prefer that additional information such as speaker identification and other important information that had been provided in text visually be included.<br />
+<br />
+Response to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2652"></span>
+
+### Issue 2652: Sign Language for Videos
+
+**Issue Created:** 22 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=15>  
+**Component:** 1.2.6 (Sign Language)  
+**Disposition:** PARTIAL/OTHER <span class="disagree">(Reviewer Disagrees)</span>
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>This success critereon raises many questions, and currently there is too<br />
+little support provided in WCAG 2.0 for us to know exactly how to proceed.<br />
+We can add a sign language interpreter to our videos via SMIL but as far as<br />
+we could find there's little or no research or precedent for optimum<br />
+positioning and size of the interpreter, relative to the main video. The<br />
+"Related Resources" section under "Understanding SC 1.2.6" includes a link<br />
+to "NCAM Rich Media Accessibility, Accessible SMIL Templates", but none of<br />
+the templates on this page include a region for sign language.<br />
+<br />
+Also, this success critereon says nothing about which language is most<br />
+appropriate. If we use American Sign Language (ASL), we're still<br />
+inaccessible to users who only know Signed English or British Sign Language.<br />
+Conversely, Shawn Henry referred me to <a href="http://www.creaturediscomforts.org/">http://www.creaturediscomforts.org/</a><br />
+as an example. Although the primary language of this site is English, none<br />
+of my American deaf colleagues could understand the sign language<br />
+interpreter. I'm guessing it's British Sign Language? Is this really an<br />
+issue of internationalization, rather than accessibility?</td><td>In the Related Resources for SC 1.2.6,<br />
+<a href="http://www.sign-lang.uni-hamburg.de/SigningBooks/SBRC/Grid/d71/guide12.htm">http://www.sign-lang.uni-hamburg.de/SigningBooks/SBRC/Grid/d71/guide12.htm</a><br />
+has advice on filming sign language interpreters. The complete report<br />
+on the Signing Book project starts at<br />
+<a href="http://www.sign-lang.uni-hamburg.de/SigningBooks/SBRC/Grid/d71/guide00.htm">http://www.sign-lang.uni-hamburg.de/SigningBooks/SBRC/Grid/d71/guide00.htm</a><br />
+<br />
+<a href="http://tinyurl.com/6zqgqh">http://tinyurl.com/6zqgqh</a> is another example of a video that uses a different style to add the sign language video.<br />
+<br />
+That sign language and oral language do not map 1-to-1 is an unfortunate complication. In this circumstance, using any of the sign languages that correspond to the oral language will satisfy the success criterion. It does not require providing all of them. It is recommended, of course, to use the sign language of the target culture or country.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2653"></span>
+
+### Issue 2653: Audio Background
+
+**Issue Created:** 22 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=15>  
+**Component:** 1.4.7 (Low or No Background Audio)  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>As noted in my comments related to 1.2.7, all our audio description<br />
+was produced by one of three highly credible vendors. The lack of<br />
+conformance here raises a couple of important questions for me:<br />
+<br />
+First, if audio description is mixed into the program audio, how can the<br />
+difference between audio description foreground and background be measured?<br />
+That would seem to require very high end audio tools, if it's even possible.<br />
+Measuring the difference by determining whether the foreground is<br />
+"approximately four times louder" is still extremely subjective, and I doubt<br />
+that many people have audio perception that is accute enough to reliably<br />
+measure that.<br />
+<br />
+Second, assuming our foreground/background really does differ by less than<br />
+20dB, our failure to conform suggests that much of the audio description<br />
+produced by these same leading vendors probably does not meet this success<br />
+criterion. How was 20db determined as a threshhold? Might it be to strict?</td><td>First, if audio description is mixed into the program audio, how can the<br />
+difference between audio description foreground and background be measured?<br />
+<br />
+- The RMS volume can be measured in the gaps before or after or in pauses during the description and compared to the RMS volume of the description.<br />
+<br />
+That would seem to require very high end audio tools, if it's even possible.<br />
+Measuring the difference by determining whether the foreground is<br />
+"approximately four times louder" is still extremely subjective, and I doubt<br />
+that many people have audio perception that is acute enough to reliably<br />
+measure that.<br />
+<br />
+- We acknowledge that it can be difficult to evaluate foreground and background today. However, a tool (similar to the tools available for evaluating text contrast) is in development that should make it much easier to evaluate this requirement.<br />
+<br />
+Second, assuming our foreground/background really does differ by less than<br />
+20 dB, our failure to conform suggests that much of the audio description<br />
+produced by these same leading vendors probably does not meet this success<br />
+criterion. How was 20 dB determined as a threshold? Might it be to strict?<br />
+<br />
+- The 20 dB is a common measure for signal background separation. The understanding document (intent section) cites two sources and memebers of our working group have confirmed these findings with various experts in the field.<br />
+<br />
+We have also added the following note to SC 1.4.7:<br />
+<br />
+Note: Given that in normal speech, hearing people loose the occasional<br />
+word, it is acceptable to have occasional dips of contrast between 10dbs-20<br />
+dbs for up to 2 words in a sentence that are isolated and not nouns or<br />
+verbs.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2654"></span>
+
+### Issue 2654: Space-and-a-half between paragraphs
+
+**Issue Created:** 22 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=15>  
+**Component:** 1.4.8 (Visual Presentation)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>The Techniques for 1.4.8 (Fourth Requirement) include examples for setting<br />
+line spacing to space-and-a-half within paragraphs (e.g., p { line-height:<br />
+150%; } ). However, this would seem to address only the first portion of<br />
+this requirement. How does one also ensure that "paragraph spacing is at<br />
+least 1.5 times larger than the line spacing?"<br />
+<br />
+My confusion comes partially from the use of line-height in the first<br />
+example. Is line-height synonymous with "line spacing"? My brain views this<br />
+requirement in two ways. Is either of these accurate?<br />
+<br />
+a) If I have font-size:1em, and line-height:1.5em, I believe that line<br />
+spacing is the amount of space not occupied by text (0.5em), in which case<br />
+the paragraph should have margin-bottom:1.5em (line spacing x 1.5).<br />
+<br />
+b) "Line spacing" actually refers to line-height. So if I have<br />
+line-height:1.5em, then my paragraph should have 1.5x that for a bottom<br />
+margin (or padding), e.g., margin-bottom:2.25em.<br />
+<br />
+Since I have to ask the above question, I think more explanation, including<br />
+additional examples, should be included in the Techniques for this success<br />
+criterion.</td><td>Your first proposal (a) is the correct one.<br />
+<br />
+You are also correct that there should be more information in the Understanding doc.<br />
+<br />
+Additional information has been added therefore to the Understanding document. Paragraph 4 now reads<br />
+<br />
+People with some cognitive disabilities find it difficult to track text where the lines are close together. Providing extra space between lines and paragraphs allows them to better track the next line and to recognize when they have reached the end of a paragraph. It is best if there are several different options, for instance, space-and-a-half and double spacing for line spacing. By space and a half within paragraphs we mean that top of one line is 150% further from the top of the line below it than would be true when the text is 'single spaced' (the default spacing for the font). By Paragraph spacing that is 1.5 times larger than the line spacing we mean that the spacing from the top of the last line of 1 paragraph is 250% farther from the Top of the first line of the next paragraph (I.e. that there is a blank line between the two paragraphs that is 150% of the single space blank line).<br />
+<br />
+Response sent to commenter 24 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2655"></span>
+
+### Issue 2655: Evaluating Reading Levels
+
+**Issue Created:** 22 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=15>  
+**Component:** 3.1.5 (Reading Level)  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>I somewhat randomly selected a few transcript pages from our site, as well<br />
+as the home page and FAQ page, and ran them through the Juicy Studio<br />
+Readability Test. Results:<br />
+<br />
+DO-IT Video Search Home Page<br />
+Gunning Fog Index 15.56<br />
+Flesch Reading Ease 35.14<br />
+Flesch-Kincaid Grade 11.84<br />
+<br />
+FAQ Page<br />
+Gunning Fog Index 12.30<br />
+Flesch Reading Ease 52.60<br />
+Flesch-Kincaid Grade 9.49<br />
+<br />
+Transcript Page: Access to Technology in the Workplace: In Our Own Words<br />
+Gunning Fog Index 9.30<br />
+Flesch Reading Ease 67.66<br />
+Flesch-Kincaid Grade 5.70<br />
+<br />
+Transcript Page: Equal Access: Student Services<br />
+Gunning Fog Index 10.06<br />
+Flesch Reading Ease 63.01<br />
+Flesch-Kincaid Grade 6.48<br />
+<br />
+Transcript Page: How DO-IT Does It<br />
+Gunning Fog Index 7.73<br />
+Flesch Reading Ease 72.28<br />
+Flesch-Kincaid Grade 5.06<br />
+<br />
+Transcript Page: Invisible Disabilities and Postsecondary Education<br />
+Gunning Fog Index 9.85<br />
+Flesch Reading Ease 65.77<br />
+Flesch-Kincaid Grade 6.09<br />
+<br />
+The primary content of our site is that contained within the videos, and as<br />
+the ratings on the transcript pages indicate, this content meets the success<br />
+criterion.<br />
+<br />
+Between now and October 13, I will edit the FAQ page with improved<br />
+readability in mind, and hopefully can attain a more readable FAQ without<br />
+creating a separate version.<br />
+<br />
+The home page is trickier. The ratings on this page are higher because it is<br />
+comprised almost exclusively of video titles and their official<br />
+descriptions, and these titles and descriptions include words with more<br />
+syllables, such as "disabilities", "postsecondary education", and<br />
+"accessible". Even if we could think of suitable alternative words to use in<br />
+our descriptions, I think we would still have Gunning Fog Indexes and<br />
+Flesch-Kincaid Grades higher than 9 because of the titles, and we can't<br />
+change this content.<br />
+<br />
+Given that our transcripts (and therefore our video content) already meets<br />
+this success criterion, and if we address the readability of the FAQ, would<br />
+that be sufficient for claiming that our site meets AAA conformance to this<br />
+success criterion?</td><td>We have discovered that the length of proper names, titles and other things that cannot be changed can affect the reading level scores such that it is not possible to meet the reading levels. For example, America or Argentina or Pellegrino push the indexes up but there is no way to make them shorter or simpler and over-use of "it" or "them" can make sentences ambiguous rather than simpler.<br />
+<br />
+We are therefore changing the SC to require that the text meet the reading levels AFTER removal of proper names and titles (which would include book titles).<br />
+<br />
+Response sent to implementor 06 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2656"></span>
+
+### Issue 2656: Editorial problems - German translation
+
+**Issue Created:** 23 Sep 2008  
+**Source:** <http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Sep/0026.html>  
+**Component:** Translations  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>During the process of translating the WCAG 2.0, we encountered a few wording problems. Shadi asked me to hand them in.<br />
+<br />
+<br />
+label:<br />
+<br />
+We don't have a word in German that completely equals the meaning of label, so we'll use the English term.<br />
+<br />
+<br />
+programmatically determined:<br />
+<br />
+Our question is, whether this term is meant as an active or a passive roll.<br />
+<br />
+<br />
+Video-only:<br />
+<br />
+In German, we don't use the word "Nur-Video" what's the 1:1-translation.<br />
+<br />
+<br />
+Audio-only<br />
+<br />
+Same problem as mentioned under video-only.<br />
+<br />
+<br />
+<br />
+Captions<br />
+<br />
+There's no difference between captions and subtitles, so we decided to use the English term.<br />
+<br />
+<br />
+set of Web pages<br />
+<br />
+We do need a little more explanation here. Is set of webpages really meant to be webpages which are related only by author or organisation. So if the pages are on different websites, they do still count as set of Web pages?<br />
+<br />
+<br />
+Proposed Change:<br />
+None, but we do need a little further explanation on a few of our translation problems.</td><td>{partial/other}<br />
+<br />
+Response to Commenter:<br />
+<br />
+label:<br />
+We don't have a word in German that completely equals the meaning of label so we'll use the English term.<br />
+<br />
+Reply from Working Group:<br />
+<br />
+OK<br />
+<br />
+----------------------------<br />
+<br />
+programmatically determined:<br />
+<br />
+Our question is whether this term is meant as an active or a passive roll.<br />
+<br />
+Reply from Working Group:<br />
+<br />
+This is passive in that the information and relationships must be explicitly represented in the data. Whether user agents and assistive technology actively use this information is a question of accessibility support for the technology.<br />
+<br />
+----------------------------<br />
+Video-only:<br />
+<br />
+In German we don't use the word "Nur-Video" what's the 1:1-translation.<br />
+<br />
+Reply from Working Group:<br />
+<br />
+Video-only means "Only video content with no audio or interaction".<br />
+<br />
+<br />
+----------------------------<br />
+<br />
+Audio-only<br />
+<br />
+Same problem as mentioned under video-only.<br />
+<br />
+Reply from Working Group:<br />
+<br />
+Audio-only means "Only audio content with no video or interaction".<br />
+<br />
+----------------------------<br />
+<br />
+Captions<br />
+<br />
+There's no difference between captions and subtitles so we decided to use the English term.<br />
+<br />
+Reply from Working Group:<br />
+<br />
+OK. This seems to be a problem unique to English-speaking cultures.<br />
+<br />
+<br />
+----------------------------<br />
+<br />
+set of Web pages<br />
+<br />
+We do need a little more explanation here. Is set of Web pages really meant to be Web pages which are related only by author or organisation. So if the pages are on different websites they do still count as set of Web pages?<br />
+<br />
+Reply from Working Group:<br />
+<br />
+They could be on different Web sites or servers but they must have a common purpose.<br />
+<br />
+Response sent 06 Oct 2008:<br />
+<a href="http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0016.html">http://lists.w3.org/Archives/Public/public-comments-wcag20/2008Oct/0016.html</a></td></tr></tbody></table>
+
+<span id="i2658"></span>
+
+### Issue 2658: Decorative Images
+
+**Issue Created:** 27 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=31>  
+**Component:** 1.1.1 (Non-text Content)  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Concerning the 4 &lt;img&gt; elements non complying with SC 1.1.1: Non-text<br />
+Content (Level A), these errors are due to a difference between evaluator's<br />
+interpretation and mine concerning the decorative or informative nature of<br />
+these images. Considering the context in which they are used, both<br />
+interpretations seem correct to me. Guidelines and definitions are clear ;<br />
+even like this, there will still be place for interpretations ; I encounter<br />
+this regularly when evaluating client's sites. Anyway, I fixed it and the 4<br />
+images now conform.</td><td>We understand that there are different interpretations of what is decorative. The definition of 'decorative' in WCAG says that you would need to be able to replace the picture with another picture of something else - and that would clearly be a problem on this page.<br />
+<br />
+Thank you for taking care of these.<br />
+<br />
+We have also added the following failure to help clarify this issue.<br />
+<br />
+F89: Failure of 2.4.4, 2.4.9 and 4.1.2 due to using null alt on an image where the image is the only content in a link<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2659"></span>
+
+### Issue 2659: Complex diagrams
+
+**Issue Created:** 29 Sep 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/evaluation_results_site_summary?implementation_id=16>  
+**Component:** 1.1.1 (Non-text Content)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>Comment from evaluation:<br />
+SC 1.1.1: Non-text Content<br />
+<br />
+See comments about SC 1.1.1 in the evaluation summary.<br />
+<br />
+Response from implementor:<br />
+<br />
+We've confirmed that every figures you mentioned above are assistive contents for better understanding, and every vital information are described in the text. We mean, for example, "exact organization structure" is not vital in the context. So we believe that we don't have to do anything to meet 1.1.1 about these figures/contents.</td><td>There can be information in an image that is not critical to the purpose of the image on the page. This sounds like such a situation. The vital information is available to the user on the page, and the image itself has a text alternative that describes its purpose. We believe this satisfies SC 1.1.1.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2661"></span>
+
+### Issue 2661: Clarification of SC 1.4.7
+
+**Issue Created:** 29 Sep 2008  
+**Source:** (Original comment not archived)  
+**Component:** 1.4.7 (Low or No Background Audio)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>I think we have to add the following note to the Success Criterion:<br />
+<br />
+Note: Given that in normal speech, hearing people loose the occasional<br />
+word, it is acceptable to have occasional dips of contrast between 10dbs-20<br />
+dbs for up to 2 words in a sentence that are isolated and not nouns or<br />
+verbs.</td><td>We have accepted your suggestion by revising SC 1.4.7 as follows:<br />
+<br />
+1.4.7 Low or No Background Audio: For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression<br />
+such as singing or rapping, at least one of the following is true: (Level AAA) How to Meet 1.4.7 Understanding 1.4.7<br />
+<br />
+* No Background: The audio does not contain background sounds.<br />
+* Turn Off: The background sounds can be turned off.<br />
+* 20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds.<br />
+<br />
+Note: Per the definition of "decibel," background sound that meets this requirement will be approximately four times quieter than the foreground speech content.<br />
+<br />
+Response sent 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2662"></span>
+
+### Issue 2662: National Apology to the Stolen Generations
+
+**Issue Created:** 29 Sep 2008  
+**Source:** <http://www.australia.gov.au/Video_-_National_Apology_to_the_Stolen_Generations>  
+**Component:** conforming alternate version  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>The main page for the video contains links to pages that provide sign language, audio description, or extended audio description versions of the video. While each alternate page provides an example of meeting the corresponding success criterion, it is not clear that this structure satisfies the Conforming Alternate Version definition, since no one version meets all of the success criteria. Nevertheless, this seems like a useful way to organize the many different copies of the videos (since there are also multiple versions to support the different video formats for different players).</td><td>If there is a link to the previous page and the other alternates then "a mechanism exists" to obtain the other forms from any one of the pages and the pages would all pass. (Note: The BACK button is not sufficient by itself since a person could land directly on one of the pages). To make this clearer we have added the following to the procedure for G8, G173, G158, G159, G69, G151:<br />
+<br />
+- If the alternate version(s) are on a separate page, check for the availability of link(s) to allow the user to get to the other versions.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2663"></span>
+
+### Issue 2663: National Apology to the Stolen Generations
+
+**Issue Created:** 29 Sep 2008  
+**Source:** <http://www.australia.gov.au/Video_-_National_Apology_to_the_Stolen_Generations>  
+**Component:** 1.2.3 (Audio Description or Full Text Alternative)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>The pages contain an Apology Transcript, which contains the text of the speech, but not speaker identification, description of the room, disclaimers at the beginning and end of the video. Would this qualify as a Full Text Equivalent?</td><td>The Transcript is posted to the body of the page. The page as a whole therefore needs to be taken into account. The question is whether the 'content' or 'intent' or 'purpose' of the video is presented in the transcript. The warnings at the beginning and end are not part of the purpose or function of the video - but these are actually contained on the page anyway.<br />
+<br />
+Note that we have replaced the term "full text alternative for synchronized media including any interaction" with "alternative for time-based media." and have adjusted the definition as follows:<br />
+<br />
+alternative for time-based media<br />
+<br />
+document including correctly sequenced text descriptions of<br />
+time-based visual and auditory information and providing a means for<br />
+achieving the outcomes of any time-based interaction<br />
+<br />
+Since the bulk of what is intended to be presented though (the apology itself) is presented on the page, in the text box, and in the other text on the page, we feel that this example passes the requirement. However, there are other visual things that could be added to the description to make it better. A short description of the context would be a good addition.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2664"></span>
+
+### Issue 2664: Do modal dialogs violate keyboard trap?
+
+**Issue Created:** 29 Sep 2008  
+**Source:** (Original comment not archived)  
+**Component:** 2.1.2 (No Keyboard Trap)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>This question came up during a discussion of the sufficient technique for SC 1.3.2, 2.1.1, 2.4.3: Creating Custom Dialogs in a Device Independent Way</td><td>We have made the following changes:<br />
+<br />
+2.1.2: If keyboard focus can be moved to a component<br />
+of the page using a keyboard interface, then focus can be moved away<br />
+from that component using only a keyboard interface, and, if it<br />
+requires more than unmodified arrow or tab keys &lt;ins&gt;or other standard exit methods&lt;/ins&gt;, the user is advised of the method for moving focus away.<br />
+<br />
+Intent section of Understanding 2.1.2<br />
+There may be times when the functionality of the Web page restricts the focus to a subsection of the content, as long as the user knows how to leave that state and "untrap" the focus.<br />
+<br />
+Add example to Understanding 2.1.2:<br />
+A modal dialog box<br />
+A web application brings up a dialog box. At the bottom of the dialog are two buttons, Cancel and OK. When the dialog has been opened, focus is trapped within the dialog; tabbing from the last control in the dialog takes focus to the first control in the dialog. The dialog is dismissed by activating the Cancel button or the OK button.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2666"></span>
+
+### Issue 2666: On behavior of containers that are designed to fit limited text
+
+**Issue Created:** 06 Oct 2008  
+**Source:** (Original comment not archived)  
+**Component:** 1.4.4 (Resize text)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>It was brought to my attention that a category of containers in which they are designed to fit limited amount of text may be incompatible with guideline 1.4.4. A note may be needed to facilitate its use.<br />
+<br />
+We see these sorts of containers nearly every day when doing tab browsing and using the windows taskbar. Note how the tabs in tab browsing handle titles—the tabs truncate long titles. The tab itself is not meant to increase in size to accommodate the text. As more tabs are added, the size the tab must eventually decrease. Windows taskbar behaves much the same way. Since they are not designed to fit long title even at normal text size, 200 percent increase in text size would surely truncate the text on display even more. More complete text is available via tooltips which can generally be resized without being subject to the truncation.<br />
+<br />
+Indeed, tab browsing is a user agent issue and windows taskbar is an operating design issue. But the same behavior can be seen in tables—for example subject column in Gmail. Long email subjects are truncated and increased font size would truncate the subject text even more.<br />
+<br />
+The question is—does the application of such truncation constitute a loss of content per 1.4.4?<br />
+<br />
+On the surface, it seems that there is clearly loss of content if more content is truncated due to increased text size.<br />
+<br />
+Demanding a redesign of tab seems to me a fundamental alteration of its very purpose. Such redesign may confuse nearly all users and may acutely disadvantage those with cognitive disorders. To the degree possible, I believe we ought to avoid forcing any change in the tab behavior.<br />
+<br />
+I would like to suggest that there is actually no loss of content in the scenario. First, the content is not lost if it is available via tooltip and that the tooltip can be resized. Thus, one may consider the tooltip alternative conformance content. Second, truncating content that are already truncated may not necessarily count as loss of content. The full content is meant to be access via either tooltip or and viewing the content in full (looking at the content within the tab). The text displayed within the container (tab) is merely a truncated representation of the actual content. Thus, the scenario is a reduction of a proxy of the actual content, not a reduction of content itself.<br />
+<br />
+My proposed solution is to add a note following the line of argument on one of the two arguments above — either<br />
+<br />
+1.treat tooltip as alternative or<br />
+<br />
+2. Treat container text as only proxy representation of actual content which are available elsewhere.<br />
+<br />
+I prefer to apply this proposal as a note to 1.4.4 or understanding doc, not a sufficient technique since it is not really a technique of any kind. It is a special situation in which expected behavior conflicts against display of content.</td><td>Thanks. We have added the following paragraph to Understanding SC 1.4.4 to clarify that this type of truncation is not considered losing functionality:<br />
+<br />
+Some user interface components that function as a label and require activation by the user to access content are not wide enough to accomodate the label's content. For example, in Web mail applications the subject column may not wide enough to accomodate every possible subject header, but activating the subject header takes the user to the full message with the full subject header. In Web-based spreadsheets, cell content that is too long to be displayed in a column can be truncated, and the full content of the cell is available to the user when the cell receives focus. The content of a user interface component may also become too wide in user interfaces where the user can resize the column width. In this type of user interface component, line wrapping is not required; truncation is acceptable if the component's full content is available on focus or after user activation and an indication that this information can be accessed, is provided to the user in some way besides the fact that it is truncated.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2669"></span>
+
+### Issue 2669: SC 1.4.3, SC 1.4.6 and font size units
+
+**Issue Created:** 09 Oct 2008  
+**Source:** <http://www.w3.org/WAI/GL/WCAG20/CR-eval/implementation_experience?implementation_id=39>  
+**Component:** 1.4.3 (Contrast (Minimum))  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>When I was evaluating if an implementation met the luminosity contrast requirements (SC 1.4.3, SC 1.4.6), I needed to check whether certain spans of text were large print or not. According to the definition, large scale test is "at least 18 point or 14 point bold or font size that would yield equivalent stroke width for Chinese, Japanese and Korean (CJK) fonts". In the implementation I evaluated, font sizes were expressed in em units. Inspection with Firebug gave me computed font sizes in px units. I then looked for a conversion from pixels to point sizes and found the conversion tables at <a href="http://sureshjain.wordpress.com/2007/07/06/53/">http://sureshjain.wordpress.com/2007/07/06/53/</a> and<br />
+<a href="http://www.reeddesign.co.uk/test/points-pixels.html.">http://www.reeddesign.co.uk/test/points-pixels.html.</a><br />
+There should be a more practical way to check whether text is large text. Any suggestions?</td><td>Using the same reference that you provided<br />
+<a href="http://www.reeddesign.co.uk/test/points-pixels.html">http://www.reeddesign.co.uk/test/points-pixels.html</a><br />
+(which puts 12 pt as 1 em) you get 14 pt as 1.2 em and 18 pt as 1.5 em.<br />
+<br />
+To make this easier we have added 1.2 em and 1.5 em to note 3 of the definition of large text as follows:<br />
+<br />
+Note 3: The actual size of the character that a user sees is dependent both on the author-defined size and the users display or user-agent settings. For many mainstream body text fonts, 14 and 18 point is roughly equivalent to 1.2 and 1.5 em or to 120% or 150% of the default size for body text (assuming that the body font is 100%), but authors would need to check this for the particular fonts in use. When fonts are defined in relative units, the actual point size is calculated by the user agent for display. The point size should be obtained from the user agent, or calculated based on font metrics as the user agent does, when evaluating this success criterion.Users who have low vision would be responsible for choosing appropriate settings.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2671"></span>
+
+### Issue 2671: Statement of partial conformance
+
+**Issue Created:** 16 Oct 2008  
+**Source:** <http://lists.w3.org/Archives/Public/w3c-wai-gl/2008OctDec/0013.html>  
+**Component:** Conformance  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td><a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#conformance-partial">http://www.w3.org/TR/2008/CR-WCAG20-20080430/#conformance-partial</a><br />
+(A) This section says that 'The form of that statement would be,<br />
+"This page would conform to WCAG 2.0 at level X if the following<br />
+parts from uncontrolled sources were removed." ...'<br />
+I assume that this would need to be followed by the other required<br />
+parts of a conformance claim<br />
+<a href="http://www.w3.org/TR/2008/CR-WCAG20-20080430/#conformance-required">http://www.w3.org/TR/2008/CR-WCAG20-20080430/#conformance-required</a>,<br />
+but this is not stated.</td><td>A statement of partial conformance is a statement of non-conformance. It says the the page does not conform but would if some part(s) of it were removed or not present. Since it is not a statement of conformance (but of non-conformance) there is no need to mention the other parts of a conformance claim since a conformance claim cannot be made. Also, listing all of the other information in a claim may be confusing and lead to the impression that the page did conform - or that parts of the page conform (which is not possible - conformance is strictly on a page basis).<br />
+<br />
+In order to avoid confusion - making a partial conformance claim look like a conformance claim is not suggested.<br />
+<br />
+We have also made the following change to the description of partial conformance emphasize that a statement of partial conformance is a statement of non-conformance:<br />
+<br />
+"This page would conform to WCAG 2.0 at level X if the following parts from uncontrolled sources were removed."<br />
+to<br />
+"This page does not conform but would conform to WCAG 2.0 at level X if the following parts from uncontrolled sources were removed."<br />
+<br />
+Response to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2672"></span>
+
+### Issue 2672: Described in a way that users can identify
+
+**Issue Created:** 16 Oct 2008  
+**Source:** <http://lists.w3.org/Archives/Public/w3c-wai-gl/2008OctDec/0013.html>  
+**Component:** Conformance  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>This section [on partial conformance] also requires that the excluded content 'is<br />
+described in a way that that users can identify (e.g. they can't be<br />
+described as "all parts that we do not control" unless they are<br />
+clearly marked as such.)'<br />
+However, it is not clear where this description should be included:<br />
+is it sufficient to only describe the excluded content in the<br />
+conformance claim or should the excluded content also be identified<br />
+in the conforming part of the content. For example, if you pull in<br />
+image ads without alt text, what would you need to do?<br />
+Which of the following would be sufficient?<br />
+(b1) Conformance claim says that ads from ad server XYZ are excluded.<br />
+Nothing special is done in the content. (Readers don't read<br />
+conformance claims.)<br />
+(b2) Conformance claim says that ads from ad server XYZ are excluded.<br />
+In the web page, the text "advertisement" is added above or before<br />
+every ad. (Readers don't read conformance claims.)<br />
+(b3) Conformance claim says that ads from ad server XYZ are excluded.<br />
+In the web page, the text "ads by XYZ" is added above or before every<br />
+ad. (Readers don't read conformance claims.)<br />
+(b4) Conformance claim says that ads from ad server XYZ are excluded.<br />
+In the web page, the text "ads by XYZ" and a warning (or a link to<br />
+the relevant section in the conformance claim) is added above or<br />
+before every ad.</td><td>The information must be included in the Statement of Partial Conformance - third party content, so (b1) is sufficient (except that it is not a *conformance* claim). In general, the other options are good practice, but are not required.<br />
+<br />
+However, given your description of the way the Statement of Partial Conformance has been written, the only way to conform would be to label each part in the content, since otherwise users would not be able to identify which ads came from which server.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2673"></span>
+
+### Issue 2673: Partial conformance and conformance requirement 5
+
+**Issue Created:** 16 Oct 2008  
+**Source:** <http://lists.w3.org/Archives/Public/w3c-wai-gl/2008OctDec/0013.html>  
+**Component:** Conformance  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>More info on how partial conformance and conformance requirement 5<br />
+interact would be welcomed.<br />
+For example, if you have a page that triggers a semi-transparent<br />
+Flash overlay (as an alternative to a pop-up prompt or a new window -<br />
+e.g. for authentication) that traps the keyboard, and you exclude the<br />
+Flash through a statement of partial conformance, does conformance<br />
+requirement 5 still apply? In my opinion, the intent is that the<br />
+conformance requirements still apply, but that is not clear from the<br />
+section on partial conformance.<br />
+According to our definition of "relied upon" the content still needs<br />
+to conform if Flash is turned off or not supported, but I'm not sure<br />
+if readers understand the implications of that definition.</td><td>Conformance requirement 5 applies to content under the author's control that is present in the page but not relied on. It does not apply to the excluded content from Statements of Partial Conformance.<br />
+<br />
+If the third-party Flash content were removed from the page (as is required for evaluation of partial conformance), the keyboard trapping would not occur. So a Statement of Partial Conformance could still be made for such a page if the Flash content is not under the author's control and can be identified as the non-conforming content.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2674"></span>
+
+### Issue 2674: Must links to other media warn users?
+
+**Issue Created:** 16 Oct 2008  
+**Source:** <http://lists.w3.org/Archives/Public/w3c-wai-gl/2008OctDec/0013.html>  
+**Component:** General  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>The audience also asked if links to other media (PDF, audio,<br />
+video) need to warn users in (or near) the link text (SC 2.4.4 Link<br />
+Purpose (In Context) - Level A). Such a link would cause a change of<br />
+context (3.2.2 On Input - Level A; 3.2.5 Change on Request - Level<br />
+AAA), but who would include link activation in "Changing the setting<br />
+of any user interface component" (SC 3.2.2) - even though the<br />
+definition of user interface components includes links.</td><td>It is not clear what you are asking that the user be warned of. Most links cause change of context, and we do not require a warning for change of context that results from a use action such as clicking on a link.<br />
+<br />
+We added a note to Understanding Success Criterion 3.2.2 to clarify this:<br />
+<br />
+"Note: This Success Criterion covers changes in context due to changing the setting of a control. Clicking on links or tabs in a tab control is activating the control, not changing the setting of that control."<br />
+<br />
+If the type of content is important to the purpose of the link, it may be covered by Success Criterion 2.4.4 or 2.4.9.<br />
+<br />
+Response sent to commenter 28 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2675"></span>
+
+### Issue 2675: Interference with screen reader
+
+**Issue Created:** 16 Oct 2008  
+**Source:** <http://lists.w3.org/Archives/Public/w3c-wai-gl/2008OctDec/0013.html>  
+**Component:** 1.4.2 (Audio Control)  
+**Disposition:** PARTIAL/OTHER (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>If there is a mechanism to pause or stop the audio or to control its<br />
+volume, it is allowed to play automatically and for more than 3<br />
+seconds. This means that a screen reader user needs to find that<br />
+mechanism while the audio is still playing, i.e. interfering with the<br />
+speech output of his/her screen reader. So even content that passes<br />
+this SC can interfere with the user's ability to use the whole page.</td><td>Unfortunately, this is the case. The audio may be playing while the screen reader user locates and activates the mechanism to control it. The working group could find no way around this other than forbidding any audio from playing on page opening. We have added a note recommending against using audio on page opening (that lasts more than 3 seconds) as follows:<br />
+<br />
+Note: Playing audio automatically when landing on a page may affect a screen reader user's ability to find the mechanism to stop it because they navigate by listening and automatically started sounds might interfere with that navigation. Therefore, we discourage the practice of automatically starting sounds (especially if they last more than 3 seconds), and encourage that the sound be *started* by an action initiated by the user after they reach the page, rather than requiring that the sound be *stopped* by an action of the user after they land on the page.<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+<span id="i2676"></span>
+
+### Issue 2676: Must captions be resizable?
+
+**Issue Created:** 16 Oct 2008  
+**Source:** <http://lists.w3.org/Archives/Public/w3c-wai-gl/2008OctDec/0013.html>  
+**Component:** 1.4.4 (Resize text)  
+**Disposition:** ACCEPTED (Reviewer Agrees)
+
+<table><thead><tr class="header"><th>Original Comment</th><th>Response from Working Group</th></tr></thead><tbody><tr class="odd"><td>When I created a list of success criteria that apply to<br />
+synchronised media, I found the following:<br />
+SC 1.2.2 at Level A requires captions. If authors want to conform at<br />
+Level AA, they also need to pass SC 1.4.4 (Resize text). If captions<br />
+are implemented as text (closed captions), SC 1.4.4 applies to the<br />
+captions, since there is nothing in the SC that says that captions<br />
+are exempted. If video plugins don't have a resize functionality,<br />
+this needs to be implemented in the content. Are there any plugins<br />
+for video that can resize captions? If not, in which formats can<br />
+authors implement functionality to resize text? (SMIL??)</td><td>Good catch. We have modified SC 1.4.4 to add an exception for captions:<br />
+<br />
+Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.<br />
+<br />
+We have also added an advisory technique to 1.4.4:<br />
+<br />
+Providing a mechanism to allow captions to be enlarged<br />
+<br />
+Response sent to commenter 23 Oct 2008.</td></tr></tbody></table>
+
+------------------------------------------------------------------------
+
+Document Information
+--------------------
+
+**Content last updated:** 29 October 2008
+
+\[[Contacting WAI](/WAI/contacts)\]
+
+[Copyright](/Consortium/Legal/ipr-notice#Copyright) © 1994-2008 [W3C](/)<sup>®</sup> ([MIT](http://www.csail.mit.edu/), [ERCIM](http://www.ercim.org/), [Keio](http://www.keio.ac.jp/)), All Rights Reserved. W3C [liability](/Consortium/Legal/ipr-notice#Legal_Disclaimer), [trademark](/Consortium/Legal/ipr-notice#W3C_Trademarks), [document use](/Consortium/Legal/copyright-documents) and [software licensing](/Consortium/Legal/copyright-software) rules apply. Your interactions with this site are in accordance with our [public](/Consortium/Legal/privacy-statement#Public) and [Member](/Consortium/Legal/privacy-statement#Members) privacy statements.

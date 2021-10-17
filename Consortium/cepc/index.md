@@ -1,7 +1,6 @@
 <a href="https://www.w3.org/" class="logo"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C" width="72" height="48" /></a>
 
-W3C Document 16 Jul 2020
-------------------------
+## W3C Document 16 Jul 2020
 
 This version:  
 [https://www.w3.org/Consortium/cepc/cepc-20200716](https://www.w3.org/Consortium/cepc/cepc-20200716/)
@@ -35,28 +34,25 @@ See also **[translations](translations)**.
 
 [Copyright](https://www.w3.org/Consortium/Legal/ipr-notice#Copyright) © 2020 [W3C](https://www.w3.org/)<sup>®</sup> ([MIT](https://www.csail.mit.edu/), [ERCIM](https://www.ercim.eu/), [Keio](https://www.keio.ac.jp/), [Beihang](https://ev.buaa.edu.cn/)). W3C [liability](https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer), [trademark](https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks) and [permissive document license](https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document) rules apply.
 
-------------------------------------------------------------------------
+---
 
-Abstract
---------
+## Abstract
 
 W3C's Code of Ethics and Professional Conduct defines accepted and acceptable behaviors and promotes high standards of professional practice. The goals of this code are to:
 
--   Define acceptable and expected standards of behavior.
--   Provide a benchmark.
--   Ensure transparency in community and group management.
--   Ensure an environment where people can participate without fear of harassment.
--   Contribute to the identity of the organization.
+- Define acceptable and expected standards of behavior.
+- Provide a benchmark.
+- Ensure transparency in community and group management.
+- Ensure an environment where people can participate without fear of harassment.
+- Contribute to the identity of the organization.
 
-Status of This Document
------------------------
+## Status of This Document
 
 This document has been reviewed by W3C Members and is endorsed by the Director as the W3C Code of Ethics and Professional Conduct (CEPC). This document supersedes the [2015 CEPC](http://www.w3.org/Consortium/cepc/cepc-20151007/).
 
 This document was developed by the [Positive Work Environment Community Group](https://www.w3.org/community/pwe/).
 
-Table of Contents
------------------
+## Table of Contents
 
 1.  <a href="#introduction" class="tocxref">1. Introduction</a>
 2.  <a href="#statement-of-intent" class="tocxref">2. Statement of Intent</a>
@@ -71,8 +67,9 @@ Table of Contents
 6.  <a href="#glossary" class="tocxref">6. Glossary</a>
 7.  <a href="#Attribution" class="tocxref">7. Attribution</a>
 
-1. Introduction <a href="#introduction" class="self-link"></a>
---------------------------------------------------------------
+8.  Introduction <a href="#introduction" class="self-link"></a>
+
+---
 
 W3C is a growing and global community where <a href="#dfn-participant" class="internalDFN">participants</a> choose to work together. W3C is committed to maintaining a positive working environment, where each participant feels appreciated and respected and where everyone adheres to the same high level of standards of personal behavior. In that process we experience differences in language, location, nationality, and experience. In such a diverse environment, misunderstandings and disagreements happen, which in most cases can be resolved informally.
 
@@ -83,30 +80,32 @@ The CEPC is complemented by a set of [Procedures](https://www.w3.org/Consortium/
 [Education and training materials](https://www.w3.org/Consortium/pwe/#Education) are available from the [Positive Work Environment public homepage](https://www.w3.org/Consortium/pwe/).
 
 2. Statement of Intent <a href="#statement-of-intent" class="self-link"></a>
-----------------------------------------------------------------------------
 
-W3C is committed to maintaining a **positive** work environment. This commitment calls for a workplace where <a href="#dfn-participant" class="internalDFN">participants</a> at all levels behave according to the rules of the following code. A foundational concept of this code is that *we all share responsibility* for our work environment.
+---
+
+W3C is committed to maintaining a **positive** work environment. This commitment calls for a workplace where <a href="#dfn-participant" class="internalDFN">participants</a> at all levels behave according to the rules of the following code. A foundational concept of this code is that _we all share responsibility_ for our work environment.
 
 3. Code <a href="#code" class="self-link"></a>
-----------------------------------------------
+
+---
 
 ### 3.1 Expected Behavior <a href="#expected-behavior" class="self-link"></a>
 
 Treat each other with respect, professionalism, fairness, and sensitivity to our many differences and strengths, including in situations of high pressure and urgency.
 
--   Appreciate and accommodate our similarities and differences. We come from many cultures and backgrounds, ways of life, and standards of behavior. Cultural differences can encompass everything from official religious observances to personal habits to clothing. Be respectful of people with different practices, attitudes, and beliefs. To help us achieve and maintain these high standards, each individual participant is expected to share responsibility for our work environment by adhering to the behavioral guidelines herein.
--   Have empathy when discussing sensitive issues. Some participants may have experienced (or been subjected to) various forms of violence in their lives, which may cause distress when they are reminded of it. Avoid making jokes or callously mentioning sexual violence such as stalking or sexual assault; in cases when the need arises to discuss these issues and how they affect people - do so with tact and empathy taking into account the gravity of the situation, and make sure that <a href="#dfn-participant" class="internalDFN">participants</a> are appropriately warned in advance so they can choose to step out of these discussions.
--   Treat everyone with respect. We are a large community of people who are passionate about our work, sometimes holding strong opinions and beliefs. We are committed to dealing with each other with courtesy, respect, and dignity at all times. Misunderstandings and disagreements do happen. When conflicts arise, we are expected to resolve them maintaining that courtesy, respect, and dignity, even when emotions are heightened.
--   Do not accept or engage in abusive behavior in any form, whether it is verbal, physical, sexual, or implied.
--   Be honest. Be truthful, sincere, forthright and, unless professional duties require confidentiality or special discretion, candid, straightforward, and frank.
--   Be inclusive and promote <a href="#dfn-diversity" class="internalDFN">diversity</a>. Seek diverse perspectives. Diversity of views and of people powers innovation, even if it is not always comfortable. Encourage all voices. Help new perspectives be heard and listen actively. If you find yourself dominating a discussion, it is especially important to step back and encourage other voices to join in. Provide alternative ways to contribute.
--   Be aware of how much time is taken up by dominant members of the group.
--   Be aware that displays of affection may complicate professional relationships. For some cultures, overtly friendly disposition towards another participant involving body contact (e.g.: hugging, touching on the arm or shoulder, or kissing) is uncommon and may be perceived as an invasion of personal space, or as unwelcome advances.
--   Work to eliminate your own biases, prejudices, and discriminatory practices.
--   Think of others’ needs from their point of view. Use preferred names, titles (including pronouns), and the appropriate tone of voice. Therefore, be formal and conservative in what you do and liberal in what you accept from others and acknowledge the contributions of your peers.
--   Accommodate participants' needs for physical distancing and other accommodations or precautions due to health concerns such as immune deficiency, allergies, or chemical sensitivity.
--   Be sensitive to language differences. English is the default language of the W3C. However, only some of us are native English speakers. Many <a href="#dfn-participant" class="internalDFN">participants</a> speak English as a second (or third) language. People who communicate in non-native language often struggle to understand fast and/or quiet speech and may speak louder than they usually would when communicating in their native tongue. If someone struggles to express their thoughts, help ensure their ideas are adequately expressed, heard, and granted thorough consideration.
--   Respect confidentiality and privacy. Sometimes, matters we discuss may fall under various [confidentiality](https://www.w3.org/2019/Process-20190301/#confidentiality-levels) agreements and strict adherence to these agreements is expected. In addition, certain pieces of information disclosed in a group setting may be private in nature, or we may inadvertently learn confidential information accidentally disclosed by other participants. Please exercise good judgment, and make reasonable efforts to protect privacy and confidentiality of all participants.
+- Appreciate and accommodate our similarities and differences. We come from many cultures and backgrounds, ways of life, and standards of behavior. Cultural differences can encompass everything from official religious observances to personal habits to clothing. Be respectful of people with different practices, attitudes, and beliefs. To help us achieve and maintain these high standards, each individual participant is expected to share responsibility for our work environment by adhering to the behavioral guidelines herein.
+- Have empathy when discussing sensitive issues. Some participants may have experienced (or been subjected to) various forms of violence in their lives, which may cause distress when they are reminded of it. Avoid making jokes or callously mentioning sexual violence such as stalking or sexual assault; in cases when the need arises to discuss these issues and how they affect people - do so with tact and empathy taking into account the gravity of the situation, and make sure that <a href="#dfn-participant" class="internalDFN">participants</a> are appropriately warned in advance so they can choose to step out of these discussions.
+- Treat everyone with respect. We are a large community of people who are passionate about our work, sometimes holding strong opinions and beliefs. We are committed to dealing with each other with courtesy, respect, and dignity at all times. Misunderstandings and disagreements do happen. When conflicts arise, we are expected to resolve them maintaining that courtesy, respect, and dignity, even when emotions are heightened.
+- Do not accept or engage in abusive behavior in any form, whether it is verbal, physical, sexual, or implied.
+- Be honest. Be truthful, sincere, forthright and, unless professional duties require confidentiality or special discretion, candid, straightforward, and frank.
+- Be inclusive and promote <a href="#dfn-diversity" class="internalDFN">diversity</a>. Seek diverse perspectives. Diversity of views and of people powers innovation, even if it is not always comfortable. Encourage all voices. Help new perspectives be heard and listen actively. If you find yourself dominating a discussion, it is especially important to step back and encourage other voices to join in. Provide alternative ways to contribute.
+- Be aware of how much time is taken up by dominant members of the group.
+- Be aware that displays of affection may complicate professional relationships. For some cultures, overtly friendly disposition towards another participant involving body contact (e.g.: hugging, touching on the arm or shoulder, or kissing) is uncommon and may be perceived as an invasion of personal space, or as unwelcome advances.
+- Work to eliminate your own biases, prejudices, and discriminatory practices.
+- Think of others’ needs from their point of view. Use preferred names, titles (including pronouns), and the appropriate tone of voice. Therefore, be formal and conservative in what you do and liberal in what you accept from others and acknowledge the contributions of your peers.
+- Accommodate participants' needs for physical distancing and other accommodations or precautions due to health concerns such as immune deficiency, allergies, or chemical sensitivity.
+- Be sensitive to language differences. English is the default language of the W3C. However, only some of us are native English speakers. Many <a href="#dfn-participant" class="internalDFN">participants</a> speak English as a second (or third) language. People who communicate in non-native language often struggle to understand fast and/or quiet speech and may speak louder than they usually would when communicating in their native tongue. If someone struggles to express their thoughts, help ensure their ideas are adequately expressed, heard, and granted thorough consideration.
+- Respect confidentiality and privacy. Sometimes, matters we discuss may fall under various [confidentiality](https://www.w3.org/2019/Process-20190301/#confidentiality-levels) agreements and strict adherence to these agreements is expected. In addition, certain pieces of information disclosed in a group setting may be private in nature, or we may inadvertently learn confidential information accidentally disclosed by other participants. Please exercise good judgment, and make reasonable efforts to protect privacy and confidentiality of all participants.
 
 ### 3.2 Unacceptable Behavior <a href="#unacceptablebehavior" class="self-link"></a>
 
@@ -114,47 +113,48 @@ Unacceptable behaviors run counter to the Code of Ethics and Professional Conduc
 
 <a href="#dfn-unacceptable-behaviors" class="internalDFN">Unacceptable behaviors</a> include, but are not limited to:
 
--   Offensive comments related to gender, <a href="#dfn-gender-identity" class="internalDFN">gender identity</a> and <a href="#dfn-gender-expression" class="internalDFN">gender expression</a>, sexual orientation, disability (both visible and invisible), mental health, <a href="#dfn-neurotype" class="internalDFN">neurotype</a>, physical appearance, body, age, race, socio-economic status, ethnicity, caste, nationality, language, or religion
--   Unwelcome comments regarding a person’s lifestyle choices and practices, including those related to food, health, parenting, drugs, and employment
--   <a href="#dfn-misgendering" class="internalDFN">Misgendering</a> someone by deliberately referring to a person using the wrong pronouns or by using someone's proper names or other terms that person has asked not to be used, also known as <a href="#dfn-deadnaming" class="internalDFN">deadnaming</a>.
--   Gratuitous or off-topic sexual images or behavior in spaces where they are not appropriate.
--   Physical contact and simulated physical contact (e.g., textual descriptions like “hug” or “backrub”) without <a href="#dfn-consent" class="internalDFN">consent</a> or after a request to stop.
--   Threats of violence.
--   Incitement of violence towards any individual, including encouraging a person to commit suicide or to engage in self-harm.
--   Deliberate intimidation.
--   Stalking or physically following or invading someone's personal space after a request to stop.
--   Exposing others to contagious disease.
--   <a href="#dfn-harass" class="internalDFN">Harassing</a> photography or recording, including logging online activity for <a href="#dfn-harass" class="internalDFN">harassment</a> purposes.
--   Sustained disruption of discussion.
--   Unwelcome sexual attention.
--   Patterns of inappropriate social contact, such as requesting/assuming inappropriate levels of intimacy with others.
--   Continued one-on-one communication after requests to cease.
--   Deliberate outing of any aspect of a person’s <a href="#dfn-gender-identity" class="internalDFN">gender identity</a> without their <a href="#dfn-consent" class="internalDFN">consent</a>.
--   Publication of non-harassing private communication without <a href="#dfn-consent" class="internalDFN">consent</a> by the involved parties.
--   Use of coded language (also known as "dog whistles") used to rally support for hate groups or to intimidate vulnerable groups.
--   Microaggressions, which are small comments or questions, either intentional or unintentional, that marginalize people by communicating hostile, derogatory, or negative beliefs. Examples include:
-    -   Patronizing language or behavior:
-        -   Be aware that, regardless of the speaker's intentions, some phrases or constructions lead people to expect a patronizing statement to follow, and avoid such phrases. For example, beginning an interjection with "Well, actually..." can set this expectation and be taken as a sign of disrespect.
-        -   Assuming without asking that particular people or groups need concepts defined or explained to them. It’s great to be sensitive to the fact that people may not be familiar with technical terms you use every day, but assuming that people are uninformed can come across as patronizing.
-        -   Assuming that particular groups of people are technically unskilled (e.g., “So easy your grandmother could do it”).
-    -   Repeatedly interrupting or talking over someone else.
-    -   Feigning surprise at someone’s lack of knowledge or awareness about a topic.
-    -   The use of racially charged language to describe an individual or thing (such as “thug” or “ghetto”).
-    -   Referring to an individual in a way that <a href="#dfn-demeaning" class="internalDFN">demeans</a> or challenges the validity of their racial identity.
-    -   Mocking someone’s real or perceived accent or first language.
--   Retaliating, or taking adverse action, against anyone who files a complaint that someone has violated this code of conduct.
+- Offensive comments related to gender, <a href="#dfn-gender-identity" class="internalDFN">gender identity</a> and <a href="#dfn-gender-expression" class="internalDFN">gender expression</a>, sexual orientation, disability (both visible and invisible), mental health, <a href="#dfn-neurotype" class="internalDFN">neurotype</a>, physical appearance, body, age, race, socio-economic status, ethnicity, caste, nationality, language, or religion
+- Unwelcome comments regarding a person’s lifestyle choices and practices, including those related to food, health, parenting, drugs, and employment
+- <a href="#dfn-misgendering" class="internalDFN">Misgendering</a> someone by deliberately referring to a person using the wrong pronouns or by using someone's proper names or other terms that person has asked not to be used, also known as <a href="#dfn-deadnaming" class="internalDFN">deadnaming</a>.
+- Gratuitous or off-topic sexual images or behavior in spaces where they are not appropriate.
+- Physical contact and simulated physical contact (e.g., textual descriptions like “hug” or “backrub”) without <a href="#dfn-consent" class="internalDFN">consent</a> or after a request to stop.
+- Threats of violence.
+- Incitement of violence towards any individual, including encouraging a person to commit suicide or to engage in self-harm.
+- Deliberate intimidation.
+- Stalking or physically following or invading someone's personal space after a request to stop.
+- Exposing others to contagious disease.
+- <a href="#dfn-harass" class="internalDFN">Harassing</a> photography or recording, including logging online activity for <a href="#dfn-harass" class="internalDFN">harassment</a> purposes.
+- Sustained disruption of discussion.
+- Unwelcome sexual attention.
+- Patterns of inappropriate social contact, such as requesting/assuming inappropriate levels of intimacy with others.
+- Continued one-on-one communication after requests to cease.
+- Deliberate outing of any aspect of a person’s <a href="#dfn-gender-identity" class="internalDFN">gender identity</a> without their <a href="#dfn-consent" class="internalDFN">consent</a>.
+- Publication of non-harassing private communication without <a href="#dfn-consent" class="internalDFN">consent</a> by the involved parties.
+- Use of coded language (also known as "dog whistles") used to rally support for hate groups or to intimidate vulnerable groups.
+- Microaggressions, which are small comments or questions, either intentional or unintentional, that marginalize people by communicating hostile, derogatory, or negative beliefs. Examples include:
+  - Patronizing language or behavior:
+    - Be aware that, regardless of the speaker's intentions, some phrases or constructions lead people to expect a patronizing statement to follow, and avoid such phrases. For example, beginning an interjection with "Well, actually..." can set this expectation and be taken as a sign of disrespect.
+    - Assuming without asking that particular people or groups need concepts defined or explained to them. It’s great to be sensitive to the fact that people may not be familiar with technical terms you use every day, but assuming that people are uninformed can come across as patronizing.
+    - Assuming that particular groups of people are technically unskilled (e.g., “So easy your grandmother could do it”).
+  - Repeatedly interrupting or talking over someone else.
+  - Feigning surprise at someone’s lack of knowledge or awareness about a topic.
+  - The use of racially charged language to describe an individual or thing (such as “thug” or “ghetto”).
+  - Referring to an individual in a way that <a href="#dfn-demeaning" class="internalDFN">demeans</a> or challenges the validity of their racial identity.
+  - Mocking someone’s real or perceived accent or first language.
+- Retaliating, or taking adverse action, against anyone who files a complaint that someone has violated this code of conduct.
 
 #### 3.2.1 Safety versus Comfort<a href="#safety-versus-comfort" class="self-link"></a>
 
 This Code prioritizes the safety of individuals, particularly those in marginalized communities, over the comfort of others, for example in situations involving:
 
--   "Reverse" -isms, including "reverse racism," "reverse <a href="#dfn-sexism" class="internalDFN">sexism</a>," and "cisphobia".
--   Reasonable communication of boundaries, such as “leave me alone,” “go away,” or “I’m not discussing this with you”.
--   Communication in a tone you don’t find congenial.
--   Criticisms of racist, sexist, <a href="#dfn-cissexist" class="internalDFN">cissexist</a>, or otherwise oppressive behavior or assumptions.
+- "Reverse" -isms, including "reverse racism," "reverse <a href="#dfn-sexism" class="internalDFN">sexism</a>," and "cisphobia".
+- Reasonable communication of boundaries, such as “leave me alone,” “go away,” or “I’m not discussing this with you”.
+- Communication in a tone you don’t find congenial.
+- Criticisms of racist, sexist, <a href="#dfn-cissexist" class="internalDFN">cissexist</a>, or otherwise oppressive behavior or assumptions.
 
 4. Reporting Violations and Supporting the Code <a href="#Reporting" class="self-link"></a>
--------------------------------------------------------------------------------------------
+
+---
 
 If you are concerned about your immediate safety, contact [local emergency services](https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers). For a face to face event you may need to contact venue staff for assistance contacting emergency services.
 
@@ -170,22 +170,23 @@ Chairs, Team Contacts, and Event Organizers should take such immediate action as
 
 ### 4.1 Immediately <a href="#immediately" class="self-link"></a>
 
--   Pointing out if someone is violating the CEPC to give them the chance to withdraw or edit their statement
--   Reminding <a href="#dfn-participant" class="internalDFN">participants</a> that meetings and work operate under the CEPC
--   Asking someone to leave a meeting or a conversation thread
+- Pointing out if someone is violating the CEPC to give them the chance to withdraw or edit their statement
+- Reminding <a href="#dfn-participant" class="internalDFN">participants</a> that meetings and work operate under the CEPC
+- Asking someone to leave a meeting or a conversation thread
 
 ### 4.2 After the Meeting <a href="#after-the-meeting" class="self-link"></a>
 
--   Following up with affected participants, possibly in separate meetings
--   Reaching out to an Ombudsperson for assistance
--   Further information and resources for Chairs are available via the Chairs Training program
+- Following up with affected participants, possibly in separate meetings
+- Reaching out to an Ombudsperson for assistance
+- Further information and resources for Chairs are available via the Chairs Training program
 
 **Note** that the action must be directly related to stopping harm, and must be proportionate. People affected may request an Ombudsperson consider whether such actions are unacceptable under the terms of this Code.
 
 You can read more in the [PWETF Procedures](https://www.w3.org/Consortium/pwe/#Procedures) document.
 
 5. If You've Done Something Improper <a href="#mistake" class="self-link"></a>
-------------------------------------------------------------------------------
+
+---
 
 As we engage in diverse communities we may accidentally cause offense, whether through using unknowingly offensive terminology or through missing social cues.
 
@@ -202,7 +203,8 @@ This will allow conversation to quickly continue without any need of further act
 If you don't understand what you did wrong, assume that the hurt party has good cause and accept it. We cannot know everyone's background and should do our best to avoid harm. You are welcome to discuss it with a W3C [ombudsperson](https://www.w3.org/Consortium/pwe/#Procedures) later.
 
 6. Glossary <a href="#glossary" class="self-link"></a>
-------------------------------------------------------
+
+---
 
 Acceptable Behavior
 
@@ -226,9 +228,9 @@ is using someone's name after they have changed it. Often a person's name is not
 
 If someone asks you to use a name for them you should use it. This includes:
 
--   A trans person, who has changed their name when transitioning
--   Someone who has changed their name through marriage
--   Someone who has changed their name for any other reason
+- A trans person, who has changed their name when transitioning
+- Someone who has changed their name through marriage
+- Someone who has changed their name for any other reason
 
 Demeaning behavior
 
@@ -292,10 +294,10 @@ Participant
 
 Includes the following persons:
 
--   W3C Team (employees, contractors, [Fellows](https://www.w3.org/Consortium/Process/#Team))
--   W3C group participants (member representatives and invited experts)
--   Advisory Committee Representatives (and their guests)
--   Anyone from the Public partaking in the W3C work environment (e.g. commenting on our specs, emailing us, attending our conferences or functions, etc.)
+- W3C Team (employees, contractors, [Fellows](https://www.w3.org/Consortium/Process/#Team))
+- W3C group participants (member representatives and invited experts)
+- Advisory Committee Representatives (and their guests)
+- Anyone from the Public partaking in the W3C work environment (e.g. commenting on our specs, emailing us, attending our conferences or functions, etc.)
 
 Prejudice
 
@@ -319,9 +321,9 @@ Sexual harassment
 
 Includes requests for sexual favors, and other verbal or physical conduct of a sexual nature, where:
 
--   submission to such conduct is made either explicitly or implicitly a term or condition of an individual's employment
--   submission to or rejection of such conduct by an individual is used as a basis for employment decisions affecting the individual
--   such conduct has the purpose or effect of unreasonably interfering with an individual's work performance or creating an intimidating hostile or offensive working environment
+- submission to such conduct is made either explicitly or implicitly a term or condition of an individual's employment
+- submission to or rejection of such conduct by an individual is used as a basis for employment decisions affecting the individual
+- such conduct has the purpose or effect of unreasonably interfering with an individual's work performance or creating an intimidating hostile or offensive working environment
 
 Sexual Orientation
 
@@ -340,11 +342,12 @@ Unwelcome sexual advance
 includes visual displays of degrading sexual images, sexually suggestive conduct, offensive remarks of a sexual nature, requests for sexual favors, unwelcome physical contact, and sexual assault.
 
 7. Attribution <a href="#Attribution" class="self-link"></a>
-------------------------------------------------------------
+
+---
 
 Large portions of the text for this policy were taken from the following resources:
 
--   [W3C Code of Ethics and Professional Conduct 2014](https://www.w3.org/Consortium/cepc/cepc-20141022/Overview.html)
--   [Geek Feminism Community anti-harassment/Policy](https://geekfeminism.wikia.org/wiki/Community_anti-harassment/Policy)
+- [W3C Code of Ethics and Professional Conduct 2014](https://www.w3.org/Consortium/cepc/cepc-20141022/Overview.html)
+- [Geek Feminism Community anti-harassment/Policy](https://geekfeminism.wikia.org/wiki/Community_anti-harassment/Policy)
 
 [↑](#title)

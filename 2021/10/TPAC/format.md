@@ -1,15 +1,12 @@
 [Skip ⬇](#intro "Skip to content")
 
-[![TPAC 2021](images/TPAC-2021-cover.svg)](./)
-==============================================
+# [![TPAC 2021](images/TPAC-2021-cover.svg)](./)
 
-12 / 18–29 October
-------------------
+## 12 / 18–29 October
 
 ### virtual meetings
 
-Navigation menu
----------------
+## Navigation menu
 
 ![W3C](../../../Icons/WWW/w3c_home_nb_transp.png)
 
@@ -21,8 +18,7 @@ On this page: [18–22 October](#oct18-22)[25–29 October](#oct25-29) [Expo spa
 
 <img src="images/twitter-logo-blue.png" alt="Twitter" class="icon" srcset="images/twitter-logo-blue.svg" height="18" /> Share your experience: [@w3c](http://twitter.com/W3C) [\#w3cTPAC](https://twitter.com/search?src=typd&q=w3cTPAC "Search #w3cTPAC on Twitter")
 
-18–29 October sessions & happenings
-===================================
+# 18–29 October sessions & happenings
 
 **Follow the steps below to attend these sessions and happenings:**
 
@@ -35,8 +31,7 @@ On this page: [18–22 October](#oct18-22)[25–29 October](#oct25-29) [Expo spa
 
 [Skip ⬇︎](#oct25-29 "Next section")
 
-18–22 October: Breakout sessions, social events
------------------------------------------------
+## 18–22 October: Breakout sessions, social events
 
 ### Breakout sessions
 
@@ -52,8 +47,8 @@ This year again, we plan to offer a set of breakout discussions open to the broa
 
 Join the [live sessions](https://eur.cvent.me/d10rG) to clear your mind and get ready for engaging and stimulating discussions:
 
--   Live cooking: Wednesday 20 October 17:00-17:30 UTC
--   Trivia Game: Thursday 21 October 23:00-23:50 UTC
+- Live cooking: Wednesday 20 October 17:00-17:30 UTC
+- Trivia Game: Thursday 21 October 23:00-23:50 UTC
 
 **[Follow the instructions to access the group meeting details and attend the meetings](#intro)**
 
@@ -63,8 +58,7 @@ Join the [live sessions](https://eur.cvent.me/d10rG) to clear your mind and get 
 
 ![](images/meetings)
 
-25–29 October: Group & joint meetings
--------------------------------------
+## 25–29 October: Group & joint meetings
 
 The W3C groups meet during this week on their own or cross-group to gather new ideas, raise questions and get use-cases.
 
@@ -76,8 +70,7 @@ The W3C groups meet during this week on their own or cross-group to gather new i
 
 ![](images/expo)
 
-Expo space – available 18–29 October
-------------------------------------
+## Expo space – available 18–29 October
 
 Visit our expo space for an opportunity to meet diverse companies and learn about their work and activities.
 
@@ -87,8 +80,7 @@ Visit our expo space for an opportunity to meet diverse companies and learn abou
 
 ![](images/networking)
 
-Networking – available 18–29 October
-------------------------------------
+## Networking – available 18–29 October
 
 TPAC is a great place to meet people and discuss various subjects. Go to the [virtual attendee hub](https://eur.cvent.me/yGw02) to see who is attending, request meetings with one or several attendees, or with exhibitors and attend informal or formal meetings with them.
 
@@ -96,8 +88,7 @@ TPAC is a great place to meet people and discuss various subjects. Go to the [vi
 
 [Skip ⬇](#footer "Next section")
 
-Sponsors
---------
+## Sponsors
 
 ### Title sponsor
 
@@ -119,14 +110,13 @@ For further details, contact <sponsorship@w3.org>
 
 [Top ⇱](#header "Back to top")
 
-Get help
---------
+## Get help
 
 If you have questions, assistance is available by [email](mailto:w3t-tpregister@w3.org) and on [IRC](https://irc.w3.org/?channels=tpac-help).
 
 [![](images/email.png)Email](mailto:w3t-tpregister@w3.org) [![](images/ircchat.png "help")IRC](https://irc.w3.org/?channels=tpac-help)
 
-------------------------------------------------------------------------
+---
 
 [<img src="images/twitter-logo-blue.png" alt="Twitter" class="icon" srcset="images/twitter-logo-blue.svg" height="18" /> \#w3cTPAC](https://twitter.com/search?src=typd&q=w3cTPAC "Search #w3cTPAC on Twitter")
 

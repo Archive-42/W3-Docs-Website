@@ -1,55 +1,53 @@
 \[[next chapter](acreview.html)\]   \[[previous chapter](groups.html)\]   \[[contents](cover.html#toc)\]
 
-------------------------------------------------------------------------
+---
 
 On 1 August 2014, W3C began a [transition](https://www.w3.org/wiki/ProcessTransition2014) away from this document; see the [current W3C Process Document](/Consortium/Process/).
 
-W3C Process Document
-====================
+# W3C Process Document
 
-7 <span id="Reports">W3C Recommendation Track Process</span><span id="Recs"></span>
------------------------------------------------------------------------------------
+## 7 <span id="Reports">W3C Recommendation Track Process</span><span id="Recs"></span>
 
--   <a href="#maturity-levels" class="tocxref">7.1 Recommendation Track Process Maturity Levels</a>
-    -   <a href="#q73" class="tocxref">7.1.1 Maturity Levels When Advancing a Technical Report Towards Recommendation</a>
-    -   <a href="#q74" class="tocxref">7.1.2 Maturity Level When Ending Work on a Technical Report</a>
-    -   <a href="#q75" class="tocxref">7.1.3 Maturity Level When Editing a Recommendation</a>
-    -   <a href="#q76" class="tocxref">7.1.4 Maturity Levels When Rescinding a Recommendation</a>
--   <a href="#transition-reqs" class="tocxref">7.2 General Requirements for Advancement</a>
--   <a href="#doc-reviews" class="tocxref">7.3 Reviews and Review Responsibilities</a>
--   <a href="#rec-advance" class="tocxref">7.4 Advancing a Technical Report to Recommendation</a>
-    -   <a href="#first-wd" class="tocxref">7.4.1 First Public Working Draft</a>
-    -   <a href="#last-call" class="tocxref">7.4.2 Last Call Announcement</a>
-    -   <a href="#cfi" class="tocxref">7.4.3 Call for Implementations</a>
-    -   <a href="#cfr" class="tocxref">7.4.4 Call for Review of a Proposed Recommendation</a>
-    -   <a href="#rec-publication" class="tocxref">7.4.5 Publication of a W3C Recommendation</a>
-    -   <a href="#return-to-wg" class="tocxref">7.4.6 Returning a Document to a Working Group for Further Work</a>
--   <a href="#tr-end" class="tocxref">7.5 Ending Work on a Technical Report</a>
--   <a href="#rec-modify" class="tocxref">7.6 Modifying a W3C Recommendation</a>
-    -   <a href="#errata" class="tocxref">7.6.1 Errata Management</a>
-    -   <a href="#correction-classes" class="tocxref">7.6.2 Classes of Changes to a Recommendation</a>
-    -   <a href="#cfr-edited" class="tocxref">7.6.3 Call for Review of an Edited Recommendation</a>
-    -   <a href="#cfr-corrections" class="tocxref">7.6.4 Call for Review of Proposed Corrections</a>
--   <a href="#rec-rescind" class="tocxref">7.7 Rescinding a W3C Recommendation</a>
-    -   <a href="#proposed-rescinded-rec" class="tocxref">7.7.1 Proposal to Rescind a Recommendation</a>
-    -   <a href="#publication-rescinded-rec" class="tocxref">7.7.2 Publication of a Rescinded Recommendation</a>
--   <a href="#DocumentsGeneral" class="tocxref">7.8 General Information about Technical Reports</a>
-    -   <a href="#DocumentStatus" class="tocxref">7.8.1 Document Status Section</a>
+- <a href="#maturity-levels" class="tocxref">7.1 Recommendation Track Process Maturity Levels</a>
+  - <a href="#q73" class="tocxref">7.1.1 Maturity Levels When Advancing a Technical Report Towards Recommendation</a>
+  - <a href="#q74" class="tocxref">7.1.2 Maturity Level When Ending Work on a Technical Report</a>
+  - <a href="#q75" class="tocxref">7.1.3 Maturity Level When Editing a Recommendation</a>
+  - <a href="#q76" class="tocxref">7.1.4 Maturity Levels When Rescinding a Recommendation</a>
+- <a href="#transition-reqs" class="tocxref">7.2 General Requirements for Advancement</a>
+- <a href="#doc-reviews" class="tocxref">7.3 Reviews and Review Responsibilities</a>
+- <a href="#rec-advance" class="tocxref">7.4 Advancing a Technical Report to Recommendation</a>
+  - <a href="#first-wd" class="tocxref">7.4.1 First Public Working Draft</a>
+  - <a href="#last-call" class="tocxref">7.4.2 Last Call Announcement</a>
+  - <a href="#cfi" class="tocxref">7.4.3 Call for Implementations</a>
+  - <a href="#cfr" class="tocxref">7.4.4 Call for Review of a Proposed Recommendation</a>
+  - <a href="#rec-publication" class="tocxref">7.4.5 Publication of a W3C Recommendation</a>
+  - <a href="#return-to-wg" class="tocxref">7.4.6 Returning a Document to a Working Group for Further Work</a>
+- <a href="#tr-end" class="tocxref">7.5 Ending Work on a Technical Report</a>
+- <a href="#rec-modify" class="tocxref">7.6 Modifying a W3C Recommendation</a>
+  - <a href="#errata" class="tocxref">7.6.1 Errata Management</a>
+  - <a href="#correction-classes" class="tocxref">7.6.2 Classes of Changes to a Recommendation</a>
+  - <a href="#cfr-edited" class="tocxref">7.6.3 Call for Review of an Edited Recommendation</a>
+  - <a href="#cfr-corrections" class="tocxref">7.6.4 Call for Review of Proposed Corrections</a>
+- <a href="#rec-rescind" class="tocxref">7.7 Rescinding a W3C Recommendation</a>
+  - <a href="#proposed-rescinded-rec" class="tocxref">7.7.1 Proposal to Rescind a Recommendation</a>
+  - <a href="#publication-rescinded-rec" class="tocxref">7.7.2 Publication of a Rescinded Recommendation</a>
+- <a href="#DocumentsGeneral" class="tocxref">7.8 General Information about Technical Reports</a>
+  - <a href="#DocumentStatus" class="tocxref">7.8.1 Document Status Section</a>
 
 The Recommendation Track process is the set of steps and requirements followed by W3C [Working Groups](groups.html#GroupsWG) to standardize Web technology. The processes followed by a Working Group to manage specifications and guidelines -- called technical reports in this section -- include:
 
--   [Advancing a technical report](#rec-advance) from early draft to mature deliverable ("Recommendation"). **Note:** People use the phrase "on the Recommendation Track" to refer to the process of advancing a technical report to Recommendation. In this document, the phrase "Recommendation Track process" refers to the larger set of requirements and maturity levels described in the following bullets;
--   [Ending work on a technical report](#tr-end) before it reaches Recommendation, or when not intended to become a Recommendation;
--   [Modifying a W3C Recommendation](#rec-modify);
--   [Rescinding a Recommendation](#rec-rescind) no longer endorsed by W3C.
+- [Advancing a technical report](#rec-advance) from early draft to mature deliverable ("Recommendation"). **Note:** People use the phrase "on the Recommendation Track" to refer to the process of advancing a technical report to Recommendation. In this document, the phrase "Recommendation Track process" refers to the larger set of requirements and maturity levels described in the following bullets;
+- [Ending work on a technical report](#tr-end) before it reaches Recommendation, or when not intended to become a Recommendation;
+- [Modifying a W3C Recommendation](#rec-modify);
+- [Rescinding a Recommendation](#rec-rescind) no longer endorsed by W3C.
 
 The W3C Recommendation Track process is designed to maximize [consensus](policies.html#def-Consensus) about the content of a technical report, to ensure high technical and editorial quality, and to earn endorsement by W3C and the broader community. See also the licensing goals for W3C Recommendations in [section 2](http://www.w3.org/Consortium/Patent-Policy#sec-Licensing) of the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy) \[[PUB33](refs.html#ref-patentpolicy)\].
 
 The following sections describe:
 
--   the steps of the Recommendation Track process (e.g., "Announcement of Last Call" or "Call for Implementations"),
--   the requirements for each step, and
--   the [maturity level](#maturity-levels) of a technical report at each step (e.g., "Working Draft" or "Candidate Recommendation"). Please note that there is not a one-to-one correspondence between steps of the Recommendation Track process and maturity levels.
+- the steps of the Recommendation Track process (e.g., "Announcement of Last Call" or "Call for Implementations"),
+- the requirements for each step, and
+- the [maturity level](#maturity-levels) of a technical report at each step (e.g., "Working Draft" or "Candidate Recommendation"). Please note that there is not a one-to-one correspondence between steps of the Recommendation Track process and maturity levels.
 
 Maturity levels are described first, followed by the steps on the Recommendation Track and the requirements for each step.
 
@@ -80,12 +78,12 @@ A Working Group Note is published by a chartered Working Group to indicate that 
 
 #### <span id="q75">7.1.3 Maturity Level When Editing a Recommendation</span>
 
- <span id="ProposedEditedRec">Proposed Edited Recommendation</span>   
+<span id="ProposedEditedRec">Proposed Edited Recommendation</span>  
 A Proposed Edited Recommendation is a Recommendation published for community review of [changes](#correction-classes), some of which may affect conformance. When there is consensus about the changes, the document is published as a Recommendation.
 
 #### <span id="q76">7.1.4 Maturity Levels When Rescinding a Recommendation</span>
 
- <span id="RescindedRec">Rescinded Recommendation</span>   
+<span id="RescindedRec">Rescinded Recommendation</span>  
 A Rescinded Recommendation is an entire Recommendation that W3C no longer endorses.
 
 ### 7.2 <span id="transition-reqs">General Requirements for Advancement</span>
@@ -102,11 +100,11 @@ For a Call for Implementations up to and including publication as a Recommendati
 
 The following information is important to the decision to advance a technical report and therefore <span class="rfc2119">MUST</span> be [publicly available](comm.html#confidentiality-change):
 
--   Details of changes if the technical report has been modified substantively since the previous step (e.g., by providing "diffs" and summaries of [substantive changes](#substantive-change));
--   A statement that requirements have been fulfilled or a listing of unfulfilled requirements and the rationale for advancing the document though some requirements have not been met.
--   Evidence of wide review and that dependencies with other groups have been resolved;
--   Responses that [formally address issues](policies.html#formal-address) raised by reviewers;
--   Any [formal objections](policies.html#WGArchiveMinorityViews).
+- Details of changes if the technical report has been modified substantively since the previous step (e.g., by providing "diffs" and summaries of [substantive changes](#substantive-change));
+- A statement that requirements have been fulfilled or a listing of unfulfilled requirements and the rationale for advancing the document though some requirements have not been met.
+- Evidence of wide review and that dependencies with other groups have been resolved;
+- Responses that [formally address issues](policies.html#formal-address) raised by reviewers;
+- Any [formal objections](policies.html#WGArchiveMinorityViews).
 
 ### 7.3 <span id="doc-reviews">Reviews and Review Responsibilities</span>
 
@@ -116,7 +114,7 @@ Experience shows that the following help build consensus around technical report
 2.  Early review, to find errors quickly and decrease the chances of diverging technologies.
 3.  Wide review, including from other groups in and outside of W3C.
 
-A document receives review from the moment it is first published. Starting with the First Public Working Draft until the start of a Proposed Recommendation review, a Working Group <span class="rfc2119">MUST</span> [formally address](policies.html#formal-address) *any* substantive review comment about a technical report and <span class="rfc2119">SHOULD</span> do so in a timely manner. The Director <span class="rfc2119">MUST</span> formally address any substantive issue raised by Advisory Committee representatives during Proposed Recommendation, Proposed Edited Recommendation, and Proposed Rescinded Recommendation review periods. The Working Group <span class="rfc2119">MUST</span> communicate to the Director (usually through the Team Contact) any substantive issues raised during Proposed Recommendation, Proposed Edited Recommendation, and Proposed Rescinded Recommendation review periods by parties other than Advisory Committee representatives.
+A document receives review from the moment it is first published. Starting with the First Public Working Draft until the start of a Proposed Recommendation review, a Working Group <span class="rfc2119">MUST</span> [formally address](policies.html#formal-address) _any_ substantive review comment about a technical report and <span class="rfc2119">SHOULD</span> do so in a timely manner. The Director <span class="rfc2119">MUST</span> formally address any substantive issue raised by Advisory Committee representatives during Proposed Recommendation, Proposed Edited Recommendation, and Proposed Rescinded Recommendation review periods. The Working Group <span class="rfc2119">MUST</span> communicate to the Director (usually through the Team Contact) any substantive issues raised during Proposed Recommendation, Proposed Edited Recommendation, and Proposed Rescinded Recommendation review periods by parties other than Advisory Committee representatives.
 
 Reviewers <span class="rfc2119">SHOULD NOT</span> send substantive technical reviews late on the Recommendation track. Reviewers <span class="rfc2119">SHOULD NOT</span> expect that a Working Group will readily make [substantive changes](#substantive-change) to a mature document. The more evidence a Working Group can show of wide review, the less weight substantive comments will carry when provided late on the Recommendation Track. Worthy ideas <span class="rfc2119">SHOULD BE</span> recorded even when not incorporated into a mature document.
 
@@ -168,14 +166,14 @@ Ongoing work: After publication of the First Public Working Draft, the Working G
 
 In order to make Working Drafts available to a wide audience early in their development, the requirements for publication of a Working Draft are limited to an agreement by a chartered Working Group to publish the technical report and satisfaction of the Team's [Publication Rules](http://www.w3.org/Guide/pubrules) \[[PUB31](refs.html#ref-pubrules)\]. Consensus is not a prerequisite for approval to publish; the Working Group <span class="rfc2119">MAY</span> request publication of a Working Draft even if it is unstable and does not meet all Working Group requirements.
 
-Working Groups <span class="rfc2119">SHOULD</span> encourage early and wide review of the technical report, within and outside of W3C, especially from other Working Groups with dependencies on the technical report. Advisory Committee representatives <span class="rfc2119">SHOULD</span> encourage review within their organizations as early as First Public Working Draft, i.e., before a [Last Call announcement](#last-call) and *well before* a [Call for Review of a Proposed Recommendation](#cfr).
+Working Groups <span class="rfc2119">SHOULD</span> encourage early and wide review of the technical report, within and outside of W3C, especially from other Working Groups with dependencies on the technical report. Advisory Committee representatives <span class="rfc2119">SHOULD</span> encourage review within their organizations as early as First Public Working Draft, i.e., before a [Last Call announcement](#last-call) and _well before_ a [Call for Review of a Proposed Recommendation](#cfr).
 
 The Working Group <span class="rfc2119">SHOULD</span> be responsive to and facilitate ongoing review by addressing issues in a timely manner and clearly indicating changes between drafts (e.g., by providing "diffs" and summaries of [substantive changes](#substantive-change)).
 
 Possible next steps:
 
--   Forward: [Last Call announcement](#last-call), generally done after a series of Working Drafts.
--   Otherwise: [end work](#tr-end)
+- Forward: [Last Call announcement](#last-call), generally done after a series of Working Drafts.
+- Otherwise: [end work](#tr-end)
 
 #### 7.4.2 <span id="last-call">Last Call Announcement</span>
 
@@ -189,9 +187,9 @@ Announcement: The Working Group <span class="rfc2119">MUST</span> announce the L
 
 Purpose: A Working Group's Last Call announcement is a signal that:
 
--   the Working Group believes that it has satisfied its relevant technical requirements (e.g., of the charter or requirements document) in the Working Draft;
--   the Working Group believes that it has satisfied significant dependencies with other groups;
--   other groups <span class="rfc2119">SHOULD</span> review the document to confirm that these dependencies have been satisfied.
+- the Working Group believes that it has satisfied its relevant technical requirements (e.g., of the charter or requirements document) in the Working Draft;
+- the Working Group believes that it has satisfied significant dependencies with other groups;
+- other groups <span class="rfc2119">SHOULD</span> review the document to confirm that these dependencies have been satisfied.
 
 In general, a Last Call announcement is also a signal that the Working Group is planning to advance the technical report to later maturity levels.
 
@@ -213,8 +211,8 @@ It is important to ensure the proper integration of a technical report in the in
 
 Possible next steps:
 
--   Forward: [Call for Implementations](#cfi) or [Call for Review of a Proposed Recommendation](#cfr)
--   Otherwise: [return to Working Group](#return-to-wg) or [end work](#tr-end)
+- Forward: [Call for Implementations](#cfi) or [Call for Review of a Proposed Recommendation](#cfr)
+- Otherwise: [return to Working Group](#return-to-wg) or [end work](#tr-end)
 
 #### 7.4.3 <span id="cfi">Call for Implementations</span>
 
@@ -240,8 +238,8 @@ Duration of the implementation period: The announcement <span class="rfc2119">MU
 
 Possible next steps:
 
--   Forward: [Call for Review of a Proposed Recommendation](#cfr)
--   Otherwise: [return to Working Group](#return-to-wg) or [end work](#tr-end)
+- Forward: [Call for Review of a Proposed Recommendation](#cfr)
+- Otherwise: [return to Working Group](#return-to-wg) or [end work](#tr-end)
 
 #### 7.4.4 <span id="cfr">Call for Review of a Proposed Recommendation</span>
 
@@ -265,8 +263,8 @@ Ongoing work: During the review period, the Working Group requests endorsement a
 
 Possible next steps:
 
--   Forward: Publication as a [W3C Recommendation](#rec-publication)
--   Otherwise: [Call for Implementations](#cfi) if there are questions related to implementation, [return to Working Group](#return-to-wg) or [end work](#tr-end)
+- Forward: Publication as a [W3C Recommendation](#rec-publication)
+- Otherwise: [Call for Implementations](#cfi) if there are questions related to implementation, [return to Working Group](#return-to-wg) or [end work](#tr-end)
 
 #### 7.4.5 <span id="rec-publication">Publication of a W3C Recommendation</span>
 
@@ -282,8 +280,8 @@ If there was any [dissent](policies.html#def-Dissent) during the Member review, 
 
 Possible next steps:
 
--   End state: A technical report <span class="rfc2119">MAY</span> remain a Recommendation indefinitely
--   Otherwise: [Modification of a Recommendation](#rec-modify) or [Rescinding a Recommendation](#rec-rescind)
+- End state: A technical report <span class="rfc2119">MAY</span> remain a Recommendation indefinitely
+- Otherwise: [Modification of a Recommendation](#rec-modify) or [Rescinding a Recommendation](#rec-rescind)
 
 The Director <span class="rfc2119">MAY</span> submit a W3C Recommendation to another standards body for adoption and formal approval by that body.
 
@@ -308,8 +306,8 @@ Work <span class="rfc2119">MAY</span> also cease because W3C determines that it 
 
 Possible next steps:
 
--   End state: A technical report <span class="rfc2119">MAY</span> remain a Working Group Note indefinitely
--   Otherwise: A Working Group <span class="rfc2119">MAY</span> resume work on the technical report as a Working Draft
+- End state: A technical report <span class="rfc2119">MAY</span> remain a Working Group Note indefinitely
+- Otherwise: A Working Group <span class="rfc2119">MAY</span> resume work on the technical report as a Working Draft
 
 ### 7.6 <span id="rec-modify">Modifying a W3C Recommendation</span>
 
@@ -330,20 +328,20 @@ A Working Group <span class="rfc2119">SHOULD</span> keep their errata pages up-t
 This document distinguishes the following classes of changes to a Recommendation.
 
 1. No changes to text content  
-These changes include fixing broken links or invalid markup.
+   These changes include fixing broken links or invalid markup.
 
 2. Corrections that do not affect conformance  
-Editorial changes or clarifications that do not change the technical content of the specification.
+   Editorial changes or clarifications that do not change the technical content of the specification.
 
- 3. Corrections that <span class="rfc2119">MAY</span> affect conformance, but add no new features   
-These changes <span class="rfc2119">MAY</span> affect conformance to the Recommendation. A change that affects conformance is one that:
+3. Corrections that <span class="rfc2119">MAY</span> affect conformance, but add no new features  
+   These changes <span class="rfc2119">MAY</span> affect conformance to the Recommendation. A change that affects conformance is one that:
 
-1.  turns conforming data, processors, or other conforming agents into non-conforming agents, or
-2.  turns non-conforming agents into conforming ones, or
-3.  clears up an ambiguity or under-specified part of the specification in such a way that an agent whose conformance was once unclear becomes clearly conforming or non-conforming.
+4. turns conforming data, processors, or other conforming agents into non-conforming agents, or
+5. turns non-conforming agents into conforming ones, or
+6. clears up an ambiguity or under-specified part of the specification in such a way that an agent whose conformance was once unclear becomes clearly conforming or non-conforming.
 
-4. New features  
-For new features, W3C follows the full process of [advancing a technical report to Recommendation](#rec-advance).
+7. New features  
+   For new features, W3C follows the full process of [advancing a technical report to Recommendation](#rec-advance).
 
 The first two classes of change require no technical review of the proposed changes, although a Working Group <span class="rfc2119">MAY</span> issue a Call for Review. The modified Recommendation is published according to the Team's requirements, including [Publication Rules](http://www.w3.org/Guide/pubrules) \[[PUB31](refs.html#ref-pubrules)\].
 
@@ -381,8 +379,8 @@ Ongoing work: During the review period, the Working Group solicits and responds 
 
 Possible next steps:
 
--   Forward: [Publication of a W3C Recommendation](#rec-publication)
--   Otherwise, the Recommendation remains unchanged and two steps are possible: [return to Working Group](#return-to-wg) or [end work](#tr-end)
+- Forward: [Publication of a W3C Recommendation](#rec-publication)
+- Otherwise, the Recommendation remains unchanged and two steps are possible: [return to Working Group](#return-to-wg) or [end work](#tr-end)
 
 #### 7.6.4 <span id="cfr-corrections">Call for Review of Proposed Corrections</span>
 
@@ -406,14 +404,14 @@ If there are no [formal objections](policies.html#WGArchiveMinorityViews) to the
 
 Possible next steps:
 
--   Forward: [Publication of a W3C Recommendation](#rec-publication). In order for the corrections to remain normative, the Working Group <span class="rfc2119">MUST</span> incorporate them into an edited Recommendation. The Working Group <span class="rfc2119">MUST</span> publish the revised Recommendation within <span class="time-interval">six months</span> after the end of the review or secure an extension from the Director. Prior to publication, if the Working Group makes further changes to the technical report that affect conformance, the Working Group <span class="rfc2119">MUST</span> request a [Call for Review of an Edited Recommendation](#cfr-edited).
--   Otherwise: The Recommendation remains unchanged and two steps are possible: [return to Working Group](#return-to-wg) or [end work](#tr-end)
+- Forward: [Publication of a W3C Recommendation](#rec-publication). In order for the corrections to remain normative, the Working Group <span class="rfc2119">MUST</span> incorporate them into an edited Recommendation. The Working Group <span class="rfc2119">MUST</span> publish the revised Recommendation within <span class="time-interval">six months</span> after the end of the review or secure an extension from the Director. Prior to publication, if the Working Group makes further changes to the technical report that affect conformance, the Working Group <span class="rfc2119">MUST</span> request a [Call for Review of an Edited Recommendation](#cfr-edited).
+- Otherwise: The Recommendation remains unchanged and two steps are possible: [return to Working Group](#return-to-wg) or [end work](#tr-end)
 
 ### 7.7 <span id="rec-rescind">Rescinding a W3C Recommendation</span>
 
 At times, W3C <span class="rfc2119">MAY</span> rescind an entire Recommendation, for instance when W3C learns of significant errors in the Recommendation, when the Recommendation becomes outdated, or if W3C discovers burdensome patent claims that affect implementers; see the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy) \[[PUB33](refs.html#ref-patentpolicy)\] and in particular [section 5](http://www.w3.org/Consortium/Patent-Policy#sec-Requirements) (bullet 10) and [section 7.5](http://www.w3.org/Consortium/Patent-Policy#sec-PAG-conclude).
 
-To deprecate *part* of a Recommendation, W3C follows the process for [modifying a Recommendation](#rec-modify).
+To deprecate _part_ of a Recommendation, W3C follows the process for [modifying a Recommendation](#rec-modify).
 
 Once W3C has published a Rescinded Recommendation, future W3C technical reports <span class="rfc2119">MUST NOT</span> include normative references to that technical report.
 
@@ -439,8 +437,8 @@ Ongoing work: During the review period, the Working Group solicits and responds 
 
 Possible next steps:
 
--   Forward: [Publication of a Rescinded Recommendation](#publication-rescinded-rec)
--   Otherwise: The Recommendation remains unchanged and two steps are possible: [return to Working Group](#return-to-wg) or [end work](#tr-end)
+- Forward: [Publication of a Rescinded Recommendation](#publication-rescinded-rec)
+- Otherwise: The Recommendation remains unchanged and two steps are possible: [return to Working Group](#return-to-wg) or [end work](#tr-end)
 
 #### 7.7.2 <span id="publication-rescinded-rec">Publication of a Rescinded Recommendation</span>
 
@@ -458,7 +456,7 @@ If there was any [dissent](policies.html#def-Dissent) in the Proposed Rescinded 
 
 Possible next step:
 
--   End state: A technical report <span class="rfc2119">MAY</span> remain a Rescinded Recommendation indefinitely
+- End state: A technical report <span class="rfc2119">MAY</span> remain a Rescinded Recommendation indefinitely
 
 ### 7.8 <span id="DocumentsGeneral">General Information about Technical Reports</span>
 
@@ -480,6 +478,6 @@ Each technical report <span class="rfc2119">MUST</span> include a section about 
 
 The Team's [Publication Rules](http://www.w3.org/Guide/pubrules) include status section requirements for each maturity level.
 
-------------------------------------------------------------------------
+---
 
 \[[next chapter](acreview.html)\]   \[[previous chapter](groups.html)\]   \[[contents](cover.html#toc)\]

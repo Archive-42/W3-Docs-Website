@@ -1,472 +1,659 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<!-- xml:lang="en" lang="en"  -->
-<head>
-  <title>Accessibility Features of SVG</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <style type="text/css">
- .example {   border-style: solid;
-             border-width: 1px ;
-             color: #5D0091;
-             border-color: #5D0091;
-             speech-rate: slower }
-.figure { white-space: pre }
-.element { font-weight: bolder }
-.textimage { margin-left: 2em }
-STRONG { color: #FF0080}
-EM { color: #7F007F; font-weight: bold}
-.svgTitle { font-weight: bolder ; font-size: 120%}
-cite { font-style: normal }
-</style>
-  <link rel="stylesheet" type="text/css"
-  href="http://www.w3.org/StyleSheets/TR/W3C-NOTE" />
-  <link href="metadata.rdf" rel="meta" />
-</head>
+  <!-- xml:lang="en" lang="en"  -->
+  <head>
+    <title>Accessibility Features of SVG</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <style type="text/css">
+      .example {
+        border-style: solid;
+        border-width: 1px;
+        color: #5d0091;
+        border-color: #5d0091;
+        speech-rate: slower;
+      }
+      .figure {
+        white-space: pre;
+      }
+      .element {
+        font-weight: bolder;
+      }
+      .textimage {
+        margin-left: 2em;
+      }
+      STRONG {
+        color: #ff0080;
+      }
+      EM {
+        color: #7f007f;
+        font-weight: bold;
+      }
+      .svgTitle {
+        font-weight: bolder;
+        font-size: 120%;
+      }
+      cite {
+        font-style: normal;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://www.w3.org/StyleSheets/TR/W3C-NOTE"
+    />
+    <link href="metadata.rdf" rel="meta" />
+  </head>
 
-<body>
+  <body>
+    <div class="head">
+      <a href="http://www.w3.org/"
+        ><img
+          height="48"
+          width="72"
+          alt="W3C"
+          src="http://www.w3.org/Icons/w3c_home"
+      /></a>
 
-<div class="head">
-<a href="http://www.w3.org/"><img height="48" width="72" alt="W3C"
-src="http://www.w3.org/Icons/w3c_home" /></a>
+      <h1>
+        Accessibility Features of
+        <abbr title="Scalable Vector Graphics">SVG</abbr>
+      </h1>
 
-<h1>Accessibility Features of <abbr
-title="Scalable Vector Graphics">SVG</abbr></h1>
+      <h2>
+        <abbr title="The World Wide Web Consortium">W3C</abbr> Note 7 August
+        2000
+      </h2>
+      <dl>
+        <dt>This version:</dt>
+        <dd>
+          <a href="http://www.w3.org/TR/2000/NOTE-SVG-access-20000807"
+            >http://www.w3.org/TR/2000/NOTE-SVG-access-20000807</a
+          >
+        </dd>
+        <dd>
+          (Also available for download as a
+          <a href="SVG-access.tgz">gzipped tarball</a>, or in
+          <a href="SVG-access.zip">zip format</a>)
+        </dd>
+        <dt>Latest version:</dt>
+        <dd>
+          <a href="http://www.w3.org/TR/SVG-access"
+            >http://www.w3.org/TR/SVG-access</a
+          >
+        </dd>
+        <dt>Editors:</dt>
+        <dd>
+          Charles McCathieNevile &lt;<a href="mailto:charles@w3.org"
+            >charles@w3.org</a
+          >&gt;<br />
+          Marja-Riitta Koivunen &lt;<a href="mailto:marja@w3.org"
+            >marja@w3.org</a
+          >&gt;
+        </dd>
+      </dl>
 
-<h2><abbr title="The World Wide Web Consortium">W3C</abbr> Note 7 August
-2000</h2>
-<dl>
-  <dt>This version:</dt>
-    <dd><a
-      href="http://www.w3.org/TR/2000/NOTE-SVG-access-20000807">http://www.w3.org/TR/2000/NOTE-SVG-access-20000807</a></dd>
-    <dd>(Also available for download as a <a href="SVG-access.tgz">gzipped
-      tarball</a>, or in <a href="SVG-access.zip">zip format</a>)</dd>
-  <dt>Latest version:</dt>
-    <dd><a
-      href="http://www.w3.org/TR/SVG-access">http://www.w3.org/TR/SVG-access</a></dd>
-  <dt>Editors:</dt>
-    <dd>Charles McCathieNevile &lt;<a
-      href="mailto:charles@w3.org">charles@w3.org</a>&gt;<br />
-      Marja-Riitta Koivunen &lt;<a
-      href="mailto:marja@w3.org">marja@w3.org</a>&gt;</dd>
-</dl>
+      <p class="copyright">
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
+          ><br />
+          Copyright</a
+        >
+        ï¿½ 1999-2000
+        <a href="http://www.w3.org/"
+          ><abbr title="World Wide Web Consortium">W3C</abbr></a
+        ><sup>ï¿½</sup> (<a href="http://www.lcs.mit.edu/"
+          ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+        >, <a href="http://www.inria.fr/">INRIA</a>,
+        <a href="http://www.keio.ac.jp/"> Keio</a>), All Rights Reserved. W3C
+        <a
+          href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer"
+        >
+          liability</a
+        >,
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">
+          trademark</a
+        >,
+        <a
+          href="http://www.w3.org/Consortium/Legal/copyright-documents-19990405"
+          >document use</a
+        >
+        and
+        <a href="http://www.w3.org/Consortium/Legal/copyright-software-19980720"
+          >software licensing</a
+        >
+        rules apply.
+      </p>
+      <hr title="Separator for header" />
+    </div>
 
-<p class="copyright"><a
-href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"><br />
-Copyright</a> © 1999-2000 <a href="http://www.w3.org/"><abbr
-title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a
-href="http://www.lcs.mit.edu/"><abbr
-title="Massachusetts Institute of Technology">MIT</abbr></a>, <a
-href="http://www.inria.fr/">INRIA</a>, <a href="http://www.keio.ac.jp/">
-Keio</a>), All Rights Reserved. W3C <a
-href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">
-liability</a>, <a
-href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">
-trademark</a>, <a
-href="http://www.w3.org/Consortium/Legal/copyright-documents-19990405">document
-use</a> and <a
-href="http://www.w3.org/Consortium/Legal/copyright-software-19980720">software
-licensing</a> rules apply.</p>
-<hr title="Separator for header" />
-</div>
+    <h2><a name="abstract" id="abstract">Abstract</a></h2>
 
-<h2><a name="abstract" id="abstract">Abstract</a></h2>
+    <p>
+      Scalable Vector Graphics (<acronym>SVG</acronym>) offers a number of
+      features to make graphics on the Web more accessible than is currently
+      possible, to a wider group of users. Users who benefit include users with
+      low vision, color blind or blind users, and users of assistive
+      technologies. A number of these SVG features can also increase usability
+      of content for many users without disabilities, such as users of personal
+      digital assistants, mobile phones or other non-traditional Web access
+      devices.
+    </p>
 
-<p>Scalable Vector Graphics (<acronym>SVG</acronym>) offers a number of
-features to make graphics on the Web more accessible than is currently
-possible, to a wider group of users. Users who benefit include users with low
-vision, color blind or blind users, and users of assistive technologies. A
-number of these SVG features can also increase usability of content for many
-users without disabilities, such as users of personal digital assistants,
-mobile phones or other non-traditional Web access devices.</p>
+    <p>
+      Accessibility requires that the features offered by SVG are correctly used
+      and supported. This Note describes the SVG features that support
+      accessibility and illustrates their use with examples.
+    </p>
 
-<p>Accessibility requires that the features offered by SVG are correctly used
-and supported. This Note describes the SVG features that support accessibility
-and illustrates their use with examples.</p>
+    <h2><a name="status" id="status">Status of this document</a></h2>
 
-<h2><a name="status" id="status">Status of this document</a></h2>
+    <p>
+      This document is a Note made available by the W3C for discussion only.
+      Publication of this Note by W3C indicates no endorsement by the W3C Team
+      or any W3C Members. The Note is based on the SVG Candidate Recommendation
+      [<a href="#SVG">SVG</a>]. This Note is made available at the same time as
+      the SVG Candidate Recommendation in order to provide information on
+      potential implementation considerations.
+    </p>
 
-<p>This document is a Note made available by the W3C for discussion only.
-Publication of this Note by W3C indicates no endorsement by the W3C
-Team or any W3C Members. The Note is based on the
-SVG Candidate Recommendation [<a href="#SVG">SVG</a>].
-This Note is made available at the same time as the SVG
-Candidate Recommendation in order to provide 
-information on potential implementation considerations.</p>
+    <p>
+      This version of the Note has received some review but not yet endorsement
+      from the SVG Working Group and the Protocols and Formats Working Group.
+      These groups, together with the Education and Outreach Working Group, the
+      WAI Interest Group, and others are invited to review this document, in
+      particular, during the SVG Candidate Recommendation period.
+    </p>
 
-<p>This version of the Note has received some review but not yet endorsement
-from the SVG Working Group and the Protocols and Formats Working Group. These
-groups, together with the Education and Outreach Working Group, the WAI
-Interest Group, and others are invited to review this document,
-in particular, during the SVG Candidate Recommendation period.</p>
+    <p>
+      The authors plan to publish an updated version of this Note in any of the
+      following circumstances:
+    </p>
+    <ul>
+      <li>
+        Further review, especially by W3C Working or Interest Groups, indicates
+        that change is needed.
+      </li>
+      <li>Significant changes are made to the SVG specification.</li>
+      <li>SVG becomes a W3C Recommendation.</li>
+    </ul>
 
-<p>The authors plan to publish an updated version of this Note in any of the
-following circumstances:</p>
-<ul>
-  <li>Further review, especially by W3C Working or Interest Groups, indicates
-    that change is needed.</li>
-  <li>Significant changes are made to the SVG specification.</li>
-  <li>SVG becomes a W3C Recommendation.</li>
-</ul>
+    <p>
+      Please send comments to the WAI Education and Outreach Working Group
+      mailing list <a href="mailto:w3c-wai-eo@w3.org"> w3c-wai-eo@w3.org</a>,
+      which is
+      <a href="http://lists.w3.org/Archives/Public/w3c-wai-eo/"
+        >archived publicly</a
+      >
+      at http://lists.w3.org/Archives/Public/w3c-wai-eo/. This document has been
+      produced as part of the
+      <a href="/WAI/Technical/Activity">WAI Technical Activity</a>. A list of
+      current <a href="/TR/">W3C technical reports and publications</a>,
+      including Working Drafts and Notes, can be found at http://www.w3.org/TR.
+    </p>
 
-<p>Please send comments to the WAI Education and Outreach Working Group
-mailing list <a href="mailto:w3c-wai-eo@w3.org"> w3c-wai-eo@w3.org</a>, which
-is <a href="http://lists.w3.org/Archives/Public/w3c-wai-eo/">archived
-publicly</a> at http://lists.w3.org/Archives/Public/w3c-wai-eo/. This document
-has been produced as part of the <a href="/WAI/Technical/Activity">WAI
-Technical Activity</a>. A list of current <a href="/TR/">W3C technical reports
-and publications</a>, including Working Drafts and Notes, can be found at
-http://www.w3.org/TR.</p>
-
-<h3><a name="contents" id="contents">Table of contents</a></h3>
-<ol>
-  <li><a href="#Introducti">Introduction</a>
+    <h3><a name="contents" id="contents">Table of contents</a></h3>
     <ol>
-      <li><a href="#Accessibil1">Why Accessibility?</a></li>
-      <li><a href="#What">Accessible SVG?</a></li>
-      <li><a href="#read">How to Read this Document</a></li>
+      <li>
+        <a href="#Introducti">Introduction</a>
+        <ol>
+          <li><a href="#Accessibil1">Why Accessibility?</a></li>
+          <li><a href="#What">Accessible SVG?</a></li>
+          <li><a href="#read">How to Read this Document</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#Equivalent">Equivalent Alternatives</a>
+        <ol>
+          <li><a href="#Equivalent">Title and Description</a></li>
+          <li>
+            <a href="#Structured"
+              >Equivalent Alternatives in a Structured Document</a
+            >
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#Graphics">Accessible Graphics</a>
+        <ol>
+          <li><a href="#Shapes">Basic Graphic Shapes</a></li>
+          <li>
+            <a href="#ReUsingText">Re-using Alternative Text as Graphics</a>
+          </li>
+          <li><a href="#Re-Using">Re-using Graphic Components</a></li>
+          <li>
+            <a href="#Re-Using1">Re-using Components from Other Documents</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#Style">Controlling Presentation</a>
+        <ol>
+          <li><a href="#Colors">Simple Style Definitions</a></li>
+          <li><a href="#Classes">Style Definitions with Classes</a></li>
+          <li><a href="#Different">Style with Different Media</a></li>
+          <li><a href="#Fonts">Presentation of Text - Fonts</a></li>
+          <li><a href="#Fonts2">Presentation of Text - Creating Fonts</a></li>
+          <li>
+            <a href="#SVGStyle">Defining Style Values with SVG Elements</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#interact">Accessible Interaction</a>
+        <ol>
+          <li><a href="#events">Device-independent Events</a></li>
+          <li><a href="#Animations">Accessible Animation</a></li>
+          <li><a href="#Links">Linking and Navigation</a></li>
+        </ol>
+      </li>
+      <li><a href="#custom">Adapting Content to User or System Settings</a></li>
+      <li>
+        <a href="#Inheriting">Accessibility Benefits Originating from XML</a>
+        <ol>
+          <li><a href="#Metadata">Providing Information with Metadata</a></li>
+          <li><a href="#Structured2">Using SVG with Other XML Languages</a></li>
+          <li>
+            <a href="#DOM"
+              >Supporting Assistive Technologies - Document Object Model</a
+            >
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#Further">Further Reading</a>
+        <ol>
+          <li><a href="#About">About SVG</a></li>
+          <li>
+            <a href="#About-WAI">About the Web Accessibility Initiative</a>
+          </li>
+          <li>
+            <a href="#About-W3C">About the World Wide Web Consortium (W3C)</a>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#Glossary">Glossary</a></li>
+      <li><a href="#acknowledgments">Acknowledgements</a></li>
+      <li><a href="#references">References</a></li>
     </ol>
-  </li>
-  <li><a href="#Equivalent">Equivalent Alternatives</a>
-    <ol>
-      <li><a href="#Equivalent">Title and Description</a></li>
-      <li><a href="#Structured">Equivalent Alternatives in a Structured
-        Document</a></li>
-    </ol>
-  </li>
-  <li><a href="#Graphics">Accessible Graphics</a>
-    <ol>
-      <li><a href="#Shapes">Basic Graphic Shapes</a></li>
-      <li><a href="#ReUsingText">Re-using Alternative Text as
-      Graphics</a></li>
-      <li><a href="#Re-Using">Re-using Graphic Components</a></li>
-      <li><a href="#Re-Using1">Re-using Components from Other
-      Documents</a></li>
-    </ol>
-  </li>
-  <li><a href="#Style">Controlling Presentation</a>
-    <ol>
-      <li><a href="#Colors">Simple Style Definitions</a></li>
-      <li><a href="#Classes">Style Definitions with Classes</a></li>
-      <li><a href="#Different">Style with Different Media</a></li>
-      <li><a href="#Fonts">Presentation of Text - Fonts</a></li>
-      <li><a href="#Fonts2">Presentation of Text - Creating Fonts</a></li>
-      <li><a href="#SVGStyle">Defining Style Values with SVG Elements</a></li>
-    </ol>
-  </li>
-  <li><a href="#interact">Accessible Interaction</a>
-    <ol>
-      <li><a href="#events">Device-independent Events</a></li>
-      <li><a href="#Animations">Accessible Animation</a></li>
-      <li><a href="#Links">Linking and Navigation</a></li>
-    </ol>
-  </li>
-  <li><a href="#custom">Adapting Content to User or System Settings</a></li>
-  <li><a href="#Inheriting">Accessibility Benefits Originating from XML</a>
-    <ol>
-      <li><a href="#Metadata">Providing Information with Metadata</a></li>
-      <li><a href="#Structured2">Using SVG with Other XML Languages</a></li>
-      <li><a href="#DOM">Supporting Assistive Technologies - Document Object
-        Model</a></li>
-    </ol>
-  </li>
-  <li><a href="#Further">Further Reading</a>
-    <ol>
-      <li><a href="#About">About SVG</a></li>
-      <li><a href="#About-WAI">About the Web Accessibility Initiative</a></li>
-      <li><a href="#About-W3C">About the World Wide Web Consortium
-      (W3C)</a></li>
-    </ol>
-  </li>
-  <li><a href="#Glossary">Glossary</a></li>
-  <li><a href="#acknowledgments">Acknowledgements</a></li>
-  <li><a href="#references">References</a></li>
-</ol>
 
-<h2><a name="contents1" id="contents1"></a></h2>
-<hr />
+    <h2><a name="contents1" id="contents1"></a></h2>
+    <hr />
 
-<h2><a name="Introducti" id="Introducti">1. Introduction</a></h2>
+    <h2><a name="Introducti" id="Introducti">1. Introduction</a></h2>
 
-<h3><a name="Accessibil1" id="Accessibil1">1.1 Why Accessibility?</a></h3>
+    <h3><a name="Accessibil1" id="Accessibil1">1.1 Why Accessibility?</a></h3>
 
-<p>Images, sound, text and interaction all play a role in conveying
-information on the Web. In many cases, images have an important role in
-conveying, clarifying, and simplifying information. In this way, multimedia
-itself benefits accessibility. However the information presented in images
-must be accessible to all users, including users with non-visual devices.
-Furthermore, in order to have full access to the Web, it is important that
-authors with disabilities can create Web content, including images as part of
-that content.</p>
+    <p>
+      Images, sound, text and interaction all play a role in conveying
+      information on the Web. In many cases, images have an important role in
+      conveying, clarifying, and simplifying information. In this way,
+      multimedia itself benefits accessibility. However the information
+      presented in images must be accessible to all users, including users with
+      non-visual devices. Furthermore, in order to have full access to the Web,
+      it is important that authors with disabilities can create Web content,
+      including images as part of that content.
+    </p>
 
-<p>The working context of people with (or without) disabilities can vary
-enormously. Many users or authors:</p>
-<ul>
-  <li>may not be able to see the images at all or may have impaired vision or
-    hearing;</li>
-  <li>may have difficulty reading or comprehending text;</li>
-  <li>may not be able to move easily or use a keyboard or mouse when creating
-    or interacting with the image;</li>
-  <li>may use a device with a text-only display, or a small or very magnified
-    screen view.</li>
-</ul>
+    <p>
+      The working context of people with (or without) disabilities can vary
+      enormously. Many users or authors:
+    </p>
+    <ul>
+      <li>
+        may not be able to see the images at all or may have impaired vision or
+        hearing;
+      </li>
+      <li>may have difficulty reading or comprehending text;</li>
+      <li>
+        may not be able to move easily or use a keyboard or mouse when creating
+        or interacting with the image;
+      </li>
+      <li>
+        may use a device with a text-only display, or a small or very magnified
+        screen view.
+      </li>
+    </ul>
 
-<p>Increasing the accessibility of images can benefit a wide variety of users
-and authors including many people who do not have a disability but who have
-similar needs. For example, someone may be working in an eyes-busy environment
-and thus may require an audio equivalent for information they cannot view.
-Users of small mobile devices (with small screens, no keyboard, and no mouse)
-have similar functional needs to users with certain disabilities. For some
-further information on how people with disabilities use the Web, refer to "How
-People with Disabilities Use the Web" [<a href="#USENOTE">USENOTE</a>].</p>
+    <p>
+      Increasing the accessibility of images can benefit a wide variety of users
+      and authors including many people who do not have a disability but who
+      have similar needs. For example, someone may be working in an eyes-busy
+      environment and thus may require an audio equivalent for information they
+      cannot view. Users of small mobile devices (with small screens, no
+      keyboard, and no mouse) have similar functional needs to users with
+      certain disabilities. For some further information on how people with
+      disabilities use the Web, refer to "How People with Disabilities Use the
+      Web" [<a href="#USENOTE">USENOTE</a>].
+    </p>
 
-<h3><a name="What" id="What">1.2 Accessible SVG?</a></h3>
+    <h3><a name="What" id="What">1.2 Accessible SVG?</a></h3>
 
-<p>Scalable Vector Graphics [<a href="#SVG">SVG</a>] is an Extensible Markup
-Language (<acronym>XML</acronym>) application for producing Web graphics. SVG
-provides many accessibility benefits to disabled users, some originating from
-the vector graphics model, some inherited because SVG is built on top of XML,
-and some in the design of SVG itself, for example, SVG-specific elements for
-<a href="#def-eq-alt">alternative equivalents</a>.</p>
+    <p>
+      Scalable Vector Graphics [<a href="#SVG">SVG</a>] is an Extensible Markup
+      Language (<acronym>XML</acronym>) application for producing Web graphics.
+      SVG provides many accessibility benefits to disabled users, some
+      originating from the vector graphics model, some inherited because SVG is
+      built on top of XML, and some in the design of SVG itself, for example,
+      SVG-specific elements for
+      <a href="#def-eq-alt">alternative equivalents</a>.
+    </p>
 
-<p>SVG images are scalable - they can be zoomed and resized by the reader as
-needed. Scaling can help users with low vision and users of some assistive
-technologies (e.g., tactile graphic devices, which typically have a very low
-resolution).</p>
+    <p>
+      SVG images are scalable - they can be zoomed and resized by the reader as
+      needed. Scaling can help users with low vision and users of some assistive
+      technologies (e.g., tactile graphic devices, which typically have a very
+      low resolution).
+    </p>
 
-<p>The following example illustrates the scalability of a vector graphics
-image. The first row shows a small <acronym>PNG</acronym> and a corresponding
-SVG image, which look the same. The second row shows an enlargement of both.
-The enlarged PNG version of the image has suffered a significant loss of
-quality, while the enlarged SVG version looks smooth and shows more details
-than before. Scalable graphics can help users with low vision make sense of an
-image at a size that best suits their needs.</p>
+    <p>
+      The following example illustrates the scalability of a vector graphics
+      image. The first row shows a small <acronym>PNG</acronym> and a
+      corresponding SVG image, which look the same. The second row shows an
+      enlargement of both. The enlarged PNG version of the image has suffered a
+      significant loss of quality, while the enlarged SVG version looks smooth
+      and shows more details than before. Scalable graphics can help users with
+      low vision make sense of an image at a size that best suits their needs.
+    </p>
 
-<table
-summary="Comparison of PNG and SVG enlargements to show that SVG scales well."
-border="1" class="example">
-  <caption id="Fig-1.1"><strong>Figure 1.1:</strong> Comparison of
-  <abbr>PNG</abbr> and <abbr>SVG enlargements.</abbr></caption>
-  <tbody>
-    <tr>
-      <td>Small <abbr>PNG</abbr> image:
+    <table
+      summary="Comparison of PNG and SVG enlargements to show that SVG scales well."
+      border="1"
+      class="example"
+    >
+      <caption id="Fig-1.1">
+        <strong>Figure 1.1:</strong>
+        Comparison of
+        <abbr>PNG</abbr>
+        and
+        <abbr>SVG enlargements.</abbr>
+      </caption>
+      <tbody>
+        <tr>
+          <td>
+            Small <abbr>PNG</abbr> image:
 
-        <p><img alt="Small image " src="tigers.png" /></p>
-      </td>
-      <td>Small <abbr>SVG</abbr> image:
+            <p><img alt="Small image " src="tigers.png" /></p>
+          </td>
+          <td>
+            Small <abbr>SVG</abbr> image:
 
-        <p><img alt="Small image " src="tigers.png" /></p>
-      </td>
-    </tr>
-    <tr>
-      <td>Enlarged <abbr>PNG</abbr> image:
+            <p><img alt="Small image " src="tigers.png" /></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Enlarged <abbr>PNG</abbr> image:
 
-        <p><img alt=" has very poor resolution " src="tigere.png"
-        class="bigImage" /></p>
-      </td>
-      <td>Enlarged <abbr>SVG</abbr> image:
+            <p>
+              <img
+                alt=" has very poor resolution "
+                src="tigere.png"
+                class="bigImage"
+              />
+            </p>
+          </td>
+          <td>
+            Enlarged <abbr>SVG</abbr> image:
 
-        <p><img alt="Enlarged SVG" src="tiger.png" class="bigImage" /></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+            <p><img alt="Enlarged SVG" src="tiger.png" class="bigImage" /></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-<h4>Structured images</h4>
+    <h4>Structured images</h4>
 
-<p>The most common way authors make a raster image (e.g., <acronym>
-GIF</acronym> or <acronym>PNG</acronym> images) accessible on the Web is to
-provide a text equivalent that may be rendered with or without the image.
-Often, this text equivalent is the only information available for non-visual
-rendering, as the raster image is stored as a matrix of colored dots,
-generally with no structural information. Structural information can be added
-to any image as metadata, but managing it separately from the visible image is
-tedious, making it less likely that authors will create and use it with
-careful attention. <abbr title="Scalable Vector Graphics"> SVG's</abbr>
-vector-graphics format stores structural information about graphical shapes as
-an integral part of the image. As we discuss below, this information can be
-used by assistive technologies to increase accessibility, especially when this
-structural information is complemented by alternative equivalents and
-metadata.</p>
+    <p>
+      The most common way authors make a raster image (e.g.,
+      <acronym> GIF</acronym> or <acronym>PNG</acronym> images) accessible on
+      the Web is to provide a text equivalent that may be rendered with or
+      without the image. Often, this text equivalent is the only information
+      available for non-visual rendering, as the raster image is stored as a
+      matrix of colored dots, generally with no structural information.
+      Structural information can be added to any image as metadata, but managing
+      it separately from the visible image is tedious, making it less likely
+      that authors will create and use it with careful attention.
+      <abbr title="Scalable Vector Graphics"> SVG's</abbr> vector-graphics
+      format stores structural information about graphical shapes as an integral
+      part of the image. As we discuss below, this information can be used by
+      assistive technologies to increase accessibility, especially when this
+      structural information is complemented by alternative equivalents and
+      metadata.
+    </p>
 
-<h4>Alternative equivalents</h4>
+    <h4>Alternative equivalents</h4>
 
-<p>In addition to image structure, SVG allows for <a
-href="#def-eq-alt">alternative equivalents</a> - content that users can access
-to help them understand the image. In particular, SVG authors to include a
-text description for each logical component of an image, and a text title to
-explain the component's role in the image as a whole. Text is considered very
-accessible to users with a range of disabilities (e.g., some vision
-impairments and some cognitive disabilities) since it may be rendered on
-screen, as speech, or as Braille using readily available <a
-href="#def-assistive-technology">assistive technology</a>.</p>
+    <p>
+      In addition to image structure, SVG allows for
+      <a href="#def-eq-alt">alternative equivalents</a> - content that users can
+      access to help them understand the image. In particular, SVG authors to
+      include a text description for each logical component of an image, and a
+      text title to explain the component's role in the image as a whole. Text
+      is considered very accessible to users with a range of disabilities (e.g.,
+      some vision impairments and some cognitive disabilities) since it may be
+      rendered on screen, as speech, or as Braille using readily available
+      <a href="#def-assistive-technology">assistive technology</a>.
+    </p>
 
-<h4>XML - Plain text</h4>
+    <h4>XML - Plain text</h4>
 
-<p>One major accessibility benefit derived from XML is that an SVG image is
-encoded as plain text. Authors can create and edit it with a text-processor or
-XML authoring tool (there are other properties of SVG that make this easier
-than it might seem at first). A number of popular Web design tools are in fact
-enhanced text-editing applications, and for users with certain types of
-disabilities, these are much easier to use. Naturally, it is also possible to
-use graphic SVG authoring tools that require very little reading and writing,
-which helps people with other types of disabilities.</p>
+    <p>
+      One major accessibility benefit derived from XML is that an SVG image is
+      encoded as plain text. Authors can create and edit it with a
+      text-processor or XML authoring tool (there are other properties of SVG
+      that make this easier than it might seem at first). A number of popular
+      Web design tools are in fact enhanced text-editing applications, and for
+      users with certain types of disabilities, these are much easier to use.
+      Naturally, it is also possible to use graphic SVG authoring tools that
+      require very little reading and writing, which helps people with other
+      types of disabilities.
+    </p>
 
-<p>Plain text encoding also means that people may use relatively simple,
-text-based XML user agents to render SVG as text, braille, or audio. This can
-help users with visual impairments, and can be used to supplement graphical
-rendering.</p>
+    <p>
+      Plain text encoding also means that people may use relatively simple,
+      text-based XML user agents to render SVG as text, braille, or audio. This
+      can help users with visual impairments, and can be used to supplement
+      graphical rendering.
+    </p>
 
-<h4>XML - Stylesheets</h4>
+    <h4>XML - Stylesheets</h4>
 
-<p>The separation of style from the rest of the content is very important for
-accessibility. Authors may use CSS or XSL style sheets to control the
-rendering of SVG images, a feature common to all markup languages written in
-XML. Users who might otherwise be unable to access content can define
-stylesheets to control the rendering of SVG images, meeting their needs
-without losing additional author-supplied style.</p>
+    <p>
+      The separation of style from the rest of the content is very important for
+      accessibility. Authors may use CSS or XSL style sheets to control the
+      rendering of SVG images, a feature common to all markup languages written
+      in XML. Users who might otherwise be unable to access content can define
+      stylesheets to control the rendering of SVG images, meeting their needs
+      without losing additional author-supplied style.
+    </p>
 
-<h4>Extended Styling</h4>
+    <h4>Extended Styling</h4>
 
-<p>SVG offers a number of style features beyond the properties defined in CSS
-to provide specific graphic effects for controlling how images are rendered.
-These style features can help authors to create content that can be easily
-adapted to the needs of users with low vision, color deficiencies, or users
-with assistive technologies. Features such as masking, filters, and the
-ability to define highly sophisticated fonts are all available in SVG.</p>
+    <p>
+      SVG offers a number of style features beyond the properties defined in CSS
+      to provide specific graphic effects for controlling how images are
+      rendered. These style features can help authors to create content that can
+      be easily adapted to the needs of users with low vision, color
+      deficiencies, or users with assistive technologies. Features such as
+      masking, filters, and the ability to define highly sophisticated fonts are
+      all available in SVG.
+    </p>
 
-<h4>XML - <acronym title="Document Object Model">DOM</acronym> interface</h4>
+    <h4>
+      XML - <acronym title="Document Object Model">DOM</acronym> interface
+    </h4>
 
-<p>Another benefit of using XML is that interaction can be made accessible
-through the Document Object Model (<acronym>DOM</acronym>). The DOM interface
-can enable the use of many <a href="#def-assistive-technology">assistive
-technologies</a> with SVG images. SVG allows access to both stylesheet and XML
-content as it uses DOM version 2 (<acronym>DOM2</acronym>) [<a
-href="#DOM2">DOM2</a>].</p>
+    <p>
+      Another benefit of using XML is that interaction can be made accessible
+      through the Document Object Model (<acronym>DOM</acronym>). The DOM
+      interface can enable the use of many
+      <a href="#def-assistive-technology">assistive technologies</a> with SVG
+      images. SVG allows access to both stylesheet and XML content as it uses
+      DOM version 2 (<acronym>DOM2</acronym>) [<a href="#DOM2">DOM2</a>].
+    </p>
 
-<h4>XML - SVG with other XML languages</h4>
+    <h4>XML - SVG with other XML languages</h4>
 
-<p>SVG documents may be included in documents written in other XML languages,
-and may also include markup from other XML languages. Mixing markup language
-can increase accessibility because authors may use the markup language most
-suited to each part of a document (refer to the Web Content Accessibility
-Guidelines 1.0 [<a href="#WCAG10">WCAG10</a>], Guideline 3). For instance, a
-MathML document could use SVG for both laying out equations and drawing graphs
-of those equations. In examples below, we show how to describe SVG components
-and their relationships by embedding RDF metadata and SMIL markup in the
-SVG.</p>
+    <p>
+      SVG documents may be included in documents written in other XML languages,
+      and may also include markup from other XML languages. Mixing markup
+      language can increase accessibility because authors may use the markup
+      language most suited to each part of a document (refer to the Web Content
+      Accessibility Guidelines 1.0 [<a href="#WCAG10">WCAG10</a>], Guideline 3).
+      For instance, a MathML document could use SVG for both laying out
+      equations and drawing graphs of those equations. In examples below, we
+      show how to describe SVG components and their relationships by embedding
+      RDF metadata and SMIL markup in the SVG.
+    </p>
 
-<h3><a name="read" id="read">1.3 How to read this document</a></h3>
+    <h3><a name="read" id="read">1.3 How to read this document</a></h3>
 
-<p>This document highlights the features in SVG that support accessibility. In
-Sections 2, 3, 4, 5 and 6 we discuss the accessibility features of SVG
-(including the use of stylesheets). Section 7 explains the accessibility
-benefits that originate from XML.</p>
+    <p>
+      This document highlights the features in SVG that support accessibility.
+      In Sections 2, 3, 4, 5 and 6 we discuss the accessibility features of SVG
+      (including the use of stylesheets). Section 7 explains the accessibility
+      benefits that originate from XML.
+    </p>
 
-<p>This document makes extensive reference to the accessibility requirements
-specified in the Authoring Tool Accessibility Guidelines 1.0 Recommendation
-(<acronym>ATAG10</acronym>) [<a href="#ATAG10">ATAG10</a>], the Web Content
-Accessibility Guidelines 1.0 Recommendation (<acronym>WCAG10</acronym>) [<a
-href="#WCAG10">WCAG10</a>], and the User Agent Accessibility Guidelines
-Working Draft (<acronym>UAAG10</acronym>) [<a href="#UAAG10">UAAG10</a>]. It
-also makes extensive reference to Cascading Style Sheets Level 2
-(<acronym>CSS2</acronym>) [<a href="#CSS2">CSS2</a>]. A reader who has a basic
-knowledge of HTML or XML and of CSS (level one or two) should be able to
-understand enough of the markup to make sense of the examples. Even without
-that knowledge, it is worth reading the examples to see how they work - as
-well as illustrating accessible design in many cases they demonstrate good
-general design practices.</p>
+    <p>
+      This document makes extensive reference to the accessibility requirements
+      specified in the Authoring Tool Accessibility Guidelines 1.0
+      Recommendation (<acronym>ATAG10</acronym>) [<a href="#ATAG10">ATAG10</a>],
+      the Web Content Accessibility Guidelines 1.0 Recommendation
+      (<acronym>WCAG10</acronym>) [<a href="#WCAG10">WCAG10</a>], and the User
+      Agent Accessibility Guidelines Working Draft (<acronym>UAAG10</acronym>)
+      [<a href="#UAAG10">UAAG10</a>]. It also makes extensive reference to
+      Cascading Style Sheets Level 2 (<acronym>CSS2</acronym>) [<a href="#CSS2"
+        >CSS2</a
+      >]. A reader who has a basic knowledge of HTML or XML and of CSS (level
+      one or two) should be able to understand enough of the markup to make
+      sense of the examples. Even without that knowledge, it is worth reading
+      the examples to see how they work - as well as illustrating accessible
+      design in many cases they demonstrate good general design practices.
+    </p>
 
-<p>To illustrate how to create accessible SVG graphics, we design an SVG
-diagram of a computer network, built up from example to example. Examples use
-<strong>strong emphasis</strong> to highlight changes from example to example,
-or important features of an example.</p>
+    <p>
+      To illustrate how to create accessible SVG graphics, we design an SVG
+      diagram of a computer network, built up from example to example. Examples
+      use <strong>strong emphasis</strong> to highlight changes from example to
+      example, or important features of an example.
+    </p>
 
-<h2><a name="Equivalent" id="Equivalent">2. Equivalent Alternatives</a></h2>
+    <h2><a name="Equivalent" id="Equivalent">2. Equivalent Alternatives</a></h2>
 
-<p>Providing an alternative equivalent for inaccessible content is one of the
-primary ways authors can make their documents accessible to people with
-disabilities. The alternative content fulfills essentially the same function
-or purpose for users with disabilities as the primary content does for users
-without any disability. Text equivalents are always required for graphic
-information (refer to [<a href="#WCAG10">WCAG10</a>], Checkpoint 1.1, and
-Guideline 1 in general). In SVG, providing a hierarchy of text equivalents can
-also convey the hierarchical structure of the graphic components. This Note
-describes a number of ways to include and use equivalent alternatives.</p>
+    <p>
+      Providing an alternative equivalent for inaccessible content is one of the
+      primary ways authors can make their documents accessible to people with
+      disabilities. The alternative content fulfills essentially the same
+      function or purpose for users with disabilities as the primary content
+      does for users without any disability. Text equivalents are always
+      required for graphic information (refer to [<a href="#WCAG10">WCAG10</a>],
+      Checkpoint 1.1, and Guideline 1 in general). In SVG, providing a hierarchy
+      of text equivalents can also convey the hierarchical structure of the
+      graphic components. This Note describes a number of ways to include and
+      use equivalent alternatives.
+    </p>
 
-<h3><a name="Equivalent1" id="Equivalent1">2.1 Title and Description</a></h3>
+    <h3>
+      <a name="Equivalent1" id="Equivalent1">2.1 Title and Description</a>
+    </h3>
 
-<p>The simplest way to specify a text equivalent for an SVG graphic is to
-include the following elements in any SVG container or graphics element:</p>
-<dl>
-  <dt><code>title</code></dt>
-    <dd>Provides a human-readable title for the element that contains it. The
-      <code>title</code> element may be rendered by a graphical user agent as
-      a tooltip. It may be rendered as speech by a speech synthesizer.</dd>
-  <dt><code>desc</code></dt>
-    <dd>Provides a longer more complete description of an element that
-      contains it. Authors should provide descriptions for complex or other
-      content that has functional meaning.</dd>
-</dl>
+    <p>
+      The simplest way to specify a text equivalent for an SVG graphic is to
+      include the following elements in any SVG container or graphics element:
+    </p>
+    <dl>
+      <dt><code>title</code></dt>
+      <dd>
+        Provides a human-readable title for the element that contains it. The
+        <code>title</code> element may be rendered by a graphical user agent as
+        a tooltip. It may be rendered as speech by a speech synthesizer.
+      </dd>
+      <dt><code>desc</code></dt>
+      <dd>
+        Provides a longer more complete description of an element that contains
+        it. Authors should provide descriptions for complex or other content
+        that has functional meaning.
+      </dd>
+    </dl>
 
-<p>The following example (2.1) is a simple SVG document that includes a title
-and a description for an image of a computer network. The graphic components
-that can actually be drawn will be added to the image in later sections.</p>
+    <p>
+      The following example (2.1) is a simple SVG document that includes a title
+      and a description for an image of a computer network. The graphic
+      components that can actually be drawn will be added to the image in later
+      sections.
+    </p>
 
-<div class="example">
-<p class="figure" id="Fig-2.1"><strong>Example 2.1:</strong> A simple SVG
-document with <code>title</code> and <code>desc</code> elements (<a
-href="simplenetwork.svg">download structure in 2.1</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;</code><code>&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
+    <div class="example">
+      <p class="figure" id="Fig-2.1">
+        <strong>Example 2.1:</strong> A simple SVG document with
+        <code>title</code> and <code>desc</code> elements (<a
+          href="simplenetwork.svg"
+          >download structure in 2.1</a
+        >).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;</code><code>&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
 &lt;svg width="6in" height="4.5in" viewBox="0 0 600 450"&gt;
   <strong>&lt;title&gt;Network&lt;/title&gt;
   &lt;desc&gt;An example of a computer network based on a hub&lt;/desc&gt;
 </strong>&lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<h3 id="Structured">2.2 Equivalent Alternatives in a Structured Document</h3>
+    <h3 id="Structured">
+      2.2 Equivalent Alternatives in a Structured Document
+    </h3>
 
-<p>An SVG image may consist of several components combined hierarchically,
-each of which may have a title and a description. The combination of the
-hierarchy and alternative equivalents can help a user who cannot see to create
-a rough mental model of an image. SVG authors should therefore build the
-hierarchy so that it reflects the components of the object illustrated by the
-image. Some guidance for using structure can be found in WCAG10 (refer to [<a
-href="#WCAG10">WCAG10</a>], Guidelines 3 and 12).</p>
+    <p>
+      An SVG image may consist of several components combined hierarchically,
+      each of which may have a title and a description. The combination of the
+      hierarchy and alternative equivalents can help a user who cannot see to
+      create a rough mental model of an image. SVG authors should therefore
+      build the hierarchy so that it reflects the components of the object
+      illustrated by the image. Some guidance for using structure can be found
+      in WCAG10 (refer to [<a href="#WCAG10">WCAG10</a>], Guidelines 3 and 12).
+    </p>
 
-<p>The component hierarchy with alternative equivalents can be used in
-different ways by different user agents. For instance, a simple non-visual
-user agent can provide access to the component hierarchy and allow the user to
-navigate up and down or at a certain level of the structure, giving the
-equivalent description of each encountered component (refer to UAAG10 [<a
-href="#UAAG10">UAAG10</a>], Checkpoints 7.6 and 7.7 and Guidelines 7 and 8). A
-standard XML browser, which does not render SVG as graphics, may also do this.
-A multimedia-capable user agent might name each component that has focus
-through speech output, much as some Web browsers render alternative text for
-images as tooltips.</p>
+    <p>
+      The component hierarchy with alternative equivalents can be used in
+      different ways by different user agents. For instance, a simple non-visual
+      user agent can provide access to the component hierarchy and allow the
+      user to navigate up and down or at a certain level of the structure,
+      giving the equivalent description of each encountered component (refer to
+      UAAG10 [<a href="#UAAG10">UAAG10</a>], Checkpoints 7.6 and 7.7 and
+      Guidelines 7 and 8). A standard XML browser, which does not render SVG as
+      graphics, may also do this. A multimedia-capable user agent might name
+      each component that has focus through speech output, much as some Web
+      browsers render alternative text for images as tooltips.
+    </p>
 
-<p>The following example (2.2) extends the network image component introduced
-in example 2.1 by introducing six subcomponents:</p>
-<ol>
-  <li>Hub</li>
-  <li>Computer A</li>
-  <li>Computer B</li>
-  <li>Cable A</li>
-  <li>Cable B</li>
-  <li>Cable N</li>
-</ol>
+    <p>
+      The following example (2.2) extends the network image component introduced
+      in example 2.1 by introducing six subcomponents:
+    </p>
+    <ol>
+      <li>Hub</li>
+      <li>Computer A</li>
+      <li>Computer B</li>
+      <li>Cable A</li>
+      <li>Cable B</li>
+      <li>Cable N</li>
+    </ol>
 
-<p>Each subcomponent is included as a container element (<code>g</code>) with
-an <code>id</code> attribute and a text equivalent, specified with
-<code>title</code> and <code>desc</code> elements.</p>
+    <p>
+      Each subcomponent is included as a container element (<code>g</code>) with
+      an <code>id</code> attribute and a text equivalent, specified with
+      <code>title</code> and <code>desc</code> elements.
+    </p>
 
-<div class="example">
-<p class="figure" id="Fig-2.2"><strong><a name="Example4">Example
-2.2</a>:</strong> A structured SVG document with alternative equivalents (<a
-href="networkstructure.svg">download structure in 2.2</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p class="figure" id="Fig-2.2">
+        <strong><a name="Example4">Example 2.2</a>:</strong> A structured SVG
+        document with alternative equivalents (<a href="networkstructure.svg"
+          >download structure in 2.2</a
+        >).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
 &lt;svg width="6in" height="4.5in" viewBox="0 0 600 450"&gt;
@@ -495,87 +682,109 @@ href="networkstructure.svg">download structure in 2.2</a>).</p>
     &lt;desc&gt;10BaseT twisted pair cable&lt;/desc&gt;
   &lt;/g&gt;
 </strong>&lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<p>One simple way a user agent could render the image in Example 2.2 is to
-show the alternative equivalents as text, as in the next figure (2.3). <a
-href="#Fig-4.2">Example 4.2</a> in <a href="#Style">Section 4</a> shows how to
-attach CSS2 [<a href="#CSS2">CSS2</a>] style information to the
-<code>title</code> and <code>desc</code> elements of the image. Note that
-without definitions for these elements, a user agent would render nothing to
-the user.</p>
+    <p>
+      One simple way a user agent could render the image in Example 2.2 is to
+      show the alternative equivalents as text, as in the next figure (2.3).
+      <a href="#Fig-4.2">Example 4.2</a> in <a href="#Style">Section 4</a> shows
+      how to attach CSS2 [<a href="#CSS2">CSS2</a>] style information to the
+      <code>title</code> and <code>desc</code> elements of the image. Note that
+      without definitions for these elements, a user agent would render nothing
+      to the user.
+    </p>
 
-<div class="example">
-<p class="figure" id="Fig-2.31"><strong><a name="fig-2.4">Figure
-2.3:</a></strong> Textual representation of Example 2.2 when it is rendered
-with the stylesheet in <a href="#Fig-4.2">Example 4.2.</a></p>
+    <div class="example">
+      <p class="figure" id="Fig-2.31">
+        <strong><a name="fig-2.4">Figure 2.3:</a></strong> Textual
+        representation of Example 2.2 when it is rendered with the stylesheet in
+        <a href="#Fig-4.2">Example 4.2.</a>
+      </p>
 
-<div class="textimage">
-<p><span class="svgTitle">Network</span> An example of a computer network
-based on a hub</p>
+      <div class="textimage">
+        <p>
+          <span class="svgTitle">Network</span> An example of a computer network
+          based on a hub
+        </p>
 
-<p>Hub A typical 10baseT/100BaseTX network hub</p>
+        <p>Hub A typical 10baseT/100BaseTX network hub</p>
 
-<p>Computer A A common desktop PC</p>
+        <p>Computer A A common desktop PC</p>
 
-<p>Computer B A common desktop PC</p>
+        <p>Computer B A common desktop PC</p>
 
-<p>Cable A 10BaseT twisted pair cable</p>
+        <p>Cable A 10BaseT twisted pair cable</p>
 
-<p>Cable B 10BaseT twisted pair cable</p>
+        <p>Cable B 10BaseT twisted pair cable</p>
 
-<p>Cable N 10BaseT twisted pair cable</p>
-</div>
-</div>
+        <p>Cable N 10BaseT twisted pair cable</p>
+      </div>
+    </div>
 
-<h2><a name="Graphics" id="Graphics">3. Accessible Graphics</a></h2>
+    <h2><a name="Graphics" id="Graphics">3. Accessible Graphics</a></h2>
 
-<p>Users examining images visually can divide them into components and
-connections between these components. The author guides the division by using
-visual means, such as the adjacency, colors, patterns, sizes and shapes of the
-components. When the image cannot be clearly seen other available information
-must be used. For instance, with certain kinds of graphic images the author
-can also provide a well-constructed component structure. From that users can
-easily discover which graphical elements are included in each component, and
-what components are reused in the image.</p>
+    <p>
+      Users examining images visually can divide them into components and
+      connections between these components. The author guides the division by
+      using visual means, such as the adjacency, colors, patterns, sizes and
+      shapes of the components. When the image cannot be clearly seen other
+      available information must be used. For instance, with certain kinds of
+      graphic images the author can also provide a well-constructed component
+      structure. From that users can easily discover which graphical elements
+      are included in each component, and what components are reused in the
+      image.
+    </p>
 
-<p>With some images the rendering order may make it impossible to follow a
-logical component structure. In this case the structure needs to be clearly
-explained in the <code>desc</code> element. The structural information does
-not remove the need for author-provided equivalent information. But it can
-help a user to gain deeper understanding of the image. Authoring tools can
-support authors to provide a good structure that is easy to understand by
-providing ways to visualize the component hierarchy (refer to Authoring Tool
-Accessibility Guidelines [<a href="#ATAG10">ATAG10</a>], checkpoint 3.2).</p>
+    <p>
+      With some images the rendering order may make it impossible to follow a
+      logical component structure. In this case the structure needs to be
+      clearly explained in the <code>desc</code> element. The structural
+      information does not remove the need for author-provided equivalent
+      information. But it can help a user to gain deeper understanding of the
+      image. Authoring tools can support authors to provide a good structure
+      that is easy to understand by providing ways to visualize the component
+      hierarchy (refer to Authoring Tool Accessibility Guidelines [<a
+        href="#ATAG10"
+        >ATAG10</a
+      >], checkpoint 3.2).
+    </p>
 
-<p>The reuse of components saves time as users only need to examine the same
-component once. The ability to reuse structured components also helps authors,
-including authors with disabilities, because changing images becomes easier to
-manage. The structure of an image can also help the author when it is used for
-editing purposes. This is a requirement of the Authoring Tool Accessibility
-Guidelines (refer to to [<a href="#ATAG10">ATAG10</a>], Checkpoint 7.5).
-Because image components can include alternative equivalents, it is also
-possible to build up libraries of annotated multimedia (refer to to [<a
-href="#ATAG10">ATAG10</a>], Checkpoint 3.5).</p>
+    <p>
+      The reuse of components saves time as users only need to examine the same
+      component once. The ability to reuse structured components also helps
+      authors, including authors with disabilities, because changing images
+      becomes easier to manage. The structure of an image can also help the
+      author when it is used for editing purposes. This is a requirement of the
+      Authoring Tool Accessibility Guidelines (refer to to [<a href="#ATAG10"
+        >ATAG10</a
+      >], Checkpoint 7.5). Because image components can include alternative
+      equivalents, it is also possible to build up libraries of annotated
+      multimedia (refer to to [<a href="#ATAG10">ATAG10</a>], Checkpoint 3.5).
+    </p>
 
-<h3><a name="Shapes" id="Shapes">3.1 Basic Graphic Shapes</a></h3>
+    <h3><a name="Shapes" id="Shapes">3.1 Basic Graphic Shapes</a></h3>
 
-<p>SVG allows authors to create familiar basic shapes such as rectangles,
-circles, ellipses and polygons. Manipulating these shapes is often easier than
-drawing in free space (which is why it is a common feature of image authoring
-tools), and SVG allows the information that there is a square or an ellipse to
-be encoded in the image. This allows easy editing of the shapes as shapes. As
-we show in <a href="#Colors">section 4.1</a> the use of stylesheets can make
-it easy to at least list the basic shape or shapes used to represent an
-object. In the following example (3.1) we create the basis of the hub for the
-network image. We have two rectangles, one inside the other, and a small
-circle inside the larger rectangle.</p>
+    <p>
+      SVG allows authors to create familiar basic shapes such as rectangles,
+      circles, ellipses and polygons. Manipulating these shapes is often easier
+      than drawing in free space (which is why it is a common feature of image
+      authoring tools), and SVG allows the information that there is a square or
+      an ellipse to be encoded in the image. This allows easy editing of the
+      shapes as shapes. As we show in <a href="#Colors">section 4.1</a> the use
+      of stylesheets can make it easy to at least list the basic shape or shapes
+      used to represent an object. In the following example (3.1) we create the
+      basis of the hub for the network image. We have two rectangles, one inside
+      the other, and a small circle inside the larger rectangle.
+    </p>
 
-<div class="example">
-<p id="Fig-3.1"><strong><a name="Example">Example 3.1</a>:</strong> Adding
-some shapes to form an image of a Hub (<a href="hubbox.svg">download hub image
-in 3.1</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p id="Fig-3.1">
+        <strong><a name="Example">Example 3.1</a>:</strong> Adding some shapes
+        to form an image of a Hub (<a href="hubbox.svg"
+          >download hub image in 3.1</a
+        >).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;?xml-stylesheet href="svg-basic-style.css" type="text/css"?&gt;
 &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
@@ -588,40 +797,52 @@ in 3.1</a>).</p>
     &lt;circle cx="227" cy="71" r="7"/&gt;
   &lt;/g&gt;
 &lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<div class="example">
-<p id="Fig-3.2"><strong>Figure 3.2:</strong> Visual rendering of Example
-3.1.</p>
+    <div class="example">
+      <p id="Fig-3.2">
+        <strong>Figure 3.2:</strong> Visual rendering of Example 3.1.
+      </p>
 
-<p><img src="hubsimple.png" alt="rendering of hub" /></p>
-</div>
+      <p><img src="hubsimple.png" alt="rendering of hub" /></p>
+    </div>
 
-<h3><a id="ReUsingText" name="ReUsingText">3.2 Reusing Alternative Text as
-Graphics</a></h3>
+    <h3>
+      <a id="ReUsingText" name="ReUsingText"
+        >3.2 Reusing Alternative Text as Graphics</a
+      >
+    </h3>
 
-<p>Images often include text that explains or names the elements presented in
-the image. In raster formats the text is converted to pixels and is no longer
-available to assistive technologies, but with SVG the text is contained in
-<code>text</code> elements that keep the textual form intact. Furthermore, the
-text from other elements, such as text equivalents, can be reused. This helps
-in managing text as it only needs to be changed at one place.This can help
-authors for whom entering content is difficult, and helps by ensuring that
-when one piece of text changes other text that depends on it will
-automatically be updated..</p>
+    <p>
+      Images often include text that explains or names the elements presented in
+      the image. In raster formats the text is converted to pixels and is no
+      longer available to assistive technologies, but with SVG the text is
+      contained in <code>text</code> elements that keep the textual form intact.
+      Furthermore, the text from other elements, such as text equivalents, can
+      be reused. This helps in managing text as it only needs to be changed at
+      one place.This can help authors for whom entering content is difficult,
+      and helps by ensuring that when one piece of text changes other text that
+      depends on it will automatically be updated..
+    </p>
 
-<p>In the following example (3.3), we add a <code>text</code> element to the
-image of the Hub that was described in <a href="#Example">Example 3.1</a>.
-This <code>text</code> element reuses the <code>title</code> text of the Hub
-image by referring to it with a <code>tref</code> element and rendering it as
-part of the <code>text</code> element. An <code>id</code> attribute is added
-to the <code>title</code> element so that it can be referenced.</p>
+    <p>
+      In the following example (3.3), we add a <code>text</code> element to the
+      image of the Hub that was described in <a href="#Example">Example 3.1</a>.
+      This <code>text</code> element reuses the <code>title</code> text of the
+      Hub image by referring to it with a <code>tref</code> element and
+      rendering it as part of the <code>text</code> element. An
+      <code>id</code> attribute is added to the <code>title</code> element so
+      that it can be referenced.
+    </p>
 
-<div class="example">
-<p id="Fig-3.3"><strong><a name="Example1">Example 3.3</a>:</strong> Reusing
-the <code>title</code> as text in the Hub image (<a
-href="hubname.svg">download hub image in 3.3</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p id="Fig-3.3">
+        <strong><a name="Example1">Example 3.3</a>:</strong> Reusing the
+        <code>title</code> as text in the Hub image (<a href="hubname.svg"
+          >download hub image in 3.3</a
+        >).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;?xml-stylesheet href="svg-basic-style.css" type="text/css"?&gt;
 &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
@@ -638,42 +859,52 @@ href="hubname.svg">download hub image in 3.3</a>).</p>
     &lt;circle cx="227" cy="71" r="7"/&gt;
   &lt;/g&gt;
 &lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<div class="example">
-<p id="Fig-3.4"><strong>Figure 3.4:</strong> Visual rendering of Example
-3.3.</p>
+    <div class="example">
+      <p id="Fig-3.4">
+        <strong>Figure 3.4:</strong> Visual rendering of Example 3.3.
+      </p>
 
-<p><img src="hubwithname.png" alt="rendering of named hub" /></p>
-</div>
+      <p><img src="hubwithname.png" alt="rendering of named hub" /></p>
+    </div>
 
-<h3><a name="Re-Using" id="Re-Using">3.3 Reusing Graphic Components</a></h3>
+    <h3><a name="Re-Using" id="Re-Using">3.3 Reusing Graphic Components</a></h3>
 
-<p>SVG allows the construction and reuse of graphic components. This makes it
-easier to understand the structure of complex images as the reusable
-components are defined only once and therefore need to be studied and
-understood only once. This helps especially if the alternative means of
-examining the image are more time consuming. Serial means of inspecting
-information (for example speech output or braille) have often been compared to
-reading through a soda straw. It can take a lot longer to understand context
-and relationships than it does by visual inspection since it is a slower means
-of receiving the information, and a mental model of the relationships must
-often be assembled without the benefit of a visual representation of the
-structure.</p>
+    <p>
+      SVG allows the construction and reuse of graphic components. This makes it
+      easier to understand the structure of complex images as the reusable
+      components are defined only once and therefore need to be studied and
+      understood only once. This helps especially if the alternative means of
+      examining the image are more time consuming. Serial means of inspecting
+      information (for example speech output or braille) have often been
+      compared to reading through a soda straw. It can take a lot longer to
+      understand context and relationships than it does by visual inspection
+      since it is a slower means of receiving the information, and a mental
+      model of the relationships must often be assembled without the benefit of
+      a visual representation of the structure.
+    </p>
 
-<p>An authoring tool may also utilize this feature to help to create and
-modify graphics with standard components. This can also help authors who have
-difficulties with fine motor control as there is less drawing and writing
-required.</p>
+    <p>
+      An authoring tool may also utilize this feature to help to create and
+      modify graphics with standard components. This can also help authors who
+      have difficulties with fine motor control as there is less drawing and
+      writing required.
+    </p>
 
-<p>In the following example (3.5) we define a socket, and add several of them
-to the hub defined earlier:</p>
+    <p>
+      In the following example (3.5) we define a socket, and add several of them
+      to the hub defined earlier:
+    </p>
 
-<div class="example">
-<p id="Fig-3.5"><strong>Example 3.5:</strong> Adding sockets to the Hub in <a
-href="#Example1">Example 3.3</a> (<a href="hub.svg">download hub image in
-3.5</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p id="Fig-3.5">
+        <strong>Example 3.5:</strong> Adding sockets to the Hub in
+        <a href="#Example1">Example 3.3</a> (<a href="hub.svg"
+          >download hub image in 3.5</a
+        >).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;?xml-stylesheet href="svg-basic-style.css" type="text/css"?&gt;
 &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
@@ -706,35 +937,46 @@ href="#Example1">Example 3.3</a> (<a href="hub.svg">download hub image in
     &lt;!-- (and three more) --&gt;
 </strong>  &lt;/g&gt;
 &lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<div class="example">
-<p id="Fig-3.6"><strong>Figure 3.6:</strong> A visual rendering of Example
-3.5.</p>
+    <div class="example">
+      <p id="Fig-3.6">
+        <strong>Figure 3.6:</strong> A visual rendering of Example 3.5.
+      </p>
 
-<p><img src="hubsockets.png" alt="rendering of hub with 5 sockets" /></p>
-</div>
+      <p><img src="hubsockets.png" alt="rendering of hub with 5 sockets" /></p>
+    </div>
 
-<h3><a name="Re-Using1" id="Re-Using1">3.4 Re-Using Components from Other
-Documents</a></h3>
+    <h3>
+      <a name="Re-Using1" id="Re-Using1"
+        >3.4 Re-Using Components from Other Documents</a
+      >
+    </h3>
 
-<p>SVG images can also include components or complete images from other
-documents using XML Linking Language [<a href="#XLINK">XLINK</a>]. Xlink
-enables easy construction and re-use of libraries of known images which can be
-available locally or on the Web. For authors, this means being able to use a
-known graphic component even when it cannot be seen. For users who cannot see,
-a library of described images or image components can be used to help identify
-standard graphic components.</p>
+    <p>
+      SVG images can also include components or complete images from other
+      documents using XML Linking Language [<a href="#XLINK">XLINK</a>]. Xlink
+      enables easy construction and re-use of libraries of known images which
+      can be available locally or on the Web. For authors, this means being able
+      to use a known graphic component even when it cannot be seen. For users
+      who cannot see, a library of described images or image components can be
+      used to help identify standard graphic components.
+    </p>
 
-<p>The following example (3.7) adds images and symbols from the web, a
-<code>text</code> element and some graphics to the Network structure presented
-earlier.</p>
+    <p>
+      The following example (3.7) adds images and symbols from the web, a
+      <code>text</code> element and some graphics to the Network structure
+      presented earlier.
+    </p>
 
-<div class="example">
-<p id="Fig-3.7"><strong>Example 3.7:</strong> Adding graphics to the Network
-components presented in <a href="#Example4">Example 2.2</a> (<a
-href="network.svg">download network image in 3.7</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p id="Fig-3.7">
+        <strong>Example 3.7:</strong> Adding graphics to the Network components
+        presented in <a href="#Example4">Example 2.2</a> (<a href="network.svg"
+          >download network image in 3.7</a
+        >).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;?xml-stylesheet href="svg-style.css" type="text/css"?&gt;
 &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
@@ -769,103 +1011,129 @@ href="network.svg">download network image in 3.7</a>).</p>
   &lt;/g&gt;
 <strong>&lt;!-- (and the other two cables) --&gt;</strong>
 &lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<p>Note that we did not add <code>title</code> or <code>desc</code> elements
-for the <code>hub</code> component, since it refers to an SVG image that
-already contains those elements, and has its own Document Object Model (this
-would not be the case if the hub had been a raster image format). According to
-Checkpoint 2.1 of the User Agent Accessibility Guidelines [<a
-href="#UAAG10">UAAG10]</a>] these equivalents should be made available to the
-user by a user agent. Similarly each computer image already has a <code>
-desc</code> element defined as part of the <code>symbol</code> element so it
-does not need to be repeated. But each computer needs an individual
-<code>title</code> to describe the role it plays in the network image.</p>
+    <p>
+      Note that we did not add <code>title</code> or <code>desc</code> elements
+      for the <code>hub</code> component, since it refers to an SVG image that
+      already contains those elements, and has its own Document Object Model
+      (this would not be the case if the hub had been a raster image format).
+      According to Checkpoint 2.1 of the User Agent Accessibility Guidelines [<a
+        href="#UAAG10"
+        >UAAG10]</a
+      >] these equivalents should be made available to the user by a user agent.
+      Similarly each computer image already has a <code> desc</code> element
+      defined as part of the <code>symbol</code> element so it does not need to
+      be repeated. But each computer needs an individual <code>title</code> to
+      describe the role it plays in the network image.
+    </p>
 
-<div class="example">
-<p><strong>Figure 3.8:</strong> A visual rendering of Example 3.7.</p>
+    <div class="example">
+      <p><strong>Figure 3.8:</strong> A visual rendering of Example 3.7.</p>
 
-<p><img src="wholenetwork.png" alt="The whole network" /></p>
-</div>
+      <p><img src="wholenetwork.png" alt="The whole network" /></p>
+    </div>
 
-<h2><a name="Style" id="Style">4. Controlling Presentation</a></h2>
+    <h2><a name="Style" id="Style">4. Controlling Presentation</a></h2>
 
-<p>One of the main themes in the Web Content Accessibility Guidelines is the
-separation of structure and information from style and presentation (refer to
-[<a href="#WCAG10">WCAG10</a>], Checkpoint 3.3 and Guideline 3). When the
-author separates structure from the description of how it is to be rendered,
-users can more easily adapt the rendering to meet their needs. Furthermore, an
-author working with a graphic editor can adjust the presentation to suit their
-needs for authoring and provide a different presentation for publishing as
-required by Authoring Tool Accessibility Guidelines [<a
-href="#ATAG10">ATAG10</a>] Checkpoint 7.2.</p>
+    <p>
+      One of the main themes in the Web Content Accessibility Guidelines is the
+      separation of structure and information from style and presentation (refer
+      to [<a href="#WCAG10">WCAG10</a>], Checkpoint 3.3 and Guideline 3). When
+      the author separates structure from the description of how it is to be
+      rendered, users can more easily adapt the rendering to meet their needs.
+      Furthermore, an author working with a graphic editor can adjust the
+      presentation to suit their needs for authoring and provide a different
+      presentation for publishing as required by Authoring Tool Accessibility
+      Guidelines [<a href="#ATAG10">ATAG10</a>] Checkpoint 7.2.
+    </p>
 
-<p>Positioning graphic elements is so fundamental to most images that it is
-generally included in the SVG elements themselves, but stylesheets can be used
-for all other style definitions.</p>
+    <p>
+      Positioning graphic elements is so fundamental to most images that it is
+      generally included in the SVG elements themselves, but stylesheets can be
+      used for all other style definitions.
+    </p>
 
-<p>There are some style properties that are unique to SVG such as
-<code>fill</code>, <code>stroke</code> and <code> stroke-width</code>, and the
-extensions for using effects written in SVG, but the syntax is the same.
-Importantly, SVG uses the CSS2 [<a href="#CSS2">CSS2</a>] version of the
-Cascade, providing the user with the final say over presentation.</p>
+    <p>
+      There are some style properties that are unique to SVG such as
+      <code>fill</code>, <code>stroke</code> and <code> stroke-width</code>, and
+      the extensions for using effects written in SVG, but the syntax is the
+      same. Importantly, SVG uses the CSS2 [<a href="#CSS2">CSS2</a>] version of
+      the Cascade, providing the user with the final say over presentation.
+    </p>
 
-<p>In the following sections we look at different aspects of separating style
-and content in SVG. We start with adding simple style definitions to SVG
-elements. We then look at using classes to add more semantics and grouping to
-the elements, and providing style definitions for different media. Finally, we
-illustrate how SVG allows authors to define their own style effects to be used
-for fonts, masks, filters, fills, etc. In this way it is often possible to
-prevent the loss of important information that might otherwise be mixed with
-style definitions.</p>
+    <p>
+      In the following sections we look at different aspects of separating style
+      and content in SVG. We start with adding simple style definitions to SVG
+      elements. We then look at using classes to add more semantics and grouping
+      to the elements, and providing style definitions for different media.
+      Finally, we illustrate how SVG allows authors to define their own style
+      effects to be used for fonts, masks, filters, fills, etc. In this way it
+      is often possible to prevent the loss of important information that might
+      otherwise be mixed with style definitions.
+    </p>
 
-<h3><a name="Colors" id="Colors">4.1 Simple Style Definitions</a></h3>
+    <h3><a name="Colors" id="Colors">4.1 Simple Style Definitions</a></h3>
 
-<p>SVG uses CSS syntax and properties or XSL to specify formatting effects
-with stylesheets. Stylesheets give the author a means to specify rich
-presentations, while ensuring that the different presentation-related needs of
-users can be met (refer to [<a href="#WCAG10">WCAG10</a>], Checkpoint 3.3 and
-Guideline 3 in general and to Accessibility Features of CSS2 [<a
-href="#CSS-access">CSS-access</a>]).</p>
+    <p>
+      SVG uses CSS syntax and properties or XSL to specify formatting effects
+      with stylesheets. Stylesheets give the author a means to specify rich
+      presentations, while ensuring that the different presentation-related
+      needs of users can be met (refer to [<a href="#WCAG10">WCAG10</a>],
+      Checkpoint 3.3 and Guideline 3 in general and to Accessibility Features of
+      CSS2 [<a href="#CSS-access">CSS-access</a>]).
+    </p>
 
-<p>Although it is possible to specify style as attributes of particular
-elements, or as part of a <code>style</code> element, we have chosen to
-demonstrate mostly external linked stylesheets. The User Agent Guidelines [<a
-href="#UAAG10">UAAG10</a>] require that a user can select among stylesheets,
-including user stylesheets, and with external stylesheets authors can more
-easily supply a set of alternative stylesheets. An external stylesheet or a
-separate style element helps the author to make style changes to selected
-elements in one place.</p>
+    <p>
+      Although it is possible to specify style as attributes of particular
+      elements, or as part of a <code>style</code> element, we have chosen to
+      demonstrate mostly external linked stylesheets. The User Agent Guidelines
+      [<a href="#UAAG10">UAAG10</a>] require that a user can select among
+      stylesheets, including user stylesheets, and with external stylesheets
+      authors can more easily supply a set of alternative stylesheets. An
+      external stylesheet or a separate style element helps the author to make
+      style changes to selected elements in one place.
+    </p>
 
-<p>Style rules using element or class selectors should generally be preferred
-over the styles based on <code>id</code> attribute selectors or inline style
-attributes. Classes can be valuable, for instance if the graphical elements or
-their combinations have different semantic meanings (see examples in Section
-4.2). Inline style attributes or <code>id</code>-based style rules mean each
-element's style needs to be changed separately. Although this may be managed
-for authors by their authoring tools, inline styles are also more difficult to
-override for users with disabilities or with restrictions in their environment
-or the devices that they are using. This is especially true if the inline
-style definitions illustrate an implicit semantic grouping of the elements
-with no <code>class</code> definitions to support it.</p>
+    <p>
+      Style rules using element or class selectors should generally be preferred
+      over the styles based on <code>id</code> attribute selectors or inline
+      style attributes. Classes can be valuable, for instance if the graphical
+      elements or their combinations have different semantic meanings (see
+      examples in Section 4.2). Inline style attributes or <code>id</code>-based
+      style rules mean each element's style needs to be changed separately.
+      Although this may be managed for authors by their authoring tools, inline
+      styles are also more difficult to override for users with disabilities or
+      with restrictions in their environment or the devices that they are using.
+      This is especially true if the inline style definitions illustrate an
+      implicit semantic grouping of the elements with no
+      <code>class</code> definitions to support it.
+    </p>
 
-<p>If a particular set of inline style properties is used consistently it can
-be a good clue that the set of properties are being used to identify a class
-of objects. Instead the objects should have an appropriate <code>class</code>
-attribute and a stylesheet should be used to provide presentation
-information.</p>
+    <p>
+      If a particular set of inline style properties is used consistently it can
+      be a good clue that the set of properties are being used to identify a
+      class of objects. Instead the objects should have an appropriate
+      <code>class</code> attribute and a stylesheet should be used to provide
+      presentation information.
+    </p>
 
-<p>In SVG, the default rendering of graphic elements is a black fill, so
-without a stylesheet all the presented shapes would be solid black. To avoid
-that, the previous examples provide a link to the simple stylesheet presented
-in the next example (4.1). It contains simple style definitions for rendering
-simple graphic elements like rectangles, circles and paths.</p>
+    <p>
+      In SVG, the default rendering of graphic elements is a black fill, so
+      without a stylesheet all the presented shapes would be solid black. To
+      avoid that, the previous examples provide a link to the simple stylesheet
+      presented in the next example (4.1). It contains simple style definitions
+      for rendering simple graphic elements like rectangles, circles and paths.
+    </p>
 
-<div class="example">
-<p id="Fig-4.1"><strong>Example 4.1:</strong> A simple stylesheet for
-presenting rectangle, circle, and path elements (<a
-href="svg-basic-style.css">download stylesheet in 4.1</a>).</p>
-<pre><code>rect   { fill: white; stroke: black;
+    <div class="example">
+      <p id="Fig-4.1">
+        <strong>Example 4.1:</strong> A simple stylesheet for presenting
+        rectangle, circle, and path elements (<a href="svg-basic-style.css"
+          >download stylesheet in 4.1</a
+        >).
+      </p>
+      <pre><code>rect   { fill: white; stroke: black;
          stroke-width: 1
 }
 circle { fill: red; stroke: black;
@@ -874,25 +1142,32 @@ circle { fill: red; stroke: black;
 path   { fill: white; stroke: black;
          stroke-width: 1
 }</code></pre>
-</div>
+    </div>
 
-<p>The content of <code>title</code> and <code>desc</code> elements may not be
-rendered by default in many circumstances. The following example (4.2) gives a
-simple CSS stylesheet that can be used with a structured set of text
-alternatives, such as in <a href="#Example4">figure 2.2</a>, to render the
-content as text. The stylesheet makes only the <code>title</code> and
-<code>desc</code> elements visible, as a block. Furthermore, the
-<code>title</code> element directly inside the <code>svg</code> element will
-be bigger and bolder than the other titles. The <code>!important</code>
-declaration is used after each definition to make sure that when a user
-applies this stylesheet it can override author-supplied style. The result has
-been shown in <a href="#fig-2.4">figure 2.3</a> above.</p>
+    <p>
+      The content of <code>title</code> and <code>desc</code> elements may not
+      be rendered by default in many circumstances. The following example (4.2)
+      gives a simple CSS stylesheet that can be used with a structured set of
+      text alternatives, such as in <a href="#Example4">figure 2.2</a>, to
+      render the content as text. The stylesheet makes only the
+      <code>title</code> and <code>desc</code> elements visible, as a block.
+      Furthermore, the <code>title</code> element directly inside the
+      <code>svg</code> element will be bigger and bolder than the other titles.
+      The <code>!important</code> declaration is used after each definition to
+      make sure that when a user applies this stylesheet it can override
+      author-supplied style. The result has been shown in
+      <a href="#fig-2.4">figure 2.3</a> above.
+    </p>
 
-<div class="example">
-<p class="figure" id="Fig-4.2"><strong>Example 4.2:</strong> A simple
-stylesheet to present <code>title</code> and <code> desc</code> elements as
-text (<a href="svg-access-style.css">download stylesheet in 4.2</a>).</p>
-<pre><code>svg   { visibility: hidden !important  }
+    <div class="example">
+      <p class="figure" id="Fig-4.2">
+        <strong>Example 4.2:</strong> A simple stylesheet to present
+        <code>title</code> and <code> desc</code> elements as text (<a
+          href="svg-access-style.css"
+          >download stylesheet in 4.2</a
+        >).
+      </p>
+      <pre><code>svg   { visibility: hidden !important  }
 title { visibility: visible !important }
 desc  { visibility: visible !important }
 g     { display: block !important }
@@ -900,27 +1175,34 @@ svg &gt; title {
   font-size: 120% !important;
   font-weight: bolder !important
 }</code></pre>
-</div>
+    </div>
 
-<p>To give the user a rough idea of the graphics shapes used in an image we
-can use the following stylesheet (example 4.3). It will render the types of
-common graphics elements as text in between the <code>title</code> and
-<code>desc</code> renderings. We can use the stylesheet, for instance, to give
-some information of the graphical shapes used in the Hub in Examples 3.1 and
-3.2.</p>
+    <p>
+      To give the user a rough idea of the graphics shapes used in an image we
+      can use the following stylesheet (example 4.3). It will render the types
+      of common graphics elements as text in between the <code>title</code> and
+      <code>desc</code> renderings. We can use the stylesheet, for instance, to
+      give some information of the graphical shapes used in the Hub in Examples
+      3.1 and 3.2.
+    </p>
 
-<p>With CSS alone we cannot describe how the shapes are positioned in respect
-of one another, but it is possible to create specialized user agents that can
-read the SVG and describe the image in terms of shapes positioned above,
-below, inside each other. This information can be very helpful in interpreting
-some types of images for particular purposes, for example in describing
-construction of simple objects.</p>
+    <p>
+      With CSS alone we cannot describe how the shapes are positioned in respect
+      of one another, but it is possible to create specialized user agents that
+      can read the SVG and describe the image in terms of shapes positioned
+      above, below, inside each other. This information can be very helpful in
+      interpreting some types of images for particular purposes, for example in
+      describing construction of simple objects.
+    </p>
 
-<div class="example">
-<p id="Fig-4.3"><strong>Example 4.3:</strong> A simple stylesheet with text
-for graphical shapes (<a href="my-svg-access-style.css">download stylesheet in
-4.3</a>).</p>
-<pre><code>svg   { visibility: hidden !important  }
+    <div class="example">
+      <p id="Fig-4.3">
+        <strong>Example 4.3:</strong> A simple stylesheet with text for
+        graphical shapes (<a href="my-svg-access-style.css"
+          >download stylesheet in 4.3</a
+        >).
+      </p>
+      <pre><code>svg   { visibility: hidden !important  }
 title { visibility: visible !important }
 desc  { visibility: visible !important }
 g     { display: block !important }
@@ -945,25 +1227,28 @@ polygon:before {
   visibility: visible;
   content: "closed shape " !important
 }</strong></code></pre>
-</div>
+    </div>
 
-<h3 id="Classes">4.2 Style Definitions with Classes</h3>
+    <h3 id="Classes">4.2 Style Definitions with Classes</h3>
 
-<p>As discussed earlier, with graphic images it is often necessary or helpful
-to use classes to add semantics that can be used with style definitions. In
-the next example we define an image of a computer to be used in the network we
-have been building. The stylesheet for this image uses <code>class</code>
-attributes to define styles for various types of image components. In
-particular the class <code>outline</code> defines an outline that can be
-rendered with minimal graphical details. (We also define a component with a
-class of <code>outline-only</code> which is not rendered by the default
-stylesheet).</p>
+    <p>
+      As discussed earlier, with graphic images it is often necessary or helpful
+      to use classes to add semantics that can be used with style definitions.
+      In the next example we define an image of a computer to be used in the
+      network we have been building. The stylesheet for this image uses
+      <code>class</code> attributes to define styles for various types of image
+      components. In particular the class <code>outline</code> defines an
+      outline that can be rendered with minimal graphical details. (We also
+      define a component with a class of <code>outline-only</code> which is not
+      rendered by the default stylesheet).
+    </p>
 
-<div class="example">
-<p id="Fig-4.4"><strong><a name="Example2">Example 4.4</a>:</strong> A
-computer image (<a href="computer.svg">download computer image in
-4.4</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;<strong>&lt;?xml-stylesheet href="svg-style.css" type="text/css"?&gt;
+    <div class="example">
+      <p id="Fig-4.4">
+        <strong><a name="Example2">Example 4.4</a>:</strong> A computer image
+        (<a href="computer.svg">download computer image in 4.4</a>).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;<strong>&lt;?xml-stylesheet href="svg-style.css" type="text/css"?&gt;
 </strong>&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
 &lt;svg width="6in" height="4.5in" viewBox="0 0 600 450"&gt;
@@ -1004,23 +1289,30 @@ computer image (<a href="computer.svg">download computer image in
       &lt;use xlink:href="#terminal"/&gt;
     &lt;/g&gt;
 &lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<div class="example">
-<p id="Fig-4.5"><strong><a name="Figure">Figure 4.5</a>:</strong> A visual
-rendering of the computer in Example 4.4</p>
+    <div class="example">
+      <p id="Fig-4.5">
+        <strong><a name="Figure">Figure 4.5</a>:</strong> A visual rendering of
+        the computer in Example 4.4
+      </p>
 
-<p><img src="terminal.png" alt="Computer terminal" /></p>
-</div>
+      <p><img src="terminal.png" alt="Computer terminal" /></p>
+    </div>
 
-<p>The following stylesheet defines some styles for the computer and its
-components.</p>
+    <p>
+      The following stylesheet defines some styles for the computer and its
+      components.
+    </p>
 
-<div class="example">
-<p id="Fig-4.6"><strong>Example 4.6:</strong> A stylesheet for the computer
-image in <a href="#Example2">Example 4.4</a> (<a
-href="svg-computer-style.css">download stylesheet in 4.6</a>).</p>
-<pre><code>/* Some style for the computer */
+    <div class="example">
+      <p id="Fig-4.6">
+        <strong>Example 4.6:</strong> A stylesheet for the computer image in
+        <a href="#Example2">Example 4.4</a> (<a href="svg-computer-style.css"
+          >download stylesheet in 4.6</a
+        >).
+      </p>
+      <pre><code>/* Some style for the computer */
 
 svg {
   /* Default styles to be inherited */
@@ -1031,36 +1323,46 @@ svg {
 .outline-only {visibility: hidden}
 .light { fill: lightgreen}
 .screen {fill: grey}</code></pre>
-</div>
+    </div>
 
-<h3><a name="Different" id="Different">4.3 Style with Different Media</a></h3>
+    <h3>
+      <a name="Different" id="Different">4.3 Style with Different Media</a>
+    </h3>
 
-<p>The rendering of SVG images can be defined differently for different media.
-This is beneficial for accessibility as people with disabilities often use
-assistive technologies. For instance some media such as screens are suited to
-high-resolution graphics, while other media such as braille are better suited
-to lower resolution graphics, and some people use audio instead of graphics.
-Authors are therefore encouraged to provide a variety of ready-made
-stylesheets to cover different user needs (for example audio rendering). CSS
-can be used to provide an appropriate default presentation for all these
-different devices.</p>
+    <p>
+      The rendering of SVG images can be defined differently for different
+      media. This is beneficial for accessibility as people with disabilities
+      often use assistive technologies. For instance some media such as screens
+      are suited to high-resolution graphics, while other media such as braille
+      are better suited to lower resolution graphics, and some people use audio
+      instead of graphics. Authors are therefore encouraged to provide a variety
+      of ready-made stylesheets to cover different user needs (for example audio
+      rendering). CSS can be used to provide an appropriate default presentation
+      for all these different devices.
+    </p>
 
-<p>In the following example (4.7) we expand the stylesheet presented in the
-last example (4.6) to provide a simplified version of the image for
-low-resolution media, such as embossed, braille, handheld, or projection
-devices using the <code>outline</code> and <code>outline-only</code> classes
-defined in <a href="#Example2"> example 4.4</a>. The appropriate set of style
-definitions for those devices are selected by using CSS <code>@media</code>
-rules [<a href="#CSS2">CSS2</a>]. Within the simplified version only the text
-and the outline of graphics components will be rendered, while the screen
-media definitions use the default style presented in the previous example
-(4.6).</p>
+    <p>
+      In the following example (4.7) we expand the stylesheet presented in the
+      last example (4.6) to provide a simplified version of the image for
+      low-resolution media, such as embossed, braille, handheld, or projection
+      devices using the <code>outline</code> and
+      <code>outline-only</code> classes defined in
+      <a href="#Example2"> example 4.4</a>. The appropriate set of style
+      definitions for those devices are selected by using CSS
+      <code>@media</code> rules [<a href="#CSS2">CSS2</a>]. Within the
+      simplified version only the text and the outline of graphics components
+      will be rendered, while the screen media definitions use the default style
+      presented in the previous example (4.6).
+    </p>
 
-<div class="example">
-<p id="Fig-4.7"><strong><a name="Example3">Example 4.7</a>:</strong> Extending
-stylesheet in Example 4.5 for different media (<a
-href="svg-style.css">download full stylesheet in 4.7</a>).</p>
-<pre><code><strong>/* some style for low-resolution media */
+    <div class="example">
+      <p id="Fig-4.7">
+        <strong><a name="Example3">Example 4.7</a>:</strong> Extending
+        stylesheet in Example 4.5 for different media (<a href="svg-style.css"
+          >download full stylesheet in 4.7</a
+        >).
+      </p>
+      <pre><code><strong>/* some style for low-resolution media */
 
 @media embossed, braille, handheld {
   svg      { visibility: hidden }
@@ -1078,39 +1380,49 @@ href="svg-style.css">download full stylesheet in 4.7</a>).</p>
 </strong>  
 /* Some style for the computer */
 <strong>}</strong></code></pre>
-</div>
+    </div>
 
-<h3><a id="Fonts" name="Fonts">4.4 Presentation of Text - Fonts</a></h3>
+    <h3><a id="Fonts" name="Fonts">4.4 Presentation of Text - Fonts</a></h3>
 
-<p>Text is important for accessibility as it can be transformed to many senses
-by using assistive technologies. However, authors often want to control the
-presentation of the text, for example for branding and visual communication
-purposes. In the past this has been done on the Web by providing an image of
-the desired text in a raster format. Instead, SVG enables this level of
-control by providing support for using already existing fonts or creating new
-fonts by using the graphics elements of SVG. This provides authors with a
-powerful mechanism for offering new sophisticated and extremely specialized
-fonts. At the same time the actual text rendered in those fonts can be
-accessed directly by the user agent.</p>
+    <p>
+      Text is important for accessibility as it can be transformed to many
+      senses by using assistive technologies. However, authors often want to
+      control the presentation of the text, for example for branding and visual
+      communication purposes. In the past this has been done on the Web by
+      providing an image of the desired text in a raster format. Instead, SVG
+      enables this level of control by providing support for using already
+      existing fonts or creating new fonts by using the graphics elements of
+      SVG. This provides authors with a powerful mechanism for offering new
+      sophisticated and extremely specialized fonts. At the same time the actual
+      text rendered in those fonts can be accessed directly by the user agent.
+    </p>
 
-<p>The style definitions are gathered together and referenced through the
-classes in the elements instead of using a style attribute. This makes it
-easier for a user to override styles for different classes of elements when
-necessary. For instance, users with low vision or with color deficiencies
-might need to override style properties to read the text.</p>
+    <p>
+      The style definitions are gathered together and referenced through the
+      classes in the elements instead of using a style attribute. This makes it
+      easier for a user to override styles for different classes of elements
+      when necessary. For instance, users with low vision or with color
+      deficiencies might need to override style properties to read the text.
+    </p>
 
-<p>The following example uses a font named BaseTwelve to create the W3C logo.
-If the user does not have the BaseTwelve font then another (in this case
-system default) font will be used to render the text. Because the font is
-referenced from a CSS style declaration a user can also easily override it. Of
-course because this is an XML document a stylesheet can also be used to render
-the content (the letters "W 3 C") as a text-based presentation.</p>
+    <p>
+      The following example uses a font named BaseTwelve to create the W3C logo.
+      If the user does not have the BaseTwelve font then another (in this case
+      system default) font will be used to render the text. Because the font is
+      referenced from a CSS style declaration a user can also easily override
+      it. Of course because this is an XML document a stylesheet can also be
+      used to render the content (the letters "W 3 C") as a text-based
+      presentation.
+    </p>
 
-<div class="example">
-<p><a name="Fig-4.8" id="Fig-4.8"><strong>Example 4.8:</strong> Using text and
-fonts to form an image of W3C logo (</a><a href="w3csub.svg">download W3C logo
-in 4.8</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p>
+        <a name="Fig-4.8" id="Fig-4.8"
+          ><strong>Example 4.8:</strong> Using text and fonts to form an image
+          of W3C logo (</a
+        ><a href="w3csub.svg">download W3C logo in 4.8</a>).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
 &lt;svg width="1.5in" height="1in" viewBox="0 0 150 100"&gt;
@@ -1145,48 +1457,64 @@ in 4.8</a>).</p>
     &lt;/g&gt;
   &lt;/g&gt;
 &lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<p>&nbsp;</p>
-<table border="1"
-summary="Images of the W3C logo in Example 4.8. both with a) BaseTwelve and b) a substitute font.">
-  <caption><strong>Figure 4.9:</strong> Images of the W3C logo in Example 4.8.
-  both with a) BaseTwelve and b) a substitute font.</caption>
-  <tbody>
-    <tr>
-      <td>a) <img src="w3clogo.png" alt="w3c logo with BaseTwelve font"
-      /></td>
-      <td>b) <img src="w3clogosub.png" alt="w3c logo without BaseTwelve font"
-        /></td>
-    </tr>
-  </tbody>
-</table>
+    <p>&nbsp;</p>
+    <table
+      border="1"
+      summary="Images of the W3C logo in Example 4.8. both with a) BaseTwelve and b) a substitute font."
+    >
+      <caption>
+        <strong>Figure 4.9:</strong>
+        Images of the W3C logo in Example 4.8. both with a) BaseTwelve and b) a
+        substitute font.
+      </caption>
+      <tbody>
+        <tr>
+          <td>
+            a) <img src="w3clogo.png" alt="w3c logo with BaseTwelve font" />
+          </td>
+          <td>
+            b)
+            <img src="w3clogosub.png" alt="w3c logo without BaseTwelve font" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-<h3><a id="Fonts2" name="Fonts2">4.5 Presentation of Text - Creating
-Fonts</a></h3>
+    <h3>
+      <a id="Fonts2" name="Fonts2">4.5 Presentation of Text - Creating Fonts</a>
+    </h3>
 
-<p>Often a particular font that users are not likely to have will be desired
-for a logo. In SVG a new font can be defined by using the <code>font</code>
-element. The following example defines a font named w3clogofont. It includes
-the glyphs for the characters W, 3, and C. Each glyph element has a
-human-readable title, and the letter C has a description of the special effect
-provided for it.</p>
+    <p>
+      Often a particular font that users are not likely to have will be desired
+      for a logo. In SVG a new font can be defined by using the
+      <code>font</code> element. The following example defines a font named
+      w3clogofont. It includes the glyphs for the characters W, 3, and C. Each
+      glyph element has a human-readable title, and the letter C has a
+      description of the special effect provided for it.
+    </p>
 
-<p>Note that in the previous code example (4.9), the special shadow effect was
-defined with a mask, whereas in the following example (4.10) the character is
-defined directly. Authoring tools may choose to use either method for SVG
-fonts, depending on performance considerations. However it is important that
-the text content is in fact the required text - it would be possible to get
-the mask effect by placing a white "C" over the black one, but the text
-content would then be "W3CC" which is wrong. Use of SVG fonts allows designers
-to create very sophisticated or individual fonts while keeping the content as
-text.</p>
+    <p>
+      Note that in the previous code example (4.9), the special shadow effect
+      was defined with a mask, whereas in the following example (4.10) the
+      character is defined directly. Authoring tools may choose to use either
+      method for SVG fonts, depending on performance considerations. However it
+      is important that the text content is in fact the required text - it would
+      be possible to get the mask effect by placing a white "C" over the black
+      one, but the text content would then be "W3CC" which is wrong. Use of SVG
+      fonts allows designers to create very sophisticated or individual fonts
+      while keeping the content as text.
+    </p>
 
-<div class="example">
-<p><a name="Fig-4.10" id="Fig-4.10"><strong>Example 4.10:</strong> Defining a
-special font for the W3C logo (</a><a href="w3creal.svg">download W3C logo in
-4.10</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p>
+        <a name="Fig-4.10" id="Fig-4.10"
+          ><strong>Example 4.10:</strong> Defining a special font for the W3C
+          logo (</a
+        ><a href="w3creal.svg">download W3C logo in 4.10</a>).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
 &lt;svg width="1.5in" height="1in" viewBox="0 0 150 100"&gt;
@@ -1256,38 +1584,45 @@ special font for the W3C logo (</a><a href="w3creal.svg">download W3C logo in
     &lt;/g&gt;
   &lt;/g&gt;
 &lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<h3 id="SVGStyle">4.6 Defining Style Values with SVG Elements</h3>
-Because the ability to control the presentation of information is so important
-to accessibility, the more that authors can easily separate information and
-its stylistic presentation the better. SVG supports this separation by
-providing a number of features that are defined using SVG elements, but used
-as style properties. For instance in the previous two examples (4.9 and 4.10)
-we used a mask to create a style effect for a font and then demonstrated an
-alternative which can be used as an optimization when creating a custom font.
-We can also define patterns, clipping paths and filter effects in SVG and then
-use them in a stylesheet. These SVG-based effects cannot be defined in the
-stylesheet itself as the definitions require the graphic power of SVG.
+    <h3 id="SVGStyle">4.6 Defining Style Values with SVG Elements</h3>
+    Because the ability to control the presentation of information is so
+    important to accessibility, the more that authors can easily separate
+    information and its stylistic presentation the better. SVG supports this
+    separation by providing a number of features that are defined using SVG
+    elements, but used as style properties. For instance in the previous two
+    examples (4.9 and 4.10) we used a mask to create a style effect for a font
+    and then demonstrated an alternative which can be used as an optimization
+    when creating a custom font. We can also define patterns, clipping paths and
+    filter effects in SVG and then use them in a stylesheet. These SVG-based
+    effects cannot be defined in the stylesheet itself as the definitions
+    require the graphic power of SVG.
 
-<p>In this way the possible range of style effects can be easily extended. At
-the same time they can still be clearly separated in parsing and processing
-from the information being presented, as required by Web Content Accessibility
-Guidelines [<a href="#WCAG10">WCAG10</a>] Checkpoint 3.3. In the following
-example (4.11) we create some stylistic effects for the computer defined in
-example 4.4 that are written in SVG but used from a stylesheet in the
-rendering process. This means a user can override the effects with another
-stylesheet if required, as discussed above. In this example we have defined
-gradient effects in a separate document, although it is also possible to
-define them within the image that they are first used in. In either case, they
-can then be reused in many documents, in the same way as a stylesheet or a
-known graphic component, and known patterns can be reused by an author who may
-have great difficulty in creating them.</p>
+    <p>
+      In this way the possible range of style effects can be easily extended. At
+      the same time they can still be clearly separated in parsing and
+      processing from the information being presented, as required by Web
+      Content Accessibility Guidelines [<a href="#WCAG10">WCAG10</a>] Checkpoint
+      3.3. In the following example (4.11) we create some stylistic effects for
+      the computer defined in example 4.4 that are written in SVG but used from
+      a stylesheet in the rendering process. This means a user can override the
+      effects with another stylesheet if required, as discussed above. In this
+      example we have defined gradient effects in a separate document, although
+      it is also possible to define them within the image that they are first
+      used in. In either case, they can then be reused in many documents, in the
+      same way as a stylesheet or a known graphic component, and known patterns
+      can be reused by an author who may have great difficulty in creating them.
+    </p>
 
-<div class="example">
-<p id="Fig-4.11"><strong>Example 4.11:</strong> Defining some style values (<a
-href="style-values.svg">download style values in 4.11</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p id="Fig-4.11">
+        <strong>Example 4.11:</strong> Defining some style values (<a
+          href="style-values.svg"
+          >download style values in 4.11</a
+        >).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
 &lt;svg width="6in" height="4.5in" viewBox="0 0 600 450"&gt;
@@ -1302,18 +1637,24 @@ href="style-values.svg">download style values in 4.11</a>).</p>
        &lt;/linearGradient&gt;
     &lt;/defs&gt;
  &lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<p>The following example (4.12) is an extended version of the stylesheet
-presented in <a href="#Example3">Example 4.7</a> that uses the gradients to
-provide additional style for the computer in <a href="#Example2">Example
-4.4</a>.</p>
+    <p>
+      The following example (4.12) is an extended version of the stylesheet
+      presented in <a href="#Example3">Example 4.7</a> that uses the gradients
+      to provide additional style for the computer in
+      <a href="#Example2">Example 4.4</a>.
+    </p>
 
-<div class="example">
-<p id="Fig-4.12"><strong>Example 4.12:</strong> An alternative stylesheet for
-the computer image in <a href="#Example2">Example 4.4</a> (<a
-href="extended-svg-style.css">download stylesheet in 4.12</a>).</p>
-<pre><code>/* Some style for the computer */
+    <div class="example">
+      <p id="Fig-4.12">
+        <strong>Example 4.12:</strong> An alternative stylesheet for the
+        computer image in <a href="#Example2">Example 4.4</a> (<a
+          href="extended-svg-style.css"
+          >download stylesheet in 4.12</a
+        >).
+      </p>
+      <pre><code>/* Some style for the computer */
 
 <strong>#screenGrad .s100 {stop-color:#AAA9A9 }
 #screenGrad .s0 {stop-color:black }
@@ -1331,109 +1672,141 @@ svg {
 <strong>.screen { fill: url(style-values.svg#screenGrad)}
 .disc { fill: url(style-values.svg#discGrad)}
 </strong>.light { fill:lightgreen}</code></pre>
-</div>
+    </div>
 
-<h2><a id="interact" name="interact">5. Accessible Interaction</a></h2>
+    <h2><a id="interact" name="interact">5. Accessible Interaction</a></h2>
 
-<p>Users must be able to use all the available functionality of a multimedia
-document regardless of the physical characteristics of the user agent or
-assistive technology used. In particular, the User Agent Accessibility
-Guidelines [<a href="#UAAG10">UAAG10</a>] require that the user can activate
-all the <a href="#def-active-element" rel="glossary">active elements</a> in a
-document. SVG supports the use of the Document Object Model (DOM) and
-device-independent events, and they are highly recommended.</p>
+    <p>
+      Users must be able to use all the available functionality of a multimedia
+      document regardless of the physical characteristics of the user agent or
+      assistive technology used. In particular, the User Agent Accessibility
+      Guidelines [<a href="#UAAG10">UAAG10</a>] require that the user can
+      activate all the
+      <a href="#def-active-element" rel="glossary">active elements</a> in a
+      document. SVG supports the use of the Document Object Model (DOM) and
+      device-independent events, and they are highly recommended.
+    </p>
 
-<p>SVG also supports declarative definition of animations. These offer users
-better means to understand what is being changed and how than the use of
-scripting languages, such as Javascript or ECMAscript. For instance, it is
-easier to ensure that a user can turn off animations while still being
-presented with appropriate content, which is important for accessibility.</p>
+    <p>
+      SVG also supports declarative definition of animations. These offer users
+      better means to understand what is being changed and how than the use of
+      scripting languages, such as Javascript or ECMAscript. For instance, it is
+      easier to ensure that a user can turn off animations while still being
+      presented with appropriate content, which is important for accessibility.
+    </p>
 
-<p>Finally, the users should be able to interact with links and other
-navigation means embedded in SVG images either serially, by using text
-equivalents, or spatially with more visual means.</p>
+    <p>
+      Finally, the users should be able to interact with links and other
+      navigation means embedded in SVG images either serially, by using text
+      equivalents, or spatially with more visual means.
+    </p>
 
-<h3><a name="events" id="events">5.1 Device-independent Events</a></h3>
+    <h3><a name="events" id="events">5.1 Device-independent Events</a></h3>
 
-<p>SVG uses the new event set provided in DOM 2 [<a href="#DOM2">DOM2</a>],
-which supports device-independent interactive content. This allows authors of
-SVG to to ensure that interactive content does not rely on a user having a
-particular type of device. Good authoring practice will normally use the
-<code>focusin</code>, <code>focusout</code> and <code>activate</code> events
-rather than the device specific events for gaining and losing the focus on an
-element or activating the element. In the next example (5.1) the animation is
-triggered by an <code>activate</code> event, using different parameters for
-different types of activations. Device-independent scripting is required by
-Web Content Accessibility Guidelines [<a href="#WCAG10">WCAG10</a>]
-checkpoints 9.3 and 6.4.</p>
+    <p>
+      SVG uses the new event set provided in DOM 2 [<a href="#DOM2">DOM2</a>],
+      which supports device-independent interactive content. This allows authors
+      of SVG to to ensure that interactive content does not rely on a user
+      having a particular type of device. Good authoring practice will normally
+      use the <code>focusin</code>, <code>focusout</code> and
+      <code>activate</code> events rather than the device specific events for
+      gaining and losing the focus on an element or activating the element. In
+      the next example (5.1) the animation is triggered by an
+      <code>activate</code> event, using different parameters for different
+      types of activations. Device-independent scripting is required by Web
+      Content Accessibility Guidelines [<a href="#WCAG10">WCAG10</a>]
+      checkpoints 9.3 and 6.4.
+    </p>
 
-<p>An accessible user agent will allow the triggering events to be generated
-from a mouse or other pointer device (where available) as well as from a
-keyboard. According to the User Agent Accessibility Guidelines [<a
-href="#UAAG10">UAAG10</a>], Guideline 1 and especially Checkpoint 1.1, user
-agents must provide device-independent ways of activating all application
-functions and indicate how those functions are activated (for example a
-text-based system could provide a "context menu" listing available actions to
-the user).</p>
+    <p>
+      An accessible user agent will allow the triggering events to be generated
+      from a mouse or other pointer device (where available) as well as from a
+      keyboard. According to the User Agent Accessibility Guidelines [<a
+        href="#UAAG10"
+        >UAAG10</a
+      >], Guideline 1 and especially Checkpoint 1.1, user agents must provide
+      device-independent ways of activating all application functions and
+      indicate how those functions are activated (for example a text-based
+      system could provide a "context menu" listing available actions to the
+      user).
+    </p>
 
-<h3><a name="Animations" id="Animations">5.2 Accessible Animation</a></h3>
+    <h3><a name="Animations" id="Animations">5.2 Accessible Animation</a></h3>
 
-<p>Animation can often clarify a graphic presentation or add eye-catching
-movement to highlight important points. But animation may also prevent users
-from reading adjacent information in the page, and animations with a certain
-refresh rate can trigger discomfort or seizures in users with photosensitive
-epilepsy. Users may also have difficulties in making selections fast enough if
-they are embedded in the animation. Therefore animations need to be designed
-carefully so that they do not affect accessibility or usability of the
-presentation. The Web Content Accessibility Guidelines require that until user
-agents allow the user to freeze or control the rate of an animation authors
-should ensure that users can pause or stop moving content (refer to [<a
-href="#WCAG10">WCAG10</a>], Checkpoint, 3.5, 3.6, 3.8 and 7.3, and Guidelines
-3 and 7), and the User Agent Accessibility Guidelines require that the
-necessary functionality is provided by user agents (refer to [<a
-href="#UAAG10">UAAG10</a>] Checkpoints 1.1, 7.3 and Guideline 5) Note that it
-is primarily a user agent rather than an authoring responsibility to provide
-this functionality. SVG also provides means, such as the <code>switch</code>
-element, to control the rendering of images containing animation for static
-media such as print-output devices. We discuss <code>switch</code> in <a
-href="#custom">Section 6</a> below.</p>
+    <p>
+      Animation can often clarify a graphic presentation or add eye-catching
+      movement to highlight important points. But animation may also prevent
+      users from reading adjacent information in the page, and animations with a
+      certain refresh rate can trigger discomfort or seizures in users with
+      photosensitive epilepsy. Users may also have difficulties in making
+      selections fast enough if they are embedded in the animation. Therefore
+      animations need to be designed carefully so that they do not affect
+      accessibility or usability of the presentation. The Web Content
+      Accessibility Guidelines require that until user agents allow the user to
+      freeze or control the rate of an animation authors should ensure that
+      users can pause or stop moving content (refer to [<a href="#WCAG10"
+        >WCAG10</a
+      >], Checkpoint, 3.5, 3.6, 3.8 and 7.3, and Guidelines 3 and 7), and the
+      User Agent Accessibility Guidelines require that the necessary
+      functionality is provided by user agents (refer to [<a href="#UAAG10"
+        >UAAG10</a
+      >] Checkpoints 1.1, 7.3 and Guideline 5) Note that it is primarily a user
+      agent rather than an authoring responsibility to provide this
+      functionality. SVG also provides means, such as the
+      <code>switch</code> element, to control the rendering of images containing
+      animation for static media such as print-output devices. We discuss
+      <code>switch</code> in <a href="#custom">Section 6</a> below.
+    </p>
 
-<p>The animation model in SVG has been jointly developed by the SVG and the
-Synchronized Multimedia (<acronym>SYMM</acronym>) working groups, and is based
-on the SMIL-Boston animation specification [<a
-href="#SMIL-animation">SMIL-animation</a>]. The model offers a declarative
-approach for creating dynamic Web content. In many cases, this is simpler to
-understand and use than the programmatic model used in scripting languages
-such as ECMAscript or Javascript, when a non-graphic presentation is required.
-The animation model aims to allow user agents to provide information about
-what an animation is supposed to do even when the rendering device or
-environment does not have the media capabilities presumed by the author.</p>
+    <p>
+      The animation model in SVG has been jointly developed by the SVG and the
+      Synchronized Multimedia (<acronym>SYMM</acronym>) working groups, and is
+      based on the SMIL-Boston animation specification [<a
+        href="#SMIL-animation"
+        >SMIL-animation</a
+      >]. The model offers a declarative approach for creating dynamic Web
+      content. In many cases, this is simpler to understand and use than the
+      programmatic model used in scripting languages such as ECMAscript or
+      Javascript, when a non-graphic presentation is required. The animation
+      model aims to allow user agents to provide information about what an
+      animation is supposed to do even when the rendering device or environment
+      does not have the media capabilities presumed by the author.
+    </p>
 
-<p>Because SVG is XML it provides user agents with a Document Object Model
-(DOM), as discussed in <a href="#DOM">Section 7</a> below. The
-<code>animate</code> elements are included in the DOM, and are therefore
-directly accessible to User Agents. As the animation effects do not produce
-any changes in the DOM, the presentation related to animations can be handled
-separately. A non-visual user agent can interpret the declarative description
-of the animation and render it in the most appropriate manner. The User Agent
-Accessibility guidelines require that a user agent provide assistive
-technology with access to the DOM (refer to [<a href="#UAAG10">UAAG10</a>],
-Checkpoints 5.1, 5.4 and Guideline 5 in general), so assistive technologies
-can also provide an appropriate presentation of the animation effect when used
-in conjunction with an SVG browser.</p>
+    <p>
+      Because SVG is XML it provides user agents with a Document Object Model
+      (DOM), as discussed in <a href="#DOM">Section 7</a> below. The
+      <code>animate</code> elements are included in the DOM, and are therefore
+      directly accessible to User Agents. As the animation effects do not
+      produce any changes in the DOM, the presentation related to animations can
+      be handled separately. A non-visual user agent can interpret the
+      declarative description of the animation and render it in the most
+      appropriate manner. The User Agent Accessibility guidelines require that a
+      user agent provide assistive technology with access to the DOM (refer to
+      [<a href="#UAAG10">UAAG10</a>], Checkpoints 5.1, 5.4 and Guideline 5 in
+      general), so assistive technologies can also provide an appropriate
+      presentation of the animation effect when used in conjunction with an SVG
+      browser.
+    </p>
 
-<p>In the following example we use animation to highlight the path of messages
-from Computer A to the outside world, or between computer A and computer B.
-For some components we are animating style properties of the components. But
-for some we also want to update the text equivalents, so we define two symbols
-with different <code>desc</code> elements and <code>class</code> attributes,
-and the animation effect swaps between them.</p>
+    <p>
+      In the following example we use animation to highlight the path of
+      messages from Computer A to the outside world, or between computer A and
+      computer B. For some components we are animating style properties of the
+      components. But for some we also want to update the text equivalents, so
+      we define two symbols with different <code>desc</code> elements and
+      <code>class</code> attributes, and the animation effect swaps between
+      them.
+    </p>
 
-<div class="example">
-<p id="Fig-5.1"><strong><a name="Figure1">Figure 5.1</a>:</strong> Animations
-when computer A is activated (<a href="netanim.svg">download network animation
-in 5.1</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p id="Fig-5.1">
+        <strong><a name="Figure1">Figure 5.1</a>:</strong> Animations when
+        computer A is activated (<a href="netanim.svg"
+          >download network animation in 5.1</a
+        >).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;?xml-stylesheet href="svg-style.css" type="text/css"?&gt;
 &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
@@ -1494,65 +1867,87 @@ in 5.1</a>).</p>
   &lt;/g&gt;
 &lt;!-- (and similarly for the other cables) --&gt;
 <code>&lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<h3><a name="Links" id="Links">5.3 Linking and Navigation</a></h3>
+    <h3><a name="Links" id="Links">5.3 Linking and Navigation</a></h3>
 
-<p>With SVG it is easy to add links to various parts of images. This is done
-by including the graphics component inside an <code> a</code> element. The
-<code>a</code> element should include an <code>xlink:title</code> attribute
-that explains the target of the link and appropriate <code>title</code> and
-<code>desc</code> elements should describe the graphical object that is being
-linked to the target. The textual explanations are very important for the
-users with blindness or low vision as they often navigate through the document
-by moving from link to link and reading the link text or its text equivalent.
-It is therefore important that the link (and its text equivalent) make sense
-on its own (refer to [<a href="#WCAG10">WCAG10</a>], Checkpoint 13.3). Unless
-SVG User Agents make this textual information available, authors will need to
-include text-based links to content as well (refer to [<a
-href="#WCAG10">WCAG10</a>] checkpoint 1.5, although this should not apply to
-newer user agents such as those designed for SVG).</p>
+    <p>
+      With SVG it is easy to add links to various parts of images. This is done
+      by including the graphics component inside an <code> a</code> element. The
+      <code>a</code> element should include an
+      <code>xlink:title</code> attribute that explains the target of the link
+      and appropriate <code>title</code> and <code>desc</code> elements should
+      describe the graphical object that is being linked to the target. The
+      textual explanations are very important for the users with blindness or
+      low vision as they often navigate through the document by moving from link
+      to link and reading the link text or its text equivalent. It is therefore
+      important that the link (and its text equivalent) make sense on its own
+      (refer to [<a href="#WCAG10">WCAG10</a>], Checkpoint 13.3). Unless SVG
+      User Agents make this textual information available, authors will need to
+      include text-based links to content as well (refer to [<a href="#WCAG10"
+        >WCAG10</a
+      >] checkpoint 1.5, although this should not apply to newer user agents
+      such as those designed for SVG).
+    </p>
 
-<p>Users relying heavily on visual information, such as some users with
-cognitive disabilities, may also need graphical links to be easily identified
-by visual means. For graphical links there is no default highlighting
-convention as underline is for textual links. These may be highlighted by
-expanding the size or color of the linked component, or adding a graphic mark
-near the component. We may also highlight the component only when it gets
-focus or when the user asks to see the links. Authors and user agents should
-aim for consistency when offering default highlighting styles. It is also
-important that users can easily change the highlighting according to their
-needs. This can be provided in user agents by implementing the relevant
-stylesheet features, for example in CSS [<a href="#CSS2">CSS2</a>].</p>
+    <p>
+      Users relying heavily on visual information, such as some users with
+      cognitive disabilities, may also need graphical links to be easily
+      identified by visual means. For graphical links there is no default
+      highlighting convention as underline is for textual links. These may be
+      highlighted by expanding the size or color of the linked component, or
+      adding a graphic mark near the component. We may also highlight the
+      component only when it gets focus or when the user asks to see the links.
+      Authors and user agents should aim for consistency when offering default
+      highlighting styles. It is also important that users can easily change the
+      highlighting according to their needs. This can be provided in user agents
+      by implementing the relevant stylesheet features, for example in CSS [<a
+        href="#CSS2"
+        >CSS2</a
+      >].
+    </p>
 
-<p>As many users who cannot use a pointing device navigate through links in
-serial order they need to be able to create a good mental model of the
-structures and shortcuts that make navigation more effective (refer to [<a
-href="#WCAG10">WCAG10</a>], Checkpoints 13.4, 13.5, and Guideline 3 in
-general). Such users will benefit if links can be traversed in an order that
-corresponds to the graphic structure, or if links related to a certain
-structure (for example all the buttons included in a cockpit radio panel) are
-grouped and can be easily skipped (refer to [<a href="#WCAG10">WCAG10</a>],
-Checkpoint 13.6).</p>
+    <p>
+      As many users who cannot use a pointing device navigate through links in
+      serial order they need to be able to create a good mental model of the
+      structures and shortcuts that make navigation more effective (refer to [<a
+        href="#WCAG10"
+        >WCAG10</a
+      >], Checkpoints 13.4, 13.5, and Guideline 3 in general). Such users will
+      benefit if links can be traversed in an order that corresponds to the
+      graphic structure, or if links related to a certain structure (for example
+      all the buttons included in a cockpit radio panel) are grouped and can be
+      easily skipped (refer to [<a href="#WCAG10">WCAG10</a>], Checkpoint 13.6).
+    </p>
 
-<h2><a name="custom" id="custom">6. Adapting Content to User or System
-Settings</a></h2>
+    <h2>
+      <a name="custom" id="custom"
+        >6. Adapting Content to User or System Settings</a
+      >
+    </h2>
 
-<p>It is possible in SVG to provide alternatives based on whether a feature is
-supported (for example animation). This is done with the <code>switch</code>
-element using <code>requiredFeatures</code> or <code>systemLanguage</code>
-attributes. The following example (6.1) extends the previous animated example
-(5.1). It uses the <code> switch</code> element to test whether a system
-supports animation, and if not provides an alternative explanation of how the
-network passes messages. The <code>systemLanguage</code> attribute could be
-used instead (or as well) to provide multiple versions of text according to
-the language, or to provide a sign-language version of descriptive text.</p>
+    <p>
+      It is possible in SVG to provide alternatives based on whether a feature
+      is supported (for example animation). This is done with the
+      <code>switch</code> element using <code>requiredFeatures</code> or
+      <code>systemLanguage</code> attributes. The following example (6.1)
+      extends the previous animated example (5.1). It uses the
+      <code> switch</code> element to test whether a system supports animation,
+      and if not provides an alternative explanation of how the network passes
+      messages. The <code>systemLanguage</code> attribute could be used instead
+      (or as well) to provide multiple versions of text according to the
+      language, or to provide a sign-language version of descriptive text.
+    </p>
 
-<div class="example">
-<p id="Fig-6.1"><strong><a name="Figure2">Figure 6.1</a>:</strong> Providing
-alternative content for an animation with <code>switch</code> element (<a
-href="netswitch.svg">download whole network in 6.1</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p id="Fig-6.1">
+        <strong><a name="Figure2">Figure 6.1</a>:</strong> Providing alternative
+        content for an animation with <code>switch</code> element (<a
+          href="netswitch.svg"
+          >download whole network in 6.1</a
+        >).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;?xml-stylesheet href="svg-style.css" type="text/css"?&gt;
 &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN"
   "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"&gt;
@@ -1590,42 +1985,60 @@ href="netswitch.svg">download whole network in 6.1</a>).</p>
 <strong>&lt;!-- (and the rest of the network image) --&gt;
 </strong>  &lt;/g&gt;
 &lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<h2><a id="Inheriting" name="Inheriting">7. Accessibility Benefits from
-XML</a></h2>
+    <h2>
+      <a id="Inheriting" name="Inheriting"
+        >7. Accessibility Benefits from XML</a
+      >
+    </h2>
 
-<p>All markup languages written in XML automatically have some accessibility
-benefits. This is true also with SVG. In this section we explain how these
-features of XML can be used to increase the accessibility of SVG
-documents.</p>
+    <p>
+      All markup languages written in XML automatically have some accessibility
+      benefits. This is true also with SVG. In this section we explain how these
+      features of XML can be used to increase the accessibility of SVG
+      documents.
+    </p>
 
-<h3><a name="Metadata" id="Metadata">7.1 Providing Information with
-Metadata</a></h3>
+    <h3>
+      <a name="Metadata" id="Metadata"
+        >7.1 Providing Information with Metadata</a
+      >
+    </h3>
 
-<p>The more information the author can provide about an SVG image and its
-components the better it is for accessibility. Adding metadata to a document
-can help the user search for information, for example documents with a
-suitable accessibility rating. In the following example we have used it to
-describe the image further - although reading the XML structure shows that the
-network consists of a hub, some cables and some computers, it does not explain
-which are connected to which. We have included an automatically generated
-image of the relationships described by the metadata - the same information
-can be generated by an assistive technology. Combining the information with
-the equivalent alternatives included in the image can be used to provide a
-navigable, described network in text, audio, or even using substituted icons (
-[<a href="#WCAG10">WCAG10</a>] Checkpoint 13.2 requires metadata, 14.2
-requires illustration of information and Guideline 1 requires text
-equivalents). The following example (7.1) uses XML namespaces [<a
-href="#NAMESPACE">NAMESPACE</a>] and the Resource Description Framework [<a
-href="#RDF">RDF</a>] to add some metadata about the cables connecting the
-computers and the hub in the earlier network image.</p>
+    <p>
+      The more information the author can provide about an SVG image and its
+      components the better it is for accessibility. Adding metadata to a
+      document can help the user search for information, for example documents
+      with a suitable accessibility rating. In the following example we have
+      used it to describe the image further - although reading the XML structure
+      shows that the network consists of a hub, some cables and some computers,
+      it does not explain which are connected to which. We have included an
+      automatically generated image of the relationships described by the
+      metadata - the same information can be generated by an assistive
+      technology. Combining the information with the equivalent alternatives
+      included in the image can be used to provide a navigable, described
+      network in text, audio, or even using substituted icons ( [<a
+        href="#WCAG10"
+        >WCAG10</a
+      >] Checkpoint 13.2 requires metadata, 14.2 requires illustration of
+      information and Guideline 1 requires text equivalents). The following
+      example (7.1) uses XML namespaces [<a href="#NAMESPACE">NAMESPACE</a>] and
+      the Resource Description Framework [<a href="#RDF">RDF</a>] to add some
+      metadata about the cables connecting the computers and the hub in the
+      earlier network image.
+    </p>
 
-<div class="example">
-<p><a id="Fig-7.1" name="Fig-7.1"><strong>Example 7.1:</strong></a> Additional metadata for the
-Network and its components (<a href="rdfnet.svg">Download complete SVG
-from</a> <a href="rdfnet.svg">example 7.1</a>).</p>
-<pre><code>&lt;?xml version="1.0"?&gt;
+    <div class="example">
+      <p>
+        <a id="Fig-7.1" name="Fig-7.1"><strong>Example 7.1:</strong></a>
+        Additional metadata for the Network and its components (<a
+          href="rdfnet.svg"
+          >Download complete SVG from</a
+        >
+        <a href="rdfnet.svg">example 7.1</a>).
+      </p>
+      <pre><code>&lt;?xml version="1.0"?&gt;
 &lt;?xml-stylesheet href="svg-style.css" type="text/css"?&gt;
 &lt;svg width="6in" height="4.5in" viewBox="0 0 600 450"
   <strong>xmlns="http://www.w3.org/2000/svg-20000802"</strong>&gt;
@@ -1670,36 +2083,54 @@ from</a> <a href="rdfnet.svg">example 7.1</a>).</p>
   &lt;/g&gt;
 &lt;!-- And so on to add the rest of the network... --&gt;
 &lt;/svg&gt;</code></pre>
-</div>
+    </div>
 
-<div class="example">
-<p id="Fig-7.2"><strong>Figure 7.2:</strong> A graphic representation of the
-metadata that has been added. This has been generated by an automatic service
-[<a href="#RUDOLF">RUDOLF</a>] based on the RDF metadata included in the
-document. It shows the connections between the various elements, so it is
-possible to trace the links from any one component to the others.</p>
+    <div class="example">
+      <p id="Fig-7.2">
+        <strong>Figure 7.2:</strong> A graphic representation of the metadata
+        that has been added. This has been generated by an automatic service [<a
+          href="#RUDOLF"
+          >RUDOLF</a
+        >] based on the RDF metadata included in the document. It shows the
+        connections between the various elements, so it is possible to trace the
+        links from any one component to the others.
+      </p>
 
-<p id="Fig-7.11"><img src="rdfnetViz.png"
-alt="The metadata represented graphically" longdesc="desc62.html" /> <a
-href="desc62a.html" title="description of the image">D</a></p>
-</div>
+      <p id="Fig-7.11">
+        <img
+          src="rdfnetViz.png"
+          alt="The metadata represented graphically"
+          longdesc="desc62.html"
+        />
+        <a href="desc62a.html" title="description of the image">D</a>
+      </p>
+    </div>
 
-<h3><a name="Structured2" id="Structured2">7.2 Using SVG with Other XML
-Languages</a></h3>
+    <h3>
+      <a name="Structured2" id="Structured2"
+        >7.2 Using SVG with Other XML Languages</a
+      >
+    </h3>
 
-<p>The SVG specification allows the use of XML namespaces [<a
-href="#NAMESPACE">NAMESPACE</a>] to introduce elements from other XML
-languages. In particular, the <code>text</code>, <code>title</code> and
-<code>desc</code> elements contain structured content, which can be marked up
-using extensions to the SVG DTD or using another namespace. In the following
-example we include some SMIL [<a href="#SMIL">SMIL</a>] to provide richer
-descriptions of the image in Figure 5.1 (the example assumes that a stylesheet
-provides positioning for the textstream).</p>
+    <p>
+      The SVG specification allows the use of XML namespaces [<a
+        href="#NAMESPACE"
+        >NAMESPACE</a
+      >] to introduce elements from other XML languages. In particular, the
+      <code>text</code>, <code>title</code> and <code>desc</code> elements
+      contain structured content, which can be marked up using extensions to the
+      SVG DTD or using another namespace. In the following example we include
+      some SMIL [<a href="#SMIL">SMIL</a>] to provide richer descriptions of the
+      image in Figure 5.1 (the example assumes that a stylesheet provides
+      positioning for the textstream).
+    </p>
 
-<div class="example">
-<p id="Fig-7.3"><strong>Figure 7.3:</strong> An example of mixing namespaces
-to provide rich multimedia alternative equivalents.</p>
-<pre><code>&lt;?xml-stylesheet href="http://www.w3.org/1999/09/SVG-access/svg-style" 
+    <div class="example">
+      <p id="Fig-7.3">
+        <strong>Figure 7.3:</strong> An example of mixing namespaces to provide
+        rich multimedia alternative equivalents.
+      </p>
+      <pre><code>&lt;?xml-stylesheet href="http://www.w3.org/1999/09/SVG-access/svg-style" 
                  type="text/css"?&gt;
 &lt;svg width="6in" height="4.5in" viewBox="0 0 600 450"
   <strong>xmlns="http://www.w3.org/2000/svg-20000802"</strong>&gt;
@@ -1723,277 +2154,410 @@ to provide rich multimedia alternative equivalents.</p>
   &lt;/g&gt;
   &lt;!-- Rest of the example is cut out. --&gt;
 &lt;/svg&gt;</code> </pre>
-</div>
+    </div>
 
-<h3><a name="DOM" id="DOM">7.3 Supporting Assistive Technologies - Document
-Object Model</a></h3>
+    <h3>
+      <a name="DOM" id="DOM"
+        >7.3 Supporting Assistive Technologies - Document Object Model</a
+      >
+    </h3>
 
-<p>SVG supports a Document Object Model [<a href="#DOM2">DOM2</a>] which
-provides a standard interface (Application Programming Interface or
-<abbr>API</abbr>) to examine and manipulate document structure. It can be used
-by various tools and technologies. DOM is particularly beneficial to assistive
-technologies as they are often used in conjunction with "standard" tools such
-as common user agents. For example, a screen reader which provides voice
-output from a variety of applications can be customized to take advantage of
-the DOM interface. This can provide better access than would be possible if it
-were relying entirely on the standard rendering engine (perhaps a graphics
-editor, or a browser plug-in) for getting the data. An assistive technology
-can also use the DOM interface to change an SVG image to suit the needs of a
-user. Note that the User Agent Accessibility Guidelines require that user
-agents implement the DOM and export interfaces to assistive technologies
-(refer to [<a href="#UAAG10">UAAG10</a>], Checkpoint 1.3, and Guidelines 1 and
-5). See also <a href="#Animations">section 5.2</a> on accessible events -
-these are inherited from the DOM 2 specification [<a
-href="#DOM2">DOM2</a>].</p>
+    <p>
+      SVG supports a Document Object Model [<a href="#DOM2">DOM2</a>] which
+      provides a standard interface (Application Programming Interface or
+      <abbr>API</abbr>) to examine and manipulate document structure. It can be
+      used by various tools and technologies. DOM is particularly beneficial to
+      assistive technologies as they are often used in conjunction with
+      "standard" tools such as common user agents. For example, a screen reader
+      which provides voice output from a variety of applications can be
+      customized to take advantage of the DOM interface. This can provide better
+      access than would be possible if it were relying entirely on the standard
+      rendering engine (perhaps a graphics editor, or a browser plug-in) for
+      getting the data. An assistive technology can also use the DOM interface
+      to change an SVG image to suit the needs of a user. Note that the User
+      Agent Accessibility Guidelines require that user agents implement the DOM
+      and export interfaces to assistive technologies (refer to [<a
+        href="#UAAG10"
+        >UAAG10</a
+      >], Checkpoint 1.3, and Guidelines 1 and 5). See also
+      <a href="#Animations">section 5.2</a> on accessible events - these are
+      inherited from the DOM 2 specification [<a href="#DOM2">DOM2</a>].
+    </p>
 
-<h2><a name="Further" id="Further">8. Further Reading</a></h2>
+    <h2><a name="Further" id="Further">8. Further Reading</a></h2>
 
-<h3><a name="About" id="About">About SVG</a></h3>
+    <h3><a name="About" id="About">About SVG</a></h3>
 
-<p>The first source for information about SVG is the specification itself [<a
-href="#SVG">SVG</a>]. The specification helps accessibility by requiring
-conformance to accessibility guidelines as part of conformance for tools. See
-in particular the appendix on accessibility. In addition, the public Web page
-of the W3C SVG working group [<a href="#SVG-page">SVG-page</a>] is a good
-source of information, including articles and papers about SVG, news of
-implementations, etc.</p>
+    <p>
+      The first source for information about SVG is the specification itself [<a
+        href="#SVG"
+        >SVG</a
+      >]. The specification helps accessibility by requiring conformance to
+      accessibility guidelines as part of conformance for tools. See in
+      particular the appendix on accessibility. In addition, the public Web page
+      of the W3C SVG working group [<a href="#SVG-page">SVG-page</a>] is a good
+      source of information, including articles and papers about SVG, news of
+      implementations, etc.
+    </p>
 
-<h3><a name="About-WAI" id="About-WAI">About the Web Accessibility
-Initiative</a></h3>
+    <h3>
+      <a name="About-WAI" id="About-WAI"
+        >About the Web Accessibility Initiative</a
+      >
+    </h3>
 
-<p>W3C's Web Accessibility Initiative (WAI) addresses accessibility of the Web
-through five complementary activities that:</p>
-<ul>
-  <li>Ensure that the technology of the Web supports accessibility</li>
-  <li>Develop accessibility guidelines</li>
-  <li>Develop tools to facilitate evaluation and repair of Web sites</li>
-  <li>Conduct education and outreach</li>
-  <li>Conduct research and development</li>
-</ul>
+    <p>
+      W3C's Web Accessibility Initiative (WAI) addresses accessibility of the
+      Web through five complementary activities that:
+    </p>
+    <ul>
+      <li>Ensure that the technology of the Web supports accessibility</li>
+      <li>Develop accessibility guidelines</li>
+      <li>Develop tools to facilitate evaluation and repair of Web sites</li>
+      <li>Conduct education and outreach</li>
+      <li>Conduct research and development</li>
+    </ul>
 
-<p>WAI's International Program Office enables partnering of industry,
-disability organizations, accessibility research organizations, and
-governments interested in creating an accessible Web. WAI sponsors include the
-US National Science Foundation and Department of Education's National
-Institute on Disability and Rehabilitation Research; the European Commission's
-DG XIII Telematics Applications Programme for Disabled and Elderly; Government
-of Canada, Industry Canada; IBM, Lotus Development Corporation, Microsoft, and
-Verizon. Additional information on WAI is available at <a
-href="/WAI">http://www.w3.org/WAI</a>.</p>
+    <p>
+      WAI's International Program Office enables partnering of industry,
+      disability organizations, accessibility research organizations, and
+      governments interested in creating an accessible Web. WAI sponsors include
+      the US National Science Foundation and Department of Education's National
+      Institute on Disability and Rehabilitation Research; the European
+      Commission's DG XIII Telematics Applications Programme for Disabled and
+      Elderly; Government of Canada, Industry Canada; IBM, Lotus Development
+      Corporation, Microsoft, and Verizon. Additional information on WAI is
+      available at <a href="/WAI">http://www.w3.org/WAI</a>.
+    </p>
 
-<h3><a name="About-W3C" id="About-W3C">About the World Wide Web Consortium
-(W3C)</a></h3>
+    <h3>
+      <a name="About-W3C" id="About-W3C"
+        >About the World Wide Web Consortium (W3C)</a
+      >
+    </h3>
 
-<p>The W3C was created to lead the Web to its full potential by developing
-common protocols that promote its evolution and ensure its interoperability.
-It is an international industry consortium jointly run by the Laboratory for
-Computer Science (LCS) at Massachusetts Institute of Technology (MIT) in the
-USA, the National Institute for Research in Computer Science and Control
-(INRIA) in France and Keio University in Japan. Services provided by the
-Consortium include: a repository of information about the World Wide Web for
-developers and users; reference code implementations to embody and promote
-standards; and various prototype and sample applications to demonstrate use of
-new technology. In July 2000, 433 organizations are Members of the Consortium.
-For more information about the World Wide Web Consortium, see <a
-href="/">http://www.w3.org/</a>.</p>
-<hr title="Separator from footer" />
+    <p>
+      The W3C was created to lead the Web to its full potential by developing
+      common protocols that promote its evolution and ensure its
+      interoperability. It is an international industry consortium jointly run
+      by the Laboratory for Computer Science (LCS) at Massachusetts Institute of
+      Technology (MIT) in the USA, the National Institute for Research in
+      Computer Science and Control (INRIA) in France and Keio University in
+      Japan. Services provided by the Consortium include: a repository of
+      information about the World Wide Web for developers and users; reference
+      code implementations to embody and promote standards; and various
+      prototype and sample applications to demonstrate use of new technology. In
+      July 2000, 433 organizations are Members of the Consortium. For more
+      information about the World Wide Web Consortium, see
+      <a href="/">http://www.w3.org/</a>.
+    </p>
+    <hr title="Separator from footer" />
 
-<h2><a name="Glossary" id="Glossary">9. Glossary</a></h2>
-<dl>
-  <dt class="glossary"><a name="def-active-element"
-  id="def-active-element"><dfn>Active element</dfn></a></dt>
-    <dd class="glossary">An active element is an element with behaviors that
-      may be <a name="def-activate" id="def-activate"><dfn>
-      activated</dfn></a> (or "triggered") either through the user interface
-      or through scripts. Which elements are active depends on the document
-      language and whether the features are supported by the user agent. In
-      SVG documents, for example, active elements include links and element
-      instances with scripts (event handlers) explicitly associated with them
-      (for example, through the various "on" attributes:
-      <code>onactivate</code> etc). Most systems use the content focus to
-      navigate active elements and identify which is to be activated. An
-      active element's behavior may be triggered through any number of
-      mechanisms, including the mouse, keyboard, an <span
-      class="dfn-instance">Application Programming Interface (API)</span>,
-      etc. The effect of activation depends on the element. For instance, when
-      a link is activated, the user agent generally retrieves the linked
-      resource.</dd>
-  <dt class="glossary"><a name="def-assistive-technology"
-  id="def-assistive-technology"><dfn>Assistive technology</dfn></a></dt>
-    <dd class="glossary">In the context of this document, an assistive
-      technology is a <a href="#def-user-agent">user agent</a> that relies on
-      one or more other user agents to help people with disabilities interact
-      with a computer. For example, screen reader software is an assistive
-      technology because it relies on browsers or other application software
-      to enable Web access, particularly for people with visual and learning
-      disabilities.
-      <p>Examples of assistive technologies that are important in the context
-      of this document include the following:</p>
-      <ul>
-        <li>screen magnifiers, which are used by people with visual
-          disabilities to enlarge and change colors on the screen to improve
-          the visual readability of text and images.</li>
-        <li>screen readers, which are used by people who are blind or have
-          reading disabilities to read textual information through synthesized
-          speech or Braille displays.</li>
-        <li>speech recognition software, which may be used by people who have
-          some physical disabilities.</li>
-        <li>alternative keyboards, which are used by people with certain
-          physical disabilities to simulate the keyboard.</li>
-        <li>alternative pointing devices, which are used by people with
-          certain physical disabilities to simulate mouse pointing and button
-          activations.</li>
-      </ul>
-      <p>Beyond this document, assistive technologies consist of software or
-      hardware that has been specifically designed to assist people with
-      disabilities in carrying out daily activities, such as wheel chairs,
-      reading machines, devices for grasping, text telephones, vibrating
-      pagers, etc.</p>
-    </dd>
-  <dt class="glossary"><a name="def-eq-alt" id="def-eq-alt"><dfn>Equivalent
-  alternatives for content</dfn></a></dt>
-    <dd class="glossary">Since <span class="dfn-instance">rendered
-      content</span> in some forms is not always accessible to users with
-      disabilities, authors must supply equivalent alternatives for content.
-      In the context of this document, the equivalent must fulfill essentially
-      the same function for the person with a disability (at least insofar as
-      is feasible, given the nature of the disability and the state of
-      technology), as the "primary" content does for the person without any
-      disability. For example, the text "The Full Moon" might convey the same
-      information as an image of a full moon when presented to users. Note
-      that equivalent information focuses on fulfilling the same function. If
-      the image is part of a link and understanding the image is crucial to
-      guessing the link target, an equivalent must also give users an idea of
-      the link target.</dd>
-    <dd class="glossary">Equivalent alternatives of content include <a
-      name="def-text-eq" id="def-text-eq"><dfn>text equivalents</dfn></a>
-      (long and short, synchronized and unsynchronized) and non-text
-      equivalents (e.g., an <span class="dfn-instance">auditory
-      description</span>, or a visual track that shows a sign language
-      translation of a written text, etc.). Please also consult the Web
-      Content Accessibility Guidelines 1.0 [<a
-    href="#WCAG10">WCAG10</a>].</dd>
-  <dt class="glossary"><a name="def-user-agent" id="def-user-agent"><dfn>User
-  agent</dfn></a></dt>
-    <dd class="GLOSSARY">A user agent is an application that retrieves and
-      renders Web content, including text, graphics, sounds, video, images,
-      and other content types. A user agent may require additional user agents
-      that handle some types of content, or it may be of this type. For
-      instance, a browser may run a separate program or plug-in to render
-      sound or video. User agents include graphical desktop browsers,
-      multimedia players, text browsers, voice browsers, and <a
-      href="#def-assistive-technology" rel="glossary"
-      title="Definition of Assistive technology"><span
-      class="dfn-instance">assistive technologies</span></a> such as screen
-      readers, screen magnifiers, speech synthesizers, onscreen keyboards, and
-      voice input software.</dd>
-</dl>
-
-<h2><a name="acknowledgments" id="acknowledgments">10.
-Acknowledgements</a></h2>
-
-<p>We would like to thank the following people who have contributed
-substantially to this document:</p>
-
-<p>Judy Brewer, Dan Brickley, Daniel Dardailler, Jon Ferraiolo, Ian Jacobs,
-Chris Lilley, Eric Prud'hommeaux, Ralph Swick, Dave Woolley, the <a
-href="/Graphics/SVG/">SVG Working Group</a> and the <a href="/WAI/PF/">WAI
-Protocols and Formats Working Group</a>.</p>
-
-<h2><a name="references" id="references">11. References</a></h2>
-<dl>
-  <dt><a name="ATAG10" id="ATAG10">[ATAG10]</a></dt>
-    <dd><cite>"<a href="/TR/2000/REC-ATAG10-20000203">Authoring 
-        Tool Accessibility Guidelines
-      1.0</a>"</cite>, J. Treviranus, C. McCathieNevile, I.
- Jacobs, and J. Richards, eds., 3 February 2000. 
- This W3C Recommendation is
- http://www.w3.org/TR/2000/REC-ATAG10-20000203.</dd>
-  <dt><a name="CSS1" id="CSS1">[CSS1]</a></dt>
-    <dd><cite>"<a href="/TR/1999/REC-CSS1-19990111">Cascading Style Sheets Level 1</a>"</cite>, H. Lie and
-      B. Bos, eds., 17 December 1996, revised 11 January 1999. This
-      W3C Recommendation is http://www.w3.org/TR/1999/REC-CSS1-19990111.</dd>
-  <dt><a name="CSS2" id="CSS2">[CSS2]</a></dt>
-    <dd><cite>"<a href="/TR/1998/REC-CSS2-19980512">Cascading Stylesheets Level 2</a>"</cite>, H. Lie, B.
-      Bos, C. Lilley, and I. Jacobs, eds, 12
-   May 1998. This W3C Recommendation is
-   http://www.w3.org/TR/1998/REC-CSS2-19980512.</dd>
-  <dt><a name="CSS-access" id="CSS-access">[CSS-access]</a></dt>
-    <dd><cite>"<a href="/1999/08/NOTE-CSS-access-19990804 ">Accessibility Features of
-      CSS</a>"</cite>, I Jacobs and J. Brewer, eds. This W3C Note is
-      http://www.w3.org/1999/08/NOTE-CSS-access-19990804.</dd>
-  <dt>[<a name="DOM2" id="DOM2">DOM2</a>]</dt>
-    <dd><cite>"<a href="/TR/2000/CR-DOM-Level-2-20000510">Document Object Model
-      Level 2 Specification</a>"</cite>, L. Wood et al., eds., 10 May 2000.
-      This W3C Candidate Recommendation is 
-      http://www.w3.org/TR/2000/CR-DOM-Level-2-20000510; refer also
-      to the <a href="/TR/DOM-Level-2">latest
-      version of DOM 2</a>.</dd>
-  <dt><a name="NAMESPACE" id="NAMESPACE">[NAMESPACE]</a></dt>
-    <dd><cite>"<a href="/TR/1999/REC-xml-names-19990114">Namespaces in XML</a>"</cite>, T. Bray, D.
-      Hollander, and A. Layman, editors, 14 January 1999. This
-      W3C Recommendation is http://www.w3.org/TR/1999/REC-xml-names-19990114.
-  </dd>
-  <dt><a name="RDF" id="RDF">[RDF]</a></dt>
-    <dd><cite>"<a href="/TR/REC-rdf-syntax/">Resource Description Framework (RDF)
-      Model and Syntax</a>"</cite>, O. Lassila and R. Swick, eds., 22 February 
-      1999. This W3C Recommendation is 
-      http://www.w3.org/TR/1999/REC-rdf-syntax-19990222.</dd>
-  <dt><a name="RUDOLF" id="RUDOLF">[RUDOLF]</a></dt>
-    <dd>"<a
-      href="http://www.ilrt.bristol.ac.uk/discovery/rdf-dev/rudolf/rdfviz">Rudolf
-      RDF Viz</a>" an RDF visualization tool. Available at
-      http://www.ilrt.bristol.ac.uk/discovery/rdf-dev/rudolf/rdfviz</dd>
-  <dt><a name="SMIL" id="SMIL">[SMIL]</a></dt>
-    <dd><cite>"<a href="/TR/1998/REC-smil-19980615">Synchronized Multimedia Integration
-      Language (SMIL) 1.0 Specification</a>"</cite>, P. Hoschka, ed., 15 June 1998.
-      This W3C Recommendation is 
-      http://www.w3.org/TR/1998/REC-smil-19980615.</dd>
-  <dt><a name="SMIL-animation" id="SMIL-animation">[SMIL-animation]</a></dt>
-    <dd><cite>"<a href="/TR/2000/WD-smil-animation-20000731/">SMIL animation</a>"</cite>, P. Schmitz and A.
-      Cohen, eds. 31 July 2000. This W3C Working Draft is
-      http://www.w3.org/TR/2000/WD-smil-animation-20000731; refer
-      also to the <a href="/TR/SMIL-animation">latest version of SMIL animation</a>.
-</dd>
-  <dt><a name="SMIL-access" id="SMIL-access">[SMIL-access]</a></dt>
-    <dd><cite>"<a href="/TR/1999/NOTE-SMIL-access-19990921">Accessibility features of SMIL</a>"</cite>, M.
-      Koivunen and I. Jacobs, eds., 21 September 1999. This W3C Note
-      is http://www.w3.org/TR/1999/NOTE-SMIL-access-19990921.
-  </dd>
-  <dt><a name="SVG" id="SVG">[SVG]</a></dt>
-    <dd><cite>"<a href="/TR/2000/CR-SVG-20000802/">Scalable Vector Graphics 1.0 Specification</a>"</cite>,
-      J. Ferraiolo, ed., 2 August 2000. This W3C Candidate Recommendation
-      is http://www.w3.org/TR/2000/CR-SVG-20000802/; refer also to the
-      <a href="http://www.w3.org/TR/SVG">latest 
-      version of the SVG specification</a>, available at
-      http://www.w3.org/TR/SVG.</dd>
-  <dt><a name="SVG-page" id="SVG-page">[SVG-page]</a></dt>
-    <dd>The <a href="/Graphics/SVG/">Scalable Vector Graphics working
-      group</a>'s public page is the public repository of information for the
-      working group. Available at http://www.w3.org/Graphics/SVG</dd>
-  <dt><a name="UAAG101" id="UAAG10">[UAAG10]</a></dt>
-    <dd><cite>"<a href="/WAI/UA/WD-UAAG10-20000728">User Agent Accessibility
-	Guidelines</a>"</cite>, J. Gunderson and I. Jacobs, eds., 28 July 2000.
-       This W3C Working Draft is
-      http://www.w3.org/WAI/UA/WD-UAAG10-20000728.</dd>
-  <dt><a name="USENOTE" id="USENOTE">[USENOTE]</a></dt>
-    <dd><cite>"<a href="/WAI/EO/Drafts/WAI-access-profiles">How People with
-      Disabilities Use the Web</a>"</cite>, J. Brewer and I. Jacobs,
-      eds. The latest version of this W3C Working Draft is available at
-      http://www.w3.org/WAI/EO/Drafts/WAI-access-profiles.</dd>
-  <dt><a name="WCAG10" id="WCAG10">[WCAG10]</a></dt>
-    <dd><cite>"<a href="/TR/1999/WAI-WEBCONTENT-19990505 ">Web Content Accessibility Guidelines 1.0</a>"</cite>, G.
-      Vanderheiden, W. Chisholm, and I. Jacobs, eds., 5 May 1999.
-      This W3C Recommendation is 
-      http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505.</dd>
-  <dt><a name="XLINK" id="XLINK">[XLINK]</a></dt>
-    <dd><cite>"<a href="/TR/2000/CR-xlink-20000703/">XML Linking Language</a>"</cite>,
-      S. DeRose et al., eds., 3 July 2000. This
-      W3C Candidate Recommendation is 
-      http://www.w3.org/TR/2000/CR-xlink-20000703; refer
-      also to the <a href="/TR/xlink">latest version of the
-      XLink specification</a>.
+    <h2><a name="Glossary" id="Glossary">9. Glossary</a></h2>
+    <dl>
+      <dt class="glossary">
+        <a name="def-active-element" id="def-active-element"
+          ><dfn>Active element</dfn></a
+        >
+      </dt>
+      <dd class="glossary">
+        An active element is an element with behaviors that may be
+        <a name="def-activate" id="def-activate"><dfn> activated</dfn></a> (or
+        "triggered") either through the user interface or through scripts. Which
+        elements are active depends on the document language and whether the
+        features are supported by the user agent. In SVG documents, for example,
+        active elements include links and element instances with scripts (event
+        handlers) explicitly associated with them (for example, through the
+        various "on" attributes: <code>onactivate</code> etc). Most systems use
+        the content focus to navigate active elements and identify which is to
+        be activated. An active element's behavior may be triggered through any
+        number of mechanisms, including the mouse, keyboard, an
+        <span class="dfn-instance">Application Programming Interface (API)</span
+        >, etc. The effect of activation depends on the element. For instance,
+        when a link is activated, the user agent generally retrieves the linked
+        resource.
       </dd>
-</dl>
-<script type="application/javascript" src="https://www.w3.org/scripts/TR/fixup.js"></script></body>
+      <dt class="glossary">
+        <a name="def-assistive-technology" id="def-assistive-technology"
+          ><dfn>Assistive technology</dfn></a
+        >
+      </dt>
+      <dd class="glossary">
+        In the context of this document, an assistive technology is a
+        <a href="#def-user-agent">user agent</a> that relies on one or more
+        other user agents to help people with disabilities interact with a
+        computer. For example, screen reader software is an assistive technology
+        because it relies on browsers or other application software to enable
+        Web access, particularly for people with visual and learning
+        disabilities.
+        <p>
+          Examples of assistive technologies that are important in the context
+          of this document include the following:
+        </p>
+        <ul>
+          <li>
+            screen magnifiers, which are used by people with visual disabilities
+            to enlarge and change colors on the screen to improve the visual
+            readability of text and images.
+          </li>
+          <li>
+            screen readers, which are used by people who are blind or have
+            reading disabilities to read textual information through synthesized
+            speech or Braille displays.
+          </li>
+          <li>
+            speech recognition software, which may be used by people who have
+            some physical disabilities.
+          </li>
+          <li>
+            alternative keyboards, which are used by people with certain
+            physical disabilities to simulate the keyboard.
+          </li>
+          <li>
+            alternative pointing devices, which are used by people with certain
+            physical disabilities to simulate mouse pointing and button
+            activations.
+          </li>
+        </ul>
+        <p>
+          Beyond this document, assistive technologies consist of software or
+          hardware that has been specifically designed to assist people with
+          disabilities in carrying out daily activities, such as wheel chairs,
+          reading machines, devices for grasping, text telephones, vibrating
+          pagers, etc.
+        </p>
+      </dd>
+      <dt class="glossary">
+        <a name="def-eq-alt" id="def-eq-alt"
+          ><dfn>Equivalent alternatives for content</dfn></a
+        >
+      </dt>
+      <dd class="glossary">
+        Since <span class="dfn-instance">rendered content</span> in some forms
+        is not always accessible to users with disabilities, authors must supply
+        equivalent alternatives for content. In the context of this document,
+        the equivalent must fulfill essentially the same function for the person
+        with a disability (at least insofar as is feasible, given the nature of
+        the disability and the state of technology), as the "primary" content
+        does for the person without any disability. For example, the text "The
+        Full Moon" might convey the same information as an image of a full moon
+        when presented to users. Note that equivalent information focuses on
+        fulfilling the same function. If the image is part of a link and
+        understanding the image is crucial to guessing the link target, an
+        equivalent must also give users an idea of the link target.
+      </dd>
+      <dd class="glossary">
+        Equivalent alternatives of content include
+        <a name="def-text-eq" id="def-text-eq"><dfn>text equivalents</dfn></a>
+        (long and short, synchronized and unsynchronized) and non-text
+        equivalents (e.g., an
+        <span class="dfn-instance">auditory description</span>, or a visual
+        track that shows a sign language translation of a written text, etc.).
+        Please also consult the Web Content Accessibility Guidelines 1.0 [<a
+          href="#WCAG10"
+          >WCAG10</a
+        >].
+      </dd>
+      <dt class="glossary">
+        <a name="def-user-agent" id="def-user-agent"><dfn>User agent</dfn></a>
+      </dt>
+      <dd class="GLOSSARY">
+        A user agent is an application that retrieves and renders Web content,
+        including text, graphics, sounds, video, images, and other content
+        types. A user agent may require additional user agents that handle some
+        types of content, or it may be of this type. For instance, a browser may
+        run a separate program or plug-in to render sound or video. User agents
+        include graphical desktop browsers, multimedia players, text browsers,
+        voice browsers, and
+        <a
+          href="#def-assistive-technology"
+          rel="glossary"
+          title="Definition of Assistive technology"
+          ><span class="dfn-instance">assistive technologies</span></a
+        >
+        such as screen readers, screen magnifiers, speech synthesizers, onscreen
+        keyboards, and voice input software.
+      </dd>
+    </dl>
+
+    <h2>
+      <a name="acknowledgments" id="acknowledgments">10. Acknowledgements</a>
+    </h2>
+
+    <p>
+      We would like to thank the following people who have contributed
+      substantially to this document:
+    </p>
+
+    <p>
+      Judy Brewer, Dan Brickley, Daniel Dardailler, Jon Ferraiolo, Ian Jacobs,
+      Chris Lilley, Eric Prud'hommeaux, Ralph Swick, Dave Woolley, the
+      <a href="/Graphics/SVG/">SVG Working Group</a> and the
+      <a href="/WAI/PF/">WAI Protocols and Formats Working Group</a>.
+    </p>
+
+    <h2><a name="references" id="references">11. References</a></h2>
+    <dl>
+      <dt><a name="ATAG10" id="ATAG10">[ATAG10]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/2000/REC-ATAG10-20000203"
+            >Authoring Tool Accessibility Guidelines 1.0</a
+          >"</cite
+        >, J. Treviranus, C. McCathieNevile, I. Jacobs, and J. Richards, eds., 3
+        February 2000. This W3C Recommendation is
+        http://www.w3.org/TR/2000/REC-ATAG10-20000203.
+      </dd>
+      <dt><a name="CSS1" id="CSS1">[CSS1]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/1999/REC-CSS1-19990111"
+            >Cascading Style Sheets Level 1</a
+          >"</cite
+        >, H. Lie and B. Bos, eds., 17 December 1996, revised 11 January 1999.
+        This W3C Recommendation is http://www.w3.org/TR/1999/REC-CSS1-19990111.
+      </dd>
+      <dt><a name="CSS2" id="CSS2">[CSS2]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/1998/REC-CSS2-19980512"
+            >Cascading Stylesheets Level 2</a
+          >"</cite
+        >, H. Lie, B. Bos, C. Lilley, and I. Jacobs, eds, 12 May 1998. This W3C
+        Recommendation is http://www.w3.org/TR/1998/REC-CSS2-19980512.
+      </dd>
+      <dt><a name="CSS-access" id="CSS-access">[CSS-access]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/1999/08/NOTE-CSS-access-19990804 "
+            >Accessibility Features of CSS</a
+          >"</cite
+        >, I Jacobs and J. Brewer, eds. This W3C Note is
+        http://www.w3.org/1999/08/NOTE-CSS-access-19990804.
+      </dd>
+      <dt>[<a name="DOM2" id="DOM2">DOM2</a>]</dt>
+      <dd>
+        <cite
+          >"<a href="/TR/2000/CR-DOM-Level-2-20000510"
+            >Document Object Model Level 2 Specification</a
+          >"</cite
+        >, L. Wood et al., eds., 10 May 2000. This W3C Candidate Recommendation
+        is http://www.w3.org/TR/2000/CR-DOM-Level-2-20000510; refer also to the
+        <a href="/TR/DOM-Level-2">latest version of DOM 2</a>.
+      </dd>
+      <dt><a name="NAMESPACE" id="NAMESPACE">[NAMESPACE]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/1999/REC-xml-names-19990114">Namespaces in XML</a
+          >"</cite
+        >, T. Bray, D. Hollander, and A. Layman, editors, 14 January 1999. This
+        W3C Recommendation is http://www.w3.org/TR/1999/REC-xml-names-19990114.
+      </dd>
+      <dt><a name="RDF" id="RDF">[RDF]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/REC-rdf-syntax/"
+            >Resource Description Framework (RDF) Model and Syntax</a
+          >"</cite
+        >, O. Lassila and R. Swick, eds., 22 February 1999. This W3C
+        Recommendation is http://www.w3.org/TR/1999/REC-rdf-syntax-19990222.
+      </dd>
+      <dt><a name="RUDOLF" id="RUDOLF">[RUDOLF]</a></dt>
+      <dd>
+        "<a href="http://www.ilrt.bristol.ac.uk/discovery/rdf-dev/rudolf/rdfviz"
+          >Rudolf RDF Viz</a
+        >" an RDF visualization tool. Available at
+        http://www.ilrt.bristol.ac.uk/discovery/rdf-dev/rudolf/rdfviz
+      </dd>
+      <dt><a name="SMIL" id="SMIL">[SMIL]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/1998/REC-smil-19980615"
+            >Synchronized Multimedia Integration Language (SMIL) 1.0
+            Specification</a
+          >"</cite
+        >, P. Hoschka, ed., 15 June 1998. This W3C Recommendation is
+        http://www.w3.org/TR/1998/REC-smil-19980615.
+      </dd>
+      <dt><a name="SMIL-animation" id="SMIL-animation">[SMIL-animation]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/2000/WD-smil-animation-20000731/">SMIL animation</a
+          >"</cite
+        >, P. Schmitz and A. Cohen, eds. 31 July 2000. This W3C Working Draft is
+        http://www.w3.org/TR/2000/WD-smil-animation-20000731; refer also to the
+        <a href="/TR/SMIL-animation">latest version of SMIL animation</a>.
+      </dd>
+      <dt><a name="SMIL-access" id="SMIL-access">[SMIL-access]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/1999/NOTE-SMIL-access-19990921"
+            >Accessibility features of SMIL</a
+          >"</cite
+        >, M. Koivunen and I. Jacobs, eds., 21 September 1999. This W3C Note is
+        http://www.w3.org/TR/1999/NOTE-SMIL-access-19990921.
+      </dd>
+      <dt><a name="SVG" id="SVG">[SVG]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/2000/CR-SVG-20000802/"
+            >Scalable Vector Graphics 1.0 Specification</a
+          >"</cite
+        >, J. Ferraiolo, ed., 2 August 2000. This W3C Candidate Recommendation
+        is http://www.w3.org/TR/2000/CR-SVG-20000802/; refer also to the
+        <a href="http://www.w3.org/TR/SVG"
+          >latest version of the SVG specification</a
+        >, available at http://www.w3.org/TR/SVG.
+      </dd>
+      <dt><a name="SVG-page" id="SVG-page">[SVG-page]</a></dt>
+      <dd>
+        The
+        <a href="/Graphics/SVG/">Scalable Vector Graphics working group</a>'s
+        public page is the public repository of information for the working
+        group. Available at http://www.w3.org/Graphics/SVG
+      </dd>
+      <dt><a name="UAAG101" id="UAAG10">[UAAG10]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/WAI/UA/WD-UAAG10-20000728"
+            >User Agent Accessibility Guidelines</a
+          >"</cite
+        >, J. Gunderson and I. Jacobs, eds., 28 July 2000. This W3C Working
+        Draft is http://www.w3.org/WAI/UA/WD-UAAG10-20000728.
+      </dd>
+      <dt><a name="USENOTE" id="USENOTE">[USENOTE]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/WAI/EO/Drafts/WAI-access-profiles"
+            >How People with Disabilities Use the Web</a
+          >"</cite
+        >, J. Brewer and I. Jacobs, eds. The latest version of this W3C Working
+        Draft is available at
+        http://www.w3.org/WAI/EO/Drafts/WAI-access-profiles.
+      </dd>
+      <dt><a name="WCAG10" id="WCAG10">[WCAG10]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/1999/WAI-WEBCONTENT-19990505 "
+            >Web Content Accessibility Guidelines 1.0</a
+          >"</cite
+        >, G. Vanderheiden, W. Chisholm, and I. Jacobs, eds., 5 May 1999. This
+        W3C Recommendation is http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505.
+      </dd>
+      <dt><a name="XLINK" id="XLINK">[XLINK]</a></dt>
+      <dd>
+        <cite
+          >"<a href="/TR/2000/CR-xlink-20000703/">XML Linking Language</a
+          >"</cite
+        >, S. DeRose et al., eds., 3 July 2000. This W3C Candidate
+        Recommendation is http://www.w3.org/TR/2000/CR-xlink-20000703; refer
+        also to the
+        <a href="/TR/xlink">latest version of the XLink specification</a>.
+      </dd>
+    </dl>
+    <script
+      type="application/javascript"
+      src="https://www.w3.org/scripts/TR/fixup.js"
+    ></script>
+  </body>
 </html>

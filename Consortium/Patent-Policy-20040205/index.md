@@ -1,10 +1,8 @@
 [<img src="http://www.w3.org/Icons/w3c_home" alt="W3C" width="72" height="48" />](http://www.w3.org/)
 
-<span id="title">W3C Patent Policy</span>
-=========================================
+# <span id="title">W3C Patent Policy</span>
 
-<span id="subtitle">5 February 2004</span>
-------------------------------------------
+## <span id="subtitle">5 February 2004</span>
 
 This version:  
 <http://www.w3.org/Consortium/Patent-Policy-20040205/>
@@ -24,15 +22,13 @@ See also [**translations**](translations.html).
 
 [Copyright](http://www.w3.org/Consortium/Legal/ipr-notice#Copyright) © 2000-2004 [W3C](http://www.w3.org/)<sup>®</sup> ([MIT](http://www.csail.mit.edu/), [ERCIM](http://www.ercim.org/), [Keio](http://www.keio.ac.jp/)), All Rights Reserved. W3C [liability](http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer), [trademark](http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks), [document use](http://www.w3.org/Consortium/Legal/copyright-documents) and [software licensing](http://www.w3.org/Consortium/Legal/copyright-software) rules apply.
 
-------------------------------------------------------------------------
+---
 
-<span id="Abstract">Abstract</span>
------------------------------------
+## <span id="Abstract">Abstract</span>
 
 The W3C Patent Policy governs the handling of patents in the process of producing Web standards. The goal of this policy is to assure that Recommendations produced under this policy can be implemented on a Royalty-Free (RF) basis.
 
-<span id="Status">Status of This Document</span>
-------------------------------------------------
+## <span id="Status">Status of This Document</span>
 
 **This document has been updated with editorial corrections in** the [5 February 2004 (updated 1 August 2017) W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20170801/).
 
@@ -48,59 +44,57 @@ The English version of this policy is the only normative version.
 
 For implementation material and other informative documents, please see the [W3C Patent Policy Overview](http://www.w3.org/Consortium/Patent/).
 
-<span id="toc">Table of Contents</span>
----------------------------------------
+## <span id="toc">Table of Contents</span>
 
--   [Abstract](#Abstract)
--   [Status of This Document](#Status)
--   [1. Overview](#sec-Overview)
--   [2. Licensing Goals for W3C Recommendations](#sec-Licensing)
--   [3. Licensing Obligations of Working Group Participants](#sec-Obligations)
-    -   [3.1. W3C RF Licensing Requirements for All Working Group Participants](#sec-W3C-RF-license)
-    -   [3.2. Limitation on Licensing Requirement for Non-Participating Members](#sec-non-participants)
-    -   [3.3. Licensing Commitments in W3C Submissions](#sec-submissions)
-    -   [3.4. Note on Licensing Commitments for Invited Experts](#sec-invited)
--   [4. Exclusion From W3C RF Licensing Requirements](#sec-Exclusion)
-    -   [4.1. Exclusion With Continued Participation](#sec-exclusion-with)
-    -   [4.2. Exclusion and Resignation From the Working Group](#sec-exclusion-resign)
-    -   [4.3. Joining an Already Established Working Group](#sec-join)
-    -   [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#sec-exclude-app)
-    -   [4.5. Exclusion Mechanics](#sec-exclude-mech)
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#sec-Requirements)
--   [6. Disclosure](#sec-Disclosure)
-    -   [6.1. Disclosure Requirements](#sec-disclosure-requirements)
-    -   [6.2. Disclosure Exemption](#sec-disclosure-exemption)
-    -   [6.3. Disclosure Requests](#sec-disclosure-requests)
-    -   [6.4. Disclosure Contents](#sec-disclosure-contents)
-    -   [6.5. Disclosure of Laid-Open or Published Applications](#sec-published)
-    -   [6.6. Disclosure of Pending, Unpublished Applications](#sec-pending)
-    -   [6.7. Good Faith Disclosure Standards](#sec-good-faith)
-    -   [6.8. Timing of Disclosure Obligations](#sec-disclosure-timing)
-    -   [6.9. Termination of Disclosure Obligations](#sec-disclosure-termination)
-    -   [6.10. Disclosure Obligations of Invited Experts](#sec-disclosure-invite)
-    -   [6.11. Disclosures to Be Publicly Available on Recommendation Track](#sec-disclosure-public)
--   [7. Exception Handling](#sec-Exception)
-    -   [7.1. PAG Formation](#sec-PAG-formation)
-    -   [7.2. PAG Formation After a Recommendation Is Issued](#sec-PAG-post-Recommendation)
-    -   [7.3. PAG Composition](#sec-PAG-composition)
-    -   [7.4. PAG Procedures](#sec-PAG-procedures)
-        -   [7.4.1. PAG Formation Timing](#sec-PAG-procedures-timing)
-        -   [7.4.2. PAG Charter Requirements](#sec-PAG-procedures-charter)
-    -   [7.5. PAG Conclusion](#sec-PAG-conclude)
-        -   [7.5.1. Possible PAG Conclusions](#sec-PAG-conclude-possible)
-        -   [7.5.2. PAG Outcome](#sec-PAG-conclude-outcome)
-        -   [7.5.3. Procedure for Considering Alternate Licensing Terms](#sec-PAG-conclude-alternate)
--   [8. Definition of Essential Claims](#def-essential)
-    -   [8.1. Essential Claims](#def-essential-definition)
-    -   [8.2. Limitations on Scope of Essential Claims](#def-essential-exclusions)
-    -   [8.3. Definition of Normative, Optional and Informative](#def-essential-requirements)
--   [References](#sec-References)
--   [Acknowledgments](#sec-acknowledgments)
+- [Abstract](#Abstract)
+- [Status of This Document](#Status)
+- [1. Overview](#sec-Overview)
+- [2. Licensing Goals for W3C Recommendations](#sec-Licensing)
+- [3. Licensing Obligations of Working Group Participants](#sec-Obligations)
+  - [3.1. W3C RF Licensing Requirements for All Working Group Participants](#sec-W3C-RF-license)
+  - [3.2. Limitation on Licensing Requirement for Non-Participating Members](#sec-non-participants)
+  - [3.3. Licensing Commitments in W3C Submissions](#sec-submissions)
+  - [3.4. Note on Licensing Commitments for Invited Experts](#sec-invited)
+- [4. Exclusion From W3C RF Licensing Requirements](#sec-Exclusion)
+  - [4.1. Exclusion With Continued Participation](#sec-exclusion-with)
+  - [4.2. Exclusion and Resignation From the Working Group](#sec-exclusion-resign)
+  - [4.3. Joining an Already Established Working Group](#sec-join)
+  - [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#sec-exclude-app)
+  - [4.5. Exclusion Mechanics](#sec-exclude-mech)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#sec-Requirements)
+- [6. Disclosure](#sec-Disclosure)
+  - [6.1. Disclosure Requirements](#sec-disclosure-requirements)
+  - [6.2. Disclosure Exemption](#sec-disclosure-exemption)
+  - [6.3. Disclosure Requests](#sec-disclosure-requests)
+  - [6.4. Disclosure Contents](#sec-disclosure-contents)
+  - [6.5. Disclosure of Laid-Open or Published Applications](#sec-published)
+  - [6.6. Disclosure of Pending, Unpublished Applications](#sec-pending)
+  - [6.7. Good Faith Disclosure Standards](#sec-good-faith)
+  - [6.8. Timing of Disclosure Obligations](#sec-disclosure-timing)
+  - [6.9. Termination of Disclosure Obligations](#sec-disclosure-termination)
+  - [6.10. Disclosure Obligations of Invited Experts](#sec-disclosure-invite)
+  - [6.11. Disclosures to Be Publicly Available on Recommendation Track](#sec-disclosure-public)
+- [7. Exception Handling](#sec-Exception)
+  - [7.1. PAG Formation](#sec-PAG-formation)
+  - [7.2. PAG Formation After a Recommendation Is Issued](#sec-PAG-post-Recommendation)
+  - [7.3. PAG Composition](#sec-PAG-composition)
+  - [7.4. PAG Procedures](#sec-PAG-procedures)
+    - [7.4.1. PAG Formation Timing](#sec-PAG-procedures-timing)
+    - [7.4.2. PAG Charter Requirements](#sec-PAG-procedures-charter)
+  - [7.5. PAG Conclusion](#sec-PAG-conclude)
+    - [7.5.1. Possible PAG Conclusions](#sec-PAG-conclude-possible)
+    - [7.5.2. PAG Outcome](#sec-PAG-conclude-outcome)
+    - [7.5.3. Procedure for Considering Alternate Licensing Terms](#sec-PAG-conclude-alternate)
+- [8. Definition of Essential Claims](#def-essential)
+  - [8.1. Essential Claims](#def-essential-definition)
+  - [8.2. Limitations on Scope of Essential Claims](#def-essential-exclusions)
+  - [8.3. Definition of Normative, Optional and Informative](#def-essential-requirements)
+- [References](#sec-References)
+- [Acknowledgments](#sec-acknowledgments)
 
-------------------------------------------------------------------------
+---
 
-<span id="sec-Overview">1. Overview</span>
-------------------------------------------
+## <span id="sec-Overview">1. Overview</span>
 
 This patent policy describes:
 
@@ -113,15 +107,13 @@ This patent policy describes:
 
 All numbered sections of this document (1-8), as well as hyperlinks to material within and outside of this document, are normative.
 
-<span id="sec-Licensing">2. Licensing Goals for W3C Recommendations</span>
---------------------------------------------------------------------------
+## <span id="sec-Licensing">2. Licensing Goals for W3C Recommendations</span>
 
 In order to promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented on a [Royalty-Free](#def-RF) (RF) basis. Subject to the conditions of this policy, W3C will not approve a Recommendation if it is aware that [Essential Claims](#def-essential) exist which are not available on Royalty-Free terms.
 
 To this end, Working Group charters will include a reference to this policy and a requirement that specifications produced by the Working Group will be implementable on an RF basis, to the best ability of the Working Group and the Consortium.
 
-<span id="sec-Obligations">3. Licensing Obligations of Working Group Participants</span>
-----------------------------------------------------------------------------------------
+## <span id="sec-Obligations">3. Licensing Obligations of Working Group Participants</span>
 
 The following obligations shall apply to all participants in W3C Working Groups. These obligations will be referenced from each Working Group charter and Calls for Participation.
 
@@ -141,8 +133,7 @@ At the time a [W3C Member Submission](http://www.w3.org/2003/12/Process-20031224
 
 Invited experts participate in Working Groups in their individual capacity. An invited expert is only obliged to license those claims over which s/he exercises control.
 
-<span id="sec-Exclusion">4. Exclusion From W3C RF Licensing Requirements</span>
--------------------------------------------------------------------------------
+## <span id="sec-Exclusion">4. Exclusion From W3C RF Licensing Requirements</span>
 
 Under the following conditions, Working Group participants may exclude specifically identified and disclosed Essential Claims from the overall W3C RF licensing requirements:
 
@@ -182,8 +173,7 @@ If option 2 is chosen, the effect of the exclusion will be limited to the identi
 
 A Call for Exclusion will be issued by the Working Group Team Contact indicating the relevant documents against which participants must make exclusion statements as well as precise dates and deadlines for making any exclusions. In case there is any dispute about the dates for exclusion, the dates indicated in the Call for Exclusion are controlling. The Call for Exclusion will be sent to the Working Group mailing list and the Advisory Committee Representatives of all organizations participating in the Working Group. In the event that a Working Group issues more than one Recommendation-track document, the exclusion procedure will be employed for each series of documents individually.
 
-<span id="sec-Requirements">5. W3C Royalty-Free (RF) Licensing Requirements</span>
-----------------------------------------------------------------------------------
+## <span id="sec-Requirements">5. W3C Royalty-Free (RF) Licensing Requirements</span>
 
 With respect to a Recommendation developed under this policy, a <span id="def-RF">W3C Royalty-Free</span> license shall mean a non-assignable, non-sublicensable license to make, have made, use, sell, have sold, offer to sell, import, and distribute and dispose of implementations of the Recommendation that:
 
@@ -211,8 +201,7 @@ With respect to a Recommendation developed under this policy, a <span id="def-RF
 
 All Working Group participants are encouraged to provide a contact from which licensing information can be obtained and other relevant licensing information. Any such information will be made publicly available along with the patent disclosures for the Working Group in question.
 
-<span id="sec-Disclosure">6. Disclosure</span>
-----------------------------------------------
+## <span id="sec-Disclosure">6. Disclosure</span>
 
 ### <span id="sec-disclosure-requirements">6.1. Disclosure Requirements</span>
 
@@ -273,8 +262,7 @@ Invited experts or members of the public participating in a Working Group must c
 
 Patent disclosure information for each specification on the Recommendation track will be made public along with each public Working Draft issued by the Working Group.
 
-<span id="sec-Exception">7. Exception Handling</span>
------------------------------------------------------
+## <span id="sec-Exception">7. Exception Handling</span>
 
 ### <span id="sec-PAG-formation">7.1. PAG Formation</span>
 
@@ -288,12 +276,12 @@ A PAG may also be convened in the event Essential Claims are discovered after a 
 
 The PAG is composed of:
 
--   Advisory Committee Representatives of each W3C Member organization participating in the Working Group (or alternate designated by the AC Rep)
--   Working Group Team Contact
--   W3C counsel
--   Working Group Chair, *ex officio*
--   Domain Leader responsible for the Working Group
--   Others suggested by the Working Group Chair and/or the Team with the approval of the Director
+- Advisory Committee Representatives of each W3C Member organization participating in the Working Group (or alternate designated by the AC Rep)
+- Working Group Team Contact
+- W3C counsel
+- Working Group Chair, _ex officio_
+- Domain Leader responsible for the Working Group
+- Others suggested by the Working Group Chair and/or the Team with the approval of the Director
 
 W3C Member participants in the PAG should be authorized to represent their organization's views on patent licensing issues. Any participant in the PAG may also be represented by legal counsel, though this is not required. Invited experts are not entitled to participate in the PAG, though the PAG may chose to invite any qualified experts who would be able to assist the PAG in its determinations.
 
@@ -309,9 +297,9 @@ The PAG will be convened by the Working Group Team Contact, based on a charter d
 
 The charter should include:
 
--   clear goals for the PAG, especially a statement of the question(s) the PAG is to answer.
--   duration.
--   confidentiality status, which must follow the underlying Working Group (Member only, public, etc.).
+- clear goals for the PAG, especially a statement of the question(s) the PAG is to answer.
+- duration.
+- confidentiality status, which must follow the underlying Working Group (Member only, public, etc.).
 
 The PAG charter must specify deadlines for completion of individual work items it takes on. The PAG, once convened, may propose changes to its charter as appropriate, to be accepted based on consensus of the PAG participants. The Team will choose a member of the PAG to serve as Chair. A single PAG may exist for the duration of the Working Group with which it is associated if needed.
 
@@ -338,18 +326,17 @@ Outcomes 4, 5 or 6 require an Advisory Committee review and Director's decision.
 
 After having made every effort to resolve the conflict through options 1, 2, and 3 under 7.5.1, the PAG, by [consensus](/2003/12/Process-20031224/policies.html#Consensus) \[[PROCESS](#ref-PROCESS), section 3.3\], may propose that specifically identified patented technology be included in the Recommendation even though such claims are not available according to the W3C RF licensing requirements of this policy. The PAG Proposal must explain:
 
--   why the chartered goals of the Working Group cannot be met without inclusion of the identified technology;
--   how the proposed licensing terms will be consistent with widespread adoption.
+- why the chartered goals of the Working Group cannot be met without inclusion of the identified technology;
+- how the proposed licensing terms will be consistent with widespread adoption.
 
 The PAG Proposal must include:
 
--   a complete list of claims and licensing terms of the proposed alternative arrangements; and,
--   a proposed charter for the Working Group, unless the Recommendation has been issued and no new work is required.
+- a complete list of claims and licensing terms of the proposed alternative arrangements; and,
+- a proposed charter for the Working Group, unless the Recommendation has been issued and no new work is required.
 
 If the Director determines that the PAG Proposal is the best alternative consistent with the W3C mission, the interests of the Web community, and is clearly justified despite the expressed preference of the W3C Membership for RF licensing, then the Proposal shall be circulated for public comment and Advisory Committee review. The Director may also circulate the Proposal for Advisory Committee review without such endorsement. Should the PAG Proposal be rejected, then either sub-paragraph 4 or 5 of section 7.5.3 will apply as appropriate, without further action of the Advisory Committee. Members of the Working Group who are bound to RF terms are not released from their obligations by virtue of the PAG Proposal alone. As with any newly chartered Working Group, new commitments must be made, along with possible exclusions. In order to expedite the process, the PAG Proposal should consider whether additional claims would be excluded under the new charter and include such information in the PAG Proposal.
 
-<span id="def-essential">8. Definition of Essential Claims</span>
------------------------------------------------------------------
+## <span id="def-essential">8. Definition of Essential Claims</span>
 
 ### <span id="def-essential-definition">8.1. Essential Claims</span>
 
@@ -361,19 +348,18 @@ The following are expressly excluded from and shall not be deemed to constitute 
 
 1.  any claims other than as set forth above even if contained in the same patent as Essential Claims; and
 2.  claims which would be infringed only by:
-    -   portions of an implementation that are not specified in the normative portions of the Recommendation, or
-    -   enabling technologies that may be necessary to make or use any product or portion thereof that complies with the Recommendation and are not themselves expressly set forth in the Recommendation (e.g., semiconductor manufacturing technology, compiler technology, object-oriented technology, basic operating system technology, and the like); or
-    -   the implementation of technology developed elsewhere and merely incorporated by reference in the body of the Recommendation.
+    - portions of an implementation that are not specified in the normative portions of the Recommendation, or
+    - enabling technologies that may be necessary to make or use any product or portion thereof that complies with the Recommendation and are not themselves expressly set forth in the Recommendation (e.g., semiconductor manufacturing technology, compiler technology, object-oriented technology, basic operating system technology, and the like); or
+    - the implementation of technology developed elsewhere and merely incorporated by reference in the body of the Recommendation.
 3.  design patents and design registrations.
 
 ### <span id="def-essential-requirements">8.3. Definition of Normative, Optional and Informative</span>
 
 For purposes of this definition, the normative portions of the Recommendation shall be deemed to include only architectural and interoperability requirements. Optional features in the RFC 2119 \[[KEYWORDS](#ref-KEYWORDS)\] sense are considered normative unless they are specifically identified as informative. Implementation examples or any other material that merely illustrate the requirements of the Recommendation are informative, rather than normative.
 
-------------------------------------------------------------------------
+---
 
-<span id="sec-References">References</span>
--------------------------------------------
+## <span id="sec-References">References</span>
 
 <span id="ref-KEYWORDS">\[KEYWORDS\]</span>  
 [Key words for use in RFCs to Indicate Requirement Levels](http://www.rfc-editor.org/rfc/rfc2119.txt), S. Bradner. The Internet Society, March 1997. This RFC is available by FTP at ftp://ftp.rfc-editor.org/in-notes/rfc2119.txt.
@@ -381,8 +367,7 @@ For purposes of this definition, the normative portions of the Recommendation sh
 <span id="ref-PROCESS">\[PROCESS\]</span>  
 [World Wide Web Consortium Process Document](http://www.w3.org/2004/02/Process-20040205/), I. Jacobs, Editor. W3C, 5 February 2004. The [latest version](http://www.w3.org/Consortium/Process) of this document is http://www.w3.org/Consortium/Process.
 
-<span id="sec-acknowledgments">Acknowledgments</span>
------------------------------------------------------
+## <span id="sec-acknowledgments">Acknowledgments</span>
 
 W3C's evolving patent policy has been informed by help, comments, criticism, and occasional rants by W3C Members, many voices from the independent developer and Open Source/Free Software communities, W3C Advisory Committee Representatives, the W3C Team, the W3C Advisory Board, and participants in the Patent Policy Working Group. Those who have participated in the beta testing of this policy, leading up to the [W3C Current Patent Practice](http://www.w3.org/TR/patent-practice) document, have also made an invaluable contributions to shaping this document in a manner that will help in achieving W3C's mission.
 

@@ -1,691 +1,996 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-<meta name="generator" content=
-"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
-<meta http-equiv="Content-Type" content=
-"text/html; charset=utf-8" />
-<title>Discussion of Alternative Schema Languages and Type System
-Support in WSDL 2.0</title>
+  <head>
+    <meta
+      name="generator"
+      content="HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+      Discussion of Alternative Schema Languages and Type System Support in WSDL
+      2.0
+    </title>
 
-<style type="text/css">
-/*<![CDATA[*/
-code           { font-family: monospace; }
+    <style type="text/css">
+      /*<![CDATA[*/
+      code {
+        font-family: monospace;
+      }
 
-div.constraint,
-div.issue,
-div.note,
-div.notice     { margin-left: 2em; }
+      div.constraint,
+      div.issue,
+      div.note,
+      div.notice {
+        margin-left: 2em;
+      }
 
-dt.label       { display: run-in; }
+      dt.label {
+        display: run-in;
+      }
 
-li, p           { margin-top: 0.3em;
-                 margin-bottom: 0.3em; }
+      li,
+      p {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+      }
 
-.diff-chg       { background-color: yellow; }
-.diff-del       { background-color: red; text-decoration: line-through;}
-.diff-add       { background-color: lime; }
+      .diff-chg {
+        background-color: yellow;
+      }
+      .diff-del {
+        background-color: red;
+        text-decoration: line-through;
+      }
+      .diff-add {
+        background-color: lime;
+      }
 
-table          { empty-cells: show; }
+      table {
+        empty-cells: show;
+      }
 
-table caption {
+      table caption {
         font-weight: normal;
         font-style: italic;
         text-align: left;
-        margin-bottom: .5em;
-}
+        margin-bottom: 0.5em;
+      }
 
-div.issue {
-  color: red;
-}
+      div.issue {
+        color: red;
+      }
 
-div.exampleInner pre { margin-left: 1em;
-                       margin-top: 0em; margin-bottom: 0em}
-div.exampleOuter {border: 4px double gray;
-                  margin: 0em; padding: 0em}
-div.exampleInner { background-color: #d5dee3;
-                   border-top-width: 4px;
-                   border-top-style: double;
-                   border-top-color: #d3d3d3;
-                   border-bottom-width: 4px;
-                   border-bottom-style: double;
-                   border-bottom-color: #d3d3d3;
-                   padding: 4px; margin: 0em }
-div.exampleWrapper { margin: 4px }
-div.exampleHeader { font-weight: bold;
-                    margin: 4px}
-/*]]>*/
-</style>
-<link rel="stylesheet" type="text/css" href=
-"http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css" />
-<link rel="alternate" title="PDF" href="wsdl20-altschemalangs.pdf"
-type="application/pdf" />
-<link rel="alternate" title="PostScript" href=
-"wsdl20-altschemalangs.ps" type="application/postscript" />
-<link rel="alternate" title="XML" href="wsdl20-altschemalangs.xml"
-type="text/xml" />
-<link rel="alternate" title="plain text" href=
-"wsdl20-altschemalangs.txt" type="text/plain" />
-<link rel="contents" href="#contents" />
-</head>
-<body>
-<div class="head">
-<p><a href="http://www.w3.org/"><img src=
-"http://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width=
-"72" /></a></p>
-<h1>Discussion of Alternative Schema Languages and Type System
-Support in WSDL 2.0</h1>
-<h2 id="h2-title">W3C Working Group Note 17 August 2005</h2>
-<dl>
-<dt id="dt-this-version">This version:</dt>
-<dd><a href=
-"http://www.w3.org/TR/2005/NOTE-wsdl20-altschemalangs-20050817">http://www.w3.org/TR/2005/NOTE-wsdl20-altschemalangs-20050817</a></dd>
-<dt>Latest version:</dt>
-<dd><a href=
-"http://www.w3.org/TR/wsdl20-altschemalangs">http://www.w3.org/TR/wsdl20-altschemalangs</a></dd>
-<dt>Editors:</dt>
-<dd>Amelia A. Lewis, TIBCO Software, Inc.</dd>
-<dd>Bijan Parsia, Maryland Information and Network Dynamics
-Laboratory at the University of Maryland at College Park</dd>
-</dl>
-<p>This document is also available in these non-normative formats:
-<a href="wsdl20-altschemalangs.pdf">PDF</a>, <a href=
-"wsdl20-altschemalangs.ps">PostScript</a>, <a href=
-"wsdl20-altschemalangs.xml">XML</a>, and&nbsp;<a href=
-"wsdl20-altschemalangs.txt">plain text</a>.</p>
-<p class="copyright"><a href=
-"http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>&nbsp;©&nbsp;2005&nbsp;<a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup>
-(<a href="http://www.csail.mit.edu/"><acronym title=
-"Massachusetts Institute of Technology">MIT</acronym></a>, <a href=
-"http://www.ercim.org/"><acronym title=
-"European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
-<a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved.
-W3C <a href=
-"http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
-<a href=
-"http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>
-and <a href=
-"http://www.w3.org/Consortium/Legal/copyright-documents">document
-use</a> rules apply.</p>
-</div>
-<hr />
-<div>
-<h2><a name="abstract" id="abstract">Abstract</a></h2>
-<p>This document captures the result of discussions by the Web
-Services Description Working Group regarding WSDL 2.0 type system
-extensibilty at the time of its publication. The Working Group
-normatively defines the use of XML Schema 1.0 as a type system in
-the WSDL 2.0 Core specification. This document sketches out the
-basics of extensions for Document Type Definitions (DTDs) and Relax
-NG.</p>
-</div>
-<div>
-<h2><a name="status" id="status">Status of this Document</a></h2>
-<p><em>This section describes the status of this document at the
-time of its publication. Other documents may supersede this
-document. A list of current W3C publications and the latest
-revision of this technical report can be found in the <a href=
-"http://www.w3.org/TR/">W3C technical reports index</a> at
-http://www.w3.org/TR/.</em></p>
-<p>This document is a <a href=
-"http://www.w3.org/2004/02/Process-20040205/tr.html#q74">W3C
-Working Group Note</a>. It has been produced by the <a href=
-"http://www.w3.org/2002/ws/desc/">Web Services Description Working
-Group</a>, which is part of the <a href=
-"http://www.w3.org/2002/ws/Activity">Web Services Activity</a>.</p>
-<p>The material in this note was previously published as an
-Appendix of the <a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050510">Web Services
-Description Language (WSDL) 2.0: Core Language Last Call</a>
-specification. In response to Last Call comments, the Working Group
-agreed to remove this material from that specification and publish
-it separately as a Working Group Note. Current versions of <a href=
-"http://www.w3.org/TR/wsdl20">WSDL 2.0 Core</a> no longer contain
-this material. This publication differs from the previous material
-in that it also includes some expanded discussion of issues that
-should be given consideration by type system extension
-designers.</p>
-<p>No further work on this topic is planned at this point. Errors
-in this document can be reported to the public <a href=
-"mailto:public-ws-desc-comments@w3.org">public-ws-desc-comments@w3.org</a>
-mailing list (<a href=
-"http://lists.w3.org/Archives/Public/public-ws-desc-comments/">public
-archive</a>).</p>
-<p>Publication as a Working Group Note does not imply endorsement
-by the W3C Membership. This is a draft document and may be updated,
-replaced or obsoleted by other documents at any time. It is
-inappropriate to cite this document as other than work in
-progress.</p>
-</div>
-<hr />
-<div class="toc">
-<h2><a name="shortcontents" id="shortcontents">Short Table of
-Contents</a></h2>
-<p class="toc">1. <a href="#intro">Introduction</a><br />
-2. <a href="#multipleschemalangs">Issues facing multiple schema
-languages/type systems</a><br />
-3. <a href="#examples">Examples of Specifications of Extension
-Elements for Alternative Schema Language Support</a><br />
-A. <a href="#References">References</a><br />
-B. <a href="#acknowledgments">Acknowledgements</a>
-(Non-Normative)<br /></p>
-</div>
-<hr />
-<div class="toc">
-<h2><a name="contents" id="contents">Table of Contents</a></h2>
-<p class="toc">1. <a href="#intro">Introduction</a><br />
-2. <a href="#multipleschemalangs">Issues facing multiple schema
-languages/type systems</a><br />
-3. <a href="#examples">Examples of Specifications of Extension
-Elements for Alternative Schema Language Support</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;3.1 <a href="#dtd">DTD</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.1 <a href=
-"#dtd-namespaceaii">namespace attribute information item</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.2 <a href=
-"#dtd-locationaii">location attribute information item</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.3 <a href=
-"#dtd-ref">References to Element Definitions</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;3.2 <a href="#relax">RELAX NG</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.1 <a href=
-"#import-relax">Importing RELAX NG</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.1.1
-<a href="#relax-import-nsaii">ns attribute information
-item</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.1.2
-<a href="#relax-import-hrefaii">href attribute information
-item</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.2 <a href=
-"#relax-embed">Embedding RELAX NG</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.2.1
-<a href="#relax-embed-nsaii">ns attribute information
-item</a><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.3 <a href=
-"#relax-ref">References to Element Declarations</a><br /></p>
-<h3><a name="appendix" id="appendix">Appendices</a></h3>
-<p class="toc">A. <a href="#References">References</a><br />
-B. <a href="#acknowledgments">Acknowledgements</a>
-(Non-Normative)<br /></p>
-</div>
-<hr />
-<div class="body">
-<div class="div1">
-<h2><a name="intro" id="intro"></a>1. Introduction</h2>
-<p>WSDL 2.0: Core Language [<cite><a href="#WSDL">WSDL 2.0
-Core</a></cite>] describes Web Service interaction in terms of
-exchanges of typed messages. WSDL only provides general support for
-type systems based on the XML Infoset [<cite><a href=
-"#XMLInfoSet">XML Information Set</a></cite>] and specific support
-for the W3C XML Schema Description Language [<cite><a href=
-"#XMLSchemaP1">XML Schema: Structures</a></cite>]. Describing
-messages with WSDL using schema languages other than XML Schema or
-non-XML Infoset type systems requires extending the WSDL component
-model. While the Web Services Description Working Group has not
-defined any such extensions, there were discussions in the Working
-Group about how those extensions might be defined and used. This
-document is the result of those disucussions and captures part of
-the Working Group's thinking about schema language and type system
-extensibilty at the time of its publication.</p>
-</div>
-<div class="div1">
-<h2><a name="multipleschemalangs" id="multipleschemalangs"></a>2.
-Issues facing multiple schema languages/type systems</h2>
-<p>Without the use of an extension, a WSDL document can only use a
-single type system, XML Schema. If extensions are defined to
-support alternative schema languages or non-XML type systems, then
-issues regarding the <em>mixing</em> of type systems in a single
-document arise. Part 1 does <em>not</em> define the behavior of
-mixed type system documents, so it is incumbent on extension
-authors to do so.</p>
-<p>For example, suppose a WSDL author used a extension supporting
-Relax NG alongside the native support for XML Schema. Further
-suppose that there is an element component which has a definition
-in both the referenced XML Schema and Relax NG schema. There are
-several possibilities for interpreting such a document:</p>
-<ul>
-<li>
-<p>Multiple definitions in distinct type systems is always an
-error</p>
-</li>
-<li>
-<p>Multiple definitions must be in some sense equivalent, for
-example, if XML Schema type and an Relax NG production validate
-exactly the same set of Infoset fragments, otherwise, an error</p>
-</li>
-<li>
-<p>Multiple definitions are legal, and are interpreted as a union
-type constraint</p>
-</li>
-</ul>
-<p>The last interpretation suggests a further general possibility:
-being able to define a union type (or other compound type) that
-spans distinct type systems (and, to further generalize, where the
-unioned types had distinct QName identifiers). The <a href=
-"http://www.w3.org/2001/sw/DataAccess/">Data Access Working
-Group</a> had a use case wherein their return message could either
-be in <a href=
-"http://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML</a>, which
-cannot have an interesting XML Schema but does have an interesting
-Relax NG schema, and their <a href=
-"http://www.w3.org/TR/rdf-sparql-XMLres/">other results format</a>,
-which they would prefer to specify with an XML Schema. This example
-is little artificial, as the Data Access Working Group could easily
-describe the entire results format in Relax NG.</p>
-<p>The first interpretation is most in the spirit of WSDL and was
-strongly preferred by the Working Group. Since WSDL extensibility
-points are generally quite unrestricted, the Working Group did not
-try to enforce the first option, but the general belief of the
-Working Group was that the other options were confusing and
-unwise.</p>
-</div>
-<div class="div1">
-<h2><a name="examples" id="examples"></a>3. Examples of
-Specifications of Extension Elements for Alternative Schema
-Language Support</h2>
-<p>This section contains two examples of specifications of
-extension elements for alternative schema language support. Please
-note that those examples did not receive any implementation
-testing.</p>
-<div class="div2">
-<h3><a name="dtd" id="dtd"></a>3.1 DTD</h3>
-<p>A Document Type Definition (DTD) as defined in [<cite><a href=
-"#XML10">XML 1.0</a></cite>] may be used as the schema language for
-WSDL. It may not be embedded; it must be imported. A namespace must
-be assigned. DTD types appear in the {<a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#property-Description.elementdeclarations">element
-declarations</a>} property of the <a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-Description">
-Description</a> component and may be referenced from the
-<code>wsdl:input</code> , <code>wsdl:output</code> and
-<code>wsdl:fault</code> elements using the <code>element</code>
-<em>attribute information item</em>.</p>
-<p>The prefix, dtd, used throughout the following is mapped to the
-namespace URI "http://www.w3.org/2005/08/wsdl/dtd-import".</p>
-<p>The <code>dtd:import</code> <em>element information item</em>
-references an external Document Type Definition, and has the
-following Infoset properties:</p>
-<ul>
-<li>
-<p>A [local name] of import.</p>
-</li>
-<li>
-<p>A [namespace name] of
-"http://www.w3.org/2005/08/wsdl/dtd-import".</p>
-</li>
-<li>
-<p>One or two <em>attribute information item</em>s, as follows:</p>
-<ul>
-<li>
-<p>A REQUIRED <code>namespace</code> <em>attribute information
-item</em> as described below.</p>
-</li>
-<li>
-<p>An OPTIONAL <code>location</code> <em>attribute information
-item</em> as described below.</p>
-</li>
-</ul>
-</li>
-</ul>
-<div class="div3">
-<h4><a name="dtd-namespaceaii" id="dtd-namespaceaii"></a>3.1.1
-<code>namespace</code> <em>attribute information item</em></h4>
-<p>The <code>namespace</code> <em>attribute information item</em>
-sets the namespace to be used with all imported element definitions
-described in the DTD. It has the following Infoset properties:</p>
-<ul>
-<li>
-<p>A [local name] of namespace.</p>
-</li>
-<li>
-<p>A [namespace name] which has no value.</p>
-</li>
-</ul>
-<p>The type of the <code>namespace</code> <em>attribute information
-item</em> is <em>xs:anyURI</em>.</p>
-<p>The WSDL author should ensure that a prefix is associated with
-the namespace at the proper scope (probably document scope).</p>
-</div>
-<div class="div3">
-<h4><a name="dtd-locationaii" id="dtd-locationaii"></a>3.1.2
-<code>location</code> <em>attribute information item</em></h4>
-<p>The <code>location</code> <em>attribute information item</em>,
-if present, provides a hint to the processor as to where the DTD
-may be located. Caching and cataloging technologies may provide
-better information than this hint. The <code>location</code>
-<em>attribute information item</em> has the following Infoset
-properties:</p>
-<ul>
-<li>
-<p>A [local name] of location.</p>
-</li>
-<li>
-<p>A [namespace name] which has no value.</p>
-</li>
-</ul>
-<p>The type of the <code>location</code> <em>attribute information
-item</em> is <em>xs:anyURI</em>.</p>
-</div>
-<div class="div3">
-<h4><a name="dtd-ref" id="dtd-ref"></a>3.1.3 References to Element
-Definitions</h4>
-<p>The <code>element</code> <em>attribute information item</em>
-MUST be used when referring to an element definition
-(&lt;!ELEMENT&gt;) from a <a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceMessageReference">
-Interface Message Reference</a> component; referring to an element
-definition from a <a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceFault">
-Interface Fault</a> component is similar. The value of the element
-definition MUST correspond to the content of the
-<code>namespace</code> <em>attribute information item</em> of the
-<code>dtd:import</code> <em>element information item</em>. The
-local name part must correspond to an element defined in the
-DTD.</p>
-<p>Note that this pattern does not attempt to make DTDs
-namespace-aware. It applies namespaces externally, in the import
-phase.</p>
-</div>
-</div>
-<div class="div2">
-<h3><a name="relax" id="relax"></a>3.2 RELAX NG</h3>
-<p>A RELAX NG [<cite><a href="#RelaxNG">Relax NG</a></cite>] schema
-may be used as the schema language for WSDL. It may be embedded or
-imported; import is preferred. A namespace must be specified; if an
-imported schema specifies one, then the [actual value] of the
-<code>namespace</code> <em>attribute information item</em> in the
-<code>import</code> <em>element information item</em> must match
-the specified namespace. RELAX NG provides both type definitions
-and element declarations, the latter appears in the {<a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#property-Description.elementdeclarations">element
-declarations</a>} property of <a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-Description">
-Description</a> component respectively. The following discussion
-supplies the prefix rng which is mapped to the URI
-"http://www.relaxng.org/ns/structure/1.0".</p>
-<div class="div3">
-<h4><a name="import-relax" id="import-relax"></a>3.2.1 Importing
-RELAX NG</h4>
-<p>Importing a RELAX NG schema uses the rng:include mechanism
-defined by RNG, with restrictions on its syntax and semantics. A
-child <em>element information item</em> of the <code>types</code>
-<em>element information item</em> is defined with the Infoset
-properties as follows:</p>
-<ul>
-<li>
-<p>A [local name] of include.</p>
-</li>
-<li>
-<p>A [namespace name] of
-"http://www.relaxng.org/ns/structure/1.0".</p>
-</li>
-<li>
-<p>Two <em>attribute information item</em>s as follows:</p>
-<ul>
-<li>
-<p>A REQUIRED <code>ns</code> <em>attribute information item</em>
-as described below.</p>
-</li>
-<li>
-<p>An OPTIONAL <code>href</code> <em>attribute information
-item</em> as described below.</p>
-</li>
-<li>
-<p>Additional <em>attribute information item</em>s as defined by
-the RNG specification.</p>
-</li>
-</ul>
-</li>
-</ul>
-<p>Note that WSDL restricts the <code>rng:include</code>
-<em>element information item</em> to be empty. That is, it cannot
-redefine <code>rng:start</code> and <code>rng:define</code>
-<em>element information item</em>s; it may be used solely to import
-a schema.</p>
-<div class="div4">
-<h5><a name="relax-import-nsaii" id=
-"relax-import-nsaii"></a>3.2.1.1 <code>ns</code> <em>attribute
-information item</em></h5>
-<p>The <code>ns</code> <em>attribute information item</em> defines
-the namespace of the type and element definitions imported from the
-referenced schema. If the referenced schema contains an
-<code>ns</code> <em>attribute information item</em> on its
-<code>grammar</code> <em>element information item</em>, then the
-values of these two <em>attribute information item</em>s must be
-identical. If the imported grammar does not have an <code>ns</code>
-<em>attribute information item</em> then the namespace specified
-here is applied to all components of the schema as if it did
-contain such an <em>attribute information item</em>. The
-<code>ns</code> <em>attribute information item</em> contains the
-following Infoset properties:</p>
-<ul>
-<li>
-<p>A [local name] of ns.</p>
-</li>
-<li>
-<p>A [namespace name] which has no value.</p>
-</li>
-</ul>
-<p>The type of the <code>ns</code> <em>attribute information
-item</em> is <em>xs:anyURI</em>.</p>
-</div>
-<div class="div4">
-<h5><a name="relax-import-hrefaii" id=
-"relax-import-hrefaii"></a>3.2.1.2 <code>href</code> <em>attribute
-information item</em></h5>
-<p>The <code>href</code> <em>attribute information item</em> must
-be present, according to the rules of the RNG specification.
-However, WSDL allows it to be empty, and considers it only a hint.
-Caching and cataloging technologies may provide better information
-that this hint. The <code>href</code> <em>attribute information
-item</em> has the following Infoset properties:</p>
-<ul>
-<li>
-<p>A [local name] of href.</p>
-</li>
-<li>
-<p>A [namespace name] which has no value.</p>
-</li>
-</ul>
-<p>The type of the <code>href</code> <em>attribute information
-item</em> is <em>xs:anyURI</em>.</p>
-</div>
-</div>
-<div class="div3">
-<h4><a name="relax-embed" id="relax-embed"></a>3.2.2 Embedding
-RELAX NG</h4>
-<p>Embedding an RNG schema uses the existing top-level
-<code>rng:grammar</code> <em>element information item</em>. It may
-be viewed as simply cutting and pasting an existing, stand-alone
-schema to a location inside the <code>wsdl:types</code> <em>element
-information item</em>. The <code>rng:grammar</code> <em>element
-information item</em> has the following Infoset properties:</p>
-<ul>
-<li>
-<p>A [local name] of grammar.</p>
-</li>
-<li>
-<p>A [namespace name] of
-"http://www.relaxng.org/ns/structure/1.0".</p>
-</li>
-<li>
-<p>A REQUIRED <code>ns</code> <em>attribute information item</em>s
-as described below.</p>
-</li>
-<li>
-<p>Additional <em>attribute information item</em>s as specified for
-the <code>rng:grammar</code> <em>element information item</em> in
-the RNG specification.</p>
-</li>
-<li>
-<p>Child <em>element information item</em>s as specified for the
-<code>rng:grammar</code> <em>element information item</em> in the
-RNG specification.</p>
-</li>
-</ul>
-<div class="div4">
-<h5><a name="relax-embed-nsaii" id="relax-embed-nsaii"></a>3.2.2.1
-<code>ns</code> <em>attribute information item</em></h5>
-<p>The <code>ns</code> <em>attribute information item</em> defines
-the namespace of the type and element definitions embedded in this
-schema. WSDL modifies the RNG definition of the
-<code>rng:grammar</code> <em>element information item</em> to make
-this <em>attribute information item</em> required. The
-<code>ns</code> <em>attribute information item</em> has the
-following Infoset properties:</p>
-<ul>
-<li>
-<p>A [local name] of ns.</p>
-</li>
-<li>
-<p>A [namespace name] which has no value.</p>
-</li>
-</ul>
-<p>The type of the <code>ns</code> <em>attribute information
-item</em> is <em>xs:anyURI</em>.</p>
-</div>
-</div>
-<div class="div3">
-<h4><a name="relax-ref" id="relax-ref"></a>3.2.3 References to
-Element Declarations</h4>
-<p>Whether embedded or imported, the element definitions present in
-a schema may be referenced from a <a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceMessageReference">
-Interface Message Reference</a> or <a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceFault">
-Interface Fault</a> component.</p>
-<p>A named rng:define definition MUST NOT be referenced from the
-<a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceMessageReference">
-Interface Message Reference</a> or <a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceFault">
-Interface Fault</a> components.</p>
-<p>A named Relax NG element declaration MAY be referenced from a
-<a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceMessageReference">
-Interface Message Reference</a> or <a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceFault">
-Interface Fault</a> component. The QName is constructed from the
-namespace (<code>ns</code> <em>attribute information item</em>) of
-the schema and the content of the <code>name</code> <em>attribute
-information item</em> of the <code>element</code> <em>element
-information item</em> An <code>element</code> <em>attribute
-information item</em> MUST NOT be used to refer to an
-<code>rng:define</code> <em>element information item</em>.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="back">
-<div class="div1">
-<h2><a name="References" id="References"></a>A. References</h2>
-<dl>
-<dt class="label"><a name="RelaxNG" id="RelaxNG"></a>[Relax
-NG]</dt>
-<dd><cite><a href="http://www.relaxng.org/spec-20011203.html">RELAX
-NG Specification</a></cite>, J. Clark, MURATA Makoto, editors.
-OASIS Committee Specification, 3 December 2001.</dd>
-<dt class="label"><a name="WSDL" id="WSDL"></a>[WSDL 2.0 Core]</dt>
-<dd><cite><a href=
-"http://www.w3.org/TR/2005/WD-wsdl20-20050803">Web Services
-Description Language (WSDL) Version 2.0 Part 1: Core
-Language</a></cite>, R. Chinnici, J-J. Moreau, A. Ryman, S.
-Weerawarana, Editors. World Wide Web Consortium, 3 August 2005.
-This version of the Web Services Description Language Version 2.0
-Core specification is http://www.w3.org/TR/2005/WD-wsdl20-20050803.
-The <a href="http://www.w3.org/TR/wsdl20">latest version of "Web
-Services Description Language (WSDL) Version 2.0 Part 1: Core
-Language"</a> is available at http://www.w3.org/TR/wsdl20.</dd>
-<dt class="label"><a name="XML10" id="XML10"></a>[XML 1.0]</dt>
-<dd><cite><a href=
-"http://www.w3.org/TR/2004/REC-xml-20040204/">Extensible Markup
-Language (XML) 1.0 (Third Edition)</a></cite>, T. Bray, J. Paoli,
-C. M. Sperberg-McQueen, E. Maler, and F. Yergeau, Editors. World
-Wide Web Consortium, 4 February 2004. This version of the XML 1.0
-Recommendation is http://www.w3.org/TR/2004/REC-xml-20040204/. The
-<a href="http://www.w3.org/TR/REC-xml">latest version of
-"Extensible Markup Language (XML) 1.0"</a> is available at
-http://www.w3.org/TR/REC-xml.</dd>
-<dt class="label"><a name="XMLInfoSet" id="XMLInfoSet"></a>[XML
-Information Set]</dt>
-<dd><cite><a href=
-"http://www.w3.org/TR/2004/REC-xml-infoset-20040204">XML
-Information Set (Second Edition)</a></cite>, J. Cowan and R. Tobin,
-Editors. World Wide Web Consortium, 4 February 2004. This version
-of the XML Information Set Recommendation is
-http://www.w3.org/TR/2004/REC-xml-infoset-20040204. The <a href=
-"http://www.w3.org/TR/xml-infoset">latest version of "XML
-Information Set"</a> is available at
-http://www.w3.org/TR/xml-infoset.</dd>
-<dt class="label"><a name="XMLSchemaP1" id="XMLSchemaP1"></a>[XML
-Schema: Structures]</dt>
-<dd><cite><a href=
-"http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/">XML Schema
-Part 1: Structures (Second Edition)</a></cite>, H. Thompson, D.
-Beech, M. Maloney, and N. Mendelsohn, Editors. World Wide Web
-Consortium, 28 October 2004. This version of the XML Schema Part 1
-Recommendation is
-http://www.w3.org/TR/2004/REC-xmlschema-1-20041028. The <a href=
-"http://www.w3.org/TR/xmlschema-1/">latest version of "XML Schema
-Part 1: Structures"</a> is available at
-http://www.w3.org/TR/xmlschema-1.</dd>
-</dl>
-</div>
-<div class="div1">
-<h2><a name="acknowledgments" id="acknowledgments"></a>B.
-Acknowledgements (Non-Normative)</h2>
-<p>This document is the work of the <a href=
-"http://www.w3.org/2002/ws/desc/">W3C Web Service Description
-Working Group</a>.</p>
-<p>Members of the Working Group are (at the time of writing, and by
-alphabetical order): Allen Brookes (Rogue Wave Softwave), Dave
-Chappell (Sonic Software), Helen Chen (Agfa-Gevaert N. V.), Roberto
-Chinnici (Sun Microsystems), Kendall Clark (University of
-Maryland), Ugo Corda (SeeBeyond), Glen Daniels (Sonic Software),
-Paul Downey (British Telecommunications), Youenn Fablet (Canon),
-Hugo Haas (W3C), Tom Jordahl (Macromedia), Anish Karmarkar (Oracle
-Corporation), Jacek Kopecky (DERI Innsbruck at the
-Leopold-Franzens-Universität Innsbruck, Austria), Amelia Lewis
-(TIBCO Software, Inc.), Michael Liddy (Education.au Ltd.), Kevin
-Canyang Liu (SAP AG), Jonathan Marsh (Microsoft Corporation),
-Josephine Micallef (SAIC - Telcordia Technologies), Jeff
-Mischkinsky (Oracle Corporation), Dale Moberg (Cyclone Commerce),
-Jean-Jacques Moreau (Canon), Mark Nottingham (BEA Systems, Inc.),
-David Orchard (BEA Systems, Inc.), Bijan Parsia (University of
-Maryland), Tony Rogers (Computer Associates), Arthur Ryman (IBM),
-Adi Sakala (IONA Technologies), Asir Vedamuthu (Microsoft
-Corporation), Sanjiva Weerawarana (Independent), Ümit Yalçınalp
-(SAP AG).</p>
-<p>Previous members were: Lily Liu (webMethods, Inc.), Don Wright
-(Lexmark), Joyce Yang (Oracle Corporation), Daniel Schutzer
-(Citigroup), Dave Solo (Citigroup), Stefano Pogliani (Sun
-Microsystems), William Stumbo (Xerox), Stephen White (SeeBeyond),
-Barbara Zengler (DaimlerChrysler Research and Technology), Tim
-Finin (University of Maryland), Laurent De Teneuille (L'Echangeur),
-Johan Pauhlsson (L'Echangeur), Mark Jones (AT&amp;T), Steve Lind
-(AT&amp;T), Sandra Swearingen (U.S. Department of Defense, U.S. Air
-Force), Philippe Le Hégaret (W3C), Jim Hendler (University of
-Maryland), Dietmar Gaertner (Software AG), Michael Champion
-(Software AG), Don Mullen (TIBCO Software, Inc.), Steve Graham
-(Global Grid Forum), Steve Tuecke (Global Grid Forum), Michael
-Mahan (Nokia), Bryan Thompson (Hicks &amp; Associates), Ingo Melzer
-(DaimlerChrysler Research and Technology), Sandeep Kumar (Cisco
-Systems), Alan Davies (SeeBeyond), Jacek Kopecky (Systinet), Mike
-Ballantyne (Electronic Data Systems), Mike Davoren (W. W.
-Grainger), Dan Kulp (IONA Technologies), Mike McHugh (W. W.
-Grainger), Michael Mealling (Verisign), Waqar Sadiq (Electronic
-Data Systems), Yaron Goland (BEA Systems, Inc.), Ümit Yalçınalp
-(Oracle Corporation), Peter Madziak (Agfa-Gevaert N. V.), Jeffrey
-Schlimmer (Microsoft Corporation), Hao He (The Thomson
-Corporation), Erik Ackerman (Lexmark), Jerry Thrasher (Lexmark),
-Prasad Yendluri (webMethods, Inc.), William Vambenepe
-(Hewlett-Packard Company), David Booth (W3C), Sanjiva Weerawarana
-(IBM), Charlton Barreto (webMethods, Inc.), Asir Vedamuthu
-(webMethods, Inc.), Igor Sedukhin (Computer Associates), Martin
-Gudgin (Microsoft Corporation).</p>
-<p>The people who have contributed to <a href=
-"http://lists.w3.org/Archives/Public/www-ws-desc/">discussions on
-www-ws-desc@w3.org</a> are also gratefully acknowledged.</p>
-</div>
-</div>
-<script src="https://www.w3.org/scripts/TR/fixup.js"></script></body>
+      div.exampleInner pre {
+        margin-left: 1em;
+        margin-top: 0em;
+        margin-bottom: 0em;
+      }
+      div.exampleOuter {
+        border: 4px double gray;
+        margin: 0em;
+        padding: 0em;
+      }
+      div.exampleInner {
+        background-color: #d5dee3;
+        border-top-width: 4px;
+        border-top-style: double;
+        border-top-color: #d3d3d3;
+        border-bottom-width: 4px;
+        border-bottom-style: double;
+        border-bottom-color: #d3d3d3;
+        padding: 4px;
+        margin: 0em;
+      }
+      div.exampleWrapper {
+        margin: 4px;
+      }
+      div.exampleHeader {
+        font-weight: bold;
+        margin: 4px;
+      }
+      /*]]>*/
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"
+    />
+    <link
+      rel="alternate"
+      title="PDF"
+      href="wsdl20-altschemalangs.pdf"
+      type="application/pdf"
+    />
+    <link
+      rel="alternate"
+      title="PostScript"
+      href="wsdl20-altschemalangs.ps"
+      type="application/postscript"
+    />
+    <link
+      rel="alternate"
+      title="XML"
+      href="wsdl20-altschemalangs.xml"
+      type="text/xml"
+    />
+    <link
+      rel="alternate"
+      title="plain text"
+      href="wsdl20-altschemalangs.txt"
+      type="text/plain"
+    />
+    <link rel="contents" href="#contents" />
+  </head>
+  <body>
+    <div class="head">
+      <p>
+        <a href="http://www.w3.org/"
+          ><img
+            src="http://www.w3.org/Icons/w3c_home"
+            alt="W3C"
+            height="48"
+            width="72"
+        /></a>
+      </p>
+      <h1>
+        Discussion of Alternative Schema Languages and Type System Support in
+        WSDL 2.0
+      </h1>
+      <h2 id="h2-title">W3C Working Group Note 17 August 2005</h2>
+      <dl>
+        <dt id="dt-this-version">This version:</dt>
+        <dd>
+          <a
+            href="http://www.w3.org/TR/2005/NOTE-wsdl20-altschemalangs-20050817"
+            >http://www.w3.org/TR/2005/NOTE-wsdl20-altschemalangs-20050817</a
+          >
+        </dd>
+        <dt>Latest version:</dt>
+        <dd>
+          <a href="http://www.w3.org/TR/wsdl20-altschemalangs"
+            >http://www.w3.org/TR/wsdl20-altschemalangs</a
+          >
+        </dd>
+        <dt>Editors:</dt>
+        <dd>Amelia A. Lewis, TIBCO Software, Inc.</dd>
+        <dd>
+          Bijan Parsia, Maryland Information and Network Dynamics Laboratory at
+          the University of Maryland at College Park
+        </dd>
+      </dl>
+      <p>
+        This document is also available in these non-normative formats:
+        <a href="wsdl20-altschemalangs.pdf">PDF</a>,
+        <a href="wsdl20-altschemalangs.ps">PostScript</a>,
+        <a href="wsdl20-altschemalangs.xml">XML</a>, and&nbsp;<a
+          href="wsdl20-altschemalangs.txt"
+          >plain text</a
+        >.
+      </p>
+      <p class="copyright">
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
+          >Copyright</a
+        >&nbsp;©&nbsp;2005&nbsp;<a href="http://www.w3.org/"
+          ><acronym title="World Wide Web Consortium">W3C</acronym></a
+        ><sup>®</sup> (<a href="http://www.csail.mit.edu/"
+          ><acronym title="Massachusetts Institute of Technology"
+            >MIT</acronym
+          ></a
+        >,
+        <a href="http://www.ercim.org/"
+          ><acronym
+            title="European Research Consortium for Informatics and Mathematics"
+            >ERCIM</acronym
+          ></a
+        >, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer"
+          >liability</a
+        >,
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks"
+          >trademark</a
+        >
+        and
+        <a href="http://www.w3.org/Consortium/Legal/copyright-documents"
+          >document use</a
+        >
+        rules apply.
+      </p>
+    </div>
+    <hr />
+    <div>
+      <h2><a name="abstract" id="abstract">Abstract</a></h2>
+      <p>
+        This document captures the result of discussions by the Web Services
+        Description Working Group regarding WSDL 2.0 type system extensibilty at
+        the time of its publication. The Working Group normatively defines the
+        use of XML Schema 1.0 as a type system in the WSDL 2.0 Core
+        specification. This document sketches out the basics of extensions for
+        Document Type Definitions (DTDs) and Relax NG.
+      </p>
+    </div>
+    <div>
+      <h2><a name="status" id="status">Status of this Document</a></h2>
+      <p>
+        <em
+          >This section describes the status of this document at the time of its
+          publication. Other documents may supersede this document. A list of
+          current W3C publications and the latest revision of this technical
+          report can be found in the
+          <a href="http://www.w3.org/TR/">W3C technical reports index</a> at
+          http://www.w3.org/TR/.</em
+        >
+      </p>
+      <p>
+        This document is a
+        <a href="http://www.w3.org/2004/02/Process-20040205/tr.html#q74"
+          >W3C Working Group Note</a
+        >. It has been produced by the
+        <a href="http://www.w3.org/2002/ws/desc/"
+          >Web Services Description Working Group</a
+        >, which is part of the
+        <a href="http://www.w3.org/2002/ws/Activity">Web Services Activity</a>.
+      </p>
+      <p>
+        The material in this note was previously published as an Appendix of the
+        <a href="http://www.w3.org/TR/2005/WD-wsdl20-20050510"
+          >Web Services Description Language (WSDL) 2.0: Core Language Last
+          Call</a
+        >
+        specification. In response to Last Call comments, the Working Group
+        agreed to remove this material from that specification and publish it
+        separately as a Working Group Note. Current versions of
+        <a href="http://www.w3.org/TR/wsdl20">WSDL 2.0 Core</a> no longer
+        contain this material. This publication differs from the previous
+        material in that it also includes some expanded discussion of issues
+        that should be given consideration by type system extension designers.
+      </p>
+      <p>
+        No further work on this topic is planned at this point. Errors in this
+        document can be reported to the public
+        <a href="mailto:public-ws-desc-comments@w3.org"
+          >public-ws-desc-comments@w3.org</a
+        >
+        mailing list (<a
+          href="http://lists.w3.org/Archives/Public/public-ws-desc-comments/"
+          >public archive</a
+        >).
+      </p>
+      <p>
+        Publication as a Working Group Note does not imply endorsement by the
+        W3C Membership. This is a draft document and may be updated, replaced or
+        obsoleted by other documents at any time. It is inappropriate to cite
+        this document as other than work in progress.
+      </p>
+    </div>
+    <hr />
+    <div class="toc">
+      <h2>
+        <a name="shortcontents" id="shortcontents">Short Table of Contents</a>
+      </h2>
+      <p class="toc">
+        1. <a href="#intro">Introduction</a><br />
+        2.
+        <a href="#multipleschemalangs"
+          >Issues facing multiple schema languages/type systems</a
+        ><br />
+        3.
+        <a href="#examples"
+          >Examples of Specifications of Extension Elements for Alternative
+          Schema Language Support</a
+        ><br />
+        A. <a href="#References">References</a><br />
+        B. <a href="#acknowledgments">Acknowledgements</a> (Non-Normative)<br />
+      </p>
+    </div>
+    <hr />
+    <div class="toc">
+      <h2><a name="contents" id="contents">Table of Contents</a></h2>
+      <p class="toc">
+        1. <a href="#intro">Introduction</a><br />
+        2.
+        <a href="#multipleschemalangs"
+          >Issues facing multiple schema languages/type systems</a
+        ><br />
+        3.
+        <a href="#examples"
+          >Examples of Specifications of Extension Elements for Alternative
+          Schema Language Support</a
+        ><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;3.1 <a href="#dtd">DTD</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.1
+        <a href="#dtd-namespaceaii">namespace attribute information item</a
+        ><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.2
+        <a href="#dtd-locationaii">location attribute information item</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.3
+        <a href="#dtd-ref">References to Element Definitions</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;3.2 <a href="#relax">RELAX NG</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.1
+        <a href="#import-relax">Importing RELAX NG</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.1.1
+        <a href="#relax-import-nsaii">ns attribute information item</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.1.2
+        <a href="#relax-import-hrefaii">href attribute information item</a
+        ><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.2
+        <a href="#relax-embed">Embedding RELAX NG</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.2.1
+        <a href="#relax-embed-nsaii">ns attribute information item</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.3
+        <a href="#relax-ref">References to Element Declarations</a><br />
+      </p>
+      <h3><a name="appendix" id="appendix">Appendices</a></h3>
+      <p class="toc">
+        A. <a href="#References">References</a><br />
+        B. <a href="#acknowledgments">Acknowledgements</a> (Non-Normative)<br />
+      </p>
+    </div>
+    <hr />
+    <div class="body">
+      <div class="div1">
+        <h2><a name="intro" id="intro"></a>1. Introduction</h2>
+        <p>
+          WSDL 2.0: Core Language [<cite><a href="#WSDL">WSDL 2.0 Core</a></cite
+          >] describes Web Service interaction in terms of exchanges of typed
+          messages. WSDL only provides general support for type systems based on
+          the XML Infoset [<cite
+            ><a href="#XMLInfoSet">XML Information Set</a></cite
+          >] and specific support for the W3C XML Schema Description Language
+          [<cite><a href="#XMLSchemaP1">XML Schema: Structures</a></cite
+          >]. Describing messages with WSDL using schema languages other than
+          XML Schema or non-XML Infoset type systems requires extending the WSDL
+          component model. While the Web Services Description Working Group has
+          not defined any such extensions, there were discussions in the Working
+          Group about how those extensions might be defined and used. This
+          document is the result of those disucussions and captures part of the
+          Working Group's thinking about schema language and type system
+          extensibilty at the time of its publication.
+        </p>
+      </div>
+      <div class="div1">
+        <h2>
+          <a name="multipleschemalangs" id="multipleschemalangs"></a>2. Issues
+          facing multiple schema languages/type systems
+        </h2>
+        <p>
+          Without the use of an extension, a WSDL document can only use a single
+          type system, XML Schema. If extensions are defined to support
+          alternative schema languages or non-XML type systems, then issues
+          regarding the <em>mixing</em> of type systems in a single document
+          arise. Part 1 does <em>not</em> define the behavior of mixed type
+          system documents, so it is incumbent on extension authors to do so.
+        </p>
+        <p>
+          For example, suppose a WSDL author used a extension supporting Relax
+          NG alongside the native support for XML Schema. Further suppose that
+          there is an element component which has a definition in both the
+          referenced XML Schema and Relax NG schema. There are several
+          possibilities for interpreting such a document:
+        </p>
+        <ul>
+          <li>
+            <p>
+              Multiple definitions in distinct type systems is always an error
+            </p>
+          </li>
+          <li>
+            <p>
+              Multiple definitions must be in some sense equivalent, for
+              example, if XML Schema type and an Relax NG production validate
+              exactly the same set of Infoset fragments, otherwise, an error
+            </p>
+          </li>
+          <li>
+            <p>
+              Multiple definitions are legal, and are interpreted as a union
+              type constraint
+            </p>
+          </li>
+        </ul>
+        <p>
+          The last interpretation suggests a further general possibility: being
+          able to define a union type (or other compound type) that spans
+          distinct type systems (and, to further generalize, where the unioned
+          types had distinct QName identifiers). The
+          <a href="http://www.w3.org/2001/sw/DataAccess/"
+            >Data Access Working Group</a
+          >
+          had a use case wherein their return message could either be in
+          <a href="http://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML</a>, which
+          cannot have an interesting XML Schema but does have an interesting
+          Relax NG schema, and their
+          <a href="http://www.w3.org/TR/rdf-sparql-XMLres/"
+            >other results format</a
+          >, which they would prefer to specify with an XML Schema. This example
+          is little artificial, as the Data Access Working Group could easily
+          describe the entire results format in Relax NG.
+        </p>
+        <p>
+          The first interpretation is most in the spirit of WSDL and was
+          strongly preferred by the Working Group. Since WSDL extensibility
+          points are generally quite unrestricted, the Working Group did not try
+          to enforce the first option, but the general belief of the Working
+          Group was that the other options were confusing and unwise.
+        </p>
+      </div>
+      <div class="div1">
+        <h2>
+          <a name="examples" id="examples"></a>3. Examples of Specifications of
+          Extension Elements for Alternative Schema Language Support
+        </h2>
+        <p>
+          This section contains two examples of specifications of extension
+          elements for alternative schema language support. Please note that
+          those examples did not receive any implementation testing.
+        </p>
+        <div class="div2">
+          <h3><a name="dtd" id="dtd"></a>3.1 DTD</h3>
+          <p>
+            A Document Type Definition (DTD) as defined in [<cite
+              ><a href="#XML10">XML 1.0</a></cite
+            >] may be used as the schema language for WSDL. It may not be
+            embedded; it must be imported. A namespace must be assigned. DTD
+            types appear in the {<a
+              href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#property-Description.elementdeclarations"
+              >element declarations</a
+            >} property of the
+            <a
+              href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-Description"
+            >
+              Description</a
+            >
+            component and may be referenced from the <code>wsdl:input</code> ,
+            <code>wsdl:output</code> and <code>wsdl:fault</code> elements using
+            the <code>element</code> <em>attribute information item</em>.
+          </p>
+          <p>
+            The prefix, dtd, used throughout the following is mapped to the
+            namespace URI "http://www.w3.org/2005/08/wsdl/dtd-import".
+          </p>
+          <p>
+            The <code>dtd:import</code>
+            <em>element information item</em> references an external Document
+            Type Definition, and has the following Infoset properties:
+          </p>
+          <ul>
+            <li>
+              <p>A [local name] of import.</p>
+            </li>
+            <li>
+              <p>
+                A [namespace name] of
+                "http://www.w3.org/2005/08/wsdl/dtd-import".
+              </p>
+            </li>
+            <li>
+              <p>
+                One or two <em>attribute information item</em>s, as follows:
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    A REQUIRED <code>namespace</code>
+                    <em>attribute information item</em> as described below.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    An OPTIONAL <code>location</code>
+                    <em>attribute information item</em> as described below.
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="div3">
+            <h4>
+              <a name="dtd-namespaceaii" id="dtd-namespaceaii"></a>3.1.1
+              <code>namespace</code> <em>attribute information item</em>
+            </h4>
+            <p>
+              The <code>namespace</code>
+              <em>attribute information item</em> sets the namespace to be used
+              with all imported element definitions described in the DTD. It has
+              the following Infoset properties:
+            </p>
+            <ul>
+              <li>
+                <p>A [local name] of namespace.</p>
+              </li>
+              <li>
+                <p>A [namespace name] which has no value.</p>
+              </li>
+            </ul>
+            <p>
+              The type of the <code>namespace</code>
+              <em>attribute information item</em> is <em>xs:anyURI</em>.
+            </p>
+            <p>
+              The WSDL author should ensure that a prefix is associated with the
+              namespace at the proper scope (probably document scope).
+            </p>
+          </div>
+          <div class="div3">
+            <h4>
+              <a name="dtd-locationaii" id="dtd-locationaii"></a>3.1.2
+              <code>location</code> <em>attribute information item</em>
+            </h4>
+            <p>
+              The <code>location</code> <em>attribute information item</em>, if
+              present, provides a hint to the processor as to where the DTD may
+              be located. Caching and cataloging technologies may provide better
+              information than this hint. The <code>location</code>
+              <em>attribute information item</em> has the following Infoset
+              properties:
+            </p>
+            <ul>
+              <li>
+                <p>A [local name] of location.</p>
+              </li>
+              <li>
+                <p>A [namespace name] which has no value.</p>
+              </li>
+            </ul>
+            <p>
+              The type of the <code>location</code>
+              <em>attribute information item</em> is <em>xs:anyURI</em>.
+            </p>
+          </div>
+          <div class="div3">
+            <h4>
+              <a name="dtd-ref" id="dtd-ref"></a>3.1.3 References to Element
+              Definitions
+            </h4>
+            <p>
+              The <code>element</code> <em>attribute information item</em> MUST
+              be used when referring to an element definition (&lt;!ELEMENT&gt;)
+              from a
+              <a
+                href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceMessageReference"
+              >
+                Interface Message Reference</a
+              >
+              component; referring to an element definition from a
+              <a
+                href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceFault"
+              >
+                Interface Fault</a
+              >
+              component is similar. The value of the element definition MUST
+              correspond to the content of the <code>namespace</code>
+              <em>attribute information item</em> of the
+              <code>dtd:import</code> <em>element information item</em>. The
+              local name part must correspond to an element defined in the DTD.
+            </p>
+            <p>
+              Note that this pattern does not attempt to make DTDs
+              namespace-aware. It applies namespaces externally, in the import
+              phase.
+            </p>
+          </div>
+        </div>
+        <div class="div2">
+          <h3><a name="relax" id="relax"></a>3.2 RELAX NG</h3>
+          <p>
+            A RELAX NG [<cite><a href="#RelaxNG">Relax NG</a></cite
+            >] schema may be used as the schema language for WSDL. It may be
+            embedded or imported; import is preferred. A namespace must be
+            specified; if an imported schema specifies one, then the [actual
+            value] of the <code>namespace</code>
+            <em>attribute information item</em> in the <code>import</code>
+            <em>element information item</em> must match the specified
+            namespace. RELAX NG provides both type definitions and element
+            declarations, the latter appears in the {<a
+              href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#property-Description.elementdeclarations"
+              >element declarations</a
+            >} property of
+            <a
+              href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-Description"
+            >
+              Description</a
+            >
+            component respectively. The following discussion supplies the prefix
+            rng which is mapped to the URI
+            "http://www.relaxng.org/ns/structure/1.0".
+          </p>
+          <div class="div3">
+            <h4>
+              <a name="import-relax" id="import-relax"></a>3.2.1 Importing RELAX
+              NG
+            </h4>
+            <p>
+              Importing a RELAX NG schema uses the rng:include mechanism defined
+              by RNG, with restrictions on its syntax and semantics. A child
+              <em>element information item</em> of the <code>types</code>
+              <em>element information item</em> is defined with the Infoset
+              properties as follows:
+            </p>
+            <ul>
+              <li>
+                <p>A [local name] of include.</p>
+              </li>
+              <li>
+                <p>
+                  A [namespace name] of
+                  "http://www.relaxng.org/ns/structure/1.0".
+                </p>
+              </li>
+              <li>
+                <p>Two <em>attribute information item</em>s as follows:</p>
+                <ul>
+                  <li>
+                    <p>
+                      A REQUIRED <code>ns</code>
+                      <em>attribute information item</em> as described below.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      An OPTIONAL <code>href</code>
+                      <em>attribute information item</em> as described below.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Additional <em>attribute information item</em>s as defined
+                      by the RNG specification.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p>
+              Note that WSDL restricts the <code>rng:include</code>
+              <em>element information item</em> to be empty. That is, it cannot
+              redefine <code>rng:start</code> and <code>rng:define</code>
+              <em>element information item</em>s; it may be used solely to
+              import a schema.
+            </p>
+            <div class="div4">
+              <h5>
+                <a name="relax-import-nsaii" id="relax-import-nsaii"></a>3.2.1.1
+                <code>ns</code> <em>attribute information item</em>
+              </h5>
+              <p>
+                The <code>ns</code> <em>attribute information item</em> defines
+                the namespace of the type and element definitions imported from
+                the referenced schema. If the referenced schema contains an
+                <code>ns</code> <em>attribute information item</em> on its
+                <code>grammar</code> <em>element information item</em>, then the
+                values of these two <em>attribute information item</em>s must be
+                identical. If the imported grammar does not have an
+                <code>ns</code> <em>attribute information item</em> then the
+                namespace specified here is applied to all components of the
+                schema as if it did contain such an
+                <em>attribute information item</em>. The <code>ns</code>
+                <em>attribute information item</em> contains the following
+                Infoset properties:
+              </p>
+              <ul>
+                <li>
+                  <p>A [local name] of ns.</p>
+                </li>
+                <li>
+                  <p>A [namespace name] which has no value.</p>
+                </li>
+              </ul>
+              <p>
+                The type of the <code>ns</code>
+                <em>attribute information item</em> is <em>xs:anyURI</em>.
+              </p>
+            </div>
+            <div class="div4">
+              <h5>
+                <a name="relax-import-hrefaii" id="relax-import-hrefaii"></a
+                >3.2.1.2 <code>href</code> <em>attribute information item</em>
+              </h5>
+              <p>
+                The <code>href</code> <em>attribute information item</em> must
+                be present, according to the rules of the RNG specification.
+                However, WSDL allows it to be empty, and considers it only a
+                hint. Caching and cataloging technologies may provide better
+                information that this hint. The <code>href</code>
+                <em>attribute information item</em> has the following Infoset
+                properties:
+              </p>
+              <ul>
+                <li>
+                  <p>A [local name] of href.</p>
+                </li>
+                <li>
+                  <p>A [namespace name] which has no value.</p>
+                </li>
+              </ul>
+              <p>
+                The type of the <code>href</code>
+                <em>attribute information item</em> is <em>xs:anyURI</em>.
+              </p>
+            </div>
+          </div>
+          <div class="div3">
+            <h4>
+              <a name="relax-embed" id="relax-embed"></a>3.2.2 Embedding RELAX
+              NG
+            </h4>
+            <p>
+              Embedding an RNG schema uses the existing top-level
+              <code>rng:grammar</code> <em>element information item</em>. It may
+              be viewed as simply cutting and pasting an existing, stand-alone
+              schema to a location inside the <code>wsdl:types</code>
+              <em>element information item</em>. The <code>rng:grammar</code>
+              <em>element information item</em> has the following Infoset
+              properties:
+            </p>
+            <ul>
+              <li>
+                <p>A [local name] of grammar.</p>
+              </li>
+              <li>
+                <p>
+                  A [namespace name] of
+                  "http://www.relaxng.org/ns/structure/1.0".
+                </p>
+              </li>
+              <li>
+                <p>
+                  A REQUIRED <code>ns</code>
+                  <em>attribute information item</em>s as described below.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Additional <em>attribute information item</em>s as specified
+                  for the <code>rng:grammar</code>
+                  <em>element information item</em> in the RNG specification.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Child <em>element information item</em>s as specified for the
+                  <code>rng:grammar</code> <em>element information item</em> in
+                  the RNG specification.
+                </p>
+              </li>
+            </ul>
+            <div class="div4">
+              <h5>
+                <a name="relax-embed-nsaii" id="relax-embed-nsaii"></a>3.2.2.1
+                <code>ns</code> <em>attribute information item</em>
+              </h5>
+              <p>
+                The <code>ns</code> <em>attribute information item</em> defines
+                the namespace of the type and element definitions embedded in
+                this schema. WSDL modifies the RNG definition of the
+                <code>rng:grammar</code> <em>element information item</em> to
+                make this <em>attribute information item</em> required. The
+                <code>ns</code> <em>attribute information item</em> has the
+                following Infoset properties:
+              </p>
+              <ul>
+                <li>
+                  <p>A [local name] of ns.</p>
+                </li>
+                <li>
+                  <p>A [namespace name] which has no value.</p>
+                </li>
+              </ul>
+              <p>
+                The type of the <code>ns</code>
+                <em>attribute information item</em> is <em>xs:anyURI</em>.
+              </p>
+            </div>
+          </div>
+          <div class="div3">
+            <h4>
+              <a name="relax-ref" id="relax-ref"></a>3.2.3 References to Element
+              Declarations
+            </h4>
+            <p>
+              Whether embedded or imported, the element definitions present in a
+              schema may be referenced from a
+              <a
+                href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceMessageReference"
+              >
+                Interface Message Reference</a
+              >
+              or
+              <a
+                href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceFault"
+              >
+                Interface Fault</a
+              >
+              component.
+            </p>
+            <p>
+              A named rng:define definition MUST NOT be referenced from the
+              <a
+                href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceMessageReference"
+              >
+                Interface Message Reference</a
+              >
+              or
+              <a
+                href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceFault"
+              >
+                Interface Fault</a
+              >
+              components.
+            </p>
+            <p>
+              A named Relax NG element declaration MAY be referenced from a
+              <a
+                href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceMessageReference"
+              >
+                Interface Message Reference</a
+              >
+              or
+              <a
+                href="http://www.w3.org/TR/2005/WD-wsdl20-20050803#component-InterfaceFault"
+              >
+                Interface Fault</a
+              >
+              component. The QName is constructed from the namespace (<code
+                >ns</code
+              >
+              <em>attribute information item</em>) of the schema and the content
+              of the <code>name</code> <em>attribute information item</em> of
+              the <code>element</code> <em>element information item</em> An
+              <code>element</code> <em>attribute information item</em> MUST NOT
+              be used to refer to an <code>rng:define</code>
+              <em>element information item</em>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="back">
+      <div class="div1">
+        <h2><a name="References" id="References"></a>A. References</h2>
+        <dl>
+          <dt class="label"><a name="RelaxNG" id="RelaxNG"></a>[Relax NG]</dt>
+          <dd>
+            <cite
+              ><a href="http://www.relaxng.org/spec-20011203.html"
+                >RELAX NG Specification</a
+              ></cite
+            >, J. Clark, MURATA Makoto, editors. OASIS Committee Specification,
+            3 December 2001.
+          </dd>
+          <dt class="label"><a name="WSDL" id="WSDL"></a>[WSDL 2.0 Core]</dt>
+          <dd>
+            <cite
+              ><a href="http://www.w3.org/TR/2005/WD-wsdl20-20050803"
+                >Web Services Description Language (WSDL) Version 2.0 Part 1:
+                Core Language</a
+              ></cite
+            >, R. Chinnici, J-J. Moreau, A. Ryman, S. Weerawarana, Editors.
+            World Wide Web Consortium, 3 August 2005. This version of the Web
+            Services Description Language Version 2.0 Core specification is
+            http://www.w3.org/TR/2005/WD-wsdl20-20050803. The
+            <a href="http://www.w3.org/TR/wsdl20"
+              >latest version of "Web Services Description Language (WSDL)
+              Version 2.0 Part 1: Core Language"</a
+            >
+            is available at http://www.w3.org/TR/wsdl20.
+          </dd>
+          <dt class="label"><a name="XML10" id="XML10"></a>[XML 1.0]</dt>
+          <dd>
+            <cite
+              ><a href="http://www.w3.org/TR/2004/REC-xml-20040204/"
+                >Extensible Markup Language (XML) 1.0 (Third Edition)</a
+              ></cite
+            >, T. Bray, J. Paoli, C. M. Sperberg-McQueen, E. Maler, and F.
+            Yergeau, Editors. World Wide Web Consortium, 4 February 2004. This
+            version of the XML 1.0 Recommendation is
+            http://www.w3.org/TR/2004/REC-xml-20040204/. The
+            <a href="http://www.w3.org/TR/REC-xml"
+              >latest version of "Extensible Markup Language (XML) 1.0"</a
+            >
+            is available at http://www.w3.org/TR/REC-xml.
+          </dd>
+          <dt class="label">
+            <a name="XMLInfoSet" id="XMLInfoSet"></a>[XML Information Set]
+          </dt>
+          <dd>
+            <cite
+              ><a href="http://www.w3.org/TR/2004/REC-xml-infoset-20040204"
+                >XML Information Set (Second Edition)</a
+              ></cite
+            >, J. Cowan and R. Tobin, Editors. World Wide Web Consortium, 4
+            February 2004. This version of the XML Information Set
+            Recommendation is
+            http://www.w3.org/TR/2004/REC-xml-infoset-20040204. The
+            <a href="http://www.w3.org/TR/xml-infoset"
+              >latest version of "XML Information Set"</a
+            >
+            is available at http://www.w3.org/TR/xml-infoset.
+          </dd>
+          <dt class="label">
+            <a name="XMLSchemaP1" id="XMLSchemaP1"></a>[XML Schema: Structures]
+          </dt>
+          <dd>
+            <cite
+              ><a href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/"
+                >XML Schema Part 1: Structures (Second Edition)</a
+              ></cite
+            >, H. Thompson, D. Beech, M. Maloney, and N. Mendelsohn, Editors.
+            World Wide Web Consortium, 28 October 2004. This version of the XML
+            Schema Part 1 Recommendation is
+            http://www.w3.org/TR/2004/REC-xmlschema-1-20041028. The
+            <a href="http://www.w3.org/TR/xmlschema-1/"
+              >latest version of "XML Schema Part 1: Structures"</a
+            >
+            is available at http://www.w3.org/TR/xmlschema-1.
+          </dd>
+        </dl>
+      </div>
+      <div class="div1">
+        <h2>
+          <a name="acknowledgments" id="acknowledgments"></a>B. Acknowledgements
+          (Non-Normative)
+        </h2>
+        <p>
+          This document is the work of the
+          <a href="http://www.w3.org/2002/ws/desc/"
+            >W3C Web Service Description Working Group</a
+          >.
+        </p>
+        <p>
+          Members of the Working Group are (at the time of writing, and by
+          alphabetical order): Allen Brookes (Rogue Wave Softwave), Dave
+          Chappell (Sonic Software), Helen Chen (Agfa-Gevaert N. V.), Roberto
+          Chinnici (Sun Microsystems), Kendall Clark (University of Maryland),
+          Ugo Corda (SeeBeyond), Glen Daniels (Sonic Software), Paul Downey
+          (British Telecommunications), Youenn Fablet (Canon), Hugo Haas (W3C),
+          Tom Jordahl (Macromedia), Anish Karmarkar (Oracle Corporation), Jacek
+          Kopecky (DERI Innsbruck at the Leopold-Franzens-Universität Innsbruck,
+          Austria), Amelia Lewis (TIBCO Software, Inc.), Michael Liddy
+          (Education.au Ltd.), Kevin Canyang Liu (SAP AG), Jonathan Marsh
+          (Microsoft Corporation), Josephine Micallef (SAIC - Telcordia
+          Technologies), Jeff Mischkinsky (Oracle Corporation), Dale Moberg
+          (Cyclone Commerce), Jean-Jacques Moreau (Canon), Mark Nottingham (BEA
+          Systems, Inc.), David Orchard (BEA Systems, Inc.), Bijan Parsia
+          (University of Maryland), Tony Rogers (Computer Associates), Arthur
+          Ryman (IBM), Adi Sakala (IONA Technologies), Asir Vedamuthu (Microsoft
+          Corporation), Sanjiva Weerawarana (Independent), Ümit Yalçınalp (SAP
+          AG).
+        </p>
+        <p>
+          Previous members were: Lily Liu (webMethods, Inc.), Don Wright
+          (Lexmark), Joyce Yang (Oracle Corporation), Daniel Schutzer
+          (Citigroup), Dave Solo (Citigroup), Stefano Pogliani (Sun
+          Microsystems), William Stumbo (Xerox), Stephen White (SeeBeyond),
+          Barbara Zengler (DaimlerChrysler Research and Technology), Tim Finin
+          (University of Maryland), Laurent De Teneuille (L'Echangeur), Johan
+          Pauhlsson (L'Echangeur), Mark Jones (AT&amp;T), Steve Lind (AT&amp;T),
+          Sandra Swearingen (U.S. Department of Defense, U.S. Air Force),
+          Philippe Le Hégaret (W3C), Jim Hendler (University of Maryland),
+          Dietmar Gaertner (Software AG), Michael Champion (Software AG), Don
+          Mullen (TIBCO Software, Inc.), Steve Graham (Global Grid Forum), Steve
+          Tuecke (Global Grid Forum), Michael Mahan (Nokia), Bryan Thompson
+          (Hicks &amp; Associates), Ingo Melzer (DaimlerChrysler Research and
+          Technology), Sandeep Kumar (Cisco Systems), Alan Davies (SeeBeyond),
+          Jacek Kopecky (Systinet), Mike Ballantyne (Electronic Data Systems),
+          Mike Davoren (W. W. Grainger), Dan Kulp (IONA Technologies), Mike
+          McHugh (W. W. Grainger), Michael Mealling (Verisign), Waqar Sadiq
+          (Electronic Data Systems), Yaron Goland (BEA Systems, Inc.), Ümit
+          Yalçınalp (Oracle Corporation), Peter Madziak (Agfa-Gevaert N. V.),
+          Jeffrey Schlimmer (Microsoft Corporation), Hao He (The Thomson
+          Corporation), Erik Ackerman (Lexmark), Jerry Thrasher (Lexmark),
+          Prasad Yendluri (webMethods, Inc.), William Vambenepe (Hewlett-Packard
+          Company), David Booth (W3C), Sanjiva Weerawarana (IBM), Charlton
+          Barreto (webMethods, Inc.), Asir Vedamuthu (webMethods, Inc.), Igor
+          Sedukhin (Computer Associates), Martin Gudgin (Microsoft Corporation).
+        </p>
+        <p>
+          The people who have contributed to
+          <a href="http://lists.w3.org/Archives/Public/www-ws-desc/"
+            >discussions on www-ws-desc@w3.org</a
+          >
+          are also gratefully acknowledged.
+        </p>
+      </div>
+    </div>
+    <script src="https://www.w3.org/scripts/TR/fixup.js"></script>
+  </body>
 </html>

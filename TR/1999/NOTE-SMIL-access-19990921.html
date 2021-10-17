@@ -1,359 +1,471 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
-                      "http://www.w3.org/TR/REC-html40/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <title>Accessibility Features of SMIL</title>
-  <link rel="stylesheet" type="text/css"
-  href="http://www.w3.org/StyleSheets/TR/W3C-NOTE">
-  <style type="text/css">
-     PRE.example { white-space: pre;
-                border-style: solid;
-                border-width: 1px ;
-                color: #5D0091;
-                background-color: #F9F5DE;
-                border-color: #5D0091
-                }
-     .attribute { font-style: italic; font-weight: bold; 
-                  speech-rate: slower
-                }
-     .element { font-weight: bold; 
-                pitch: low
-                }</style>
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Accessibility Features of SMIL</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://www.w3.org/StyleSheets/TR/W3C-NOTE"
+    />
+    <style type="text/css">
+      PRE.example {
+        white-space: pre;
+        border-style: solid;
+        border-width: 1px;
+        color: #5d0091;
+        background-color: #f9f5de;
+        border-color: #5d0091;
+      }
+      .attribute {
+        font-style: italic;
+        font-weight: bold;
+        speech-rate: slower;
+      }
+      .element {
+        font-weight: bold;
+        pitch: low;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <div class="head">
+      <p>
+        <a href="http://www.w3.org/"
+          ><img
+            height="48"
+            width="72"
+            alt="W3C"
+            src="http://www.w3.org/Icons/w3c_home"
+        /></a>
+      </p>
 
-<div class="head">
-<p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C"
-src="http://www.w3.org/Icons/w3c_home"></a></p>
+      <h1>Accessibility Features of SMIL</h1>
 
-<h1>Accessibility Features of SMIL</h1>
+      <h2>W3C NOTE 21 September 1999</h2>
+      <dl>
+        <dt>This Version:</dt>
+        <dd>
+          <a href="http://www.w3.org/TR/1999/NOTE-SMIL-access-19990921">
+            http://www.w3.org/TR/1999/NOTE-SMIL-access-19990921</a
+          >
+        </dd>
+        <dt>Previous Version:</dt>
+        <dd>
+          <a href="http://www.w3.org/TR/1999/NOTE-SMIL-access-19990920">
+            http://www.w3.org/TR/1999/NOTE-SMIL-access-19990920</a
+          >
+        </dd>
 
-<h2>W3C NOTE 21 September 1999</h2>
-<dl>
-  <dt>This Version:</dt>
-    <dd><a href="http://www.w3.org/TR/1999/NOTE-SMIL-access-19990921">
-           http://www.w3.org/TR/1999/NOTE-SMIL-access-19990921</a>
-    </dd>
-  <dt>Previous Version:</dt>
-    <dd><a href="http://www.w3.org/TR/1999/NOTE-SMIL-access-19990920">
-           http://www.w3.org/TR/1999/NOTE-SMIL-access-19990920</a>
-  <dt>Latest Version:</dt>
-    <dd><a
-      href="http://www.w3.org/TR/SMIL-access">http://www.w3.org/TR/SMIL-access</a></dd>
-</dl>
-<dl>
-  <dt>Editors:</dt>
-    <dd>Marja-Riitta Koivunen (<a
-    href="mailto:marja@w3.org">mrk@w3.org</a>)</dd>
-    <dd><a href="http://www.w3.org/People/Jacobs">Ian Jacobs</a> (<a
-      href="mailto:ij@w3.org">ij@w3.org</a>)</dd>
-</dl>
+        <dt>Latest Version:</dt>
+        <dd>
+          <a href="http://www.w3.org/TR/SMIL-access"
+            >http://www.w3.org/TR/SMIL-access</a
+          >
+        </dd>
+      </dl>
+      <dl>
+        <dt>Editors:</dt>
+        <dd>
+          Marja-Riitta Koivunen (<a href="mailto:marja@w3.org">mrk@w3.org</a>)
+        </dd>
+        <dd>
+          <a href="http://www.w3.org/People/Jacobs">Ian Jacobs</a> (<a
+            href="mailto:ij@w3.org"
+            >ij@w3.org</a
+          >)
+        </dd>
+      </dl>
 
-<p class="copyright"><a
-href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"><br>
-Copyright</a> &copy; 1999 <a href="http://www.w3.org/">W3C</a><sup>&reg;</sup>
-(<a href="http://www.lcs.mit.edu/">MIT</a>, <a
-href="http://www.inria.fr/">INRIA</a>, <a
-href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a
-href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
-<a
-href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>,
-<a href="http://www.w3.org/Consortium/Legal/copyright-documents">document
-use</a> and <a
-href="http://www.w3.org/Consortium/Legal/copyright-software">software
-licensing</a> rules apply.</p>
-</div>
-<hr title="Separator from Header">
+      <p class="copyright">
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
+          ><br />
+          Copyright</a
+        >
+        &copy; 1999 <a href="http://www.w3.org/">W3C</a><sup>&reg;</sup> (<a
+          href="http://www.lcs.mit.edu/"
+          >MIT</a
+        >, <a href="http://www.inria.fr/">INRIA</a>,
+        <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer"
+          >liability</a
+        >,
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks"
+          >trademark</a
+        >,
+        <a href="http://www.w3.org/Consortium/Legal/copyright-documents"
+          >document use</a
+        >
+        and
+        <a href="http://www.w3.org/Consortium/Legal/copyright-software"
+          >software licensing</a
+        >
+        rules apply.
+      </p>
+    </div>
+    <hr title="Separator from Header" />
 
+    <h2><a name="Abstract">Abstract</a></h2>
 
-<h2><a name="Abstract">Abstract</a></h2>
+    <p>
+      This document summarizes the accessibility features of the Synchronized
+      Multimedia Language (SMIL), version 1.0 Recommendation ([<a
+        href="#ref-SMIL10"
+        >SMIL10</a
+      >]). This document has been written so that other documents may refer in a
+      consistent manner to the accessibility features of SMIL.
+    </p>
 
-<p>This document summarizes the accessibility features of the Synchronized
-Multimedia Language (SMIL), version 1.0 Recommendation ([<a
-href="#ref-SMIL10">SMIL10</a>]). This document has been written so that other
-documents may refer in a consistent manner to the accessibility features of
-SMIL.</p>
+    <h2><a name="Status">Status of this Document</a></h2>
 
-<h2><a name="Status">Status of this Document</a></h2>
+    <p>
+      This document is a W3C Note made available by the W3C and the W3C Web
+      Accessibility Initiative. This Note has been jointly approved by the WAI
+      Education and Outreach Working Group (EOWG), the WAI Protocols and Formats
+      Working Group (PFWG), and the Synchronized Multimedia (SYMM) Working
+      Group.
+    </p>
 
-<p>This document is a W3C Note made available by the W3C and the W3C
-Web Accessibility Initiative. This Note has been jointly approved by
-the WAI Education and Outreach Working Group (EOWG), the WAI Protocols
-and Formats Working Group (PFWG), and the Synchronized Multimedia
-(SYMM) Working Group.</p>
+    <p>
+      Publication of a W3C Note does not imply endorsement by the W3C
+      Membership. A list of current W3C technical reports and publications,
+      including Working Drafts and Notes, can be found at
+      <a href="http://www.w3.org/TR">http://www.w3.org/TR</a>.
+    </p>
 
-<p>Publication of a W3C Note does not imply endorsement by the W3C
-Membership.  A list of current W3C technical reports and publications,
-including Working Drafts and Notes, can be found at <a
-href="http://www.w3.org/TR">http://www.w3.org/TR</a>.</p>
+    <p>
+      Information about
+      <a href="http://www.w3.org/WAI/EO/SMIL-access-errata#Changes-19990921"
+        >changes from the previous version</a
+      >
+      and
+      <a href="http://www.w3.org/WAI/EO/SMIL-access-errata#Errata">errata</a> is
+      available online.
+    </p>
 
-<P>Information about <a
-href="http://www.w3.org/WAI/EO/SMIL-access-errata#Changes-19990921">changes
-from the previous version</a> and <a
-href="http://www.w3.org/WAI/EO/SMIL-access-errata#Errata">errata</a> is
-available online.
+    <h2><a name="Contents">Table of Contents</a></h2>
+    <ul>
+      <li><a href="#Introduction">1. Introduction</a></li>
+      <li><a href="#Equivalent">2. Equivalent Alternatives</a></li>
+      <li><a href="#LayoutStyle">3. Layout and Style</a></li>
+      <li><a href="#Navigation">4. Navigation and Linking</a></li>
+      <li>
+        <a href="#Testing">5. Adapting Content to User and System Settings</a>
+      </li>
+      <li><a href="#More">6. To Learn More about Accessibility and SMIL</a></li>
+      <li>
+        <a href="#Index"
+          >Appendix A. Index of SMIL 1.0 elements and attributes that affect
+          accessibility</a
+        >
+      </li>
+      <li>
+        <a href="#Sample">Appendix B. Sample Accessible SMIL Presentation</a>
+      </li>
+      <li><a href="#About-WAI">About the Web Accessibility Initiative</a></li>
+      <li>
+        <a href="#About-W3C">About the World Wide Web Consortium (W3C)</a>
+      </li>
+      <li><a href="#Acknowledgments">Acknowledgements</a></li>
+      <li><a href="#References">References</a></li>
+    </ul>
 
-<h2><a name="Contents">Table of Contents</a></h2>
-<ul>
-  <li><a href="#Introduction">1. Introduction</a></li>
-  <li><a href="#Equivalent">2. Equivalent Alternatives</a></li>
-  <li><a href="#LayoutStyle">3. Layout and Style</a></li>
-  <li><a href="#Navigation">4. Navigation and Linking</a></li>
-  <li><a href="#Testing">5. Adapting Content to User and System
-  Settings</a></li>
-  <li><a href="#More">6. To Learn More about Accessibility and SMIL</a></li>
-  <li><a href="#Index">Appendix A. Index of SMIL 1.0 elements and attributes
-    that affect accessibility</a></li>
-  <li><a href="#Sample">Appendix B. Sample Accessible SMIL
-  Presentation</a></li>
-  <li><a href="#About-WAI">About the Web Accessibility Initiative</a></li>
-  <li><a href="#About-W3C">About the World Wide Web Consortium (W3C)</a></li>
-  <li><a href="#Acknowledgments">Acknowledgements</a></li>
-  <li><a href="#References">References</a></li>
-</ul>
+    <h2><a name="Introduction">1. Introduction</a></h2>
 
-<h2><a name="Introduction">1. Introduction</a></h2>
+    <p>
+      Multimedia presentations rich in text, audio, video, and graphics are
+      becoming more and more common on the Web. They include newscasts,
+      educational material, entertainment, etc. Formats such as SMIL 1.0 can be
+      used to create dynamic multimedia presentations by synchronizing the
+      various media elements in time and space.
+    </p>
 
-<p>Multimedia presentations rich in text, audio, video, and graphics are
-becoming more and more common on the Web. They include newscasts, educational
-material, entertainment, etc. Formats such as SMIL 1.0 can be used to create
-dynamic multimedia presentations by synchronizing the various media elements
-in time and space.</p>
+    <p>
+      Authors can make SMIL 1.0 presentations accessible to people with
+      disabilities by observing the principles discussed in the "Web Content
+      Accessibility Guidelines 1.0" [<a href="#ref-WAI-WEBCONTENT">
+        WAI-WEBCONTENT</a
+      >]. The Guidelines explain how to create documents that account for the
+      diverse abilities, tools, and software of all Web users, including people
+      with combinations of visual, auditory, physical, cognitive, and
+      neurological disabilities. This does not mean creating a great number of
+      separate presentations but rather one integrated and accessible
+      presentation. This Note applies the principles of the Web Content
+      Accessibility Guidelines to SMIL 1.0 and explains which SMIL 1.0 features
+      will help you create accessible presentations.
+    </p>
 
-<p>Authors can make SMIL 1.0 presentations accessible to people with
-disabilities by observing the principles discussed in the "Web Content
-Accessibility Guidelines 1.0" 
-[<a href="#ref-WAI-WEBCONTENT"> WAI-WEBCONTENT</a>]. 
-The Guidelines explain how to create documents that
-account for the diverse abilities, tools, and software of all Web users,
-including people with combinations of visual, auditory, physical, cognitive,
-and neurological disabilities. This does not mean creating a great number of
-separate presentations but rather one integrated and accessible presentation.
-This Note applies the principles of the Web Content Accessibility Guidelines
-to SMIL 1.0 and explains which SMIL 1.0 features will help you
-create accessible presentations.</p>
+    <h3>
+      <a name="Challenges"
+        >1.1 Accessibility Challenges of Synchronized Multimedia</a
+      >
+    </h3>
 
-<H3><a name="Challenges">1.1 Accessibility Challenges of Synchronized
-Multimedia</a></H3>
+    <p>
+      Dynamic multimedia presents a number of challenges to people with
+      disabilities and to authors of accessible content:
+    </p>
+    <ul>
+      <li>
+        Authors must provide
+        <a href="#Equivalent">alternative equivalent content</a> to audio and
+        video so that users with visual or auditory impairments may make use of
+        the presentation. Text content is most valuable to users with a wide
+        range of disabilities, as it may be rendered on the screen, as speech,
+        or on a refreshable braille display. In addition, search engines may
+        process this text content. While there is cost to producing alternative
+        content, the effort may be reduced by using accessible authoring tools
+        (refer to [<a href="#ref-WAI-AUTOOLS">WAI-AUTOOLS</a>]).
+      </li>
+      <li>
+        <a href="#Equivalent">Alternatives</a> to video and audio content must
+        be synchronized with video and audio tracks. Alternatives that are
+        improperly synchronized may be so confusing as to be unusable.
+      </li>
+      <li>
+        A presentation may occupy multiple sensory channels (eyes, ears, and
+        touch) in parallel. Any content, including
+        <a href="#Equivalent">alternative content</a>, that is presented to a
+        given sense must be coordinated to ensure that it remains intelligible
+        when rendered with other content meant for that sense.
+      </li>
+      <li>
+        The very nature of synchronized multimedia - content changes without
+        user interaction - poses an orientation challenge to some users with
+        blindness, low vision, or cognitive disabilities. These users may still
+        access a presentation as long as the author has provided adequate
+        alternatives and players allow sufficient control over the presentation.
+      </li>
+    </ul>
 
-<p>Dynamic multimedia presents a number of challenges to people with
-disabilities and to authors of accessible content:</p>
-<ul>
-  <li>Authors must provide <a href="#Equivalent">alternative equivalent
-    content</a> to audio and video so that users with visual or auditory
-    impairments may make use of the presentation. Text content is most
-    valuable to users with a wide range of disabilities, as it may be rendered
-    on the screen, as speech, or on a refreshable braille display. In
-    addition, search engines may process this text content. While
-    there is cost to producing alternative content, the effort may be reduced
-    by using accessible authoring tools (refer to
-    [<a href="#ref-WAI-AUTOOLS">WAI-AUTOOLS</a>]).
-    </li>
-  <li><a href="#Equivalent">Alternatives</a> to video and audio content must
-    be synchronized with video and audio tracks. Alternatives that are
-    improperly synchronized may be so confusing as to be unusable.</li>
-  <li>A presentation may occupy multiple sensory channels (eyes, ears, and
-    touch) in parallel. Any content, including <a
-    href="#Equivalent">alternative content</a>, that is presented to a given
-    sense must be coordinated to ensure that it remains intelligible when
-    rendered with other content meant for that sense.</li>
-  <li>The very nature of synchronized multimedia - content
-changes without user interaction - poses an orientation
-challenge to some users with blindness, low vision,
-or cognitive disabilities. These users may
-still access a presentation as long as the author
-has provided adequate alternatives and players allow
-sufficient control over the presentation.</li>
+    <h3>
+      <a name="PromoteAccess"
+        >1.2 How Authors and Players Promote Accessibility</a
+      >
+    </h3>
 
-</ul>
+    <p>
+      Part of the responsibility for making SMIL 1.0 presentations accessible
+      lies with the author and part with the user's software, the SMIL player.
+      Authors must include equivalent alternatives for images, video, audio, and
+      other inaccessible media. Authors must synchronize media objects correctly
+      and describe relationships among objects. Authors should design documents
+      that transform gracefully for players that do not support a particular
+      feature (e.g., style sheets). Authors should also design documents so that
+      players can ensure user control of rendering (e.g. by using the
+      <span class="attribute">system-captions</span>
+      <a href="#Testing">test attribute</a> to tell the player which text
+      streams are captions).
+    </p>
 
-<H3><a name="PromoteAccess">1.2 How Authors and Players Promote
-Accessibility</a></H3>
+    <p>
+      In turn, SMIL players must allow users to control document presentation to
+      ensure its accessibility, even if that means overriding the author's
+      preferences. For instance, users with low vision must be able to enlarge a
+      presentation and users with color deficiencies must be able to specify
+      suitable color contrasts. The "User Agent Accessibility Guidelines" [<a
+        href="#ref-WAI-USERAGENT"
+        >WAI-USERAGENT</a
+      >] explain principles for creating accessible user agents - tools used to
+      browse the Web. User agents are graphical desktop browsers, multimedia
+      players, text and voice browsers, and software used in conjunction with
+      other browsers, including screen readers, screen magnifiers, braille
+      displays, and voice input software.
+    </p>
 
-<p>Part of the responsibility for making SMIL 1.0 presentations accessible
-lies with the author and part with the user's software, the SMIL player.
-Authors must include equivalent alternatives for images, video, audio, and
-other inaccessible media. Authors must synchronize media objects correctly
-and describe relationships among objects. Authors should design documents
-that transform gracefully for players that do not support a particular
-feature (e.g., style sheets). Authors
-should also design documents so that players can ensure user control 
-of rendering 
-(e.g. by using the <span class="attribute">system-captions</span>
-<a href="#Testing">test attribute</a> to tell the player which
-text streams are captions).</p>
+    <p>
+      User control of presentation and configuration are central to user agent
+      accessibility. Players must provide users access to author-supplied media
+      objects, their accessible alternatives, or both. Users must also be able
+      to turn on and off alternatives (e.g., captions and auditory descriptions)
+      and control their size, position, and volume. For instance, users with
+      both low vision and hearing loss must be able to enlarge text captions.
+      Users might also want to specify how to render synchronized audio tracks,
+      for instance, by changing the volume or other available attributes of an
+      auditory description to distinguish it from the audio track.
+    </p>
 
-<p>In turn, SMIL players must allow users to control document
-presentation to ensure its accessibility, even if that means
-overriding the author's preferences.  For instance, users with low
-vision must be able to enlarge a presentation and users with color
-deficiencies must be able to specify suitable color contrasts. The
-"User Agent Accessibility Guidelines" [<a
-href="#ref-WAI-USERAGENT">WAI-USERAGENT</a>] explain principles for
-creating accessible user agents - tools used to browse the Web. User
-agents are graphical desktop browsers, multimedia players, text and
-voice browsers, and software used in conjunction with other browsers,
-including screen readers, screen magnifiers, braille displays, and
-voice input software.
+    <p>
+      Since users with some cognitive disabilities or people using combinations
+      of assistive technologies such as refreshable braille and speech synthesis
+      may require additional time to view a presentation or its captions,
+      players must allow them to start, stop, and pause a presentation (as one
+      can do with most home video players). Where possible, users should be able
+      to control the global presentation rate. Some users may require that
+      time-sensitive information be rendered in a time-independent form
+      altogether. For example, SMIL 1.0 allows authors to designate graphical
+      regions that are linked to different resources at different times. Some
+      users may not have enough time to select a link with a limited lifespan,
+      or even to notice it. Therefore, players should provide access to them in
+      a time-independent manner. Multimedia players may also offer an index to
+      time-dependent information in a time-independent form.
+    </p>
 
-<P>User control of presentation and configuration are central to user
-agent accessibility.  Players must provide users access to
-author-supplied media objects, their accessible alternatives, or
-both. Users must also be able to turn on and off alternatives (e.g.,
-captions and auditory descriptions) and control their size, position,
-and volume. For instance, users with both low vision and hearing loss
-must be able to enlarge text captions.  Users might also want to
-specify how to render synchronized audio tracks, for instance, by
-changing the volume or other available attributes of an auditory
-description to distinguish it from the audio track.</p>
+    <p>
+      This Note describes the accessibility features of [<a href="#ref-SMIL10"
+        >SMIL10</a
+      >] and explains how authors and SMIL players should make use of them.
+      Explanations of implementation approaches for authors and SMIL players in
+      this Note are made in accordance with the guidelines and checkpoints of
+      [<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>] and [<a
+        href="#ref-WAI-USERAGENT"
+        >WAI-USERAGENT</a
+      >].
+    </p>
 
-<p>Since users with some cognitive disabilities or people using combinations
-of assistive technologies such as refreshable braille and speech synthesis may
-require additional time to view a presentation or its captions, players must
-allow them to start, stop, and pause a presentation (as one can do with most
-home video players). Where possible, users should be able to control the
-global presentation rate. Some users may require that time-sensitive
-information be rendered in a time-independent form altogether. For example,
-SMIL 1.0 allows authors to designate graphical regions that are linked to
-different resources at different times. Some users may not have enough time to
-select a link with a limited lifespan, or even to notice it. Therefore,
-players should provide access to them in a time-independent manner. Multimedia
-players may also offer an index to time-dependent information in a
-time-independent form.</p>
+    <p>
+      <strong>Note.</strong> Most of [<a href="#ref-WAI-WEBCONTENT"
+        >WAI-WEBCONTENT</a
+      >] explains how authors should design their pages and sites to promote
+      accessibility. However, [<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>]
+      also recognizes that some needs would be better met by user agents,
+      including SMIL players. Since user agents may not yet implement some
+      features that promote accessibility, [<a href="#ref-WAI-WEBCONTENT"
+        >WAI-WEBCONTENT</a
+      >] asks authors to compensate until they do by providing additional
+      support in their content. In the current Note, the phrase "Until SMIL
+      players..." refers to cases when the author should provide additional
+      support. Each time the phrase appears, the requirement from [<a
+        href="#ref-WAI-WEBCONTENT"
+        >WAI-WEBCONTENT</a
+      >] that motivated it is listed. In addition, the importance of the
+      requirement to accessibility is indicated, using the vocabulary of [<a
+        href="#ref-WAI-WEBCONTENT"
+        >WAI-WEBCONTENT</a
+      >], section four.
+    </p>
 
-<p>This Note describes the accessibility features of 
-[<a href="#ref-SMIL10">SMIL10</a>] and explains how authors and SMIL
-players should make use of them. Explanations
-of implementation approaches for authors and SMIL players in this Note
-are made in accordance with the guidelines and checkpoints
-of [<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>] and 
-[<a href="#ref-WAI-USERAGENT">WAI-USERAGENT</a>].</p>
+    <h2><a name="Equivalent">2. Equivalent Alternatives</a></h2>
 
-<P><strong>Note.</strong> Most of 
-[<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>] explains
-how authors should design their pages and sites to promote
-accessibility. However, [<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>]
-also recognizes that some needs would be better met
-by user agents, including SMIL players. Since 
-user agents may not yet implement some features that promote
-accessibility, [<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>]
-asks authors to compensate until they do by providing
-additional support in their content. In the current Note,
-the phrase "Until SMIL players..." refers to cases when
-the author should provide additional support.
-Each time the phrase appears, the
-requirement from [<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>]
-that motivated it is listed. In addition, the importance of the
-requirement to accessibility is indicated, using the vocabulary of 
-[<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>], section four.
+    <p>
+      Multimedia presentations may include two main types of equivalent
+      alternatives: discrete and continuous. Discrete equivalents do not contain
+      any time references and have no intrinsic duration. In SMIL, discrete text
+      equivalents are generally specified by attributes such as the
+      <span class="attribute">alt</span> attribute of the
+      <span class="element">img</span> element.
+    </p>
 
-<h2><a name="Equivalent">2. Equivalent Alternatives</a></h2>
+    <p>
+      Continuous equivalents, such as
+      <a href="#def-caption">text captions</a> or
+      <a href="#def-auditory-desc">auditory descriptions</a>, have intrinsic
+      duration and may contain references to time. For instance, a continuous
+      text equivalent consists of pieces of text associated with a time code.
+      Continuous equivalents may be constructed out of discrete equivalents, for
+      instance by using the SMIL elements
+      <span class="element">par</span> (parallel) or
+      <span class="element">seq</span> (sequential) and the timing attributes
+      <span class="attribute">begin</span>,
+      <span class="attribute">end</span> and <span class="attribute">dur</span>.
+    </p>
 
-<p>Multimedia presentations may include two main types of equivalent
-alternatives: discrete and continuous.  Discrete equivalents do not contain
-any time references and have no intrinsic duration. In SMIL, discrete text
-equivalents are generally specified by attributes such as the <span
-class="attribute">alt</span> attribute of the <span class="element">img</span>
-element.</p>
+    <p>
+      Text equivalents are fundamental to accessibility since they may be
+      rendered graphically, as speech, or by a braille device. In multimedia
+      presentations, continuous text equivalents must be synchronized with other
+      time-dependent media (refer to [<a href="#ref-WAI-WEBCONTENT"
+        >WAI-WEBCONTENT</a
+      >], Checkpoint 1.4, Priority 1).
+    </p>
 
-<P>Continuous equivalents, such as <a href="#def-caption">text
-captions</a> or <a href="#def-auditory-desc">auditory
-descriptions</a>, have intrinsic duration and may contain references
-to time. For instance, a continuous text equivalent consists of pieces
-of text associated with a time code. Continuous equivalents may be
-constructed out of discrete equivalents, for instance by using the
-SMIL elements <span class="element">par</span> (parallel) or <span
-class="element">seq</span> (sequential) and the timing attributes
-<span class="attribute">begin</span>, <span
-class="attribute">end</span> and <span class="attribute">dur</span>.</p>
+    <p>
+      The Web Content Accessibility Guidelines also require that, until user
+      agents can automatically read aloud the text equivalent of a video track,
+      authors provide an auditory description of the important information of
+      the video track of a multimedia presentation (refer to [<a
+        href="#ref-WAI-WEBCONTENT"
+        >WAI-WEBCONTENT</a
+      >], Checkpoint 1.3, Priority 1). This benefits users who may not be able
+      to read text or may not have access to software or hardware for speech
+      synthesis or braille. <strong>Note.</strong> If you have captions and
+      text-to-speech software, you can generate auditory descriptions. However,
+      you must still ensure the proper synchronization of a generated speech
+      track with other tracks.
+    </p>
 
-<p>Text equivalents are fundamental to accessibility since they may be
-rendered graphically, as speech, or by a braille device. In multimedia
-presentations, continuous text equivalents must be synchronized with
-other time-dependent media (refer to [<a
-href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>], Checkpoint 1.4,
-Priority 1).
-</p>
+    <p>
+      Other forms of continuous equivalents also promote accessibility but are
+      not discussed in this document. Representations of sign language (for
+      example, a video that includes a sign language representation of the audio
+      track) benefit people with auditory limitations. Simplified sound tracks
+      may help people with some cognitive difficulties, such as disabilities
+      that limit one's ability to concentrate.
+    </p>
 
-<p>The Web Content Accessibility Guidelines also require that, until user
-agents can automatically read aloud the text equivalent of a video track,
-authors provide an auditory description of the important information of the
-video track of a multimedia presentation 
-(refer to [<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>], Checkpoint
-1.3, Priority 1). This benefits users who may not be
-able to read text or may not have access to software or hardware for speech
-synthesis or braille. <strong>Note.</strong> If you have captions and
-text-to-speech software, you can generate auditory descriptions. 
-However, you must still ensure the proper synchronization of a
-generated speech track with other tracks.</p>
+    <p>
+      The following sections describe in more detail the SMIL features for
+      specifying discrete and continuous equivalents for video, audio, text, and
+      other SMIL elements.
+    </p>
 
-<p>Other forms of continuous equivalents also promote accessibility but are
-not discussed in this document.  Representations of sign language (for
-example, a video that includes a sign
-language representation of the audio track)
-benefit people with auditory limitations. Simplified sound tracks may
-help people with some cognitive difficulties, such
-as disabilities that limit one's ability to concentrate.</p>
+    <h3><a name="Discrete">2.1 Discrete Equivalents</a></h3>
 
-<p>The following sections describe in more detail the SMIL features for
-specifying discrete and continuous equivalents for video, audio, text, and
-other SMIL elements.</p>
+    <p>
+      Discrete text equivalents, when rendered by players or assistive
+      technologies to the screen, as speech, or on a dynamic braille display,
+      allow users to make use of the presentation even if they cannot make use
+      of all of its content. For instance, providing a text equivalent of an
+      image that is part of a link will enable someone with blindness to decide
+      whether to follow the link. Authors specify discrete text equivalents for
+      SMIL elements through the following attributes:
+    </p>
+    <dl>
+      <dt><span class="attribute">alt</span></dt>
+      <dd>
+        For media objects (image, video, audio, textstream, etc.). Specifies a
+        short text equivalent that conveys the same function as the media
+        object. Players may render alternative text in place of or in addition
+        to media content, for instance when images or sound are turned off or
+        not supported.
+      </dd>
+      <dt><span class="attribute">longdesc</span></dt>
+      <dd>
+        For media objects. Specifies a link to a long, more complete description
+        of media content supplementing the description provided by
+        <span class="attribute">alt</span> attribute. Authors should provide
+        long descriptions of complex content, such as charts and graphs. Authors
+        may use longdesc to designate a text transcript of audio and video
+        information.
+      </dd>
+      <dt><span class="attribute">title</span></dt>
+      <dd>
+        For most SMIL 1.0 elements. Provides advisory information about the
+        nature of the element. The SMIL 1.0 specification explains how to use
+        "title" for a given element type. For example, for links, use it to
+        describe the target of the link.
+      </dd>
+    </dl>
 
-<h3><a name="Discrete">2.1 Discrete Equivalents</a></h3>
+    <p>
+      Other SMIL attributes including <span class="attribute">author</span> and
+      <span class="attribute">abstract</span> specify text metadata about
+      document elements. Metadata generally promotes accessibility by providing
+      more context and orientation. Text metadata may be rendered to the screen,
+      as speech, or on a refreshable braille display. Authors are encouraged to
+      enrich their presentations with metadata (refer to [<a
+        href="#ref-WAI-WEBCONTENT"
+        >WAI-WEBCONTENT</a
+      >], Checkpoints 13.2, Priority 2 and Guidelines 12 and 13 in general).
+    </p>
 
-<p>Discrete text equivalents, when rendered by players or assistive
-technologies to the screen, as speech, or on a dynamic braille display, allow
-users to make use of the presentation even if they cannot make use of all of
-its content. For instance, providing a text equivalent of an image that is
-part of a link will enable someone with blindness to decide whether to follow
-the link.  Authors specify discrete text equivalents for SMIL elements through
-the following attributes:</p>
-<dl>
-  <dt><span class="attribute">alt</span></dt>
-    <dd>For media objects (image, video, audio, textstream, etc.). Specifies a
-      short text equivalent that conveys the same function as the media
-      object. Players may render alternative text in place of or in addition
-      to media content, for instance when images or sound are turned off or
-      not supported.</dd>
-  <dt><span class="attribute">longdesc</span></dt>
-    <dd>For media objects. Specifies a link to a long, more complete
-      description of media content supplementing the description provided by
-      <span class="attribute">alt</span> attribute. Authors should provide
-      long descriptions of complex content, such as charts and graphs.
-      Authors may use longdesc to designate a text transcript
-      of audio and video information.</dd>
-  <dt><span class="attribute">title</span></dt>
-    <dd>For most SMIL 1.0 elements. Provides advisory information about the
-      nature of the element. The SMIL 1.0 specification explains how to use
-      "title" for a given element type. For example, for links, use it to
-      describe the target of the link.</dd>
-</dl>
+    <p>
+      The following example includes a
+      <span class="element">video</span> element that presents a dynamic graph
+      illustrating trends in Web commerce and privacy. The
+      <span class="attribute">alt</span>, <span class="attribute">title</span>,
+      and <span class="attribute">abstract</span> attributes specify discrete
+      text equivalents that provide information with different granularity. The
+      <span class="attribute">longdesc</span> attribute designates a more
+      complete text equivalent of the video presentation, with details about
+      what information is being displayed in the graph, the units of the graph,
+      etc. The long description itself might also include links back to anchors
+      associated with key points of the presentation (not shown here) so that
+      users can navigate back and forth.
+    </p>
 
-<p>Other SMIL attributes including <span class="attribute">author</span> and
-<span class="attribute">abstract</span> specify text metadata about document
-elements. Metadata generally promotes accessibility by providing more context
-and orientation. Text metadata may be rendered to the screen, as speech, or on
-a refreshable braille display. Authors are encouraged to enrich their
-presentations with metadata (refer to
-[<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>], Checkpoints
-13.2, Priority 2 and Guidelines 12 and 13 in general).
-</p>
-
-<p>The following example includes a <span class="element">video</span> element
-that presents a dynamic graph illustrating trends in Web commerce and
-privacy. The <span class="attribute">alt</span>, <span
-class="attribute">title</span>, and <span class="attribute">abstract</span>
-attributes specify discrete text equivalents that provide information with
-different granularity. The <span class="attribute">longdesc</span> attribute
-designates a more complete text equivalent of the video presentation, with
-details about what information is being displayed in the graph, the units of
-the graph, etc. The long description itself might also include links back to
-anchors associated with key points of the presentation (not shown here) so
-that users can navigate back and forth.</p>
-
-<pre class="example"><code>&lt;video src="http://www.fou.fr/graph.mpeg"
+    <pre class="example"><code>&lt;video src="http://www.fou.fr/graph.mpeg"
      title="Web Trends: Graph 1"
      alt="The number of online stores
           and consumers is increasing, but privacy
@@ -367,68 +479,78 @@ that users can navigate back and forth.</p>
                Web commerce."
      longdesc="http://www.fou.fr/graph-description.htm"/></code></pre>
 
-<P><strong>Note.</strong> The above example shows one usage of the
-<span class="attribute">alt</span> and <span
-class="attribute">title</span> attributes together. The SMIL 1.0
-specification does not clearly explain the relationship between the two
-attributes. We recommend that authors use <span
-class="attribute">title</span> when <span class="attribute">alt</span>
-is not available (e.g., to describe 
-<span class="element">par</span> and 
-<span class="element">seq</span> synchronization,
-link destinations, layout, etc.) The relationship between the
-attributes should be clarified by W3C Working Groups in an future
-version of SMIL.
+    <p>
+      <strong>Note.</strong> The above example shows one usage of the
+      <span class="attribute">alt</span> and
+      <span class="attribute">title</span> attributes together. The SMIL 1.0
+      specification does not clearly explain the relationship between the two
+      attributes. We recommend that authors use
+      <span class="attribute">title</span> when
+      <span class="attribute">alt</span>
+      is not available (e.g., to describe
+      <span class="element">par</span> and
+      <span class="element">seq</span> synchronization, link destinations,
+      layout, etc.) The relationship between the attributes should be clarified
+      by W3C Working Groups in an future version of SMIL.
+    </p>
 
-<p><strong>Note.</strong> In the examples in this document, "rt"
-suggests a "real text" media object file, "rm" a real audio file, and
-"mpeg" an MPEG file.</p>
+    <p>
+      <strong>Note.</strong> In the examples in this document, "rt" suggests a
+      "real text" media object file, "rm" a real audio file, and "mpeg" an MPEG
+      file.
+    </p>
 
-<h3><a name="Continuous">2.2 Continuous Equivalents</a></h3>
+    <h3><a name="Continuous">2.2 Continuous Equivalents</a></h3>
 
-<p>Two continuous equivalents that promote accessibility are captions and
-auditory descriptions.  A <a name="def-caption">caption</a> is a text
-transcript of spoken words and non-spoken sound effects that provides the same
-information as a presentation's audio stream and is synchronized with the
-video track of the presentation.  
-Captions benefit people who are deaf,
-hard of hearing, or who have auditory learning disabilities.
-They also benefit anyone in a setting where audio tracks
-would cause disturbance, where ambient noise in the audio track or listening
-environment prevents them from hearing the audio track, or when they have
-difficulties understanding spoken language.</p>
+    <p>
+      Two continuous equivalents that promote accessibility are captions and
+      auditory descriptions. A <a name="def-caption">caption</a> is a text
+      transcript of spoken words and non-spoken sound effects that provides the
+      same information as a presentation's audio stream and is synchronized with
+      the video track of the presentation. Captions benefit people who are deaf,
+      hard of hearing, or who have auditory learning disabilities. They also
+      benefit anyone in a setting where audio tracks would cause disturbance,
+      where ambient noise in the audio track or listening environment prevents
+      them from hearing the audio track, or when they have difficulties
+      understanding spoken language.
+    </p>
 
-<p>An <a name="def-auditory-desc">auditory description</a> is a recorded or
-synthesized voice that describes key visual elements of the presentation
-including information about actions, body language, graphics, and scene
-changes. Like captions, auditory descriptions must be synchronized with the
-video stream they describe. Additionally, they must be synchronized with other
-audio streams. Auditory descriptions are generally timed to play during
-natural pauses in dialog.  However, there may be cases where these natural
-pauses are not long enough to accommodate a sufficient auditory description.
-In such cases, it will be necessary to pause the video in order to provide
-enough time for an extended auditory description.  At the end of the
-description, the video should resume play automatically. 
-Auditory descriptions benefit people with
-blindness, low vision, or some kinds of visual perceptive learning
-disabilities. They also benefit anyone in an
-eyes-busy setting or whose devices cannot show the original video or graphical
-media object.</p>
+    <p>
+      An <a name="def-auditory-desc">auditory description</a> is a recorded or
+      synthesized voice that describes key visual elements of the presentation
+      including information about actions, body language, graphics, and scene
+      changes. Like captions, auditory descriptions must be synchronized with
+      the video stream they describe. Additionally, they must be synchronized
+      with other audio streams. Auditory descriptions are generally timed to
+      play during natural pauses in dialog. However, there may be cases where
+      these natural pauses are not long enough to accommodate a sufficient
+      auditory description. In such cases, it will be necessary to pause the
+      video in order to provide enough time for an extended auditory
+      description. At the end of the description, the video should resume play
+      automatically. Auditory descriptions benefit people with blindness, low
+      vision, or some kinds of visual perceptive learning disabilities. They
+      also benefit anyone in an eyes-busy setting or whose devices cannot show
+      the original video or graphical media object.
+    </p>
 
-<p>Below we discuss in more detail how to associate captions and auditory
-descriptions with multimedia presentations in SMIL 1.0 in a manner that allows
-users to control the presentation of the alternative stream. We also examine
-how SMIL 1.0 supports multilingual presentations and how this affects
-continuous equivalents for accessibility. For more information about
-synchronizing media objects, please consult the SMIL 1.0 specification 
-([<a href="#ref-SMIL10">SMIL10</a>]).</p>
+    <p>
+      Below we discuss in more detail how to associate captions and auditory
+      descriptions with multimedia presentations in SMIL 1.0 in a manner that
+      allows users to control the presentation of the alternative stream. We
+      also examine how SMIL 1.0 supports multilingual presentations and how this
+      affects continuous equivalents for accessibility. For more information
+      about synchronizing media objects, please consult the SMIL 1.0
+      specification ([<a href="#ref-SMIL10">SMIL10</a>]).
+    </p>
 
-<h4><a name="Captions">2.2.1 Captions</a></h4>
+    <h4><a name="Captions">2.2.1 Captions</a></h4>
 
-<p>In SMIL 1.0, captions may be included in a presentation with the textstream
-element. The following example plays an audio track, a video track, and 
-captions (via the textstream element) in parallel.</p>
-<pre class="example"><code>&lt;par>
+    <p>
+      In SMIL 1.0, captions may be included in a presentation with the
+      textstream element. The following example plays an audio track, a video
+      track, and captions (via the textstream element) in parallel.
+    </p>
+    <pre class="example"><code>&lt;par>
    &lt;audio alt="Interview with Harvey, English audio" 
           src="audio.rm"/>
    &lt;video alt="Interview with Harvey" src="video.rm"/>
@@ -436,23 +558,28 @@ captions (via the textstream element) in parallel.</p>
                src="closed-caps.rt"/>
 &lt;/par></code></pre>
 
-<p>The limitation of the example is that the user cannot easily turn
-on or off the captions. This is corrected in the next example.</p>
+    <p>
+      The limitation of the example is that the user cannot easily turn on or
+      off the captions. This is corrected in the next example.
+    </p>
 
-<p>Since user control of presentation is vital to accessibility, SMIL 1.0
-allows authors to create presentations whose behavior varies depending on
-current player settings.  When a SMIL element such as textstream has the <span
-class="attribute">system-captions</span> test attribute with value "on" and
-the user has turned on captioning, the element will be rendered.</p>
+    <p>
+      Since user control of presentation is vital to accessibility, SMIL 1.0
+      allows authors to create presentations whose behavior varies depending on
+      current player settings. When a SMIL element such as textstream has the
+      <span class="attribute">system-captions</span> test attribute with value
+      "on" and the user has turned on captioning, the element will be rendered.
+    </p>
 
-<p>The following example is a movie that consists of
-four media object elements: a video track, an
-audio soundtrack, and text streams of captions and
-stock values (for the avid stock market tracker!). 
-All the elements are to be played in parallel due to the <span
-class="element">par</span> element. The captions will only be rendered if the
-user has turned on captioning.</p>
-<pre class="example"><code> &lt;par>
+    <p>
+      The following example is a movie that consists of four media object
+      elements: a video track, an audio soundtrack, and text streams of captions
+      and stock values (for the avid stock market tracker!). All the elements
+      are to be played in parallel due to the
+      <span class="element">par</span> element. The captions will only be
+      rendered if the user has turned on captioning.
+    </p>
+    <pre class="example"><code> &lt;par>
    &lt;audio alt="My Favorite Movie, English audio" src="audio.rm"/>
    &lt;video alt="My Favorite Movie" src="video.rm"/>
    &lt;textstream alt="Stock ticker" src="stockticker.rt"/>
@@ -461,63 +588,81 @@ user has turned on captioning.</p>
                src="closed-caps.rt"/>
 &lt;/par></code></pre>
 
-<p>The <span class="attribute">system-captions</span> attribute can
-also be used with elements other than textstream. Like the other SMIL
-<a href="#Testing">test attributes</a> (described in [<a
-href="#ref-SMIL10">SMIL</a>], section 4.4), <span
-class="attribute">system-captions</span> acts like a boolean flag that
-returns "true" or "false" according to player settings. <a
-href="#Layout">Section 3.1</a> below illustrates how <span
-class="attribute">system-captions</span> can be used to specify
-different presentation layouts according to whether the user has
-captioning turned on.</p>
+    <p>
+      The <span class="attribute">system-captions</span> attribute can also be
+      used with elements other than textstream. Like the other SMIL
+      <a href="#Testing">test attributes</a> (described in [<a
+        href="#ref-SMIL10"
+        >SMIL</a
+      >], section 4.4), <span class="attribute">system-captions</span> acts like
+      a boolean flag that returns "true" or "false" according to player
+      settings. <a href="#Layout">Section 3.1</a> below illustrates how
+      <span class="attribute">system-captions</span> can be used to specify
+      different presentation layouts according to whether the user has
+      captioning turned on.
+    </p>
 
-<p><strong>Note.</strong> Authors should use <span
-class="attribute">system-captions="on"</span> with elements that
-specify captions and <span
-class="attribute">system-captions="off"</span> for caption-related
-effects such as layout changes. 
+    <p>
+      <strong>Note.</strong> Authors should use
+      <span class="attribute">system-captions="on"</span> with elements that
+      specify captions and
+      <span class="attribute">system-captions="off"</span> for caption-related
+      effects such as layout changes.
+    </p>
 
-<h4><a name="AudioDesc">2.2.2 Auditory Descriptions</a></h4>
+    <h4><a name="AudioDesc">2.2.2 Auditory Descriptions</a></h4>
 
-<p>In SMIL 1.0, auditory descriptions may be included in a
-presentation with the audio element. However, SMIL 1.0 does not
-provide a mechanism that allows users to turn on or off player support
-for auditory descriptions.  Authors may wish to create one
-presentation with no auditory description and another with an auditory
-description.</p>
+    <p>
+      In SMIL 1.0, auditory descriptions may be included in a presentation with
+      the audio element. However, SMIL 1.0 does not provide a mechanism that
+      allows users to turn on or off player support for auditory descriptions.
+      Authors may wish to create one presentation with no auditory description
+      and another with an auditory description.
+    </p>
 
-<h4><a name="Multilingual">2.2.3 Multilingual Presentations and Continuous
-Equivalents</a></h4>
+    <h4>
+      <a name="Multilingual"
+        >2.2.3 Multilingual Presentations and Continuous Equivalents</a
+      >
+    </h4>
 
-<p>SMIL 1.0 allows authors to create multilingual presentations by using
-subtitles (which are text streams) and overdubs (which are audio streams) in
-another language. Multilingual presentations themselves do not pose
-accessibility problems. Indeed, providing additional tracks (even in a
-different language) will help many users.</p>
+    <p>
+      SMIL 1.0 allows authors to create multilingual presentations by using
+      subtitles (which are text streams) and overdubs (which are audio streams)
+      in another language. Multilingual presentations themselves do not pose
+      accessibility problems. Indeed, providing additional tracks (even in a
+      different language) will help many users.
+    </p>
 
-<p>However, since subtitles and overdubs may co-exist with text and audio
-streams provided for accessibility, authors of accessible multilingual
-presentations should be aware of how they interact. For instance, authors
-should lay out presentations so that captions and subtitles do not 
-overlap on the screen. Audio tracks should not overlap unless
-carefully synchronized.</p>
+    <p>
+      However, since subtitles and overdubs may co-exist with text and audio
+      streams provided for accessibility, authors of accessible multilingual
+      presentations should be aware of how they interact. For instance, authors
+      should lay out presentations so that captions and subtitles do not overlap
+      on the screen. Audio tracks should not overlap unless carefully
+      synchronized.
+    </p>
 
-<p>In SMIL 1.0, the <span class="attribute">system-overdub-or-caption</span>
-test attribute allows users to select (through the player's user interface)
-whether they would rather have the player render overdubs or subtitles.
-<strong>Note.</strong> The term "caption" in "system-overdub-or-caption" does
-not refer to accessibility captions. Authors must not use this attribute to
-create accessibility captions; use <span
-class="attribute">system-captions</span> instead.</p>
+    <p>
+      In SMIL 1.0, the <span class="attribute">system-overdub-or-caption</span>
+      test attribute allows users to select (through the player's user
+      interface) whether they would rather have the player render overdubs or
+      subtitles.
+      <strong>Note.</strong> The term "caption" in "system-overdub-or-caption"
+      does not refer to accessibility captions. Authors must not use this
+      attribute to create accessibility captions; use
+      <span class="attribute">system-captions</span> instead.
+    </p>
 
-<p>The following example offers a movie in both Spanish
-and English. If the player is set for preferences of Spanish <em>and</em>
-overdubs, the Spanish audio track will be rendered. Otherwise the second audio
-track of the first switch element (the English audio track) will be rendered.
-The second textstream specifies English captions that will be
-rendered when the player is set for captioning.</p>
-<pre class="example"><code>&lt;par>
+    <p>
+      The following example offers a movie in both Spanish and English. If the
+      player is set for preferences of Spanish <em>and</em> overdubs, the
+      Spanish audio track will be rendered. Otherwise the second audio track of
+      the first switch element (the English audio track) will be rendered. The
+      second textstream specifies English captions that will be rendered when
+      the player is set for captioning.
+    </p>
+    <pre class="example"><code>&lt;par>
    &lt;switch> &lt;!-- audio -->
      &lt;audio alt="My Favorite Movie, Spanish audio"
             src="audio-es.rm"
@@ -533,13 +678,14 @@ rendered when the player is set for captioning.</p>
                system-captions="on"/>
 &lt;/par></code></pre>
 
-<p>To add Spanish subtitles to the example, the author would specify a second
-textstream element.  The first textstream in the switch
-element will be rendered if the player is
-set for captioning. Otherwise, 
-the second textstream element will be rendered if
-the user has set the player to prefer subtitles and Spanish.</p>
-<pre class="example"><code>&lt;par>
+    <p>
+      To add Spanish subtitles to the example, the author would specify a second
+      textstream element. The first textstream in the switch element will be
+      rendered if the player is set for captioning. Otherwise, the second
+      textstream element will be rendered if the user has set the player to
+      prefer subtitles and Spanish.
+    </p>
+    <pre class="example"><code>&lt;par>
    &lt;switch> &lt;!-- audio -->
      &lt;audio alt="My Favorite Movie, Spanish audio"
             src="audio-es.rm"
@@ -561,17 +707,20 @@ the user has set the player to prefer subtitles and Spanish.</p>
    &lt;/switch>
 &lt;/par></code></pre>
 
-<p>While subtitles only capture dialog in text, captions include dialog as
-well as text descriptions of off-screen information (e.g., sounds);
-authors should provide captions when possible.</p>
+    <p>
+      While subtitles only capture dialog in text, captions include dialog as
+      well as text descriptions of off-screen information (e.g., sounds);
+      authors should provide captions when possible.
+    </p>
 
-<p>In the <span class="element">switch</span> element, the three textstream
-elements are rendered in order of preference for Spanish captions, Spanish
-subtitles, or the default (English)
-captions. This design allows authors to reuse the
-captions as subtitles and to ensure that the textstream is not rendered twice
-when the player is set to support both.</p>
-<pre class="example"><code>&lt;par>
+    <p>
+      In the <span class="element">switch</span> element, the three textstream
+      elements are rendered in order of preference for Spanish captions, Spanish
+      subtitles, or the default (English) captions. This design allows authors
+      to reuse the captions as subtitles and to ensure that the textstream is
+      not rendered twice when the player is set to support both.
+    </p>
+    <pre class="example"><code>&lt;par>
    &lt;switch> &lt;!-- audio -->
      &lt;audio alt="My Favorite Movie, Spanish audio"
             src="audio-es.rm"
@@ -597,71 +746,86 @@ when the player is set to support both.</p>
    &lt;/switch>
 &lt;/par></code></pre>
 
-<p><strong>Note.</strong> In SMIL 1.0, values for <span
-class="attribute">system-overdub-or-caption</span> only refer to user
-preferences for <em>either</em> subtitles <em>or</em> overdubs; there are no
-values for the test attribute that refer to neither or both.</p>
+    <p>
+      <strong>Note.</strong> In SMIL 1.0, values for
+      <span class="attribute">system-overdub-or-caption</span> only refer to
+      user preferences for <em>either</em> subtitles <em>or</em> overdubs; there
+      are no values for the test attribute that refer to neither or both.
+    </p>
 
-<h2><a name="LayoutStyle">3. Layout and Style</a></h2>
+    <h2><a name="LayoutStyle">3. Layout and Style</a></h2>
 
-<p>While it is important for players to respect author-specified
-layout and style for a presentation, the author's design may not take
-into consideration variations in a user's abilities, hardware,
-software, or viewing environment.  Players must allow users to control
-styles and layout, otherwise users with some disabilities may not be
-able to make use of a presentation at all. For instance, players must
-allow users to control colors (e.g., for users with color deficiencies), 
-text size (e.g., for users with low vision), caption
-position (e.g., if a caption overlaps other content), etc.
-Please refer to [<a href="#ref-WAI-USERAGENT">WAI-USERAGENT</a>]
-for more information about user control of styles.
+    <p>
+      While it is important for players to respect author-specified layout and
+      style for a presentation, the author's design may not take into
+      consideration variations in a user's abilities, hardware, software, or
+      viewing environment. Players must allow users to control styles and
+      layout, otherwise users with some disabilities may not be able to make use
+      of a presentation at all. For instance, players must allow users to
+      control colors (e.g., for users with color deficiencies), text size (e.g.,
+      for users with low vision), caption position (e.g., if a caption overlaps
+      other content), etc. Please refer to [<a href="#ref-WAI-USERAGENT"
+        >WAI-USERAGENT</a
+      >] for more information about user control of styles.
+    </p>
 
-<p>Authors may specify the graphical layout of SMIL 1.0 media objects
-through SMIL's basic layout language or with a style sheet language
-such as CSS [<a href="#ref-CSS1">CSS1</a>, <a
-href="#ref-CSS2">CSS2</a>]. <strong>Note.</strong> Media objects
-referenced from a SMIL 1.0 presentation may have associated
-style sheets. SMIL 1.0 does not specify how they
-interact with style sheets for the SMIL presentation itself.
+    <p>
+      Authors may specify the graphical layout of SMIL 1.0 media objects through
+      SMIL's basic layout language or with a style sheet language such as CSS
+      [<a href="#ref-CSS1">CSS1</a>, <a href="#ref-CSS2">CSS2</a>].
+      <strong>Note.</strong> Media objects referenced from a SMIL 1.0
+      presentation may have associated style sheets. SMIL 1.0 does not specify
+      how they interact with style sheets for the SMIL presentation itself.
+    </p>
 
-<p><strong>Note.</strong> While SMIL 1.0 includes support for style sheets,
-SMIL 1.0 players, as of the publication of this document,
-do not support CSS. Please refer to 
-[<a href="#ref-SMIL-CSS-LAYOUT">SMIL-CSS-LAYOUT</a>] for information about
-rendering SMIL basic layout with a CSS2 engine.  The Web Content Accessibility
-Guidelines recommend that authors specify style through style sheets when
-supported by user agents (including SMIL players). One reason the guidelines
-recommend style sheets (refer to [<a href="#ref-CSS-ACCESS">CSS-ACCESS</a>])
-is that in the CSS2 cascade, user-specified style sheets can override
-author-specified style sheets (refer to the "!important" mechanism described
-in section 6.4.2 of [<a href="#ref-CSS2">CSS2</a>]).</p>
+    <p>
+      <strong>Note.</strong> While SMIL 1.0 includes support for style sheets,
+      SMIL 1.0 players, as of the publication of this document, do not support
+      CSS. Please refer to [<a href="#ref-SMIL-CSS-LAYOUT">SMIL-CSS-LAYOUT</a>]
+      for information about rendering SMIL basic layout with a CSS2 engine. The
+      Web Content Accessibility Guidelines recommend that authors specify style
+      through style sheets when supported by user agents (including SMIL
+      players). One reason the guidelines recommend style sheets (refer to [<a
+        href="#ref-CSS-ACCESS"
+        >CSS-ACCESS</a
+      >]) is that in the CSS2 cascade, user-specified style sheets can override
+      author-specified style sheets (refer to the "!important" mechanism
+      described in section 6.4.2 of [<a href="#ref-CSS2">CSS2</a>]).
+    </p>
 
-<h3><a name="Layout">3.1 Layout</a></h3>
+    <h3><a name="Layout">3.1 Layout</a></h3>
 
-<p>Authors specify the graphical layout of a SMIL 1.0 presentation inside the
-<span class="element">layout</span> element, using either the SMIL basic
-layout language or style sheets.  SMIL's layout facilities allow authors to
-arrange rectangular regions graphically (via the <span
-class="element">region</span> element), much like positioning in CSS2.</p>
+    <p>
+      Authors specify the graphical layout of a SMIL 1.0 presentation inside the
+      <span class="element">layout</span> element, using either the SMIL basic
+      layout language or style sheets. SMIL's layout facilities allow authors to
+      arrange rectangular regions graphically (via the
+      <span class="element">region</span> element), much like positioning in
+      CSS2.
+    </p>
 
-<p>The following example illustrates how to regain space when captions are
-turned off or not supported. In this example, the same layout is specified
-with both the SMIL basic layout language and CSS2 style sheets. Due to their
-order in the <span class="element">switch</span> element, the SMIL player will
-use the CSS style sheet if supported, otherwise it will use the SMIL layout.
-The <span class="attribute">type</span> attribute of the <span
-class="element">layout</span> element specifies the MIME type of the style
-sheet language, here "text/css".</p>
+    <p>
+      The following example illustrates how to regain space when captions are
+      turned off or not supported. In this example, the same layout is specified
+      with both the SMIL basic layout language and CSS2 style sheets. Due to
+      their order in the <span class="element">switch</span> element, the SMIL
+      player will use the CSS style sheet if supported, otherwise it will use
+      the SMIL layout. The <span class="attribute">type</span> attribute of the
+      <span class="element">layout</span> element specifies the MIME type of the
+      style sheet language, here "text/css".
+    </p>
 
-<p>The example specifies two layouts.  When the user has
-chosen to view captions, they appear in a region (the "captext" region) that
-takes up 20% of available vertical space below a region for the video
-presentation (the "capvideo" region), which takes up the other 80%.  When the
-user does not wish to view captions, the video region takes up all available
-vertical space (the "video" region).  The choice of which layout to use
-depends on the value of the <span class="attribute">system-captions</span>
-test attribute.</p>
-<pre class="example"><code>&lt;smil>
+    <p>
+      The example specifies two layouts. When the user has chosen to view
+      captions, they appear in a region (the "captext" region) that takes up 20%
+      of available vertical space below a region for the video presentation (the
+      "capvideo" region), which takes up the other 80%. When the user does not
+      wish to view captions, the video region takes up all available vertical
+      space (the "video" region). The choice of which layout to use depends on
+      the value of the <span class="attribute">system-captions</span> test
+      attribute.
+    </p>
+    <pre class="example"><code>&lt;smil>
 &nbsp; &lt;head>
     &lt;switch>
       &lt;layout type="text/css">
@@ -698,66 +862,76 @@ test attribute.</p>
 &lt;/body>
 &lt;/smil></code></pre>
 
-<h3><a name="Style">3.2 Style</a></h3>
+    <h3><a name="Style">3.2 Style</a></h3>
 
-<p>In the SMIL 1.0 basic layout language, the only style
-attribute that can be specified 
-is <span class="attribute">background-color</span>. Authors must ensure
-sufficient contrast between foreground and background colors of content,
-otherwise users with color deficiencies will not be able to perceive
-them (refer to 
-[<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>], Checkpoint 2.2,
-Priority 2).
-If <span class="attribute">background-color</span> is set and media objects
-(e.g., video, text, etc.) have transparent backgrounds, authors must ensure
-that the colors exhibit sufficient contrast.  Players must allow users to
-control background colors to ensure accessibility.
-</p>
+    <p>
+      In the SMIL 1.0 basic layout language, the only style attribute that can
+      be specified is <span class="attribute">background-color</span>. Authors
+      must ensure sufficient contrast between foreground and background colors
+      of content, otherwise users with color deficiencies will not be able to
+      perceive them (refer to [<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a
+      >], Checkpoint 2.2, Priority 2). If
+      <span class="attribute">background-color</span> is set and media objects
+      (e.g., video, text, etc.) have transparent backgrounds, authors must
+      ensure that the colors exhibit sufficient contrast. Players must allow
+      users to control background colors to ensure accessibility.
+    </p>
 
-<h3><a name="Popups">3.3 Opening New Windows</a></h3>
+    <h3><a name="Popups">3.3 Opening New Windows</a></h3>
 
-<p>The <span class="attribute">show</span> attribute on the <span
-class="element">a</span> and <span class="element">anchor</span> elements
-controls the behavior of the source document containing the link when the link
-is followed. The default value of the attribute is "replace", which means that
-the destination presentation replaces the current presentation (in the same
-window, in audio, etc.).</p>
+    <p>
+      The <span class="attribute">show</span> attribute on the
+      <span class="element">a</span> and
+      <span class="element">anchor</span> elements controls the behavior of the
+      source document containing the link when the link is followed. The default
+      value of the attribute is "replace", which means that the destination
+      presentation replaces the current presentation (in the same window, in
+      audio, etc.).
+    </p>
 
-<p>Two other values for the attribute, "new" and "pause", cause the
-destination presentation to appear in a new context (e.g., window). Opening
-new windows without warning may disorient users with blindness or
-some cognitive impairments and may simply bother others. SMIL players must help
-orient users when windows open or focus changes (e.g., by using audio cues, by
-providing a history mechanism so users can return to a familiar state,
-etc.). Until players do so, authors should provide clues in content
-(e.g., via the <span class="attribute">title</span> attribute)
-whenever they intend to open a new window (refer to
-[<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>], Checkpoint
-10.1, Priority 2).
-</p>
+    <p>
+      Two other values for the attribute, "new" and "pause", cause the
+      destination presentation to appear in a new context (e.g., window).
+      Opening new windows without warning may disorient users with blindness or
+      some cognitive impairments and may simply bother others. SMIL players must
+      help orient users when windows open or focus changes (e.g., by using audio
+      cues, by providing a history mechanism so users can return to a familiar
+      state, etc.). Until players do so, authors should provide clues in content
+      (e.g., via the <span class="attribute">title</span> attribute) whenever
+      they intend to open a new window (refer to [<a href="#ref-WAI-WEBCONTENT"
+        >WAI-WEBCONTENT</a
+      >], Checkpoint 10.1, Priority 2).
+    </p>
 
-<h2><a name="Navigation">4. Navigation and Linking</a></h2>
+    <h2><a name="Navigation">4. Navigation and Linking</a></h2>
 
-<p>SMIL 1.0 includes a number of hyperlink features, including
-HTML-like hyperlinks and image maps (as well as video maps). SMIL 1.0 also
-allows authors to create time-dependent hyperlinks that are only active during
-author-specified intervals of a presentation. This section discusses
-the accessibility of these features.
+    <p>
+      SMIL 1.0 includes a number of hyperlink features, including HTML-like
+      hyperlinks and image maps (as well as video maps). SMIL 1.0 also allows
+      authors to create time-dependent hyperlinks that are only active during
+      author-specified intervals of a presentation. This section discusses the
+      accessibility of these features.
+    </p>
 
-<h3><a name="Maps">4.1 Accessible Image/Video Maps</a></h3>
+    <h3><a name="Maps">4.1 Accessible Image/Video Maps</a></h3>
 
-<p>To create an accessible image or video map, authors must describe the
-nature of each link in the map for users who cannot see or use the visual
-information. Authors provide the description via the <span
-class="attribute">title</span> attribute on the <span class="element">a</span>
-and <span class="element">anchor</span> elements.  This text description may
-be rendered by SMIL players on the screen or by assistive technologies as
-speech or dynamic braille.</p>
+    <p>
+      To create an accessible image or video map, authors must describe the
+      nature of each link in the map for users who cannot see or use the visual
+      information. Authors provide the description via the
+      <span class="attribute">title</span> attribute on the
+      <span class="element">a</span> and
+      <span class="element">anchor</span> elements. This text description may be
+      rendered by SMIL players on the screen or by assistive technologies as
+      speech or dynamic braille.
+    </p>
 
-<p>Here is an example of a video clip with an associated map. Each link
-describes an active rectangular region of the video via the <span
-class="attribute">coords</span> attribute.</p>
-<pre class="example"><code>&lt;video src="http://www.w3.org/CoolStuff.rm">
+    <p>
+      Here is an example of a video clip with an associated map. Each link
+      describes an active rectangular region of the video via the
+      <span class="attribute">coords</span> attribute.
+    </p>
+    <pre class="example"><code>&lt;video src="http://www.w3.org/CoolStuff.rm">
   &lt;anchor href="http://www.w3.org/AudioVideo" 
           coords="0%,0%,50%,50%"
           title="W3C Multimedia Activity"/>
@@ -766,26 +940,30 @@ class="attribute">coords</span> attribute.</p>
           title="W3C Style Sheet Activity"/>
 &lt;/video></code></pre>
 
-<p>With the <span class="element">anchor</span> element, authors may associate
-a link source with spatial and temporal subparts of a media object. With the
-<span class="element">a</span> element, authors may only associate a link
-source with a complete media object.</p>
+    <p>
+      With the <span class="element">anchor</span> element, authors may
+      associate a link source with spatial and temporal subparts of a media
+      object. With the <span class="element">a</span> element, authors may only
+      associate a link source with a complete media object.
+    </p>
 
-<p>SMIL players should provide an equivalent text link for each graphical link
-(for example, using link text derived from the <span
-class="attribute">title</span> attribute of the linking element or the <span
-class="attribute">alt</span> attribute of an active media object inside the
-link). Text links are important to users with blindness or low vision who
-often navigate documents by jumping from link to link and having the link text
-rendered by a speech synthesizer or refreshable braille display. Until SMIL
-players provide alternative text links, authors should include text links in
-addition to non-text links (refer to
-[<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>], Checkpoint
-1.5, Priority 3).
+    <p>
+      SMIL players should provide an equivalent text link for each graphical
+      link (for example, using link text derived from the
+      <span class="attribute">title</span> attribute of the linking element or
+      the <span class="attribute">alt</span> attribute of an active media object
+      inside the link). Text links are important to users with blindness or low
+      vision who often navigate documents by jumping from link to link and
+      having the link text rendered by a speech synthesizer or refreshable
+      braille display. Until SMIL players provide alternative text links,
+      authors should include text links in addition to non-text links (refer to
+      [<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>], Checkpoint 1.5,
+      Priority 3).
+    </p>
 
-<P>For example:</p>
+    <p>For example:</p>
 
-<pre class="example"><code>&lt;par>
+    <pre class="example"><code>&lt;par>
    &lt;video title="Introduction to W3C Activities"
           alt="W3C Activities"
           longdesc="http://www.w3.org/Activity/Summary"
@@ -805,15 +983,17 @@ addition to non-text links (refer to
    &lt;/par>
 &lt;/par></code></pre>
 
-<h3><a name="TimeLinks">4.2 Accessible Time-dependent Links</a></h3>
+    <h3><a name="TimeLinks">4.2 Accessible Time-dependent Links</a></h3>
 
-<p>The time-dependent linking mechanisms offered by SMIL 1.0 pose an
-accessibility challenge to both authors and players. The following example
-from the SMIL 1.0 specification illustrates time-dependent linking. In the
-example, the duration of a video clip is split into two time intervals: from 0
-to 5 seconds and from 5 to 10 seconds. A different link is associated with
-each of these intervals.</p>
-<pre class="example"><code>&lt;video title="Introduction to W3C Activities"
+    <p>
+      The time-dependent linking mechanisms offered by SMIL 1.0 pose an
+      accessibility challenge to both authors and players. The following example
+      from the SMIL 1.0 specification illustrates time-dependent linking. In the
+      example, the duration of a video clip is split into two time intervals:
+      from 0 to 5 seconds and from 5 to 10 seconds. A different link is
+      associated with each of these intervals.
+    </p>
+    <pre class="example"><code>&lt;video title="Introduction to W3C Activities"
           alt="W3C Activities"
           longdesc="http://www.w3.org/Activity/Summary"
           src="http://www.w3.org/CoolStuff.rm">
@@ -825,36 +1005,40 @@ each of these intervals.</p>
           begin="5s" end="10s"/>
 &lt;/video></code></pre>
 
-<p>Some users require more time to interact with the presentation
-than anticipated by the author. SMIL players may make time-dependent
-links accessible to users in a number of ways, including
-allowing the user to control the overall timing of the 
-presentation (e.g., easy to control pause and rewind functionalities)
-or by providing users with time-independent access to those links
-(e.g., a list of static links). Authors may facilitate access
-to time-dependent links by providing a catalog of them in a
-separate document (linked from the presentation). In this catalog,
-the static list of
-links may include information about when the links are active during the
-presentation. This type of catalog will help all users, and allow people to
-find information about all links associated with a particular media object or
-that are active at a particular moment of the presentation.</p>
+    <p>
+      Some users require more time to interact with the presentation than
+      anticipated by the author. SMIL players may make time-dependent links
+      accessible to users in a number of ways, including allowing the user to
+      control the overall timing of the presentation (e.g., easy to control
+      pause and rewind functionalities) or by providing users with
+      time-independent access to those links (e.g., a list of static links).
+      Authors may facilitate access to time-dependent links by providing a
+      catalog of them in a separate document (linked from the presentation). In
+      this catalog, the static list of links may include information about when
+      the links are active during the presentation. This type of catalog will
+      help all users, and allow people to find information about all links
+      associated with a particular media object or that are active at a
+      particular moment of the presentation.
+    </p>
 
-<h3><a name="UsefulNav">4.3 Useful Navigation Mechanisms</a></h3>
+    <h3><a name="UsefulNav">4.3 Useful Navigation Mechanisms</a></h3>
 
-<p>Navigation mechanisms help all users but are particularly important for
-users with blindness or some 
-cognitive impairments who may not be able to grasp the
-structure of a presentation
-through visual clues. In addition to HTML-like linking
-mechanisms that may be used to create site maps and navigation bars, SMIL
-allows authors to create "temporal navigation bars" that allow users to
-navigate directly to important points in time of a presentation.</p>
+    <p>
+      Navigation mechanisms help all users but are particularly important for
+      users with blindness or some cognitive impairments who may not be able to
+      grasp the structure of a presentation through visual clues. In addition to
+      HTML-like linking mechanisms that may be used to create site maps and
+      navigation bars, SMIL allows authors to create "temporal navigation bars"
+      that allow users to navigate directly to important points in time of a
+      presentation.
+    </p>
 
-<p>As an example, we first identify key points in a presentation that includes
-three interviews conducted sequentially (Joe, Tim, then Judy). Each segment is
-marked by an anchor (identified by the "id" attribute).</p>
-<pre class="example"><code>&lt;smil>
+    <p>
+      As an example, we first identify key points in a presentation that
+      includes three interviews conducted sequentially (Joe, Tim, then Judy).
+      Each segment is marked by an anchor (identified by the "id" attribute).
+    </p>
+    <pre class="example"><code>&lt;smil>
 &lt;head>
    &lt;layout>
      &lt;region id="video" top="0" height="100%" fit="meet"/>
@@ -883,13 +1067,16 @@ marked by an anchor (identified by the "id" attribute).</p>
 &lt;/body>
 &lt;/smil></code></pre>
 
-<p>Authors might add a temporal navigation bar in parallel with the
-presentation. The navigation bar takes up the lower 10% of the presentation,
-and consists of a photo of each of the interviewees that links to their
-interview. Selecting a link causes player to play that part of the video.
-Refer to <a href="#Popups">section 3.3  on opening new windows</a> for
-information about where the interview will be played.</p>
-<pre class="example"><code>&lt;smil>
+    <p>
+      Authors might add a temporal navigation bar in parallel with the
+      presentation. The navigation bar takes up the lower 10% of the
+      presentation, and consists of a photo of each of the interviewees that
+      links to their interview. Selecting a link causes player to play that part
+      of the video. Refer to
+      <a href="#Popups">section 3.3 on opening new windows</a> for information
+      about where the interview will be played.
+    </p>
+    <pre class="example"><code>&lt;smil>
 &lt;head>
  &lt;layout>
    &lt;region id="video" top="0" height="90%" fit="meet"/>
@@ -940,83 +1127,98 @@ information about where the interview will be played.</p>
 &lt;/body&gt;
 &lt;/smil&gt;</code></pre>
 
-<h2><a name="Testing">5. Adapting Content to User and System Settings</a></h2>
+    <h2>
+      <a name="Testing">5. Adapting Content to User and System Settings</a>
+    </h2>
 
-<P>SMIL 1.0 includes "test attributes" that the author may use to
-suggest how a presentation should vary according to user preferences
-for subtitles, overdubs, captions, content language, connection speed,
-screen depth, and screen size. For each test attribute, players should
-allow users to set appropriate preferences. The use of test
-attributes for captions, overdubs, and language is described above in
-<a href="#Continuous">Section 2.2</a>.  The other test attributes are
-used in a similar manner.
+    <p>
+      SMIL 1.0 includes "test attributes" that the author may use to suggest how
+      a presentation should vary according to user preferences for subtitles,
+      overdubs, captions, content language, connection speed, screen depth, and
+      screen size. For each test attribute, players should allow users to set
+      appropriate preferences. The use of test attributes for captions,
+      overdubs, and language is described above in
+      <a href="#Continuous">Section 2.2</a>. The other test attributes are used
+      in a similar manner.
+    </p>
 
-<P>For example, the author may use the <span
-class="attribute">system-bitrate</span> attribute to suggest that, for
-slow connections, a player should download text instead of video or
-audio. Some users may desire higher bandwidth content even over a slow
-connection while others may desire lower bandwidth content over a fast
-connection (e.g., users with some cognitive impairments). Therefore,
-players should let users know that content is available at different
-bit rates (or in different languages, for different screen sizes,
-etc.) and give users access to that content.
-</P>
+    <p>
+      For example, the author may use the
+      <span class="attribute">system-bitrate</span> attribute to suggest that,
+      for slow connections, a player should download text instead of video or
+      audio. Some users may desire higher bandwidth content even over a slow
+      connection while others may desire lower bandwidth content over a fast
+      connection (e.g., users with some cognitive impairments). Therefore,
+      players should let users know that content is available at different bit
+      rates (or in different languages, for different screen sizes, etc.) and
+      give users access to that content.
+    </p>
 
-<P>The player may also choose to override the author's bandwidth
-hints.  For instance, the player might be capable of automatically
-adjusting the presentation quality according to the available
-bandwidth.  This would help preserve synchronization when there is
-high traffic load.
+    <p>
+      The player may also choose to override the author's bandwidth hints. For
+      instance, the player might be capable of automatically adjusting the
+      presentation quality according to the available bandwidth. This would help
+      preserve synchronization when there is high traffic load.
+    </p>
 
-<p>These are the SMIL 1.0 test attributes that may be used with
-synchronization elements (defined in section 4.2 of 
-[<a href="#ref-SMIL10">SMIL10</a>]):</p>
+    <p>
+      These are the SMIL 1.0 test attributes that may be used with
+      synchronization elements (defined in section 4.2 of [<a href="#ref-SMIL10"
+        >SMIL10</a
+      >]):
+    </p>
 
-<dl>
-  <dt><span class="attribute">system-captions</span></dt>
-    <dd>Tests user preferences for captions (refer to <a href="#Continuous">Section
-      2.2</a>). 
-    </dd>
-  <dt><span class="attribute">system-overdub-or-caption</span></dt>
-    <dd>Tests user preferences for overdubs or subtitles (refer to <a
-      href="#Continuous">Section 2.2</a>).</dd>
-  <dt><span class="attribute">system-language</span></dt>
-    <dd>Tests natural language preferences. <strong>Note.</strong> This test
-      attribute does not specify the natural of language of an element's
-      contents or an attribute's value; this is the role of the "xml:lang"
-      attribute, defined in XML 1.0 ([<a href="#ref-XML10">XML10</a>], section
-      2.12). However, "xml:lang" is not included in the SMIL 1.0 DTD.
-      Therefore documents that include it will not validate to this DTD.</dd>
-  <dt><span class="attribute">system-bitrate</span></dt>
-    <dd>Tests preferences for 
-        the minimum approximate bandwidth (in bits per second)
-        required to display the element. 
-        This attribute can be used to suggest changes in
-       a presentation based on available bandwidth.</dd>
-  <dt><span class="attribute">system-screen-depth</span></dt>
-    <dd>Tests preferences for
-        the minimum depth of the screen color palette (in bits) required
-      to display the element. This attribute can be used
-      to suggest changes in a presentation based on 
-      the ability of the screen to display images or video at
-      a certain color depth.</dd>
-  <dt><span class="attribute">system-screen-size</span></dt>
-    <dd>Tests preferences for 
-      the minimum required screen size (in X and Y pixels)
-      to display the element. This attribute can 
-      be used to suggest changes in a presentation based 
-      on screen size.</dd>
-</dl>
+    <dl>
+      <dt><span class="attribute">system-captions</span></dt>
+      <dd>
+        Tests user preferences for captions (refer to
+        <a href="#Continuous">Section 2.2</a>).
+      </dd>
+      <dt><span class="attribute">system-overdub-or-caption</span></dt>
+      <dd>
+        Tests user preferences for overdubs or subtitles (refer to
+        <a href="#Continuous">Section 2.2</a>).
+      </dd>
+      <dt><span class="attribute">system-language</span></dt>
+      <dd>
+        Tests natural language preferences. <strong>Note.</strong> This test
+        attribute does not specify the natural of language of an element's
+        contents or an attribute's value; this is the role of the "xml:lang"
+        attribute, defined in XML 1.0 ([<a href="#ref-XML10">XML10</a>], section
+        2.12). However, "xml:lang" is not included in the SMIL 1.0 DTD.
+        Therefore documents that include it will not validate to this DTD.
+      </dd>
+      <dt><span class="attribute">system-bitrate</span></dt>
+      <dd>
+        Tests preferences for the minimum approximate bandwidth (in bits per
+        second) required to display the element. This attribute can be used to
+        suggest changes in a presentation based on available bandwidth.
+      </dd>
+      <dt><span class="attribute">system-screen-depth</span></dt>
+      <dd>
+        Tests preferences for the minimum depth of the screen color palette (in
+        bits) required to display the element. This attribute can be used to
+        suggest changes in a presentation based on the ability of the screen to
+        display images or video at a certain color depth.
+      </dd>
+      <dt><span class="attribute">system-screen-size</span></dt>
+      <dd>
+        Tests preferences for the minimum required screen size (in X and Y
+        pixels) to display the element. This attribute can be used to suggest
+        changes in a presentation based on screen size.
+      </dd>
+    </dl>
 
-<p>The following example suggests that different video tracks
-be delivered according to the user's connection speed preferences.
-The player evaluates each of the choices in the <span
-class="element">switch</span> element in order and chooses the first one whose
-<span class="attribute">system-bitrate</span> value is equal to or greater 
-than the user's preferred connection speed. No
-video will be played for connection speeds less than 10,000
-bits per second.</p>
-<pre class="example"><code>&lt;switch>
+    <p>
+      The following example suggests that different video tracks be delivered
+      according to the user's connection speed preferences. The player evaluates
+      each of the choices in the <span class="element">switch</span> element in
+      order and chooses the first one whose
+      <span class="attribute">system-bitrate</span> value is equal to or greater
+      than the user's preferred connection speed. No video will be played for
+      connection speeds less than 10,000 bits per second.
+    </p>
+    <pre class="example"><code>&lt;switch>
    &lt;video title="My Favorite Movie" longdesc="MyFavMovie"
           src="high-quality-movie.rm" system-bitrate="40000"/>
    &lt;video title="My Favorite Movie" longdesc="MyFavMovie"
@@ -1025,359 +1227,505 @@ bits per second.</p>
           src="low-quality-movie.rm" system-bitrate="10000"/>
 &lt;/switch></code></pre>
 
-<h3><a name="Relative">5.1 Relative Attribute Values</a></h3>
+    <h3><a name="Relative">5.1 Relative Attribute Values</a></h3>
 
-<p>Presentations that are specified in relative rather than absolute terms may
-be more easily adapted to a variety of output devices and viewing contexts.</p>
+    <p>
+      Presentations that are specified in relative rather than absolute terms
+      may be more easily adapted to a variety of output devices and viewing
+      contexts.
+    </p>
 
-<p>In SMIL 1.0, relative attribute values are:</p>
-<ul>
-  <li>Percentage values for the <span class="attribute">coords</span>,
-    <span class="attribute">height</span>,
-    <span class="attribute">width</span>,
-    <span class="attribute">top</span>, and 
-    <span class="attribute">left</span> attributes.</li>
-  <li>Relative length values for the <span class="attribute">height</span>,
-    <span class="attribute">width</span>, 
-    <span class="attribute">top</span>, and 
-    <span class="attribute">left</span> attributes. The only relative
-    length unit supported in SMIL 1.0 is "px", defined in 
-    [<a href="#ref-CSS2">CSS2</a>], section 4.3.2.
-  <li>The <span class="element">region</span> element's 
-      <span class="attribute">fit</span> attribute
-      describes how to scale graphical media objects.
-</ul>
+    <p>In SMIL 1.0, relative attribute values are:</p>
+    <ul>
+      <li>
+        Percentage values for the <span class="attribute">coords</span>,
+        <span class="attribute">height</span>,
+        <span class="attribute">width</span>,
+        <span class="attribute">top</span>, and
+        <span class="attribute">left</span> attributes.
+      </li>
+      <li>
+        Relative length values for the <span class="attribute">height</span>,
+        <span class="attribute">width</span>,
+        <span class="attribute">top</span>, and
+        <span class="attribute">left</span> attributes. The only relative length
+        unit supported in SMIL 1.0 is "px", defined in [<a href="#ref-CSS2"
+          >CSS2</a
+        >], section 4.3.2.
+      </li>
 
-<p>Players may offer other scaling strategies such as graphical zoom.</p>
+      <li>
+        The <span class="element">region</span> element's
+        <span class="attribute">fit</span> attribute describes how to scale
+        graphical media objects.
+      </li>
+    </ul>
 
-<h3><a name="Relative">5.1 Relative Timing</a></h3>
+    <p>Players may offer other scaling strategies such as graphical zoom.</p>
 
-<P>Specifying synchronization in SMIL offers some advantages 
-over relying on time codes in external resources. One advantage is
-that authors may use relative timing with the
-<span class="element">par</span>,
-<span class="element">seq</span>,
-<span class="element">begin</span>,
-<span class="element">end</span>, and
-<span class="element">dur</span> elements
-instead of absolute time codes alone. This may promote accessibility since
-timing relationships described relatively may be more easily controlled and
-changed according to user needs. Therefore they may be adapted to a variety of
-output devices and scenarios (just as relative layouts may be scaled
-graphically). </p>
+    <h3><a name="Relative">5.1 Relative Timing</a></h3>
 
-<p>In most of the examples in this document, the only synchronization
-among media objects specified in SMIL is done by using the <span
-class="element">par</span> element to synchronize beginnings.  We
-assume that other necessary synchronization 
-has been specified in the formats that encode the media objects.</p>
+    <p>
+      Specifying synchronization in SMIL offers some advantages over relying on
+      time codes in external resources. One advantage is that authors may use
+      relative timing with the <span class="element">par</span>,
+      <span class="element">seq</span>, <span class="element">begin</span>,
+      <span class="element">end</span>, and
+      <span class="element">dur</span> elements instead of absolute time codes
+      alone. This may promote accessibility since timing relationships described
+      relatively may be more easily controlled and changed according to user
+      needs. Therefore they may be adapted to a variety of output devices and
+      scenarios (just as relative layouts may be scaled graphically).
+    </p>
 
-<h2><a name="More">6. To Learn More about Accessibility and SMIL</a></h2>
+    <p>
+      In most of the examples in this document, the only synchronization among
+      media objects specified in SMIL is done by using the
+      <span class="element">par</span> element to synchronize beginnings. We
+      assume that other necessary synchronization has been specified in the
+      formats that encode the media objects.
+    </p>
 
-<p>The first place to learn more about SMIL is the Recommendation
-itself [<a href="#ref-SMIL10">SMIL10</a>]. The Synchronized Multimedia
-Home Page ([<a href="#ref-SYMM">SYMM</a>]) at the <a
-href="http://www.w3.org/">W3C Web site</a> also includes information
-about SMIL tutorials, SMIL authoring tricks, examples of interesting
-presentations, player support for SMIL, and links to other sources of
-information about SMIL.</p>
+    <h2><a name="More">6. To Learn More about Accessibility and SMIL</a></h2>
 
-<p>For more information about making SMIL presentations accessible,
-authors should consult the Web Content Accessibility Guidelines 
-([<a href="#ref-WAI-WEBCONTENT">WAI-WEBCONTENT</a>]). The Guidelines
-Document assigns a priority to each checkpoint based on the
-checkpoint's importance to accessibility. The accompanying Techniques
-Document 
-([<a href="#ref-WAI-WEBCONTENT-TECHS">WAI-WEBCONTENT-TECHS</a>]) explains
-the guidelines and checkpoints in detail and includes many examples of
-ways to satisfy them. Although the Techniques Document emphasizes HTML
-and CSS, many of the principles and examples apply to SMIL as
-well.</p>
+    <p>
+      The first place to learn more about SMIL is the Recommendation itself [<a
+        href="#ref-SMIL10"
+        >SMIL10</a
+      >]. The Synchronized Multimedia Home Page ([<a href="#ref-SYMM">SYMM</a>])
+      at the <a href="http://www.w3.org/">W3C Web site</a> also includes
+      information about SMIL tutorials, SMIL authoring tricks, examples of
+      interesting presentations, player support for SMIL, and links to other
+      sources of information about SMIL.
+    </p>
 
-<p>Player developers should consult the User Agent Accessibility Guidelines
-([<a href="#ref-WAI-USERAGENT">WAI-USERAGENT</a>) and accompanying techniques
-document ([<a href="#ref-WAI-USERAGENT-TECHS">WAI-USERAGENT-TECHS</a>]), which
-explains how to design accessible user agents, including synchronized
-multimedia players.</p>
+    <p>
+      For more information about making SMIL presentations accessible, authors
+      should consult the Web Content Accessibility Guidelines ([<a
+        href="#ref-WAI-WEBCONTENT"
+        >WAI-WEBCONTENT</a
+      >]). The Guidelines Document assigns a priority to each checkpoint based
+      on the checkpoint's importance to accessibility. The accompanying
+      Techniques Document ([<a href="#ref-WAI-WEBCONTENT-TECHS"
+        >WAI-WEBCONTENT-TECHS</a
+      >]) explains the guidelines and checkpoints in detail and includes many
+      examples of ways to satisfy them. Although the Techniques Document
+      emphasizes HTML and CSS, many of the principles and examples apply to SMIL
+      as well.
+    </p>
 
-<p>Developers of SMIL authoring tools should consult the Authoring Tool
-Accessibility Guidelines ([<a href="#ref-WAI-AUTOOLS">WAI-AUTOOLS</a>]). <!-- Add more info here about resources, or a link to
+    <p>
+      Player developers should consult the User Agent Accessibility Guidelines
+      ([<a href="#ref-WAI-USERAGENT">WAI-USERAGENT</a>) and accompanying
+      techniques document ([<a href="#ref-WAI-USERAGENT-TECHS"
+        >WAI-USERAGENT-TECHS</a
+      >]), which explains how to design accessible user agents, including
+      synchronized multimedia players.
+    </p>
+
+    <p>
+      Developers of SMIL authoring tools should consult the Authoring Tool
+      Accessibility Guidelines ([<a href="#ref-WAI-AUTOOLS">WAI-AUTOOLS</a>]).
+      <!-- Add more info here about resources, or a link to
 a W3C page with this info.-->
-</p>
+    </p>
 
-<h2><a name="Index">Appendix A. Index of SMIL 1.0 Attributes that Promote
-Accessibility</a></h2>
+    <h2>
+      <a name="Index"
+        >Appendix A. Index of SMIL 1.0 Attributes that Promote Accessibility</a
+      >
+    </h2>
 
-<p>The SMIL 1.0 attributes discussed in this document are listed here,
-followed by links to their definitions in the SMIL 1.0 specification.</p>
-<dl>
-  <dt>The <span class="attribute">'alt'</span> attribute</dt>
-    <dd>In SMIL 1.0: <a
-      href="http://www.w3.org/TR/REC-smil/#media-object">4.2.3 media
-      elements</a></dd>
-    <dd>In this Note: <a href="#Discrete">2.1 Discrete Text
-    Equivalents</a></dd>
-  <dt>The <span class="attribute">'background-color'</span> attribute</dt>
-    <dd>In SMIL 1.0: <a href="http://www.w3.org/TR/REC-smil/#region">3.3.1
-      region element</a>. Also discussed in <a
-      href="http://www.w3.org/TR/REC-smil/#root-layout">3.3.2 root
-    layout</a>.</dd>
-    <dd>In this Note: <a href="#Style">3.2 Style</a></dd>
-  <dt>The <span class="attribute">'longdesc'</span> attribute</dt>
-    <dd>In SMIL 1.0: <a
-      href="http://www.w3.org/TR/REC-smil/#media-object">4.2.3 media object
-      elements</a></dd>
-    <dd>In this Note: <a href="#Discrete">2.1 Discrete Text
-    Equivalents</a></dd>
-  <dt>The <span class="attribute">'system-captions'</span> attribute</dt>
-    <dd>In SMIL 1.0: <a href="http://www.w3.org/TR/REC-smil/#test">4.4 Test
-      Attributes</a>. Also discussed in <a
-      href="http://www.w3.org/TR/REC-smil/#par">4.2.1 par element</a>, <a
-      href="http://www.w3.org/TR/REC-smil/#seq">4.2.2 seq element</a>, and <a
-      href="http://www.w3.org/TR/REC-smil/#media-object">4.2.3 media object
-      elements</a>.</dd>
-    <dd>In this Note:
-      <ul>
-        <li><a href="#Captions">2.2.1 Captions</a></li>
-        <li><a href="#Multilingual">2.2.3 Multilingual Presentations and
-          Continuous Equivalents</a></li>
-        <li><a href="#Layout">3.1 Layout</a></li>
-        <li><a href="#Maps">4.1 Accessible Image/Video Maps</a></li>
-        <li><a href="#Testing">6. Adapting Content to User and System
-          Settings</a></li>
-      </ul>
-    </dd>
-  <dt>The <span class="attribute">'system-overdub-or-caption'</span>
-  attribute</dt>
-    <dd>In SMIL 1.0: <a href="http://www.w3.org/TR/REC-smil/#test">4.4 Test
-      Attributes</a>. Also discussed in <a
-      href="http://www.w3.org/TR/REC-smil/#par">4.2.1 par element</a>, <a
-      href="http://www.w3.org/TR/REC-smil/#seq">4.2.2 seq element</a>, and <a
-      href="http://www.w3.org/TR/REC-smil/#media-object">4.2.3 media object
-      elements</a>.</dd>
-    <dd>In this Note:
-      <ul>
-        <li><a href="#Multilingual">2.2.3 Multilingual Presentations and
-          Continuous Equivalents</a></li>
-        <li><a href="#Testing">6. Adapting Content to User and System
-          Settings</a></li>
-      </ul>
-    </dd>
-  <dt>The <span class="attribute">'title'</span> attribute</dt>
-    <dd>In SMIL 1.0: <a href="http://www.w3.org/TR/REC-smil/#region">3.3.1
-      region element</a>. Also discussed in <a
-      href="http://www.w3.org/TR/REC-smil/#meta">3.4 meta element</a>, <a
-      href="http://www.w3.org/TR/REC-smil/#par">4.2.1 par element</a> <a
-      href="http://www.w3.org/TR/REC-smil/#seq">4.2.2 seq element</a>, <a
-      href="http://www.w3.org/TR/REC-smil/#media-object">4.2.3 media object
-      elements</a>, <a href="http://www.w3.org/TR/REC-smil/#switch">4.3 switch
-      element</a>, <a href="http://www.w3.org/TR/REC-smil/#a">4.5.1 a
-      element</a>, and <a href="http://www.w3.org/TR/REC-smil/#a">4.5.2 anchor
-      element</a>.</dd>
-    <dd>In this Note:
-      <ul>
-        <li><a href="#Discrete">2.1 Discrete Text Equivalents</a></li>
-        <li><a href="#Layout">3.1 Layout</a></li>
-        <li><a href="#Popups">3.3 Opening New Windows</a></li>
-        <li><a href="#Maps">4.1 Accessible Image/Video Maps</a></li>
-        <li><a href="#TimeLinks">4.2 Accessible Time-dependent Links</a></li>
-        <li><a href="#UsefulNav">4.3 Useful Navigation Mechanisms</a></li>
-      </ul>
-    </dd>
-</dl>
-
-<h2><a name="Sample">Appendix B. Sample Accessible SMIL Presentation</a></h2>
-
-<p>The following sample has been provided by the CPB/WGBH National Center for
-Accessible Media (refer to [<a href="#ref-WGBH-NCAM">WGBH-NCAM</a>]). The presentation
-contains captions, subtitles and auditory descriptions in English and German.
-To play the presentation, you will need to download the G2 player
-from [<a href="#ref-REAL">REAL</a>]. Information about this and other SMIL
-players is available at the W3C Synchronized Multimedia
-Home Page ([<a href="#ref-SYMM">SYMM</a>]).
-
-<P>Once you have installed the player, follow the instructions below:</p>
-
-<OL>
-  <li>Download the <a href="SMIL-access-sample.zip">sample presentation</a>,
-    which is stored in a zip file.</li>
-  <li>Unzip the zip file, which contains "car.smi" and other files.</li>
-  <li>Start the player. Before playing the movie, you'll need to
-      set preferences to display  captions (or subtitles) and 
-      descriptions in either English or German:
-       <ol><li>Open the Options menu.
-           <li>Choose Preferences.
-           <li>Choose the Content tab.
-           <li>Choose English or German from the Language listbox.
-           <li>Check the Enable Captions box at the bottom of the window.
-       </ol>
-  </li>
-  <li>Open "car.smi" and play it.
-You should see captions or subtitles below the video window
-and hear audio descriptions interspersed with the program narration.
-</li>
-</OL>
-
-<p>Here is an English transcript of the presentation. It includes
-the text of the presentation's auditory description and
-the narration.</p>
-
-<dl>
-  <dt>Description:</dt>
-    <dd>An animation of a car and a clock.</dd>
-  <dt>Narrator:</dt>
-    <dd>Someone watching a car accelerate toward light speed would see
-      something very strange. It would seem as though the car itself were
-      getting shorter and that time for the person in the car was slowing
-      down.</dd>
-  <dt>Description:</dt>
-    <dd>The car shrinks.</dd>
-  <dt>Narrator:</dt>
-    <dd>However, you wouldn't see these effects until the car began to
-      approach the speed of light. At 90% of the speed of light, the car would
-      appear to shrink to 44% of its usual length.</dd>
-  <dt>Description:</dt>
-    <dd>An animation of a lightwave.</dd>
-  <dt>Narrator:</dt>
-    <dd>This thought experiment answered Einstein's old question about what he
-      would see if he traveled along with a beam of light. He simply couldn't
-      make the trip, for at the speed of light, length would contract to zero
-      and time would stop.</dd>
-  <dt>Description:</dt>
-    <dd>An animation of Albert Einstein running alongside a lightwave. He
-      keeps up for a moment, then falls behind. The lightwave breaks up in a
-      series of large colored dots.</dd>
-</dl>
-
-<h2><a name="About-WAI">About the Web Accessibility Initiative</a></h2>
-
-<p>W3C's Web Accessibility Initiative (WAI) addresses accessibility of the Web
-through five complementary activities that:</p>
-<ol>
-  <li>Ensure that the technology of the Web supports accessibility</li>
-  <li>Develop accessibility guidelines</li>
-  <li>Develop tools to facilitate evaluation and repair of Web sites</li>
-  <li>Conduct education and outreach</li>
-  <li>Coordinate with research and development</li>
-</ol>
-
-<p>WAI's International Program Office enables partnering of industry,
-disability organizations, accessibility research organizations, and
-governments interested in creating an accessible Web. WAI sponsors include the
-US National Science Foundation and Department of Education's National
-Institute on Disability and Rehabilitation Research; the European Commission's
-DG XIII Telematics for Disabled and Elderly Programme; Telematics Applications
-Programme for Disabled and Elderly; Government of Canada, Industry Canada;
-IBM, Lotus Development Corporation, and NCR.</p>
-
-<p>Additional information on WAI is available at <a
-href="http://www.w3.org/WAI">http://www.w3.org/WAI</a>.</p>
-
-<h2><a name="About-W3C">About the World Wide Web Consortium (W3C)</a></h2>
-
-<p>The W3C was created to lead the Web to its full potential by developing
-common protocols that promote its evolution and ensure its interoperability.
-It is an international industry consortium jointly run by the MIT Laboratory
-for Computer Science (LCS) in the USA, the National Institute for Research in
-Computer Science and Control (INRIA) in France and Keio University in Japan.
-Services provided by the Consortium include: a repository of information about
-the World Wide Web for developers and users; reference code implementations to
-embody and promote standards; and various prototype and sample applications to
-demonstrate use of new technology. To date, more than 350 organizations are
-Members of the Consortium.  For more information about the World Wide Web
-Consortium, see <a href="http://www.w3.org/">http://www.w3.org/</a></p>
-
-<h2><a name="Acknowledgments">Acknowledgements</a></h2>
-
-<p>Many people in W3C and WAI have given valuable comments to this
-document.  The authors would like to thank Charles McCathieNevile,
-Philipp Hoschka, and Judy Brewer of W3C, Geoff Freed and Madeleine
-Rothberg of WGBH, Lloyd Rutledge of CWI, and the W3C SYMM Working
-Group for their contributions and review.</p>
-
-<h2><a name="References">References</a></h2>
-
-<p>A list of current W3C Recommendations and other technical documents can be
-found at <a href="http://www.w3.org/TR">http://www.w3.org/TR</a>.</p>
-<dl>
-  <dt><a class="refname" name="ref-CSS-ACCESS">[CSS-ACCESS]</a></dt>
-    <dd><a href="http://www.w3.org/TR/CSS-access">"Accessibility Features of
-      CSS"</a>, I. Jacobs, J. Brewer, eds. The latest version
-      is available at http://www.w3.org/TR/CSS-access.</dd>
-  <dt><a class="refname" name="ref-CSS2">[CSS2]</a></dt>
-    <dd><a href="http://www.w3.org/TR/1998/REC-CSS2-19980512">"Cascading Style
-      Sheets, level 2"</a>, B. Bos,  H. W. Lie, C. Lilley, and I. Jacobs, 17
-      May 1998. This document is
-      http://www.w3.org/TR/1998/REC-CSS2-19980512.</dd>
-  <dt><a class="refname" name="ref-CSS1">[CSS1]</a></dt>
-    <dd><a href="http://www.w3.org/TR/1999/REC-CSS1-19990111">"Cascading Style
-      Sheets, level 1"</a>, H. W. Lie and B. Bos, 17 December 1996. Revised 11
-      January 1999. This document is 
-      http://www.w3.org/TR/1999/REC-CSS1-19990111.</dd>
-  <dt><a class="refname" name="ref-HTML40">[HTML40]</a></dt>
-    <dd><a href="http://www.w3.org/TR/1998/REC-html40-19980424">"HTML 4.0
-      Recommendation"</a>, D. Raggett, A. Le Hors, and I. Jacobs, eds., 18
-      December 1997, revised 24 April 1998. This document 
-      is http://www.w3.org/TR/1998/REC-html40-19980424.</dd>
-  <dt><a class="refname" name="ref-REAL">[REAL]</a></dt>
-    <dd>The <a href="http://www.real.com/">Real Networks Home Page</a>
-        is http://www.real.com/.</dd>
-  <dt><a class="refname" name="ref-SMIL10">[SMIL10]</a></dt>
-    <dd><a href="http://www.w3.org/TR/1998/REC-smil-19980615">"Synchronized
-      Multimedia Integration Language (SMIL) Specification"</a>, Philipp
-      Hoschka, 15 June 1998. This document is      
-      http://www.w3.org/TR/1998/REC-smil-19980615.</dd>
-  <dt><a class="refname" name="ref-SMIL-CSS-LAYOUT">[SMIL-CSS-LAYOUT]</a></dt>
-    <dd><a href="http://www.w3.org/TR/1998/NOTE-CSS-smil-19980720">"Displaying
-      SMIL Basic Layout with a CSS2 Rendering Engine"</a>, Philipp Hoschka,
-      Chris Lilly, 20 July 1998. This document is 
-      http://www.w3.org/TR/1998/NOTE-CSS-smil-19980720.</dd>
-  <dt><a class="refname" name="ref-SYMM">[SYMM]</a></dt>
-    <dd>The <a href="http://www.w3.org/AudioVideo">W3C Synchronized Multimedia
-      Home Page</a> is http://www.w3.org/AudioVideo.</dd>
-  <dt><a class="refname" name="ref-XML10">[XML10]</a></dt>
-    <dd><a href="http://www.w3.org/TR/1998/REC-xml-19980210">"Extensible
-      Markup Language (XML) 1.0"</a>, T. Bray, J. Paoli, C. M.
-      Sperberg-McQueen, 10 February 1998. This document
-      is http://www.w3.org/TR/1998/REC-xml-19980210.</dd>
-  <dt><a class="refname" name="ref-XML-STYLE">[XML-STYLE]</a></dt>
-    <dd><a
-      href="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629">"Associating
-      Style Sheets with XML documents Version 1.0"</a>, James Clark, 29 June
-      1999. This document is http://www.w3.org/1999/06/REC-xml-stylesheet-19990629.</dd>
-  <dt><a class="refname" name="ref-WAI-AUTOOLS">[WAI-AUTOOLS]</a></dt>
-    <dd><a href="http://www.w3.org/TR/WAI-AUTOOLS/">"Authoring Tool
-      Accessibility Guidelines"</a>, J. Treviranus, J. Richards, I. Jacobs, C.
-      McCathieNevile, eds. The latest version is available at 
-      http://www.w3.org/TR/WAI-AUTOOLS/.</dd>
-  <dt><a class="refname" name="ref-WAI-WEBCONTENT">[WAI-WEBCONTENT]</a></dt>
-    <dd><a href="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505">"Web
-      Content Accessibility Guidelines 1.0"</a>, W. Chisholm, G. Vanderheiden,
-      and I. Jacobs, eds., 5 May 1999. This document is 
-      http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505</dd>
-  <dt><a class="refname"
-  name="ref-WAI-WEBCONTENT-TECHS">[WAI-WEBCONTENT-TECHS]</a></dt>
-    <dd><a href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS">"Techniques for
-      Web Content Accessibility Guidelines 1.0"</a>, W. Chisholm, G.
-      Vanderheiden, and I. Jacobs, eds. The latest version is
-      available at http://www.w3.org/TR/WAI-WEBCONTENT-TECHS.
- </dd>
-  <dt><a class="refname" name="ref-WAI-USERAGENT">[WAI-USERAGENT]</a></dt>
-    <dd><a href="http://www.w3.org/TR/WAI-USERAGENT/">"User Agent
-      Accessibility Guidelines"</a>, J. Gunderson and I. Jacobs, eds.
-      The latest version is available at http://www.w3.org/TR/WAI-USERAGENT/.
+    <p>
+      The SMIL 1.0 attributes discussed in this document are listed here,
+      followed by links to their definitions in the SMIL 1.0 specification.
+    </p>
+    <dl>
+      <dt>The <span class="attribute">'alt'</span> attribute</dt>
+      <dd>
+        In SMIL 1.0:
+        <a href="http://www.w3.org/TR/REC-smil/#media-object"
+          >4.2.3 media elements</a
+        >
       </dd>
-  <dt><a class="refname"
-  name="ref-WAI-USERAGENT-TECHS">[WAI-USERAGENT-TECHS]</a></dt>
-    <dd><a href="http://www.w3.org/TR/WAI-USERAGENT-TECHS/">"Techniques for
-      User Agent Accessibility Guidelines"</a>, J. Gunderson and I. Jacobs,
-      eds. The latest version is available at
-      http://www.w3.org/TR/WAI-USERAGENT-TECHS/.</dd>
-  <dt><a class="refname" name="ref-WGBH-NCAM">[WGBH-NCAM]</a></dt>
-    <dd>The <a href="http://www.wgbh.org/ncam">National 
-        Center for Accessible Media at WGBH</a>
-        is located at http://www.wgbh.org/ncam.</dd>
-</dl>
+      <dd>
+        In this Note: <a href="#Discrete">2.1 Discrete Text Equivalents</a>
+      </dd>
+      <dt>The <span class="attribute">'background-color'</span> attribute</dt>
+      <dd>
+        In SMIL 1.0:
+        <a href="http://www.w3.org/TR/REC-smil/#region">3.3.1 region element</a
+        >. Also discussed in
+        <a href="http://www.w3.org/TR/REC-smil/#root-layout"
+          >3.3.2 root layout</a
+        >.
+      </dd>
+      <dd>In this Note: <a href="#Style">3.2 Style</a></dd>
+      <dt>The <span class="attribute">'longdesc'</span> attribute</dt>
+      <dd>
+        In SMIL 1.0:
+        <a href="http://www.w3.org/TR/REC-smil/#media-object"
+          >4.2.3 media object elements</a
+        >
+      </dd>
+      <dd>
+        In this Note: <a href="#Discrete">2.1 Discrete Text Equivalents</a>
+      </dd>
+      <dt>The <span class="attribute">'system-captions'</span> attribute</dt>
+      <dd>
+        In SMIL 1.0:
+        <a href="http://www.w3.org/TR/REC-smil/#test">4.4 Test Attributes</a>.
+        Also discussed in
+        <a href="http://www.w3.org/TR/REC-smil/#par">4.2.1 par element</a>,
+        <a href="http://www.w3.org/TR/REC-smil/#seq">4.2.2 seq element</a>, and
+        <a href="http://www.w3.org/TR/REC-smil/#media-object"
+          >4.2.3 media object elements</a
+        >.
+      </dd>
+      <dd>
+        In this Note:
+        <ul>
+          <li><a href="#Captions">2.2.1 Captions</a></li>
+          <li>
+            <a href="#Multilingual"
+              >2.2.3 Multilingual Presentations and Continuous Equivalents</a
+            >
+          </li>
+          <li><a href="#Layout">3.1 Layout</a></li>
+          <li><a href="#Maps">4.1 Accessible Image/Video Maps</a></li>
+          <li>
+            <a href="#Testing"
+              >6. Adapting Content to User and System Settings</a
+            >
+          </li>
+        </ul>
+      </dd>
+      <dt>
+        The <span class="attribute">'system-overdub-or-caption'</span> attribute
+      </dt>
+      <dd>
+        In SMIL 1.0:
+        <a href="http://www.w3.org/TR/REC-smil/#test">4.4 Test Attributes</a>.
+        Also discussed in
+        <a href="http://www.w3.org/TR/REC-smil/#par">4.2.1 par element</a>,
+        <a href="http://www.w3.org/TR/REC-smil/#seq">4.2.2 seq element</a>, and
+        <a href="http://www.w3.org/TR/REC-smil/#media-object"
+          >4.2.3 media object elements</a
+        >.
+      </dd>
+      <dd>
+        In this Note:
+        <ul>
+          <li>
+            <a href="#Multilingual"
+              >2.2.3 Multilingual Presentations and Continuous Equivalents</a
+            >
+          </li>
+          <li>
+            <a href="#Testing"
+              >6. Adapting Content to User and System Settings</a
+            >
+          </li>
+        </ul>
+      </dd>
+      <dt>The <span class="attribute">'title'</span> attribute</dt>
+      <dd>
+        In SMIL 1.0:
+        <a href="http://www.w3.org/TR/REC-smil/#region">3.3.1 region element</a
+        >. Also discussed in
+        <a href="http://www.w3.org/TR/REC-smil/#meta">3.4 meta element</a>,
+        <a href="http://www.w3.org/TR/REC-smil/#par">4.2.1 par element</a>
+        <a href="http://www.w3.org/TR/REC-smil/#seq">4.2.2 seq element</a>,
+        <a href="http://www.w3.org/TR/REC-smil/#media-object"
+          >4.2.3 media object elements</a
+        >,
+        <a href="http://www.w3.org/TR/REC-smil/#switch">4.3 switch element</a>,
+        <a href="http://www.w3.org/TR/REC-smil/#a">4.5.1 a element</a>, and
+        <a href="http://www.w3.org/TR/REC-smil/#a">4.5.2 anchor element</a>.
+      </dd>
+      <dd>
+        In this Note:
+        <ul>
+          <li><a href="#Discrete">2.1 Discrete Text Equivalents</a></li>
+          <li><a href="#Layout">3.1 Layout</a></li>
+          <li><a href="#Popups">3.3 Opening New Windows</a></li>
+          <li><a href="#Maps">4.1 Accessible Image/Video Maps</a></li>
+          <li><a href="#TimeLinks">4.2 Accessible Time-dependent Links</a></li>
+          <li><a href="#UsefulNav">4.3 Useful Navigation Mechanisms</a></li>
+        </ul>
+      </dd>
+    </dl>
 
-<script src="https://www.w3.org/scripts/TR/fixup.js"></script></body>
+    <h2>
+      <a name="Sample">Appendix B. Sample Accessible SMIL Presentation</a>
+    </h2>
+
+    <p>
+      The following sample has been provided by the CPB/WGBH National Center for
+      Accessible Media (refer to [<a href="#ref-WGBH-NCAM">WGBH-NCAM</a>]). The
+      presentation contains captions, subtitles and auditory descriptions in
+      English and German. To play the presentation, you will need to download
+      the G2 player from [<a href="#ref-REAL">REAL</a>]. Information about this
+      and other SMIL players is available at the W3C Synchronized Multimedia
+      Home Page ([<a href="#ref-SYMM">SYMM</a>]).
+    </p>
+
+    <p>Once you have installed the player, follow the instructions below:</p>
+
+    <ol>
+      <li>
+        Download the <a href="SMIL-access-sample.zip">sample presentation</a>,
+        which is stored in a zip file.
+      </li>
+      <li>Unzip the zip file, which contains "car.smi" and other files.</li>
+      <li>
+        Start the player. Before playing the movie, you'll need to set
+        preferences to display captions (or subtitles) and descriptions in
+        either English or German:
+        <ol>
+          <li>Open the Options menu.</li>
+          <li>Choose Preferences.</li>
+          <li>Choose the Content tab.</li>
+          <li>Choose English or German from the Language listbox.</li>
+          <li>Check the Enable Captions box at the bottom of the window.</li>
+        </ol>
+      </li>
+      <li>
+        Open "car.smi" and play it. You should see captions or subtitles below
+        the video window and hear audio descriptions interspersed with the
+        program narration.
+      </li>
+    </ol>
+
+    <p>
+      Here is an English transcript of the presentation. It includes the text of
+      the presentation's auditory description and the narration.
+    </p>
+
+    <dl>
+      <dt>Description:</dt>
+      <dd>An animation of a car and a clock.</dd>
+      <dt>Narrator:</dt>
+      <dd>
+        Someone watching a car accelerate toward light speed would see something
+        very strange. It would seem as though the car itself were getting
+        shorter and that time for the person in the car was slowing down.
+      </dd>
+      <dt>Description:</dt>
+      <dd>The car shrinks.</dd>
+      <dt>Narrator:</dt>
+      <dd>
+        However, you wouldn't see these effects until the car began to approach
+        the speed of light. At 90% of the speed of light, the car would appear
+        to shrink to 44% of its usual length.
+      </dd>
+      <dt>Description:</dt>
+      <dd>An animation of a lightwave.</dd>
+      <dt>Narrator:</dt>
+      <dd>
+        This thought experiment answered Einstein's old question about what he
+        would see if he traveled along with a beam of light. He simply couldn't
+        make the trip, for at the speed of light, length would contract to zero
+        and time would stop.
+      </dd>
+      <dt>Description:</dt>
+      <dd>
+        An animation of Albert Einstein running alongside a lightwave. He keeps
+        up for a moment, then falls behind. The lightwave breaks up in a series
+        of large colored dots.
+      </dd>
+    </dl>
+
+    <h2><a name="About-WAI">About the Web Accessibility Initiative</a></h2>
+
+    <p>
+      W3C's Web Accessibility Initiative (WAI) addresses accessibility of the
+      Web through five complementary activities that:
+    </p>
+    <ol>
+      <li>Ensure that the technology of the Web supports accessibility</li>
+      <li>Develop accessibility guidelines</li>
+      <li>Develop tools to facilitate evaluation and repair of Web sites</li>
+      <li>Conduct education and outreach</li>
+      <li>Coordinate with research and development</li>
+    </ol>
+
+    <p>
+      WAI's International Program Office enables partnering of industry,
+      disability organizations, accessibility research organizations, and
+      governments interested in creating an accessible Web. WAI sponsors include
+      the US National Science Foundation and Department of Education's National
+      Institute on Disability and Rehabilitation Research; the European
+      Commission's DG XIII Telematics for Disabled and Elderly Programme;
+      Telematics Applications Programme for Disabled and Elderly; Government of
+      Canada, Industry Canada; IBM, Lotus Development Corporation, and NCR.
+    </p>
+
+    <p>
+      Additional information on WAI is available at
+      <a href="http://www.w3.org/WAI">http://www.w3.org/WAI</a>.
+    </p>
+
+    <h2><a name="About-W3C">About the World Wide Web Consortium (W3C)</a></h2>
+
+    <p>
+      The W3C was created to lead the Web to its full potential by developing
+      common protocols that promote its evolution and ensure its
+      interoperability. It is an international industry consortium jointly run
+      by the MIT Laboratory for Computer Science (LCS) in the USA, the National
+      Institute for Research in Computer Science and Control (INRIA) in France
+      and Keio University in Japan. Services provided by the Consortium include:
+      a repository of information about the World Wide Web for developers and
+      users; reference code implementations to embody and promote standards; and
+      various prototype and sample applications to demonstrate use of new
+      technology. To date, more than 350 organizations are Members of the
+      Consortium. For more information about the World Wide Web Consortium, see
+      <a href="http://www.w3.org/">http://www.w3.org/</a>
+    </p>
+
+    <h2><a name="Acknowledgments">Acknowledgements</a></h2>
+
+    <p>
+      Many people in W3C and WAI have given valuable comments to this document.
+      The authors would like to thank Charles McCathieNevile, Philipp Hoschka,
+      and Judy Brewer of W3C, Geoff Freed and Madeleine Rothberg of WGBH, Lloyd
+      Rutledge of CWI, and the W3C SYMM Working Group for their contributions
+      and review.
+    </p>
+
+    <h2><a name="References">References</a></h2>
+
+    <p>
+      A list of current W3C Recommendations and other technical documents can be
+      found at <a href="http://www.w3.org/TR">http://www.w3.org/TR</a>.
+    </p>
+    <dl>
+      <dt><a class="refname" name="ref-CSS-ACCESS">[CSS-ACCESS]</a></dt>
+      <dd>
+        <a href="http://www.w3.org/TR/CSS-access"
+          >"Accessibility Features of CSS"</a
+        >, I. Jacobs, J. Brewer, eds. The latest version is available at
+        http://www.w3.org/TR/CSS-access.
+      </dd>
+      <dt><a class="refname" name="ref-CSS2">[CSS2]</a></dt>
+      <dd>
+        <a href="http://www.w3.org/TR/1998/REC-CSS2-19980512"
+          >"Cascading Style Sheets, level 2"</a
+        >, B. Bos, H. W. Lie, C. Lilley, and I. Jacobs, 17 May 1998. This
+        document is http://www.w3.org/TR/1998/REC-CSS2-19980512.
+      </dd>
+      <dt><a class="refname" name="ref-CSS1">[CSS1]</a></dt>
+      <dd>
+        <a href="http://www.w3.org/TR/1999/REC-CSS1-19990111"
+          >"Cascading Style Sheets, level 1"</a
+        >, H. W. Lie and B. Bos, 17 December 1996. Revised 11 January 1999. This
+        document is http://www.w3.org/TR/1999/REC-CSS1-19990111.
+      </dd>
+      <dt><a class="refname" name="ref-HTML40">[HTML40]</a></dt>
+      <dd>
+        <a href="http://www.w3.org/TR/1998/REC-html40-19980424"
+          >"HTML 4.0 Recommendation"</a
+        >, D. Raggett, A. Le Hors, and I. Jacobs, eds., 18 December 1997,
+        revised 24 April 1998. This document is
+        http://www.w3.org/TR/1998/REC-html40-19980424.
+      </dd>
+      <dt><a class="refname" name="ref-REAL">[REAL]</a></dt>
+      <dd>
+        The <a href="http://www.real.com/">Real Networks Home Page</a> is
+        http://www.real.com/.
+      </dd>
+      <dt><a class="refname" name="ref-SMIL10">[SMIL10]</a></dt>
+      <dd>
+        <a href="http://www.w3.org/TR/1998/REC-smil-19980615"
+          >"Synchronized Multimedia Integration Language (SMIL)
+          Specification"</a
+        >, Philipp Hoschka, 15 June 1998. This document is
+        http://www.w3.org/TR/1998/REC-smil-19980615.
+      </dd>
+      <dt>
+        <a class="refname" name="ref-SMIL-CSS-LAYOUT">[SMIL-CSS-LAYOUT]</a>
+      </dt>
+      <dd>
+        <a href="http://www.w3.org/TR/1998/NOTE-CSS-smil-19980720"
+          >"Displaying SMIL Basic Layout with a CSS2 Rendering Engine"</a
+        >, Philipp Hoschka, Chris Lilly, 20 July 1998. This document is
+        http://www.w3.org/TR/1998/NOTE-CSS-smil-19980720.
+      </dd>
+      <dt><a class="refname" name="ref-SYMM">[SYMM]</a></dt>
+      <dd>
+        The
+        <a href="http://www.w3.org/AudioVideo"
+          >W3C Synchronized Multimedia Home Page</a
+        >
+        is http://www.w3.org/AudioVideo.
+      </dd>
+      <dt><a class="refname" name="ref-XML10">[XML10]</a></dt>
+      <dd>
+        <a href="http://www.w3.org/TR/1998/REC-xml-19980210"
+          >"Extensible Markup Language (XML) 1.0"</a
+        >, T. Bray, J. Paoli, C. M. Sperberg-McQueen, 10 February 1998. This
+        document is http://www.w3.org/TR/1998/REC-xml-19980210.
+      </dd>
+      <dt><a class="refname" name="ref-XML-STYLE">[XML-STYLE]</a></dt>
+      <dd>
+        <a href="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629"
+          >"Associating Style Sheets with XML documents Version 1.0"</a
+        >, James Clark, 29 June 1999. This document is
+        http://www.w3.org/1999/06/REC-xml-stylesheet-19990629.
+      </dd>
+      <dt><a class="refname" name="ref-WAI-AUTOOLS">[WAI-AUTOOLS]</a></dt>
+      <dd>
+        <a href="http://www.w3.org/TR/WAI-AUTOOLS/"
+          >"Authoring Tool Accessibility Guidelines"</a
+        >, J. Treviranus, J. Richards, I. Jacobs, C. McCathieNevile, eds. The
+        latest version is available at http://www.w3.org/TR/WAI-AUTOOLS/.
+      </dd>
+      <dt><a class="refname" name="ref-WAI-WEBCONTENT">[WAI-WEBCONTENT]</a></dt>
+      <dd>
+        <a href="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505"
+          >"Web Content Accessibility Guidelines 1.0"</a
+        >, W. Chisholm, G. Vanderheiden, and I. Jacobs, eds., 5 May 1999. This
+        document is http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505
+      </dd>
+      <dt>
+        <a class="refname" name="ref-WAI-WEBCONTENT-TECHS"
+          >[WAI-WEBCONTENT-TECHS]</a
+        >
+      </dt>
+      <dd>
+        <a href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS"
+          >"Techniques for Web Content Accessibility Guidelines 1.0"</a
+        >, W. Chisholm, G. Vanderheiden, and I. Jacobs, eds. The latest version
+        is available at http://www.w3.org/TR/WAI-WEBCONTENT-TECHS.
+      </dd>
+      <dt><a class="refname" name="ref-WAI-USERAGENT">[WAI-USERAGENT]</a></dt>
+      <dd>
+        <a href="http://www.w3.org/TR/WAI-USERAGENT/"
+          >"User Agent Accessibility Guidelines"</a
+        >, J. Gunderson and I. Jacobs, eds. The latest version is available at
+        http://www.w3.org/TR/WAI-USERAGENT/.
+      </dd>
+      <dt>
+        <a class="refname" name="ref-WAI-USERAGENT-TECHS"
+          >[WAI-USERAGENT-TECHS]</a
+        >
+      </dt>
+      <dd>
+        <a href="http://www.w3.org/TR/WAI-USERAGENT-TECHS/"
+          >"Techniques for User Agent Accessibility Guidelines"</a
+        >, J. Gunderson and I. Jacobs, eds. The latest version is available at
+        http://www.w3.org/TR/WAI-USERAGENT-TECHS/.
+      </dd>
+      <dt><a class="refname" name="ref-WGBH-NCAM">[WGBH-NCAM]</a></dt>
+      <dd>
+        The
+        <a href="http://www.wgbh.org/ncam"
+          >National Center for Accessible Media at WGBH</a
+        >
+        is located at http://www.wgbh.org/ncam.
+      </dd>
+    </dl>
+
+    <script src="https://www.w3.org/scripts/TR/fixup.js"></script>
+  </body>
 </html>

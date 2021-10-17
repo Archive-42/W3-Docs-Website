@@ -1,28 +1,26 @@
 <a href="#wp-toolbar" class="screen-reader-shortcut">Skip to toolbar</a>
 
--   <span id="wp-admin-bar-w3c-skip"><a href="#content" class="ab-item" title="Skip to content (e.g., when browsing via audio)">Skip</a></span>
--   <span id="wp-admin-bar-log-in"><a href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fabout%2Fprocess%2Fcla%2F" class="ab-item" title="Log In">Log In</a></span>
--   <span id="wp-admin-bar-my-account"><a href="https://www.w3.org/users/myprofile" class="ab-item" title="My W3C Account">My W3C Account</a></span>
--   
+- <span id="wp-admin-bar-w3c-skip"><a href="#content" class="ab-item" title="Skip to content (e.g., when browsing via audio)">Skip</a></span>
+- <span id="wp-admin-bar-log-in"><a href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fabout%2Fprocess%2Fcla%2F" class="ab-item" title="Log In">Log In</a></span>
+- <span id="wp-admin-bar-my-account"><a href="https://www.w3.org/users/myprofile" class="ab-item" title="My W3C Account">My W3C Account</a></span>
+-
 
 <a href="http://www.w3.org/" class="w3-logo"><img src="/community/src/templates/wordpress/StoryTeller/img/svg/w3c-logo.svg" alt="w3c logo" class="animated fadeInLeft" /></a> <a href="/community/" class="cgbg-logo"><img src="/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo.svg" alt="w3c community group logo" class="animated fadeInRotate height" /></a> <a href="/community/" class="cgbg-logo-title"></a>
 
-Community & Business Groups
-===========================
+# Community & Business Groups
 
--   <span id="menu-item-60">[Current Groups](/community/groups/ "Groups")</span>
--   <span id="menu-item-57">[Reports](/community/reports/)</span>
--   <span id="menu-item-59">[About](/community/about/ "About")</span>
+- <span id="menu-item-60">[Current Groups](/community/groups/ "Groups")</span>
+- <span id="menu-item-57">[Reports](/community/reports/)</span>
+- <span id="menu-item-59">[About](/community/about/ "About")</span>
 
--   [Home](/community/ "Community & Business Groups") /
--   [About W3C...](https://www.w3.org/community/about/ "About W3C Community and Business Groups") /
--   [Community and...](https://www.w3.org/community/about/process/ "Community and Business Group Process") /
--   W3C Community Contributor...
+- [Home](/community/ "Community & Business Groups") /
+- [About W3C...](https://www.w3.org/community/about/ "About W3C Community and Business Groups") /
+- [Community and...](https://www.w3.org/community/about/process/ "Community and Business Group Process") /
+- W3C Community Contributor...
 
-W3C Community Contributor License Agreement (CLA)
--------------------------------------------------
+## W3C Community Contributor License Agreement (CLA)
 
-*In order to participate in a Community Group or Business Group, people agree to the following terms upon joining a group; a [summary](http://www.w3.org/community/about/agreements/summary/) is available.*
+_In order to participate in a Community Group or Business Group, people agree to the following terms upon joining a group; a [summary](http://www.w3.org/community/about/agreements/summary/) is available._
 
 1.  <span id="id1" class="u">1. The Purpose and General Terms of this Contributor License Agreement (CLA)</span>. This CLA sets forth the terms under which I will participate in and contribute to the development of the Specification, if any, created by the Project. Any other capitalized terms not specifically defined herein have the same meaning as those terms have in the [W3C Patent Policy](/Consortium/Patent/), and if not defined there, in the [W3C Process Document](/Consortium/Process/). Any source code created by the Project is not subject to this CLA, but rather subject to separate licensing terms for that source code. The W3C [Community and Business Group Process](/community/about/agreements/) governs the operations of the Project. The Community and Business Group Process delegates some rights to the participants of the Project to establish operational agreements. Those operational agreements must not conflict with or modify this Community and Business Group Process, the [Community Contributor License Agreement (CLA)](cla), or the [Final Specification Agreement](final). Except for the limited definitions specifically referenced herein, this CLA and the Final Specification Agreement, if I sign it, set forth my entire licensing obligations for Specifications created by the Project and supersede all prior negotiations, agreements, understandings, and obligations with respect thereto.
 2.  <span id="id2" class="u">2. Copyrights</span>.
@@ -44,6 +42,7 @@ W3C Community Contributor License Agreement (CLA)
 10. <span id="id10" class="u">10. Conflict of Interest</span>. I will disclose significant relationships when those relationships might reasonably be perceived as creating a conflict of interest with my role. I will notify W3C of any change in my affiliation using W3C-provided mechanisms.
 11. <span id="id11" class="u">11. Representations, Warranties and Disclaimers</span>. I represent and warrant that 1) I am legally entitled to grant the rights and promises set forth in this CLA and 2) I will not intentionally include any third party materials in any Contribution unless those materials are available under terms that do not conflict with this CLA and I identify any such third party materials. IN ALL OTHER RESPECTS MY CONTRIBUTIONS ARE PROVIDED “AS IS.” The entire risk as to implementing or otherwise using the Contribution or the Specification is assumed by the implementer and user. Except as stated herein, I expressly disclaim any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the Contribution or the Specification. IN NO EVENT WILL ANY PARTY BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THIS CLA, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 12. <span id="id12" class="u">12. Definitions</span>.
+
     1.  <span id="id12_1" class="u">12.1. CLA</span>. “CLA” means this Contributor Licensing Agreement.
     2.  <span id="id12_2" class="u">12.2. Contribution</span>. “Contribution” means any original work of authorship, including any modifications or additions to an existing work, that I intentionally submit for inclusion in the Specification, and which Contribution is actually included in the Specification. For the purposes of this definition, the method by which I “submit” a Contribution means any form of electronic, oral, or written communication for the purpose of discussing and improving the Specification, but excludes any such communication that I conspicuously designate in writing as not a Contribution to one or more of the Specifications developed by the Project.
     3.  <span id="id12_3" class="u">12.3. Corresponding Working Group</span>. “Corresponding Working Group” is a W3C Working Group that is chartered to develop a Recommendation that takes the Specification as an input.
@@ -51,9 +50,9 @@ W3C Community Contributor License Agreement (CLA)
 
         1.  12.4.1. any claims other than as set forth above even if contained in the same patent as Essential Claims; and
         2.  12.4.2. claims which would be infringed only by:
-            -   portions of an implementation that are not specified in the normative portions of the Specification, or
-            -   enabling technologies that may be necessary to make or use any product or portion thereof that complies with the Specification and are not themselves expressly set forth in the Specification (e.g., semiconductor manufacturing technology, compiler technology, object-oriented technology, basic operating system technology, and the like); or
-            -   the implementation of technology developed elsewhere and merely incorporated by reference in the body of the Specification.
+            - portions of an implementation that are not specified in the normative portions of the Specification, or
+            - enabling technologies that may be necessary to make or use any product or portion thereof that complies with the Specification and are not themselves expressly set forth in the Specification (e.g., semiconductor manufacturing technology, compiler technology, object-oriented technology, basic operating system technology, and the like); or
+            - the implementation of technology developed elsewhere and merely incorporated by reference in the body of the Specification.
         3.  12.4.3. design patents and design registrations.
 
         For purposes of this definition, the normative portions of the Specification shall be deemed to include only architectural and interoperability requirements. Optional features in the RFC 2119 sense are considered normative unless they are specifically identified as informative. Implementation examples or any other material that merely illustrate the requirements of the Specification are informative, rather than normative.
@@ -79,50 +78,49 @@ W3C Community Contributor License Agreement (CLA)
 
 ### Quick Links
 
--   <span id="menu-item-4650">[FAQ](https://www.w3.org/community/about/faq/)</span>
--   <span id="menu-item-4672">[Getting started in a group](https://www.w3.org/community/about/faq/#how-do-we-get-started-in-a-new-group)</span>
--   <span id="menu-item-4660">[Good practice for running a group](https://www.w3.org/community/about/good-practice-for-running-a-group/)</span>
--   <span id="menu-item-6178">[How to Talk about CG/BG Work](https://www.w3.org/community/about/faq/#how-can-i-talk-about-w3c-endorsement-of-this-work)</span>
--   <span id="menu-item-4651">[Tools and Infrastructure](https://www.w3.org/community/about/tool/)</span>
--   <span id="menu-item-4649">[Comparison of Group Types](https://www.w3.org/community/about/process/compare/)</span>
--   <span id="menu-item-4652">[Business Group Fees](https://www.w3.org/community/about/fees/)</span>
--   <span id="menu-item-4653">[Business Group Participation Agreement](https://www.w3.org/community/about/fees/bg-participation-agreement/)</span>
+- <span id="menu-item-4650">[FAQ](https://www.w3.org/community/about/faq/)</span>
+- <span id="menu-item-4672">[Getting started in a group](https://www.w3.org/community/about/faq/#how-do-we-get-started-in-a-new-group)</span>
+- <span id="menu-item-4660">[Good practice for running a group](https://www.w3.org/community/about/good-practice-for-running-a-group/)</span>
+- <span id="menu-item-6178">[How to Talk about CG/BG Work](https://www.w3.org/community/about/faq/#how-can-i-talk-about-w3c-endorsement-of-this-work)</span>
+- <span id="menu-item-4651">[Tools and Infrastructure](https://www.w3.org/community/about/tool/)</span>
+- <span id="menu-item-4649">[Comparison of Group Types](https://www.w3.org/community/about/process/compare/)</span>
+- <span id="menu-item-4652">[Business Group Fees](https://www.w3.org/community/about/fees/)</span>
+- <span id="menu-item-4653">[Business Group Participation Agreement](https://www.w3.org/community/about/fees/bg-participation-agreement/)</span>
 
 ### Policies
 
--   <span id="menu-item-4642">[Process](https://www.w3.org/community/about/process/ "Community and Business Group Process")</span>
--   <span id="menu-item-4647">[Patent and Copyright Policy Summary](https://www.w3.org/community/about/process/summary/)</span>
--   <span id="menu-item-4644">[Contributor License Agreement (CLA)](https://www.w3.org/community/about/process/cla/ "W3C Community Contributor License Agreement (CLA)")</span>
--   <span id="menu-item-4811">[Final Specification Agreement (FSA)](https://www.w3.org/community/about/agreements/final/ "W3C Community Final Specification Agreement")</span>
--   <span id="menu-item-4645">[CLA Deed](https://www.w3.org/community/about/process/cla-deed/ "W3C Community Contributor License Agreement (CLA) Deed")</span>
--   <span id="menu-item-4646">[FSA Deed](https://www.w3.org/community/about/process/fsa-deed/ "W3C Community Final Specification Agreement (FSA) Deed")</span>
--   <span id="menu-item-4643">[Requests to Participate as an Individual](https://www.w3.org/community/about/process/guidelines-for-evaluating-individual-requests-to-participate-in-a-group/)</span>
--   <span id="menu-item-6936">[Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/)</span>
+- <span id="menu-item-4642">[Process](https://www.w3.org/community/about/process/ "Community and Business Group Process")</span>
+- <span id="menu-item-4647">[Patent and Copyright Policy Summary](https://www.w3.org/community/about/process/summary/)</span>
+- <span id="menu-item-4644">[Contributor License Agreement (CLA)](https://www.w3.org/community/about/process/cla/ "W3C Community Contributor License Agreement (CLA)")</span>
+- <span id="menu-item-4811">[Final Specification Agreement (FSA)](https://www.w3.org/community/about/agreements/final/ "W3C Community Final Specification Agreement")</span>
+- <span id="menu-item-4645">[CLA Deed](https://www.w3.org/community/about/process/cla-deed/ "W3C Community Contributor License Agreement (CLA) Deed")</span>
+- <span id="menu-item-4646">[FSA Deed](https://www.w3.org/community/about/process/fsa-deed/ "W3C Community Final Specification Agreement (FSA) Deed")</span>
+- <span id="menu-item-4643">[Requests to Participate as an Individual](https://www.w3.org/community/about/process/guidelines-for-evaluating-individual-requests-to-participate-in-a-group/)</span>
+- <span id="menu-item-6936">[Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/)</span>
 
 [![Community and Business Groups](/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo-footer.svg)](/community)
 
-Footer Navigation
------------------
+## Footer Navigation
 
 ### Navigation
 
--   [Home](/)
--   [Standards](/standards/)
--   [Participate](/participate/)
--   [Membership](/Consortium/membership)
--   [About W3C](/Consortium/)
+- [Home](/)
+- [Standards](/standards/)
+- [Participate](/participate/)
+- [Membership](/Consortium/membership)
+- [About W3C](/Consortium/)
 
 ### Contact W3C
 
--   [Contact](/Consortium/contact)
--   [Help and FAQ](/Help/)
--   [Sponsor / Donate](/Consortium/sponsor/)
--   [Site Map](/Consortium/siteindex)
--   [Feedback](mailto:site-comments@w3.org) ([archive](http://lists.w3.org/Archives/Public/site-comments/))
+- [Contact](/Consortium/contact)
+- [Help and FAQ](/Help/)
+- [Sponsor / Donate](/Consortium/sponsor/)
+- [Site Map](/Consortium/siteindex)
+- [Feedback](mailto:site-comments@w3.org) ([archive](http://lists.w3.org/Archives/Public/site-comments/))
 
 ### W3C Updates
 
--   [<img src="/2008/site/images/Twitter_bird_logo_2012.svg" alt="Twitter" class="social-icon" height="40" />](http://twitter.com/W3C "Follow W3C on Twitter")
+- [<img src="/2008/site/images/Twitter_bird_logo_2012.svg" alt="Twitter" class="social-icon" height="40" />](http://twitter.com/W3C "Follow W3C on Twitter")
 
 Copyright © 2021 W3C <sup>®</sup> ([MIT](http://www.csail.mit.edu/), [ERCIM](http://www.ercim.eu/), [Keio](http://www.keio.ac.jp/), [Beihang](http://ev.buaa.edu.cn/)) [Usage policies apply](/Consortium/Legal/ipr-notice).
 

@@ -1,37 +1,33 @@
 <a href="https://www.w3.org/" class="logo"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C" width="72" height="48" /></a>
 
-W3C Patent Policy
-=================
+# W3C Patent Policy
 
-<span class="content">15 September 2020 </span>
------------------------------------------------
+## <span class="content">15 September 2020 </span>
 
-This version:   
+This version:  
 <a href="https://www.w3.org/Consortium/Patent-Policy-20200915/" class="u-url">https://www.w3.org/Consortium/Patent-Policy-20200915/</a>
 
-Latest published version:   
+Latest published version:  
 <https://www.w3.org/Consortium/Patent-Policy/>
 
-Previous Versions:   
+Previous Versions:  
 <https://www.w3.org/Consortium/Patent-Policy-20170801/>
 
-Editor:   
+Editor:  
 <a href="mailto:wseltzer@w3.org" class="p-name fn u-email email">Wendy Seltzer</a> (<span class="p-org org">W3C/MIT</span>)
 
-Former Editor:   
+Former Editor:  
 <a href="mailto:djweitzner@w3.org" class="p-name fn u-email email">Daniel J. Weitzner</a> (<span class="p-org org">W3C/MIT</span>)
 
 [Copyright](https://www.w3.org/Consortium/Legal/ipr-notice#Copyright) © 2000-2020 [W3C](https://www.w3.org/)<sup>®</sup> ([MIT](https://www.csail.mit.edu/), [ERCIM](https://www.ercim.eu/), [Keio](https://www.keio.ac.jp/), [Beihang](http://ev.buaa.edu.cn/)). W3C [liability](https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer), [trademark](https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks) and [document use](https://www.w3.org/Consortium/Legal/copyright-documents) rules apply.
 
-------------------------------------------------------------------------
+---
 
-<span class="content">Abstract</span>
--------------------------------------
+## <span class="content">Abstract</span>
 
 The W3C Patent Policy governs the handling of patents in the process of producing Web standards. The goal of this policy is to assure that Specifications produced under this policy can be implemented on a Royalty-Free (RF) basis.
 
-<span class="content"> Status of This Document</span>
------------------------------------------------------
+## <span class="content"> Status of This Document</span>
 
 This is the 15 September 2020 version of the W3C Patent Policy.
 
@@ -41,8 +37,7 @@ Please report errors in this document to the <www-patentpolicy-comment@w3.org> m
 
 The English version of this policy is the only normative version.
 
-Table of Contents
------------------
+## Table of Contents
 
 1.  [<span class="secno"></span> <span class="content">Abstract</span>](#abstract)
 2.  [<span class="secno"></span> <span class="content"> Status of This Document</span>](#status)
@@ -96,8 +91,7 @@ Table of Contents
     1.  [<span class="secno"></span> <span class="content">Terms defined by this specification</span>](#index-defined-here)
     2.  [<span class="secno"></span> <span class="content">Terms defined by reference</span>](#index-defined-elsewhere)
 
-<span class="secno">1. </span><span class="content"> Overview</span><a href="#sec-Overview" class="self-link"></a>
-------------------------------------------------------------------------------------------------------------------
+## <span class="secno">1. </span><span class="content"> Overview</span><a href="#sec-Overview" class="self-link"></a>
 
 This patent policy describes:
 
@@ -110,8 +104,7 @@ This patent policy describes:
 
 All numbered sections of this document (1-8), as well as hyperlinks to material within and outside of this document, are normative.
 
-<span class="secno">2. </span><span class="content"> Licensing Goals for W3C Specifications</span><a href="#sec-Licensing" class="self-link"></a>
--------------------------------------------------------------------------------------------------------------------------------------------------
+## <span class="secno">2. </span><span class="content"> Licensing Goals for W3C Specifications</span><a href="#sec-Licensing" class="self-link"></a>
 
 In order to promote the widest adoption of Web standards, W3C seeks to develop <a href="#specification" id="ref-for-specification②">Specifications</a> that can be implemented on a <a href="#def-RF" id="ref-for-def-RF①②">Royalty-Free</a> (RF) basis. Subject to the conditions of this policy, W3C will not approve a <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C">Recommendation</a> if it is aware that <a href="#essential-claims" id="ref-for-essential-claims①">Essential Claims</a> exist which are not available on Royalty-Free terms.
 
@@ -119,8 +112,7 @@ To this end, <a href="https://www.w3.org/Consortium/Process/#WGCharter" id="ref-
 
 For the purpose of this policy, “Specification” refers to a <a href="https://w3c.github.io/w3process/#technical-report" id="ref-for-technical-report">W3C technical report</a> published on the <a href="https://w3c.github.io/w3process/#rec-track" id="ref-for-rec-track">Recommendation Track</a>, see [\[PROCESS\]](#biblio-process). “Patent Review Draft refers to a version of a W3C <a href="#specification" id="ref-for-specification④">Specification</a> defined <a href="https://w3c.github.io/w3process/#patent-review-drafts" id="ref-for-patent-review-drafts">as such</a> by the W3C Process \[PROCESS\], that is published for patent review and exclusion.
 
-<span class="secno">3. </span><span class="content"> Licensing Obligations of Working Group Participants</span><a href="#sec-Obligations" class="self-link"></a>
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+## <span class="secno">3. </span><span class="content"> Licensing Obligations of Working Group Participants</span><a href="#sec-Obligations" class="self-link"></a>
 
 The following obligations shall apply to all <a href="#participant" id="ref-for-participant①">participants</a> in <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④">W3C Working Groups</a>. These obligations will be referenced from each <a href="https://www.w3.org/Consortium/Process/#WGCharter" id="ref-for-WGCharter①">Working Group charter</a> and <a href="https://www.w3.org/Consortium/Process/#cfp" id="ref-for-cfp">Calls for Participation</a>.
 
@@ -156,8 +148,7 @@ If a <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-Group
 
 In addition, even if the above requirements are not met, if an implementation of a subsequent <a href="#patent-review-draft" id="ref-for-patent-review-draft⑤">Patent Review Draft</a> is also an implementation of a prior <span id="ref-for-patent-review-draft⑥">Patent Review Draft</span>, then implementation of the subsequent <span id="ref-for-patent-review-draft⑦">Patent Review Draft</span> or <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C⑥">Recommendation</a> will also benefit from the license commitments made by <a href="#participant" id="ref-for-participant①①">participants</a> in the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG①④">Working Group</a> that developed the prior <span id="ref-for-patent-review-draft⑧">Patent Review Draft</span> or <span id="ref-for-RecsW3C⑦">Recommendation</span>.
 
-<span class="secno">4. </span><span class="content"> Exclusion From W3C RF Licensing Requirements</span><a href="#sec-Exclusion" class="self-link"></a>
--------------------------------------------------------------------------------------------------------------------------------------------------------
+## <span class="secno">4. </span><span class="content"> Exclusion From W3C RF Licensing Requirements</span><a href="#sec-Exclusion" class="self-link"></a>
 
 Under the following conditions, <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG①⑤">Working Group</a> <a href="#participant" id="ref-for-participant①②">participants</a> may exclude specifically identified and disclosed <a href="#essential-claims" id="ref-for-essential-claims①①">Essential Claims</a> from the overall <a href="#def-RF" id="ref-for-def-RF④">W3C RF licensing requirements</a>:
 
@@ -210,8 +201,7 @@ Any exclusion of an <a href="#essential-claims" id="ref-for-essential-claims②�
 1.  the patent number or the publication number assigned to the patent application for a published application; and
 2.  identification of the subsection(s) of the <a href="#specification" id="ref-for-specification②①">Specification</a> whose implementation makes the excluded claim <a href="#essential-claims" id="ref-for-essential-claims②⑦">essential</a>.
 
-<span class="secno">5. </span><span class="content"> W3C Royalty-Free (RF) Licensing Requirements</span><a href="#sec-Requirements" class="self-link"></a>
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+## <span class="secno">5. </span><span class="content"> W3C Royalty-Free (RF) Licensing Requirements</span><a href="#sec-Requirements" class="self-link"></a>
 
 With respect to a <a href="#patent-review-draft" id="ref-for-patent-review-draft①⑨">Patent Review Draft</a> or <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C①⓪">Recommendation</a> developed under this policy, a W3C Royalty-Free license shall mean a non-assignable, non-sublicensable license to make, have made, use, sell, have sold, offer to sell, import, and distribute and dispose of implementations of the <span id="ref-for-patent-review-draft②⓪">Patent Review Draft</span> or <span id="ref-for-RecsW3C①①">Recommendation</span> that:
 
@@ -239,8 +229,7 @@ With respect to a <a href="#patent-review-draft" id="ref-for-patent-review-draft
 
 All <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG③⓪">Working Group</a> <a href="#participant" id="ref-for-participant③③">participants</a> are encouraged to provide a contact from which licensing information can be obtained and other relevant licensing information. Any such information will be made publicly available along with the patent <a href="#disclosure" id="ref-for-disclosure②">disclosures</a> for the <span id="ref-for-GroupsWG③①">Working Group</span> in question.
 
-<span class="secno">6. </span><span class="content"> Disclosure</span><a href="#sec-Disclosure" class="self-link"></a>
-----------------------------------------------------------------------------------------------------------------------
+## <span class="secno">6. </span><span class="content"> Disclosure</span><a href="#sec-Disclosure" class="self-link"></a>
 
 ### <span class="secno">6.1. </span><span class="content"> Disclosure Requirements</span><a href="#sec-disclosure-requirements" class="self-link"></a>
 
@@ -301,8 +290,7 @@ The <a href="#disclosure" id="ref-for-disclosure①③">disclosure</a> obligatio
 
 Patent <a href="#disclosure" id="ref-for-disclosure①⑤">disclosure</a> information for each <a href="#specification" id="ref-for-specification②⑧">Specification</a> will be made public along with each public <a href="https://www.w3.org/Consortium/Process/#RecsWD" id="ref-for-RecsWD⑤">Working Draft</a> issued by the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG③⑦">Working Group</a>.
 
-<span class="secno">7. </span><span class="content"> Exception Handling</span><a href="#sec-Exception" class="self-link"></a>
------------------------------------------------------------------------------------------------------------------------------
+## <span class="secno">7. </span><span class="content"> Exception Handling</span><a href="#sec-Exception" class="self-link"></a>
 
 ### <span class="secno">7.1. </span><span class="content"> PAG Formation</span><a href="#sec-PAG-formation" class="self-link"></a>
 
@@ -316,12 +304,12 @@ A <a href="#patent-advisory-group" id="ref-for-patent-advisory-group④">PAG</a>
 
 The <a href="#patent-advisory-group" id="ref-for-patent-advisory-group⑦">PAG</a> is composed of:
 
--   <a href="https://w3c.github.io/w3process/#advisory-committee-representative" id="ref-for-advisory-committee-representative④">Advisory Committee Representatives</a> of each W3C Member organization participating in the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④⓪">Working Group</a> (or alternate designated by the <span id="ref-for-advisory-committee-representative⑤">AC Rep</span>)
--   <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④①">Working Group</a> Team Contact
--   W3C counsel
--   <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④②">Working Group</a> Chair, *ex officio*
--   W3C Manager responsible for the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④③">Working Group</a>
--   Others suggested by the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④④">Working Group</a> Chair and/or the Team with the approval of the Director
+- <a href="https://w3c.github.io/w3process/#advisory-committee-representative" id="ref-for-advisory-committee-representative④">Advisory Committee Representatives</a> of each W3C Member organization participating in the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④⓪">Working Group</a> (or alternate designated by the <span id="ref-for-advisory-committee-representative⑤">AC Rep</span>)
+- <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④①">Working Group</a> Team Contact
+- W3C counsel
+- <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④②">Working Group</a> Chair, _ex officio_
+- W3C Manager responsible for the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④③">Working Group</a>
+- Others suggested by the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④④">Working Group</a> Chair and/or the Team with the approval of the Director
 
 W3C Member participants in the <a href="#patent-advisory-group" id="ref-for-patent-advisory-group⑧">PAG</a> should be authorized to represent their organization’s views on patent licensing issues. Any participant in the <span id="ref-for-patent-advisory-group⑨">PAG</span> may also be represented by legal counsel, though this is not required. <a href="https://www.w3.org/Consortium/Process/#invited-expert-wg" id="ref-for-invited-expert-wg③">Invited experts</a> are not entitled to participate in the <span id="ref-for-patent-advisory-group①⓪">PAG</span>, though the <span id="ref-for-patent-advisory-group①①">PAG</span> may chose to invite any qualified experts who would be able to assist the <span id="ref-for-patent-advisory-group①②">PAG</span> in its determinations.
 
@@ -337,9 +325,9 @@ The <a href="#patent-advisory-group" id="ref-for-patent-advisory-group①⑥">PA
 
 The charter should include:
 
--   clear goals for the <a href="#patent-advisory-group" id="ref-for-patent-advisory-group②⓪">PAG</a>, especially a statement of the question(s) the <span id="ref-for-patent-advisory-group②①">PAG</span> is to answer.
--   duration.
--   confidentiality status, which must follow the underlying <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④⑦">Working Group</a> (<a href="https://www.w3.org/Consortium/Process/#Member-only" id="ref-for-Member-only">Member only</a>, public, etc.).
+- clear goals for the <a href="#patent-advisory-group" id="ref-for-patent-advisory-group②⓪">PAG</a>, especially a statement of the question(s) the <span id="ref-for-patent-advisory-group②①">PAG</span> is to answer.
+- duration.
+- confidentiality status, which must follow the underlying <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④⑦">Working Group</a> (<a href="https://www.w3.org/Consortium/Process/#Member-only" id="ref-for-Member-only">Member only</a>, public, etc.).
 
 The <a href="#patent-advisory-group" id="ref-for-patent-advisory-group②②">PAG</a> charter must specify deadlines for completion of individual work items it takes on. The <span id="ref-for-patent-advisory-group②③">PAG</span>, once convened, may propose changes to its charter as appropriate, to be accepted based on consensus of the <span id="ref-for-patent-advisory-group②④">PAG</span> participants. The Team will choose a member of the <span id="ref-for-patent-advisory-group②⑤">PAG</span> to serve as Chair. A single <span id="ref-for-patent-advisory-group②⑥">PAG</span> may exist for the duration of the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG④⑧">Working Group</a> with which it is associated if needed.
 
@@ -366,18 +354,17 @@ Outcomes 4, 5 or 6 require an <a href="https://www.w3.org/Consortium/Process/#AC
 
 After having made every effort to resolve the conflict through options 1, 2, and 3 under [7.5.1](#sec-PAG-conclude-possible), the PAG, by <a href="https://www.w3.org/Consortium/Process/#def-Consensus" id="ref-for-def-Consensus">consensus</a> [PROCESS, section 3.3](https://www.w3.org/Consortium/Process/#Consensus)\], may propose that specifically identified patented technology be included in the <a href="#specification" id="ref-for-specification③②">Specification</a> even though such claims are not available according to the <a href="#def-RF" id="ref-for-def-RF①①">W3C RF licensing requirements</a> of this policy ("PAG Proposal"). The <a href="#pag-proposal" id="ref-for-pag-proposal">PAG Proposal</a> must explain:
 
--   why the chartered goals of the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG⑤③">Working Group</a> cannot be met without inclusion of the identified technology;
--   how the proposed licensing terms will be consistent with widespread adoption.
+- why the chartered goals of the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG⑤③">Working Group</a> cannot be met without inclusion of the identified technology;
+- how the proposed licensing terms will be consistent with widespread adoption.
 
 The <a href="#pag-proposal" id="ref-for-pag-proposal①">PAG Proposal</a> must include:
 
--   a complete list of claims and licensing terms of the proposed alternative arrangements; and,
--   a proposed charter for the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG⑤④">Working Group</a>, unless the <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C①⑨">Recommendation</a> has been issued and no new work is required.
+- a complete list of claims and licensing terms of the proposed alternative arrangements; and,
+- a proposed charter for the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG⑤④">Working Group</a>, unless the <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C①⑨">Recommendation</a> has been issued and no new work is required.
 
 If the Director determines that the <a href="#pag-proposal" id="ref-for-pag-proposal②">PAG Proposal</a> is the best alternative consistent with the W3C mission, the interests of the Web community, and is clearly justified despite the expressed preference of the W3C Membership for RF licensing, then the <span id="ref-for-pag-proposal③">PAG Proposal</span> shall be circulated for public comment and <a href="https://www.w3.org/Consortium/Process/#ACReview" id="ref-for-ACReview①">Advisory Committee review</a>. The Director may also circulate the <span id="ref-for-pag-proposal④">PAG Proposal</span> for <span id="ref-for-ACReview②">Advisory Committee review</span> without such endorsement. Should the <span id="ref-for-pag-proposal⑤">PAG Proposal</span> be rejected, then either sub-paragraph 4 or 5 of [section 7.5.3](#sec-PAG-conclude-alternate) will apply as appropriate, without further action of the <a href="https://www.w3.org/Consortium/Process/#AC" id="ref-for-AC①">Advisory Committee</a>. Members of the <a href="https://www.w3.org/Consortium/Process/#GroupsWG" id="ref-for-GroupsWG⑤⑤">Working Group</a> who are bound to RF terms are not released from their obligations by virtue of the <span id="ref-for-pag-proposal⑥">PAG Proposal</span> alone. As with any newly chartered <span id="ref-for-GroupsWG⑤⑥">Working Group</span>, new commitments must be made, along with possible exclusions. In order to expedite the process, the <span id="ref-for-pag-proposal⑦">PAG Proposal</span> should consider whether additional claims would be excluded under the new charter and include such information in the <span id="ref-for-pag-proposal⑧">PAG Proposal</span>.
 
-<span class="secno">8. </span><span class="content"> Definition of Essential Claims</span><a href="#def-essential" class="self-link"></a>
------------------------------------------------------------------------------------------------------------------------------------------
+## <span class="secno">8. </span><span class="content"> Definition of Essential Claims</span><a href="#def-essential" class="self-link"></a>
 
 ### <span class="secno">8.1. </span><span class="content"> Essential Claims</span><a href="#def-essential-definition" class="self-link"></a>
 
@@ -391,415 +378,412 @@ The following are expressly excluded from and shall not be deemed to constitute 
 
 1.  any claims other than as set forth above even if contained in the same patent as <a href="#essential-claims" id="ref-for-essential-claims④③">Essential Claims</a>;
 2.  claims which would be infringed only by:
-    -   portions of an implementation that are not specified in the <a href="#dfn-norm" id="ref-for-dfn-norm①">normative</a> portions of the <a href="#patent-review-draft" id="ref-for-patent-review-draft③⓪">Patent Review Draft</a> or <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C②③">Recommendation</a>, or
-    -   enabling technologies that may be necessary to make or use any product or portion thereof that complies with the <a href="#patent-review-draft" id="ref-for-patent-review-draft②⑥">Patent Review Draft</a> or <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C②④">Recommendation</a> and are not themselves expressly set forth in the <a href="#patent-review-draft" id="ref-for-patent-review-draft②⑥">Patent Review Draft</a> or <span id="ref-for-RecsW3C②⑤">Recommendation</span> (e.g., semiconductor manufacturing technology, compiler technology, object-oriented technology, basic operating system technology, and the like), or
-    -   the implementation of technology developed elsewhere and merely incorporated by reference in the body of the <a href="#patent-review-draft" id="ref-for-patent-review-draft②⑥">Patent Review Draft</a> or <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C②⑥">Recommendation</a>;
+    - portions of an implementation that are not specified in the <a href="#dfn-norm" id="ref-for-dfn-norm①">normative</a> portions of the <a href="#patent-review-draft" id="ref-for-patent-review-draft③⓪">Patent Review Draft</a> or <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C②③">Recommendation</a>, or
+    - enabling technologies that may be necessary to make or use any product or portion thereof that complies with the <a href="#patent-review-draft" id="ref-for-patent-review-draft②⑥">Patent Review Draft</a> or <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C②④">Recommendation</a> and are not themselves expressly set forth in the <a href="#patent-review-draft" id="ref-for-patent-review-draft②⑥">Patent Review Draft</a> or <span id="ref-for-RecsW3C②⑤">Recommendation</span> (e.g., semiconductor manufacturing technology, compiler technology, object-oriented technology, basic operating system technology, and the like), or
+    - the implementation of technology developed elsewhere and merely incorporated by reference in the body of the <a href="#patent-review-draft" id="ref-for-patent-review-draft②⑥">Patent Review Draft</a> or <a href="https://www.w3.org/Consortium/Process/#RecsW3C" id="ref-for-RecsW3C②⑥">Recommendation</a>;
 3.  design patents and design registrations.
 
 ### <span class="secno">8.3. </span><span class="content"> Definition of Normative, Optional and Informative</span><a href="#def-essential-requirements" class="self-link"></a>
 
 For purposes of this definition, the normative portions of the <a href="#specification" id="ref-for-specification③⑥">Specification</a> shall be deemed to include only architectural and interoperability requirements. Optional features in the RFC 2119 [\[RFC2119\]](#biblio-rfc2119) sense are considered <a href="#dfn-norm" id="ref-for-dfn-norm②">normative</a> unless they are specifically identified as informative. Implementation examples or any other material that merely illustrate the requirements of the <span id="ref-for-specification③⑦">Specification</span> are informative, rather than <span id="ref-for-dfn-norm③">normative</span>.
 
-<span class="content">References</span><a href="#references" class="self-link"></a>
------------------------------------------------------------------------------------
+## <span class="content">References</span><a href="#references" class="self-link"></a>
 
 ### <span class="content">Normative References</span><a href="#normative" class="self-link"></a>
 
-\[PROCESS\]   
+\[PROCESS\]  
 [World Wide Web Consortium Process Document](https://www.w3.org/Consortium/Process/). URL: <https://www.w3.org/Consortium/Process/>
 
-\[RFC2119\]   
+\[RFC2119\]  
 S. Bradner. [Key words for use in RFCs to Indicate Requirement Levels](https://tools.ietf.org/html/rfc2119). March 1997. Best Current Practice. URL: <https://tools.ietf.org/html/rfc2119>
 
-<span class="content"> Acknowledgments</span><a href="#sec-acknowledgments" class="self-link"></a>
---------------------------------------------------------------------------------------------------
+## <span class="content"> Acknowledgments</span><a href="#sec-acknowledgments" class="self-link"></a>
 
 W3C thanks those who have contributed to the 2020 update of the Patent Policy, including L. David Baron, Marc Sandy Block, Valentina Boyet, Michael Champion, Donald Deutsch, Sarah Dukmen, Elika J. Etemad, Michael Gelblum, Jeff Jaffe, Philippe Le Hégaret, Travis Leithead, Daniel Nazer, Ishna Neamatullah, Charles Nevile, Florian Rivoal, David Rudin, Wendy Seltzer, Michael Sirtori, Anna Weinberg, Rigo Wenning, Rob Yost, Jennifer Zanocco. We also thank those who gave input via the Patents and Standards Interest Group, Advisory Board, and Advisory Committee, and the [contributors to the previous version](https://www.w3.org/Consortium/Patent-Policy-20170801/#sec-acknowledgments).
 
-<span class="content">Index</span><a href="#index" class="self-link"></a>
--------------------------------------------------------------------------
+## <span class="content">Index</span><a href="#index" class="self-link"></a>
 
 ### <span class="content">Terms defined by this specification</span><a href="#index-defined-here" class="self-link"></a>
 
--   [Call for Exclusion](#call-for-exclusion), in §4.5
--   [Disclosure](#disclosure), in §6.1
--   [Disclosure requests](#disclosure-requests), in §6.3
--   [disclosure requirement](#disclosure-requirement), in §6.1
--   [Essential Claims](#essential-claims), in §8
--   [Exclusion Opportunity](#exclusion-opportunity), in §4.1
--   [Licensing Commitment](#licensing-commitment), in §3.5
--   [normative](#dfn-norm), in §8.3
--   [PAG](#patent-advisory-group), in §7.1
--   [PAG Proposal](#pag-proposal), in §7.5.3
--   [participant](#participant), in §3.1
--   [Patent Advisory Group](#patent-advisory-group), in §7.1
--   [Patent Review Draft](#patent-review-draft), in §2
--   [RF License](#def-RF), in §5
--   [Specification](#specification), in §2
--   [W3C RF Licensing Requirements](#def-RF), in §5
--   [W3C Royalty-Free license](#def-RF), in §5
--   [W3C Royalty-Free Licensing Requirements](#def-RF), in §5
+- [Call for Exclusion](#call-for-exclusion), in §4.5
+- [Disclosure](#disclosure), in §6.1
+- [Disclosure requests](#disclosure-requests), in §6.3
+- [disclosure requirement](#disclosure-requirement), in §6.1
+- [Essential Claims](#essential-claims), in §8
+- [Exclusion Opportunity](#exclusion-opportunity), in §4.1
+- [Licensing Commitment](#licensing-commitment), in §3.5
+- [normative](#dfn-norm), in §8.3
+- [PAG](#patent-advisory-group), in §7.1
+- [PAG Proposal](#pag-proposal), in §7.5.3
+- [participant](#participant), in §3.1
+- [Patent Advisory Group](#patent-advisory-group), in §7.1
+- [Patent Review Draft](#patent-review-draft), in §2
+- [RF License](#def-RF), in §5
+- [Specification](#specification), in §2
+- [W3C RF Licensing Requirements](#def-RF), in §5
+- [W3C Royalty-Free license](#def-RF), in §5
+- [W3C Royalty-Free Licensing Requirements](#def-RF), in §5
 
 ### <span class="content">Terms defined by reference</span><a href="#index-defined-elsewhere" class="self-link"></a>
 
--   \[PROCESS\] defines the following terms:
-    -   <span id="term-for-advisory-committee-representative" class="dfn-paneled" style="color:initial">ac rep</span>
-    -   <span id="term-for-AC" class="dfn-paneled" style="color:initial">advisory committee</span>
-    -   <span id="term-for-advisory-committee-representative①" class="dfn-paneled" style="color:initial">advisory committee representative</span>
-    -   <span id="term-for-ACReview" class="dfn-paneled" style="color:initial">advisory committee review</span>
-    -   <span id="term-for-cfp" class="dfn-paneled" style="color:initial">call for participation</span>
-    -   <span id="term-for-RecsCR" class="dfn-paneled" style="color:initial">candidate recommendation</span>
-    -   <span id="term-for-def-Consensus" class="dfn-paneled" style="color:initial">consensus</span>
-    -   <span id="term-for-fpwd" class="dfn-paneled" style="color:initial">first public working draft</span>
-    -   <span id="term-for-invited-expert-wg" class="dfn-paneled" style="color:initial">invited expert</span>
-    -   <span id="term-for-maturity-levels" class="dfn-paneled" style="color:initial">maturity level</span>
-    -   <span id="term-for-MemberSubmission" class="dfn-paneled" style="color:initial">member submission</span>
-    -   <span id="term-for-Member-only" class="dfn-paneled" style="color:initial">member-only</span>
-    -   <span id="term-for-patent-review-drafts" class="dfn-paneled" style="color:initial">patent review draft</span>
-    -   <span id="term-for-RecsW3C" class="dfn-paneled" style="color:initial">recommendation</span>
-    -   <span id="term-for-rec-track" class="dfn-paneled" style="color:initial">recommendation track</span>
-    -   <span id="term-for-rec-rescind" class="dfn-paneled" style="color:initial">rescinded</span>
-    -   <span id="term-for-MemberSubmission①" class="dfn-paneled" style="color:initial">w3c member submission</span>
-    -   <span id="term-for-RecsW3C①" class="dfn-paneled" style="color:initial">w3c recommendation</span>
-    -   <span id="term-for-technical-report" class="dfn-paneled" style="color:initial">w3c technical report</span>
-    -   <span id="term-for-GroupsWG" class="dfn-paneled" style="color:initial">w3c working group</span>
-    -   <span id="term-for-RecsWD" class="dfn-paneled" style="color:initial">working draft</span>
-    -   <span id="term-for-GroupsWG①" class="dfn-paneled" style="color:initial">working group</span>
-    -   <span id="term-for-WGCharter" class="dfn-paneled" style="color:initial">working group charter</span>
+- \[PROCESS\] defines the following terms:
+  - <span id="term-for-advisory-committee-representative" class="dfn-paneled" style="color:initial">ac rep</span>
+  - <span id="term-for-AC" class="dfn-paneled" style="color:initial">advisory committee</span>
+  - <span id="term-for-advisory-committee-representative①" class="dfn-paneled" style="color:initial">advisory committee representative</span>
+  - <span id="term-for-ACReview" class="dfn-paneled" style="color:initial">advisory committee review</span>
+  - <span id="term-for-cfp" class="dfn-paneled" style="color:initial">call for participation</span>
+  - <span id="term-for-RecsCR" class="dfn-paneled" style="color:initial">candidate recommendation</span>
+  - <span id="term-for-def-Consensus" class="dfn-paneled" style="color:initial">consensus</span>
+  - <span id="term-for-fpwd" class="dfn-paneled" style="color:initial">first public working draft</span>
+  - <span id="term-for-invited-expert-wg" class="dfn-paneled" style="color:initial">invited expert</span>
+  - <span id="term-for-maturity-levels" class="dfn-paneled" style="color:initial">maturity level</span>
+  - <span id="term-for-MemberSubmission" class="dfn-paneled" style="color:initial">member submission</span>
+  - <span id="term-for-Member-only" class="dfn-paneled" style="color:initial">member-only</span>
+  - <span id="term-for-patent-review-drafts" class="dfn-paneled" style="color:initial">patent review draft</span>
+  - <span id="term-for-RecsW3C" class="dfn-paneled" style="color:initial">recommendation</span>
+  - <span id="term-for-rec-track" class="dfn-paneled" style="color:initial">recommendation track</span>
+  - <span id="term-for-rec-rescind" class="dfn-paneled" style="color:initial">rescinded</span>
+  - <span id="term-for-MemberSubmission①" class="dfn-paneled" style="color:initial">w3c member submission</span>
+  - <span id="term-for-RecsW3C①" class="dfn-paneled" style="color:initial">w3c recommendation</span>
+  - <span id="term-for-technical-report" class="dfn-paneled" style="color:initial">w3c technical report</span>
+  - <span id="term-for-GroupsWG" class="dfn-paneled" style="color:initial">w3c working group</span>
+  - <span id="term-for-RecsWD" class="dfn-paneled" style="color:initial">working draft</span>
+  - <span id="term-for-GroupsWG①" class="dfn-paneled" style="color:initial">working group</span>
+  - <span id="term-for-WGCharter" class="dfn-paneled" style="color:initial">working group charter</span>
 
 <https://w3c.github.io/w3process/#advisory-committee-representative>**Referenced in:**
 
--   [6.1. Disclosure Requirements](#ref-for-advisory-committee-representative) [(2)](#ref-for-advisory-committee-representative①)
--   [6.3. Disclosure Requests](#ref-for-advisory-committee-representative②)
--   [6.7. Good Faith Disclosure Standards](#ref-for-advisory-committee-representative③)
--   [7.3. PAG Composition](#ref-for-advisory-committee-representative④) [(2)](#ref-for-advisory-committee-representative⑤)
+- [6.1. Disclosure Requirements](#ref-for-advisory-committee-representative) [(2)](#ref-for-advisory-committee-representative①)
+- [6.3. Disclosure Requests](#ref-for-advisory-committee-representative②)
+- [6.7. Good Faith Disclosure Standards](#ref-for-advisory-committee-representative③)
+- [7.3. PAG Composition](#ref-for-advisory-committee-representative④) [(2)](#ref-for-advisory-committee-representative⑤)
 
 <https://www.w3.org/Consortium/Process/#AC>**Referenced in:**
 
--   [4.5. Exclusion Mechanics](#ref-for-AC)
--   [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-AC①)
+- [4.5. Exclusion Mechanics](#ref-for-AC)
+- [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-AC①)
 
 <https://w3c.github.io/w3process/#advisory-committee-representative>**Referenced in:**
 
--   [6.1. Disclosure Requirements](#ref-for-advisory-committee-representative) [(2)](#ref-for-advisory-committee-representative①)
--   [6.3. Disclosure Requests](#ref-for-advisory-committee-representative②)
--   [6.7. Good Faith Disclosure Standards](#ref-for-advisory-committee-representative③)
--   [7.3. PAG Composition](#ref-for-advisory-committee-representative④) [(2)](#ref-for-advisory-committee-representative⑤)
+- [6.1. Disclosure Requirements](#ref-for-advisory-committee-representative) [(2)](#ref-for-advisory-committee-representative①)
+- [6.3. Disclosure Requests](#ref-for-advisory-committee-representative②)
+- [6.7. Good Faith Disclosure Standards](#ref-for-advisory-committee-representative③)
+- [7.3. PAG Composition](#ref-for-advisory-committee-representative④) [(2)](#ref-for-advisory-committee-representative⑤)
 
 <https://www.w3.org/Consortium/Process/#ACReview>**Referenced in:**
 
--   [7.5.2. PAG Outcome](#ref-for-ACReview)
--   [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-ACReview①) [(2)](#ref-for-ACReview②)
+- [7.5.2. PAG Outcome](#ref-for-ACReview)
+- [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-ACReview①) [(2)](#ref-for-ACReview②)
 
 <https://www.w3.org/Consortium/Process/#cfp>**Referenced in:**
 
--   [3. Licensing Obligations of Working Group Participants](#ref-for-cfp)
--   [6.8. Timing of Disclosure Obligations](#ref-for-cfp①)
+- [3. Licensing Obligations of Working Group Participants](#ref-for-cfp)
+- [6.8. Timing of Disclosure Obligations](#ref-for-cfp①)
 
 <https://www.w3.org/Consortium/Process/#RecsCR>**Referenced in:**
 
--   [7.4.1. PAG Formation Timing](#ref-for-RecsCR)
+- [7.4.1. PAG Formation Timing](#ref-for-RecsCR)
 
 <https://www.w3.org/Consortium/Process/#def-Consensus>**Referenced in:**
 
--   [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-def-Consensus)
+- [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-def-Consensus)
 
 <https://www.w3.org/Consortium/Process/#fpwd>**Referenced in:**
 
--   [4.1. Exclusion With Continued Participation](#ref-for-fpwd) [(2)](#ref-for-fpwd①)
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-fpwd②) [(2)](#ref-for-fpwd③)
--   [4.3. Joining an Already Established Working Group](#ref-for-fpwd④) [(2)](#ref-for-fpwd⑤) [(3)](#ref-for-fpwd⑥)
+- [4.1. Exclusion With Continued Participation](#ref-for-fpwd) [(2)](#ref-for-fpwd①)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-fpwd②) [(2)](#ref-for-fpwd③)
+- [4.3. Joining an Already Established Working Group](#ref-for-fpwd④) [(2)](#ref-for-fpwd⑤) [(3)](#ref-for-fpwd⑥)
 
 <https://www.w3.org/Consortium/Process/#invited-expert-wg>**Referenced in:**
 
--   [3.4. Note on Licensing Commitments for Invited Experts](#ref-for-invited-expert-wg) [(2)](#ref-for-invited-expert-wg①)
--   [6.10. Disclosure Obligations of Invited Experts](#ref-for-invited-expert-wg②)
--   [7.3. PAG Composition](#ref-for-invited-expert-wg③)
+- [3.4. Note on Licensing Commitments for Invited Experts](#ref-for-invited-expert-wg) [(2)](#ref-for-invited-expert-wg①)
+- [6.10. Disclosure Obligations of Invited Experts](#ref-for-invited-expert-wg②)
+- [7.3. PAG Composition](#ref-for-invited-expert-wg③)
 
 <https://www.w3.org/Consortium/Process/#maturity-levels>**Referenced in:**
 
--   [7.4.1. PAG Formation Timing](#ref-for-maturity-levels)
+- [7.4.1. PAG Formation Timing](#ref-for-maturity-levels)
 
 <https://www.w3.org/Consortium/Process/#MemberSubmission>**Referenced in:**
 
--   [3.3. Licensing Commitments in W3C Submissions](#ref-for-MemberSubmission) [(2)](#ref-for-MemberSubmission①) [(3)](#ref-for-MemberSubmission②) [(4)](#ref-for-MemberSubmission③)
+- [3.3. Licensing Commitments in W3C Submissions](#ref-for-MemberSubmission) [(2)](#ref-for-MemberSubmission①) [(3)](#ref-for-MemberSubmission②) [(4)](#ref-for-MemberSubmission③)
 
 <https://www.w3.org/Consortium/Process/#Member-only>**Referenced in:**
 
--   [7.4.2. PAG Charter Requirements](#ref-for-Member-only)
+- [7.4.2. PAG Charter Requirements](#ref-for-Member-only)
 
 <https://w3c.github.io/w3process/#patent-review-drafts>**Referenced in:**
 
--   [2. Licensing Goals for W3C Specifications](#ref-for-patent-review-drafts)
+- [2. Licensing Goals for W3C Specifications](#ref-for-patent-review-drafts)
 
 <https://www.w3.org/Consortium/Process/#RecsW3C>**Referenced in:**
 
--   [2. Licensing Goals for W3C Specifications](#ref-for-RecsW3C)
--   [3.3. Licensing Commitments in W3C Submissions](#ref-for-RecsW3C①)
--   [3.5. Specification Licensing Commitments](#ref-for-RecsW3C②)
--   [3.6. Licensing Commitment Persistence](#ref-for-RecsW3C③) [(2)](#ref-for-RecsW3C④) [(3)](#ref-for-RecsW3C⑤) [(4)](#ref-for-RecsW3C⑥) [(5)](#ref-for-RecsW3C⑦)
--   [4.3. Joining an Already Established Working Group](#ref-for-RecsW3C⑧) [(2)](#ref-for-RecsW3C⑨)
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-RecsW3C①⓪) [(2)](#ref-for-RecsW3C①①) [(3)](#ref-for-RecsW3C①②) [(4)](#ref-for-RecsW3C①③) [(5)](#ref-for-RecsW3C①④) [(6)](#ref-for-RecsW3C①⑤) [(7)](#ref-for-RecsW3C①⑥)
--   [6.9. Termination of Disclosure Obligations](#ref-for-RecsW3C①⑦)
--   [7.2. PAG Formation After a Recommendation Is Issued](#ref-for-RecsW3C①⑧)
--   [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-RecsW3C①⑨)
--   [8.1. Essential Claims](#ref-for-RecsW3C②⓪) [(2)](#ref-for-RecsW3C②①) [(3)](#ref-for-RecsW3C②②)
--   [8.2. Limitations on the Scope of Definition of Essential Claims](#ref-for-RecsW3C②③) [(2)](#ref-for-RecsW3C②④) [(3)](#ref-for-RecsW3C②⑤) [(4)](#ref-for-RecsW3C②⑥)
+- [2. Licensing Goals for W3C Specifications](#ref-for-RecsW3C)
+- [3.3. Licensing Commitments in W3C Submissions](#ref-for-RecsW3C①)
+- [3.5. Specification Licensing Commitments](#ref-for-RecsW3C②)
+- [3.6. Licensing Commitment Persistence](#ref-for-RecsW3C③) [(2)](#ref-for-RecsW3C④) [(3)](#ref-for-RecsW3C⑤) [(4)](#ref-for-RecsW3C⑥) [(5)](#ref-for-RecsW3C⑦)
+- [4.3. Joining an Already Established Working Group](#ref-for-RecsW3C⑧) [(2)](#ref-for-RecsW3C⑨)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-RecsW3C①⓪) [(2)](#ref-for-RecsW3C①①) [(3)](#ref-for-RecsW3C①②) [(4)](#ref-for-RecsW3C①③) [(5)](#ref-for-RecsW3C①④) [(6)](#ref-for-RecsW3C①⑤) [(7)](#ref-for-RecsW3C①⑥)
+- [6.9. Termination of Disclosure Obligations](#ref-for-RecsW3C①⑦)
+- [7.2. PAG Formation After a Recommendation Is Issued](#ref-for-RecsW3C①⑧)
+- [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-RecsW3C①⑨)
+- [8.1. Essential Claims](#ref-for-RecsW3C②⓪) [(2)](#ref-for-RecsW3C②①) [(3)](#ref-for-RecsW3C②②)
+- [8.2. Limitations on the Scope of Definition of Essential Claims](#ref-for-RecsW3C②③) [(2)](#ref-for-RecsW3C②④) [(3)](#ref-for-RecsW3C②⑤) [(4)](#ref-for-RecsW3C②⑥)
 
 <https://w3c.github.io/w3process/#rec-track>**Referenced in:**
 
--   [2. Licensing Goals for W3C Specifications](#ref-for-rec-track)
+- [2. Licensing Goals for W3C Specifications](#ref-for-rec-track)
 
 <https://www.w3.org/Consortium/Process/#rec-rescind>**Referenced in:**
 
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-rec-rescind) [(2)](#ref-for-rec-rescind①)
--   [7.5.1. Possible PAG Conclusions](#ref-for-rec-rescind②)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-rec-rescind) [(2)](#ref-for-rec-rescind①)
+- [7.5.1. Possible PAG Conclusions](#ref-for-rec-rescind②)
 
 <https://www.w3.org/Consortium/Process/#MemberSubmission>**Referenced in:**
 
--   [3.3. Licensing Commitments in W3C Submissions](#ref-for-MemberSubmission) [(2)](#ref-for-MemberSubmission①) [(3)](#ref-for-MemberSubmission②) [(4)](#ref-for-MemberSubmission③)
+- [3.3. Licensing Commitments in W3C Submissions](#ref-for-MemberSubmission) [(2)](#ref-for-MemberSubmission①) [(3)](#ref-for-MemberSubmission②) [(4)](#ref-for-MemberSubmission③)
 
 <https://www.w3.org/Consortium/Process/#RecsW3C>**Referenced in:**
 
--   [2. Licensing Goals for W3C Specifications](#ref-for-RecsW3C)
--   [3.3. Licensing Commitments in W3C Submissions](#ref-for-RecsW3C①)
--   [3.5. Specification Licensing Commitments](#ref-for-RecsW3C②)
--   [3.6. Licensing Commitment Persistence](#ref-for-RecsW3C③) [(2)](#ref-for-RecsW3C④) [(3)](#ref-for-RecsW3C⑤) [(4)](#ref-for-RecsW3C⑥) [(5)](#ref-for-RecsW3C⑦)
--   [4.3. Joining an Already Established Working Group](#ref-for-RecsW3C⑧) [(2)](#ref-for-RecsW3C⑨)
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-RecsW3C①⓪) [(2)](#ref-for-RecsW3C①①) [(3)](#ref-for-RecsW3C①②) [(4)](#ref-for-RecsW3C①③) [(5)](#ref-for-RecsW3C①④) [(6)](#ref-for-RecsW3C①⑤) [(7)](#ref-for-RecsW3C①⑥)
--   [6.9. Termination of Disclosure Obligations](#ref-for-RecsW3C①⑦)
--   [7.2. PAG Formation After a Recommendation Is Issued](#ref-for-RecsW3C①⑧)
--   [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-RecsW3C①⑨)
--   [8.1. Essential Claims](#ref-for-RecsW3C②⓪) [(2)](#ref-for-RecsW3C②①) [(3)](#ref-for-RecsW3C②②)
--   [8.2. Limitations on the Scope of Definition of Essential Claims](#ref-for-RecsW3C②③) [(2)](#ref-for-RecsW3C②④) [(3)](#ref-for-RecsW3C②⑤) [(4)](#ref-for-RecsW3C②⑥)
+- [2. Licensing Goals for W3C Specifications](#ref-for-RecsW3C)
+- [3.3. Licensing Commitments in W3C Submissions](#ref-for-RecsW3C①)
+- [3.5. Specification Licensing Commitments](#ref-for-RecsW3C②)
+- [3.6. Licensing Commitment Persistence](#ref-for-RecsW3C③) [(2)](#ref-for-RecsW3C④) [(3)](#ref-for-RecsW3C⑤) [(4)](#ref-for-RecsW3C⑥) [(5)](#ref-for-RecsW3C⑦)
+- [4.3. Joining an Already Established Working Group](#ref-for-RecsW3C⑧) [(2)](#ref-for-RecsW3C⑨)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-RecsW3C①⓪) [(2)](#ref-for-RecsW3C①①) [(3)](#ref-for-RecsW3C①②) [(4)](#ref-for-RecsW3C①③) [(5)](#ref-for-RecsW3C①④) [(6)](#ref-for-RecsW3C①⑤) [(7)](#ref-for-RecsW3C①⑥)
+- [6.9. Termination of Disclosure Obligations](#ref-for-RecsW3C①⑦)
+- [7.2. PAG Formation After a Recommendation Is Issued](#ref-for-RecsW3C①⑧)
+- [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-RecsW3C①⑨)
+- [8.1. Essential Claims](#ref-for-RecsW3C②⓪) [(2)](#ref-for-RecsW3C②①) [(3)](#ref-for-RecsW3C②②)
+- [8.2. Limitations on the Scope of Definition of Essential Claims](#ref-for-RecsW3C②③) [(2)](#ref-for-RecsW3C②④) [(3)](#ref-for-RecsW3C②⑤) [(4)](#ref-for-RecsW3C②⑥)
 
 <https://w3c.github.io/w3process/#technical-report>**Referenced in:**
 
--   [2. Licensing Goals for W3C Specifications](#ref-for-technical-report)
+- [2. Licensing Goals for W3C Specifications](#ref-for-technical-report)
 
 <https://www.w3.org/Consortium/Process/#GroupsWG>**Referenced in:**
 
--   [1. Overview](#ref-for-GroupsWG) [(2)](#ref-for-GroupsWG①)
--   [2. Licensing Goals for W3C Specifications](#ref-for-GroupsWG②) [(2)](#ref-for-GroupsWG③)
--   [3. Licensing Obligations of Working Group Participants](#ref-for-GroupsWG④)
--   [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-GroupsWG⑤) [(2)](#ref-for-GroupsWG⑥) [(3)](#ref-for-GroupsWG⑦)
--   [3.2. Limitation on Licensing Requirement for Non-Participating Members](#ref-for-GroupsWG⑧)
--   [3.4. Note on Licensing Commitments for Invited Experts](#ref-for-GroupsWG⑨)
--   [3.5. Specification Licensing Commitments](#ref-for-GroupsWG①⓪) [(2)](#ref-for-GroupsWG①①)
--   [3.6. Licensing Commitment Persistence](#ref-for-GroupsWG①②) [(2)](#ref-for-GroupsWG①③) [(3)](#ref-for-GroupsWG①④)
--   [4. Exclusion From W3C RF Licensing Requirements](#ref-for-GroupsWG①⑤)
--   [4.1. Exclusion With Continued Participation](#ref-for-GroupsWG①⑥)
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-GroupsWG①⑦) [(2)](#ref-for-GroupsWG①⑧) [(3)](#ref-for-GroupsWG①⑨) [(4)](#ref-for-GroupsWG②⓪) [(5)](#ref-for-GroupsWG②①)
--   [4.3. Joining an Already Established Working Group](#ref-for-GroupsWG②②) [(2)](#ref-for-GroupsWG②③) [(3)](#ref-for-GroupsWG②④) [(4)](#ref-for-GroupsWG②⑤) [(5)](#ref-for-GroupsWG②⑥)
--   [4.5. Exclusion Mechanics](#ref-for-GroupsWG②⑦) [(2)](#ref-for-GroupsWG②⑧) [(3)](#ref-for-GroupsWG②⑨)
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-GroupsWG③⓪) [(2)](#ref-for-GroupsWG③①)
--   [6.4. Disclosure Contents](#ref-for-GroupsWG③②)
--   [6.6. Disclosure of Pending, Unpublished Applications](#ref-for-GroupsWG③③)
--   [6.7. Good Faith Disclosure Standards](#ref-for-GroupsWG③④)
--   [6.9. Termination of Disclosure Obligations](#ref-for-GroupsWG③⑤)
--   [6.10. Disclosure Obligations of Invited Experts](#ref-for-GroupsWG③⑥)
--   [6.11. Disclosures to Be Publicly Available on Recommendation Track](#ref-for-GroupsWG③⑦)
--   [7.1. PAG Formation](#ref-for-GroupsWG③⑧) [(2)](#ref-for-GroupsWG③⑨)
--   [7.3. PAG Composition](#ref-for-GroupsWG④⓪) [(2)](#ref-for-GroupsWG④①) [(3)](#ref-for-GroupsWG④②) [(4)](#ref-for-GroupsWG④③) [(5)](#ref-for-GroupsWG④④)
--   [7.4.1. PAG Formation Timing](#ref-for-GroupsWG④⑤) [(2)](#ref-for-GroupsWG④⑥)
--   [7.4.2. PAG Charter Requirements](#ref-for-GroupsWG④⑦) [(2)](#ref-for-GroupsWG④⑧) [(3)](#ref-for-GroupsWG④⑨)
--   [7.5.1. Possible PAG Conclusions](#ref-for-GroupsWG⑤⓪) [(2)](#ref-for-GroupsWG⑤①) [(3)](#ref-for-GroupsWG⑤②)
--   [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-GroupsWG⑤③) [(2)](#ref-for-GroupsWG⑤④) [(3)](#ref-for-GroupsWG⑤⑤) [(4)](#ref-for-GroupsWG⑤⑥)
+- [1. Overview](#ref-for-GroupsWG) [(2)](#ref-for-GroupsWG①)
+- [2. Licensing Goals for W3C Specifications](#ref-for-GroupsWG②) [(2)](#ref-for-GroupsWG③)
+- [3. Licensing Obligations of Working Group Participants](#ref-for-GroupsWG④)
+- [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-GroupsWG⑤) [(2)](#ref-for-GroupsWG⑥) [(3)](#ref-for-GroupsWG⑦)
+- [3.2. Limitation on Licensing Requirement for Non-Participating Members](#ref-for-GroupsWG⑧)
+- [3.4. Note on Licensing Commitments for Invited Experts](#ref-for-GroupsWG⑨)
+- [3.5. Specification Licensing Commitments](#ref-for-GroupsWG①⓪) [(2)](#ref-for-GroupsWG①①)
+- [3.6. Licensing Commitment Persistence](#ref-for-GroupsWG①②) [(2)](#ref-for-GroupsWG①③) [(3)](#ref-for-GroupsWG①④)
+- [4. Exclusion From W3C RF Licensing Requirements](#ref-for-GroupsWG①⑤)
+- [4.1. Exclusion With Continued Participation](#ref-for-GroupsWG①⑥)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-GroupsWG①⑦) [(2)](#ref-for-GroupsWG①⑧) [(3)](#ref-for-GroupsWG①⑨) [(4)](#ref-for-GroupsWG②⓪) [(5)](#ref-for-GroupsWG②①)
+- [4.3. Joining an Already Established Working Group](#ref-for-GroupsWG②②) [(2)](#ref-for-GroupsWG②③) [(3)](#ref-for-GroupsWG②④) [(4)](#ref-for-GroupsWG②⑤) [(5)](#ref-for-GroupsWG②⑥)
+- [4.5. Exclusion Mechanics](#ref-for-GroupsWG②⑦) [(2)](#ref-for-GroupsWG②⑧) [(3)](#ref-for-GroupsWG②⑨)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-GroupsWG③⓪) [(2)](#ref-for-GroupsWG③①)
+- [6.4. Disclosure Contents](#ref-for-GroupsWG③②)
+- [6.6. Disclosure of Pending, Unpublished Applications](#ref-for-GroupsWG③③)
+- [6.7. Good Faith Disclosure Standards](#ref-for-GroupsWG③④)
+- [6.9. Termination of Disclosure Obligations](#ref-for-GroupsWG③⑤)
+- [6.10. Disclosure Obligations of Invited Experts](#ref-for-GroupsWG③⑥)
+- [6.11. Disclosures to Be Publicly Available on Recommendation Track](#ref-for-GroupsWG③⑦)
+- [7.1. PAG Formation](#ref-for-GroupsWG③⑧) [(2)](#ref-for-GroupsWG③⑨)
+- [7.3. PAG Composition](#ref-for-GroupsWG④⓪) [(2)](#ref-for-GroupsWG④①) [(3)](#ref-for-GroupsWG④②) [(4)](#ref-for-GroupsWG④③) [(5)](#ref-for-GroupsWG④④)
+- [7.4.1. PAG Formation Timing](#ref-for-GroupsWG④⑤) [(2)](#ref-for-GroupsWG④⑥)
+- [7.4.2. PAG Charter Requirements](#ref-for-GroupsWG④⑦) [(2)](#ref-for-GroupsWG④⑧) [(3)](#ref-for-GroupsWG④⑨)
+- [7.5.1. Possible PAG Conclusions](#ref-for-GroupsWG⑤⓪) [(2)](#ref-for-GroupsWG⑤①) [(3)](#ref-for-GroupsWG⑤②)
+- [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-GroupsWG⑤③) [(2)](#ref-for-GroupsWG⑤④) [(3)](#ref-for-GroupsWG⑤⑤) [(4)](#ref-for-GroupsWG⑤⑥)
 
 <https://www.w3.org/Consortium/Process/#RecsWD>**Referenced in:**
 
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-RecsWD) [(2)](#ref-for-RecsWD①) [(3)](#ref-for-RecsWD②)
--   [4.3. Joining an Already Established Working Group](#ref-for-RecsWD③)
--   [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-RecsWD④)
--   [6.11. Disclosures to Be Publicly Available on Recommendation Track](#ref-for-RecsWD⑤)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-RecsWD) [(2)](#ref-for-RecsWD①) [(3)](#ref-for-RecsWD②)
+- [4.3. Joining an Already Established Working Group](#ref-for-RecsWD③)
+- [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-RecsWD④)
+- [6.11. Disclosures to Be Publicly Available on Recommendation Track](#ref-for-RecsWD⑤)
 
 <https://www.w3.org/Consortium/Process/#GroupsWG>**Referenced in:**
 
--   [1. Overview](#ref-for-GroupsWG) [(2)](#ref-for-GroupsWG①)
--   [2. Licensing Goals for W3C Specifications](#ref-for-GroupsWG②) [(2)](#ref-for-GroupsWG③)
--   [3. Licensing Obligations of Working Group Participants](#ref-for-GroupsWG④)
--   [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-GroupsWG⑤) [(2)](#ref-for-GroupsWG⑥) [(3)](#ref-for-GroupsWG⑦)
--   [3.2. Limitation on Licensing Requirement for Non-Participating Members](#ref-for-GroupsWG⑧)
--   [3.4. Note on Licensing Commitments for Invited Experts](#ref-for-GroupsWG⑨)
--   [3.5. Specification Licensing Commitments](#ref-for-GroupsWG①⓪) [(2)](#ref-for-GroupsWG①①)
--   [3.6. Licensing Commitment Persistence](#ref-for-GroupsWG①②) [(2)](#ref-for-GroupsWG①③) [(3)](#ref-for-GroupsWG①④)
--   [4. Exclusion From W3C RF Licensing Requirements](#ref-for-GroupsWG①⑤)
--   [4.1. Exclusion With Continued Participation](#ref-for-GroupsWG①⑥)
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-GroupsWG①⑦) [(2)](#ref-for-GroupsWG①⑧) [(3)](#ref-for-GroupsWG①⑨) [(4)](#ref-for-GroupsWG②⓪) [(5)](#ref-for-GroupsWG②①)
--   [4.3. Joining an Already Established Working Group](#ref-for-GroupsWG②②) [(2)](#ref-for-GroupsWG②③) [(3)](#ref-for-GroupsWG②④) [(4)](#ref-for-GroupsWG②⑤) [(5)](#ref-for-GroupsWG②⑥)
--   [4.5. Exclusion Mechanics](#ref-for-GroupsWG②⑦) [(2)](#ref-for-GroupsWG②⑧) [(3)](#ref-for-GroupsWG②⑨)
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-GroupsWG③⓪) [(2)](#ref-for-GroupsWG③①)
--   [6.4. Disclosure Contents](#ref-for-GroupsWG③②)
--   [6.6. Disclosure of Pending, Unpublished Applications](#ref-for-GroupsWG③③)
--   [6.7. Good Faith Disclosure Standards](#ref-for-GroupsWG③④)
--   [6.9. Termination of Disclosure Obligations](#ref-for-GroupsWG③⑤)
--   [6.10. Disclosure Obligations of Invited Experts](#ref-for-GroupsWG③⑥)
--   [6.11. Disclosures to Be Publicly Available on Recommendation Track](#ref-for-GroupsWG③⑦)
--   [7.1. PAG Formation](#ref-for-GroupsWG③⑧) [(2)](#ref-for-GroupsWG③⑨)
--   [7.3. PAG Composition](#ref-for-GroupsWG④⓪) [(2)](#ref-for-GroupsWG④①) [(3)](#ref-for-GroupsWG④②) [(4)](#ref-for-GroupsWG④③) [(5)](#ref-for-GroupsWG④④)
--   [7.4.1. PAG Formation Timing](#ref-for-GroupsWG④⑤) [(2)](#ref-for-GroupsWG④⑥)
--   [7.4.2. PAG Charter Requirements](#ref-for-GroupsWG④⑦) [(2)](#ref-for-GroupsWG④⑧) [(3)](#ref-for-GroupsWG④⑨)
--   [7.5.1. Possible PAG Conclusions](#ref-for-GroupsWG⑤⓪) [(2)](#ref-for-GroupsWG⑤①) [(3)](#ref-for-GroupsWG⑤②)
--   [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-GroupsWG⑤③) [(2)](#ref-for-GroupsWG⑤④) [(3)](#ref-for-GroupsWG⑤⑤) [(4)](#ref-for-GroupsWG⑤⑥)
+- [1. Overview](#ref-for-GroupsWG) [(2)](#ref-for-GroupsWG①)
+- [2. Licensing Goals for W3C Specifications](#ref-for-GroupsWG②) [(2)](#ref-for-GroupsWG③)
+- [3. Licensing Obligations of Working Group Participants](#ref-for-GroupsWG④)
+- [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-GroupsWG⑤) [(2)](#ref-for-GroupsWG⑥) [(3)](#ref-for-GroupsWG⑦)
+- [3.2. Limitation on Licensing Requirement for Non-Participating Members](#ref-for-GroupsWG⑧)
+- [3.4. Note on Licensing Commitments for Invited Experts](#ref-for-GroupsWG⑨)
+- [3.5. Specification Licensing Commitments](#ref-for-GroupsWG①⓪) [(2)](#ref-for-GroupsWG①①)
+- [3.6. Licensing Commitment Persistence](#ref-for-GroupsWG①②) [(2)](#ref-for-GroupsWG①③) [(3)](#ref-for-GroupsWG①④)
+- [4. Exclusion From W3C RF Licensing Requirements](#ref-for-GroupsWG①⑤)
+- [4.1. Exclusion With Continued Participation](#ref-for-GroupsWG①⑥)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-GroupsWG①⑦) [(2)](#ref-for-GroupsWG①⑧) [(3)](#ref-for-GroupsWG①⑨) [(4)](#ref-for-GroupsWG②⓪) [(5)](#ref-for-GroupsWG②①)
+- [4.3. Joining an Already Established Working Group](#ref-for-GroupsWG②②) [(2)](#ref-for-GroupsWG②③) [(3)](#ref-for-GroupsWG②④) [(4)](#ref-for-GroupsWG②⑤) [(5)](#ref-for-GroupsWG②⑥)
+- [4.5. Exclusion Mechanics](#ref-for-GroupsWG②⑦) [(2)](#ref-for-GroupsWG②⑧) [(3)](#ref-for-GroupsWG②⑨)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-GroupsWG③⓪) [(2)](#ref-for-GroupsWG③①)
+- [6.4. Disclosure Contents](#ref-for-GroupsWG③②)
+- [6.6. Disclosure of Pending, Unpublished Applications](#ref-for-GroupsWG③③)
+- [6.7. Good Faith Disclosure Standards](#ref-for-GroupsWG③④)
+- [6.9. Termination of Disclosure Obligations](#ref-for-GroupsWG③⑤)
+- [6.10. Disclosure Obligations of Invited Experts](#ref-for-GroupsWG③⑥)
+- [6.11. Disclosures to Be Publicly Available on Recommendation Track](#ref-for-GroupsWG③⑦)
+- [7.1. PAG Formation](#ref-for-GroupsWG③⑧) [(2)](#ref-for-GroupsWG③⑨)
+- [7.3. PAG Composition](#ref-for-GroupsWG④⓪) [(2)](#ref-for-GroupsWG④①) [(3)](#ref-for-GroupsWG④②) [(4)](#ref-for-GroupsWG④③) [(5)](#ref-for-GroupsWG④④)
+- [7.4.1. PAG Formation Timing](#ref-for-GroupsWG④⑤) [(2)](#ref-for-GroupsWG④⑥)
+- [7.4.2. PAG Charter Requirements](#ref-for-GroupsWG④⑦) [(2)](#ref-for-GroupsWG④⑧) [(3)](#ref-for-GroupsWG④⑨)
+- [7.5.1. Possible PAG Conclusions](#ref-for-GroupsWG⑤⓪) [(2)](#ref-for-GroupsWG⑤①) [(3)](#ref-for-GroupsWG⑤②)
+- [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-GroupsWG⑤③) [(2)](#ref-for-GroupsWG⑤④) [(3)](#ref-for-GroupsWG⑤⑤) [(4)](#ref-for-GroupsWG⑤⑥)
 
 <https://www.w3.org/Consortium/Process/#WGCharter>**Referenced in:**
 
--   [2. Licensing Goals for W3C Specifications](#ref-for-WGCharter)
--   [3. Licensing Obligations of Working Group Participants](#ref-for-WGCharter①)
--   [3.6. Licensing Commitment Persistence](#ref-for-WGCharter②)
--   [7.1. PAG Formation](#ref-for-WGCharter③)
+- [2. Licensing Goals for W3C Specifications](#ref-for-WGCharter)
+- [3. Licensing Obligations of Working Group Participants](#ref-for-WGCharter①)
+- [3.6. Licensing Commitment Persistence](#ref-for-WGCharter②)
+- [7.1. PAG Formation](#ref-for-WGCharter③)
 
 **[\#specification](#specification)Referenced in:**
 
--   [1. Overview](#ref-for-specification) [(2)](#ref-for-specification①)
--   [2. Licensing Goals for W3C Specifications](#ref-for-specification②) [(2)](#ref-for-specification③) [(3)](#ref-for-specification④)
--   [3.5. Specification Licensing Commitments](#ref-for-specification⑤) [(2)](#ref-for-specification⑥) [(3)](#ref-for-specification⑦)
--   [3.6. Licensing Commitment Persistence](#ref-for-specification⑧) [(2)](#ref-for-specification⑨) [(3)](#ref-for-specification①⓪) [(4)](#ref-for-specification①①)
--   [4.1. Exclusion With Continued Participation](#ref-for-specification①②) [(2)](#ref-for-specification①③)
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-specification①④) [(2)](#ref-for-specification①⑤) [(3)](#ref-for-specification①⑥) [(4)](#ref-for-specification①⑦)
--   [4.3. Joining an Already Established Working Group](#ref-for-specification①⑧)
--   [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-specification①⑨)
--   [4.5. Exclusion Mechanics](#ref-for-specification②⓪) [(2)](#ref-for-specification②①)
--   [6.1. Disclosure Requirements](#ref-for-specification②②)
--   [6.3. Disclosure Requests](#ref-for-specification②③) [(2)](#ref-for-specification②④)
--   [6.4. Disclosure Contents](#ref-for-specification②⑤)
--   [6.5. Disclosure of Laid-Open or Published Applications](#ref-for-specification②⑥)
--   [6.7. Good Faith Disclosure Standards](#ref-for-specification②⑦)
--   [6.11. Disclosures to Be Publicly Available on Recommendation Track](#ref-for-specification②⑧)
--   [7.4.1. PAG Formation Timing](#ref-for-specification②⑨)
--   [7.5.1. Possible PAG Conclusions](#ref-for-specification③⓪) [(2)](#ref-for-specification③①)
--   [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-specification③②)
--   [8.1. Essential Claims](#ref-for-specification③③) [(2)](#ref-for-specification③④) [(3)](#ref-for-specification③⑤)
--   [8.3. Definition of Normative, Optional and Informative](#ref-for-specification③⑥) [(2)](#ref-for-specification③⑦)
+- [1. Overview](#ref-for-specification) [(2)](#ref-for-specification①)
+- [2. Licensing Goals for W3C Specifications](#ref-for-specification②) [(2)](#ref-for-specification③) [(3)](#ref-for-specification④)
+- [3.5. Specification Licensing Commitments](#ref-for-specification⑤) [(2)](#ref-for-specification⑥) [(3)](#ref-for-specification⑦)
+- [3.6. Licensing Commitment Persistence](#ref-for-specification⑧) [(2)](#ref-for-specification⑨) [(3)](#ref-for-specification①⓪) [(4)](#ref-for-specification①①)
+- [4.1. Exclusion With Continued Participation](#ref-for-specification①②) [(2)](#ref-for-specification①③)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-specification①④) [(2)](#ref-for-specification①⑤) [(3)](#ref-for-specification①⑥) [(4)](#ref-for-specification①⑦)
+- [4.3. Joining an Already Established Working Group](#ref-for-specification①⑧)
+- [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-specification①⑨)
+- [4.5. Exclusion Mechanics](#ref-for-specification②⓪) [(2)](#ref-for-specification②①)
+- [6.1. Disclosure Requirements](#ref-for-specification②②)
+- [6.3. Disclosure Requests](#ref-for-specification②③) [(2)](#ref-for-specification②④)
+- [6.4. Disclosure Contents](#ref-for-specification②⑤)
+- [6.5. Disclosure of Laid-Open or Published Applications](#ref-for-specification②⑥)
+- [6.7. Good Faith Disclosure Standards](#ref-for-specification②⑦)
+- [6.11. Disclosures to Be Publicly Available on Recommendation Track](#ref-for-specification②⑧)
+- [7.4.1. PAG Formation Timing](#ref-for-specification②⑨)
+- [7.5.1. Possible PAG Conclusions](#ref-for-specification③⓪) [(2)](#ref-for-specification③①)
+- [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-specification③②)
+- [8.1. Essential Claims](#ref-for-specification③③) [(2)](#ref-for-specification③④) [(3)](#ref-for-specification③⑤)
+- [8.3. Definition of Normative, Optional and Informative](#ref-for-specification③⑥) [(2)](#ref-for-specification③⑦)
 
 **[\#patent-review-draft](#patent-review-draft)Referenced in:**
 
--   [3.3. Licensing Commitments in W3C Submissions](#ref-for-patent-review-draft)
--   [3.5. Specification Licensing Commitments](#ref-for-patent-review-draft①)
--   [3.6. Licensing Commitment Persistence](#ref-for-patent-review-draft②) [(2)](#ref-for-patent-review-draft③) [(3)](#ref-for-patent-review-draft④) [(4)](#ref-for-patent-review-draft⑤) [(5)](#ref-for-patent-review-draft⑥) [(6)](#ref-for-patent-review-draft⑦) [(7)](#ref-for-patent-review-draft⑧)
--   [4.1. Exclusion With Continued Participation](#ref-for-patent-review-draft⑨) [(2)](#ref-for-patent-review-draft①⓪)
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-patent-review-draft①①) [(2)](#ref-for-patent-review-draft①②)
--   [4.3. Joining an Already Established Working Group](#ref-for-patent-review-draft①③) [(2)](#ref-for-patent-review-draft①④) [(3)](#ref-for-patent-review-draft①⑤) [(4)](#ref-for-patent-review-draft①⑥) [(5)](#ref-for-patent-review-draft①⑦)
--   [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-patent-review-draft①⑧)
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-patent-review-draft①⑨) [(2)](#ref-for-patent-review-draft②⓪) [(3)](#ref-for-patent-review-draft②①) [(4)](#ref-for-patent-review-draft②②) [(5)](#ref-for-patent-review-draft②③) [(6)](#ref-for-patent-review-draft②④) [(7)](#ref-for-patent-review-draft②⑤)
--   [8.1. Essential Claims](#ref-for-patent-review-draft②⑥) [(2)](#ref-for-patent-review-draft②⑦) [(3)](#ref-for-patent-review-draft②⑧) [(4)](#ref-for-patent-review-draft②⑨)
--   [8.2. Limitations on the Scope of Definition of Essential Claims](#ref-for-patent-review-draft③⓪)
+- [3.3. Licensing Commitments in W3C Submissions](#ref-for-patent-review-draft)
+- [3.5. Specification Licensing Commitments](#ref-for-patent-review-draft①)
+- [3.6. Licensing Commitment Persistence](#ref-for-patent-review-draft②) [(2)](#ref-for-patent-review-draft③) [(3)](#ref-for-patent-review-draft④) [(4)](#ref-for-patent-review-draft⑤) [(5)](#ref-for-patent-review-draft⑥) [(6)](#ref-for-patent-review-draft⑦) [(7)](#ref-for-patent-review-draft⑧)
+- [4.1. Exclusion With Continued Participation](#ref-for-patent-review-draft⑨) [(2)](#ref-for-patent-review-draft①⓪)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-patent-review-draft①①) [(2)](#ref-for-patent-review-draft①②)
+- [4.3. Joining an Already Established Working Group](#ref-for-patent-review-draft①③) [(2)](#ref-for-patent-review-draft①④) [(3)](#ref-for-patent-review-draft①⑤) [(4)](#ref-for-patent-review-draft①⑥) [(5)](#ref-for-patent-review-draft①⑦)
+- [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-patent-review-draft①⑧)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-patent-review-draft①⑨) [(2)](#ref-for-patent-review-draft②⓪) [(3)](#ref-for-patent-review-draft②①) [(4)](#ref-for-patent-review-draft②②) [(5)](#ref-for-patent-review-draft②③) [(6)](#ref-for-patent-review-draft②④) [(7)](#ref-for-patent-review-draft②⑤)
+- [8.1. Essential Claims](#ref-for-patent-review-draft②⑥) [(2)](#ref-for-patent-review-draft②⑦) [(3)](#ref-for-patent-review-draft②⑧) [(4)](#ref-for-patent-review-draft②⑨)
+- [8.2. Limitations on the Scope of Definition of Essential Claims](#ref-for-patent-review-draft③⓪)
 
 **[\#participant](#participant)Referenced in:**
 
--   [1. Overview](#ref-for-participant)
--   [3. Licensing Obligations of Working Group Participants](#ref-for-participant①)
--   [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-participant②) [(2)](#ref-for-participant③) [(3)](#ref-for-participant④)
--   [3.5. Specification Licensing Commitments](#ref-for-participant⑤) [(2)](#ref-for-participant⑥) [(3)](#ref-for-participant⑦)
--   [3.6. Licensing Commitment Persistence](#ref-for-participant⑧) [(2)](#ref-for-participant⑨) [(3)](#ref-for-participant①⓪) [(4)](#ref-for-participant①①)
--   [4. Exclusion From W3C RF Licensing Requirements](#ref-for-participant①②)
--   [4.1. Exclusion With Continued Participation](#ref-for-participant①③) [(2)](#ref-for-participant①④) [(3)](#ref-for-participant①⑤) [(4)](#ref-for-participant①⑥)
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-participant①⑦) [(2)](#ref-for-participant①⑧) [(3)](#ref-for-participant①⑨) [(4)](#ref-for-participant②⓪) [(5)](#ref-for-participant②①) [(6)](#ref-for-participant②②) [(7)](#ref-for-participant②③) [(8)](#ref-for-participant②④) [(9)](#ref-for-participant②⑤) [(10)](#ref-for-participant②⑥) [(11)](#ref-for-participant②⑦)
--   [4.3. Joining an Already Established Working Group](#ref-for-participant②⑧) [(2)](#ref-for-participant②⑨) [(3)](#ref-for-participant③⓪)
--   [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-participant③①)
--   [4.5. Exclusion Mechanics](#ref-for-participant③②)
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-participant③③)
--   [6.7. Good Faith Disclosure Standards](#ref-for-participant③④)
+- [1. Overview](#ref-for-participant)
+- [3. Licensing Obligations of Working Group Participants](#ref-for-participant①)
+- [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-participant②) [(2)](#ref-for-participant③) [(3)](#ref-for-participant④)
+- [3.5. Specification Licensing Commitments](#ref-for-participant⑤) [(2)](#ref-for-participant⑥) [(3)](#ref-for-participant⑦)
+- [3.6. Licensing Commitment Persistence](#ref-for-participant⑧) [(2)](#ref-for-participant⑨) [(3)](#ref-for-participant①⓪) [(4)](#ref-for-participant①①)
+- [4. Exclusion From W3C RF Licensing Requirements](#ref-for-participant①②)
+- [4.1. Exclusion With Continued Participation](#ref-for-participant①③) [(2)](#ref-for-participant①④) [(3)](#ref-for-participant①⑤) [(4)](#ref-for-participant①⑥)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-participant①⑦) [(2)](#ref-for-participant①⑧) [(3)](#ref-for-participant①⑨) [(4)](#ref-for-participant②⓪) [(5)](#ref-for-participant②①) [(6)](#ref-for-participant②②) [(7)](#ref-for-participant②③) [(8)](#ref-for-participant②④) [(9)](#ref-for-participant②⑤) [(10)](#ref-for-participant②⑥) [(11)](#ref-for-participant②⑦)
+- [4.3. Joining an Already Established Working Group](#ref-for-participant②⑧) [(2)](#ref-for-participant②⑨) [(3)](#ref-for-participant③⓪)
+- [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-participant③①)
+- [4.5. Exclusion Mechanics](#ref-for-participant③②)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-participant③③)
+- [6.7. Good Faith Disclosure Standards](#ref-for-participant③④)
 
 **[\#licensing-commitment](#licensing-commitment)Referenced in:**
 
--   [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-licensing-commitment)
--   [3.6. Licensing Commitment Persistence](#ref-for-licensing-commitment①) [(2)](#ref-for-licensing-commitment②) [(3)](#ref-for-licensing-commitment③) [(4)](#ref-for-licensing-commitment④)
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-licensing-commitment⑤)
--   [4.3. Joining an Already Established Working Group](#ref-for-licensing-commitment⑥)
+- [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-licensing-commitment)
+- [3.6. Licensing Commitment Persistence](#ref-for-licensing-commitment①) [(2)](#ref-for-licensing-commitment②) [(3)](#ref-for-licensing-commitment③) [(4)](#ref-for-licensing-commitment④)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-licensing-commitment⑤)
+- [4.3. Joining an Already Established Working Group](#ref-for-licensing-commitment⑥)
 
 **[\#exclusion-opportunity](#exclusion-opportunity)Referenced in:**
 
--   [3.5. Specification Licensing Commitments](#ref-for-exclusion-opportunity)
--   [4.1. Exclusion With Continued Participation](#ref-for-exclusion-opportunity①) [(2)](#ref-for-exclusion-opportunity②) [(3)](#ref-for-exclusion-opportunity③) [(4)](#ref-for-exclusion-opportunity④)
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-exclusion-opportunity⑤) [(2)](#ref-for-exclusion-opportunity⑥)
+- [3.5. Specification Licensing Commitments](#ref-for-exclusion-opportunity)
+- [4.1. Exclusion With Continued Participation](#ref-for-exclusion-opportunity①) [(2)](#ref-for-exclusion-opportunity②) [(3)](#ref-for-exclusion-opportunity③) [(4)](#ref-for-exclusion-opportunity④)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-exclusion-opportunity⑤) [(2)](#ref-for-exclusion-opportunity⑥)
 
 **[\#call-for-exclusion](#call-for-exclusion)Referenced in:**
 
--   [4.1. Exclusion With Continued Participation](#ref-for-call-for-exclusion)
--   [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-call-for-exclusion①)
--   [4.5. Exclusion Mechanics](#ref-for-call-for-exclusion②) [(2)](#ref-for-call-for-exclusion③)
+- [4.1. Exclusion With Continued Participation](#ref-for-call-for-exclusion)
+- [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-call-for-exclusion①)
+- [4.5. Exclusion Mechanics](#ref-for-call-for-exclusion②) [(2)](#ref-for-call-for-exclusion③)
 
 **[\#def-RF](#def-RF)Referenced in:**
 
--   [1. Overview](#ref-for-def-RF)
--   [2. Licensing Goals for W3C Specifications](#ref-for-def-RF)
--   [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-def-RF①)
--   [3.3. Licensing Commitments in W3C Submissions](#ref-for-def-RF②)
--   [3.5. Specification Licensing Commitments](#ref-for-def-RF③)
--   [4. Exclusion From W3C RF Licensing Requirements](#ref-for-def-RF④)
--   [4.1. Exclusion With Continued Participation](#ref-for-def-RF⑤)
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-def-RF⑥) [(2)](#ref-for-def-RF⑦)
--   [6.2. Disclosure Exemption](#ref-for-def-RF⑧)
--   [7.1. PAG Formation](#ref-for-def-RF⑨)
--   [7.5.1. Possible PAG Conclusions](#ref-for-def-RF①⓪)
--   [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-def-RF①①)
+- [1. Overview](#ref-for-def-RF)
+- [2. Licensing Goals for W3C Specifications](#ref-for-def-RF)
+- [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-def-RF①)
+- [3.3. Licensing Commitments in W3C Submissions](#ref-for-def-RF②)
+- [3.5. Specification Licensing Commitments](#ref-for-def-RF③)
+- [4. Exclusion From W3C RF Licensing Requirements](#ref-for-def-RF④)
+- [4.1. Exclusion With Continued Participation](#ref-for-def-RF⑤)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-def-RF⑥) [(2)](#ref-for-def-RF⑦)
+- [6.2. Disclosure Exemption](#ref-for-def-RF⑧)
+- [7.1. PAG Formation](#ref-for-def-RF⑨)
+- [7.5.1. Possible PAG Conclusions](#ref-for-def-RF①⓪)
+- [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-def-RF①①)
 
 **[\#disclosure](#disclosure)Referenced in:**
 
--   [1. Overview](#ref-for-disclosure)
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-disclosure①)
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-disclosure②)
--   [6.1. Disclosure Requirements](#ref-for-disclosure③)
--   [6.2. Disclosure Exemption](#ref-for-disclosure④)
--   [6.4. Disclosure Contents](#ref-for-disclosure⑤)
--   [6.5. Disclosure of Laid-Open or Published Applications](#ref-for-disclosure⑥) [(2)](#ref-for-disclosure⑦)
--   [6.7. Good Faith Disclosure Standards](#ref-for-disclosure⑧) [(2)](#ref-for-disclosure⑨)
--   [6.8. Timing of Disclosure Obligations](#ref-for-disclosure①⓪) [(2)](#ref-for-disclosure①①) [(3)](#ref-for-disclosure①②)
--   [6.9. Termination of Disclosure Obligations](#ref-for-disclosure①③)
--   [6.10. Disclosure Obligations of Invited Experts](#ref-for-disclosure①④)
--   [6.11. Disclosures to Be Publicly Available on Recommendation Track](#ref-for-disclosure①⑤)
--   [7.4.1. PAG Formation Timing](#ref-for-disclosure①⑥)
--   [7.4.2. PAG Charter Requirements](#ref-for-disclosure①⑦)
+- [1. Overview](#ref-for-disclosure)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-disclosure①)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-disclosure②)
+- [6.1. Disclosure Requirements](#ref-for-disclosure③)
+- [6.2. Disclosure Exemption](#ref-for-disclosure④)
+- [6.4. Disclosure Contents](#ref-for-disclosure⑤)
+- [6.5. Disclosure of Laid-Open or Published Applications](#ref-for-disclosure⑥) [(2)](#ref-for-disclosure⑦)
+- [6.7. Good Faith Disclosure Standards](#ref-for-disclosure⑧) [(2)](#ref-for-disclosure⑨)
+- [6.8. Timing of Disclosure Obligations](#ref-for-disclosure①⓪) [(2)](#ref-for-disclosure①①) [(3)](#ref-for-disclosure①②)
+- [6.9. Termination of Disclosure Obligations](#ref-for-disclosure①③)
+- [6.10. Disclosure Obligations of Invited Experts](#ref-for-disclosure①④)
+- [6.11. Disclosures to Be Publicly Available on Recommendation Track](#ref-for-disclosure①⑤)
+- [7.4.1. PAG Formation Timing](#ref-for-disclosure①⑥)
+- [7.4.2. PAG Charter Requirements](#ref-for-disclosure①⑦)
 
 **[\#disclosure-requirement](#disclosure-requirement)Referenced in:**
 
--   [6.7. Good Faith Disclosure Standards](#ref-for-disclosure-requirement)
+- [6.7. Good Faith Disclosure Standards](#ref-for-disclosure-requirement)
 
 **[\#disclosure-requests](#disclosure-requests)Referenced in:**
 
--   [6.1. Disclosure Requirements](#ref-for-disclosure-requests) [(2)](#ref-for-disclosure-requests①) [(3)](#ref-for-disclosure-requests②)
--   [6.3. Disclosure Requests](#ref-for-disclosure-requests③) [(2)](#ref-for-disclosure-requests④) [(3)](#ref-for-disclosure-requests⑤)
+- [6.1. Disclosure Requirements](#ref-for-disclosure-requests) [(2)](#ref-for-disclosure-requests①) [(3)](#ref-for-disclosure-requests②)
+- [6.3. Disclosure Requests](#ref-for-disclosure-requests③) [(2)](#ref-for-disclosure-requests④) [(3)](#ref-for-disclosure-requests⑤)
 
 **[\#patent-advisory-group](#patent-advisory-group)Referenced in:**
 
--   [7.1. PAG Formation](#ref-for-patent-advisory-group) [(2)](#ref-for-patent-advisory-group①) [(3)](#ref-for-patent-advisory-group②) [(4)](#ref-for-patent-advisory-group③)
--   [7.2. PAG Formation After a Recommendation Is Issued](#ref-for-patent-advisory-group④) [(2)](#ref-for-patent-advisory-group⑤) [(3)](#ref-for-patent-advisory-group⑥)
--   [7.3. PAG Composition](#ref-for-patent-advisory-group⑦) [(2)](#ref-for-patent-advisory-group⑧) [(3)](#ref-for-patent-advisory-group⑨) [(4)](#ref-for-patent-advisory-group①⓪) [(5)](#ref-for-patent-advisory-group①①) [(6)](#ref-for-patent-advisory-group①②) [(7)](#ref-for-patent-advisory-group①③) [(8)](#ref-for-patent-advisory-group①④) [(9)](#ref-for-patent-advisory-group①⑤)
--   [7.4.1. PAG Formation Timing](#ref-for-patent-advisory-group①⑥) [(2)](#ref-for-patent-advisory-group①⑦) [(3)](#ref-for-patent-advisory-group①⑧) [(4)](#ref-for-patent-advisory-group①⑨)
--   [7.4.2. PAG Charter Requirements](#ref-for-patent-advisory-group②⓪) [(2)](#ref-for-patent-advisory-group②①) [(3)](#ref-for-patent-advisory-group②②) [(4)](#ref-for-patent-advisory-group②③) [(5)](#ref-for-patent-advisory-group②④) [(6)](#ref-for-patent-advisory-group②⑤) [(7)](#ref-for-patent-advisory-group②⑥) [(8)](#ref-for-patent-advisory-group②⑦) [(9)](#ref-for-patent-advisory-group②⑧)
--   [7.5.1. Possible PAG Conclusions](#ref-for-patent-advisory-group②⑨)
--   [7.5.2. PAG Outcome](#ref-for-patent-advisory-group③⓪)
+- [7.1. PAG Formation](#ref-for-patent-advisory-group) [(2)](#ref-for-patent-advisory-group①) [(3)](#ref-for-patent-advisory-group②) [(4)](#ref-for-patent-advisory-group③)
+- [7.2. PAG Formation After a Recommendation Is Issued](#ref-for-patent-advisory-group④) [(2)](#ref-for-patent-advisory-group⑤) [(3)](#ref-for-patent-advisory-group⑥)
+- [7.3. PAG Composition](#ref-for-patent-advisory-group⑦) [(2)](#ref-for-patent-advisory-group⑧) [(3)](#ref-for-patent-advisory-group⑨) [(4)](#ref-for-patent-advisory-group①⓪) [(5)](#ref-for-patent-advisory-group①①) [(6)](#ref-for-patent-advisory-group①②) [(7)](#ref-for-patent-advisory-group①③) [(8)](#ref-for-patent-advisory-group①④) [(9)](#ref-for-patent-advisory-group①⑤)
+- [7.4.1. PAG Formation Timing](#ref-for-patent-advisory-group①⑥) [(2)](#ref-for-patent-advisory-group①⑦) [(3)](#ref-for-patent-advisory-group①⑧) [(4)](#ref-for-patent-advisory-group①⑨)
+- [7.4.2. PAG Charter Requirements](#ref-for-patent-advisory-group②⓪) [(2)](#ref-for-patent-advisory-group②①) [(3)](#ref-for-patent-advisory-group②②) [(4)](#ref-for-patent-advisory-group②③) [(5)](#ref-for-patent-advisory-group②④) [(6)](#ref-for-patent-advisory-group②⑤) [(7)](#ref-for-patent-advisory-group②⑥) [(8)](#ref-for-patent-advisory-group②⑦) [(9)](#ref-for-patent-advisory-group②⑧)
+- [7.5.1. Possible PAG Conclusions](#ref-for-patent-advisory-group②⑨)
+- [7.5.2. PAG Outcome](#ref-for-patent-advisory-group③⓪)
 
 **[\#pag-proposal](#pag-proposal)Referenced in:**
 
--   [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-pag-proposal) [(2)](#ref-for-pag-proposal①) [(3)](#ref-for-pag-proposal②) [(4)](#ref-for-pag-proposal③) [(5)](#ref-for-pag-proposal④) [(6)](#ref-for-pag-proposal⑤) [(7)](#ref-for-pag-proposal⑥) [(8)](#ref-for-pag-proposal⑦) [(9)](#ref-for-pag-proposal⑧)
+- [7.5.3. Procedure for Considering Alternate Licensing Terms](#ref-for-pag-proposal) [(2)](#ref-for-pag-proposal①) [(3)](#ref-for-pag-proposal②) [(4)](#ref-for-pag-proposal③) [(5)](#ref-for-pag-proposal④) [(6)](#ref-for-pag-proposal⑤) [(7)](#ref-for-pag-proposal⑥) [(8)](#ref-for-pag-proposal⑦) [(9)](#ref-for-pag-proposal⑧)
 
 **[\#essential-claims](#essential-claims)Referenced in:**
 
--   [1. Overview](#ref-for-essential-claims)
--   [2. Licensing Goals for W3C Specifications](#ref-for-essential-claims①)
--   [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-essential-claims②) [(2)](#ref-for-essential-claims③) [(3)](#ref-for-essential-claims④)
--   [3.5. Specification Licensing Commitments](#ref-for-essential-claims⑤) [(2)](#ref-for-essential-claims⑥) [(3)](#ref-for-essential-claims⑦)
--   [3.6. Licensing Commitment Persistence](#ref-for-essential-claims⑧) [(2)](#ref-for-essential-claims⑨) [(3)](#ref-for-essential-claims①⓪)
--   [4. Exclusion From W3C RF Licensing Requirements](#ref-for-essential-claims①①)
--   [4.1. Exclusion With Continued Participation](#ref-for-essential-claims①②) [(2)](#ref-for-essential-claims①③) [(3)](#ref-for-essential-claims①④) [(4)](#ref-for-essential-claims①⑤) [(5)](#ref-for-essential-claims①⑥) [(6)](#ref-for-essential-claims①⑦)
--   [4.2. Exclusion and Resignation From the Working Group](#ref-for-essential-claims①⑧) [(2)](#ref-for-essential-claims①⑨) [(3)](#ref-for-essential-claims②⓪)
--   [4.3. Joining an Already Established Working Group](#ref-for-essential-claims②①) [(2)](#ref-for-essential-claims②②)
--   [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-essential-claims②③) [(2)](#ref-for-essential-claims②④) [(3)](#ref-for-essential-claims②⑤)
--   [4.5. Exclusion Mechanics](#ref-for-essential-claims②⑥) [(2)](#ref-for-essential-claims②⑦)
--   [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-essential-claims②⑧) [(2)](#ref-for-essential-claims②⑨) [(3)](#ref-for-essential-claims③⓪)
--   [6.1. Disclosure Requirements](#ref-for-essential-claims③①)
--   [6.2. Disclosure Exemption](#ref-for-essential-claims③②) [(2)](#ref-for-essential-claims③③)
--   [6.3. Disclosure Requests](#ref-for-essential-claims③④)
--   [6.5. Disclosure of Laid-Open or Published Applications](#ref-for-essential-claims③⑤)
--   [6.7. Good Faith Disclosure Standards](#ref-for-essential-claims③⑥)
--   [7.2. PAG Formation After a Recommendation Is Issued](#ref-for-essential-claims③⑦) [(2)](#ref-for-essential-claims③⑧)
--   [8.1. Essential Claims](#ref-for-essential-claims③⑨) [(2)](#ref-for-essential-claims④⓪) [(3)](#ref-for-essential-claims④①)
--   [8.2. Limitations on the Scope of Definition of Essential Claims](#ref-for-essential-claims④②) [(2)](#ref-for-essential-claims④③)
+- [1. Overview](#ref-for-essential-claims)
+- [2. Licensing Goals for W3C Specifications](#ref-for-essential-claims①)
+- [3.1. W3C RF Licensing Requirements for All Working Group Participants](#ref-for-essential-claims②) [(2)](#ref-for-essential-claims③) [(3)](#ref-for-essential-claims④)
+- [3.5. Specification Licensing Commitments](#ref-for-essential-claims⑤) [(2)](#ref-for-essential-claims⑥) [(3)](#ref-for-essential-claims⑦)
+- [3.6. Licensing Commitment Persistence](#ref-for-essential-claims⑧) [(2)](#ref-for-essential-claims⑨) [(3)](#ref-for-essential-claims①⓪)
+- [4. Exclusion From W3C RF Licensing Requirements](#ref-for-essential-claims①①)
+- [4.1. Exclusion With Continued Participation](#ref-for-essential-claims①②) [(2)](#ref-for-essential-claims①③) [(3)](#ref-for-essential-claims①④) [(4)](#ref-for-essential-claims①⑤) [(5)](#ref-for-essential-claims①⑥) [(6)](#ref-for-essential-claims①⑦)
+- [4.2. Exclusion and Resignation From the Working Group](#ref-for-essential-claims①⑧) [(2)](#ref-for-essential-claims①⑨) [(3)](#ref-for-essential-claims②⓪)
+- [4.3. Joining an Already Established Working Group](#ref-for-essential-claims②①) [(2)](#ref-for-essential-claims②②)
+- [4.4. Exclusion Procedures for Pending, Unpublished Patent Applications](#ref-for-essential-claims②③) [(2)](#ref-for-essential-claims②④) [(3)](#ref-for-essential-claims②⑤)
+- [4.5. Exclusion Mechanics](#ref-for-essential-claims②⑥) [(2)](#ref-for-essential-claims②⑦)
+- [5. W3C Royalty-Free (RF) Licensing Requirements](#ref-for-essential-claims②⑧) [(2)](#ref-for-essential-claims②⑨) [(3)](#ref-for-essential-claims③⓪)
+- [6.1. Disclosure Requirements](#ref-for-essential-claims③①)
+- [6.2. Disclosure Exemption](#ref-for-essential-claims③②) [(2)](#ref-for-essential-claims③③)
+- [6.3. Disclosure Requests](#ref-for-essential-claims③④)
+- [6.5. Disclosure of Laid-Open or Published Applications](#ref-for-essential-claims③⑤)
+- [6.7. Good Faith Disclosure Standards](#ref-for-essential-claims③⑥)
+- [7.2. PAG Formation After a Recommendation Is Issued](#ref-for-essential-claims③⑦) [(2)](#ref-for-essential-claims③⑧)
+- [8.1. Essential Claims](#ref-for-essential-claims③⑨) [(2)](#ref-for-essential-claims④⓪) [(3)](#ref-for-essential-claims④①)
+- [8.2. Limitations on the Scope of Definition of Essential Claims](#ref-for-essential-claims④②) [(2)](#ref-for-essential-claims④③)
 
 **[\#dfn-norm](#dfn-norm)Referenced in:**
 
--   [8.1. Essential Claims](#ref-for-dfn-norm)
--   [8.2. Limitations on the Scope of Definition of Essential Claims](#ref-for-dfn-norm①)
--   [8.3. Definition of Normative, Optional and Informative](#ref-for-dfn-norm②) [(2)](#ref-for-dfn-norm③)
+- [8.1. Essential Claims](#ref-for-dfn-norm)
+- [8.2. Limitations on the Scope of Definition of Essential Claims](#ref-for-dfn-norm①)
+- [8.3. Definition of Normative, Optional and Informative](#ref-for-dfn-norm②) [(2)](#ref-for-dfn-norm③)

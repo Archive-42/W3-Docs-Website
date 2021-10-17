@@ -1,0 +1,6 @@
+Redirecting…
+
+Redirecting…
+============
+
+[Click here if you are not redirected.](https://www.w3.org/WAI/GL/)

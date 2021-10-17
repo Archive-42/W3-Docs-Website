@@ -1,28 +1,26 @@
 <a href="#wp-toolbar" class="screen-reader-shortcut">Skip to toolbar</a>
 
--   <span id="wp-admin-bar-w3c-skip"><a href="#content" class="ab-item" title="Skip to content (e.g., when browsing via audio)">Skip</a></span>
--   <span id="wp-admin-bar-log-in"><a href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fabout%2Fprocess%2Ffinal%2F" class="ab-item" title="Log In">Log In</a></span>
--   <span id="wp-admin-bar-my-account"><a href="https://www.w3.org/users/myprofile" class="ab-item" title="My W3C Account">My W3C Account</a></span>
--   
+- <span id="wp-admin-bar-w3c-skip"><a href="#content" class="ab-item" title="Skip to content (e.g., when browsing via audio)">Skip</a></span>
+- <span id="wp-admin-bar-log-in"><a href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fabout%2Fprocess%2Ffinal%2F" class="ab-item" title="Log In">Log In</a></span>
+- <span id="wp-admin-bar-my-account"><a href="https://www.w3.org/users/myprofile" class="ab-item" title="My W3C Account">My W3C Account</a></span>
+-
 
 <a href="http://www.w3.org/" class="w3-logo"><img src="/community/src/templates/wordpress/StoryTeller/img/svg/w3c-logo.svg" alt="w3c logo" class="animated fadeInLeft" /></a> <a href="/community/" class="cgbg-logo"><img src="/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo.svg" alt="w3c community group logo" class="animated fadeInRotate height" /></a> <a href="/community/" class="cgbg-logo-title"></a>
 
-Community & Business Groups
-===========================
+# Community & Business Groups
 
--   <span id="menu-item-60">[Current Groups](/community/groups/ "Groups")</span>
--   <span id="menu-item-57">[Reports](/community/reports/)</span>
--   <span id="menu-item-59">[About](/community/about/ "About")</span>
+- <span id="menu-item-60">[Current Groups](/community/groups/ "Groups")</span>
+- <span id="menu-item-57">[Reports](/community/reports/)</span>
+- <span id="menu-item-59">[About](/community/about/ "About")</span>
 
--   [Home](/community/ "Community & Business Groups") /
--   [About W3C...](https://www.w3.org/community/about/ "About W3C Community and Business Groups") /
--   [Community and...](https://www.w3.org/community/about/process/ "Community and Business Group Process") /
--   W3C Community Final...
+- [Home](/community/ "Community & Business Groups") /
+- [About W3C...](https://www.w3.org/community/about/ "About W3C Community and Business Groups") /
+- [Community and...](https://www.w3.org/community/about/process/ "Community and Business Group Process") /
+- W3C Community Final...
 
-W3C Community Final Specification Agreement
--------------------------------------------
+## W3C Community Final Specification Agreement
 
-*To secure commitments from participants for the full text of a Community or Business Group Report, the group may call for voluntary commitments to the following terms; a [summary](/community/about/agreements/summary/) is available. See also the related [W3C Community Contributor License Agreement](cla).*
+_To secure commitments from participants for the full text of a Community or Business Group Report, the group may call for voluntary commitments to the following terms; a [summary](/community/about/agreements/summary/) is available. See also the related [W3C Community Contributor License Agreement](cla)._
 
 1.  <span class="u">1. The Purpose of this Agreement</span>.  
     This Agreement sets forth the terms under which I make certain copyright and patent rights available to you for your implementation of the Specification. Any other capitalized terms not specifically defined herein have the same meaning as those terms have in the [W3C Patent Policy](/Consortium/Patent/), and if not defined there, in the [W3C Process Document](/Consortium/Process/).
@@ -43,15 +41,16 @@ W3C Community Final Specification Agreement
 8.  <span class="u">8. Conflict of Interest</span>. I will disclose significant relationships when those relationships might reasonably be perceived as creating a conflict of interest with my role. I will notify W3C of any change in my affiliation using W3C-provided mechanisms.
 9.  <span class="u">9. Representations, Warranties and Disclaimers</span>. I represent and warrant that I am legally entitled to grant the rights and promises set forth in this Agreement. IN ALL OTHER RESPECTS THE SPECIFICATION IS PROVIDED “AS IS.” The entire risk as to implementing or otherwise using the Specification is assumed by the implementer and user. Except as stated herein, I expressly disclaim any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the Specification. IN NO EVENT WILL ANY PARTY BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THIS AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. All of my obligations under Section 3 regarding the transfer, successors in interest, or assignment of Granted Claims will be satisfied if I notify the transferee or assignee of any patent that I know contains Granted Claims of the obligations under Section 3. Nothing in this Agreement requires me to undertake a patent search.
 10. <span class="u">10. Definitions</span>.
+
     1.  <span class="u">10.1. Agreement</span>. “Agreement” means this W3C Community Final Specification Agreement.
     2.  <span class="u">10.2. Corresponding Working Group</span>. “Corresponding Working Group” is a W3C Working Group that is chartered to develop a Recommendation, as defined in the W3C Process Document, that takes the Specification as an input.
     3.  <span class="u">10.3. Essential Claims</span>. “Essential Claims” shall mean all claims in any patent or patent application in any jurisdiction in the world that would necessarily be infringed by implementation of the Specification. A claim is necessarily infringed hereunder only when it is not possible to avoid infringing it because there is no non-infringing alternative for implementing the normative portions of the Specification. Existence of a non-infringing alternative shall be judged based on the state of the art at the time of the publication of the Specification. The following are expressly excluded from and shall not be deemed to constitute Essential Claims:
 
         1.  10.3.1. any claims other than as set forth above even if contained in the same patent as Essential Claims; and
         2.  10.3.2. claims which would be infringed only by:
-            -   portions of an implementation that are not specified in the normative portions of the Specification, or
-            -   enabling technologies that may be necessary to make or use any product or portion thereof that complies with the Specification and are not themselves expressly set forth in the Specification (e.g., semiconductor manufacturing technology, compiler technology, object-oriented technology, basic operating system technology, and the like); or
-            -   the implementation of technology developed elsewhere and merely incorporated by reference in the body of the Specification.
+            - portions of an implementation that are not specified in the normative portions of the Specification, or
+            - enabling technologies that may be necessary to make or use any product or portion thereof that complies with the Specification and are not themselves expressly set forth in the Specification (e.g., semiconductor manufacturing technology, compiler technology, object-oriented technology, basic operating system technology, and the like); or
+            - the implementation of technology developed elsewhere and merely incorporated by reference in the body of the Specification.
         3.  10.3.3. design patents and design registrations.
 
         For purposes of this definition, the normative portions of the Specification shall be deemed to include only architectural and interoperability requirements. Optional features in the RFC 2119 sense are considered normative unless they are specifically identified as informative. Implementation examples or any other material that merely illustrate the requirements of the Specification are informative, rather than normative.
@@ -77,50 +76,49 @@ W3C Community Final Specification Agreement
 
 ### Quick Links
 
--   <span id="menu-item-4650">[FAQ](https://www.w3.org/community/about/faq/)</span>
--   <span id="menu-item-4672">[Getting started in a group](https://www.w3.org/community/about/faq/#how-do-we-get-started-in-a-new-group)</span>
--   <span id="menu-item-4660">[Good practice for running a group](https://www.w3.org/community/about/good-practice-for-running-a-group/)</span>
--   <span id="menu-item-6178">[How to Talk about CG/BG Work](https://www.w3.org/community/about/faq/#how-can-i-talk-about-w3c-endorsement-of-this-work)</span>
--   <span id="menu-item-4651">[Tools and Infrastructure](https://www.w3.org/community/about/tool/)</span>
--   <span id="menu-item-4649">[Comparison of Group Types](https://www.w3.org/community/about/process/compare/)</span>
--   <span id="menu-item-4652">[Business Group Fees](https://www.w3.org/community/about/fees/)</span>
--   <span id="menu-item-4653">[Business Group Participation Agreement](https://www.w3.org/community/about/fees/bg-participation-agreement/)</span>
+- <span id="menu-item-4650">[FAQ](https://www.w3.org/community/about/faq/)</span>
+- <span id="menu-item-4672">[Getting started in a group](https://www.w3.org/community/about/faq/#how-do-we-get-started-in-a-new-group)</span>
+- <span id="menu-item-4660">[Good practice for running a group](https://www.w3.org/community/about/good-practice-for-running-a-group/)</span>
+- <span id="menu-item-6178">[How to Talk about CG/BG Work](https://www.w3.org/community/about/faq/#how-can-i-talk-about-w3c-endorsement-of-this-work)</span>
+- <span id="menu-item-4651">[Tools and Infrastructure](https://www.w3.org/community/about/tool/)</span>
+- <span id="menu-item-4649">[Comparison of Group Types](https://www.w3.org/community/about/process/compare/)</span>
+- <span id="menu-item-4652">[Business Group Fees](https://www.w3.org/community/about/fees/)</span>
+- <span id="menu-item-4653">[Business Group Participation Agreement](https://www.w3.org/community/about/fees/bg-participation-agreement/)</span>
 
 ### Policies
 
--   <span id="menu-item-4642">[Process](https://www.w3.org/community/about/process/ "Community and Business Group Process")</span>
--   <span id="menu-item-4647">[Patent and Copyright Policy Summary](https://www.w3.org/community/about/process/summary/)</span>
--   <span id="menu-item-4644">[Contributor License Agreement (CLA)](https://www.w3.org/community/about/process/cla/ "W3C Community Contributor License Agreement (CLA)")</span>
--   <span id="menu-item-4811">[Final Specification Agreement (FSA)](https://www.w3.org/community/about/agreements/final/ "W3C Community Final Specification Agreement")</span>
--   <span id="menu-item-4645">[CLA Deed](https://www.w3.org/community/about/process/cla-deed/ "W3C Community Contributor License Agreement (CLA) Deed")</span>
--   <span id="menu-item-4646">[FSA Deed](https://www.w3.org/community/about/process/fsa-deed/ "W3C Community Final Specification Agreement (FSA) Deed")</span>
--   <span id="menu-item-4643">[Requests to Participate as an Individual](https://www.w3.org/community/about/process/guidelines-for-evaluating-individual-requests-to-participate-in-a-group/)</span>
--   <span id="menu-item-6936">[Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/)</span>
+- <span id="menu-item-4642">[Process](https://www.w3.org/community/about/process/ "Community and Business Group Process")</span>
+- <span id="menu-item-4647">[Patent and Copyright Policy Summary](https://www.w3.org/community/about/process/summary/)</span>
+- <span id="menu-item-4644">[Contributor License Agreement (CLA)](https://www.w3.org/community/about/process/cla/ "W3C Community Contributor License Agreement (CLA)")</span>
+- <span id="menu-item-4811">[Final Specification Agreement (FSA)](https://www.w3.org/community/about/agreements/final/ "W3C Community Final Specification Agreement")</span>
+- <span id="menu-item-4645">[CLA Deed](https://www.w3.org/community/about/process/cla-deed/ "W3C Community Contributor License Agreement (CLA) Deed")</span>
+- <span id="menu-item-4646">[FSA Deed](https://www.w3.org/community/about/process/fsa-deed/ "W3C Community Final Specification Agreement (FSA) Deed")</span>
+- <span id="menu-item-4643">[Requests to Participate as an Individual](https://www.w3.org/community/about/process/guidelines-for-evaluating-individual-requests-to-participate-in-a-group/)</span>
+- <span id="menu-item-6936">[Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/)</span>
 
 [![Community and Business Groups](/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo-footer.svg)](/community)
 
-Footer Navigation
------------------
+## Footer Navigation
 
 ### Navigation
 
--   [Home](/)
--   [Standards](/standards/)
--   [Participate](/participate/)
--   [Membership](/Consortium/membership)
--   [About W3C](/Consortium/)
+- [Home](/)
+- [Standards](/standards/)
+- [Participate](/participate/)
+- [Membership](/Consortium/membership)
+- [About W3C](/Consortium/)
 
 ### Contact W3C
 
--   [Contact](/Consortium/contact)
--   [Help and FAQ](/Help/)
--   [Sponsor / Donate](/Consortium/sponsor/)
--   [Site Map](/Consortium/siteindex)
--   [Feedback](mailto:site-comments@w3.org) ([archive](http://lists.w3.org/Archives/Public/site-comments/))
+- [Contact](/Consortium/contact)
+- [Help and FAQ](/Help/)
+- [Sponsor / Donate](/Consortium/sponsor/)
+- [Site Map](/Consortium/siteindex)
+- [Feedback](mailto:site-comments@w3.org) ([archive](http://lists.w3.org/Archives/Public/site-comments/))
 
 ### W3C Updates
 
--   [<img src="/2008/site/images/Twitter_bird_logo_2012.svg" alt="Twitter" class="social-icon" height="40" />](http://twitter.com/W3C "Follow W3C on Twitter")
+- [<img src="/2008/site/images/Twitter_bird_logo_2012.svg" alt="Twitter" class="social-icon" height="40" />](http://twitter.com/W3C "Follow W3C on Twitter")
 
 Copyright © 2021 W3C <sup>®</sup> ([MIT](http://www.csail.mit.edu/), [ERCIM](http://www.ercim.eu/), [Keio](http://www.keio.ac.jp/), [Beihang](http://ev.buaa.edu.cn/)) [Usage policies apply](/Consortium/Legal/ipr-notice).
 

@@ -1,497 +1,628 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta name="generator" content="HTML Tidy, see www.w3.org" />
-<meta name="GENERATOR" content="Microsoft FrontPage 3.0" />
-<meta http-equiv="Content-Type" content=
-"text/html; charset=iso-8859-1" />
-<title>A P3P Assurance Signature Profile</title>
-<style type="text/css">
-
-.discuss {
-    COLOR: red
-}
-.link-def {
-   COLOR: teal;
-   FONT-STYLE: italic
-}
-
-.comment {
-    BACKGROUND-COLOR: #fffff5; 
-    BORDER-BOTTOM: navy thin solid;
-    BORDER-LEFT: navy thin solid; 
-    BORDER-RIGHT: navy thin solid; 
-    BORDER-TOP: navy thin solid
-}
-
-.xml-example {
-    font-size: 80%; 
-    font-family: monospace; 
-    letter-spacing: normal; 
-    line-height: normal; 
-    text-indent: 0px; 
-    text-indent: 0px; 
-    margin-left: 2em; 
-    margin-right: 1em
-}
-
-.xml-dtd {
-    background-color: rgb(239,239,248); 
-    font-size: 80%; 
-    font-family: monospace; 
-    letter-spacing: normal; 
-    line-height: normal; 
-    text-indent: 0px; 
-    text-indent: 0px; 
-    margin-left: 2em; 
-    margin-right: 1em
-}
-.term {
-    BACKGROUND-COLOR: yellow; 
-    FONT-WEIGHT: bold
-}
-
-</style>
-
-<link rel="stylesheet" type="text/css" href=
-"http://www.w3.org/StyleSheets/TR/W3C-NOTE.css" />
-</head>
-<body>
-<p><a href="http://www.w3.org/"><img src=
-"http://www.w3.org/Icons/w3c_home" alt="W3C" border="0" height="48"
-width="72" /></a></p>
-
-<div class="head">
-<h1 class="notoc">A P3P Assurance Signature Profile</h1>
-
-<h2 class="notoc">W3C Note 2 February 2001</h2>
-
-<dl>
-<dt>This version:</dt>
-
-<dd><a href=
-"http://www.w3.org/TR/2001/NOTE-xmldsig-p3p-profile-20010202/">
-http://www.w3.org/TR/2001/NOTE-xmldsig-p3p-profile-20010202/</a></dd>
-
-<dt>Latest version:</dt>
-
-<dd><a href="http://www.w3.org/TR/xmldsig-p3p-profile/">
-http://www.w3.org/TR/xmldsig-p3p-profile/</a></dd>
-
-<dt>Previous version:</dt>
-
-<dd>n/a</dd>
-
-<dt>Author/Editor:</dt>
-
-<dd>Joseph Reagle &lt;<a href=
-"mailto:reagle@w3.org">reagle@w3.org</a>&gt;</dd>
-
-<dt>Contributors</dt>
-
-<dd>See <a href="#_Acknowledgements">Acknowledgements</a></dd>
-</dl>
-
-<p class="copyright"><a href=
-"http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Copyright">
-Copyright</a> &copy; 2001 <a href="http://www.w3.org/"><abbr title=
-"World Wide Web Consortium">W3C</abbr></a><sup>&reg;</sup> (<a
-href="http://www.lcs.mit.edu/"><abbr title=
-"Massachusetts Institute of Technology">MIT</abbr></a>, <a href=
-"http://www.inria.fr/"><abbr lang="fr" title=
-"Institut National de Recherche en Informatique et Automatique">
-INRIA</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All
-Rights Reserved. W3C <a href=
-"http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Legal_Disclaimer">
-liability</a>, <a href=
-"http://www.w3.org/Consortium/Legal/ipr-notice-20000612#W3C_Trademarks">
-trademark</a>, <a href=
-"http://www.w3.org/Consortium/Legal/copyright-documents-19990405">
-document use</a> and <a href=
-"http://www.w3.org/Consortium/Legal/copyright-software-19980720">
-software licensing</a> rules apply.</p>
-
-<hr title="Separator from Header" />
-</div>
-
-<p>&nbsp;</p>
-
-<h2 class="notoc">Abstract</h2>
-
-<p>This document specifies a P3P Assurance Signature Profile: the
-intended meaning (assures) of the key holder is bound to the
-signature via a <code>SignatureProperty</code>.</p>
-
-<h2 class="notoc">Status of this document</h2>
-
-<p>This Note is available for W3C-member review. It is not intended
-to be a normative specification. Instead, it captures the authors'
-thoughts on how applications might use the XML Signature
-specification to meet their requirements (defining signature
-semantics and algorithm profile); the example application is P3P.
-This is not a product or deliverable of any Working Group, nor does
-it reflect a consensus on how to use XML Signature's <code>
-SignatureProperty</code>. Instead this document presents a possible
-use of <code>SignatureProperty</code>, as permitted (but not
-required) by the XML Signature specification, for further
-exploration/discussion.</p>
-
-<p>No commitment is made to update this Note. However, if you have
-comments, please send them to the &lt;<a href=
-"mailto:reagle@w3.org">reagle@w3.org</a>&gt;</p>
-
-<p>A list of current W3C Recommendations and other technical
-documents can be found at <a href="http://www.w3.org/TR/">
-http://www.w3.org/TR</a>.</p>
-
-<h2>Table of Contents</h2>
-
-<ol>
-<li><a href="#sec-Introduction">Introduction</a> 
-
-<ol>
-<li><a href="#sec-Editorial">Editorial Conventions</a></li>
-
-<li><a href="#sec-Design">Design Philosophy</a></li>
-
-<li><a href="#sec-Versions">Versions, Namespaces and
-Identifiers</a></li>
-
-<li><a href="#sec-Acknowledgements">Acknowledgements</a></li>
-</ol>
-</li>
-
-<li><a href="#sec-Overview">Overview and Examples</a> 
-
-<ol>
-<li><a href="#sec-AssuranceOverview">Assurance Overview</a></li>
-
-<li><a href="#sec-SignatureOverview">XML Signature
-Overview</a></li>
-
-<li><a href="#sec-P3POverview">p3p.xml Overview</a></li>
-</ol>
-</li>
-
-<li><a href="#sec-Assurance">P3P Assurance</a> 
-
-<ol>
-<li><a href="#sec-Semantics">Signature Semantics</a></li>
-</ol>
-</li>
-
-<li><a href="#sec-Signature">XML Signature Profile</a></li>
-
-<li><a href="#sec-P3P">P3P Policy</a></li>
-
-<li><a href="#sec-Schema">Schema, Transforms, and Examples</a></li>
-
-<li><a href="#sec-References">References</a></li>
-</ol>
-
-<hr />
-<h2>1.0 <a id="sec-Introduction" name="sec-Introduction">
-Introduction</a></h2>
-
-<p>This document specifies a P3P [<a href="#ref-P3P">P3P</a>]
-Assurance Signature [<a href="#ref-XMLDSIG">XMLDSIG</a>] Profile.
-Perhaps the best introduction to this assurance profile is found
-within the introduction of its predecessors:</p>
-
-<blockquote>
-<p>The Platform for Privacy Preferences Project (P3P) enables Web
-sites to express their privacy practices in a standard format that
-can be retrieved automatically and interpreted easily by user
-agents. P3P user agents will allow users to be informed of site
-practices (in both machine- and human-readable formats) and to
-automate decision-making based on these practices when appropriate.
-Thus users need not read the privacy policies at every site they
-visit.... It provides a way for a Web site to encode its
-data-collection and data-use practices in a machine-readable XML
-format known as a <em>P3P policy</em>.</p>
-</blockquote>
-
-<p>The excerpt from XML Signature also motivates why a XML
-Signature profile is necessary.</p>
-
-<blockquote>
-<p>XML Signature is a method of associating a key with referenced
-data (octets); it does not normatively specify how keys are
-associated with persons or institutions, nor the meaning of the
-data being referenced and signed. Consequently, while this
-specification is an important component of secure XML applications,
-it itself is not sufficient to address all application
-security/trust concerns, particularly with respect to using signed
-XML (or other data formats) as a basis of human-to-human
-communication and agreement. Such an application must specify
-additional key, algorithm, processing and rendering
-requirements.</p>
-</blockquote>
-
-<p>Consequently, the purpose of this document is to specify the
-following:</p>
-
-<dl>
-<dt>[def:] <strong><a name="def-P3PSignatureProfile">P3P Assurance
-Signature Profile</a></strong></dt>
-
-<dd>(1) a definition of the <a href="#def-assured" class=
-"link-def">assured</a> semantic under its namespace and (2) a
-profile of XML Signature (constraints over algorithms, transforms,
-key types, etc.) in a P3P application context.</dd>
-</dl>
-
-<h3>1.1 <a id="sec-Editorial" name="sec-Editorial">Editorial</a>
-and Conformance Conventions</h3>
-
-<p>For readability and brevity this document uses the term
-"signature(s)" to refer to XML Signatures and the application
-context is always presumed to be P3P. An understanding of [<a href=
-"#ref-XMLDSIG">XMLDSIG</a>] is necessary to understand this
-specification; understanding of [<a href="#ref-P3P">P3P</a>] is
-optional though it contributes to this document's motivation.</p>
-
-<p>This specification uses XML Schemas [<a href=
-"#ref-XML-schema">XML-schema</a>].</p>
-
-<h3>1.2 <a id="sec-Design" name="sec-Design">Design</a>
-Philosophy</h3>
-
-<p>The design philosophy and requirements of this specification are
-to:</p>
-
-<ol>
-<li>Define what it means for a P3P Policy to be assured via an XML
-Signature.</li>
-
-<li>Provide <a class="link-def" href=
-"http://www.w3.org/TR/2000/WD-xmldsig-core-20000918/#def-SignatureDetached">
-detached</a> signatures for <a href=
-"http://www.w3.org/TR/2000/WD-P3P-20000915/#P3PPolicies">P3P
-Policies</a> and <a href="#def-assured" class="link-def">
-Assurances</a>. 
-
-<ol>
-<li><a class="link-def" href=
-"http://www.w3.org/TR/2000/WD-xmldsig-core-20000918/#def-SignatureEnveloping">
-Enveloping</a> signatures MAY contain the P3P <a href=
-"http://www.w3.org/TR/2000/WD-P3P-20000915/#Referencing">Policy
-Reference</a>. This can be convenient in that all the files are
-included together, but this has the following two disadvantages:
-the <code>Signature</code> is the root element, and XPointer is
-required to select portions of the document.</li>
-
-<li><a class="link-def" href=
-"http://www.w3.org/TR/2000/WD-xmldsig-core-20000918/#def-SignatureEnveloped">
-Enveloped</a> signatures are prohibited by P3P's content
-model.</li>
-</ol>
-</li>
-
-<li>Be concise and unambiguous.</li>
-</ol>
-
-<p>The following issues still need to be addressed:</p>
-
-<ol>
-<li>P3P: It would be nice if the signature could be included within
-a P3P policy.</li>
-
-<li>P3P: Should this address the <a href=
-"http://www.w3.org/TR/P3P/#ref_file_syntax">P3P Policy Reference
-File</a> as well?</li>
-</ol>
-
-<h3>1.3 <a id="sec-Versions" name="sec-Versions">Versions</a>,
-Namespaces and Identifiers</h3>
-
-<p>The XML namespace [<a href="#ref-XML-ns">XML-ns</a>] URI that
-MUST be used by implementations of this (dated) specification
-is:</p>
-
-<pre class="xml-example">
+  <head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org" />
+    <meta name="GENERATOR" content="Microsoft FrontPage 3.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>A P3P Assurance Signature Profile</title>
+    <style type="text/css">
+      .discuss {
+        color: red;
+      }
+      .link-def {
+        color: teal;
+        font-style: italic;
+      }
+
+      .comment {
+        background-color: #fffff5;
+        border-bottom: navy thin solid;
+        border-left: navy thin solid;
+        border-right: navy thin solid;
+        border-top: navy thin solid;
+      }
+
+      .xml-example {
+        font-size: 80%;
+        font-family: monospace;
+        letter-spacing: normal;
+        line-height: normal;
+        text-indent: 0px;
+        text-indent: 0px;
+        margin-left: 2em;
+        margin-right: 1em;
+      }
+
+      .xml-dtd {
+        background-color: rgb(239, 239, 248);
+        font-size: 80%;
+        font-family: monospace;
+        letter-spacing: normal;
+        line-height: normal;
+        text-indent: 0px;
+        text-indent: 0px;
+        margin-left: 2em;
+        margin-right: 1em;
+      }
+      .term {
+        background-color: yellow;
+        font-weight: bold;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://www.w3.org/StyleSheets/TR/W3C-NOTE.css"
+    />
+  </head>
+  <body>
+    <p>
+      <a href="http://www.w3.org/"
+        ><img
+          src="http://www.w3.org/Icons/w3c_home"
+          alt="W3C"
+          border="0"
+          height="48"
+          width="72"
+      /></a>
+    </p>
+
+    <div class="head">
+      <h1 class="notoc">A P3P Assurance Signature Profile</h1>
+
+      <h2 class="notoc">W3C Note 2 February 2001</h2>
+
+      <dl>
+        <dt>This version:</dt>
+
+        <dd>
+          <a
+            href="http://www.w3.org/TR/2001/NOTE-xmldsig-p3p-profile-20010202/"
+          >
+            http://www.w3.org/TR/2001/NOTE-xmldsig-p3p-profile-20010202/</a
+          >
+        </dd>
+
+        <dt>Latest version:</dt>
+
+        <dd>
+          <a href="http://www.w3.org/TR/xmldsig-p3p-profile/">
+            http://www.w3.org/TR/xmldsig-p3p-profile/</a
+          >
+        </dd>
+
+        <dt>Previous version:</dt>
+
+        <dd>n/a</dd>
+
+        <dt>Author/Editor:</dt>
+
+        <dd>
+          Joseph Reagle &lt;<a href="mailto:reagle@w3.org">reagle@w3.org</a>&gt;
+        </dd>
+
+        <dt>Contributors</dt>
+
+        <dd>See <a href="#_Acknowledgements">Acknowledgements</a></dd>
+      </dl>
+
+      <p class="copyright">
+        <a
+          href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Copyright"
+        >
+          Copyright</a
+        >
+        &copy; 2001
+        <a href="http://www.w3.org/"
+          ><abbr title="World Wide Web Consortium">W3C</abbr></a
+        ><sup>&reg;</sup> (<a href="http://www.lcs.mit.edu/"
+          ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
+        >,
+        <a href="http://www.inria.fr/"
+          ><abbr
+            lang="fr"
+            title="Institut National de Recherche en Informatique et Automatique"
+          >
+            INRIA</abbr
+          ></a
+        >, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C
+        <a
+          href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Legal_Disclaimer"
+        >
+          liability</a
+        >,
+        <a
+          href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#W3C_Trademarks"
+        >
+          trademark</a
+        >,
+        <a
+          href="http://www.w3.org/Consortium/Legal/copyright-documents-19990405"
+        >
+          document use</a
+        >
+        and
+        <a
+          href="http://www.w3.org/Consortium/Legal/copyright-software-19980720"
+        >
+          software licensing</a
+        >
+        rules apply.
+      </p>
+
+      <hr title="Separator from Header" />
+    </div>
+
+    <p>&nbsp;</p>
+
+    <h2 class="notoc">Abstract</h2>
+
+    <p>
+      This document specifies a P3P Assurance Signature Profile: the intended
+      meaning (assures) of the key holder is bound to the signature via a
+      <code>SignatureProperty</code>.
+    </p>
+
+    <h2 class="notoc">Status of this document</h2>
+
+    <p>
+      This Note is available for W3C-member review. It is not intended to be a
+      normative specification. Instead, it captures the authors' thoughts on how
+      applications might use the XML Signature specification to meet their
+      requirements (defining signature semantics and algorithm profile); the
+      example application is P3P. This is not a product or deliverable of any
+      Working Group, nor does it reflect a consensus on how to use XML
+      Signature's <code> SignatureProperty</code>. Instead this document
+      presents a possible use of <code>SignatureProperty</code>, as permitted
+      (but not required) by the XML Signature specification, for further
+      exploration/discussion.
+    </p>
+
+    <p>
+      No commitment is made to update this Note. However, if you have comments,
+      please send them to the &lt;<a href="mailto:reagle@w3.org"
+        >reagle@w3.org</a
+      >&gt;
+    </p>
+
+    <p>
+      A list of current W3C Recommendations and other technical documents can be
+      found at <a href="http://www.w3.org/TR/"> http://www.w3.org/TR</a>.
+    </p>
+
+    <h2>Table of Contents</h2>
+
+    <ol>
+      <li>
+        <a href="#sec-Introduction">Introduction</a>
+
+        <ol>
+          <li><a href="#sec-Editorial">Editorial Conventions</a></li>
+
+          <li><a href="#sec-Design">Design Philosophy</a></li>
+
+          <li>
+            <a href="#sec-Versions">Versions, Namespaces and Identifiers</a>
+          </li>
+
+          <li><a href="#sec-Acknowledgements">Acknowledgements</a></li>
+        </ol>
+      </li>
+
+      <li>
+        <a href="#sec-Overview">Overview and Examples</a>
+
+        <ol>
+          <li><a href="#sec-AssuranceOverview">Assurance Overview</a></li>
+
+          <li><a href="#sec-SignatureOverview">XML Signature Overview</a></li>
+
+          <li><a href="#sec-P3POverview">p3p.xml Overview</a></li>
+        </ol>
+      </li>
+
+      <li>
+        <a href="#sec-Assurance">P3P Assurance</a>
+
+        <ol>
+          <li><a href="#sec-Semantics">Signature Semantics</a></li>
+        </ol>
+      </li>
+
+      <li><a href="#sec-Signature">XML Signature Profile</a></li>
+
+      <li><a href="#sec-P3P">P3P Policy</a></li>
+
+      <li><a href="#sec-Schema">Schema, Transforms, and Examples</a></li>
+
+      <li><a href="#sec-References">References</a></li>
+    </ol>
+
+    <hr />
+    <h2>
+      1.0 <a id="sec-Introduction" name="sec-Introduction"> Introduction</a>
+    </h2>
+
+    <p>
+      This document specifies a P3P [<a href="#ref-P3P">P3P</a>] Assurance
+      Signature [<a href="#ref-XMLDSIG">XMLDSIG</a>] Profile. Perhaps the best
+      introduction to this assurance profile is found within the introduction of
+      its predecessors:
+    </p>
+
+    <blockquote>
+      <p>
+        The Platform for Privacy Preferences Project (P3P) enables Web sites to
+        express their privacy practices in a standard format that can be
+        retrieved automatically and interpreted easily by user agents. P3P user
+        agents will allow users to be informed of site practices (in both
+        machine- and human-readable formats) and to automate decision-making
+        based on these practices when appropriate. Thus users need not read the
+        privacy policies at every site they visit.... It provides a way for a
+        Web site to encode its data-collection and data-use practices in a
+        machine-readable XML format known as a <em>P3P policy</em>.
+      </p>
+    </blockquote>
+
+    <p>
+      The excerpt from XML Signature also motivates why a XML Signature profile
+      is necessary.
+    </p>
+
+    <blockquote>
+      <p>
+        XML Signature is a method of associating a key with referenced data
+        (octets); it does not normatively specify how keys are associated with
+        persons or institutions, nor the meaning of the data being referenced
+        and signed. Consequently, while this specification is an important
+        component of secure XML applications, it itself is not sufficient to
+        address all application security/trust concerns, particularly with
+        respect to using signed XML (or other data formats) as a basis of
+        human-to-human communication and agreement. Such an application must
+        specify additional key, algorithm, processing and rendering
+        requirements.
+      </p>
+    </blockquote>
+
+    <p>
+      Consequently, the purpose of this document is to specify the following:
+    </p>
+
+    <dl>
+      <dt>
+        [def:]
+        <strong
+          ><a name="def-P3PSignatureProfile"
+            >P3P Assurance Signature Profile</a
+          ></strong
+        >
+      </dt>
+
+      <dd>
+        (1) a definition of the
+        <a href="#def-assured" class="link-def">assured</a> semantic under its
+        namespace and (2) a profile of XML Signature (constraints over
+        algorithms, transforms, key types, etc.) in a P3P application context.
+      </dd>
+    </dl>
+
+    <h3>
+      1.1 <a id="sec-Editorial" name="sec-Editorial">Editorial</a> and
+      Conformance Conventions
+    </h3>
+
+    <p>
+      For readability and brevity this document uses the term "signature(s)" to
+      refer to XML Signatures and the application context is always presumed to
+      be P3P. An understanding of [<a href="#ref-XMLDSIG">XMLDSIG</a>] is
+      necessary to understand this specification; understanding of [<a
+        href="#ref-P3P"
+        >P3P</a
+      >] is optional though it contributes to this document's motivation.
+    </p>
+
+    <p>
+      This specification uses XML Schemas [<a href="#ref-XML-schema"
+        >XML-schema</a
+      >].
+    </p>
+
+    <h3>1.2 <a id="sec-Design" name="sec-Design">Design</a> Philosophy</h3>
+
+    <p>The design philosophy and requirements of this specification are to:</p>
+
+    <ol>
+      <li>
+        Define what it means for a P3P Policy to be assured via an XML
+        Signature.
+      </li>
+
+      <li>
+        Provide
+        <a
+          class="link-def"
+          href="http://www.w3.org/TR/2000/WD-xmldsig-core-20000918/#def-SignatureDetached"
+        >
+          detached</a
+        >
+        signatures for
+        <a href="http://www.w3.org/TR/2000/WD-P3P-20000915/#P3PPolicies"
+          >P3P Policies</a
+        >
+        and <a href="#def-assured" class="link-def"> Assurances</a>.
+
+        <ol>
+          <li>
+            <a
+              class="link-def"
+              href="http://www.w3.org/TR/2000/WD-xmldsig-core-20000918/#def-SignatureEnveloping"
+            >
+              Enveloping</a
+            >
+            signatures MAY contain the P3P
+            <a href="http://www.w3.org/TR/2000/WD-P3P-20000915/#Referencing"
+              >Policy Reference</a
+            >. This can be convenient in that all the files are included
+            together, but this has the following two disadvantages: the
+            <code>Signature</code> is the root element, and XPointer is required
+            to select portions of the document.
+          </li>
+
+          <li>
+            <a
+              class="link-def"
+              href="http://www.w3.org/TR/2000/WD-xmldsig-core-20000918/#def-SignatureEnveloped"
+            >
+              Enveloped</a
+            >
+            signatures are prohibited by P3P's content model.
+          </li>
+        </ol>
+      </li>
+
+      <li>Be concise and unambiguous.</li>
+    </ol>
+
+    <p>The following issues still need to be addressed:</p>
+
+    <ol>
+      <li>
+        P3P: It would be nice if the signature could be included within a P3P
+        policy.
+      </li>
+
+      <li>
+        P3P: Should this address the
+        <a href="http://www.w3.org/TR/P3P/#ref_file_syntax"
+          >P3P Policy Reference File</a
+        >
+        as well?
+      </li>
+    </ol>
+
+    <h3>
+      1.3 <a id="sec-Versions" name="sec-Versions">Versions</a>, Namespaces and
+      Identifiers
+    </h3>
+
+    <p>
+      The XML namespace [<a href="#ref-XML-ns">XML-ns</a>] URI that MUST be used
+      by implementations of this (dated) specification is:
+    </p>
+
+    <pre class="xml-example">
 xmlns="http://www.w3.org/2001/02/xmldsig-p3p-profile"
-</pre>
+</pre
+    >
 
-<h3>1.4&nbsp; <a id="_Acknowledgements" name="_Acknowledgements">
-</a><a id="sec-Acknowledgements" name=
-"sec-Acknowledgements">Acknowledgements</a></h3>
+    <h3>
+      1.4&nbsp; <a id="_Acknowledgements" name="_Acknowledgements"> </a
+      ><a id="sec-Acknowledgements" name="sec-Acknowledgements"
+        >Acknowledgements</a
+      >
+    </h3>
 
-<p>The comments of the following are gratefully acknowledged though
-any mistakes and daft ideas are solely my own and inclusion does
-not necessarily mean agreement or consensus:</p>
+    <p>
+      The comments of the following are gratefully acknowledged though any
+      mistakes and daft ideas are solely my own and inclusion does not
+      necessarily mean agreement or consensus:
+    </p>
 
-<ul>
-<li>Art Barstow</li>
+    <ul>
+      <li>Art Barstow</li>
 
-<li>Tim Berners-Lee</li>
+      <li>Tim Berners-Lee</li>
 
-<li>Dan Connolly</li>
+      <li>Dan Connolly</li>
 
-<li>Donald Eastlake</li>
+      <li>Donald Eastlake</li>
 
-<li>Matthias Enzmann</li>
+      <li>Matthias Enzmann</li>
 
-<li>R&uuml;diger Grimm</li>
+      <li>R&uuml;diger Grimm</li>
 
-<li>Gregor Karlinger</li>
+      <li>Gregor Karlinger</li>
 
-<li>Ralph Swick</li>
+      <li>Ralph Swick</li>
 
-<li>Daniel Weitzner</li>
-</ul>
+      <li>Daniel Weitzner</li>
+    </ul>
 
-<h2>2.0 <a id="sec-Overview" name="sec-Overview">Overview</a> and
-Examples</h2>
+    <h2>
+      2.0 <a id="sec-Overview" name="sec-Overview">Overview</a> and Examples
+    </h2>
 
-<p>This section provides an overview of a P3P Assurance Signature
-Profile, an XML Signature, and a P3P-Policy.</p>
+    <p>
+      This section provides an overview of a P3P Assurance Signature Profile, an
+      XML Signature, and a P3P-Policy.
+    </p>
 
-<h3>2.1 <a name="sec-AssuranceOverview">Assurance Overview</a></h3>
+    <h3>2.1 <a name="sec-AssuranceOverview">Assurance Overview</a></h3>
 
-<p>The following is an XML instance of a P3P Assurance semantic of
-a signature over a P3P-Policy. The assurances uses the RDF
-data-model to state that: A <strong>SignatureProperty</strong> <em>
-assures</em> <strong>a P3P Policy.</strong></p>
+    <p>
+      The following is an XML instance of a P3P Assurance semantic of a
+      signature over a P3P-Policy. The assurances uses the RDF data-model to
+      state that: A <strong>SignatureProperty</strong> <em> assures</em>
+      <strong>a P3P Policy.</strong>
+    </p>
 
-<p class="xml-example"><a name="eg-Assurance-Profile">
-#Assurance1</a><br />
-<br />
-&lt;SignatureProperty Id="Assurance1" Target="#Signature1"<br />
-&nbsp;xmlns=<a href=
-"http://www.w3.org/2000/09/xmldsig#">"http://www.w3.org/2000/09/xmldsig#</a>"&gt;<br />
-&nbsp;&nbsp;&lt;Assures
-Policy="http://www.example.org/p3p.xml"<br />
-&nbsp;&nbsp; xmlns="<a href=
-"http://www.w3.org/2000/10/xmldsig-p3p-profile/">http://www.w3.org/2000/10/xmldsig-p3p-profile/</a>"/&gt;<br />
-&lt;/SignatureProperty&gt;</p>
+    <p class="xml-example">
+      <a name="eg-Assurance-Profile"> #Assurance1</a><br />
+      <br />
+      &lt;SignatureProperty Id="Assurance1" Target="#Signature1"<br />
+      &nbsp;xmlns=<a href="http://www.w3.org/2000/09/xmldsig#"
+        >"http://www.w3.org/2000/09/xmldsig#</a
+      >"&gt;<br />
+      &nbsp;&nbsp;&lt;Assures Policy="http://www.example.org/p3p.xml"<br />
+      &nbsp;&nbsp; xmlns="<a
+        href="http://www.w3.org/2000/10/xmldsig-p3p-profile/"
+        >http://www.w3.org/2000/10/xmldsig-p3p-profile/</a
+      >"/&gt;<br />
+      &lt;/SignatureProperty&gt;
+    </p>
 
-<h3>2.2 <a name="sec-SignatureOverview">XML Signature
-Overview</a></h3>
+    <h3>2.2 <a name="sec-SignatureOverview">XML Signature Overview</a></h3>
 
-<p>The following abbreviated Signature signs the P3P-Policy, and
-signs (and is semantically bound to) the assurance itself.</p>
+    <p>
+      The following abbreviated Signature signs the P3P-Policy, and signs (and
+      is semantically bound to) the assurance itself.
+    </p>
 
-<p class="xml-example"><a name="eg-Signature">
-http://www.example.org/<strong>Signature</strong>.xml</a></p>
+    <p class="xml-example">
+      <a name="eg-Signature">
+        http://www.example.org/<strong>Signature</strong>.xml</a
+      >
+    </p>
 
-<p class="xml-example">&lt;Signature Id="Signature1"
-xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;<br />
-&nbsp; &lt;SignedInfo&gt;<br />
-&nbsp;&nbsp;&nbsp; &lt;CanonicalizationMethod<br />
-&nbsp;&nbsp;&nbsp;&nbsp;
-Algorithm="http://www.w3.org/TR/2000/WD-xml-c14n-20000907"/&gt;<br />
-&nbsp;&nbsp;&nbsp; &lt;SignatureMethod<br />
-&nbsp;&nbsp;&nbsp;&nbsp;
-Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/&gt;<br />
-&nbsp;&nbsp;&nbsp; &lt;Reference URI="<a href=
-"#eg-p3p.xml">http://www.example.org/<strong>p3p.xml</strong></a>"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Transforms&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Transform
-Algorithm="http://www.w3.org/TR/2000/WD-xml-c14n-20000907"/&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/Transforms&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp; &lt;DigestMethod
-Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;
-&lt;DigestValue&gt;j6lwx3rvEPO0vKtMup4NbeVu8nk=&lt;/DigestValue&gt;<br />
-&nbsp;&nbsp;&nbsp; &lt;/Reference&gt;<br />
-&nbsp;&nbsp;&nbsp; &lt;Reference URI="#Assurance1"<br />
-&nbsp;&nbsp;&nbsp;&nbsp; <strong>
-Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties"</strong>&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp; &lt;DigestMethod
-Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;
-&lt;DigestValue&gt;1234x3rvEPO0vKtMup4NbeVu8nk=&lt;/DigestValue&gt;<br />
-&nbsp;&nbsp;&nbsp; &lt;/Reference&gt;<br />
-&nbsp;&nbsp; &lt;/SignedInfo&gt;<br />
-&nbsp;&nbsp;
-&lt;SignatureValue&gt;MC0CFFrVLtRlk=...&lt;/SignatureValue&gt;<br />
-&nbsp;&nbsp; &lt;KeyInfo&gt;KeyInfo of the Disputes
-Service&lt;/KeyInfo&gt;<br />
-&nbsp;&nbsp; &lt;Object&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp; &lt;/SignatureProperties&gt;<br />
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&lt;<strong>SignatureProperty</strong> Id="<strong><a href=
-"#eg-Assurance-Profile">Assurance1</a></strong>"
-Target="#Signature1"<br />
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;<br />
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&lt;Assures
-Policy="http://www.example.org/p3p.xml"<br />
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-xmlns="http://www.w3.org/2001/02/xmldsig-p3p-profile"/&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&lt;/SignatureProperty&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp; &lt;/SignatureProperties&gt;<br />
-&nbsp;&nbsp; &lt;/Object&gt;<br />
-&lt;/Signature&gt;</p>
+    <p class="xml-example">
+      &lt;Signature Id="Signature1"
+      xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;<br />
+      &nbsp; &lt;SignedInfo&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;CanonicalizationMethod<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      Algorithm="http://www.w3.org/TR/2000/WD-xml-c14n-20000907"/&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;SignatureMethod<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;Reference URI="<a href="#eg-p3p.xml"
+        >http://www.example.org/<strong>p3p.xml</strong></a
+      >"&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Transforms&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Transform
+      Algorithm="http://www.w3.org/TR/2000/WD-xml-c14n-20000907"/&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/Transforms&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp; &lt;DigestMethod
+      Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      &lt;DigestValue&gt;j6lwx3rvEPO0vKtMup4NbeVu8nk=&lt;/DigestValue&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;/Reference&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;Reference URI="#Assurance1"<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <strong>
+        Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties"</strong
+      >&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp; &lt;DigestMethod
+      Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      &lt;DigestValue&gt;1234x3rvEPO0vKtMup4NbeVu8nk=&lt;/DigestValue&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;/Reference&gt;<br />
+      &nbsp;&nbsp; &lt;/SignedInfo&gt;<br />
+      &nbsp;&nbsp;
+      &lt;SignatureValue&gt;MC0CFFrVLtRlk=...&lt;/SignatureValue&gt;<br />
+      &nbsp;&nbsp; &lt;KeyInfo&gt;KeyInfo of the Disputes
+      Service&lt;/KeyInfo&gt;<br />
+      &nbsp;&nbsp; &lt;Object&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp; &lt;/SignatureProperties&gt;<br />
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;<strong
+        >SignatureProperty</strong
+      >
+      Id="<strong><a href="#eg-Assurance-Profile">Assurance1</a></strong
+      >" Target="#Signature1"<br />
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;<br />
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&lt;Assures
+      Policy="http://www.example.org/p3p.xml"<br />
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+      xmlns="http://www.w3.org/2001/02/xmldsig-p3p-profile"/&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/SignatureProperty&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp; &lt;/SignatureProperties&gt;<br />
+      &nbsp;&nbsp; &lt;/Object&gt;<br />
+      &lt;/Signature&gt;
+    </p>
 
-<h3>2.2 P3P-Policy <a name="sec-P3POverview">Overview</a></h3>
+    <h3>2.2 P3P-Policy <a name="sec-P3POverview">Overview</a></h3>
 
-<p>The following abbreviated example describes the policy being
-assured, and uses the <code>p3p:verification</code> attribute to
-reference the signature.</p>
+    <p>
+      The following abbreviated example describes the policy being assured, and
+      uses the <code>p3p:verification</code> attribute to reference the
+      signature.
+    </p>
 
-<p class="xml-example"><a name="eg-p3p.xml">
-http://www.example.org/p3p.xml</a></p>
+    <p class="xml-example">
+      <a name="eg-p3p.xml"> http://www.example.org/p3p.xml</a>
+    </p>
 
-<p class="xml-example">&lt;POLICY
-xmlns="http://www.w3.org/2000/09/15/P3Pv1"<br />
-&nbsp;&nbsp;&nbsp;
-discuri="http://www.example.com/PrivacyPracticeBrowsing.html"&gt;<br />
-...<br />
-&lt;DISPUTES-GROUP&gt;<br />
-&nbsp; &lt;DISPUTES resolution-type="independent"<br />
-&nbsp;&nbsp;&nbsp;
-service="http://www.PrivacySeal.example.org"<br />
-&nbsp;&nbsp;&nbsp;
-short-description="PrivacySeal.example.org"<br />
-&nbsp;&nbsp;&nbsp; verification="<a href=
-"#eg-Signature">http://www.example.org/<strong>Signature</strong>.xml</a>"&gt;<br />
-&nbsp;&nbsp; &lt;IMG
-src="http://www.PrivacySeal.example.org/Logo.gif"<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alt="PrivacySeal's
-logo"/&gt;<br />
-&nbsp;&nbsp;
-&lt;REMEDIES&gt;&lt;correct/&gt;&lt;/REMEDIES&gt;<br />
-&nbsp; &lt;/DISPUTES&gt;<br />
-&lt;/DISPUTES-GROUP&gt;<br />
-&lt;STATEMENT&gt;<br />
-&nbsp;
-&lt;PURPOSE&gt;&lt;admin/&gt;&lt;develop/&gt;&lt;/PURPOSE&gt;<br />
-&nbsp; &lt;RECIPIENT&gt;&lt;ours/&gt;&lt;/RECIPIENT&gt;<br />
-&nbsp;
-&lt;RETENTION&gt;&lt;stated-purpose/&gt;&lt;/RETENTION&gt;<br />
-&nbsp; &lt;DATA-GROUP&gt;<br />
-&nbsp;&nbsp; &lt;DATA
-ref="#dynamic.clickstream.clientip"/&gt;<br />
-&nbsp;&nbsp; &lt;DATA ref="#dynamic.http.useragent"/&gt;<br />
-&nbsp; &lt;/DATA-GROUP&gt;<br />
-&lt;/STATEMENT&gt;<br />
-&lt;/POLICY&gt;</p>
+    <p class="xml-example">
+      &lt;POLICY xmlns="http://www.w3.org/2000/09/15/P3Pv1"<br />
+      &nbsp;&nbsp;&nbsp;
+      discuri="http://www.example.com/PrivacyPracticeBrowsing.html"&gt;<br />
+      ...<br />
+      &lt;DISPUTES-GROUP&gt;<br />
+      &nbsp; &lt;DISPUTES resolution-type="independent"<br />
+      &nbsp;&nbsp;&nbsp; service="http://www.PrivacySeal.example.org"<br />
+      &nbsp;&nbsp;&nbsp; short-description="PrivacySeal.example.org"<br />
+      &nbsp;&nbsp;&nbsp; verification="<a href="#eg-Signature"
+        >http://www.example.org/<strong>Signature</strong>.xml</a
+      >"&gt;<br />
+      &nbsp;&nbsp; &lt;IMG src="http://www.PrivacySeal.example.org/Logo.gif"<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alt="PrivacySeal's
+      logo"/&gt;<br />
+      &nbsp;&nbsp; &lt;REMEDIES&gt;&lt;correct/&gt;&lt;/REMEDIES&gt;<br />
+      &nbsp; &lt;/DISPUTES&gt;<br />
+      &lt;/DISPUTES-GROUP&gt;<br />
+      &lt;STATEMENT&gt;<br />
+      &nbsp; &lt;PURPOSE&gt;&lt;admin/&gt;&lt;develop/&gt;&lt;/PURPOSE&gt;<br />
+      &nbsp; &lt;RECIPIENT&gt;&lt;ours/&gt;&lt;/RECIPIENT&gt;<br />
+      &nbsp; &lt;RETENTION&gt;&lt;stated-purpose/&gt;&lt;/RETENTION&gt;<br />
+      &nbsp; &lt;DATA-GROUP&gt;<br />
+      &nbsp;&nbsp; &lt;DATA ref="#dynamic.clickstream.clientip"/&gt;<br />
+      &nbsp;&nbsp; &lt;DATA ref="#dynamic.http.useragent"/&gt;<br />
+      &nbsp; &lt;/DATA-GROUP&gt;<br />
+      &lt;/STATEMENT&gt;<br />
+      &lt;/POLICY&gt;
+    </p>
 
-<h2>3.0 <a name="sec-Assurance">P3P Assurance</a></h2>
+    <h2>3.0 <a name="sec-Assurance">P3P Assurance</a></h2>
 
-<p>The assurance semantic is:</p>
+    <p>The assurance semantic is:</p>
 
-<dl>
-<dt><strong>[def:] <a name="def-assured">Assured</a></strong></dt>
+    <dl>
+      <dt>
+        <strong>[def:] <a name="def-assured">Assured</a></strong>
+      </dt>
 
-<dd>the P3P <code>DISPUTE service</code> asserts that the P3P
-policy is accurate and that the P3P <code>DISPUTE service</code>
-commits to the enumerated <code>REMEDIES</code>. Verification of
-this semantic requires (1) <a href=
-"http://www.w3.org/TR/2000/WD-xmldsig-core-20001012/#def-ValidationSignature">
-signature validation</a> where (2) the signature key holder and P3P
-<code>DISPUTE service</code> are the same.</dd>
-</dl>
+      <dd>
+        the P3P <code>DISPUTE service</code> asserts that the P3P policy is
+        accurate and that the P3P <code>DISPUTE service</code> commits to the
+        enumerated <code>REMEDIES</code>. Verification of this semantic requires
+        (1)
+        <a
+          href="http://www.w3.org/TR/2000/WD-xmldsig-core-20001012/#def-ValidationSignature"
+        >
+          signature validation</a
+        >
+        where (2) the signature key holder and P3P
+        <code>DISPUTE service</code> are the same.
+      </dd>
+    </dl>
 
-<p>The assurance content model permits the P3P Policy and XML
-Signature to be referenced as external files, or as internal
-content.</p>
+    <p>
+      The assurance content model permits the P3P Policy and XML Signature to be
+      referenced as external files, or as internal content.
+    </p>
 
-<pre class="xml-dtd">
+    <pre class="xml-dtd">
 Schema Definition:
 
 &lt;?xml version='1.0'?&gt; 
@@ -536,319 +667,426 @@ Schema Definition:
 
 &lt;/schema&gt;
   
-</pre>
+</pre
+    >
 
-<h3>3.1 <a name="sec-Semantics">Signature Semantics</a></h3>
+    <h3>3.1 <a name="sec-Semantics">Signature Semantics</a></h3>
 
-<p>[<a href="#ref-XMLDSIG">XMLDSIG</a>] specifies a way of
-providing (primarily) data object integrity by applying his key to
-the data object via cryptographic algorithms. The fact that one
-signs the characters, "I saw a UFO" does not mean the signature
-creator (key-holder) <em>actually</em> saw a UFO or even believes
-he did; maybe someone else spoke of seeing a UFO and the key-holder
-is merely acting as a notary and wants to secure the statement in
-the public record. The question then is how does one actually <em>
-say</em> such a thing? How does one bind a semantic (e.g., assert,
-believe, vouch, notarize, etc.) to the signature? How does one
-distinguish between signing some document that might be a
-statement&nbsp; (e.g., "The sky is blue.") or even a statement
-about a statement (e.g., "He said, 'the sky is blue.'") and <em>
-actually saying it</em>?</p>
+    <p>
+      [<a href="#ref-XMLDSIG">XMLDSIG</a>] specifies a way of providing
+      (primarily) data object integrity by applying his key to the data object
+      via cryptographic algorithms. The fact that one signs the characters, "I
+      saw a UFO" does not mean the signature creator (key-holder)
+      <em>actually</em> saw a UFO or even believes he did; maybe someone else
+      spoke of seeing a UFO and the key-holder is merely acting as a notary and
+      wants to secure the statement in the public record. The question then is
+      how does one actually <em> say</em> such a thing? How does one bind a
+      semantic (e.g., assert, believe, vouch, notarize, etc.) to the signature?
+      How does one distinguish between signing some document that might be a
+      statement&nbsp; (e.g., "The sky is blue.") or even a statement about a
+      statement (e.g., "He said, 'the sky is blue.'") and
+      <em> actually saying it</em>?
+    </p>
 
-<p>In many cases, the meaning of a signature is inferred from its
-context. For instance, a payment application might define, as part
-of its specification, that if a <code>Signature</code> appears
-within an <code>authorization</code> element of a payment voucher,
-it means the author/key-holder is authorizing the payment. In
-another context, a key-holder may have one or more keys with an
-associated semantic. For example, one key is used for assertions I
-make, another key is used for notarized time-stamping; or as one
-can indicate in [<a href="#ref-RFC2459">RFC2459</a>]'s KeyUsage
-field, one key is used for non-repudiation and another for
-certificate signing. However, these techniques rely upon the
-external (from the signature) specification, or implicit context of
-the application. Consequently these semantics are lost outside of
-their context; if they are not well specified they may not even be
-shared by different users of the same application -- with a likely
-result of legal action!</p>
+    <p>
+      In many cases, the meaning of a signature is inferred from its context.
+      For instance, a payment application might define, as part of its
+      specification, that if a <code>Signature</code> appears within an
+      <code>authorization</code> element of a payment voucher, it means the
+      author/key-holder is authorizing the payment. In another context, a
+      key-holder may have one or more keys with an associated semantic. For
+      example, one key is used for assertions I make, another key is used for
+      notarized time-stamping; or as one can indicate in [<a href="#ref-RFC2459"
+        >RFC2459</a
+      >]'s KeyUsage field, one key is used for non-repudiation and another for
+      certificate signing. However, these techniques rely upon the external
+      (from the signature) specification, or implicit context of the
+      application. Consequently these semantics are lost outside of their
+      context; if they are not well specified they may not even be shared by
+      different users of the same application -- with a likely result of legal
+      action!
+    </p>
 
-<p>Fortunately, [<a href="#ref-XMLDSIG">XMLDSIG</a>] provides a
-mechanism of making a distinction between the simple bits being
-signed, and information related to the actual signature creation;
-this permits one to step outside the circle of lending integrity to
-bits and explicitly "bootstrap" meaning. The <code>
-SignatureProperty</code> element provides a mechanism by which
-"Additional information items concerning the generation of the
-signature(s) can be placed..."; I use this to include the
-intent/meaning of the signature generation. This "bootstrapping"
-happens when the <code>Reference</code>'s to the <code>
-SignatureProperty</code> is identified to be of <code>
-Type="&amp;dsig;SignatureProperties"</code>.</p>
+    <p>
+      Fortunately, [<a href="#ref-XMLDSIG">XMLDSIG</a>] provides a mechanism of
+      making a distinction between the simple bits being signed, and information
+      related to the actual signature creation; this permits one to step outside
+      the circle of lending integrity to bits and explicitly "bootstrap"
+      meaning. The <code> SignatureProperty</code> element provides a mechanism
+      by which "Additional information items concerning the generation of the
+      signature(s) can be placed..."; I use this to include the intent/meaning
+      of the signature generation. This "bootstrapping" happens when the
+      <code>Reference</code>'s to the <code> SignatureProperty</code> is
+      identified to be of <code> Type="&amp;dsig;SignatureProperties"</code>.
+    </p>
 
-<p>A time-stamp appearing in a <code>SignatureProperty</code> and
-identified as such via <code>Type</code> is not just any old
-time-stamp that has integrity, but a time-stamp for <em>that</em>
-signature. When a signature semantic (such as "I vouch") is
-included and signed in a <code>SignatureProperty</code> (and
-identified as such) it is more than some characters with integrity,
-it's an expression of the key holder about the signature. This
-means that while some signature applications are willing to sign
-data without&nbsp; "understanding it" (e.g., a simple time-stamping
-service) when it comes to <code>SignatureProperty</code>, "... the
-signing application should be very careful about what it signs (it
-should understand what is in the <code>SignatureProperty</code>)"
-[<a href="#ref-XMLDSIG">XMLDSIG</a>: <a id=
-"sec-o-SignatureProperty" href=
-"http://www.w3.org/TR/2000/CR-xmldsig-core-20001031/#sec-o-SignatureProperty">
-2.2 Extended Example (<code>Object</code> and <code>
-SignatureProperty</code>)</a>]</p>
+    <p>
+      A time-stamp appearing in a <code>SignatureProperty</code> and identified
+      as such via <code>Type</code> is not just any old time-stamp that has
+      integrity, but a time-stamp for <em>that</em> signature. When a signature
+      semantic (such as "I vouch") is included and signed in a
+      <code>SignatureProperty</code> (and identified as such) it is more than
+      some characters with integrity, it's an expression of the key holder about
+      the signature. This means that while some signature applications are
+      willing to sign data without&nbsp; "understanding it" (e.g., a simple
+      time-stamping service) when it comes to <code>SignatureProperty</code>,
+      "... the signing application should be very careful about what it signs
+      (it should understand what is in the <code>SignatureProperty</code>)" [<a
+        href="#ref-XMLDSIG"
+        >XMLDSIG</a
+      >:
+      <a
+        id="sec-o-SignatureProperty"
+        href="http://www.w3.org/TR/2000/CR-xmldsig-core-20001031/#sec-o-SignatureProperty"
+      >
+        2.2 Extended Example (<code>Object</code> and
+        <code> SignatureProperty</code>)</a
+      >]
+    </p>
 
-<p>Consequently, this specification permits a signature semantic to
-be expressed with the natural language semantic <a href=
-"#def-assured">defined is section 3.0</a> using the following XML
-syntax as part of a <code>SignatureProperty</code>:</p>
+    <p>
+      Consequently, this specification permits a signature semantic to be
+      expressed with the natural language semantic
+      <a href="#def-assured">defined is section 3.0</a> using the following XML
+      syntax as part of a <code>SignatureProperty</code>:
+    </p>
 
-<p class="xml-example">[i0] &lt;SignatureProperties&gt;<br />
-[i1]&nbsp;&nbsp; &lt;SignatureProperty Id="Property-Assurance"
-Target="#Signature1"<br />
-[i2]&nbsp;&nbsp;&nbsp;
-xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;<br />
-[i3] &nbsp;&nbsp;&nbsp; &lt;profile:Assures
-profile:Policy="http://www.example.org/p3p.xml"<br />
-[i4] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-xmlns:profile="http://www.w3.org/2001/02/xmldsig-p3p-profile"
-/&gt;<br />
-[i5]&nbsp;&nbsp; &lt;/SignatureProperty&gt;<br />
-[i6] &lt;/SignatureProperties&gt;</p>
+    <p class="xml-example">
+      [i0] &lt;SignatureProperties&gt;<br />
+      [i1]&nbsp;&nbsp; &lt;SignatureProperty Id="Property-Assurance"
+      Target="#Signature1"<br />
+      [i2]&nbsp;&nbsp;&nbsp; xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;<br />
+      [i3] &nbsp;&nbsp;&nbsp; &lt;profile:Assures
+      profile:Policy="http://www.example.org/p3p.xml"<br />
+      [i4] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      xmlns:profile="http://www.w3.org/2001/02/xmldsig-p3p-profile" /&gt;<br />
+      [i5]&nbsp;&nbsp; &lt;/SignatureProperty&gt;<br />
+      [i6] &lt;/SignatureProperties&gt;
+    </p>
 
-<p>Which means the same as the following [<a href=
-"#ref-RDF">RDF</a>]:</p>
+    <p>Which means the same as the following [<a href="#ref-RDF">RDF</a>]:</p>
 
-<p class="xml-example">[r0] &lt;rdf:Description
-ID="Property-Assurance" about="#Signature1"<br />
-[r1]&nbsp;
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt;<br />
-[r2]&nbsp;&nbsp; &lt;profile:Assures
-resource="http://www.example.org/p3p.xml"<br />
-[r3] &nbsp;&nbsp;&nbsp;
-xmlns:profile="http://www.w3.org/2000/12/xmldsig-p3p-profile"
-/&gt;<br />
-[r4] &lt;/rdfDescription&gt;</p>
+    <p class="xml-example">
+      [r0] &lt;rdf:Description ID="Property-Assurance" about="#Signature1"<br />
+      [r1]&nbsp; xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt;<br />
+      [r2]&nbsp;&nbsp; &lt;profile:Assures
+      resource="http://www.example.org/p3p.xml"<br />
+      [r3] &nbsp;&nbsp;&nbsp;
+      xmlns:profile="http://www.w3.org/2000/12/xmldsig-p3p-profile" /&gt;<br />
+      [r4] &lt;/rdfDescription&gt;
+    </p>
 
-<p>The reification of this statement (breaking it down into its
-"grammatical" data model) is</p>
+    <p>
+      The reification of this statement (breaking it down into its "grammatical"
+      data model) is
+    </p>
 
-<p class="xml-example">[rA]&nbsp;&lt;rdf:type
-resource="rdf:Statement"/&gt;<br />
-[rB]&nbsp;&lt;rdf:subject resource="#Signature1"/&gt;<br />
-[rC]&nbsp;&lt;rdf:predicate resource="profile:Assures"/&gt;<br />
-[rD]&nbsp;&lt;rdf:object
-resource="http://www.example.org/p3p.xml"/&gt;</p>
+    <p class="xml-example">
+      [rA]&nbsp;&lt;rdf:type resource="rdf:Statement"/&gt;<br />
+      [rB]&nbsp;&lt;rdf:subject resource="#Signature1"/&gt;<br />
+      [rC]&nbsp;&lt;rdf:predicate resource="profile:Assures"/&gt;<br />
+      [rD]&nbsp;&lt;rdf:object resource="http://www.example.org/p3p.xml"/&gt;
+    </p>
 
-<p>While this specification chose to model its semantic in the [<a
-href="#ref-RDF">RDF</a>] data model, not all signature semantics
-need follow suit. I choose to do so because it results in cleaner
-design and offers the possibility of agents being able to make
-inferences if more formal definitions of
-"<code>profile:assures</code>" are made. One might also see
-instances of natural language statements within the (unfortunately
-ambiguous) context of HTML's <code>p</code> element.</p>
+    <p>
+      While this specification chose to model its semantic in the [<a
+        href="#ref-RDF"
+        >RDF</a
+      >] data model, not all signature semantics need follow suit. I choose to
+      do so because it results in cleaner design and offers the possibility of
+      agents being able to make inferences if more formal definitions of
+      "<code>profile:assures</code>" are made. One might also see instances of
+      natural language statements within the (unfortunately ambiguous) context
+      of HTML's <code>p</code> element.
+    </p>
 
-<p class="xml-example">[n0] &lt;SignatureProperties&gt;<br />
-[n1]&nbsp;&nbsp; &lt;SignatureProperty Id="Property-Assurance"
-Target="#Signature1"<br />
-[n2]&nbsp;&nbsp;&nbsp;
-xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;<br />
-[n3] &nbsp;&nbsp;&nbsp; &lt;p
-xmlns:html="http://www.w3.org/1999/xhtml"&gt;I agree<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with everything
-signed&lt;/p&gt;<br />
-[n5]&nbsp;&nbsp; &lt;/SignatureProperty&gt;<br />
-[n6] &lt;SignatureProperties&gt;</p>
+    <p class="xml-example">
+      [n0] &lt;SignatureProperties&gt;<br />
+      [n1]&nbsp;&nbsp; &lt;SignatureProperty Id="Property-Assurance"
+      Target="#Signature1"<br />
+      [n2]&nbsp;&nbsp;&nbsp; xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;<br />
+      [n3] &nbsp;&nbsp;&nbsp; &lt;p
+      xmlns:html="http://www.w3.org/1999/xhtml"&gt;I agree<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with everything
+      signed&lt;/p&gt;<br />
+      [n5]&nbsp;&nbsp; &lt;/SignatureProperty&gt;<br />
+      [n6] &lt;SignatureProperties&gt;
+    </p>
 
-<h2>4.0 <a name="sec-Signature">XML Signature Profile</a></h2>
+    <h2>4.0 <a name="sec-Signature">XML Signature Profile</a></h2>
 
-<p>A P3P Signature Profile signature is a <a href=
-"http://www.w3.org/TR/xmldsig-core/#def-ValidationSignature" class=
-"link-def">valid signature</a> [<a href="#ref-XMLDSIG">XMLDSIG</a>]
-with the following REQUIRED constraints.</p>
+    <p>
+      A P3P Signature Profile signature is a
+      <a
+        href="http://www.w3.org/TR/xmldsig-core/#def-ValidationSignature"
+        class="link-def"
+        >valid signature</a
+      >
+      [<a href="#ref-XMLDSIG">XMLDSIG</a>] with the following REQUIRED
+      constraints.
+    </p>
 
-<ol>
-<li>The permissible <a href=
-"http://www.w3.org/TR/xmldsig-core/#sec-CanonicalizationMethod">
-<code>CanonicalizationMethod</code></a> is Canonical XML:<br />
- <a href="http://www.w3.org/TR/2000/WD-xml-c14n-20001011">
-http://www.w3.org/TR/2000/WD-xml-c14n-20001011</a></li>
+    <ol>
+      <li>
+        The permissible
+        <a href="http://www.w3.org/TR/xmldsig-core/#sec-CanonicalizationMethod">
+          <code>CanonicalizationMethod</code></a
+        >
+        is Canonical XML:<br />
+        <a href="http://www.w3.org/TR/2000/WD-xml-c14n-20001011">
+          http://www.w3.org/TR/2000/WD-xml-c14n-20001011</a
+        >
+      </li>
 
-<li>The permissible <code><a href=
-"http://www.w3.org/TR/xmldsig-core/#sec-SignatureMethod">
-SignatureMethod</a></code>s are <a href=
-"http://www.w3.org/TR/xmldsig-core/#sec-SignatureAlg">DSA or
-RSA</a>.<br />
- <a href="http://www.w3.org/2000/09/xmldsig#dsa-sha1"><span style=
-"FONT-WEIGHT: normal">
-http://www.w3.org/2000/09/xmldsig#</span>dsa-sha1</a><br />
- <a href="http://www.w3.org/2000/09/xmldsig#rsa-sha1"><span style=
-"FONT-WEIGHT: normal">
-http://www.w3.org/2000/09/xmldsig#</span>rsa-sha1</a></li>
+      <li>
+        The permissible
+        <code
+          ><a href="http://www.w3.org/TR/xmldsig-core/#sec-SignatureMethod">
+            SignatureMethod</a
+          ></code
+        >s are
+        <a href="http://www.w3.org/TR/xmldsig-core/#sec-SignatureAlg"
+          >DSA or RSA</a
+        >.<br />
+        <a href="http://www.w3.org/2000/09/xmldsig#dsa-sha1"
+          ><span style="font-weight: normal">
+            http://www.w3.org/2000/09/xmldsig#</span
+          >dsa-sha1</a
+        ><br />
+        <a href="http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+          ><span style="font-weight: normal">
+            http://www.w3.org/2000/09/xmldsig#</span
+          >rsa-sha1</a
+        >
+      </li>
 
-<li>The permissible <a href=
-"http://www.w3.org/TR/2000/WD-xmldsig-core-20001012/#sec-DigestMethod">
-<code>DigestMethod</code></a> &nbsp; is SHA-1<br />
- <a href="http://www.w3.org/2000/09/xmldsig#sha1">
-http://www.w3.org/2000/09/xmldsig#sha1</a></li>
+      <li>
+        The permissible
+        <a
+          href="http://www.w3.org/TR/2000/WD-xmldsig-core-20001012/#sec-DigestMethod"
+        >
+          <code>DigestMethod</code></a
+        >
+        &nbsp; is SHA-1<br />
+        <a href="http://www.w3.org/2000/09/xmldsig#sha1">
+          http://www.w3.org/2000/09/xmldsig#sha1</a
+        >
+      </li>
 
-<li>The permissible <code><a href=
-"http://www.w3.org/TR/xmldsig-core/#sec-Transforms">
-Transforms</a></code> are: 
+      <li>
+        The permissible
+        <code
+          ><a href="http://www.w3.org/TR/xmldsig-core/#sec-Transforms">
+            Transforms</a
+          ></code
+        >
+        are:
 
-<ol>
-<li>Canonical XML:<br />
- <a href="http://www.w3.org/TR/2000/WD-xml-c14n-20000907">
-http://www.w3.org/TR/2000/WD-xml-c14n-20000907</a></li>
+        <ol>
+          <li>
+            Canonical XML:<br />
+            <a href="http://www.w3.org/TR/2000/WD-xml-c14n-20000907">
+              http://www.w3.org/TR/2000/WD-xml-c14n-20000907</a
+            >
+          </li>
 
-<li>P3P Statement to HTML/English XSLT: This specification provides
-a [<a href="#ref-XSLT">XSLT</a>] instance that transforms a P3P
-statement into an HTML page that uses English to describe that
-statement.<br />
- <a href="english-language.xsl">
-http://www.w3.org/2001/02/xmldsig-p3p-profileenglish.xsl</a></li>
-</ol>
-</li>
+          <li>
+            P3P Statement to HTML/English XSLT: This specification provides a
+            [<a href="#ref-XSLT">XSLT</a>] instance that transforms a P3P
+            statement into an HTML page that uses English to describe that
+            statement.<br />
+            <a href="english-language.xsl">
+              http://www.w3.org/2001/02/xmldsig-p3p-profileenglish.xsl</a
+            >
+          </li>
+        </ol>
+      </li>
 
-<li>The permissible KeyInfo 
+      <li>
+        The permissible KeyInfo
 
-<ol>
-<li><code>DSAKeyValue</code> or <code>RSAKeyValue<br />
-</code> <a href="http://www.w3.org/2000/09/xmldsig#dsa-sha1"><span
-style="FONT-WEIGHT: normal">
-http://www.w3.org/2000/09/xmldsig#</span>dsa-sha1</a><br />
- <a href="http://www.w3.org/2000/09/xmldsig#rsa-sha1"><span style=
-"FONT-WEIGHT: normal">
-http://www.w3.org/2000/09/xmldsig#</span>rsa-sha1</a></li>
-</ol>
-</li>
-</ol>
+        <ol>
+          <li>
+            <code>DSAKeyValue</code> or <code>RSAKeyValue<br /> </code>
+            <a href="http://www.w3.org/2000/09/xmldsig#dsa-sha1"
+              ><span style="font-weight: normal">
+                http://www.w3.org/2000/09/xmldsig#</span
+              >dsa-sha1</a
+            ><br />
+            <a href="http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+              ><span style="font-weight: normal">
+                http://www.w3.org/2000/09/xmldsig#</span
+              >rsa-sha1</a
+            >
+          </li>
+        </ol>
+      </li>
+    </ol>
 
-<p class="comment">Note, for purposes of further demonstration I
-considered refining this profile to actually meet the requirements
-of the "advanced electronic signature" as specified by the <a href=
-"http://europa.eu.int/eur-lex/en/lif/dat/1999/en_399L0093.html">
-European Directive 1999/93/EC</a>. This would require the use of
-<code>X509Data</code>, an extension designating it was a "qualified
-certificate", and as part of the signature, <code>
-dsig:Reference</code>s over (1) the assurer's signature policy and
-(2) a timestamp. Given that I wish to focus on the P3P application
-context and signature semantics in this document, I will forgo that
-exercise for the time being.</p>
+    <p class="comment">
+      Note, for purposes of further demonstration I considered refining this
+      profile to actually meet the requirements of the "advanced electronic
+      signature" as specified by the
+      <a href="http://europa.eu.int/eur-lex/en/lif/dat/1999/en_399L0093.html">
+        European Directive 1999/93/EC</a
+      >. This would require the use of <code>X509Data</code>, an extension
+      designating it was a "qualified certificate", and as part of the
+      signature, <code> dsig:Reference</code>s over (1) the assurer's signature
+      policy and (2) a timestamp. Given that I wish to focus on the P3P
+      application context and signature semantics in this document, I will forgo
+      that exercise for the time being.
+    </p>
 
-<h2>5.0 <a name="sec-P3P">P3P Policy</a></h2>
+    <h2>5.0 <a name="sec-P3P">P3P Policy</a></h2>
 
-<p>The P3P <a href=
-"http://www.w3.org/TR/2000/WD-P3P-20001018/#DISPUTES"><code>
-Disputes</code> <code>verification</code></a> attribute should be
-the URI of the assuring signature. No additional constraints or
-specification are made over [<a href="#ref-P3P">P3P</a>], nor are
-any additional semantics introduced via this specification's
-namespace.</p>
+    <p>
+      The P3P
+      <a href="http://www.w3.org/TR/2000/WD-P3P-20001018/#DISPUTES"
+        ><code> Disputes</code> <code>verification</code></a
+      >
+      attribute should be the URI of the assuring signature. No additional
+      constraints or specification are made over [<a href="#ref-P3P">P3P</a>],
+      nor are any additional semantics introduced via this specification's
+      namespace.
+    </p>
 
-<h2>6.0 <a id="sec-Schema" name="sec-Schema">Schema</a>, Transforms
-and Examples</h2>
+    <h2>
+      6.0 <a id="sec-Schema" name="sec-Schema">Schema</a>, Transforms and
+      Examples
+    </h2>
 
-<dl>
-<dt>XSLT P3P Statement to HTML Transform</dt>
+    <dl>
+      <dt>XSLT P3P Statement to HTML Transform</dt>
 
-<dd>This specification provides a [XSLT] instance that transforms a
-P3P statement into an HTML page that uses English to describe that
-statement.<br />
- <a href="english-language.xsl">english-language.xsl</a></dd>
+      <dd>
+        This specification provides a [XSLT] instance that transforms a P3P
+        statement into an HTML page that uses English to describe that
+        statement.<br />
+        <a href="english-language.xsl">english-language.xsl</a>
+      </dd>
 
-<dt>P3P Assurance Signature Profile Schema</dt>
+      <dt>P3P Assurance Signature Profile Schema</dt>
 
-<dd><a href="assurance.xsd">assurance.xsd</a></dd>
-</dl>
+      <dd><a href="assurance.xsd">assurance.xsd</a></dd>
+    </dl>
 
-<h2>7.0 <a id="sec-References" name="sec-References">
-References</a></h2>
+    <h2>7.0 <a id="sec-References" name="sec-References"> References</a></h2>
 
-<dl>
-<dt><a name="ref-P3P">P3P</a></dt>
+    <dl>
+      <dt><a name="ref-P3P">P3P</a></dt>
 
-<dd>The Platform for Privacy Preferences 1.0 (P3P1.0)
-Specification. W3C Working Draft. <a href=
-"http://www.research.att.com/~lorrie/">Cranor</a>, <a href=
-"http://www.inf.ethz.ch/~langhein/">Langheinrich</a>, <a href=
-"http://www.w3.org/People/Massimo/">Marchiori</a>, <a href=
-"mailto:mpresler@us.ibm.com">Presler-Marshall</a>, and <a href=
-"http://www.w3.org/People/Reagle/Overview.html">Reagle</a>, October
-2000.<br />
- <a href="http://www.w3.org/TR/2000/WD-P3P-20001018/">
-http://www.w3.org/TR/2000/WD-P3P-20001018/</a></dd>
+      <dd>
+        The Platform for Privacy Preferences 1.0 (P3P1.0) Specification. W3C
+        Working Draft.
+        <a href="http://www.research.att.com/~lorrie/">Cranor</a>,
+        <a href="http://www.inf.ethz.ch/~langhein/">Langheinrich</a>,
+        <a href="http://www.w3.org/People/Massimo/">Marchiori</a>,
+        <a href="mailto:mpresler@us.ibm.com">Presler-Marshall</a>, and
+        <a href="http://www.w3.org/People/Reagle/Overview.html">Reagle</a>,
+        October 2000.<br />
+        <a href="http://www.w3.org/TR/2000/WD-P3P-20001018/">
+          http://www.w3.org/TR/2000/WD-P3P-20001018/</a
+        >
+      </dd>
 
-<dt><a name="ref-RDF">RDF</a></dt>
+      <dt><a name="ref-RDF">RDF</a></dt>
 
-<dd>Resource Description Framework (RDF) Model and Syntax
-Specification. W3C Recommendation. Lassila and Swick. Febuary
-1999.<br />
- <a href="http://www.w3.org/TR/REC-rdf-syntax/">
-http://www.w3.org/TR/REC-rdf-syntax/</a></dd>
+      <dd>
+        Resource Description Framework (RDF) Model and Syntax Specification. W3C
+        Recommendation. Lassila and Swick. Febuary 1999.<br />
+        <a href="http://www.w3.org/TR/REC-rdf-syntax/">
+          http://www.w3.org/TR/REC-rdf-syntax/</a
+        >
+      </dd>
 
-<dt><a name="ref-RFC2459">RFC2459</a></dt>
+      <dt><a name="ref-RFC2459">RFC2459</a></dt>
 
-<dd><a href="http://www.ietf.org/rfc/rfc2459.txt">Internet X.509
-Public Key Infrastructure Certificate and CRL Profile</a>. R.
-Housley, W. Ford, W. Polk, D. Solo. January 1999.<br />
- <a href="http://www.ietf.org/rfc/rfc2459.txt">
-http://www.ietf.org/rfc/rfc2459.txt</a></dd>
+      <dd>
+        <a href="http://www.ietf.org/rfc/rfc2459.txt"
+          >Internet X.509 Public Key Infrastructure Certificate and CRL
+          Profile</a
+        >. R. Housley, W. Ford, W. Polk, D. Solo. January 1999.<br />
+        <a href="http://www.ietf.org/rfc/rfc2459.txt">
+          http://www.ietf.org/rfc/rfc2459.txt</a
+        >
+      </dd>
 
-<dt><a name="ref-XMLDSIG">XMLDSIG</a></dt>
+      <dt><a name="ref-XMLDSIG">XMLDSIG</a></dt>
 
-<dd>XML-Signature Syntax and Processing. W3C Working Draft.
-Eastlake, Reagle, and Solo. September 2000.<br />
- <a href="http://www.w3.org/TR/2000/WD-xmldsig-core-20001012/">
-http://www.w3.org/TR/2000/WD-xmldsig-core-20001012/</a></dd>
+      <dd>
+        XML-Signature Syntax and Processing. W3C Working Draft. Eastlake,
+        Reagle, and Solo. September 2000.<br />
+        <a href="http://www.w3.org/TR/2000/WD-xmldsig-core-20001012/">
+          http://www.w3.org/TR/2000/WD-xmldsig-core-20001012/</a
+        >
+      </dd>
 
-<dt><a id="ref-XML-C14N" name="ref-XML-C14N">XML-C14N</a></dt>
+      <dt><a id="ref-XML-C14N" name="ref-XML-C14N">XML-C14N</a></dt>
 
-<dd><a href="http://www.w3.org/TR/2000/WD-xml-c14n-20000907">
-Canonical XML.</a> Working Draft. J. Boyer. September 2000.</dd>
+      <dd>
+        <a href="http://www.w3.org/TR/2000/WD-xml-c14n-20000907">
+          Canonical XML.</a
+        >
+        Working Draft. J. Boyer. September 2000.
+      </dd>
 
-<dd><a href="http://www.w3.org/TR/2000/WD-xml-c14n-20000907">
-http://www.w3.org/TR/2000/WD-xml-c14n-20000907</a></dd>
+      <dd>
+        <a href="http://www.w3.org/TR/2000/WD-xml-c14n-20000907">
+          http://www.w3.org/TR/2000/WD-xml-c14n-20000907</a
+        >
+      </dd>
 
-<dt><a id="ref-XML-ns" name="ref-XML-ns">XML-ns</a></dt>
+      <dt><a id="ref-XML-ns" name="ref-XML-ns">XML-ns</a></dt>
 
-<dd><a href="http://www.w3.org/TR/1999/REC-xml-names-19990114/">
-Namespaces in XML</a> Recommendation. T. Bray, D. Hollander, A.
-Layman. January 1999.</dd>
+      <dd>
+        <a href="http://www.w3.org/TR/1999/REC-xml-names-19990114/">
+          Namespaces in XML</a
+        >
+        Recommendation. T. Bray, D. Hollander, A. Layman. January 1999.
+      </dd>
 
-<dd><a href="http://www.w3.org/TR/1999/REC-xml-names-19990114/">
-http://www.w3.org/TR/1999/REC-xml-names-19990114</a></dd>
+      <dd>
+        <a href="http://www.w3.org/TR/1999/REC-xml-names-19990114/">
+          http://www.w3.org/TR/1999/REC-xml-names-19990114</a
+        >
+      </dd>
 
-<dt><a id="ref-XML-schema" name="ref-XML-schema">
-XML-schema</a></dt>
+      <dt><a id="ref-XML-schema" name="ref-XML-schema"> XML-schema</a></dt>
 
-<dd><a href="http://www.w3.org/TR/2000/CR-xmlschema-1-20001024/">
-XML Schema Part 1: Structures</a> Working Draft. D. Beech, M.
-Maloney, N. Mendelshohn. September 2000.</dd>
+      <dd>
+        <a href="http://www.w3.org/TR/2000/CR-xmlschema-1-20001024/">
+          XML Schema Part 1: Structures</a
+        >
+        Working Draft. D. Beech, M. Maloney, N. Mendelshohn. September 2000.
+      </dd>
 
-<dd><a href="http://www.w3.org/TR/2000/CR-xmlschema-1-20001024/">
-http://www.w3.org/TR/2000/CR-xmlschema-1-20001024/</a><br />
- <a href="http://www.w3.org/TR/2000/CR-xmlschema-2-20001024/">XML
-Schema Part 2: Datatypes</a> Working Draft. P. Biron, A. Malhotra.
-September 2000.<br />
- <a href="http://www.w3.org/TR/2000/CR-xmlschema-2-20001024/">
-http://www.w3.org/TR/2000/WD-xmlschema-2-20001024/</a></dd>
+      <dd>
+        <a href="http://www.w3.org/TR/2000/CR-xmlschema-1-20001024/">
+          http://www.w3.org/TR/2000/CR-xmlschema-1-20001024/</a
+        ><br />
+        <a href="http://www.w3.org/TR/2000/CR-xmlschema-2-20001024/"
+          >XML Schema Part 2: Datatypes</a
+        >
+        Working Draft. P. Biron, A. Malhotra. September 2000.<br />
+        <a href="http://www.w3.org/TR/2000/CR-xmlschema-2-20001024/">
+          http://www.w3.org/TR/2000/WD-xmlschema-2-20001024/</a
+        >
+      </dd>
 
-<dt><a id="ref-XSLT" name="ref-XSLT">XSLT</a></dt>
+      <dt><a id="ref-XSLT" name="ref-XSLT">XSLT</a></dt>
 
-<dd><a href="http://www.w3.org/TR/1999/REC-xslt-19991116.html">XSL
-Transforms (XSLT) Version 1.0</a>. Recommendation. J. Clark.
-November 1999.</dd>
+      <dd>
+        <a href="http://www.w3.org/TR/1999/REC-xslt-19991116.html"
+          >XSL Transforms (XSLT) Version 1.0</a
+        >. Recommendation. J. Clark. November 1999.
+      </dd>
 
-<dd><a href="http://www.w3.org/TR/1999/REC-xslt-19991116.html">
-http://www.w3.org/TR/1999/REC-xslt-19991116.html</a></dd>
-</dl>
-<script src="https://www.w3.org/scripts/TR/fixup.js"></script></body>
+      <dd>
+        <a href="http://www.w3.org/TR/1999/REC-xslt-19991116.html">
+          http://www.w3.org/TR/1999/REC-xslt-19991116.html</a
+        >
+      </dd>
+    </dl>
+    <script src="https://www.w3.org/scripts/TR/fixup.js"></script>
+  </body>
 </html>
-

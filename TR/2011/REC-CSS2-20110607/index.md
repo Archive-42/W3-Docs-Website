@@ -1,0 +1,957 @@
+Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
+
+[next](about.html)   [contents](cover.html#minitoc)   [properties](propidx.html)   [index](indexlist.html)  
+
+------------------------------------------------------------------------
+
+[<img src="http://www.w3.org/Icons/w3c_home" alt="W3C" width="72" height="48" />](http://www.w3.org/)
+
+Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
+=================================================================
+
+W3C Recommendation 07 June 2011, edited in place 12 April 2016 to point to new work
+-----------------------------------------------------------------------------------
+
+This version:   
+<http://www.w3.org/TR/2011/REC-CSS2-20110607>
+
+Latest version:   
+<http://www.w3.org/TR/CSS2>
+
+Previous versions:   
+<http://www.w3.org/TR/2011/PR-CSS2-20110412>
+
+<http://www.w3.org/TR/2008/REC-CSS2-20080411/>
+
+Latest editor's draft:   
+<http://dev.w3.org/csswg/css2/>
+
+Editors:   
+<a href="http://www.w3.org/People/Bos/" class="url fn">Bert Bos</a> &lt;<span class="email">bert @w3.org</span>&gt;
+
+<a href="http://tantek.com/" class="url fn">Tantek Çelik</a> &lt;<span class="email">tantek @cs.stanford.edu</span>&gt;
+
+<a href="http://ian.hixie.ch/" class="url fn">Ian Hickson</a> &lt;<span class="email">ian @hixie.ch</span>&gt;
+
+<a href="http://people.opera.com/howcome/" class="url fn n"><span class="given-name">Håkon</span> <span class="additional-name">Wium</span> <span class="family-name">Lie</span></a> &lt;<span class="email">howcome @opera.com</span>&gt;
+
+Please refer to the [**errata**](http://www.w3.org/Style/css2-updates/REC-CSS2-20110607-errata.html) for this document.
+
+This document is also available in these non-normative formats: [plain text](css2.txt), [gzip'ed tar file](css2.tgz), [zip file](css2.zip), [gzip'ed PostScript](css2.ps.gz), [PDF](css2.pdf). See also [**translations**](http://www.w3.org/2005/11/Translations/Query?titleMatch=CSS;lang=any;search1=Submit).
+
+[Copyright](http://www.w3.org/Consortium/Legal/ipr-notice#Copyright) © 2011 [W3C](http://www.w3.org/)<sup>®</sup> ([MIT](http://www.csail.mit.edu/), [ERCIM](http://www.ercim.org/), [Keio](http://www.keio.ac.jp/)), All Rights Reserved. W3C [liability](http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer), [trademark](http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks) and [document use](http://www.w3.org/Consortium/Legal/copyright-documents) rules apply.
+
+------------------------------------------------------------------------
+
+Abstract
+--------
+
+This specification defines Cascading Style Sheets, level 2 revision 1 (CSS 2.1). CSS 2.1 is a style sheet language that allows authors and users to attach style (e.g., fonts and spacing) to structured documents (e.g., HTML documents and XML applications). By separating the presentation style of documents from the content of documents, CSS 2.1 simplifies Web authoring and site maintenance.
+
+CSS 2.1 builds on CSS2 <a href="refs.html#ref-CSS2" class="noxref"><span class="informref">[CSS2]</span></a> which builds on CSS1 <a href="refs.html#ref-CSS1" class="noxref"><span class="informref">[CSS1]</span></a>. It supports media-specific style sheets so that authors may tailor the presentation of their documents to visual browsers, aural devices, printers, braille devices, handheld devices, etc. It also supports content positioning, table layout, features for internationalization and some properties related to user interface.
+
+CSS 2.1 corrects a few errors in CSS2 (the most important being a new definition of the height/width of absolutely positioned elements, more influence for HTML's "style" attribute and a new calculation of the 'clip' property), and adds a few highly requested features which have already been widely implemented. But most of all CSS 2.1 represents a "snapshot" of CSS usage: it consists of all CSS features that are implemented interoperably at the date of publication of the Recommendation.
+
+CSS 2.1 is derived from and is intended to replace CSS2. Some parts of CSS2 are unchanged in CSS 2.1, some parts have been altered, and some parts removed. The removed portions may be used in a future CSS3 specification. Future specs should refer to CSS 2.1 (unless they need features from CSS2 which have been dropped in CSS 2.1, and then they should only reference CSS2 for those features, or preferably reference such feature(s) in the respective CSS3 Module that includes those feature(s)).
+
+Status of this document
+-----------------------
+
+*This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this technical report can be found in the [W3C technical reports index at http://www.w3.org/TR/.](http://www.w3.org/TR/)*
+
+This document has been reviewed by W3C Members, by software developers, and by other W3C groups and interested parties, and is endorsed by the Director as a W3C Recommendation. It is a stable document and may be used as reference material or cited from another document. W3C's role in making the Recommendation is to draw attention to the specification and to promote its widespread deployment. This enhances the functionality and interoperability of the Web.
+
+The ([archived](http://lists.w3.org/Archives/Public/www-style/)) public mailing list <www-style@w3.org> (see [instructions](http://www.w3.org/Mail/Request)) is preferred for discussion of this specification. When sending e-mail, please put the text “CSS21” in the subject, preferably like this: “\[CSS21\] *…summary of comment…*”
+
+This document was produced by the [CSS Working Group](http://www.w3.org/Style/CSS/members) (part of the [Style Activity](http://www.w3.org/Style/)).
+
+This document was produced by a group operating under the [5 February 2004 W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/). W3C maintains a [public list of any patent disclosures](http://www.w3.org/2004/01/pp-impl/32061/status) made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains [Essential Claim(s)](http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential) must disclose the information in accordance with [section 6 of the W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure).
+
+The Working Group has created a [test suite](/Style/CSS/Test/) and an [implementation report.](/Style/CSS/Test/CSS2.1/20110323/reports/)
+
+All changes since the previous Working Draft, the previous Candidate Recommendation and the previous Recommendation are listed in [appendix C.](changes.html)
+
+(hide)
+
+**Note:** Several sections of this specification have been updated by other specifications. Please, see ["Cascading Style Sheets (CSS) — The Official Definition"](https://www.w3.org/TR/CSS/#css) in the latest CSS Snapshot for a list of specifications and the sections they replace.
+
+The CSS Working Group is also developing [CSS level 2 revision 2 (CSS 2.2).](http://www.w3.org/TR/CSS22/)
+
+<span id="minitoc">Quick Table of Contents</span>
+-------------------------------------------------
+
+-   <a href="about.html#q1.0" class="tocxref">1 About the CSS 2.1 Specification</a>
+-   <a href="intro.html#q2.0" class="tocxref">2 Introduction to CSS 2.1</a>
+-   <a href="conform.html#q3.0" class="tocxref">3 Conformance: Requirements and Recommendations</a>
+-   <a href="syndata.html#q4.0" class="tocxref">4 Syntax and basic data types</a>
+-   <a href="selector.html#q5.0" class="tocxref">5 Selectors</a>
+-   <a href="cascade.html#q6.0" class="tocxref">6 Assigning property values, Cascading, and Inheritance</a>
+-   <a href="media.html#q7.0" class="tocxref">7 Media types</a>
+-   <a href="box.html#box-model" class="tocxref">8 Box model</a>
+-   <a href="visuren.html#q9.0" class="tocxref">9 Visual formatting model</a>
+-   <a href="visudet.html#q10.0" class="tocxref">10 Visual formatting model details</a>
+-   <a href="visufx.html#q11.0" class="tocxref">11 Visual effects</a>
+-   <a href="generate.html#generated-text" class="tocxref">12 Generated <span class="index-def" title="generated content">content</span>, automatic <span class="index-def" title="automatic numbering">numbering</span>, and lists</a>
+-   <a href="page.html#the-page" class="tocxref">13 Paged media</a>
+-   <a href="colors.html#q14.0" class="tocxref">14 Colors and Backgrounds</a>
+-   <a href="fonts.html#q15.0" class="tocxref">15 Fonts</a>
+-   <a href="text.html#q16.0" class="tocxref">16 Text</a>
+-   <a href="tables.html#q17.0" class="tocxref">17 Tables</a>
+-   <a href="ui.html#q18.0" class="tocxref">18 User interface</a>
+-   <a href="aural.html#q19.0" class="tocxref">Appendix A. Aural style sheets</a>
+-   <a href="refs.html#q20.0" class="tocxref">Appendix B. Bibliography</a>
+-   <a href="changes.html#q21.0" class="tocxref">Appendix C. Changes</a>
+-   <a href="sample.html#q22.0" class="tocxref">Appendix D. Default style sheet for HTML 4</a>
+-   <a href="zindex.html#q23.0" class="tocxref">Appendix E. Elaborate description of Stacking Contexts</a>
+-   <a href="propidx.html#q24.0" class="tocxref">Appendix F. Full property table</a>
+-   <a href="grammar.html#q25.0" class="tocxref">Appendix G. Grammar of CSS 2.1</a>
+-   <a href="indexlist.html#q27.0" class="tocxref">Appendix I. Index</a>
+
+<span id="toc">Full Table of Contents</span>
+--------------------------------------------
+
+-   <a href="about.html#q1.0" class="tocxref">1 About the CSS 2.1 Specification</a>
+    -   <a href="about.html#css2.1-v-css2" class="tocxref">1.1 CSS 2.1 vs CSS 2</a>
+    -   <a href="about.html#reading" class="tocxref">1.2 Reading the specification</a>
+    -   <a href="about.html#organization" class="tocxref">1.3 How the specification is organized</a>
+    -   <a href="about.html#conventions" class="tocxref">1.4 Conventions</a>
+        -   <a href="about.html#doc-language" class="tocxref">1.4.1 Document language elements and attributes</a>
+        -   <a href="about.html#property-defs" class="tocxref">1.4.2 CSS property definitions</a>
+            -   <a href="about.html#value-defs" class="tocxref">1.4.2.1 Value</a>
+            -   <a href="about.html#initial-value" class="tocxref">1.4.2.2 Initial</a>
+            -   <a href="about.html#applies-to" class="tocxref">1.4.2.3 Applies to</a>
+            -   <a href="about.html#inherited-prop" class="tocxref">1.4.2.4 Inherited</a>
+            -   <a href="about.html#percentage-wrt" class="tocxref">1.4.2.5 Percentage values</a>
+            -   <a href="about.html#media-applies" class="tocxref">1.4.2.6 Media groups</a>
+            -   <a href="about.html#computed-defs" class="tocxref">1.4.2.7 Computed value</a>
+        -   <a href="about.html#shorthand" class="tocxref">1.4.3 Shorthand properties</a>
+        -   <a href="about.html#notes-and-examples" class="tocxref">1.4.4 Notes and examples</a>
+        -   <a href="about.html#images-and-longdesc" class="tocxref">1.4.5 Images and long descriptions</a>
+    -   <a href="about.html#acknowledgements" class="tocxref">1.5 Acknowledgments</a>
+-   <a href="intro.html#q2.0" class="tocxref">2 Introduction to CSS 2.1</a>
+    -   <a href="intro.html#html-tutorial" class="tocxref">2.1 A brief CSS 2.1 tutorial for HTML</a>
+    -   <a href="intro.html#xml-tutorial" class="tocxref">2.2 A brief CSS 2.1 tutorial for XML</a>
+    -   <a href="intro.html#processing-model" class="tocxref">2.3 The CSS 2.1 processing model</a>
+        -   <a href="intro.html#the-canvas" class="tocxref">2.3.1 The canvas</a>
+        -   <a href="intro.html#addressing" class="tocxref">2.3.2 CSS 2.1 addressing model</a>
+    -   <a href="intro.html#design-principles" class="tocxref">2.4 CSS design principles</a>
+-   <a href="conform.html#q3.0" class="tocxref">3 Conformance: Requirements and Recommendations</a>
+    -   <a href="conform.html#defs" class="tocxref">3.1 Definitions</a>
+    -   <a href="conform.html#conformance" class="tocxref">3.2 UA Conformance</a>
+    -   <a href="conform.html#errors" class="tocxref">3.3 Error conditions</a>
+    -   <a href="conform.html#text-css" class="tocxref">3.4 <span class="index-def" title="text/css">The text/css content type</span></a>
+-   <a href="syndata.html#q4.0" class="tocxref">4 Syntax and basic data types</a>
+    -   <a href="syndata.html#syntax" class="tocxref">4.1 Syntax</a>
+        -   <a href="syndata.html#tokenization" class="tocxref">4.1.1 Tokenization</a>
+        -   <a href="syndata.html#keywords" class="tocxref">4.1.2 Keywords</a>
+            -   <a href="syndata.html#vendor-keywords" class="tocxref">4.1.2.1 Vendor-specific extensions</a>
+            -   <a href="syndata.html#vendor-keyword-history" class="tocxref">4.1.2.2 Informative Historical Notes</a>
+        -   <a href="syndata.html#characters" class="tocxref">4.1.3 Characters and case</a>
+        -   <a href="syndata.html#statements" class="tocxref">4.1.4 Statements</a>
+        -   <a href="syndata.html#at-rules" class="tocxref">4.1.5 <span class="index-def" title="at-rule"> At-rules</span></a>
+        -   <a href="syndata.html#block" class="tocxref">4.1.6 Blocks</a>
+        -   <a href="syndata.html#rule-sets" class="tocxref">4.1.7 Rule sets, declaration blocks, and selectors</a>
+        -   <a href="syndata.html#declaration" class="tocxref">4.1.8 Declarations and properties</a>
+        -   <a href="syndata.html#comments" class="tocxref">4.1.9 Comments</a>
+    -   <a href="syndata.html#parsing-errors" class="tocxref">4.2 Rules for handling parsing errors</a>
+    -   <a href="syndata.html#values" class="tocxref">4.3 Values</a>
+        -   <a href="syndata.html#numbers" class="tocxref">4.3.1 Integers and real numbers</a>
+        -   <a href="syndata.html#length-units" class="tocxref">4.3.2 Lengths</a>
+        -   <a href="syndata.html#percentage-units" class="tocxref">4.3.3 Percentages</a>
+        -   <a href="syndata.html#uri" class="tocxref">4.3.4 URLs and URIs</a>
+        -   <a href="syndata.html#counter" class="tocxref">4.3.5 Counters</a>
+        -   <a href="syndata.html#color-units" class="tocxref">4.3.6 Colors</a>
+        -   <a href="syndata.html#strings" class="tocxref">4.3.7 Strings</a>
+        -   <a href="syndata.html#unsupported-values" class="tocxref">4.3.8 Unsupported Values</a>
+    -   <a href="syndata.html#charset" class="tocxref">4.4 CSS style sheet representation</a>
+        -   <a href="syndata.html#escaping" class="tocxref">4.4.1 Referring to characters not represented in a character encoding</a>
+-   <a href="selector.html#q5.0" class="tocxref">5 Selectors</a>
+    -   <a href="selector.html#pattern-matching" class="tocxref">5.1 Pattern matching</a>
+    -   <a href="selector.html#selector-syntax" class="tocxref">5.2 Selector syntax</a>
+        -   <a href="selector.html#grouping" class="tocxref">5.2.1 Grouping</a>
+    -   <a href="selector.html#universal-selector" class="tocxref">5.3 Universal selector</a>
+    -   <a href="selector.html#type-selectors" class="tocxref">5.4 Type selectors</a>
+    -   <a href="selector.html#descendant-selectors" class="tocxref">5.5 Descendant selectors</a>
+    -   <a href="selector.html#child-selectors" class="tocxref">5.6 Child selectors</a>
+    -   <a href="selector.html#adjacent-selectors" class="tocxref">5.7 Adjacent sibling selectors</a>
+    -   <a href="selector.html#attribute-selectors" class="tocxref">5.8 Attribute selectors</a>
+        -   <a href="selector.html#matching-attrs" class="tocxref">5.8.1 Matching attributes and attribute values</a>
+        -   <a href="selector.html#default-attrs" class="tocxref">5.8.2 Default attribute values in DTDs</a>
+        -   <a href="selector.html#class-html" class="tocxref">5.8.3 Class selectors</a>
+    -   <a href="selector.html#id-selectors" class="tocxref">5.9 ID selectors</a>
+    -   <a href="selector.html#pseudo-elements" class="tocxref">5.10 Pseudo-elements and pseudo-classes</a>
+    -   <a href="selector.html#pseudo-class-selectors" class="tocxref">5.11 Pseudo-classes</a>
+        -   <a href="selector.html#first-child" class="tocxref">5.11.1 :first-child pseudo-class</a>
+        -   <a href="selector.html#link-pseudo-classes" class="tocxref">5.11.2 The link pseudo-classes: <span class="index-def" title="pseudo-classes:::link|:link|link (pseudo-class)">:link</span> and <span class="index-def" title="pseudo-classes:::visited|:visited|visited (pseudo-class)">:visited</span></a>
+        -   <a href="selector.html#dynamic-pseudo-classes" class="tocxref">5.11.3 The dynamic pseudo-classes: <span class="index-def" title="pseudo-classes:::hover|:hover|hover (pseudo-class)">:hover</span>, <span class="index-def" title="pseudo-classes:::active|:active|active (pseudo-class)">:active</span>, and <span class="index-def" title="pseudo-classes:::focus|:focus|focus (pseudo-class)">:focus</span></a>
+        -   <a href="selector.html#lang" class="tocxref">5.11.4 The language pseudo-class: <span class="index-def" title="pseudo-classes:::lang|:lang|lang (pseudo-class)">:lang</span></a>
+    -   <a href="selector.html#pseudo-element-selectors" class="tocxref">5.12 Pseudo-elements</a>
+        -   <a href="selector.html#first-line-pseudo" class="tocxref">5.12.1 The <span class="index-def" title="pseudo-elements:::first-line|:first-line|first-line">:first-line</span> pseudo-element</a>
+        -   <a href="selector.html#first-letter" class="tocxref">5.12.2 The <span class="index-def" title="pseudo-elements:::first-letter|:first-letter|first-letter">:first-letter</span> pseudo-element</a>
+        -   <a href="selector.html#before-and-after" class="tocxref">5.12.3 The <span class="index-def" title="pseudo-elements:::before|:before">:before</span> and <span class="index-def" title="pseudo-elements:::after|:after">:after</span> pseudo-elements</a>
+-   <a href="cascade.html#q6.0" class="tocxref">6 Assigning property values, Cascading, and Inheritance</a>
+    -   <a href="cascade.html#value-stages" class="tocxref">6.1 Specified, computed, and actual values</a>
+        -   <a href="cascade.html#specified-value" class="tocxref">6.1.1 <span class="index-def" title="specified value"> Specified values</span></a>
+        -   <a href="cascade.html#computed-value" class="tocxref">6.1.2 <span class="index-def" title="computed value"> Computed values</span></a>
+        -   <a href="cascade.html#used-value" class="tocxref">6.1.3 <span class="index-def" title="used value"> Used values</span></a>
+        -   <a href="cascade.html#actual-value" class="tocxref">6.1.4 <span class="index-def" title="actual value"> Actual values</span></a>
+    -   <a href="cascade.html#inheritance" class="tocxref">6.2 Inheritance</a>
+        -   <a href="cascade.html#value-def-inherit" class="tocxref">6.2.1 The <span class="index-def" title="inherit, definition of">'inherit'</span> value</a>
+    -   <a href="cascade.html#at-import" class="tocxref">6.3 The @import rule</a>
+    -   <a href="cascade.html#cascade" class="tocxref">6.4 The cascade</a>
+        -   <a href="cascade.html#cascading-order" class="tocxref">6.4.1 Cascading order</a>
+        -   <a href="cascade.html#important-rules" class="tocxref">6.4.2 !important rules</a>
+        -   <a href="cascade.html#specificity" class="tocxref">6.4.3 Calculating a selector's specificity</a>
+        -   <a href="cascade.html#preshint" class="tocxref">6.4.4 Precedence of non-CSS presentational hints</a>
+-   <a href="media.html#q7.0" class="tocxref">7 Media types</a>
+    -   <a href="media.html#media-intro" class="tocxref">7.1 Introduction to media types</a>
+    -   <a href="media.html#media-sheets" class="tocxref">7.2 Specifying media-dependent style sheets</a>
+        -   <a href="media.html#at-media-rule" class="tocxref">7.2.1 The @media rule</a>
+    -   <a href="media.html#media-types" class="tocxref">7.3 Recognized media types</a>
+        -   <a href="media.html#media-groups" class="tocxref">7.3.1 Media groups</a>
+-   <a href="box.html#box-model" class="tocxref">8 Box model</a>
+    -   <a href="box.html#box-dimensions" class="tocxref">8.1 Box dimensions</a>
+    -   <a href="box.html#mpb-examples" class="tocxref">8.2 Example of margins, padding, and borders</a>
+    -   <a href="box.html#margin-properties" class="tocxref">8.3 Margin properties: <span class="propinst-margin-top">'margin-top'</span>, <span class="propinst-margin-right">'margin-right'</span>, <span class="propinst-margin-bottom">'margin-bottom'</span>, <span class="propinst-margin-left">'margin-left'</span>, and <span class="propinst-margin">'margin'</span></a>
+        -   <a href="box.html#collapsing-margins" class="tocxref">8.3.1 Collapsing margins</a>
+    -   <a href="box.html#padding-properties" class="tocxref">8.4 Padding properties: <span class="propinst-padding-top">'padding-top'</span>, <span class="propinst-padding-right">'padding-right'</span>, <span class="propinst-padding-bottom">'padding-bottom'</span>, <span class="propinst-padding-left">'padding-left'</span>, and <span class="propinst-padding">'padding'</span></a>
+    -   <a href="box.html#border-properties" class="tocxref">8.5 Border properties</a>
+        -   <a href="box.html#border-width-properties" class="tocxref">8.5.1 Border width: <span class="propinst-border-top-width">'border-top-width'</span>, <span class="propinst-border-right-width">'border-right-width'</span>, <span class="propinst-border-bottom-width">'border-bottom-width'</span>, <span class="propinst-border-left-width">'border-left-width'</span>, and <span class="propinst-border-width">'border-width'</span></a>
+        -   <a href="box.html#border-color-properties" class="tocxref">8.5.2 Border color: <span class="propinst-border-top-color">'border-top-color'</span>, <span class="propinst-border-right-color">'border-right-color'</span>, <span class="propinst-border-bottom-color">'border-bottom-color'</span>, <span class="propinst-border-left-color">'border-left-color'</span>, and <span class="propinst-border-color">'border-color'</span></a>
+        -   <a href="box.html#border-style-properties" class="tocxref">8.5.3 Border style: <span class="propinst-border-top-style">'border-top-style'</span>, <span class="propinst-border-right-style">'border-right-style'</span>, <span class="propinst-border-bottom-style">'border-bottom-style'</span>, <span class="propinst-border-left-style">'border-left-style'</span>, and <span class="propinst-border-style">'border-style'</span></a>
+        -   <a href="box.html#border-shorthand-properties" class="tocxref">8.5.4 Border shorthand properties: <span class="propinst-border-top">'border-top'</span>, <span class="propinst-border-right">'border-right'</span>, <span class="propinst-border-bottom">'border-bottom'</span>, <span class="propinst-border-left">'border-left'</span>, and <span class="propinst-border">'border'</span></a>
+    -   <a href="box.html#bidi-box-model" class="tocxref">8.6 The box model for inline elements in bidirectional context</a>
+-   <a href="visuren.html#q9.0" class="tocxref">9 Visual formatting model</a>
+    -   <a href="visuren.html#visual-model-intro" class="tocxref">9.1 Introduction to the visual formatting model</a>
+        -   <a href="visuren.html#viewport" class="tocxref">9.1.1 The viewport</a>
+        -   <a href="visuren.html#containing-block" class="tocxref">9.1.2 <span class="index-def" title="containing block"> Containing blocks</span></a>
+    -   <a href="visuren.html#box-gen" class="tocxref">9.2 Controlling box generation</a>
+        -   <a href="visuren.html#block-boxes" class="tocxref">9.2.1 Block-level elements and block boxes</a>
+            -   <a href="visuren.html#anonymous-block-level" class="tocxref">9.2.1.1 Anonymous block boxes</a>
+        -   <a href="visuren.html#inline-boxes" class="tocxref">9.2.2 Inline-level elements and inline boxes</a>
+            -   <a href="visuren.html#anonymous" class="tocxref">9.2.2.1 Anonymous inline boxes</a>
+        -   <a href="visuren.html#run-in" class="tocxref">9.2.3 Run-in boxes</a>
+        -   <a href="visuren.html#display-prop" class="tocxref">9.2.4 The <span class="propinst-display">'display'</span> property</a>
+    -   <a href="visuren.html#positioning-scheme" class="tocxref">9.3 Positioning schemes</a>
+        -   <a href="visuren.html#choose-position" class="tocxref">9.3.1 Choosing a positioning scheme: <span class="propinst-position">'position'</span> property</a>
+        -   <a href="visuren.html#position-props" class="tocxref">9.3.2 Box offsets: <span class="propinst-top">'top'</span>, <span class="propinst-right">'right'</span>, <span class="propinst-bottom">'bottom'</span>, <span class="propinst-left">'left'</span></a>
+    -   <a href="visuren.html#normal-flow" class="tocxref">9.4 Normal flow</a>
+        -   <a href="visuren.html#block-formatting" class="tocxref">9.4.1 Block formatting contexts</a>
+        -   <a href="visuren.html#inline-formatting" class="tocxref">9.4.2 Inline formatting contexts</a>
+        -   <a href="visuren.html#relative-positioning" class="tocxref">9.4.3 Relative positioning</a>
+    -   <a href="visuren.html#floats" class="tocxref">9.5 Floats</a>
+        -   <a href="visuren.html#float-position" class="tocxref">9.5.1 Positioning the float: the <span class="propinst-float">'float'</span> property</a>
+        -   <a href="visuren.html#flow-control" class="tocxref">9.5.2 Controlling flow next to floats: the <span class="propinst-clear">'clear'</span> property</a>
+    -   <a href="visuren.html#absolute-positioning" class="tocxref">9.6 Absolute positioning</a>
+        -   <a href="visuren.html#fixed-positioning" class="tocxref">9.6.1 Fixed positioning</a>
+    -   <a href="visuren.html#dis-pos-flo" class="tocxref">9.7 Relationships between 'display', 'position', and 'float'</a>
+    -   <a href="visuren.html#comparison" class="tocxref">9.8 Comparison of normal flow, floats, and absolute positioning</a>
+        -   <a href="visuren.html#comp-normal-flow" class="tocxref">9.8.1 Normal flow</a>
+        -   <a href="visuren.html#comp-relpos" class="tocxref">9.8.2 Relative positioning</a>
+        -   <a href="visuren.html#comp-float" class="tocxref">9.8.3 Floating a box</a>
+        -   <a href="visuren.html#comp-abspos" class="tocxref">9.8.4 Absolute positioning</a>
+    -   <a href="visuren.html#layers" class="tocxref">9.9 Layered presentation</a>
+        -   <a href="visuren.html#z-index" class="tocxref">9.9.1 Specifying the stack level: the <span class="propinst-z-index">'z-index'</span> property</a>
+    -   <a href="visuren.html#direction" class="tocxref">9.10 Text direction: the <span class="propinst-direction">'direction'</span> and <span class="propinst-unicode-bidi">'unicode-bidi'</span> properties</a>
+-   <a href="visudet.html#q10.0" class="tocxref">10 Visual formatting model details</a>
+    -   <a href="visudet.html#containing-block-details" class="tocxref">10.1 Definition of "containing block"</a>
+    -   <a href="visudet.html#the-width-property" class="tocxref">10.2 Content width: the <span class="propinst-width">'width'</span> property</a>
+    -   <a href="visudet.html#Computing_widths_and_margins" class="tocxref">10.3 Calculating widths and margins</a>
+        -   <a href="visudet.html#inline-width" class="tocxref">10.3.1 Inline, non-replaced elements</a>
+        -   <a href="visudet.html#inline-replaced-width" class="tocxref">10.3.2 Inline, replaced elements</a>
+        -   <a href="visudet.html#blockwidth" class="tocxref">10.3.3 Block-level, non-replaced elements in normal flow</a>
+        -   <a href="visudet.html#block-replaced-width" class="tocxref">10.3.4 Block-level, replaced elements in normal flow</a>
+        -   <a href="visudet.html#float-width" class="tocxref">10.3.5 Floating, non-replaced elements</a>
+        -   <a href="visudet.html#float-replaced-width" class="tocxref">10.3.6 Floating, replaced elements</a>
+        -   <a href="visudet.html#abs-non-replaced-width" class="tocxref">10.3.7 Absolutely positioned, non-replaced elements</a>
+        -   <a href="visudet.html#abs-replaced-width" class="tocxref">10.3.8 Absolutely positioned, replaced elements</a>
+        -   <a href="visudet.html#inlineblock-width" class="tocxref">10.3.9 'Inline-block', non-replaced elements in normal flow</a>
+        -   <a href="visudet.html#inlineblock-replaced-width" class="tocxref">10.3.10 'Inline-block', replaced elements in normal flow</a>
+    -   <a href="visudet.html#min-max-widths" class="tocxref">10.4 Minimum and maximum widths: <span class="propinst-min-width">'min-width'</span> and <span class="propinst-max-width">'max-width'</span></a>
+    -   <a href="visudet.html#the-height-property" class="tocxref">10.5 Content height: the <span class="propinst-height">'height'</span> property</a>
+    -   <a href="visudet.html#Computing_heights_and_margins" class="tocxref">10.6 Calculating heights and margins</a>
+        -   <a href="visudet.html#inline-non-replaced" class="tocxref">10.6.1 Inline, non-replaced elements</a>
+        -   <a href="visudet.html#inline-replaced-height" class="tocxref">10.6.2 Inline replaced elements, block-level replaced elements in normal flow, 'inline-block' replaced elements in normal flow and floating replaced elements</a>
+        -   <a href="visudet.html#normal-block" class="tocxref">10.6.3 Block-level non-replaced elements in normal flow when 'overflow' computes to 'visible'</a>
+        -   <a href="visudet.html#abs-non-replaced-height" class="tocxref">10.6.4 Absolutely positioned, non-replaced elements</a>
+        -   <a href="visudet.html#abs-replaced-height" class="tocxref">10.6.5 Absolutely positioned, replaced elements</a>
+        -   <a href="visudet.html#block-root-margin" class="tocxref">10.6.6 Complicated cases</a>
+        -   <a href="visudet.html#root-height" class="tocxref">10.6.7 'Auto' heights for block formatting context roots</a>
+    -   <a href="visudet.html#min-max-heights" class="tocxref">10.7 Minimum and maximum heights: <span class="propinst-min-height">'min-height'</span> and <span class="propinst-max-height">'max-height'</span></a>
+    -   <a href="visudet.html#line-height" class="tocxref">10.8 Line height calculations: the <span class="propinst-line-height">'line-height'</span> and <span class="propinst-vertical-align">'vertical-align'</span> properties</a>
+        -   <a href="visudet.html#leading" class="tocxref">10.8.1 Leading and half-leading</a>
+-   <a href="visufx.html#q11.0" class="tocxref">11 Visual effects</a>
+    -   <a href="visufx.html#overflow-clipping" class="tocxref">11.1 Overflow and clipping</a>
+        -   <a href="visufx.html#overflow" class="tocxref">11.1.1 Overflow: the <span class="propinst-overflow">'overflow'</span> property</a>
+        -   <a href="visufx.html#clipping" class="tocxref">11.1.2 Clipping: the <span class="propinst-clip">'clip'</span> property</a>
+    -   <a href="visufx.html#visibility" class="tocxref">11.2 Visibility: the <span class="propinst-visibility">'visibility'</span> property</a>
+-   <a href="generate.html#generated-text" class="tocxref">12 Generated <span class="index-def" title="generated content">content</span>, automatic <span class="index-def" title="automatic numbering">numbering</span>, and lists</a>
+    -   <a href="generate.html#before-after-content" class="tocxref">12.1 The <span class="index-def" title=":before|pseudo-elements:::before|before">:before</span> and <span class="index-def" title=":after|pseudo-elements:::after|after">:after</span> pseudo-elements</a>
+    -   <a href="generate.html#content" class="tocxref">12.2 The <span class="propinst-content">'content'</span> property</a>
+    -   <a href="generate.html#quotes" class="tocxref">12.3 Quotation marks</a>
+        -   <a href="generate.html#quotes-specify" class="tocxref">12.3.1 Specifying quotes with the <span class="propinst-quotes">'quotes'</span> property</a>
+        -   <a href="generate.html#quotes-insert" class="tocxref">12.3.2 Inserting quotes with the <span class="propinst-content">'content'</span> property</a>
+    -   <a href="generate.html#counters" class="tocxref">12.4 Automatic <span class="index-def" title="counters">counters</span> and numbering</a>
+        -   <a href="generate.html#scope" class="tocxref">12.4.1 Nested counters and scope</a>
+        -   <a href="generate.html#counter-styles" class="tocxref">12.4.2 Counter styles</a>
+        -   <a href="generate.html#undisplayed-counters" class="tocxref">12.4.3 Counters in elements with 'display: none'</a>
+    -   <a href="generate.html#lists" class="tocxref">12.5 Lists</a>
+        -   <a href="generate.html#list-style" class="tocxref">12.5.1 Lists: the <span class="propinst-list-style-type">'list-style-type'</span>, <span class="propinst-list-style-image">'list-style-image'</span>, <span class="propinst-list-style-position">'list-style-position'</span>, and <span class="propinst-list-style">'list-style'</span> properties</a>
+-   <a href="page.html#the-page" class="tocxref">13 Paged media</a>
+    -   <a href="page.html#page-intro" class="tocxref">13.1 Introduction to paged media</a>
+    -   <a href="page.html#page-box" class="tocxref">13.2 Page boxes: the @page rule</a>
+        -   <a href="page.html#page-margins" class="tocxref">13.2.1 Page margins</a>
+        -   <a href="page.html#page-selectors" class="tocxref">13.2.2 Page selectors: selecting left, right, and first pages</a>
+        -   <a href="page.html#outside-page-box" class="tocxref">13.2.3 Content outside the page box</a>
+    -   <a href="page.html#page-breaks" class="tocxref">13.3 Page breaks</a>
+        -   <a href="page.html#page-break-props" class="tocxref">13.3.1 Page break properties: <span class="propinst-page-break-before">'page-break-before'</span>, <span class="propinst-page-break-after">'page-break-after'</span>, <span class="propinst-page-break-inside">'page-break-inside'</span></a>
+        -   <a href="page.html#break-inside" class="tocxref">13.3.2 Breaks inside elements: <span class="propinst-orphans">'orphans'</span>, <span class="propinst-widows">'widows'</span></a>
+        -   <a href="page.html#allowed-page-breaks" class="tocxref">13.3.3 Allowed page breaks</a>
+        -   <a href="page.html#forced" class="tocxref">13.3.4 Forced page breaks</a>
+        -   <a href="page.html#best-page-breaks" class="tocxref">13.3.5 "Best" page breaks</a>
+    -   <a href="page.html#page-cascade" class="tocxref">13.4 Cascading in the page context</a>
+-   <a href="colors.html#q14.0" class="tocxref">14 Colors and Backgrounds</a>
+    -   <a href="colors.html#colors" class="tocxref">14.1 Foreground color: the <span class="propinst-color">'color'</span> property</a>
+    -   <a href="colors.html#background" class="tocxref">14.2 The background</a>
+        -   <a href="colors.html#background-properties" class="tocxref">14.2.1 Background properties: <span class="propinst-background-color">'background-color'</span>, <span class="propinst-background-image">'background-image'</span>, <span class="propinst-background-repeat">'background-repeat'</span>, <span class="propinst-background-attachment">'background-attachment'</span>, <span class="propinst-background-position">'background-position'</span>, and <span class="propinst-background">'background'</span></a>
+-   <a href="fonts.html#q15.0" class="tocxref">15 Fonts</a>
+    -   <a href="fonts.html#fonts-intro" class="tocxref">15.1 Introduction</a>
+    -   <a href="fonts.html#algorithm" class="tocxref">15.2 Font matching algorithm</a>
+    -   <a href="fonts.html#font-family-prop" class="tocxref">15.3 Font family: the <span class="propinst-font-family">'font-family'</span> property</a>
+        -   <a href="fonts.html#generic-font-families" class="tocxref">15.3.1 Generic font families</a>
+            -   <a href="fonts.html#serif-def" class="tocxref">15.3.1.1 <span class="index-def" title="serif, definition of">serif</span></a>
+            -   <a href="fonts.html#sans-serif-def" class="tocxref">15.3.1.2 <span class="index-def" title="sans-serif, definition of"> sans-serif</span></a>
+            -   <a href="fonts.html#cursive-def" class="tocxref">15.3.1.3 <span class="index-def" title="cursive, definition of"> cursive</span></a>
+            -   <a href="fonts.html#fantasy-def" class="tocxref">15.3.1.4 <span class="index-def" title="fantasy, definition of"> fantasy</span></a>
+            -   <a href="fonts.html#monospace-def" class="tocxref">15.3.1.5 <span class="index-def" title="monospace, definition of"> monospace</span></a>
+    -   <a href="fonts.html#font-styling" class="tocxref">15.4 Font styling: the <span class="propinst-font-style">'font-style'</span> property</a>
+    -   <a href="fonts.html#small-caps" class="tocxref">15.5 Small-caps: the <span class="propinst-font-variant">'font-variant'</span> property</a>
+    -   <a href="fonts.html#font-boldness" class="tocxref">15.6 Font boldness: the <span class="propinst-font-weight">'font-weight'</span> property</a>
+    -   <a href="fonts.html#font-size-props" class="tocxref">15.7 Font size: the <span class="propinst-font-size">'font-size'</span> property</a>
+    -   <a href="fonts.html#font-shorthand" class="tocxref">15.8 Shorthand font property: the <span class="propinst-font">'font'</span> property</a>
+-   <a href="text.html#q16.0" class="tocxref">16 Text</a>
+    -   <a href="text.html#indentation-prop" class="tocxref">16.1 Indentation: the <span class="propinst-text-indent">'text-indent'</span> property</a>
+    -   <a href="text.html#alignment-prop" class="tocxref">16.2 Alignment: the <span class="propinst-text-align">'text-align'</span> property</a>
+    -   <a href="text.html#decoration" class="tocxref">16.3 Decoration</a>
+        -   <a href="text.html#lining-striking-props" class="tocxref">16.3.1 Underlining, overlining, striking, and blinking: the <span class="propinst-text-decoration">'text-decoration'</span> property</a>
+    -   <a href="text.html#spacing-props" class="tocxref">16.4 Letter and word spacing: the <span class="propinst-letter-spacing">'letter-spacing'</span> and <span class="propinst-word-spacing">'word-spacing'</span> properties</a>
+    -   <a href="text.html#caps-prop" class="tocxref">16.5 Capitalization: the <span class="propinst-text-transform">'text-transform'</span> property</a>
+    -   <a href="text.html#white-space-prop" class="tocxref">16.6 White space: the <span class="propinst-white-space">'white-space'</span> property</a>
+        -   <a href="text.html#white-space-model" class="tocxref">16.6.1 The 'white-space' processing model</a>
+        -   <a href="text.html#egbidiwscollapse" class="tocxref">16.6.2 Example of bidirectionality with white space collapsing</a>
+        -   <a href="text.html#ctrlchars" class="tocxref">16.6.3 Control and combining characters' details</a>
+-   <a href="tables.html#q17.0" class="tocxref">17 Tables</a>
+    -   <a href="tables.html#tables-intro" class="tocxref">17.1 Introduction to tables</a>
+    -   <a href="tables.html#table-display" class="tocxref">17.2 The CSS table model</a>
+        -   <a href="tables.html#anonymous-boxes" class="tocxref">17.2.1 Anonymous table objects</a>
+    -   <a href="tables.html#columns" class="tocxref">17.3 Columns</a>
+    -   <a href="tables.html#model" class="tocxref">17.4 Tables in the visual formatting model</a>
+        -   <a href="tables.html#caption-position" class="tocxref">17.4.1 Caption position and alignment</a>
+    -   <a href="tables.html#table-layout" class="tocxref">17.5 Visual layout of table contents</a>
+        -   <a href="tables.html#table-layers" class="tocxref">17.5.1 Table layers and transparency</a>
+        -   <a href="tables.html#width-layout" class="tocxref">17.5.2 Table width algorithms: the <span class="propinst-table-layout">'table-layout'</span> property</a>
+            -   <a href="tables.html#fixed-table-layout" class="tocxref">17.5.2.1 Fixed table layout</a>
+            -   <a href="tables.html#auto-table-layout" class="tocxref">17.5.2.2 Automatic table layout</a>
+        -   <a href="tables.html#height-layout" class="tocxref">17.5.3 Table height algorithms</a>
+        -   <a href="tables.html#column-alignment" class="tocxref">17.5.4 Horizontal alignment in a column</a>
+        -   <a href="tables.html#dynamic-effects" class="tocxref">17.5.5 Dynamic row and column effects</a>
+    -   <a href="tables.html#borders" class="tocxref">17.6 Borders</a>
+        -   <a href="tables.html#separated-borders" class="tocxref">17.6.1 The separated borders model</a>
+            -   <a href="tables.html#empty-cells" class="tocxref">17.6.1.1 Borders and Backgrounds around empty cells: the <span class="propinst-empty-cells">'empty-cells'</span> property</a>
+        -   <a href="tables.html#collapsing-borders" class="tocxref">17.6.2 The collapsing border model</a>
+            -   <a href="tables.html#border-conflict-resolution" class="tocxref">17.6.2.1 Border conflict resolution</a>
+        -   <a href="tables.html#table-border-styles" class="tocxref">17.6.3 Border styles</a>
+-   <a href="ui.html#q18.0" class="tocxref">18 User interface</a>
+    -   <a href="ui.html#cursor-props" class="tocxref">18.1 Cursors: the <span class="propinst-cursor">'cursor'</span> property</a>
+    -   <a href="ui.html#system-colors" class="tocxref">18.2 System Colors</a>
+    -   <a href="ui.html#system-fonts" class="tocxref">18.3 User preferences for fonts</a>
+    -   <a href="ui.html#dynamic-outlines" class="tocxref">18.4 Dynamic outlines: the <span class="index-def" title="outline">'outline'</span> property</a>
+        -   <a href="ui.html#outline-focus" class="tocxref">18.4.1 Outlines and the focus</a>
+    -   <a href="ui.html#magnification" class="tocxref">18.5 Magnification</a>
+-   <a href="aural.html#q19.0" class="tocxref">Appendix A. Aural style sheets</a>
+    -   <a href="aural.html#aural-media-group" class="tocxref">A.1 The media types 'aural' and 'speech'</a>
+    -   <a href="aural.html#aural-intro" class="tocxref">A.2 Introduction to aural style sheets</a>
+        -   <a href="aural.html#angles" class="tocxref">A.2.1 Angles</a>
+        -   <a href="aural.html#times" class="tocxref">A.2.2 Times</a>
+        -   <a href="aural.html#frequencies" class="tocxref">A.2.3 Frequencies</a>
+    -   <a href="aural.html#volume-props" class="tocxref">A.3 Volume properties: <span class="propinst-volume">'volume'</span></a>
+    -   <a href="aural.html#speaking-props" class="tocxref">A.4 Speaking properties: <span class="propinst-speak">'speak'</span></a>
+    -   <a href="aural.html#pause-props" class="tocxref">A.5 Pause properties: <span class="propinst-pause-before">'pause-before'</span>, <span class="propinst-pause-after">'pause-after'</span>, and <span class="propinst-pause">'pause'</span></a>
+    -   <a href="aural.html#cue-props" class="tocxref">A.6 Cue properties: <span class="propinst-cue-before">'cue-before'</span>, <span class="propinst-cue-after">'cue-after'</span>, and <span class="propinst-cue">'cue'</span></a>
+    -   <a href="aural.html#mixing-props" class="tocxref">A.7 Mixing properties: <span class="propinst-play-during">'play-during'</span></a>
+    -   <a href="aural.html#spatial-props" class="tocxref">A.8 Spatial properties: <span class="propinst-azimuth">'azimuth'</span> and <span class="propinst-elevation">'elevation'</span></a>
+    -   <a href="aural.html#voice-char-props" class="tocxref">A.9 Voice characteristic properties: <span class="propinst-speech-rate">'speech-rate'</span>, <span class="propinst-voice-family">'voice-family'</span>, <span class="propinst-pitch">'pitch'</span>, <span class="propinst-pitch-range">'pitch-range'</span>, <span class="propinst-stress">'stress'</span>, and <span class="propinst-richness">'richness'</span></a>
+    -   <a href="aural.html#speech-props" class="tocxref">A.10 Speech properties: <span class="propinst-speak-punctuation">'speak-punctuation'</span> and <span class="propinst-speak-numeral">'speak-numeral'</span></a>
+    -   <a href="aural.html#aural-tables" class="tocxref">A.11 Audio rendering of tables</a>
+        -   <a href="aural.html#speak-headers" class="tocxref">A.11.1 Speaking headers: the <span class="propinst-speak-header">'speak-header'</span> property</a>
+    -   <a href="aural.html#sample" class="tocxref">A.12 Sample style sheet for HTML</a>
+    -   <a href="aural.html#Emacspeak" class="tocxref">A.13 Emacspeak</a>
+-   <a href="refs.html#q20.0" class="tocxref">Appendix B. Bibliography</a>
+    -   <a href="refs.html#normative" class="tocxref">B.1 Normative references</a>
+    -   <a href="refs.html#informative" class="tocxref">B.2 Informative references</a>
+-   <a href="changes.html#q21.0" class="tocxref">Appendix C. Changes</a>
+    -   <a href="changes.html#new" class="tocxref">C.1 Additional property values</a>
+        -   <a href="changes.html#q21.2" class="tocxref">C.1.1 Section 4.3.6 Colors</a>
+        -   <a href="changes.html#q21.3" class="tocxref">C.1.2 Section 9.2.4 The 'display' property</a>
+        -   <a href="changes.html#q21.4" class="tocxref">C.1.3 Section 12.2 The 'content' property</a>
+        -   <a href="changes.html#q21.5" class="tocxref">C.1.4 Section 16.6 White space: the 'white-space' property</a>
+        -   <a href="changes.html#q21.6" class="tocxref">C.1.5 Section 18.1 Cursors: the 'cursor' property</a>
+    -   <a href="changes.html#changes" class="tocxref">C.2 Changes</a>
+        -   <a href="changes.html#q21.8" class="tocxref">C.2.1 Section 1.1 CSS 2.1 vs CSS 2</a>
+        -   <a href="changes.html#q21.9" class="tocxref">C.2.2 Section 1.2 Reading the specification</a>
+        -   <a href="changes.html#q21.10" class="tocxref">C.2.3 Section 1.3 How the specification is organized</a>
+        -   <a href="changes.html#q21.11" class="tocxref">C.2.4 Section 1.4.2.1 Value</a>
+        -   <a href="changes.html#q21.12" class="tocxref">C.2.5 Section 1.4.2.6 Media groups</a>
+        -   <a href="changes.html#q21.13" class="tocxref">C.2.6 Section 1.4.2.7 Computed value</a>
+        -   <a href="changes.html#q21.14" class="tocxref">C.2.7 Section 1.4.4 Notes and examples</a>
+        -   <a href="changes.html#q21.15" class="tocxref">C.2.8 Section 1.5 Acknowledgments</a>
+        -   <a href="changes.html#q21.16" class="tocxref">C.2.9 Section 3.2 Conformance</a>
+        -   <a href="changes.html#q21.17" class="tocxref">C.2.10 Section 3.3 Error Conditions</a>
+        -   <a href="changes.html#q21.18" class="tocxref">C.2.11 Section 4.1.1 Tokenization</a>
+        -   <a href="changes.html#q21.19" class="tocxref">C.2.12 Section 4.1.3 Characters and case</a>
+        -   <a href="changes.html#q21.20" class="tocxref">C.2.13 Section 4.2 Rules for handling parsing errors</a>
+        -   <a href="changes.html#q21.21" class="tocxref">C.2.14 Section 4.3 Values</a>
+        -   <a href="changes.html#q21.22" class="tocxref">C.2.15 Section 4.3.2 Lengths</a>
+        -   <a href="changes.html#q21.23" class="tocxref">C.2.16 Section 4.3.4 URLs and URIs</a>
+        -   <a href="changes.html#q21.24" class="tocxref">C.2.17 Section 4.3.5 Counters</a>
+        -   <a href="changes.html#q21.25" class="tocxref">C.2.18 Section 4.3.6 Colors</a>
+        -   <a href="changes.html#q21.26" class="tocxref">C.2.19 Section 4.3.8 Unsupported Values</a>
+        -   <a href="changes.html#q21.27" class="tocxref">C.2.20 Section 4.4 CSS style sheet representation</a>
+        -   <a href="changes.html#q21.28" class="tocxref">C.2.21 Section 5.8.1 Matching attributes and attribute values</a>
+        -   <a href="changes.html#q21.29" class="tocxref">C.2.22 Section 5.8.3 Class selectors</a>
+        -   <a href="changes.html#q21.30" class="tocxref">C.2.23 Section 5.9 ID selectors</a>
+        -   <a href="changes.html#q21.31" class="tocxref">C.2.24 Section 5.10 Pseudo-elements and pseudo-classes</a>
+        -   <a href="changes.html#q21.32" class="tocxref">C.2.25 Section 5.11.2 The link pseudo-classes: :link and :visited</a>
+        -   <a href="changes.html#q21.33" class="tocxref">C.2.26 Section 5.11.4 The language pseudo-class: :lang</a>
+        -   <a href="changes.html#q21.34" class="tocxref">C.2.27 Section 5.12.1 The :first-line pseudo-element</a>
+        -   <a href="changes.html#q21.35" class="tocxref">C.2.28 Section 5.12.2 The :first-letter pseudo-element</a>
+        -   <a href="changes.html#q21.36" class="tocxref">C.2.29 Section 6.1 Specified, computed, and actual values</a>
+        -   <a href="changes.html#q21.37" class="tocxref">C.2.30 Section 6.4.1 Cascading order</a>
+        -   <a href="changes.html#q21.38" class="tocxref">C.2.31 Section 6.4.3 Calculating a selector's specificity</a>
+        -   <a href="changes.html#q21.39" class="tocxref">C.2.32 Section 6.4.4 Precedence of non-CSS presentational hints</a>
+        -   <a href="changes.html#q21.40" class="tocxref">C.2.33 Section 7.3 Recognized Media Types</a>
+        -   <a href="changes.html#q21.41" class="tocxref">C.2.34 Section 7.3.1 Media Groups</a>
+        -   <a href="changes.html#q21.42" class="tocxref">C.2.35 Section 8.3 Margin properties</a>
+        -   <a href="changes.html#q21.43" class="tocxref">C.2.36 Section 8.3.1 Collapsing margins</a>
+        -   <a href="changes.html#q21.44" class="tocxref">C.2.37 Section 8.4 Padding properties</a>
+        -   <a href="changes.html#q21.45" class="tocxref">C.2.38 Section 8.5.2 Border color</a>
+        -   <a href="changes.html#q21.46" class="tocxref">C.2.39 Section 8.5.3 Border style</a>
+        -   <a href="changes.html#q21.47" class="tocxref">C.2.40 Section 8.6 The box model for inline elements in bidirectional context</a>
+        -   <a href="changes.html#q21.48" class="tocxref">C.2.41 Section 9.1.2 Containing blocks</a>
+        -   <a href="changes.html#q21.49" class="tocxref">C.2.42 Section 9.2.1.1 Anonymous block boxes</a>
+        -   <a href="changes.html#q21.50" class="tocxref">C.2.43 Section 9.2.2.1 Anonymous inline boxes</a>
+        -   <a href="changes.html#q21.51" class="tocxref">C.2.44 Section 9.2.3 Run-in boxes</a>
+        -   <a href="changes.html#q21.52" class="tocxref">C.2.45 Section 9.2.4 The 'display' property</a>
+        -   <a href="changes.html#q21.53" class="tocxref">C.2.46 Section 9.3.1 Choosing a positioning scheme</a>
+        -   <a href="changes.html#q21.54" class="tocxref">C.2.47 Section 9.3.2 Box offsets</a>
+        -   <a href="changes.html#q21.55" class="tocxref">C.2.48 Section 9.4.1 Block formatting contexts</a>
+        -   <a href="changes.html#q21.56" class="tocxref">C.2.49 Section 9.4.2 Inline formatting context</a>
+        -   <a href="changes.html#q21.57" class="tocxref">C.2.50 Section 9.4.3 Relative positioning</a>
+        -   <a href="changes.html#q21.58" class="tocxref">C.2.51 Section 9.5 Floats</a>
+        -   <a href="changes.html#q21.59" class="tocxref">C.2.52 Section 9.5.1 Positioning the float</a>
+        -   <a href="changes.html#q21.60" class="tocxref">C.2.53 Section 9.5.2 Controlling flow next to floats</a>
+        -   <a href="changes.html#q21.61" class="tocxref">C.2.54 Section 9.7 Relationships between 'display', 'position', and 'float'</a>
+        -   <a href="changes.html#q21.62" class="tocxref">C.2.55 Section 9.9 Layered presentation</a>
+        -   <a href="changes.html#q21.63" class="tocxref">C.2.56 Section 9.10 Text direction</a>
+        -   <a href="changes.html#q21.64" class="tocxref">C.2.57 Chapter 10 Visual formatting model details</a>
+        -   <a href="changes.html#q21.65" class="tocxref">C.2.58 Section 10.1 Definition of "containing block"</a>
+        -   <a href="changes.html#q21.66" class="tocxref">C.2.59 Section 10.2 Content width</a>
+        -   <a href="changes.html#q21.67" class="tocxref">C.2.60 Section 10.3 Calculating widths and margins</a>
+        -   <a href="changes.html#q21.68" class="tocxref">C.2.61 Section 10.3.2 Inline, replaced elements</a>
+        -   <a href="changes.html#q21.69" class="tocxref">C.2.62 Section 10.3.3 Block-level, non-replaced elements in normal flow</a>
+        -   <a href="changes.html#q21.70" class="tocxref">C.2.63 Section 10.3.4 Block-level, replaced elements in normal flow</a>
+        -   <a href="changes.html#q21.71" class="tocxref">C.2.64 Section 10.3.5 Floating, non-replaced elements</a>
+        -   <a href="changes.html#q21.72" class="tocxref">C.2.65 Section 10.3.6 Floating, replaced elements</a>
+        -   <a href="changes.html#q21.73" class="tocxref">C.2.66 Section 10.3.7 Absolutely positioned, non-replaced elements</a>
+        -   <a href="changes.html#q21.74" class="tocxref">C.2.67 Section 10.3.8 Absolutely positioned, replaced elements</a>
+        -   <a href="changes.html#q21.75" class="tocxref">C.2.68 Section 10.4 Minimum and maximum widths</a>
+        -   <a href="changes.html#q21.76" class="tocxref">C.2.69 Section 10.5 Content height</a>
+        -   <a href="changes.html#q21.77" class="tocxref">C.2.70 Section 10.6 Calculating heights and margins</a>
+        -   <a href="changes.html#q21.78" class="tocxref">C.2.71 Section 10.6.1 Inline, non-replaced elements</a>
+        -   <a href="changes.html#q21.79" class="tocxref">C.2.72 Section 10.6.2 Inline replaced elements, block-level replaced elements in normal flow, 'inline-block' replaced elements in normal flow and floating replaced elements</a>
+        -   <a href="changes.html#q21.80" class="tocxref">C.2.73 Section 10.6.3 Block-level non-replaced elements in normal flow when 'overflow' computes to 'visible'</a>
+        -   <a href="changes.html#q21.81" class="tocxref">C.2.74 Section 10.6.4 Absolutely positioned, non-replaced elements</a>
+        -   <a href="changes.html#q21.82" class="tocxref">C.2.75 Section 10.6.5 Absolutely positioned, replaced elements</a>
+        -   <a href="changes.html#q21.83" class="tocxref">C.2.76 Section 10.7 Minimum and maximum heights</a>
+        -   <a href="changes.html#q21.84" class="tocxref">C.2.77 Section 10.8 Line height calculations</a>
+        -   <a href="changes.html#q21.85" class="tocxref">C.2.78 Section 10.8.1 Leading and half-leading</a>
+        -   <a href="changes.html#q21.86" class="tocxref">C.2.79 Section 11.1 Overflow and clipping</a>
+        -   <a href="changes.html#q21.87" class="tocxref">C.2.80 Section 11.1.1 Overflow</a>
+        -   <a href="changes.html#q21.88" class="tocxref">C.2.81 Section 11.1.2 Clipping: the 'clip' property</a>
+        -   <a href="changes.html#q21.89" class="tocxref">C.2.82 Section 11.2 Visibility</a>
+        -   <a href="changes.html#q21.90" class="tocxref">C.2.83 Chapter 12 Generated content, automatic numbering, and lists</a>
+        -   <a href="changes.html#q21.91" class="tocxref">C.2.84 Section 12.1 The :before and :after pseudo-elements</a>
+        -   <a href="changes.html#q21.92" class="tocxref">C.2.85 Section 12.2 The 'content' property</a>
+        -   <a href="changes.html#q21.93" class="tocxref">C.2.86 Section 12.3.2 Inserting quotes with the 'content' property</a>
+        -   <a href="changes.html#q21.94" class="tocxref">C.2.87 Section 12.4 Automatic counters and numbering</a>
+        -   <a href="changes.html#q21.95" class="tocxref">C.2.88 Section 12.4.1 Nested counters and scope</a>
+        -   <a href="changes.html#q21.96" class="tocxref">C.2.89 Section 12.5 Lists</a>
+        -   <a href="changes.html#q21.97" class="tocxref">C.2.90 Section 12.5.1 Lists</a>
+        -   <a href="changes.html#q21.98" class="tocxref">C.2.91 Chapter 13 Paged media</a>
+        -   <a href="changes.html#q21.99" class="tocxref">C.2.92 Section 13.2.2 Page selectors</a>
+        -   <a href="changes.html#q21.100" class="tocxref">C.2.93 Section 13.3.1 Page break properties</a>
+        -   <a href="changes.html#q21.101" class="tocxref">C.2.94 Section 13.3.3 Allowed page breaks</a>
+        -   <a href="changes.html#q21.102" class="tocxref">C.2.95 Section 14.2.1 Background properties</a>
+        -   <a href="changes.html#q21.103" class="tocxref">C.2.96 Section 14.3 Gamma correction</a>
+        -   <a href="changes.html#q21.104" class="tocxref">C.2.97 Chapter 15 Fonts</a>
+        -   <a href="changes.html#q21.105" class="tocxref">C.2.98 Section 15.2 Font matching algorithm</a>
+        -   <a href="changes.html#q21.106" class="tocxref">C.2.99 Section 15.2.2 Font family</a>
+        -   <a href="changes.html#q21.107" class="tocxref">C.2.100 Section 15.5 Small-caps</a>
+        -   <a href="changes.html#q21.108" class="tocxref">C.2.101 Section 15.6 Font boldness</a>
+        -   <a href="changes.html#q21.109" class="tocxref">C.2.102 Section 15.7 Font size</a>
+        -   <a href="changes.html#q21.110" class="tocxref">C.2.103 Chapter 16 Text</a>
+        -   <a href="changes.html#q21.111" class="tocxref">C.2.104 Section 16.2 Alignment</a>
+        -   <a href="changes.html#q21.112" class="tocxref">C.2.105 Section 16.3.1 Underlining, over lining, striking, and blinking</a>
+        -   <a href="changes.html#q21.113" class="tocxref">C.2.106 Section 16.4 Letter and word spacing</a>
+        -   <a href="changes.html#q21.114" class="tocxref">C.2.107 Section 16.5 Capitalization</a>
+        -   <a href="changes.html#q21.115" class="tocxref">C.2.108 Section 16.6 White space</a>
+        -   <a href="changes.html#q21.116" class="tocxref">C.2.109 Chapter 17 Tables</a>
+        -   <a href="changes.html#q21.117" class="tocxref">C.2.110 Section 17.2 The CSS table model</a>
+        -   <a href="changes.html#q21.118" class="tocxref">C.2.111 Section 17.2.1 Anonymous table objects</a>
+        -   <a href="changes.html#q21.119" class="tocxref">C.2.112 Section 17.4 Tables in the visual formatting model</a>
+        -   <a href="changes.html#q21.120" class="tocxref">C.2.113 Section 17.4.1 Caption position and alignment</a>
+        -   <a href="changes.html#q21.121" class="tocxref">C.2.114 Section 17.5 Visual layout of table contents</a>
+        -   <a href="changes.html#q21.122" class="tocxref">C.2.115 Section 17.5.1 Table layers and transparency</a>
+        -   <a href="changes.html#q21.123" class="tocxref">C.2.116 Section 17.5.2.1 Fixed table layout</a>
+        -   <a href="changes.html#q21.124" class="tocxref">C.2.117 Section 17.5.2.2 Automatic table layout</a>
+        -   <a href="changes.html#q21.125" class="tocxref">C.2.118 Section 17.5.3 Table height algorithms</a>
+        -   <a href="changes.html#q21.126" class="tocxref">C.2.119 Section 17.5.4 Horizontal alignment in a column</a>
+        -   <a href="changes.html#q21.127" class="tocxref">C.2.120 Section 17.6 Borders</a>
+        -   <a href="changes.html#q21.128" class="tocxref">C.2.121 Section 17.6.1 The separated borders model</a>
+        -   <a href="changes.html#q21.129" class="tocxref">C.2.122 Section 17.6.1.1 Borders and Backgrounds around empty cells</a>
+        -   <a href="changes.html#q21.130" class="tocxref">C.2.123 Section 17.6.2 The collapsing border model</a>
+        -   <a href="changes.html#q21.131" class="tocxref">C.2.124 Section 17.6.2.1 Border conflict resolution</a>
+        -   <a href="changes.html#q21.132" class="tocxref">C.2.125 Section 18.1 Cursors: the 'cursor' property</a>
+        -   <a href="changes.html#q21.133" class="tocxref">C.2.126 Section 18.4 Dynamic outlines</a>
+        -   <a href="changes.html#q21.134" class="tocxref">C.2.127 Chapter 12 Generated content, automatic numbering, and lists</a>
+        -   <a href="changes.html#q21.135" class="tocxref">C.2.128 Appendix A. Aural style sheets</a>
+        -   <a href="changes.html#q21.136" class="tocxref">C.2.129 Appendix A Section 5 Pause properties</a>
+        -   <a href="changes.html#q21.137" class="tocxref">C.2.130 Appendix A Section 6 Cue properties</a>
+        -   <a href="changes.html#q21.138" class="tocxref">C.2.131 Appendix A Section 7 Mixing properties</a>
+        -   <a href="changes.html#q21.139" class="tocxref">C.2.132 Appendix B Bibliography</a>
+        -   <a href="changes.html#q21.140" class="tocxref">C.2.133 Other</a>
+    -   <a href="changes.html#known-errors" class="tocxref">C.3 Errors</a>
+        -   <a href="changes.html#q21.142" class="tocxref">C.3.1 Shorthand properties</a>
+        -   <a href="changes.html#q21.143" class="tocxref">C.3.2 Applies to</a>
+        -   <a href="changes.html#q21.144" class="tocxref">C.3.3 Section 4.1.1 (and G2)</a>
+        -   <a href="changes.html#q21.145" class="tocxref">C.3.4 Section 4.1.3 Characters and case</a>
+        -   <a href="changes.html#q21.146" class="tocxref">C.3.5 Section 4.3 (Double sign problem)</a>
+        -   <a href="changes.html#q21.147" class="tocxref">C.3.6 Section 4.3.2 Lengths</a>
+        -   <a href="changes.html#q21.148" class="tocxref">C.3.7 Section 4.3.3 Percentages</a>
+        -   <a href="changes.html#q21.149" class="tocxref">C.3.8 Section 4.3.4 URLs and URIs</a>
+        -   <a href="changes.html#q21.150" class="tocxref">C.3.9 Section 4.3.5 Counters</a>
+        -   <a href="changes.html#q21.151" class="tocxref">C.3.10 Section 4.3.6 Colors</a>
+        -   <a href="changes.html#q21.152" class="tocxref">C.3.11 Section 4.3.7 Strings</a>
+        -   <a href="changes.html#q21.153" class="tocxref">C.3.12 Section 5.10 Pseudo-elements and pseudo-classes</a>
+        -   <a href="changes.html#q21.154" class="tocxref">C.3.13 Section 6.4 The cascade</a>
+        -   <a href="changes.html#q21.155" class="tocxref">C.3.14 Section 8.1 Box Dimensions</a>
+        -   <a href="changes.html#q21.156" class="tocxref">C.3.15 Section 8.2 Example of margins, padding, and borders</a>
+        -   <a href="changes.html#q21.157" class="tocxref">C.3.16 Section 8.5.4 Border shorthand properties</a>
+        -   <a href="changes.html#q21.158" class="tocxref">C.3.17 Section 9.2.1 Block-level elements and block boxes</a>
+        -   <a href="changes.html#q21.159" class="tocxref">C.3.18 Section 9.3.1 Choosing a positioning scheme</a>
+        -   <a href="changes.html#q21.160" class="tocxref">C.3.19 Section 9.3.2 Box offsets</a>
+        -   <a href="changes.html#q21.161" class="tocxref">C.3.20 Section 9.4.1 Block formatting contexts</a>
+        -   <a href="changes.html#q21.162" class="tocxref">C.3.21 Section 9.4.2 Inline formatting context</a>
+        -   <a href="changes.html#q21.163" class="tocxref">C.3.22 Section 9.4.3 Relative positioning</a>
+        -   <a href="changes.html#q21.164" class="tocxref">C.3.23 Section 9.5 Floats</a>
+        -   <a href="changes.html#q21.165" class="tocxref">C.3.24 Section 9.5.1 Positioning the float</a>
+        -   <a href="changes.html#q21.166" class="tocxref">C.3.25 Section 9.5.2 Controlling flow next to floats</a>
+        -   <a href="changes.html#q21.167" class="tocxref">C.3.26 Section 9.6 Absolute positioning</a>
+        -   <a href="changes.html#q21.168" class="tocxref">C.3.27 Section 9.7 Relationships between 'display', 'position', and 'float'</a>
+        -   <a href="changes.html#q21.169" class="tocxref">C.3.28 Section 9.10 Text direction</a>
+        -   <a href="changes.html#q21.170" class="tocxref">C.3.29 Section 10.1 Definition of "containing block"</a>
+        -   <a href="changes.html#q21.171" class="tocxref">C.3.30 Section 10.3.3 Block-level, non-replaced elements in normal flow</a>
+        -   <a href="changes.html#q21.172" class="tocxref">C.3.31 Section 10.4 Minimum and maximum widths</a>
+        -   <a href="changes.html#q21.173" class="tocxref">C.3.32 Section 10.6.3 Block-level non-replaced elements in normal flow when 'overflow' computes to 'visible'</a>
+        -   <a href="changes.html#q21.174" class="tocxref">C.3.33 Section 10.7 Minimum and maximum heights</a>
+        -   <a href="changes.html#q21.175" class="tocxref">C.3.34 Section 11.1.1 Overflow</a>
+        -   <a href="changes.html#q21.176" class="tocxref">C.3.35 Section 11.1.2 Clipping: the 'clip' property</a>
+        -   <a href="changes.html#q21.177" class="tocxref">C.3.36 Section 11.2 Visibility</a>
+        -   <a href="changes.html#q21.178" class="tocxref">C.3.37 Section 12.4.2 Counter styles</a>
+        -   <a href="changes.html#q21.179" class="tocxref">C.3.38 Section 12.6.2 Lists</a>
+        -   <a href="changes.html#q21.180" class="tocxref">C.3.39 Section 14.2 The background</a>
+        -   <a href="changes.html#q21.181" class="tocxref">C.3.40 Section 14.2.1 Background properties</a>
+        -   <a href="changes.html#q21.182" class="tocxref">C.3.41 Section 15.2 Font matching algorithm</a>
+        -   <a href="changes.html#q21.183" class="tocxref">C.3.42 Section 15.7 Font size</a>
+        -   <a href="changes.html#q21.184" class="tocxref">C.3.43 Section 16.1 Indentation</a>
+        -   <a href="changes.html#q21.185" class="tocxref">C.3.44 Section 16.2 Alignment</a>
+        -   <a href="changes.html#q21.186" class="tocxref">C.3.45 Section 17.2 The CSS table model</a>
+        -   <a href="changes.html#q21.187" class="tocxref">C.3.46 Section 17.2.1 Anonymous table objects</a>
+        -   <a href="changes.html#q21.188" class="tocxref">C.3.47 Section 17.4 Tables in the visual formatting model</a>
+        -   <a href="changes.html#q21.189" class="tocxref">C.3.48 Section 17.5 Visual layout of table contents</a>
+        -   <a href="changes.html#q21.190" class="tocxref">C.3.49 Section 17.5.1 Table layers and transparency</a>
+        -   <a href="changes.html#q21.191" class="tocxref">C.3.50 Section 17.6.1 The separated borders model</a>
+        -   <a href="changes.html#q21.192" class="tocxref">C.3.51 Section 18.2 System Colors</a>
+        -   <a href="changes.html#q21.193" class="tocxref">C.3.52 Section E.2 Painting order</a>
+    -   <a href="changes.html#clarifications" class="tocxref">C.4 Clarifications</a>
+        -   <a href="changes.html#q21.195" class="tocxref">C.4.1 Section 2.1 A brief CSS 2.1 tutorial for HTML</a>
+        -   <a href="changes.html#q21.196" class="tocxref">C.4.2 Section 2.2 A brief CSS 2.1 tutorial for XML</a>
+        -   <a href="changes.html#q21.197" class="tocxref">C.4.3 Section 2.3 The CSS 2.1 processing model</a>
+        -   <a href="changes.html#q21.198" class="tocxref">C.4.4 Section 3.1 Definitions</a>
+        -   <a href="changes.html#q21.199" class="tocxref">C.4.5 Section 4.1 Syntax</a>
+        -   <a href="changes.html#q21.200" class="tocxref">C.4.6 Section 4.1.1 Tokenization</a>
+        -   <a href="changes.html#q21.201" class="tocxref">C.4.7 Section 4.1.3 Characters and case</a>
+        -   <a href="changes.html#q21.202" class="tocxref">C.4.8 Section 4.1.7 Rule sets, declaration blocks, and selectors</a>
+        -   <a href="changes.html#q21.203" class="tocxref">C.4.9 Section 4.2 Rules for handling parsing errors</a>
+        -   <a href="changes.html#q21.204" class="tocxref">C.4.10 Section 4.3.1 Integers and real numbers</a>
+        -   <a href="changes.html#q21.205" class="tocxref">C.4.11 Section 4.3.2 Lengths</a>
+        -   <a href="changes.html#q21.206" class="tocxref">C.4.12 Section 4.3.4 URLs and URIs</a>
+        -   <a href="changes.html#q21.207" class="tocxref">C.4.13 Section 5.1 Pattern matching</a>
+        -   <a href="changes.html#q21.208" class="tocxref">C.4.14 Section 5.7 Adjacent sibling selectors</a>
+        -   <a href="changes.html#q21.209" class="tocxref">C.4.15 Section 5.8.1 Matching attributes and attribute values</a>
+        -   <a href="changes.html#q21.210" class="tocxref">C.4.16 Section 5.8.2 Default attribute values in DTDs</a>
+        -   <a href="changes.html#q21.211" class="tocxref">C.4.17 Section 5.9 ID selectors</a>
+        -   <a href="changes.html#q21.212" class="tocxref">C.4.18 Section 5.11.3 The dynamic pseudo-classes: :hover, :active, and :focus</a>
+        -   <a href="changes.html#q21.213" class="tocxref">C.4.19 Section 5.11.4 The language pseudo-class: :lang</a>
+        -   <a href="changes.html#q21.214" class="tocxref">C.4.20 Section 5.12.2 The :first-letter pseudo-element</a>
+        -   <a href="changes.html#q21.215" class="tocxref">C.4.21 Section 6.2 Inheritance</a>
+        -   <a href="changes.html#q21.216" class="tocxref">C.4.22 Section 6.2.1 The 'inherit' value</a>
+        -   <a href="changes.html#q21.217" class="tocxref">C.4.23 Section 6.3 The @import rule</a>
+        -   <a href="changes.html#q21.218" class="tocxref">C.4.24 Section 6.4 The Cascade</a>
+        -   <a href="changes.html#q21.219" class="tocxref">C.4.25 Section 6.4.1 Cascading order</a>
+        -   <a href="changes.html#q21.220" class="tocxref">C.4.26 Section 6.4.3 Calculating a selector's specificity</a>
+        -   <a href="changes.html#q21.221" class="tocxref">C.4.27 Section 7.2.1 The @media rule</a>
+        -   <a href="changes.html#q21.222" class="tocxref">C.4.28 Section 7.3 Recognized media types</a>
+        -   <a href="changes.html#q21.223" class="tocxref">C.4.29 Section 7.3.1 Media groups</a>
+        -   <a href="changes.html#q21.224" class="tocxref">C.4.30 Section 8.1 Box dimensions</a>
+        -   <a href="changes.html#q21.225" class="tocxref">C.4.31 Section 8.3 Margin properties</a>
+        -   <a href="changes.html#q21.226" class="tocxref">C.4.32 Section 8.3.1 Collapsing margins</a>
+        -   <a href="changes.html#q21.227" class="tocxref">C.4.33 Section 8.5.3 Border style</a>
+        -   <a href="changes.html#q21.228" class="tocxref">C.4.34 Section 9.1.1 The viewport</a>
+        -   <a href="changes.html#q21.229" class="tocxref">C.4.35 Section 9.2.4 The 'display' property</a>
+        -   <a href="changes.html#q21.230" class="tocxref">C.4.36 Section 9.3.1 Choosing a positioning scheme</a>
+        -   <a href="changes.html#q21.231" class="tocxref">C.4.37 Section 9.3.2 Box offsets</a>
+        -   <a href="changes.html#q21.232" class="tocxref">C.4.38 Section 9.4.2 Inline formatting context</a>
+        -   <a href="changes.html#q21.233" class="tocxref">C.4.39 Section 9.4.3 Relative positioning</a>
+        -   <a href="changes.html#q21.234" class="tocxref">C.4.40 Section 9.5 Floats</a>
+        -   <a href="changes.html#q21.235" class="tocxref">C.4.41 Section 9.5.1 Positioning the float</a>
+        -   <a href="changes.html#q21.236" class="tocxref">C.4.42 Section 9.5.2 Controlling flow next to floats</a>
+        -   <a href="changes.html#q21.237" class="tocxref">C.4.43 Section 9.8 Comparison of normal flow, floats, and absolute positioning</a>
+        -   <a href="changes.html#q21.238" class="tocxref">C.4.44 Section 10.1 Definition of "containing block"</a>
+        -   <a href="changes.html#q21.239" class="tocxref">C.4.45 Section 10.2 Content width</a>
+        -   <a href="changes.html#q21.240" class="tocxref">C.4.46 Section 10.3.3 Block-level, non-replaced elements in normal flow</a>
+        -   <a href="changes.html#q21.241" class="tocxref">C.4.47 Section 10.3.8 Absolutely positioning, replaced elements</a>
+        -   <a href="changes.html#q21.242" class="tocxref">C.4.48 Section 10.4 Minimum and maximum widths</a>
+        -   <a href="changes.html#q21.243" class="tocxref">C.4.49 Section 10.6 Calculating heights and margins</a>
+        -   <a href="changes.html#q21.244" class="tocxref">C.4.50 Section 10.7 Minimum and maximum heights</a>
+        -   <a href="changes.html#q21.245" class="tocxref">C.4.51 Section 10.8 Line height calculations</a>
+        -   <a href="changes.html#q21.246" class="tocxref">C.4.52 Section 10.8.1 Leading and half-leading</a>
+        -   <a href="changes.html#q21.247" class="tocxref">C.4.53 Section 11.1 Overflow and clipping</a>
+        -   <a href="changes.html#q21.248" class="tocxref">C.4.54 Section 11.1.1 Overflow</a>
+        -   <a href="changes.html#q21.249" class="tocxref">C.4.55 Section 11.1.2 Clipping</a>
+        -   <a href="changes.html#q21.250" class="tocxref">C.4.56 Section 11.2 Visibility</a>
+        -   <a href="changes.html#q21.251" class="tocxref">C.4.57 Section 12.1 The :before and :after pseudo-elements</a>
+        -   <a href="changes.html#q21.252" class="tocxref">C.4.58 Section 12.2 The 'content' property</a>
+        -   <a href="changes.html#q21.253" class="tocxref">C.4.59 Section 12.3.2 Inserting quotes with the 'content' property</a>
+        -   <a href="changes.html#q21.254" class="tocxref">C.4.60 Section 12.4 Automatic counters and numbering</a>
+        -   <a href="changes.html#q21.255" class="tocxref">C.4.61 Section 12.4.3 Counters in elements with 'display: none'</a>
+        -   <a href="changes.html#q21.256" class="tocxref">C.4.62 Section 14.2 The background</a>
+        -   <a href="changes.html#q21.257" class="tocxref">C.4.63 Section 15.1 Fonts Introduction</a>
+        -   <a href="changes.html#q21.258" class="tocxref">C.4.64 Section 15.2 Font matching algorithm</a>
+        -   <a href="changes.html#q21.259" class="tocxref">C.4.65 Section 15.2.2 Font family</a>
+        -   <a href="changes.html#q21.260" class="tocxref">C.4.66 Section 15.3.1 Generic font families</a>
+        -   <a href="changes.html#q21.261" class="tocxref">C.4.67 Section 15.4 Font styling</a>
+        -   <a href="changes.html#q21.262" class="tocxref">C.4.68 Section 15.5 Small-caps</a>
+        -   <a href="changes.html#q21.263" class="tocxref">C.4.69 Section 15.6 Font boldness</a>
+        -   <a href="changes.html#q21.264" class="tocxref">C.4.70 Section 15.7 Font size</a>
+        -   <a href="changes.html#q21.265" class="tocxref">C.4.71 Section 16.1 Indentation</a>
+        -   <a href="changes.html#q21.266" class="tocxref">C.4.72 Section 16.2 Alignment</a>
+        -   <a href="changes.html#q21.267" class="tocxref">C.4.73 Section 16.3.1 Underlining, over lining, striking, and blinking</a>
+        -   <a href="changes.html#q21.268" class="tocxref">C.4.74 Section 16.5 Capitalization</a>
+        -   <a href="changes.html#q21.269" class="tocxref">C.4.75 Section 16.6 White space</a>
+        -   <a href="changes.html#q21.270" class="tocxref">C.4.76 Section 17.1 Introduction to tables</a>
+        -   <a href="changes.html#q21.271" class="tocxref">C.4.77 Section 17.2 The CSS table model</a>
+        -   <a href="changes.html#q21.272" class="tocxref">C.4.78 Section 17.2.1 Anonymous table objects</a>
+        -   <a href="changes.html#q21.273" class="tocxref">C.4.79 Section 17.4 Tables in the visual formatting model</a>
+        -   <a href="changes.html#q21.274" class="tocxref">C.4.80 Section 17.5 Visual layout of table contents</a>
+        -   <a href="changes.html#q21.275" class="tocxref">C.4.81 Section 17.5.1 Table layers and transparency</a>
+        -   <a href="changes.html#q21.276" class="tocxref">C.4.82 Section 17.5.2 Table width algorithms</a>
+        -   <a href="changes.html#q21.277" class="tocxref">C.4.83 Section 17.5.2.1 Fixed table layout</a>
+        -   <a href="changes.html#q21.278" class="tocxref">C.4.84 Section 17.5.2.2 Automatic table layout</a>
+        -   <a href="changes.html#q21.279" class="tocxref">C.4.85 Section 17.5.4 Horizontal alignment in a column</a>
+        -   <a href="changes.html#q21.280" class="tocxref">C.4.86 Section 17.5.5 Dynamic row and column effects</a>
+        -   <a href="changes.html#q21.281" class="tocxref">C.4.87 Section 17.6.1 The separated borders model</a>
+        -   <a href="changes.html#q21.282" class="tocxref">C.4.88 Section 17.6.2 The collapsing borders model</a>
+        -   <a href="changes.html#q21.283" class="tocxref">C.4.89 Section 18.2 System Colors</a>
+        -   <a href="changes.html#q21.284" class="tocxref">C.4.90 Section 18.4 Dynamic outlines</a>
+        -   <a href="changes.html#q21.285" class="tocxref">C.4.91 Section 18.4.1 Outlines and the focus</a>
+        -   <a href="changes.html#q21.286" class="tocxref">C.4.92 Appendix D Default style sheet for HTML 4</a>
+    -   <a href="changes.html#errata" class="tocxref">C.5 Errata since the Candidate Recommendation of July 2007</a>
+        -   <a href="changes.html#q21.288" class="tocxref">C.5.1 Section 1.4.2.1 Value</a>
+        -   <a href="changes.html#q21.289" class="tocxref">C.5.2 Section 2.3 The CSS 2.1 processing model</a>
+        -   <a href="changes.html#q21.290" class="tocxref">C.5.3 Section 3.1 Definitions</a>
+        -   <a href="changes.html#q21.291" class="tocxref">C.5.4 Section 4.1.1 Tokenization</a>
+        -   <a href="changes.html#q21.292" class="tocxref">C.5.5 Section 4.1.2.2 Informative Historical Notes</a>
+        -   <a href="changes.html#q21.293" class="tocxref">C.5.6 Section 4.1.3 Characters and case</a>
+        -   <a href="changes.html#q21.294" class="tocxref">C.5.7 Section 4.1.3 Characters and case</a>
+        -   <a href="changes.html#q21.295" class="tocxref">C.5.8 Section 4.1.3 Characters and case</a>
+        -   <a href="changes.html#q21.296" class="tocxref">C.5.9 Section 4.1.3 Characters and case</a>
+        -   <a href="changes.html#q21.297" class="tocxref">C.5.10 Section 4.1.5 At-rules</a>
+        -   <a href="changes.html#q21.298" class="tocxref">C.5.11 Section 4.1.7 Rule sets, declaration blocks, and selectors</a>
+        -   <a href="changes.html#q21.299" class="tocxref">C.5.12 Section 4.2 Rules for handling parsing errors</a>
+        -   <a href="changes.html#q21.300" class="tocxref">C.5.13 Section 4.2 Rules for handling parsing errors</a>
+        -   <a href="changes.html#q21.301" class="tocxref">C.5.14 Section 4.3.2 Lengths</a>
+        -   <a href="changes.html#q21.302" class="tocxref">C.5.15 Section 4.3.5 Counters</a>
+        -   <a href="changes.html#q21.303" class="tocxref">C.5.16 Section 5.8.1 Matching attributes and attribute values</a>
+        -   <a href="changes.html#q21.304" class="tocxref">C.5.17 Section 5.8.2 Default attribute values in DTDs</a>
+        -   <a href="changes.html#q21.305" class="tocxref">C.5.18 Section 5.11.4 The language pseudo-class: :lang</a>
+        -   <a href="changes.html#q21.306" class="tocxref">C.5.19 Section 5.12.3 The :before and :after pseudo-elements</a>
+        -   <a href="changes.html#q21.307" class="tocxref">C.5.20 Section 6.3 The @import rule</a>
+        -   <a href="changes.html#q21.308" class="tocxref">C.5.21 Section 6.3 The @import rule</a>
+        -   <a href="changes.html#q21.309" class="tocxref">C.5.22 Section 6.4.1 Cascading order</a>
+        -   <a href="changes.html#q21.310" class="tocxref">C.5.23 Section 6.4.1 Cascading order</a>
+        -   <a href="changes.html#q21.311" class="tocxref">C.5.24 Section 7.2.1 The @media rule</a>
+        -   <a href="changes.html#q21.312" class="tocxref">C.5.25 Section 8.3.1 Collapsing margins</a>
+        -   <a href="changes.html#q21.313" class="tocxref">C.5.26 Section 8.3.1 Collapsing margins</a>
+        -   <a href="changes.html#q21.314" class="tocxref">C.5.27 Section 8.3.1 Collapsing margins</a>
+        -   <a href="changes.html#q21.315" class="tocxref">C.5.28 Section 9.2.2 Inline-level elements and inline boxes</a>
+        -   <a href="changes.html#q21.316" class="tocxref">C.5.29 Section 9.2.4 The 'display' property</a>
+        -   <a href="changes.html#q21.317" class="tocxref">C.5.30 Section 9.3.2 Box offsets: 'top', 'right', 'bottom', 'left'</a>
+        -   <a href="changes.html#q21.318" class="tocxref">C.5.31 Section 9.5 Floats</a>
+        -   <a href="changes.html#q21.319" class="tocxref">C.5.32 Section 9.5 Floats</a>
+        -   <a href="changes.html#q21.320" class="tocxref">C.5.33 Section 9.5.2 Controlling flow next to floats: the 'clear' property</a>
+        -   <a href="changes.html#q21.321" class="tocxref">C.5.34 Section 9.6.1 Fixed positioning</a>
+        -   <a href="changes.html#q21.322" class="tocxref">C.5.35 Section 9.9.1 Specifying the stack level: the 'z-index' property</a>
+        -   <a href="changes.html#q21.323" class="tocxref">C.5.36 Section 10.1 Definition of "containing block"</a>
+        -   <a href="changes.html#q21.324" class="tocxref">C.5.37 Section 10.3 Calculating widths and margins</a>
+        -   <a href="changes.html#q21.325" class="tocxref">C.5.38 Section 10.3.1 Inline, non-replaced elements</a>
+        -   <a href="changes.html#q21.326" class="tocxref">C.5.39 Section 10.3.2 Inline, replaced elements</a>
+        -   <a href="changes.html#q21.327" class="tocxref">C.5.40 Section 10.3.2 Inline, replaced elements</a>
+        -   <a href="changes.html#q21.328" class="tocxref">C.5.41 Section 10.3.3 Block-level, non-replaced elements in normal flow</a>
+        -   <a href="changes.html#q21.329" class="tocxref">C.5.42 Section 10.3.7 Absolutely positioned, non-replaced elements</a>
+        -   <a href="changes.html#q21.330" class="tocxref">C.5.43 Section 10.3.7 Absolutely positioned, non-replaced elements</a>
+        -   <a href="changes.html#q21.331" class="tocxref">C.5.44 Section 10.3.8 Absolutely positioned, replaced elements</a>
+        -   <a href="changes.html#q21.332" class="tocxref">C.5.45 Section 10.3.8 Absolutely positioned, replaced elements</a>
+        -   <a href="changes.html#q21.333" class="tocxref">C.5.46 Section 10.3.8 Absolutely positioned, replaced elements</a>
+        -   <a href="changes.html#q21.334" class="tocxref">C.5.47 Section 10.5 Content height: the 'height' property</a>
+        -   <a href="changes.html#q21.335" class="tocxref">C.5.48 Section 10.6.2 Inline replaced elements […]</a>
+        -   <a href="changes.html#q21.336" class="tocxref">C.5.49 Section 10.6.4 Absolutely positioned, non-replaced elements</a>
+        -   <a href="changes.html#q21.337" class="tocxref">C.5.50 Section 10.6.5 Absolutely positioned, replaced elements</a>
+        -   <a href="changes.html#q21.338" class="tocxref">C.5.51 Section 10.8.1 Leading and half-leading</a>
+        -   <a href="changes.html#q21.339" class="tocxref">C.5.52 Section 11.1.1 Overflow: the 'overflow' property</a>
+        -   <a href="changes.html#q21.340" class="tocxref">C.5.53 Section 11.1.2 Clipping: the 'clip' property</a>
+        -   <a href="changes.html#q21.341" class="tocxref">C.5.54 Section 12.2 The 'content' property</a>
+        -   <a href="changes.html#q21.342" class="tocxref">C.5.55 Section 12.4.2 Counter styles</a>
+        -   <a href="changes.html#q21.343" class="tocxref">C.5.56 Section 12.5 Lists</a>
+        -   <a href="changes.html#q21.344" class="tocxref">C.5.57 Section 12.5.1 Lists: the 'list-style-type', 'list-style-image', 'list-style-position', and 'list-style' properties</a>
+        -   <a href="changes.html#q21.345" class="tocxref">C.5.58 Section 12.5.1 Lists: the 'list-style-type', 'list-style-image', 'list-style-position', and 'list-style' properties</a>
+        -   <a href="changes.html#q21.346" class="tocxref">C.5.59 Section 12.5.1 Lists: the 'list-style-type', 'list-style-image', 'list-style-position', and 'list-style' properties</a>
+        -   <a href="changes.html#q21.347" class="tocxref">C.5.60 Section 13.2 Page boxes: the @page rule</a>
+        -   <a href="changes.html#q21.348" class="tocxref">C.5.61 Section 13.2.1.1 Rendering page boxes that do not fit a target sheet</a>
+        -   <a href="changes.html#q21.349" class="tocxref">C.5.62 Section 13.2.3 Content outside the page box</a>
+        -   <a href="changes.html#q21.350" class="tocxref">C.5.63 Section 13.3.1 Page break properties: 'page-break-before', 'page-break-after', 'page-break-inside'</a>
+        -   <a href="changes.html#q21.351" class="tocxref">C.5.64 Section 13.3.1 Page break properties: 'page-break-before', 'page-break-after', 'page-break-inside'</a>
+        -   <a href="changes.html#q21.352" class="tocxref">C.5.65 Section 13.3.2 Breaks inside elements: 'orphans', 'widows'</a>
+        -   <a href="changes.html#q21.353" class="tocxref">C.5.66 Section 13.3.2 Breaks inside elements: 'orphans', 'widows'</a>
+        -   <a href="changes.html#q21.354" class="tocxref">C.5.67 Section 13.3.3 Allowed page breaks</a>
+        -   <a href="changes.html#q21.355" class="tocxref">C.5.68 Section 13.3.3 Allowed page breaks</a>
+        -   <a href="changes.html#q21.356" class="tocxref">C.5.69 Section 13.3.3 Allowed page breaks</a>
+        -   <a href="changes.html#q21.357" class="tocxref">C.5.70 Section 13.3.5 "Best" page breaks</a>
+        -   <a href="changes.html#q21.358" class="tocxref">C.5.71 Section 14.2 The background</a>
+        -   <a href="changes.html#q21.359" class="tocxref">C.5.72 Section 14.2 The background</a>
+        -   <a href="changes.html#q21.360" class="tocxref">C.5.73 Section 14.2.1 Background properties: 'background-color', 'background-image', 'background-repeat', 'background-attachment', 'background-position', and 'background'</a>
+        -   <a href="changes.html#q21.361" class="tocxref">C.5.74 Section 15.6 Font boldness: the 'font-weight' property</a>
+        -   <a href="changes.html#q21.362" class="tocxref">C.5.75 Section 16.6 Whitespace: the 'white-space' property</a>
+        -   <a href="changes.html#q21.363" class="tocxref">C.5.76 Section 16.6.1 The 'white-space' processing model</a>
+        -   <a href="changes.html#q21.364" class="tocxref">C.5.77 Section 17.2.1 Anonymous table objects</a>
+        -   <a href="changes.html#q21.365" class="tocxref">C.5.78 Section 17.2.1 Anonymous table objects</a>
+        -   <a href="changes.html#q21.366" class="tocxref">C.5.79 Section 17.4 Tables in the visual formatting model</a>
+        -   <a href="changes.html#q21.367" class="tocxref">C.5.80 Section 17.5.4 Horizontal alignment in a column</a>
+        -   <a href="changes.html#q21.368" class="tocxref">C.5.81 Section 18.1 Cursors: the 'cursor' property</a>
+        -   <a href="changes.html#q21.369" class="tocxref">C.5.82 Section B.2 Informative references</a>
+        -   <a href="changes.html#q21.370" class="tocxref">C.5.83 Appendix D. Default style sheet for HTML 4</a>
+        -   <a href="changes.html#q21.371" class="tocxref">C.5.84 Appendix D. Default style sheet for HTML 4</a>
+        -   <a href="changes.html#q21.372" class="tocxref">C.5.85 Section E.2 Painting order</a>
+        -   <a href="changes.html#q21.373" class="tocxref">C.5.86 Appendix G. Grammar of CSS 2.1</a>
+        -   <a href="changes.html#q21.374" class="tocxref">C.5.87 Section G.1 Grammar</a>
+        -   <a href="changes.html#q21.375" class="tocxref">C.5.88 Section G.2 Lexical scanner</a>
+        -   <a href="changes.html#q21.376" class="tocxref">C.5.89 Section G.2 Lexical scanner</a>
+        -   <a href="changes.html#q21.377" class="tocxref">C.5.90 Section G.2 Lexical scanner</a>
+        -   <a href="changes.html#q21.378" class="tocxref">C.5.91 Section G.2 Lexical scanner</a>
+        -   <a href="changes.html#q21.379" class="tocxref">C.5.92 Appendix I. Index</a>
+    -   <a href="changes.html#errata2" class="tocxref">C.6 Errata since the Candidate Recommendation of April 2009</a>
+        -   <a href="changes.html#q21.381" class="tocxref">C.6.1 Section 4.2 Rules for handling parsing errors</a>
+        -   <a href="changes.html#q21.382" class="tocxref">C.6.2 Section 13.3.3 Allowed page breaks</a>
+        -   <a href="changes.html#q21.383" class="tocxref">C.6.3 Section 15.3 Font family: the 'font-family' property</a>
+        -   <a href="changes.html#q21.384" class="tocxref">C.6.4 Section 15.3.1.1 serif</a>
+        -   <a href="changes.html#q21.385" class="tocxref">C.6.5 Section 15.7 Font size: the 'font-size' property</a>
+        -   <a href="changes.html#q21.386" class="tocxref">C.6.6 Section 17.5.2.1 Fixed table layout</a>
+        -   <a href="changes.html#q21.387" class="tocxref">C.6.7 Section 17.5.3 Table height layout</a>
+        -   <a href="changes.html#q21.388" class="tocxref">C.6.8 Appendix G. Grammar of CSS 2.1</a>
+    -   <a href="changes.html#errata3" class="tocxref">C.7 Errata since the Candidate Recommendation of September 2009</a>
+        -   <a href="changes.html#q21.390" class="tocxref">C.7.1 Section 1.4.2.1 Value</a>
+        -   <a href="changes.html#q21.391" class="tocxref">C.7.2 Section 3.1 Definitions</a>
+        -   <a href="changes.html#q21.392" class="tocxref">C.7.3 Section 4.1.1 Tokenization</a>
+        -   <a href="changes.html#q21.393" class="tocxref">C.7.4 Section 4.1.1 Tokenization</a>
+        -   <a href="changes.html#q21.394" class="tocxref">C.7.5 Section 4.1.1 Tokenization</a>
+        -   <a href="changes.html#q21.395" class="tocxref">C.7.6 Section 4.1.1 Tokenization</a>
+        -   <a href="changes.html#q21.396" class="tocxref">C.7.7 Section 4.1.2.2 Informative Historical Notes</a>
+        -   <a href="changes.html#q21.397" class="tocxref">C.7.8 Section 4.1.3 Characters and case</a>
+        -   <a href="changes.html#q21.398" class="tocxref">C.7.9 Section 4.1.3 Characters and case</a>
+        -   <a href="changes.html#q21.399" class="tocxref">C.7.10 Section 4.1.8 Declarations and properties</a>
+        -   <a href="changes.html#q21.400" class="tocxref">C.7.11 Section 4.2 Rules for handling parsing errors</a>
+        -   <a href="changes.html#q21.401" class="tocxref">C.7.12 Section 4.3.2 Lengths</a>
+        -   <a href="changes.html#q21.402" class="tocxref">C.7.13 Section 4.3.2 Lengths</a>
+        -   <a href="changes.html#q21.403" class="tocxref">C.7.14 Section 4.3.4 URLs and URIs</a>
+        -   <a href="changes.html#q21.404" class="tocxref">C.7.15 Section 4.3.4 URLs and URIs</a>
+        -   <a href="changes.html#q21.405" class="tocxref">C.7.16 Section 5.8.2 Default attribute values in DTDs</a>
+        -   <a href="changes.html#q21.406" class="tocxref">C.7.17 Section 5.11.4 The language pseudo-class: :lang</a>
+        -   <a href="changes.html#q21.407" class="tocxref">C.7.18 Section 5.12 Pseudo-elements</a>
+        -   <a href="changes.html#q21.408" class="tocxref">C.7.19 Section 5.12.1 The :first-line pseudo-element</a>
+        -   <a href="changes.html#q21.409" class="tocxref">C.7.20 Section 5.12.2 The :first-letter pseudo-element</a>
+        -   <a href="changes.html#q21.410" class="tocxref">C.7.21 Section 6.2 Inheritance</a>
+        -   <a href="changes.html#q21.411" class="tocxref">C.7.22 Section 6.4.4 Precedence of non-CSS presentational hints</a>
+        -   <a href="changes.html#q21.412" class="tocxref">C.7.23 Section 7.3 Recognized media types</a>
+        -   <a href="changes.html#q21.413" class="tocxref">C.7.24 Section 8.3.1 Collapsing margins</a>
+        -   <a href="changes.html#q21.414" class="tocxref">C.7.25 Section 8.3.1 Collapsing margins</a>
+        -   <a href="changes.html#q21.415" class="tocxref">C.7.26 Section 9.2.1 Block-level elements and block boxes</a>
+        -   <a href="changes.html#q21.416" class="tocxref">C.7.27 Section 9.2.1.1 Anonymous block boxes</a>
+        -   <a href="changes.html#q21.417" class="tocxref">C.7.28 Section 9.2.1.1 Anonymous block boxes</a>
+        -   <a href="changes.html#q21.418" class="tocxref">C.7.29 Section 9.2.1.1 Anonymous block boxes</a>
+        -   <a href="changes.html#q21.419" class="tocxref">C.7.30 Section 9.2.1.1 Anonymous block boxes</a>
+        -   <a href="changes.html#q21.420" class="tocxref">C.7.31 Section 9.2.2 Inline-level elements and inline boxes</a>
+        -   <a href="changes.html#q21.421" class="tocxref">C.7.32 Section 9.2.3 Run-in boxes</a>
+        -   <a href="changes.html#q21.422" class="tocxref">C.7.33 Section 9.2.4 The 'display' property</a>
+        -   <a href="changes.html#q21.423" class="tocxref">C.7.34 Section 9.2.4 The 'display' property</a>
+        -   <a href="changes.html#q21.424" class="tocxref">C.7.35 Section 9.3 Positioning schemes</a>
+        -   <a href="changes.html#q21.425" class="tocxref">C.7.36 Section 9.4 Normal flow</a>
+        -   <a href="changes.html#q21.426" class="tocxref">C.7.37 Section 9.3.2 Box offsets: 'top', 'right', 'bottom', 'left'</a>
+        -   <a href="changes.html#q21.427" class="tocxref">C.7.38 Section 9.5 Floats</a>
+        -   <a href="changes.html#q21.428" class="tocxref">C.7.39 Section 9.5 Floats</a>
+        -   <a href="changes.html#q21.429" class="tocxref">C.7.40 Section 9.5.2 Controlling flow next to floats: the 'clear' property</a>
+        -   <a href="changes.html#q21.430" class="tocxref">C.7.41 Section 9.5.2 Controlling flow next to floats: the 'clear' property</a>
+        -   <a href="changes.html#q21.431" class="tocxref">C.7.42 Section 9.5.2 Controlling flow next to floats: the 'clear' property</a>
+        -   <a href="changes.html#q21.432" class="tocxref">C.7.43 Section 9.5.2 Controlling flow next to floats: the 'clear' property</a>
+        -   <a href="changes.html#q21.433" class="tocxref">C.7.44 Section 14.2.1 Background properties</a>
+        -   <a href="changes.html#q21.434" class="tocxref">C.7.45 Section 9.9.1 Specifying the stack level: the 'z-index' property</a>
+        -   <a href="changes.html#q21.435" class="tocxref">C.7.46 Section 9.10 Text direction: the 'direction' and 'unicode-bidi' properties</a>
+        -   <a href="changes.html#q21.436" class="tocxref">C.7.47 Section 9.10 Text direction: the 'direction' and 'unicode-bidi' properties</a>
+        -   <a href="changes.html#q21.437" class="tocxref">C.7.48 Section 9.10 Text direction: the 'direction' and 'unicode-bidi' properties</a>
+        -   <a href="changes.html#q21.438" class="tocxref">C.7.49 Section 10.1 Definition of "containing block"</a>
+        -   <a href="changes.html#q21.439" class="tocxref">C.7.50 Section 10.2 Content width: the 'width' property</a>
+        -   <a href="changes.html#q21.440" class="tocxref">C.7.51 Section 10.2 Content width: the 'width' property</a>
+        -   <a href="changes.html#q21.441" class="tocxref">C.7.52 Section 10.2 Content width: the 'width' property</a>
+        -   <a href="changes.html#q21.442" class="tocxref">C.7.53 Section 10.5 Content height: the 'height' property</a>
+        -   <a href="changes.html#q21.443" class="tocxref">C.7.54 Section 10.5 Content height: the 'height' property</a>
+        -   <a href="changes.html#q21.444" class="tocxref">C.7.55 Section 10.6.7 'Auto' heights for block formatting context roots</a>
+        -   <a href="changes.html#q21.445" class="tocxref">C.7.56 Section 10.7 Minimum and maximum heights: 'min-height' and 'max-height'</a>
+        -   <a href="changes.html#q21.446" class="tocxref">C.7.57 Section 10.8 Line height calculations: the 'line-height' and 'vertical-align' properties</a>
+        -   <a href="changes.html#q21.447" class="tocxref">C.7.58 Section 10.8 Line height calculations: the 'line-height' and 'vertical-align' properties</a>
+        -   <a href="changes.html#q21.448" class="tocxref">C.7.59 Section 10.8.1 Leading and half-leading</a>
+        -   <a href="changes.html#q21.449" class="tocxref">C.7.60 Section 10.8.1 Leading and half-leading</a>
+        -   <a href="changes.html#q21.450" class="tocxref">C.7.61 Section 10.8.1 Leading and half-leading</a>
+        -   <a href="changes.html#q21.451" class="tocxref">C.7.62 Section 11.1 Overflow and clipping</a>
+        -   <a href="changes.html#q21.452" class="tocxref">C.7.63 Section 11.1.1 Overflow: the 'overflow' property</a>
+        -   <a href="changes.html#q21.453" class="tocxref">C.7.64 Section 11.1.1 Overflow: the 'overflow' property</a>
+        -   <a href="changes.html#q21.454" class="tocxref">C.7.65 Section 11.1.1 Overflow: the 'overflow' property</a>
+        -   <a href="changes.html#q21.455" class="tocxref">C.7.66 Section 11.1.2 Clipping: the 'clip' property</a>
+        -   <a href="changes.html#q21.456" class="tocxref">C.7.67 Section 12.5 Lists</a>
+        -   <a href="changes.html#q21.457" class="tocxref">C.7.68 Section 12.5.1 Lists: the 'list-style-type', 'list-style-image', 'list-style-position', and 'list-style' properties</a>
+        -   <a href="changes.html#q21.458" class="tocxref">C.7.69 Section 12.5.1 Lists: the 'list-style-type', 'list-style-image', 'list-style-position', and 'list-style' properties</a>
+        -   <a href="changes.html#q21.459" class="tocxref">C.7.70 Section 12.5.1 Lists: the 'list-style-type', 'list-style-image', 'list-style-position', and 'list-style' properties</a>
+        -   <a href="changes.html#q21.460" class="tocxref">C.7.71 Section 12.5.1 Lists: the 'list-style-type', 'list-style-image', 'list-style-position', and 'list-style' properties</a>
+        -   <a href="changes.html#q21.461" class="tocxref">C.7.72 Section 12.5.1 Lists: the 'list-style-type', 'list-style-image', 'list-style-position', and 'list-style' properties</a>
+        -   <a href="changes.html#q21.462" class="tocxref">C.7.73 Section 13.2 Page boxes: the @page rule</a>
+        -   <a href="changes.html#q21.463" class="tocxref">C.7.74 Section 13.2.2 Page selectors: selecting left, right, and first pages</a>
+        -   <a href="changes.html#q21.464" class="tocxref">C.7.75 Section 13.3.2 Breaks inside elements: 'orphans', 'widows'</a>
+        -   <a href="changes.html#q21.465" class="tocxref">C.7.76 Section 13.3.3 Allowed page breaks</a>
+        -   <a href="changes.html#q21.466" class="tocxref">C.7.77 Section 15.3 Font family: the 'font-family' property</a>
+        -   <a href="changes.html#q21.467" class="tocxref">C.7.78 Section 15.3.1 Generic font families</a>
+        -   <a href="changes.html#q21.468" class="tocxref">C.7.79 Section 15.6 Font boldness: the 'font-weight' property</a>
+        -   <a href="changes.html#q21.469" class="tocxref">C.7.80 Section 15.6 Font boldness: the 'font-weight' property</a>
+        -   <a href="changes.html#q21.470" class="tocxref">C.7.81 Section 15.7 Font size: the 'font-size' property</a>
+        -   <a href="changes.html#q21.471" class="tocxref">C.7.82 Section 16.1 Indentation: the 'text-indent' property</a>
+        -   <a href="changes.html#q21.472" class="tocxref">C.7.83 Section 16.1 Indentation: the 'text-indent' property</a>
+        -   <a href="changes.html#q21.473" class="tocxref">C.7.84 Section 16.2 Alignment: the 'text-align' property</a>
+        -   <a href="changes.html#q21.474" class="tocxref">C.7.85 Section 16.2 Alignment: the 'text-align' property</a>
+        -   <a href="changes.html#q21.475" class="tocxref">C.7.86 Section 16.3.1 Underlining, overlining, striking, and blinking: the 'text-decoration' property</a>
+        -   <a href="changes.html#q21.476" class="tocxref">C.7.87 Section 16.3.1 Underlining, overlining, striking, and blinking: the 'text-decoration' property</a>
+        -   <a href="changes.html#q21.477" class="tocxref">C.7.88 Section 16.4 Letter and word spacing: the 'letter-spacing' and 'word-spacing' properties</a>
+        -   <a href="changes.html#q21.478" class="tocxref">C.7.89 Section 16.6 White space: the 'white-space' property</a>
+        -   <a href="changes.html#q21.479" class="tocxref">C.7.90 Section 16.6.1 The 'white-space' processing model</a>
+        -   <a href="changes.html#q21.480" class="tocxref">C.7.91 Section 16.6.1 The 'white-space' processing model</a>
+        -   <a href="changes.html#q21.481" class="tocxref">C.7.92 Section 16.6.1 The 'white-space' processing model</a>
+        -   <a href="changes.html#q21.482" class="tocxref">C.7.93 Section 17.2 The CSS table model</a>
+        -   <a href="changes.html#q21.483" class="tocxref">C.7.94 Section 17.2.1 Anonymous table objects</a>
+        -   <a href="changes.html#q21.484" class="tocxref">C.7.95 Section 17.2.1 Anonymous table objects</a>
+        -   <a href="changes.html#q21.485" class="tocxref">C.7.96 Section 17.4 Tables in the visual formatting model</a>
+        -   <a href="changes.html#q21.486" class="tocxref">C.7.97 Section 17.4 Tables in the visual formatting model</a>
+        -   <a href="changes.html#q21.487" class="tocxref">C.7.98 Section 17.5.2.2 Automatic table layout</a>
+        -   <a href="changes.html#q21.488" class="tocxref">C.7.99 Section 17.5.3 Table height algorithms</a>
+        -   <a href="changes.html#q21.489" class="tocxref">C.7.100 Section 17.5.4 Horizontal alignment in a column</a>
+        -   <a href="changes.html#q21.490" class="tocxref">C.7.101 Section B.2 Informative references</a>
+        -   <a href="changes.html#q21.491" class="tocxref">C.7.102 Section D. Default style sheet for HTML 4</a>
+        -   <a href="changes.html#q21.492" class="tocxref">C.7.103 Section E.2 Painting order</a>
+        -   <a href="changes.html#q21.493" class="tocxref">C.7.104 Appendix G Grammar of CSS 2.1</a>
+    -   <a href="changes.html#q21.494" class="tocxref">C.8 Changes since the working draft of 7 December 2010</a>
+        -   <a href="changes.html#q21.495" class="tocxref">C.8.1 8.3.1 Collapsing margins</a>
+        -   <a href="changes.html#q21.496" class="tocxref">C.8.2 10.8.1 Leading and half-leading</a>
+        -   <a href="changes.html#q21.497" class="tocxref">C.8.3 10.3 Calculating widths and margins</a>
+        -   <a href="changes.html#q21.498" class="tocxref">C.8.4 14.3 Gamma correction</a>
+        -   <a href="changes.html#q21.499" class="tocxref">C.8.5 11.1.2 Clipping: the 'clip' property</a>
+        -   <a href="changes.html#q21.500" class="tocxref">C.8.6 9.4.2 Inline formatting contexts</a>
+        -   <a href="changes.html#q21.501" class="tocxref">C.8.7 10.3.2 Inline, replaced elements</a>
+        -   <a href="changes.html#q21.502" class="tocxref">C.8.8 10.1 Definition of "containing block"</a>
+        -   <a href="changes.html#q21.503" class="tocxref">C.8.9 13.2.2 Page selectors: selecting left, right, and first pages</a>
+        -   <a href="changes.html#q21.504" class="tocxref">C.8.10 8.3.1 Collapsing margins</a>
+        -   <a href="changes.html#q21.505" class="tocxref">C.8.11 10.8 Line height calculations: the 'line-height' and 'vertical-align' properties</a>
+        -   <a href="changes.html#q21.506" class="tocxref">C.8.12 10.8.1 Leading and half-leading</a>
+        -   <a href="changes.html#q21.507" class="tocxref">C.8.13 10.6.1 Inline, non-replaced elements</a>
+        -   <a href="changes.html#q21.508" class="tocxref">C.8.14 9.5.1 Positioning the float: the 'float' property</a>
+        -   <a href="changes.html#q21.509" class="tocxref">C.8.15 9.2.1.1 Anonymous block boxes</a>
+        -   <a href="changes.html#q21.510" class="tocxref">C.8.16 5.12.1 The :first-line pseudo-element</a>
+        -   <a href="changes.html#q21.511" class="tocxref">C.8.17 16.6 White space: the 'white-space' property</a>
+        -   <a href="changes.html#q21.512" class="tocxref">C.8.18 12.5.1 Lists: the 'list-style-type', 'list-style-image', 'list-style-position', and 'list-style' properties</a>
+        -   <a href="changes.html#q21.513" class="tocxref">C.8.19 9.7 Relationships between 'display', 'position', and 'float'</a>
+        -   <a href="changes.html#q21.514" class="tocxref">C.8.20 9.4.2 Inline formatting contexts</a>
+        -   <a href="changes.html#q21.515" class="tocxref">C.8.21 4.1.9 Comments</a>
+        -   <a href="changes.html#q21.516" class="tocxref">C.8.22 12.5.1 Lists: the 'list-style-type', 'list-style-image', 'list-style-position', and 'list-style' properties</a>
+        -   <a href="changes.html#q21.517" class="tocxref">C.8.23 9.5.1 Positioning the float: the 'float' property</a>
+        -   <a href="changes.html#q21.518" class="tocxref">C.8.24 9.3 Positioning schemes</a>
+        -   <a href="changes.html#q21.519" class="tocxref">C.8.25 9.10 Text direction: the 'direction' and 'unicode-bidi' properties</a>
+        -   <a href="changes.html#q21.520" class="tocxref">C.8.26 16.3.1 Underlining, overlining, striking, and blinking: the 'text-decoration' property</a>
+        -   <a href="changes.html#q21.521" class="tocxref">C.8.27 16.3.1 Underlining, overlining, striking, and blinking: the 'text-decoration' property</a>
+        -   <a href="changes.html#q21.522" class="tocxref">C.8.28 10.4 Minimum and maximum widths: 'min-width' and 'max-width'</a>
+        -   <a href="changes.html#q21.523" class="tocxref">C.8.29 9.3.2 Box offsets: 'top', 'right', 'bottom', 'left'</a>
+        -   <a href="changes.html#q21.524" class="tocxref">C.8.30 9.2.1.1 Anonymous block boxes</a>
+        -   <a href="changes.html#q21.525" class="tocxref">C.8.31 17.4 Tables in the visual formatting model</a>
+        -   <a href="changes.html#q21.526" class="tocxref">C.8.32 11.1.2 Clipping: the 'clip' property</a>
+        -   <a href="changes.html#q21.527" class="tocxref">C.8.33 13.2 Page boxes: the @page rule</a>
+        -   <a href="changes.html#q21.528" class="tocxref">C.8.34 4.1.1 Tokenization</a>
+        -   <a href="changes.html#q21.529" class="tocxref">C.8.35 4.2 Rules for handling parsing errors</a>
+        -   <a href="changes.html#q21.530" class="tocxref">C.8.36 3.1 Definitions</a>
+        -   <a href="changes.html#q21.531" class="tocxref">C.8.37 4.3.4 URLs and URIs</a>
+        -   <a href="changes.html#q21.532" class="tocxref">C.8.38 9.5 Floats</a>
+        -   <a href="changes.html#q21.533" class="tocxref">C.8.39 11.1.1 Overflow: the 'overflow' property</a>
+        -   <a href="changes.html#q21.534" class="tocxref">C.8.40 9.2.1.1 Anonymous block boxes</a>
+        -   <a href="changes.html#q21.535" class="tocxref">C.8.41 16.2 Alignment: the 'text-align' property</a>
+        -   <a href="changes.html#q21.536" class="tocxref">C.8.42 9.5 Floats</a>
+        -   <a href="changes.html#q21.537" class="tocxref">C.8.43 9.4.2 Inline formatting contexts</a>
+        -   <a href="changes.html#q21.538" class="tocxref">C.8.44 5.12 Pseudo-elements</a>
+        -   <a href="changes.html#q21.539" class="tocxref">C.8.45 9.5 Floats</a>
+        -   <a href="changes.html#q21.540" class="tocxref">C.8.46 9.5 Floats</a>
+        -   <a href="changes.html#q21.541" class="tocxref">C.8.47 14.2.1 Background properties: 'background-color', 'background-image', 'background-repeat', 'background-attachment', 'background-position', and 'background'</a>
+        -   <a href="changes.html#q21.542" class="tocxref">C.8.48 9.2.4 The 'display' property</a>
+        -   <a href="changes.html#q21.543" class="tocxref">C.8.49 6.1.2 Computed values</a>
+        -   <a href="changes.html#q21.544" class="tocxref">C.8.50 10.3.2 Inline, replaced elements</a>
+        -   <a href="changes.html#q21.545" class="tocxref">C.8.51 Section 9.5.2 Controlling flow next to floats: the 'clear' property</a>
+        -   <a href="changes.html#q21.546" class="tocxref">C.8.52 G.2 Lexical scanner</a>
+        -   <a href="changes.html#q21.547" class="tocxref">C.8.53 Section 9.5.2 Controlling flow next to floats: the 'clear' property</a>
+        -   <a href="changes.html#q21.548" class="tocxref">C.8.54 9.5 Floats</a>
+        -   <a href="changes.html#q21.549" class="tocxref">C.8.55 10.6.3 Block-level non-replaced elements in normal flow when 'overflow' computes to 'visible'</a>
+-   <a href="sample.html#q22.0" class="tocxref">Appendix D. Default style sheet for HTML 4</a>
+-   <a href="zindex.html#q23.0" class="tocxref">Appendix E. Elaborate description of Stacking Contexts</a>
+    -   <a href="zindex.html#stacking-defs" class="tocxref">E.1 Definitions</a>
+    -   <a href="zindex.html#painting-order" class="tocxref">E.2 Painting order</a>
+    -   <a href="zindex.html#stacking-notes" class="tocxref">E.3 Notes</a>
+-   <a href="propidx.html#q24.0" class="tocxref">Appendix F. Full property table</a>
+-   <a href="grammar.html#q25.0" class="tocxref">Appendix G. Grammar of CSS 2.1</a>
+    -   <a href="grammar.html#grammar" class="tocxref">G.1 Grammar</a>
+    -   <a href="grammar.html#scanner" class="tocxref">G.2 Lexical scanner</a>
+    -   <a href="grammar.html#tokenizer-diffs" class="tocxref">G.3 Comparison of tokenization in CSS 2.1 and CSS1</a>
+    -   <a href="grammar.html#q25.4" class="tocxref">G.4 Implementation note</a>
+-   <a href="indexlist.html#q27.0" class="tocxref">Appendix I. Index</a>
+
+------------------------------------------------------------------------
+
+[next](about.html)   [contents](cover.html#minitoc)   [properties](propidx.html)   [index](indexlist.html)  
